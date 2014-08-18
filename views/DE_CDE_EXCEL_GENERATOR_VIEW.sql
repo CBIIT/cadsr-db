@@ -6,7 +6,8 @@ CREATE OR REPLACE TYPE SBREXT."DE_VALID_VALUE_T" as object(
     PvBeginDate Date,
     PvEndDate Date,
     VmPublicId Number,
-    VmVersion Number(4,2));
+    VmVersion Number(4,2))
+/
 
 GRANT EXECUTE, DEBUG ON SBREXT.DE_VALID_VALUE_T TO CDEBROWSER;
 
@@ -14,7 +15,8 @@ GRANT EXECUTE, DEBUG ON SBREXT.DE_VALID_VALUE_T TO DER_USER;
 
 
 
-CREATE OR REPLACE TYPE SBREXT."DE_VALID_VALUE_LIST_T" AS TABLE OF DE_VALID_VALUE_T;
+CREATE OR REPLACE TYPE SBREXT."DE_VALID_VALUE_LIST_T" AS TABLE OF DE_VALID_VALUE_T
+/
 
 GRANT EXECUTE, DEBUG ON SBREXT.DE_VALID_VALUE_LIST_T TO CDEBROWSER;
 
@@ -307,8 +309,8 @@ AS
             AND dec.prop_idseq = prop.prop_idseq(+)
             AND prop.conte_idseq = prop_conte.conte_idseq(+)
             AND vd.rep_idseq = rep.rep_idseq(+)
-            AND rep.conte_idseq = rep_conte.conte_idseq(+);
-
+            AND rep.conte_idseq = rep_conte.conte_idseq(+)
+/
 
 
 
