@@ -1,4 +1,4 @@
-CREATE OR REPLACE PACKAGE BODY SBREXT."SBREXT_COMMON_ROUTINES" AS
+CREATE OR REPLACE PACKAGE BODY "SBREXT"."SBREXT_COMMON_ROUTINES" AS
 
 
  FUNCTION GET_AC_VERSION(P_AC_PREFERRED_NAME IN VARCHAR2
@@ -8,13 +8,10 @@ CREATE OR REPLACE PACKAGE BODY SBREXT."SBREXT_COMMON_ROUTINES" AS
 /******************************************************************************
    NAME:       GET_AC_VERSION
    PURPOSE:    Gets the version of a component of Admin_Components based on preferred name and context
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/18/2001  Prerna Aggarwal     1. Created this procedure.
-
-
 ******************************************************************************/
 v_ac NUMBER;
 v_public_id number;
@@ -55,13 +52,10 @@ FUNCTION GET_VERSION_AC(P_AC_PREFERRED_NAME IN VARCHAR2
 /******************************************************************************
    NAME:       GET_VERSION_AC
    PURPOSE:    Gets the AC with the version
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        11/16/2001  Prerna Aggarwal     1. Created this procedure.
-
-
 ******************************************************************************/
 v_version admin_components_view.version%TYPE;
 v_ac      CHAR(36);
@@ -163,13 +157,10 @@ FUNCTION GET_CT_VERSION(P_CT_NAME IN VARCHAR2)RETURN  NUMBER IS
 /******************************************************************************
    NAME:       GET_CT_VERSION
    PURPOSE:    Gets the version of the context based on preferred name and context
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/23/2001  Lisa Schick     1. Created function
-
-
 ******************************************************************************/
 v_ct NUMBER;
 BEGIN
@@ -188,13 +179,10 @@ FUNCTION CONTEXT_EXISTS(P_CONTE_IDSEQ IN CHAR )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       CONTEXT_EXISTS
    PURPOSE:    Check to see if context exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -221,13 +209,10 @@ FUNCTION AC_EXISTS(P_PREFERRED_NAME IN VARCHAR2
 /******************************************************************************
    NAME:       AC_EXISTS
    PURPOSE:    Check to see if administered component exists based on preferred name context and version
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/30/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -255,13 +240,10 @@ FUNCTION AC_VERSION_EXISTS(P_PREFERRED_NAME IN VARCHAR2
    NAME:       AC_EXISTS
    PURPOSE:    Check to see if version of administered component exists
                based on preferred name context
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        11/16/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -283,13 +265,10 @@ FUNCTION AC_EXISTS(P_AC_IDSEQ IN CHAR)RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       AC_EXISTS
    PURPOSE:    Check to see IF AC exists based on AC_IDSEQ
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -311,13 +290,10 @@ FUNCTION PV_EXISTS(P_VALUE IN VARCHAR2
 /******************************************************************************
    NAME:       PV_EXISTS
    PURPOSE:    Check to see if PV exists based on value and short meaning
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -338,13 +314,10 @@ FUNCTION PV_EXISTS(P_VALUE IN VARCHAR2
 /******************************************************************************
    NAME:       PV_EXISTS
    PURPOSE:    Check to see if PV exists based on value and short meaning
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -364,13 +337,10 @@ FUNCTION PV_EXISTS(P_PV_IDSEQ IN CHAR)RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       PV_EXISTS
    PURPOSE:    Check to see if PV exists based on PV_IDSEQ
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -390,13 +360,10 @@ FUNCTION VD_PVS_EXISTS(P_VD_IDSEQ IN CHAR
 /******************************************************************************
    NAME:       VD_EXISTS_PVS
    PURPOSE:    Check to see if VD_PVS exists based on VD_IDSEQ and PV_IDSEQ
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -416,13 +383,10 @@ FUNCTION VD_PVS_EXISTS(P_VP_IDSEQ IN CHAR)RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       VD_EXISTS_PVS
    PURPOSE:    Check to see if VD_PVS exists based on P_VP_IDSEQ
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -449,8 +413,6 @@ FUNCTION VD_PVS_QC_EXISTS(P_VDPVS_VP_IDSEQ IN CHAR,
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        07/06/2004  Daniel Ladino     1. Created this function
-
-
 ******************************************************************************/
 v_flag  VARCHAR2(1000) := NULL;
 BEGIN
@@ -499,13 +461,10 @@ FUNCTION CD_VM_EXISTS(P_CD_IDSEQ IN VARCHAR2, P_SHORT_MEANING IN VARCHAR2 )RETUR
 /******************************************************************************
    NAME:       VD_EXISTS_PVS
    PURPOSE:    Check to see if VD_PVS exists based on P_VP_IDSEQ
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        12/20/2002  Judy Pai         1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER := 0;
 BEGIN
@@ -527,13 +486,10 @@ FUNCTION CD_VM_EXISTS(P_CD_IDSEQ IN VARCHAR2
 /******************************************************************************
    NAME:       VD_EXISTS_PVS
    PURPOSE:    Check to see if VD_PVS exists based on P_VP_IDSEQ
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        12/20/2002  Judy Pai         1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER := 0;
 BEGIN
@@ -554,13 +510,10 @@ FUNCTION WORKFLOW_EXISTS(P_ASL_NAME IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       WORKFLOW_EXISTS
    PURPOSE:    Check to see if workflow exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -580,13 +533,10 @@ FUNCTION DATA_TYPE_EXISTS(P_DTL_NAME IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       DATA_TYPE_EXISTS
    PURPOSE:    Check to see if data type exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -606,13 +556,10 @@ FUNCTION VM_EXISTS(P_SHORT_MEANING IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       VM_EXISTS
    PURPOSE:    Check to see if value meaning exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -631,13 +578,10 @@ FUNCTION VM_EXISTS(P_VM_IDSEQ IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       VM_EXISTS
    PURPOSE:    Check to see if value meaning exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -656,13 +600,10 @@ FUNCTION CHAR_SET_EXISTS(P_CHAR_SET_NAME IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       CHAR_SET_EXISTS
    PURPOSE:    Check to see IF character set exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -681,13 +622,10 @@ FUNCTION VD_FORMAT_EXISTS(P_FORML_NAME IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       VD_FORMAT_EXISTS
    PURPOSE:    Check to see IF formatset exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -706,13 +644,10 @@ FUNCTION UOML_EXISTS(P_UOML_NAME IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       UOML_EXISTS
    PURPOSE:    Check to see IF unit of measure set exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -731,13 +666,10 @@ FUNCTION PROPL_EXISTS(P_PROPL_NAME IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       PROPL_EXISTS
    PURPOSE:    Check to see if property exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -756,13 +688,10 @@ FUNCTION OCL_EXISTS(P_OCL_NAME IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       OCL_EXISTS
    PURPOSE:    Check to see if object classes exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -781,14 +710,11 @@ FUNCTION QCDL_EXISTS(P_QCDL_NAME IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       QCDL_EXISTS
    PURPOSE:    Check to see if QC Display exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        12/04/2001  Prerna Aggarwal  1. Created this function
    2.1        02/09/2004  W. Ver Hoef      1. added upper function on comparison
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -815,13 +741,10 @@ FUNCTION VALID_NAME(P_STRING IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       VALID_NAME
    PURPOSE:    Allows only alphabets, numbers and '_''.
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        03/04/2002  Harsh Marwaha     1. Created this function
-
-
 ******************************************************************************/
 v_ascii  NUMBER;
 BEGIN
@@ -845,13 +768,11 @@ FUNCTION VALID_ALPHANUMERIC(P_STRING IN VARCHAR2 )RETURN  BOOLEAN IS
    NAME:       VALID_ALPHANUMERIC
    PURPOSE:    Allows only alphabets, numbers and '_''.
                The first letter can be an alphabet only
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        11/13/2001  Prerna Aggarwal     1. Created this function
    2.0        ???         Prerna Aggarwal     2.  commented out code per SPRF_2.0_15
-
 ******************************************************************************/
 v_ascii  NUMBER;
 BEGIN
@@ -880,13 +801,11 @@ FUNCTION VALID_CHAR(P_STRING IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       VALID_CHAR
    PURPOSE:    Allows only printable characters
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        11/13/2001  Prerna Aggarwal     1. Created this function
    2.0        ???         Prerna Aggarwal     2.  commented out code per SPRF_2.0_15
-
 ******************************************************************************/
 v_ascii NUMBER;
 BEGIN
@@ -908,13 +827,10 @@ FUNCTION RD_EXISTS(P_AC_IDSEQ IN CHAR
 /******************************************************************************
    NAME:       RD_EXISTS
    PURPOSE:    Check to see if RD exists based on ac_idseq, name
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -934,13 +850,10 @@ FUNCTION RD_EXISTS(P_RD_IDSEQ IN CHAR)RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       RD_EXISTS
    PURPOSE:    Check to see if RD exists based on RD_IDSEQ
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/30/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -959,13 +872,10 @@ FUNCTION DCTL_EXISTS(P_DCTL_NAME IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       DCTL_EXISTS
    PURPOSE:    Check to see if document type exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/30/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -984,13 +894,10 @@ FUNCTION ACH_EXISTS(P_ACH_IDSEQ IN CHAR )RETURN  BOOLEAN IS
 /******************************************************************************
    IDSEQ:       ACH_EXISTS
    PURPOSE:    Check to see if history exist exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/30/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1010,13 +917,10 @@ FUNCTION AR_EXISTS(P_AR_IDSEQ IN CHAR )RETURN  BOOLEAN IS
 /******************************************************************************
    IDSEQ:       AR_EXISTS
    PURPOSE:    Check to see if AR exist exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/30/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1039,8 +943,6 @@ FUNCTION ORG_EXISTS(P_ORG_IDSEQ IN CHAR )RETURN  BOOLEAN IS
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/30/2001  Prerna Aggargwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1059,13 +961,10 @@ FUNCTION DES_EXISTS(P_DESIG_IDSEQ IN CHAR)RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       DES_EXISTS
    PURPOSE:    Check to see if DES exists based on DESIG_IDSEQ
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/30/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1087,13 +986,10 @@ FUNCTION DES_EXISTS(P_AC_IDSEQ IN CHAR
 /******************************************************************************
    NAME:       DES_EXISTS
    PURPOSE:    Check to see if DES exists based on ac_idseq, name, detl_name, conte_idseq
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1115,13 +1011,10 @@ FUNCTION DETL_EXISTS(P_DETL_NAME IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       DETL_EXISTS
    PURPOSE:    Check to see if Designation Type exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/30/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1140,13 +1033,10 @@ FUNCTION LAE_EXISTS(P_LAE_NAME IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       LAE_EXISTS
    PURPOSE:    Check to see if  LANGUAGE exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1166,13 +1056,10 @@ FUNCTION CSI_EXISTS(P_CSI_IDSEQ IN CHAR)RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       CSI_EXISTS
    PURPOSE:    Check to see if CSI exists based on CSI_IDSEQ
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/30/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1193,13 +1080,10 @@ FUNCTION CS_CSI_EXISTS(P_CS_IDSEQ IN CHAR
 /******************************************************************************
    NAME:       CS_CSI_IDSEQ
    PURPOSE:    Check to see if CS_CSI exists based on CS_IDSEQ and CSI_IDSEQ, P_CS_CSI_IDSEQ
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1220,13 +1104,10 @@ FUNCTION CS_CSI_EXISTS(PAR_CS_CSI_IDSEQ IN CHAR)RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       VD_EXISTS_PVS
    PURPOSE:    Check to see if CS_CSI exists based on P_CS_CSI_IDSEQ
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER:=0;
 BEGIN
@@ -1247,13 +1128,10 @@ FUNCTION AC_CSI_EXISTS(P_AC_IDSEQ IN CHAR
 /******************************************************************************
    NAME:       AC_CSI_EXISTS
    PURPOSE:    Check to see if AC_CSI exists based on AC_IDSEQ and CS_CSI_IDSEQ
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/30/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1273,13 +1151,10 @@ FUNCTION AC_CSI_EXISTS(P_AC_CSI_IDSEQ IN CHAR)RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       AC_EXISTS_CS_CSIS
    PURPOSE:    Check to see if AC_CS_CSI exists based on P_AC_CSI_IDSEQ
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/30/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1299,13 +1174,10 @@ FUNCTION SRC_EXISTS(P_NAME IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       SRC_EXISTS
    PURPOSE:    Check to see if source exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/22/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1326,13 +1198,10 @@ FUNCTION ACSRC_EXISTS(P_AC_IDSEQ IN CHAR
 /******************************************************************************
    NAME:       ACSRC_EXISTS
    PURPOSE:    Check to see if AC SRC exists based on ac_idseq,  source name
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/31/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1352,13 +1221,10 @@ FUNCTION ACSRC_EXISTS(P_ACS_IDSEQ IN CHAR)RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       ACSRC_EXISTS
    PURPOSE:    Check to see if AC SRC exists based on acs_idseq
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/31/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1377,13 +1243,10 @@ FUNCTION TSTL_EXISTS(P_TSTL_NAME IN VARCHAR2)RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       RD_EXISTS
    PURPOSE:    Check to see if TSTL exists based on tstl_name
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/31/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1406,8 +1269,6 @@ FUNCTION TS_EXISTS(P_TS_IDSEQ IN CHAR)RETURN  BOOLEAN IS
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/31/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1427,13 +1288,10 @@ FUNCTION VPSRC_EXISTS(P_VP_IDSEQ IN CHAR
 /******************************************************************************
    NAME:       VPSRC_EXISTS
    PURPOSE:    Check to see if VP SRC exists based on vp_idseq,  source name
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/31/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1454,13 +1312,10 @@ FUNCTION VPSRC_EXISTS(P_VPS_IDSEQ IN CHAR)RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       VDPVS_EXISTS
    PURPOSE:    Check to see if VP SRC exists based on vps_idseq
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        10/30/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1509,13 +1364,10 @@ FUNCTION QTL_EXISTS(P_QTL_NAME IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       QTL_EXISTS
    PURPOSE:    Check to see if QTL exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        11/09/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1536,13 +1388,10 @@ FUNCTION REL_EXISTS(P_TABLE IN VARCHAR2
    NAME:       REL_EXISTS
    PURPOSE:    Check to see if RELATIOSHIP exist exists based on the table and
                primary key
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        11/13/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_found NUMBER := 0;
 BEGIN
@@ -1599,13 +1448,10 @@ FUNCTION	REL_EXISTS(P_REL_TABLE IN VARCHAR2
    NAME:       REL_EXISTS
    PURPOSE:    Check to see if RELATIOSHIP exist exists based on the table
                and uniquekey
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        11/13/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_found NUMBER := 0;
 BEGIN
@@ -1642,13 +1488,10 @@ FUNCTION VALID_AC(P_TABLE IN VARCHAR2
 /******************************************************************************
    NAME:       VALID AC
    PURPOSE:    Check to see IF AC exists and matches the table
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        111/13/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_actl  VARCHAR2(30);
 BEGIN
@@ -1681,13 +1524,10 @@ FUNCTION RL_EXISTS(P_REL_RL_NAME IN VARCHAR2) RETURN BOOLEAN IS
 /******************************************************************************
    NAME:       RL_EXISTS
    PURPOSE:    Check to see if Relationship name exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        11/13/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1707,13 +1547,10 @@ FUNCTION CONDR_EXISTS(P_CONDR_IDSEQ IN VARCHAR2) RETURN BOOLEAN IS
 /******************************************************************************
    NAME:       CONDR_EXISTS
    PURPOSE:    Check to see if Relationship name exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    3.0        12/16/2004  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1735,13 +1572,10 @@ PROCEDURE set_ac_lvi(P_RETURN_CODE OUT VARCHAR2
 /******************************************************************************
    NAME:       set_Ac_lvi
    PURPOSE:    sets the latest version indicator to 'Yes'
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        11/15/2001  Prerna Aggarwal     1. Created this procedure
-
-
 ******************************************************************************/
 
 v_preferred_name admin_components_view.preferred_name%TYPE;
@@ -1780,13 +1614,10 @@ BEGIN
 /******************************************************************************
    NAME:       valid arc
    PURPOSE:    checks the arc between 3 idseqs
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        11/16/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 
 IF((P_ID1 IS NOT NULL AND P_ID2 IS NOT NULL AND P_ID3 IS NOT NULL) OR
@@ -1806,13 +1637,10 @@ FUNCTION RF_EXISTS(P_FEEDBACK IN VARCHAR2,
 /******************************************************************************
    NAME:       RF_EXISTS
    PURPOSE:    Check to see if Feedback exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        12/19/2001  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1832,13 +1660,10 @@ FUNCTION get_de_vd(P_DE_IDSEQ IN CHAR) RETURN CHAR IS
 /******************************************************************************
    NAME:       get_de_vd
    PURPOSE:    Returns value Domain of a Data Element
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        04/09/2002  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_vd_idseq CHAR(36);
 BEGIN
@@ -1856,13 +1681,10 @@ FUNCTION QUAL_EXISTS(P_QUALIFIER_NAME IN VARCHAR2 )RETURN  BOOLEAN IS
 /******************************************************************************
    NAME:       UOML_EXISTS
    PURPOSE:    Check to see IF uqualifier exists
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        4/08/2003  Prerna Aggarwal     1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -1884,14 +1706,12 @@ END QUAL_EXISTS;
    TYPE: 	   FUNCTION
    PURPOSE:    To find the public id of an administered component based on the
                idseq.
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        7/17/2003   W. Ver Hoef      1. Created this function.
    2.0	  7/22/2003	  W. Ver Hoef	   1. Moved it to sbrext_common_routines
    3.1	  1/19/2006	  S. Chandler	 Uses public_id in admin_components_view
-
 ******************************************************************************/
 FUNCTION get_public_id ( p_idseq VARCHAR2 ) RETURN NUMBER IS
   v_idseq  VARCHAR2(36);
@@ -2022,12 +1842,10 @@ RETURN BOOLEAN IS
    TYPE: 	   FUNCTION
    PURPOSE:    To find out if a Conceptual Domain exists based on preferred_name,
                version and conte idseq.
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    2.1		  3/08/2004	  W. Ver Hoef	   1. Created this function.
-
 ******************************************************************************/
   v_count  NUMBER;
 BEGIN
@@ -2052,12 +1870,10 @@ RETURN BOOLEAN IS
    TYPE: 	   FUNCTION
    PURPOSE:    To find out if a complex representation type exists based on
                crtl_name.
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    2.1		  3/16/2004	  W. Ver Hoef	   1. Created this function.
-
 ******************************************************************************/
   v_count  NUMBER;
 BEGIN
@@ -2080,12 +1896,10 @@ RETURN BOOLEAN IS
    TYPE: 	   FUNCTION
    PURPOSE:    To find out if a complex data element exists based on
                p_de_idseq (FK reference to Parent DE_IDSEQ).
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    2.1		  3/16/2004	  W. Ver Hoef	   1. Created this function.
-
 ******************************************************************************/
   v_count  NUMBER;
 BEGIN
@@ -2108,12 +1922,10 @@ RETURN BOOLEAN IS
    TYPE: 	   FUNCTION
    PURPOSE:    To find out if a complex de relationship exists based on
                p_cdr_idseq
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    2.1		  3/17/2004	  W. Ver Hoef	   1. Created this function.
-
 ******************************************************************************/
   v_count  NUMBER;
 BEGIN
@@ -2136,12 +1948,10 @@ RETURN VARCHAR IS
    NAME:       get_default_asl
    TYPE: 	   FUNCTION
    PURPOSE:    Returns the default workflow status for creates and versions
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    2.1		  3/19/2004	  Prerna Aggarwal   1. Created this function.
-
 ******************************************************************************/
 BEGIN
   IF p_action = 'VERSION' THEN
@@ -2164,12 +1974,10 @@ RETURN BOOLEAN IS
    TYPE: 	   FUNCTION
    PURPOSE:    To find out if a registration status exists based on
                registration_status.
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    2.1		  3/19/2004	  W. Ver Hoef	   1. Created this function.
-
 ******************************************************************************/
   v_count  NUMBER;
 BEGIN
@@ -2191,12 +1999,10 @@ FUNCTION GET_CSI_LEVEL(PRM_CS_CSI_IDSEQ IN VARCHAR2) RETURN NUMBER IS
    NAME:       GET_CSI_LEVEL
    TYPE: 	   FUNCTION
    PURPOSE:    To find  the level of a classification_scheme item within a classificarion scheme
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    3.0	    11/18/2004	  Prerna Aggarwal   1. Created this function.
-
 ******************************************************************************/
 v_level NUMBER;
 BEGIN
@@ -2279,23 +2085,19 @@ FUNCTION check_derivation_exists(p_con_array IN VARCHAR2) RETURN VARCHAR2 IS
 /******************************************************************************
    NAME:       check_derivation_exists
    PURPOSE:
-
    REVISIONS:
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        11/6/2006          1. Created this function.
    1.1        11/7/2006          1. Changed declaration of v_array to omit REPLACE function that
                                     was removing blanks from p_con_array.
-
    NOTES:
-
    Automatically available Auto Replace Keywords:
       Object Name:     check_derivation_exists
       Sysdate:         11/6/2006
       Date and Time:   11/6/2006, 11:19:02 AM, and 11/6/2006 11:19:02 AM
       Username:         (set in TOAD Options, Procedure Editor)
       Table Name:       (set in the "New PL/SQL Object" dialog)
-
 ******************************************************************************/
 
 CURSOR condr IS
@@ -3409,8 +3211,6 @@ FUNCTION PER_EXISTS(P_PER_IDSEQ IN CHAR )RETURN  BOOLEAN IS
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        12/13/2005  S. Alred        1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -3435,8 +3235,6 @@ FUNCTION COMM_TYPE_EXISTS(P_CTL_NAME IN COMm_TYPES_LOV_VIEW.CTL_NAME%TYPE )
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        12/13/2005  S. Alred        1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -3461,8 +3259,6 @@ FUNCTION ADDR_TYPE_EXISTS(P_ATL_NAME IN ADDR_TYPES_LOV_VIEW.ATL_NAME%TYPE )
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        12/14/2005  S. Alred        1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -3486,8 +3282,6 @@ FUNCTION CONTACT_ROLE_EXISTS(P_CONTACT_ROLE IN CONTACT_ROLES_EXT.CONTACT_ROLE%TY
    Ver        Date        Author           Description
    ---------  ----------  ---------------  ------------------------------------
    1.0        12/14/2005  S. Alred        1. Created this function
-
-
 ******************************************************************************/
 v_count  NUMBER;
 BEGIN
@@ -3752,14 +3546,14 @@ for c_rec in con loop
 
 if v_name is null then
   v_name := c_rec.preferred_name;
-  
+
   /* Check if Integer Concept */
-    if c_rec.preferred_name = 'C45255' then      
+    if c_rec.preferred_name = 'C45255' then
         v_name := v_name||'::'||c_rec.concept_value;
     end if;
 else
-   v_name := v_name||':'||c_rec.preferred_name;
-  
+   v_name := v_name||','||c_rec.preferred_name;
+
   /* Check if Integer Concept */
   if c_rec.preferred_name = 'C45255' then
     v_name := v_name||'::'||c_rec.concept_value;
@@ -4051,4 +3845,5 @@ END;
 
 
 END Sbrext_Common_Routines;
+
 /
