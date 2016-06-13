@@ -3,7 +3,7 @@ Connect to DB schema SBREXT as DB Admin user.
 Attention: Please run following statements as DB Admin not as SBREXT user!
 The physical directory path depends on the environment, and defined by DBAs.
 
-The specifict examples are:
+The root directories examples are:
 /backupfs/DSRDEV
 /backupfs/DSRQA
 
@@ -15,7 +15,7 @@ GRANT READ, WRITE ON DIRECTORY SBREXT_DIR  TO SBR;
  
 GRANT READ, WRITE ON DIRECTORY SBREXT_DIR  TO SBREXT;
 
-2. Take DB script from GIT hub directory:
+2. Take DB scripts from GIT hub directory:
 https://github.com/CBIIT/cadsr-db/tree/master/scripts/meta/xmlVmDesignations553
 
 3. Connect to DB schema SBREXT as SBREXT user.
