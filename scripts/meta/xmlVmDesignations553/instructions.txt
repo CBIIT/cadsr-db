@@ -1,4 +1,4 @@
-1. One time step on every DB schema
+1. One time step on every DB schema done by Admin user.
 Connect to DB schema SBREXT as DB Admin user.
 Attention: Please run following statements as DB Admin not as SBREXT user!
 CREATE or replace DIRECTORY SBREXT_DIR AS '/backupfs/DSRDEV/developer/sbrext_dir';
@@ -14,16 +14,14 @@ Run script “drop_objects.sql” in SBREXT schema. (the file is attached)
  
 Attention: Please ignore “ORA-04043: object   does not exist” if you see any error of this type.
  
-3.
-Take DB script from GIT hub:
+3. Take DB script from GIT hub directory:
+https://github.com/CBIIT/cadsr-db/tree/master/scripts/meta/xmlVmDesignations553
+
+4. Run script ”xml_vd_designations.sql” in SBREXT schema
 https://github.com/CBIIT/cadsr-db/blob/master/scripts/meta/xmlVmDesignations553/xml_vd_designations.sql
-Run script ”xml_vd_designations.sql” in SBREXT schema.
 
-4.
-Take DB script from GIT hub:
+5. Run script exec_xml_vd_designations.sql in SBREXT schema
 https://github.com/CBIIT/cadsr-db/blob/master/scripts/meta/xmlVmDesignations553/exec_xml_vd_designations.sql
-
-Run script exec_xml_vd_designations.sql
  
-5.
+6. Send result file.
 Find the file 'XMLQuery.xml' in directory 'SBREXT_DIR' and email it to  sima.pandya@nih.gov
