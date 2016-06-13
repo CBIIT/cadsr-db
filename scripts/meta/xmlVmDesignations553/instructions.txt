@@ -6,17 +6,16 @@ CREATE or replace DIRECTORY SBREXT_DIR AS '/backupfs/DSRDEV/developer/sbrext_dir
 GRANT READ, WRITE ON DIRECTORY SBREXT_DIR  TO SBR;
  
 GRANT READ, WRITE ON DIRECTORY SBREXT_DIR  TO SBREXT;
- 
-2. Connect to DB schema SBREXT as SBREXT user.
-Take DB script from GIT hub:
-https://github.com/CBIIT/cadsr-db/blob/master/scripts/meta/xmlVmDesignations553/drop_objects.sql
-Run script “drop_objects.sql” in SBREXT schema. (the file is attached)
- 
-Attention: Please ignore “ORA-04043: object   does not exist” if you see any error of this type.
- 
-3. Take DB script from GIT hub directory:
+
+2. Take DB script from GIT hub directory:
 https://github.com/CBIIT/cadsr-db/tree/master/scripts/meta/xmlVmDesignations553
 
+3. Connect to DB schema SBREXT as SBREXT user.
+Run script “drop_objects.sql” in SBREXT schema.
+https://github.com/CBIIT/cadsr-db/blob/master/scripts/meta/xmlVmDesignations553/drop_objects.sql
+
+Attention: Please ignore “ORA-04043: object   does not exist” if you see any error of this type.
+ 
 4. Run script ”xml_vd_designations.sql” in SBREXT schema
 https://github.com/CBIIT/cadsr-db/blob/master/scripts/meta/xmlVmDesignations553/xml_vd_designations.sql
 
