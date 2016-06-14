@@ -1,24 +1,25 @@
-
-create or replace TYPE          "CDEBROWSER_ALTNAME_T2"                                          as object(
+create or replace TYPE          "CDEBROWSER_ALTNAME_T2"    as object(
     "ContextName"                                        VARCHAR2(30)
     ,"ContextVersion"                                     NUMBER(4,2)
     ,"AlternateName"                                      VARCHAR2(2000)
     ,"AlternateNameType"                                  VARCHAR2(20)
     ,"Language"                                           VARCHAR2(30));
+/  
+create or replace TYPE          "CDEBROWSER_ALTNAME_LIST_T"  AS TABLE OF CDEBROWSER_ALTNAME_T2;
+/    
     
-    create or replace TYPE          "CDEBROWSER_ALTNAME_LIST_T"                                          AS TABLE OF CDEBROWSER_ALTNAME_T2;
-    
-    
-    create or replace TYPE          "DE_VALID_VALUE_DESIG_TP" as object(
+create or replace TYPE          "DE_VALID_VALUE_DESIG_TP" as object(
     ValidValue varchar2(255),
     ValueMeaning varchar2(255),
      VmPublicId Number,
     VmVersion Number(4,2),
     AltName cdebrowser_altname_list_t);
-    
-    create or replace TYPE          "DE_VALID_VALUE_DESIG_TP_LIST" AS TABLE OF DE_VALID_VALUE_DESIG_TP;
-    
-    create or replace TYPE        "CDEBROWSER_VD_T4"  AS OBJECT
+/
+
+create or replace TYPE          "DE_VALID_VALUE_DESIG_TP_LIST" AS TABLE OF DE_VALID_VALUE_DESIG_TP;
+/
+
+create or replace TYPE        "CDEBROWSER_VD_T4"  AS OBJECT
 ( "PublicId"         NUMBER,
   "PreferredName"          VARCHAR2 (30),
   "PreferredDefinition"    VARCHAR2 (2000),
@@ -27,6 +28,7 @@ create or replace TYPE          "CDEBROWSER_ALTNAME_T2"                         
   "WorkflowStatus"         VARCHAR2 (20),
    "PermissibleValues"    DE_VALID_VALUE_DESIG_TP_LIST
 );
+/
 --------------------------------------------------------
 --  DDL for table REPORTS_ERROR_LOG
 --------------------------------------------------------
@@ -35,6 +37,7 @@ create table REPORTS_ERROR_LOG(	"FILE_NAME" VARCHAR2(50 BYTE),
 	"ERROR" VARCHAR2(1100 BYTE), 
 
 	"DATE_PROCESSED" DATE );
+/
 create or replace PROCEDURE          "xml_vd_designations" as
    l_file_name      VARCHAR2 (30);
    l_file_path      VARCHAR2 (200);
