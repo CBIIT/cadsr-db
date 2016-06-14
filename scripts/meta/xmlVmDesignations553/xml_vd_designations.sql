@@ -3,9 +3,10 @@ create or replace TYPE          "CDEBROWSER_ALTNAME_T2"    as object(
     ,"ContextVersion"                                     NUMBER(4,2)
     ,"AlternateName"                                      VARCHAR2(2000)
     ,"AlternateNameType"                                  VARCHAR2(20)
-    ,"Language"                                           VARCHAR2(30));
-/  
-create or replace TYPE          "CDEBROWSER_ALTNAME_LIST_T"  AS TABLE OF CDEBROWSER_ALTNAME_T2;
+    ,"Language"                                           VARCHAR2(30))
+/
+
+create or replace TYPE          "CDEBROWSER_ALTNAME_LIST_T"  AS TABLE OF CDEBROWSER_ALTNAME_T2
 /    
     
 create or replace TYPE          "DE_VALID_VALUE_DESIG_TP" as object(
@@ -13,10 +14,10 @@ create or replace TYPE          "DE_VALID_VALUE_DESIG_TP" as object(
     ValueMeaning varchar2(255),
      VmPublicId Number,
     VmVersion Number(4,2),
-    AltName cdebrowser_altname_list_t);
+    AltName cdebrowser_altname_list_t)
 /
 
-create or replace TYPE          "DE_VALID_VALUE_DESIG_TP_LIST" AS TABLE OF DE_VALID_VALUE_DESIG_TP;
+create or replace TYPE          "DE_VALID_VALUE_DESIG_TP_LIST" AS TABLE OF DE_VALID_VALUE_DESIG_TP
 /
 
 create or replace TYPE        "CDEBROWSER_VD_T4"  AS OBJECT
@@ -27,8 +28,9 @@ create or replace TYPE        "CDEBROWSER_VD_T4"  AS OBJECT
   "Version"                NUMBER (4,2),
   "WorkflowStatus"         VARCHAR2 (20),
    "PermissibleValues"    DE_VALID_VALUE_DESIG_TP_LIST
-);
+)
 /
+
 --------------------------------------------------------
 --  DDL for table REPORTS_ERROR_LOG
 --------------------------------------------------------
@@ -36,7 +38,7 @@ create table REPORTS_ERROR_LOG(	"FILE_NAME" VARCHAR2(50 BYTE),
 
 	"ERROR" VARCHAR2(1100 BYTE), 
 
-	"DATE_PROCESSED" DATE );
+	"DATE_PROCESSED" DATE )
 /
 create or replace PROCEDURE          "xml_vd_designations" as
    l_file_name      VARCHAR2 (30);
@@ -117,4 +119,6 @@ dbms_xslprocessor.clob2file(l_xmldoc,  l_file_path, l_file_name, nls_charset_id(
         insert into REPORTS_ERROR_LOG VALUES (l_file_name,  errmsg, sysdate);
     
 END;
+/
+exec  "SBREXT"."xml_vd_designations";
 /
