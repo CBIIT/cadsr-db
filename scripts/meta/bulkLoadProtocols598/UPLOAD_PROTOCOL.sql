@@ -2,7 +2,8 @@
 --  File created - Tuesday-June-14-2016   
 --------------------------------------------------------     
 
-Alter table SBREXT.PROTOCOLS_EXT modify (origin varchaR2(500));
+Alter table SBREXT.PROTOCOLS_EXT modify (origin varchaR2(500))
+/
 
   CREATE TABLE "SBREXT"."PROTOCOLS_EXT_TEMP" 
    ("PREFERRED_NAME" VARCHAR2(300 BYTE), 
@@ -15,7 +16,8 @@ Alter table SBREXT.PROTOCOLS_EXT modify (origin varchaR2(500));
 	"PROTOCOL_ID" VARCHAR2(500 BYTE), 
 	"PHASE" VARCHAR2(300 BYTE), 
 	"LEAD_ORG" VARCHAR2(1000 BYTE)
-   );
+   )
+   /
    
    CREATE TABLE "SBREXT"."PROTOCOLS_EXT_ERROR_LOG" 
    (	"PROTOCOL_ID" VARCHAR2(500 BYTE), 
@@ -30,7 +32,8 @@ Alter table SBREXT.PROTOCOLS_EXT modify (origin varchaR2(500));
 	"TYPE" VARCHAR2(2400 BYTE),
 	"PHASE" VARCHAR2(300 BYTE), 
 	"LEAD_ORG" VARCHAR2(1000 BYTE)
-   );
+   )
+   /
 --------------------------------------------------------
 --  DDL for Procedure UPLOAD_VALIDATE_PROTOCOL
 --------------------------------------------------------
