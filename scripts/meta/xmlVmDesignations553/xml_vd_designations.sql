@@ -34,12 +34,11 @@ create or replace TYPE        "CDEBROWSER_VD_T4"  AS OBJECT
 --------------------------------------------------------
 --  DDL for table REPORTS_ERROR_LOG
 --------------------------------------------------------
-create table REPORTS_ERROR_LOG(	"FILE_NAME" VARCHAR2(50 BYTE), 
-
-	"ERROR" VARCHAR2(1100 BYTE), 
-
-	"DATE_PROCESSED" DATE )
+create table REPORTS_ERROR_LOG(	FILE_NAME VARCHAR2(50), 
+	REPORT_ERROR_TXT VARCHAR2(1100), 
+	DATE_PROCESSED DATE )
 /
+
 create or replace PROCEDURE          "xml_vd_designations" as
    l_file_name      VARCHAR2 (30);
    l_file_path      VARCHAR2 (200);
