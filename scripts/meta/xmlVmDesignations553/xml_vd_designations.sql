@@ -39,7 +39,7 @@ create table REPORTS_ERROR_LOG(	FILE_NAME VARCHAR2(50),
 	DATE_PROCESSED DATE )
 /
 
-create or replace PROCEDURE          "xml_vd_designations" as
+create or replace PROCEDURE       sbrext.xml_vd_designations as
    l_file_name      VARCHAR2 (30);
    l_file_path      VARCHAR2 (200);
    l_xmldoc          CLOB:=null;
@@ -119,5 +119,5 @@ dbms_xslprocessor.clob2file(l_xmldoc,  l_file_path, l_file_name, nls_charset_id(
     
 END;
 /
-exec  "SBREXT"."xml_vd_designations";
+exec  SBREXT.xml_vd_designations
 /
