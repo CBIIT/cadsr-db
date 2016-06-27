@@ -1,14 +1,17 @@
 --------------------------------------------------------
 --  File created - Tuesday-June-14-2016   
 --------------------------------------------------------     
-
+drop table SBREXT.PROTOCOLS_EXT_TEMP
+/
+drop table SBREXT.PROTOCOLS_EXT_ERROR_LOG
+/
 Alter table SBREXT.PROTOCOLS_EXT modify (origin varchaR2(500))
 /
 
   CREATE TABLE "SBREXT"."PROTOCOLS_EXT_TEMP" 
    ("PREFERRED_NAME" VARCHAR2(300), 
 	"LONG_NAME" VARCHAR2(255), 
-	"PREFERRED_DEFINITION" VARCHAR2(3000), 
+	"PREFERRED_DEFINITION" VARCHAR2(3000),  
 	"CONTEXT" CHAR(360), 
 	"WORKFLOW" VARCHAR2(360), 
 	"ORIGIN" VARCHAR2(1000), 
