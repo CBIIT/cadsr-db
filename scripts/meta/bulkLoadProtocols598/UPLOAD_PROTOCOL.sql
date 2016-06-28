@@ -7,8 +7,7 @@ drop table SBREXT.PROTOCOLS_EXT_ERROR_LOG
 /
 Alter table SBREXT.PROTOCOLS_EXT modify (origin varchaR2(500))
 /
-
-  CREATE TABLE "SBREXT"."PROTOCOLS_EXT_TEMP" 
+CREATE TABLE "SBREXT"."PROTOCOLS_EXT_TEMP" 
    ("PREFERRED_NAME" VARCHAR2(300), 
 	"LONG_NAME" VARCHAR2(255), 
 	"PREFERRED_DEFINITION" VARCHAR2(3000),  
@@ -19,10 +18,9 @@ Alter table SBREXT.PROTOCOLS_EXT modify (origin varchaR2(500))
 	"PROTOCOL_ID" VARCHAR2(500), 
 	"PHASE" VARCHAR2(300), 
 	"LEAD_ORG" VARCHAR2(1000)
-   )
-   /
-   
-   CREATE TABLE "SBREXT"."PROTOCOLS_EXT_ERROR_LOG" 
+)
+/
+CREATE TABLE "SBREXT"."PROTOCOLS_EXT_ERROR_LOG" 
    (	"PROTOCOL_ID" VARCHAR2(500), 
 	"INSERT_DATE" DATE, 
 	"ERROR_TEXT" VARCHAR2(1000), 
@@ -35,8 +33,8 @@ Alter table SBREXT.PROTOCOLS_EXT modify (origin varchaR2(500))
 	"TYPE" VARCHAR2(2400),
 	"PHASE" VARCHAR2(300), 
 	"LEAD_ORG" VARCHAR2(1000)
-   )
-   /
+)
+/
 --------------------------------------------------------
 --  DDL for Procedure UPLOAD_VALIDATE_PROTOCOL
 --------------------------------------------------------
