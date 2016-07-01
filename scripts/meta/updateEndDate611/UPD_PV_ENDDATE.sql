@@ -9,7 +9,7 @@ begin
             (   SELECT pvs.PV_IDSEQ
                 FROM VD_PVS pvs,VALUE_DOMAINS vd
                 WHERE pvs.VD_IDSEQ = vd.VD_IDSEQ
-                and VD_ID=p_vd_ID
+                and VD_ID = p_vd_ID
                 AND VERSION = p_ver);
                             
         UPDATE SBR.vd_pvs  pvs
@@ -17,23 +17,23 @@ begin
         WHERE VD_IDSEQ in ( 
                 select vd_idseq 
                 from value_domains 
-                where VD_ID=p_vd_ID
+                where VD_ID = p_vd_ID
                 AND VERSION = p_ver)
             and PV_IDSEQ in 
-                (select PV.PV_IDSEQ from permissible_values pv,vd_pvs pvs, value_domains vd
-                where  PV.PV_IDSEQ =pvs.PV_IDSEQ
-                AND  pvs.vd_idseq= VD.VD_IDSEQ 
-                AND VD.vd_id =p_vd_ID and VD.VERSION = p_ver
-                and pv.value = p_value );
+                (select PV.PV_IDSEQ from permissible_values pv,vd_pvs pvs1, value_domains vd
+                where  PV.PV_IDSEQ = pvs1.PV_IDSEQ
+                AND  pvs1.vd_idseq = VD.VD_IDSEQ 
+                AND VD.vd_id = p_vd_ID and VD.VERSION = p_ver
+                and pv.value = p_value);
    commit;    
  EXCEPTION
 
     WHEN OTHERS THEN
     rollback;
-     errmsg :='ERROR when update END_DATE for vd_ID='||p_vd_ID||', ver='||p_ver||' ,PV value='||p_value;
-     errmsg :=  substr(trim(errmsg||':'|| SQLERRM),1,1900);
+     errmsg := 'ERROR when update END_DATE for vd_ID='||p_vd_ID||', ver='||p_ver||' ,PV value='||p_value;
+     errmsg := substr(trim(errmsg||':'|| SQLERRM),1,1900);
      dbms_output.put_line(errmsg);
-    insert into PERMISSIBLE_VALUES_ERR  (COMMENTS,DATE_PROCESSED)VALUES ( errmsg, sysdate);
+    insert into PERMISSIBLE_VALUES_ERR (COMMENTS,DATE_PROCESSED) VALUES (errmsg, sysdate);
 
  commit; 
 end;
