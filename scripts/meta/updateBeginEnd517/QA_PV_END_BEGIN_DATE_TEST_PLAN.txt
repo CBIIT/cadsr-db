@@ -1,0 +1,12 @@
+QA test plan steps: 
+ 
+ 1.Run the script NEW_PV_UPDATE.sql in SBR schema.
+ 
+ 2.Open the attached control file TMEP_PV.ctl.
+ 
+ 3.Replace  DBA_PATH to the location path where you will place the attached BiomarkerNewContentForLoader-Stage-FinalV2-PVs-unique file.
+ 
+ 4.Load data via SQL LOADER using control file TMEP_PV.ctl
+ 
+ 5.Execute SBR.upd_pv_new.
+ 
