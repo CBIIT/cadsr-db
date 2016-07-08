@@ -1,6 +1,7 @@
+delete from sbr.temp_permissible_values
+/
 alter table temp_permissible_values add(begin_date date,end_date date)
 /
-
 create or replace procedure     upd_pv_new
 as
 cursor c_upd_pv is select * from temp_permissible_values;
