@@ -1,0 +1,90 @@
+RedCAP transformation steps:
+
+1.place  all  instrumentPhenix#.csv files in directory 'C:\meta\REDCAP\'
+2.create table "SBREXT"."REDCAP_PROTOCOL"
+CREATE TABLE SBREXT.REDCAP_PROTOCOL
+(
+  VARIABLE_FIELD_NAME  VARCHAR2(400 ),
+  FORM_NAME            VARCHAR2(400 ),
+  SECTION              VARCHAR2(400 ),
+  FIELD_TYPE           VARCHAR2(40 ),
+  FIELD_LABEL          VARCHAR2(4000 ),
+  CHOICES              VARCHAR2(200 ),
+  FIELD_NOTE           VARCHAR2(40 ),
+  QUESTION             NUMBER
+)
+3.create contrl file LOAD_REDCAP.ctl to load data from all instrumentPhenix#.csv to "SBREXT"."REDCAP_PROTOCOL"
+OPTIONS ( ERRORS= 10000, SKIP=1)
+LOAD DATA
+INFILE 'C:\meta\REDCAP\instrumentPhenix1.csv"str '\r'" 
+INFILE 'C:\meta\REDCAP\instrumentPhenix2.csv' "str '\r'" 
+.......................
+INFILE 'C:\meta\REDCAP\instrumentPhenix50.csv' "str '\r'" 
+BADFILE 'C:\meta\RedCap\instrument3.bad'
+DISCARDFILE 'C:\meta\RedCap\instrument3.dsc'
+INTO TABLE "SBREXT"."REDCAP_PROTOCOL"
+append
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+TRAILING NULLCOLS   (              
+ VARIABLE_FIELD_NAME   CHAR(400) ,
+    FORM_NAME CHAR(400), 
+    SECTION CHAR(40), 
+    FIELD_TYPE CHAR(40), 
+    FIELD_LABEL CHAR(4000) ,
+    CHOICES CHAR(200), 
+    FIELD_NOTE CHAR(40),
+QUESTION SEQUENCE(0,1) )
+4. load data to "SBREXT"."REDCAP_PROTOCOL" via SQL LOADER using  the contrl file LOAD_REDCAP.ctl
+5. Update column  SBREXT"."REDCAPPROTOCOL"  QUESTION for each protocol starting from 0
+
+merge into REDCAP_PROTOCOL t1
+using (select min(question)question,field_note 
+from REDCAP_PROTOCOL group by field_note ) t2
+on (t1.field_note = t2.field_note)
+when matched then 
+update set t1.question = t1.question-t2.question
+
+create table SBREXT.REDCAP_UNDEFINED_CODE to move string value column CHOICES to 
+multiple records.
+CREATE TABLE SBREXT.REDCAP_UNDEFINED_CODE
+( PROTOCOL             VARCHAR2(50)  ,
+  QUESTION            NUMBER,
+  CODE_NAME        VARCHAR2(30 )     ,
+  CODE_VALUE            VARCHAR2(100 BYTE),
+  CODE_ORDER NUMBER    
+)
+
+populate table with SQL statment
+
+INSERT INTO  SBREXT.REDCAP_UNDEFINED_CODE
+( PROTOCOL             ,
+  QUESTION           ,
+  CODE_name           ,
+  CODE_VALUE            ,
+  CODE_ORDER)
+  select 
+  PROTOCOL,
+  question,
+  REGEXP_SUBSTR(myelement, '[^,]+', 1, 1)    ,
+REGEXP_SUBSTR(myelement, '[^,]+', 1, 2)   ,
+case 
+when length(REGEXP_SUBSTR(myelement, '[^,]+', 1, 1))<15 then 0 
+when length(REGEXP_SUBSTR(myelement, '[^,]+', 1, 1))>15 then to_number(substr(REGEXP_SUBSTR(trim(myelement), '[^,]+', 1, 1),16))
+ end 
+ from 
+(SELECT distinct question,substr(trim(FIELD_NOTE),-8) PROTOCOL
+       ,regexp_substr(CHOICES,'[^|]+', 1, LEVEL) AS myelement
+   FROM SBREXT.REDCAPPROTOCOL_TEMP1 where CHOICES is not null
+CONNECT BY regexp_substr(CHOICES, '[^|]+', 1, LEVEL) IS NOT NULL)
+order by 1,2,5;
+
+
+6.create XML query based on protocol value.
+
+7.compare the reasult with latest ....GeneratedFormFinalFormCartV2.xml
+
+
+
+
+
