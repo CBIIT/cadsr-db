@@ -1,6 +1,10 @@
 DBA steps: 
  1.Run the script NEW_PV_UPDATE.sql in SBR schema.
  
- 2.Open the attached control file TMEP_PV.ctl.
+ 2.Open the attached control file TMEP_PV.CTL.
  
- 3.Replace  DBA_PATH to the location path where you will place the attached BiomarkerNewContentForLoader-Stage-FinalV2-PVs-unique file.
+ 3.Replace  DBA_PATH to the location path where you will place 
+   the attached BiomarkerNewContentForLoader-Stage-FinalV2-PVs-unique.csv file
+
+ 4.The control file TMP_PV.CTL has to replace existing one since it was modified to load END and BEGIN date 
+   to TEMP_PERMISSIBLE_VALUES table. 
