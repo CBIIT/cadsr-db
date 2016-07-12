@@ -79,10 +79,71 @@ when length(REGEXP_SUBSTR(myelement, '[^,]+', 1, 1))>15 then to_number(substr(RE
 CONNECT BY regexp_substr(CHOICES, '[^|]+', 1, LEVEL) IS NOT NULL)
 order by 1,2,5;
 
+6.create data types for XML query
+CREATE OR REPLACE TYPE SBREXT."REDCAP_validValue"    as object(
+    "displayOrder"                                     NUMBER
+    ,"value"                                      VARCHAR2(200)
+    ,"meaningText"                                  VARCHAR2(200)  )
+  ;
+  CREATE OR REPLACE TYPE  SBREXT.REDCAP_validValue_LIST_T   AS TABLE OF SBREXT."REDCAP_validValue" ;
+  
+   CREATE OR REPLACE TYPE SBREXT."REDCAP_QUESTION"    as object(
+    "displayOrder"                                     NUMBER
+    ,"questionText"                                      VARCHAR2(2000)
+    ,"validValue"              REDCAP_validValue_LIST_T 
+    )
+  ;
 
-6.create XML query based on protocol value.
+  CREATE OR REPLACE TYPE SBREXT."REDCAP_QUESTION_LIST_T"  AS TABLE OF SBREXT."REDCAP_QUESTION" ;
 
-7.compare the reasult with latest ....GeneratedFormFinalFormCartV2.xml
+CREATE OR REPLACE TYPE SBREXT."REDCAP_FORM"    as object(
+    "collectionName"   VARCHAR2(200)
+    ,"collectionDescription"  VARCHAR2(200)
+    ,"context"                                    VARCHAR2(40)
+    ,"createdBy"                                      VARCHAR2(100)
+    ,"changeNote"                              VARCHAR2(40)
+    ,"preferredDefinition"                      VARCHAR2(2000)
+    ,"type"              VARCHAR2(5) 
+    ,"module"                                   VARCHAR2(100)
+    ,"Question"   REDCAP_QUESTION_LIST_T
+       )
+  ;
+7.create XML query based on protocol value.
+
+SELECT sys_xmlgen(REDCAP_FORM (
+'PhenX Protocols - '||p.preferred_name,
+'Load PhenX '||p.preferred_name,
+'Phenx' ,
+ created_By,
+'Uploaded via FormLoader' ,
+ p.preferred_definition,
+'CFR',             
+ form_name ,
+   CAST (
+     MULTISET (
+         SELECT question,
+          field_label,
+             CAST (
+               MULTISET (
+                   SELECT     
+                   CODE_ORDER, 
+                   CODE_name    , 
+                    CODE_VALUE   
+                  from  REDCAP_UNDEFINED_CODE u
+               where u.question=rp.question
+               and protocol=p.preferred_name
+              ) AS REDCAP_validValue_LIST_T)      "ValueNameList"                      
+   from REDCAP_PROTOCOL rp
+   where rp.Field_Note=r.Field_Note)as REDCAP_QUESTION_LIST_T  ) )).getClobVal() as XML_QUERY
+from
+(select distinct form_name,field_note from REDCAP_PROTOCOL) r,
+protocols_ext p
+where (p.preferred_name=substr(trim(field_note),-8) or p.preferred_name=trim(field_note));
+
+
+8.compare the reasult with latest ....GeneratedFormFinalFormCartV2.xml
+
+9.create SP to wright the xml files to directory 'SBREXT_DIR'
 
 
 
