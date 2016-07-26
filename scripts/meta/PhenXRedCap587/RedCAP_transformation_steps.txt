@@ -1,0 +1,371 @@
+RedCAP transformation steps:
+
+1.place  all  instrumentPhenix#.csv files in directory 'C:\meta\REDCAP\'
+2.create table CREATE TABLE SBREXT.REDCAPPROTOCOL_TEMP
+(
+  VARIABLE_FIELD_NAME  VARCHAR2(400 BYTE),
+  FORM_NAME            VARCHAR2(400 BYTE),
+  SECTION              VARCHAR2(3000 BYTE),
+  FIELD_TYPE           VARCHAR2(100 BYTE),
+  FIELD_LABEL         CLOB,
+  CHOICES              VARCHAR2(1499 BYTE),
+  FIELD_NOTE           VARCHAR2(100 BYTE),
+  TEXT_VALID_TYPE      VARCHAR2(100 BYTE),
+  TEXT_VALID_MIN       VARCHAR2(100 BYTE),
+  TEXT_VALID_MAX       VARCHAR2(100 BYTE),
+  IDENTIFIER           VARCHAR2(100 BYTE),
+  LOGIC                VARCHAR2(500 BYTE),
+  REQUIRED             VARCHAR2(50 BYTE),
+  CUSTOM_ALIGNMENT     VARCHAR2(100 BYTE),
+  Q_NMB_SERV           VARCHAR2(100 BYTE),
+  MATRIX_GROUP_NAME    VARCHAR2(100 BYTE),
+  MATRIX_RANK          VARCHAR2(100 BYTE),
+  QUESTION             NUMBER
+)
+3.create table "SBREXT"."REDCAP_PROTOCOL"
+CREATE TABLE SBREXT.REDCAP_PROTOCOL_new
+(
+  VARIABLE_FIELD_NAME  VARCHAR2(400 BYTE),
+  FORM_NAME            VARCHAR2(400 BYTE),
+  SECTION              VARCHAR2(1500 BYTE),
+  SECTION_SEQ  NUMBER,
+  SECTION_Q_SEQ  NUMBER,
+  FIELD_TYPE           VARCHAR2(40 BYTE),
+  FIELD_LABEL          CLOB,
+  CHOICES              VARCHAR2(200 BYTE),
+  FIELD_NOTE           VARCHAR2(40 BYTE),
+  QUESTION             NUMBER,
+  TEXT_VALID_TYPE      VARCHAR2(30 BYTE),
+  TEXT_VALID_MIN       NUMBER(6,2),
+  TEXT_VALID_MAX       NUMBER(6,2),
+  IDENTIFIER           VARCHAR2(100 BYTE),
+  LOGIC                VARCHAR2(250 BYTE),
+  REQUIRED             VARCHAR2(5 BYTE),
+  CUSTOM_ALIGNMENT     VARCHAR2(100 BYTE),
+  MATRIX_GROUP_NAME    VARCHAR2(100 BYTE),
+  MATRIX_RANK          NUMBER(6,2),
+  Q_NMB_SERV    number,
+  PROTOCOL  VARCHAR2(40 BYTE)
+)
+4.create contrl file LOAD_REDCAP.ctl to load data from all instrumentPhenix#.csv to "SBREXT"."REDCAP_PROTOCOL"
+
+OPTIONS (rows = 10000, readsize = 20489599, ERRORS= 10000, SKIP=1, parallel = true) 
+LOAD DATA
+INFILE 'C:\META\REDCAP\Phenx\PX0171001.csv' "str '\r'" 
+INFILE 'C:\META\REDCAP\Phenx\PX020302.csv' "str '\r'" 
+INTO TABLE "SBREXT"."REDCAPPROTOCOL_TEMP"
+append
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+TRAILING NULLCOLS   
+(              
+  VARIABLE_FIELD_NAME   CHAR(400) ,
+    FORM_NAME CHAR(400), 
+    SECTION CHAR(1500) , 
+    FIELD_TYPE CHAR(100), 
+    FIELD_LABEL CHAR(8500) ,
+    CHOICES CHAR(1500), 
+    FIELD_NOTE CHAR(100),
+TEXT_VALID_TYPE     ,
+  TEXT_VALID_MIN       ,
+  TEXT_VALID_MAX       ,
+  IDENTIFIER           ,
+  LOGIC           CHAR(500)    ,
+  REQUIRED             ,
+  CUSTOM_ALIGNMENT     ,
+  Q_NMB_SERV,
+  MATRIX_GROUP_NAME    ,
+  MATRIX_RANK,
+QUESTION SEQUENCE(0,1) )
+
+
+5. load data to "SBREXT"."REDCAPPROTOCOL_TEMP" via SQL LOADER using  the contrl file LOAD_REDCAP.ctl
+
+6.delete from REDCAPPROTOCOL_TEMP where Form_Name='Form Name' or Form_Name is  null
+
+insert into SBREXT.REDCAP_PROTOCOL_NEW
+(
+  VARIABLE_FIELD_NAME ,
+  FORM_NAME            ,
+  SECTION              , 
+  FIELD_TYPE          ,
+  FIELD_LABEL         ,
+  CHOICES             ,
+  FIELD_NOTE          ,
+  QUESTION           ,
+  TEXT_VALID_TYPE     ,
+  IDENTIFIER          ,
+  LOGIC               ,
+  REQUIRED            ,
+  CUSTOM_ALIGNMENT     ,
+  MATRIX_GROUP_NAME   , 
+  PROTOCOL          
+)
+select 
+VARIABLE_FIELD_NAME ,
+  FORM_NAME            ,
+  SECTION              ,
+  FIELD_TYPE          ,
+  FIELD_LABEL         ,
+  CHOICES             ,
+  FIELD_NOTE          ,
+  QUESTION           ,
+  TEXT_VALID_TYPE     ,
+  IDENTIFIER          ,
+  LOGIC               ,
+  REQUIRED            ,
+  CUSTOM_ALIGNMENT     ,
+  MATRIX_GROUP_NAME   ,
+   SUBSTR(TRIM(FIELD_NOTE),-8)  
+from REDCAPPROTOCOL_TEMP
+
+
+7. Update column  SBREXT"."REDCAPPROTOCOL_TEMP"  QUESTION for each protocol starting from 0
+
+merge into REDCAP_PROTOCOL_NEW t1
+using (select min(question)question,PROTOCOL
+from REDCAP_PROTOCOL_NEW group by PROTOCOL ) t2
+on (t1.PROTOCOL = t2.PROTOCOL)
+when matched then 
+update set t1.question = t1.question-t2.question
+
+8.create table SBREXT.REDCAP_UNDEFINED_CODE to move string value column CHOICES to 
+multiple records for each '||' .
+CREATE TABLE SBREXT.REDCAP_VALUE_CODE
+( PROTOCOL             VARCHAR2(50)  ,
+FORM_NAME   VARCHAR2(100)  ,
+  QUESTION            NUMBER,
+  VAL_NAME        VARCHAR2(30 )     ,
+  VAL_VALUE            VARCHAR2(100 BYTE),
+  VAL_ORDER NUMBER   , 
+  ELM_ORDER  VARCHAR2(50)  ,
+  PIPE_NUM NUMBER)
+
+
+9.populate table with SQL statment
+
+INSERT INTO  SBREXT.REDCAP_VALUE_CODE
+( PROTOCOL             ,
+FORM_NAME ,
+  QUESTION           ,
+  VAL_name           ,
+  VAL_VALUE            ,
+  VAL_ORDER,
+  PIPE_NUM,
+  ELM_ORDER)
+  select 
+  PROTOCOL,
+  FORM_NAME ,
+  question,
+  substr(myelement,1,instr(myelement,',')-1) ,--VAL_NAME substring CHOICES before first ',' and ||
+  substr(myelement,instr(myelement,',')+1),--VAL_NAME substring CHOICES after first ',' and  before||
+  ELM_ORDER-1,
+  PIPE_NUM, --Pipe position in string CHOICES
+  myelement ---substring CHOICES before || 
+ from 
+(SELECT distinct PROTOCOL,FORM_NAME,question       ,regexp_substr(CHOICES,'[^|]+', 1, LEVEL) AS myelement,REGEXP_INSTR(CHOICES,'[^|]+', 1, LEVEL) AS PIPE_NUM,LEVEL ELM_ORDER
+   FROM SBREXT.REDCAP_PROTOCOL_NEW where CHOICES is not null --and question>3
+CONNECT BY regexp_substr(CHOICES, '[^|]+', 1, LEVEL) IS NOT NULL)
+order by 1,2,3,ELM_ORDER ;
+
+9.populate section number and order in SBREXT.REDCAP_PROTOCOL_NEW and TABLE SBREXT.REDCAP_SECTION if section is not null
+
+a.select distinct protocol  FROM SBREXT.REDCAP_PROTOCOL_NEW where NVL(SECTION,'A')<>'A'
+
+create view REDCAP_SECTION_PROTOCOL as
+select distinct protocol PROTOCOL FROM SBREXT.REDCAP_PROTOCOL_NEW where NVL(SECTION,'A')<>'A' 
+
+
+b.create TABLE SBREXT.REDCAP_SECTION
+CREATE TABLE SBREXT.REDCAP_SECTION(
+  PROTOCOL  VARCHAR2(40 BYTE),
+  FORM_NAME            VARCHAR2(400 BYTE),
+  SECTION              VARCHAR2(1500 BYTE),
+  SECTION_SEQ  NUMBER,
+  QUESTION NUMBER)
+
+  
+  
+CREATE OR REPLACE PROCEDURE redCapSaction_populate 
+AS
+
+CURSOR CUR_RC IS select r.protocol,FORM_NAME,QUESTION,SECTION, SECTION_SEQ 
+FROM SBREXT.REDCAP_PROTOCOL_NEW r,
+REDCAP_SECTION_PROTOCOL v
+where r.protocol=v.PROTOCOL
+and NVL(SECTION,'A')<>'A'
+order by r.protocol,FORM_NAME,QUESTION;
+ errmsg VARCHAR2(2000):='';
+ V_sec_N number;
+ V_sec_QN number;
+ 
+BEGIN
+for i in CUR_RC loop
+BEGIN
+  IF i.QUESTION=0 then 
+      V_sec_N :=0;  
+  ELSE
+  V_sec_N :=V_sec_N+1;
+  END IF;
+ 
+  UPDATE REDCAP_PROTOCOL_NEW SET SECTION_SEQ=V_sec_N , SECTION_Q_SEQ=0
+   WHERE protocol=i.protocol
+   and FORM_NAME=i.FORM_NAME
+   and QUESTION =i.QUESTION
+   and SECTION=i.SECTION;
+  
+ 
+  EXCEPTION
+    WHEN OTHERS THEN
+        errmsg := SQLERRM;
+        dbms_output.put_line('errmsg3 - '||errmsg);
+                 -- insert into META_CONCEPTS_EXT_ERROR_LOG VALUES (errmsg,sysdate,i.PREFERRED_NAME,i.LONG_NAME ,i.PREFERRED_DEFINITION);
+ end;   
+  end loop;
+
+commit;
+
+END ;
+
+d.populate SBREXT.REDCAP_SECTION
+
+INSERT INTO SBREXT.REDCAP_SECTION
+(
+  PROTOCOL ,
+  FORM_NAME           ,
+  SECTION           ,
+  SECTION_SEQ  ,
+  QUESTION )
+  select
+  r.PROTOCOL ,
+  FORM_NAME           ,
+  SECTION           ,
+  SECTION_SEQ  ,
+  QUESTION
+
+FROM SBREXT.REDCAP_PROTOCOL_NEW r,
+REDCAP_SECTION_PROTOCOL v
+where r.protocol=v.PROTOCOL
+and NVL(SECTION,'A')<>'A'
+order by r.protocol,FORM_NAME,QUESTION;
+
+10.populate section number and section question order in SBREXT.REDCAP_PROTOCOL_NEW  if section is null
+CREATE OR REPLACE PROCEDURE redCapSact_Quest_populate 
+AS
+
+
+CURSOR CUR_RC IS select r.protocol,FORM_NAME,QUESTION,SECTION, SECTION_SEQ ,SECTION_Q_SEQ
+FROM SBREXT.REDCAP_PROTOCOL_NEW r,
+REDCAP_SECTION_PROTOCOL v
+where r.protocol=v.PROTOCOL
+order by r.protocol,FORM_NAME,QUESTION;
+ errmsg VARCHAR2(2000):='';
+ V_sec_N number;
+ V_sec_QN number;
+ 
+BEGIN
+for i in CUR_RC loop
+BEGIN
+  IF i.SECTION_SEQ is not null then 
+      V_sec_N :=i.SECTION_SEQ;
+      V_sec_QN :=i.SECTION_Q_SEQ; 
+      
+        dbms_output.put_line('output1 - V_sec_N='||V_sec_N||'  V_sec_QN='||V_sec_QN);
+  ELSE
+   select SECTION_SEQ,SECTION_Q_SEQ+1 into V_sec_N,V_sec_QN 
+    FROM SBREXT.REDCAP_PROTOCOL_NEW 
+    where   QUESTION =i.QUESTION-1
+    and protocol=i.protocol
+   and FORM_NAME=i.FORM_NAME;
+   
+     dbms_output.put_line('output2 - V_sec_N='||V_sec_N||'  V_sec_QN='||V_sec_QN);
+  END IF;
+  
+  /**/  
+  UPDATE REDCAP_PROTOCOL_NEW SET SECTION_SEQ=V_sec_N , SECTION_Q_SEQ= V_sec_QN
+   WHERE protocol=i.protocol
+   and FORM_NAME=i.FORM_NAME
+   and QUESTION =i.QUESTION;
+  
+ 
+  EXCEPTION
+    WHEN OTHERS THEN
+        errmsg := SQLERRM;
+        dbms_output.put_line('errmsg3 - '||errmsg);
+                 -- insert into META_CONCEPTS_EXT_ERROR_LOG VALUES (errmsg,sysdate,i.PREFERRED_NAME,i.LONG_NAME ,i.PREFERRED_DEFINITION);
+ end;   
+  end loop;
+
+commit;
+
+END ;
+
+11.create data types for XML query
+CREATE OR REPLACE TYPE SBREXT."REDCAP_validValue"    as object(
+    "displayOrder"                                     NUMBER
+    ,"value"                                      VARCHAR2(200)
+    ,"meaningText"                                  VARCHAR2(200)  )
+  ;
+  CREATE OR REPLACE TYPE  SBREXT.REDCAP_validValue_LIST_T   AS TABLE OF SBREXT."REDCAP_validValue" ;
+  
+   CREATE OR REPLACE TYPE SBREXT."REDCAP_QUESTION"    as object(
+    "displayOrder"                                     NUMBER
+    ,"questionText"                                      VARCHAR2(2000)
+    ,"validValue"              REDCAP_validValue_LIST_T 
+    )
+  ;
+
+  CREATE OR REPLACE TYPE SBREXT."REDCAP_QUESTION_LIST_T"  AS TABLE OF SBREXT."REDCAP_QUESTION" ;
+
+CREATE OR REPLACE TYPE SBREXT."REDCAP_FORM"    as object(
+    "collectionName"   VARCHAR2(200)
+    ,"collectionDescription"  VARCHAR2(200)
+    ,"context"                                    VARCHAR2(40)
+    ,"createdBy"                                      VARCHAR2(100)
+    ,"changeNote"                              VARCHAR2(40)
+    ,"preferredDefinition"                      VARCHAR2(2000)
+    ,"type"              VARCHAR2(5) 
+    ,"module"                                   VARCHAR2(100)
+    ,"Question"   REDCAP_QUESTION_LIST_T
+       )  ;
+10.create XML query based on protocol value.
+
+SELECT sys_xmlgen(REDCAP_FORM (
+'PhenX Protocols - '||p.preferred_name,
+'Load PhenX '||p.preferred_name,
+'Phenx' ,
+ created_By,
+'Uploaded via FormLoader' ,
+ p.preferred_definition,
+'CFR',             
+ form_name ,
+   CAST (
+     MULTISET (
+         SELECT question,
+          field_label,
+             CAST (
+               MULTISET (
+                   SELECT     
+                   CODE_ORDER, 
+                   CODE_name    , 
+                    CODE_VALUE   
+                  from  REDCAP_UNDEFINED_CODE u
+               where u.question=rp.question
+               and protocol=p.preferred_name
+              ) AS REDCAP_validValue_LIST_T)      "ValueNameList"                      
+   from REDCAP_PROTOCOL rp
+   where rp.Field_Note=r.Field_Note)as REDCAP_QUESTION_LIST_T  ) )).getClobVal() as XML_QUERY
+from
+(select distinct form_name,field_note from REDCAP_PROTOCOL) r,
+protocols_ext p
+where (p.preferred_name=substr(trim(field_note),-8) or p.preferred_name=trim(field_note));
+
+
+8.compare the result with latest ....GeneratedFormFinalFormCartV2.xml
+
+9.create SP to wright the xml files to directory 'SBREXT_DIR'
+
+
+
+
+
