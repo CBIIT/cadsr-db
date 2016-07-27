@@ -301,66 +301,70 @@ commit;
 END ;
 
 11.create data types for XML query
-CREATE OR REPLACE TYPE SBREXT."REDCAP_validValue"    as object(
+CREATE OR REPLACE TYPE SBREXT."REDCAP_QUESTION"    as object(
     "displayOrder"                                     NUMBER
-    ,"value"                                      VARCHAR2(200)
-    ,"meaningText"                                  VARCHAR2(200)  )
-  ;
-  CREATE OR REPLACE TYPE  SBREXT.REDCAP_validValue_LIST_T   AS TABLE OF SBREXT."REDCAP_validValue" ;
-  
-   CREATE OR REPLACE TYPE SBREXT."REDCAP_QUESTION"    as object(
-    "displayOrder"                                     NUMBER
-    ,"questionText"                                      VARCHAR2(2000)
-    ,"validValue"              REDCAP_validValue_LIST_T 
+    ,"questionText"                                     clob
+     ,"validValue"              REDCAP_validValue_LIST_T 
     )
   ;
+  
 
-  CREATE OR REPLACE TYPE SBREXT."REDCAP_QUESTION_LIST_T"  AS TABLE OF SBREXT."REDCAP_QUESTION" ;
-
+  ;
+CREATE OR REPLACE TYPE SBREXT."REDCAP_QUESTION_LIST_T"  AS TABLE OF SBREXT."REDCAP_QUESTION" ;
 CREATE OR REPLACE TYPE SBREXT."REDCAP_FORM"    as object(
-    "collectionName"   VARCHAR2(200)
-    ,"collectionDescription"  VARCHAR2(200)
-    ,"context"                                    VARCHAR2(40)
+    
+    "context"                                    VARCHAR2(40)
     ,"createdBy"                                      VARCHAR2(100)
+    ,"dateCreated"                          date
+    ,"longName"  VARCHAR2(100)   
     ,"changeNote"                              VARCHAR2(40)
     ,"preferredDefinition"                      VARCHAR2(2000)
+    ,"cadsrRAI"             VARCHAR2(40)
+    ,"publicid"  NUMBER
+    ,"version"  NUMBER
     ,"type"              VARCHAR2(5) 
-    ,"module"                                   VARCHAR2(100)
-    ,"Question"   REDCAP_QUESTION_LIST_T
-       )  ;
+    ,"headerInstruction"       VARCHAR2(100)                          
+    ,"footerInstruction"  VARCHAR2(100)
+    ,"module"  VARCHAR2(500)
+     ,"question" REDCAP_QUESTION_LIST_T )  ;
+	 
+	 
 10.create XML query based on protocol value.
-
-SELECT sys_xmlgen(REDCAP_FORM (
-'PhenX Protocols - '||p.preferred_name,
-'Load PhenX '||p.preferred_name,
+SELECT 
+'PhenX Protocols - '||p.preferred_name "collectionName",
+'Load PhenX '||p.preferred_name "collectionDescription",
+REDCAP_FORM (
 'Phenx' ,
  created_By,
+ sysdate,
+ form_name ,
 'Uploaded via FormLoader' ,
  p.preferred_definition,
+ '2.16.840.1.113883.3.26.2',
+ null,
+ null,
 'CFR',             
- form_name ,
-   CAST (
-     MULTISET (
-         SELECT question,
-          field_label,
-             CAST (
-               MULTISET (
-                   SELECT     
-                   CODE_ORDER, 
-                   CODE_name    , 
-                    CODE_VALUE   
-                  from  REDCAP_UNDEFINED_CODE u
-               where u.question=rp.question
-               and protocol=p.preferred_name
-              ) AS REDCAP_validValue_LIST_T)      "ValueNameList"                      
-   from REDCAP_PROTOCOL rp
-   where rp.Field_Note=r.Field_Note)as REDCAP_QUESTION_LIST_T  ) )).getClobVal() as XML_QUERY
-from
-(select distinct form_name,field_note from REDCAP_PROTOCOL) r,
+ null,
+ null
+ ,''
+ ,  CAST(
+         MULTISET(  SELECT   q.question,
+                              q.FIELD_LABEL ,
+                               CAST(
+         MULTISET(  SELECT vc.val_order,
+                           vc.val_name,
+                           vc.val_value from SBREXT.REDCAP_VALUE_CODE vc
+            where vc.protocol(+) =r.protocol
+            and vc.question(+)=q.question
+            and vc.form_name =r.form_name)AS REDCAP_validValue_LIST_T) as "validValue"
+                                FROM     SBREXT.REDCAP_PROTOCOL_NEW q
+                                 WHERE   q.protocol =r.protocol
+                         ORDER BY   q.question )AS REDCAP_QUESTION_LIST_T
+                  )               ) as "Form"
+ from
+(select distinct form_name,protocol  from REDCAP_PROTOCOL_NEW where  protocol like 'PX020302%' ) r,
 protocols_ext p
-where (p.preferred_name=substr(trim(field_note),-8) or p.preferred_name=trim(field_note));
-
-
+where p.preferred_name=r.protocol ;
 8.compare the result with latest ....GeneratedFormFinalFormCartV2.xml
 
 9.create SP to wright the xml files to directory 'SBREXT_DIR'
