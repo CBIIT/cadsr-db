@@ -1,0 +1,24 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?
+neck_circumference_desc,phenx_neck_circumference,,descriptive,"The following protocol is part of an examination study.
+
+
+1.Participant stands erect, arms hanging loosely at sides, weight equally distributed on both feet, head positioned in the Frankfort horizontal plane position (see Exhibit 1). 
+
+2.Standing to face the left side of the participant, identify the thyroid cartilage by gentle palpation of the neck. Gently place your left index and second fingers on the front of the neck and ask the participant to swallow to help find the correct spot. You should feel a slight depression. 
+
+3.Place the superior border of the anthropometric tape just inferior to the laryngeal prominence.
+
+4.Apply the tape snugly, but not tightly, perpendicular to the long axis of the neck, which is not necessarily in the horizontal plane but approximately a 90-degree angle to the long axis.
+
+5.Record the neck circumference to the nearest 1/4 inch (or 0.1 cm), rounding down.
+
+6.The pressure on the tape should be the minimum required to maintain skin contact.",,PX021201,,,,,,,,,,
+neck_circum_exhibit_1,phenx_neck_circumference,,descriptive,Neck Circumference - image,,PX021201,,,,,,,,,,
+neck_circum_cm,phenx_neck_circumference,,yesno,Neck circumference is measured in centimeter?,,PX021201,,,,,,,,,,
+neck_circumference_cm1,phenx_neck_circumference,,text,Neck circumference measurement 1 in centimeters.,,centimeters | | PX021201,,1,100,,[neck_circum_cm] = '1',,,,,
+neck_circumference_cm2,phenx_neck_circumference,,text,Neck circumference measurement 2 in centimeters.,,centimeters | | PX021201,,1,100,,[neck_circum_cm] = '1',,,,,
+neck_circumference_cm3,phenx_neck_circumference,,text,Neck circumference measurement 3 in centimeters.,,centimeters | | PX021201,,1,100,,[neck_circum_cm] = '1',,,,,
+neck_circumference_in1,phenx_neck_circumference,,text,Neck circumference measurement 1 in inches,,inches  | |  PX021201,,,,,[neck_circum_cm] = '0',,,,,
+neck_circumference_in2,phenx_neck_circumference,,text,Neck circumference measurement 2 in inches,,inches  | |  PX021201,,,,,[neck_circum_cm] = '0',,,,,
+neck_circumference_in3,phenx_neck_circumference,,text,Neck circumference measurement 3 in inches,,inches  | |  PX021201,,,,,[neck_circum_cm] = '0',,,,,
+neck_circumference_average,phenx_neck_circumference,,text,Average neck circumference measurement ,,PX021201,,1,100,,,,,,,

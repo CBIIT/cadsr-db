@@ -1,0 +1,5 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?
+cigarette_smoking_100,phenx_tobacco_smoking_status_adult_protocol,,radio,"Have you smoked at least 100 cigarettes in your entire life?
+(100 CIGARETTES = APPROXIMATELY 5 PACKS)","1, Yes | 2, No | 97, Refused | 99, Don't know",PX030602,,,,,,,,,,
+cigarette_smoking_current,phenx_tobacco_smoking_status_adult_protocol,,radio,"Do you now smoke cigarettes every day, some days, or not at all?","1, Every day | 2, Some days | 3, Not at all | 97, Refused | 99, Don't know",PX030602,,,,,[cigarette_smoking_100] = '1',,,,,
+cigarette_smoking_everyday_6month,phenx_tobacco_smoking_status_adult_protocol,,radio,Have you EVER smoked cigarettes EVERY DAY for at least 6 months?,"1, Yes | 2, No | 97, Refused | 99, Don't know",PX030602,,,,,[cigarette_smoking_100] = '1' and [cigarette_smoking_current] = '2',,,,,

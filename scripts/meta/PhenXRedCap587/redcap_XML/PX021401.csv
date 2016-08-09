@@ -1,0 +1,9 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?
+wt_in_pounds,phenx_weight_loss_gain,,radio,ENTER WEIGHT IN POUNDS OR KILOGRAMS,"1, POUNDS | 2, KILOGRAMS",PX021401,,,,,,,,,,
+weight_1year_ago_kgs,phenx_weight_loss_gain,,text,How much did {you/[participant]} weigh a year ago?,,Kilograms | | PX021401,number,23,338,,[wt_in_pounds] = '2',,,,,
+weight_1year_ago_lbs,phenx_weight_loss_gain,,text,How much did {you/[participant]} weigh a year ago?,,Pounds | | PX021401,number,50,750,,[wt_in_pounds] = '1',,,,,
+weight_1year_ago_coded,phenx_weight_loss_gain,,radio,How much did {you/[participant]} weigh a year ago?,"777 , REFUSED|999 , DON'T KNOW",PX021401,,,,,,,,,,
+weight_before_pregnancy_kgs,phenx_weight_loss_gain,,text,"[If {you were/she was} pregnant a year ago, how much did {you/she} weigh before your pregnancy?]",,Kilograms | | PX021401,number,23,338,,[wt_in_pounds] = '2',,,,,
+weight_before_pregnancy_lbs,phenx_weight_loss_gain,,text,"[If {you were/she was} pregnant a year ago, how much did {you/she} weigh before your pregnancy?]",,Pounds | | PX021401,number,50,750,,[wt_in_pounds] = '1',,,,,
+wt_before_pregnancy_coded,phenx_weight_loss_gain,,radio,"[If {you were/she was} pregnant a year ago, how much did {you/she} weigh before your pregnancy?]","777, REFUSED | 999, DON'T KNOW",PX021401,,,,,,,,,,
+wt_bef_pregn_proxy_name,phenx_weight_loss_gain,,text,"When the question is being asked of a proxy respondent, insert the participant's name here",,PX021401,,,,,,,,,,
