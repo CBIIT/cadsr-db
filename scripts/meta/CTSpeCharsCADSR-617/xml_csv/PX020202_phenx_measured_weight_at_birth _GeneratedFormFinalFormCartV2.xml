@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX020202</collectionName>
+  <collectionDescription>Load PhenX PX020202</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-10T13:51:44</dateCreated>
+   <longName> Measured Weight At Birth</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>Measured weight at birth</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-10T13:51:44</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>weight measured in gram?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>whether infant is weighed with a study blanket </questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>Weight of the blanket used for weighing in gram</questionText>
+       <instruction>
+        <text>[weighed_with_blanket_1] = &apos;1&apos; and [weight_measured_in_gram] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>3</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>Weight of the blanket used for weighing in pound </questionText>
+       <instruction>
+        <text>[weighed_with_blanket_1] = &apos;1&apos; and [weight_measured_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>4</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>Weight of the blanket used for weighing in ounce</questionText>
+       <instruction>
+        <text>[weighed_with_blanket_1] = &apos;1&apos; and [weight_measured_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+         </module>
+    <module>
+     <displayOrder>1</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-10T13:51:44</dateCreated>
+     <longName>This protocol is for an examination study.Use calibrated infant scale for weighing infant.Naked weight of infant is preferred, but if the mother objects, wrap naked infant in study blanket for procedure. Record on form whether infant is weighed with a study blanket. Note: If the infant urinates in the blanket, repeat the measurement using a dry blanket. Place the infant on the scale so that weight is distributed equally about the center of the pan.Record the weight on form.Remove the infant from the scale, then replace and weigh a second time.Record the second weight on form.If the difference in the two weights is greater than 100 grams, obtain a third measurement.Note the weight of the blanket and subtract the weight of the blanket from the total weight of the infant plus blanket to estimate birth weight of the infant.</longName>
+     <preferredDefinition>This protocol is for an examination study.Use calibrated infant scale for weighing infant.Naked weight of infant is preferred, but if the mother objects, wrap naked infant in study blanket for procedure. Record on form whether infant is weighed with a study blanket. Note: If the infant urinates in the blanket, repeat the measurement using a dry blanket. Place the infant on the scale so that weight is distributed equally about the center of the pan.Record the weight on form.Remove the infant from the scale, then replace and weigh a second time.Record the second weight on form.If the difference in the two weights is greater than 100 grams, obtain a third measurement.Note the weight of the blanket and subtract the weight of the blanket from the total weight of the infant plus blanket to estimate birth weight of the infant.</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>weight at birth measurement 1, in gram</questionText>
+       <instruction>
+        <text>[weight_measured_in_gram] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>weight at birth measurement 1, in pound</questionText>
+       <instruction>
+        <text>[weight_measured_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>weight at birth measurement 1, in ounce</questionText>
+       <instruction>
+        <text>[weight_measured_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>3</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>whether infant is weighed with a study blanket</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>4</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>Weight of the blanket used for weighing 2, in gram </questionText>
+       <instruction>
+        <text>[weighed_with_blanket_2] = &apos;1&apos; and [weight_measured_in_gram] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>5</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>Weight of the blanket used for weighing 2, in pound </questionText>
+       <instruction>
+        <text>[weighed_with_blanket_2] = &apos;1&apos; and [weight_measured_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>6</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>Weight of the blanket used for weighing 2, in ounce </questionText>
+       <instruction>
+        <text>[weighed_with_blanket_2] = &apos;1&apos; and [weight_measured_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>7</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>weight at birth measurement 2, in gram </questionText>
+       <instruction>
+        <text>[weight_measured_in_gram] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>8</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>weight at birth measurement 2, in pound </questionText>
+       <instruction>
+        <text>[weight_measured_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>9</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>weight at birth measurement 2, in ounce</questionText>
+       <instruction>
+        <text>[weight_measured_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>10</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>whether infant is weighed with a study blanket. A third measurement should be taken if the first two measurements differed by &gt;100 grams (3 ounces)</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>11</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>Weight of the blanket used for weighing, in gram</questionText>
+       <instruction>
+        <text>[weighed_with_blanket_3] = &apos;1&apos; and [weight_measured_in_gram] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>12</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>Weight of the blanket used for weighing, in pound </questionText>
+       <instruction>
+        <text>[weighed_with_blanket_3] = &apos;1&apos; and [weight_measured_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>13</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>Weight of the blanket used for weighing, in ounce</questionText>
+       <instruction>
+        <text>[weighed_with_blanket_3] = &apos;1&apos; and [weight_measured_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>14</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>weight at birth measurement 3, in gram. A third measurement should be taken if the first two measurements differed by &gt;100 grams (3 ounces).</questionText>
+       <instruction>
+        <text>[weight_measured_in_gram] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>15</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>weight at birth measurement 3, in pound</questionText>
+       <instruction>
+        <text>[weight_measured_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>16</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>weight at birth measurement 3, in ounce</questionText>
+       <instruction>
+        <text>[weight_measured_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>17</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>Average weight at birth, in gram. If it is necessary to take a third measurement, the two closest measurements are averaged. Should the third measurement fall equally between the first two measurements, all three should be averaged</questionText>
+       <instruction>
+        <text>[weight_measured_in_gram] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>18</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>Average weight at birth, in pound</questionText>
+       <instruction>
+        <text>[weight_measured_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>19</displayOrder>
+       <dateCreated>2016-08-10T13:51:44</dateCreated>
+       <questionText>Average weight at birth, in ounce</questionText>
+       <instruction>
+        <text>[weight_measured_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX020202</protocolID>
+    <longName>Birth Weight - Measured Weight at Birth</longName>
+    <context>PhenX</context>
+    <shortName>PX020202</shortName>
+    <preferredDefinition>Measured weight at birth</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

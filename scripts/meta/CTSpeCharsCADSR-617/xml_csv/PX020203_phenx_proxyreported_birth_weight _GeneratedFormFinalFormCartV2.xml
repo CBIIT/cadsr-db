@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX020203</collectionName>
+  <collectionDescription>Load PhenX PX020203</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-09T10:29:09</dateCreated>
+   <longName> Proxyreported Birth Weight</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>Proxy-reported birth weight</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-09T10:29:09</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>How much did participant weigh at birth? ENTER WEIGHT IN GRAMS OR POUNDS AND OUNCES</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1</value>
+         <meaningText> Grams</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>2</value>
+         <meaningText> Pounds and ounces</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>3</value>
+         <meaningText> Unknown</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>How much did {you/[participant]} weigh at birth in grams? </questionText>
+       <instruction>
+        <text>[proxy_birthwt_gram] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>How much did {you/[participant]} weigh at birth in pounds?</questionText>
+       <instruction>
+        <text>[proxy_birthwt_gram] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>3</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>How much did {you/[participant]} weigh at birth in ounces?</questionText>
+       <instruction>
+        <text>[proxy_birthwt_gram] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>4</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Did {you/[participant]} weigh ...?</questionText>
+       <instruction>
+        <text>[proxy_birthwt_gram] = &apos;3&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> More than 5 1/2 pounds (2500 g)</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>2 </value>
+         <meaningText> Less than 5 1/2 pounds (2500 g)</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>7 </value>
+         <meaningText> Refused</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>3</displayOrder>
+         <value>9 </value>
+         <meaningText> Don&apos;t know</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>5</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Did {you/[participant]} weigh ...?</questionText>
+       <instruction>
+        <text>[proxy_birthwt_gram] = &apos;3&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> More than 9 pounds (4100 g)</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>2 </value>
+         <meaningText> Less than 9 pounds (4100 g)</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>7 </value>
+         <meaningText> Refused</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>3</displayOrder>
+         <value>9 </value>
+         <meaningText> Don&apos;t know</meaningText>
+        </validValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX020203</protocolID>
+    <longName>Birth Weight - Proxy Reported Birth Weight</longName>
+    <context>PhenX</context>
+    <shortName>PX020203</shortName>
+    <preferredDefinition>Proxy-reported birth weight</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

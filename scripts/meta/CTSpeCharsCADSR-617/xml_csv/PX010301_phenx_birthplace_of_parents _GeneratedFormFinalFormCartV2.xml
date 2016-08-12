@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX010301</collectionName>
+  <collectionDescription>Load PhenX PX010301</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-08T09:26:30</dateCreated>
+   <longName> Birthplace Of Parents</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>The respondent completes the self-administered questionnaire by indicating his or her biological mother&apos;s place of birth. If he or she was born in the United States, an additional question captures the state, if known. If he or she was not born in the United States another open-ended question asks for this location. The same procedures would be followed for obtaining the birthplace of the respondent&apos;s father.</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-08T09:26:30</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-08T09:26:30</dateCreated>
+       <questionText>Where was your biological mother born?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>UNDEFINED_CODE</value>
+         <meaningText>In the United States</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>UNDEFINED_CODE_1</value>
+         <meaningText>Outside the United States</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>UNDEFINED_CODE_2</value>
+         <meaningText>Don&apos;t know</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-08T09:26:30</dateCreated>
+       <questionText>Where was your biological mother born?  In the United States - Print name of state  Outside the United States - Print U.S. Territory (e.g., Puerto Rico, U.S. Virgin Islands, Guam) or name of foreign country etc.</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-08T09:26:30</dateCreated>
+       <questionText>Where was your biological father born?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>UNDEFINED_CODE</value>
+         <meaningText>In the United States</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>UNDEFINED_CODE_1</value>
+         <meaningText>Outside the United States</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>UNDEFINED_CODE_2</value>
+         <meaningText>Don&apos;t know</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>3</displayOrder>
+       <dateCreated>2016-08-08T09:26:30</dateCreated>
+       <questionText>Where was your biological father born?  In the United States - Print name of state  Outside the United States - Print U.S. Territory (e.g., Puerto Rico, U.S. Virgin Islands, Guam) or name of foreign country etc.</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX010301</protocolID>
+    <longName>Birthplace of Parents</longName>
+    <context>PhenX</context>
+    <shortName>PX010301</shortName>
+    <preferredDefinition>The respondent completes the self-administered questionnaire by indicating his or her biological mother&apos;s place of birth. If he or she was born in the United States, an additional question captures the state, if known. If he or she was not born in the United States another open-ended question asks for this location. The same procedures would be followed for obtaining the birthplace of the respondent&apos;s father.</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX010901</collectionName>
+  <collectionDescription>Load PhenX PX010901</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-08T09:26:30</dateCreated>
+   <longName> Current Marital Status</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>The Protocol is Not Found</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-08T09:26:30</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-08T09:26:30</dateCreated>
+       <questionText>Are you now married, widowed, divorced, separated, never married or living with a partner?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> MARRIED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>2 </value>
+         <meaningText> WIDOWED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>3 </value>
+         <meaningText> DIVORCED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>3</displayOrder>
+         <value>4 </value>
+         <meaningText> SEPARATED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>4</displayOrder>
+         <value>5 </value>
+         <meaningText> NEVER MARRIED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>5</displayOrder>
+         <value>6 </value>
+         <meaningText> LIVING WITH PARTNER</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>6</displayOrder>
+         <value>7 </value>
+         <meaningText> REFUSED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>7</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW</meaningText>
+        </validValue>
+             </question>
+         </module>
+      <protocol>
+    <context>PhenX</context>
+    <preferredDefinition>The Protocol is Not Found</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

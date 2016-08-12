@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX021602</collectionName>
+  <collectionDescription>Load PhenX PX021602</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-11T18:26:15</dateCreated>
+   <longName> Waist Circumference Adult Protocol</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>Waist circumference is measured at several body sites in the scientific literature. During the National Children&apos;s Food Survey, the participant&apos;s waist circumference was measured midway between the lowest rib and the iliac crest. This protocol is used most commonly for adults and children in European, Asian, and South American surveys and studies, and for children, several area- or country-specific references are available to define a 90th percentile cutoff, which is the main criterion for metabolic syndrome in children. This is important because there are ethnic-specific cutoffs for central (i.e., abdominal) obesity in adults using waist circumference, and it is presumed that comparable racial/ethnic differences exist for children and adolescents. In both children and adults, and compared with measurements taken using other protocols, measurements taken midway between the lowest rib and the iliac crest tend to be several centimeters smaller than measurements taken over the iliac crest (NHANES protocol). It is more comparable with measurements taken at the level of the umbilicus (Framingham protocol), except when waist circumference is measured at the level of the umbilicus in an obese participant, and the umbilicus has been displaced downward (i.e., pendulous abdomen). This measurement can be used to calculate a waist-to-height ratio (WHtR) because it will accurately estimate the prevalence in the abnormal range (WHtR greater than 0.5). The relationship of this measure with cardiometabolic risk factors is also comparable with waist circumference measures taken at other sites.  NOTE: Waist circumference can be measured on pregnant women. However, national reference data do not include pregnant women, and waist circumference has different associations with abdominal and total body fat among those who are not pregnant. </preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-11T18:26:15</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Waist circumference measured in centimeter or inch</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1</value>
+         <meaningText> centimeter</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>2</value>
+         <meaningText> inch</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Exhibit 1. Location of Measurement Landmarks between the Lowest Rib and Iliac Crest (Ilium).</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Measured circumference at the top of the hips measured to the nearest 0.1 centimeter, first measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>3</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Measured circumference at the top of the hips measured to the nearest 0.1 centimeter, second measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>4</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Measured circumference at the top of the hips measured to the nearest 0.1 centimeter, thrid measurement</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>5</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Measured circumference at the top of the hips measured to the nearest 0.1 centimeter, average</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>6</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Waist Circumference - image 2</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>7</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Waist circumference taken at the narrowest part of the torso measured to the nearest 0.1 centimeter, first measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>8</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Waist circumference taken at the narrowest part of the torso measured to the nearest 0.1 centimeter, second measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>9</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Waist circumference taken at the narrowest part of the torso measured to the nearest 0.1 centimeter, thrid measurement</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>10</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Measured circumference at the top of the hips measured to the nearest 0.1 centimeter, average</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>11</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Waist circumference taken at the narrowest part of the torso measured to the nearest 0.1 centimeter, first measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>12</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Waist circumference taken at the narrowest part of the torso measured to the nearest 0.1 centimeter, second measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>13</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Waist circumference taken at the narrowest part of the torso measured to the nearest 0.1 centimeter, thrid measurement</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>14</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Measured circumference taken at the narrowest part of the torso measured to the nearest 0.1 centimeter, average.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>15</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Waist Circumference - image 3</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>16</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Measured circumference at the top of the hips measured to the nearest 1/4 inch, first measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>17</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Measured circumference at the top of the hips measured to the nearest 1/4 inch, second measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>18</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Measured circumference at the top of the hips measured to the nearest 1/4 inch, third measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>19</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Measured circumference at the top of the hips measured to the nearest 1/4 inch, average.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>20</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Measured distance between the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, first measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>21</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Measured distance between the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, second measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>22</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Measured distance between the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, third measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>23</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Measured distance between the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, average.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>24</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Midpoint of the length from the bottom of the ribcage to the top of the hips recorded to the nearest 1/4 inch, first measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>25</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Midpoint of the length from the bottom of the ribcage to the top of the hips recorded to the nearest 1/4 inch, second measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>26</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Midpoint of the length from the bottom of the ribcage to the top of the hips recorded to the nearest 1/4 inch, third measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>27</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Midpoint of the length from the bottom of the ribcage to the top of the hips recorded to the nearest 1/4 inch, average.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>28</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Waist circumference taken at the midpoint from the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, first measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>29</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Waist circumference taken at the midpoint from the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, second measurement.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>30</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Waist circumference taken at the midpoint from the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, third measurement</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>31</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Waist circumference taken at the midpoint from the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, average.</questionText>
+       <instruction>
+        <text>[ad_waist_circ_in_cm] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>32</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Obesity Status of Adults - Image</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX021602</protocolID>
+    <longName>Waist Circumference - Waist Circumference NCFS</longName>
+    <context>PhenX</context>
+    <shortName>PX021602</shortName>
+    <preferredDefinition>Waist circumference is measured at several body sites in the scientific literature. During the National Children&apos;s Food Survey, the participant&apos;s waist circumference was measured midway between the lowest rib and the iliac crest. This protocol is used most commonly for adults and children in European, Asian, and South American surveys and studies, and for children, several area- or country-specific references are available to define a 90th percentile cutoff, which is the main criterion for metabolic syndrome in children. This is important because there are ethnic-specific cutoffs for central (i.e., abdominal) obesity in adults using waist circumference, and it is presumed that comparable racial/ethnic differences exist for children and adolescents. In both children and adults, and compared with measurements taken using other protocols, measurements taken midway between the lowest rib and the iliac crest tend to be several centimeters smaller than measurements taken over the iliac crest (NHANES protocol). It is more comparable with measurements taken at the level of the umbilicus (Framingham protocol), except when waist circumference is measured at the level of the umbilicus in an obese participant, and the umbilicus has been displaced downward (i.e., pendulous abdomen). This measurement can be used to calculate a waist-to-height ratio (WHtR) because it will accurately estimate the prevalence in the abnormal range (WHtR greater than 0.5). The relationship of this measure with cardiometabolic risk factors is also comparable with waist circumference measures taken at other sites.  NOTE: Waist circumference can be measured on pregnant women. However, national reference data do not include pregnant women, and waist circumference has different associations with abdominal and total body fat among those who are not pregnant. </preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

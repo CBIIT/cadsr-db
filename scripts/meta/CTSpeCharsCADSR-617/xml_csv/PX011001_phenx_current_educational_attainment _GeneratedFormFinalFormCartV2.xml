@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX011001</collectionName>
+  <collectionDescription>Load PhenX PX011001</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-08T09:26:30</dateCreated>
+   <longName> Current Educational Attainment</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>The interviewer asks the respondent or proxy about his or her education completed to date. The respondent is asked to indicate the highest grade level or degree received at the time of the interview. A card with the categories printed on it is provided to the respondent for him or her to indicate one of the applicable categories.</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-08T09:26:30</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-08T09:26:30</dateCreated>
+       <questionText>What is the highest grade or level of school you have completed or the highest degree you have received? [HAND CARD DMQ1. READ HAND CARD CATEGORIES IF NECESSARY. ENTER HIGHEST LEVEL OF SCHOOL.]</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>0</value>
+         <meaningText> NEVER ATTENDED/KINDERGARTEN ONLY</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>1</value>
+         <meaningText> 1ST GRADE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>2</value>
+         <meaningText> 2ND GRADE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>3</displayOrder>
+         <value>3</value>
+         <meaningText> 3RD GRADE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>4</displayOrder>
+         <value>4</value>
+         <meaningText> 4TH GRADE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>5</displayOrder>
+         <value>5</value>
+         <meaningText> 5TH GRADE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>6</displayOrder>
+         <value>6</value>
+         <meaningText> 6TH GRADE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>7</displayOrder>
+         <value>7</value>
+         <meaningText> 7TH GRADE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>8</displayOrder>
+         <value>8</value>
+         <meaningText> 8TH GRADE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>9</displayOrder>
+         <value>9</value>
+         <meaningText> 9TH GRADE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>10</displayOrder>
+         <value>10</value>
+         <meaningText> 10TH GRADE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>11</displayOrder>
+         <value>11</value>
+         <meaningText> 11TH GRADE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>12</displayOrder>
+         <value>12</value>
+         <meaningText> 12TH GRADE, NO DIPLOMA</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>13</displayOrder>
+         <value>13</value>
+         <meaningText> HIGH SCHOOL GRADUATE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>14</displayOrder>
+         <value>14</value>
+         <meaningText> GED OR EQUIVALENT</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>15</displayOrder>
+         <value>15</value>
+         <meaningText> SOME COLLEGE, NO DEGREE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>16</displayOrder>
+         <value>16</value>
+         <meaningText> ASSOCIATE DEGREE: OCCUPATIONAL, TECHNICAL, OR VOCATIONAL PROGRAM</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>17</displayOrder>
+         <value>17</value>
+         <meaningText> ASSOCIATE DEGREE: ACADEMIC PROGRAM</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>18</displayOrder>
+         <value>18</value>
+         <meaningText> BACHELOR&apos;S DEGREE (EXAMPLE: BA, AB, BS, BBA)</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>19</displayOrder>
+         <value>19</value>
+         <meaningText> MASTER&apos;S DEGREE (EXAMPLE: MA, MS, MEng, MEd, MBA)</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>20</displayOrder>
+         <value>20</value>
+         <meaningText> PROFESSIONAL SCHOOL DEGREE (EXAMPLE: MD, DDS, DVM, JD)</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>21</displayOrder>
+         <value>21</value>
+         <meaningText> DOCTORAL DEGREE (EXAMPLE: PhD, EdD)</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>22</displayOrder>
+         <value>77</value>
+         <meaningText> REFUSED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>23</displayOrder>
+         <value>99</value>
+         <meaningText> DON&apos;T KNOW</meaningText>
+        </validValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX011001</protocolID>
+    <longName>Current Educational Attainment</longName>
+    <context>PhenX</context>
+    <shortName>PX011001</shortName>
+    <preferredDefinition>The interviewer asks the respondent or proxy about his or her education completed to date. The respondent is asked to indicate the highest grade level or degree received at the time of the interview. A card with the categories printed on it is provided to the respondent for him or her to indicate one of the applicable categories.</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

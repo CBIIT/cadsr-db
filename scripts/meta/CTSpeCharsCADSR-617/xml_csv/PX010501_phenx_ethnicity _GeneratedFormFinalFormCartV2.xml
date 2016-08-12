@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX010501</collectionName>
+  <collectionDescription>Load PhenX PX010501</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-08T09:26:30</dateCreated>
+   <longName> Ethnicity</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>The Protocol is Not Found</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-08T09:26:30</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-08T09:26:30</dateCreated>
+       <questionText>Do you consider yourself Hispanic/Latino? [Where did your ancestors come from?]</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1</value>
+         <meaningText> YES [ask follow-up question]</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>2</value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>7</value>
+         <meaningText> REFUSED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>3</displayOrder>
+         <value>9</value>
+         <meaningText> DON&apos;T KNOW</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-08T09:26:30</dateCreated>
+       <questionText>Please give me the number of the group that represents your Hispanic origin or ancestry. Please select 1 or more of these categories.</questionText>
+       <instruction>
+        <text>[hispanic_ethnicity] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>10</value>
+         <meaningText> PUERTO RICAN</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>12</value>
+         <meaningText> DOMINICAN (REPUBLIC)</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>13</value>
+         <meaningText> MEXICAN/MEXICANO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>3</displayOrder>
+         <value>14</value>
+         <meaningText> MEXICAN AMERICAN</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>4</displayOrder>
+         <value>15</value>
+         <meaningText> CHICANO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>5</displayOrder>
+         <value>18</value>
+         <meaningText> CUBAN</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>6</displayOrder>
+         <value>19</value>
+         <meaningText> CUBAN AMERICAN</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>7</displayOrder>
+         <value>20</value>
+         <meaningText> CENTRAL OR SOUTH AMERICAN</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>8</displayOrder>
+         <value>40</value>
+         <meaningText> OTHER LATIN AMERICAN</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>9</displayOrder>
+         <value>41</value>
+         <meaningText> OTHER HISPANIC</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>10</displayOrder>
+         <value>77</value>
+         <meaningText> REFUSED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>11</displayOrder>
+         <value>99</value>
+         <meaningText> DON&apos;T KNOW</meaningText>
+        </validValue>
+             </question>
+         </module>
+      <protocol>
+    <context>PhenX</context>
+    <preferredDefinition>The Protocol is Not Found</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX021502</collectionName>
+  <collectionDescription>Load PhenX PX021502</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-11T18:26:15</dateCreated>
+   <longName> Selfreported Weight</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>The respondent provides his/her self-reported weight.</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-11T18:26:15</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Weight Units</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1</value>
+         <meaningText> Kilograms</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>2</value>
+         <meaningText> Pounds</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>How much {do you/does the participant} weigh without clothes or shoes?[If {you are/she is} currently pregnant, how much did {you/she} weigh before your pregnancy?]</questionText>
+       <instruction>
+        <text>[self_reported_weight_units] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>How much {do you/does the participant} weigh without clothes or shoes?[If {you are/she is} currently pregnant, how much did {you/she} weigh before your pregnancy?]</questionText>
+       <instruction>
+        <text>[self_reported_weight_units] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX021502</protocolID>
+    <longName>Weight - Self-Reported Weight</longName>
+    <context>PhenX</context>
+    <shortName>PX021502</shortName>
+    <preferredDefinition>The respondent provides his/her self-reported weight.</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

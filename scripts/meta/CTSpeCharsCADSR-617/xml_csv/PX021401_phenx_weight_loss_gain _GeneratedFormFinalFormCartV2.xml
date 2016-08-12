@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX021401</collectionName>
+  <collectionDescription>Load PhenX PX021401</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-09T10:29:09</dateCreated>
+   <longName> Weight Loss Gain</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>The protocol contains a question about the participant&apos;s weight 1 year ago.**NOTE: This period can be modified for different periods. Depending on your hypothesis, you may want to modify the time interval as appropriate (e.g., 3 months, 6 months, 1 year).</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-09T10:29:09</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>ENTER WEIGHT IN POUNDS OR KILOGRAMS</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1</value>
+         <meaningText> POUNDS</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>2</value>
+         <meaningText> KILOGRAMS</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>How much did {you/[participant]} weigh a year ago?</questionText>
+       <instruction>
+        <text>[wt_in_pounds] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>How much did {you/[participant]} weigh a year ago?</questionText>
+       <instruction>
+        <text>[wt_in_pounds] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>3</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>How much did {you/[participant]} weigh a year ago?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>777 </value>
+         <meaningText> REFUSED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>999 </value>
+         <meaningText> DON&apos;T KNOW</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>4</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>[If {you were/she was} pregnant a year ago, how much did {you/she} weigh before your pregnancy?]</questionText>
+       <instruction>
+        <text>[wt_in_pounds] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>5</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>[If {you were/she was} pregnant a year ago, how much did {you/she} weigh before your pregnancy?]</questionText>
+       <instruction>
+        <text>[wt_in_pounds] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>6</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>[If {you were/she was} pregnant a year ago, how much did {you/she} weigh before your pregnancy?]</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>777</value>
+         <meaningText> REFUSED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>999</value>
+         <meaningText> DON&apos;T KNOW</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>7</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>When the question is being asked of a proxy respondent, insert the participant&apos;s name here</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX021401</protocolID>
+    <longName>Weight Loss/Gain</longName>
+    <context>PhenX</context>
+    <shortName>PX021401</shortName>
+    <preferredDefinition>The protocol contains a question about the participant&apos;s weight 1 year ago.**NOTE: This period can be modified for different periods. Depending on your hypothesis, you may want to modify the time interval as appropriate (e.g., 3 months, 6 months, 1 year).</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

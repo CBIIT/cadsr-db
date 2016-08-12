@@ -1,0 +1,7 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?
+self_reported_height_coded,phenx_selfreported_height,,radio,How tall {are you/is [participant]Ê} without shoes? ENTER HEIGHT IN FEET AND INCHES OR METERS AND CENTIMETERS,"1, FEET AND INCHES | 2, METERS AND CENTIMETERS | 7777, REFUSED | 9999, DON'T KNOW",PX020704,,,,,,,,,,
+self_reported_height_feet,phenx_selfreported_height,,text,Feet,,feet | | PX020704,integer,0,,,[self_reported_height_coded] = '1',,,,,
+self_reported_height_inches,phenx_selfreported_height,,text,Inches,,inches | | PX020704,integer,0,,,[self_reported_height_coded] = '1',,,,,
+self_reported_height_meters,phenx_selfreported_height,,text,Meters,,meters | | PX020704,integer,0,,,[self_reported_height_coded] = '2',,,,,
+self_reported_height_centimeters,phenx_selfreported_height,,text,Centimeters,,centimeters | | PX020704,integer,0,,,[self_reported_height_coded] = '2',,,,,
+self_reported_height_proxy_name,phenx_selfreported_height,,text,Proxy Name,,If applicable | | PX020704,,,,,,,,,,

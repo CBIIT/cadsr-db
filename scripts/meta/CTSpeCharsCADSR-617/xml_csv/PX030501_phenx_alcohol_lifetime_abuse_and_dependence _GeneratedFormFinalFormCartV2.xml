@@ -1,0 +1,1676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX030501</collectionName>
+  <collectionDescription>Load PhenX PX030501</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-09T10:29:09</dateCreated>
+   <longName> Alcohol Lifetime Abuse And Dependence</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>Measurement of respondent&apos;s symptoms of alcohol abuse and dependence.  These responses correspond with criteria from the Diagnostic and Statistical Manual of Mental Disorders (4th ed.; DSM-IV).   </preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-09T10:29:09</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>At what age did you begin to drink regularly; that is, drinking at least once a month for 6 months or more?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>At what age did you begin to drink regularly; that is, drinking at least once a month for 6 months or more?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>00 </value>
+         <meaningText> IF NEVER</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>How old were you the first time you got drunk, that is, your speech was slurred or you were unsteady on your feet?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>3</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>How old were you the first time you got drunk, that is, your speech was slurred or you were unsteady on your feet?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>00 </value>
+         <meaningText> IF NEVER</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>4</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>In your lifetime, what is the largest number of drinks you have ever had in a 24-hour period (including all types of alcohol)?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>5</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>In your lifetime, what is the largest number of drinks you have ever had in a 24-hour period (including all types of alcohol)?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>00</value>
+         <meaningText> IF NEVER</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>9</value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>6</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Did you ever become tolerant to alcohol; that is, you drank a great deal more in order to get an effect, or found you could no longer get high on the amount you used to drink?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>7</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>WAS INCREASE 50% OR MORE?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;) and [alcohol_tolerant] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>8</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Did you ever find you could drink a lot more before you got drunk?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>9</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>WAS INCREASE 50% OR MORE?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;) and [alcohol_more_get_drunk] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>10</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Have you 3 or more times wanted to stop or cut down on drinking?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>11</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Have you ever tried to stop or cut down on drinking?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>12</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>5.2 How many times were you unable to stop or cut down?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;) and [alcohol_cessation] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>13</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>How many times were you unable to stop or cut down?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;) and [alcohol_cessation] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>14</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Was it 3 or more times?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;) and [alcohol_withdrawal_failure_times_coded] &lt;&gt; &apos;9&apos; and [alcohol_withdrawal_failure_times] &lt; 3</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>15</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Have you ever started drinking at times you promised yourself that you wouldn&apos;t, or have you ever drunk more than you intended? For example, when you decided to drink 2 drinks and ended up drinking 4 or more?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>16</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Did this happen 3 or more times?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;) and [alcohol_more_than_intended] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>17</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Have you ever started drinking and become drunk when you didn&apos;t want to?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>18</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Did this happen 3 or more times?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;) and [drunk_not_intended] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>19</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Have you ever given up or greatly reduced important activities while drinking -- like sports, work, or associating with friends or relatives?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>20</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Did this happen 3 or more times or for a month or more?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;) and [alcohol_use_interfere_activity] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>21</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Has there ever been a period of several days or more when you spent so much time drinking or recovering from the effects of alcohol that you had little time for anything else?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>22</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Did this period last for a month or more or did you have 3 or more periods like that?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;) and [alcohol_use_interfere_life] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>23</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>There are several health problems that can result from long stretches of drinking.  Did drinking ever cause you to have liver disease or yellow jaundice?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>24</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>There are several health problems that can result from long stretches of drinking.  Did drinking ever cause you to have stomach disease or make you vomit blood?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>25</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>There are several health problems that can result from long stretches of drinking.  Did drinking ever cause you to have pancreatitis?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>26</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>There are several health problems that can result from long stretches of drinking.  Did drinking ever cause you to have damage to your heart (cardiomyopathy)?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>27</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>There are several health problems that can result from long stretches of drinking.  Did drinking ever cause you to have memory problems even when you weren&apos;t drinking (so, not counting blackouts)?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>28</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>There are several health problems that can result from long stretches of drinking.  Did drinking ever cause you to have any other physical health problems?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>29</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>There are several health problems that can result from long stretches of drinking.  Did drinking ever cause you to have any other physical health problems? IF YES, SPECIFY</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>30</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Did you continue to drink knowing that drinking caused you to have health problems?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) and ([alcohol_use_liver_disease] &lt;&gt; &apos;1&apos; or [alcohol_use_stomach_disease] &lt;&gt; &apos;1&apos; or [alcohol_use_pancreatitis] &lt;&gt; &apos;1&apos; or [alcohol_use_cardiomyopathy] &lt;&gt; &apos;1&apos; or [alcohol_use_memory_problems] &lt;&gt; &apos;1&apos; or [alcohol_use_other_health_problems] &lt;&gt; &apos;1&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>31</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Have you ever continued to drink when you knew you had any (other) serious physical illness or condition that might be made worse by drinking?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) and ([alcohol_use_liver_disease] = &apos;1&apos; AND [alcohol_use_stomach_disease] = &apos;1&apos; AND [alcohol_use_pancreatitis] = &apos;1&apos; AND [alcohol_use_cardiomyopathy] = &apos;1&apos; AND [alcohol_use_memory_problems] = &apos;1&apos; AND [alcohol_use_other_health_problems] = &apos;1&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>32</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Has drinking ever caused you emotional or psychological problems like feeling depressed or uninterested in things for more than 24 hours to the point that it interfered with your functioning?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;))</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>33</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Has drinking ever caused you emotional or psychological problems like feeling jumpy or easily startled or nervous for more than 24 hours to the point that it interfered with your functioning?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>34</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Has drinking ever caused you emotional or psychological problems like having such trouble thinking clearly for more than 24 hours that it interfered with your functioning?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>35</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Has drinking ever caused you emotional or psychological problems like feeling paranoid or suspicious of people for more than 24 hours to the point that it interfered with your relationships?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>36</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Has drinking ever caused you emotional or psychological problems like hearing, seeing, or smelling things that weren&apos;t really there?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>37</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Did you continue to drink after you knew it caused you any of these problems?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND ([alcohol_use_depressed_interfere_functioning] &lt;&gt; &apos;1&apos; OR [alcohol_use_nevous_interfere_functioning] &lt;&gt; &apos;1&apos; OR [alcohol_use_clearthinking_interfere_functioning] &lt;&gt; &apos;1&apos; OR [alcohol_use_paranoid_interfere_functioning] &lt;&gt; &apos;1&apos; OR [alcohol_use_hallucination] &lt;&gt; &apos;1&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1</value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5</value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9</value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>38</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did you have the shakes (hands trembling)?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;) OR [alcohol_use_depressed_interfere_functioning] = &apos;1&apos; OR [alcohol_use_nevous_interfere_functioning] = &apos;1&apos; OR [alcohol_use_clearthinking_interfere_functioning] = &apos;1&apos; OR [alcohol_use_paranoid_interfere_functioning] = &apos;1&apos; OR [alcohol_use_hallucination] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>39</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Were you unable to sleep?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>40</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did you feel anxious?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>41</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did you feel depressed or irritable?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>42</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did your heart beat fast or did you sweat?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>43</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did you have nausea or vomiting?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>44</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did you feel physically weak?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>45</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did you have headaches?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>46</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did you see or hear things that weren&apos;t there?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>47</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Were you fidgety or restless?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>48</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Was there ever a time when two or more of these problems occurred together?</questionText>
+       <instruction>
+        <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;) OR ([alcohol_withdrawal_anxious] = &apos;5&apos; OR [alcohol_withdrawal_depressed] = &apos;5&apos;  OR [alcohol_withdrawal_heartracing] = &apos;5&apos;  OR [alcohol_withdrawal_nausea] = &apos;5&apos;  OR [alcohol_withdrawal_weak] = &apos;5&apos; OR [alcohol_withdrawal_headaches] = &apos;5&apos; OR [alcohol_withdrawal_hallucination] = &apos;5&apos; OR [alcohol_withdrawal_restless] = &apos;5&apos;)</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>49</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did you have the shakes (hands trembling)?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>50</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Were you unable to sleep?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>51</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did you feel anxious?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>52</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did you feel depressed or irritable?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>53</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did your heart beat fast or did you sweat?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>54</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did you have nausea or vomiting?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>55</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did you feel physically weak?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>56</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did you have headaches?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>57</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did you see or hear things that weren&apos;t there?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>58</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Were you fidgety or restless?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>59</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Have you ever taken a drink to keep from having any of these problems (or to make them go away) (REVIEW ALL 5&apos;S CODED IN COL. 1)?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>60</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Did this happen 3 or more times?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos; AND [drinking_alleviating_alcohol_withdrawal_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>61</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>When you stopped, cut down, or went without drinking, did you ever have fits, seizures, or convulsions, where you lost consciousness, fell to the floor, and had difficulty remembering what happened?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos; AND [drinking_alleviating_alcohol_withdrawal_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>62</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>On 3 or more different occasions have you taken a drink to keep from having fits, seizures, or convulsions or to make them go away?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos; AND [drinking_alleviating_alcohol_withdrawal_symptoms] &lt;&gt; &apos;1&apos; AND [alcohol_withdrawal_seizure] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>63</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>When you stopped, cut down, or went without drinking, did you ever have the DT&apos;s, that is, where you were very confused, extremely shaky, felt very frightened or nervous, or saw things that weren&apos;t really there?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos; AND [drinking_alleviating_alcohol_withdrawal_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>64</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>On 3 or more different occasions have you taken a drink to keep from having the DT&apos;s or to make them go away?</questionText>
+       <instruction>
+        <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; &apos;00&apos; or  [first_drunk_age_coded] &lt;&gt; &apos;00&apos;)) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; &apos;1&apos; AND [drinking_alleviating_alcohol_withdrawal_symptoms] &lt;&gt; &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> NO</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>5 </value>
+         <meaningText> YES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>9 </value>
+         <meaningText> DON&apos;T KNOW / REFUSED</meaningText>
+        </validValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX030501</protocolID>
+    <longName>Alcohol - Lifetime Abuse and Dependence</longName>
+    <context>PhenX</context>
+    <shortName>PX030501</shortName>
+    <preferredDefinition>Measurement of respondent&apos;s symptoms of alcohol abuse and dependence.  These responses correspond with criteria from the Diagnostic and Statistical Manual of Mental Disorders (4th ed.; DSM-IV).   </preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

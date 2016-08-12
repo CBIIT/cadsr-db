@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX020703</collectionName>
+  <collectionDescription>Load PhenX PX020703</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-11T18:26:15</dateCreated>
+   <longName> Standing Height</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>Standing height is measured from the top of the participant&apos;s head to his or her heels. This measure is taken among participants, usually older than 2 years of age, who are able to stand unassisted. The Anthropometrics Expert Review Panel suggests that the measurements be taken to the nearest 0.1 cm.</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-11T18:26:15</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Ask the participant to remove hair ornaments, jewelry, buns, or braids from the top of the head that interfere with the measurement. Shoes should be removed.Ask the participant to stand erect against the backboard with the body weight evenly distributed and both feet flat on the stadiometer platform (Exhibit 1) . The participant&apos;s feet should be positioned with the heels together and toes pointed slightly outward at approximately a 60 degree angle. Check to be sure that the back of the head, shoulder blades, buttocks, and heels make contact with the backboard of the stadiometer.NOTE: Depending on the overall body conformation of the individual, all four contact points - head, shoulders, buttocks, and heels - may or may not touch the stadiometer backboard (Exhibit 2). For example, elderly survey participants may have kyphosis, a forward curvature of the spine that appears as a hump at the upper back. In particular, dowager&apos;s hump is a form of kyphosis that creates a hump at the back of the neck. Additionally, some overweight survey participants cannot stand straight while touching all four contact points to the backboard. In such instances it is important to obtain the best measurement possible according to the protocol.Stature measurements are made with the head aligned in the Frankfort horizontal plane (Exhibit 2). The head is in the Frankfort plane when the horizontal line from the ear canal to the lower border of the orbit of the eye is parallel to the floor and perpendicular to the vertical backboard (see Exhibit 2). Many people will assume this position naturally, but for some survey participants the examiner may need to gently tilt the head up or down to achieve the proper alignment. Instruct the survey participant to look straight ahead.If you cannot position the participant such that his or her trunk remains vertical above the waist, that the arms and shoulders are relaxed, and that the head is positioned in the Frankfort plane, be sure to note this in the measurement record. This information might be useful to interpret study findings. In the National Health and Nutrition Examination Study 2007-08, a comment described as &quot;Not Straight&quot; is noted in the stature record.Once positioned, lower the stadiometer headpiece so that it rests firmly on top of the participant&apos;s head, with sufficient pressure to compress the hair. Instruct the survey participant to stand as tall as possible, take a deep breath, and hold this position. The act of taking a deep breath helps straighten the spine to yield a more consistent and reproducible stature measurement. Notice that the inhalation will cause the headpiece to rise slightly.As soon as the participant inhales, record the measurement. After recording the measurement, tell the participant to relax. Once the measurement is taken, raise the stadiometer headpiece and have the participant step away from the stadiometer.Adjustments for shoes and hair: When participants cannot remove hair braids, buns, and headwear that interferes with the stature measurement, measure the distance from the scalp to the top of the hair with a small ruler to the nearest 0.1 cm. If shoes are worn, measure the height of the shoe heel to the nearest 0.1 cm. A corrected height value can be calculated by subtracting these distances from the original stature measurement, thus yielding an adjusted stature value</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Exhibit 1. Stadiometer with a fixed length backboard and an adjustable headpiece</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Exhibit 2. Body Orientation for Standing Height Measurement and Frankfort Horizontal Plane</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>3</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Standing Height Units</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1</value>
+         <meaningText> Feet</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>2</value>
+         <meaningText> Inches</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>3</value>
+         <meaningText> Meters</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>4</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Standing Height 1</questionText>
+       <instruction>
+        <text>[standing_height_units] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>5</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Standing Height 2</questionText>
+       <instruction>
+        <text>[standing_height_units] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>6</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Standing Height 3</questionText>
+       <instruction>
+        <text>[standing_height_units] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>7</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Standing Height Average</questionText>
+       <instruction>
+        <text>[standing_height_units] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>mean([standing_height_1_feets]</value>
+         <meaningText>[standing_height_2_feets],[standing_height_3_feets])</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>8</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Standing Height 1</questionText>
+       <instruction>
+        <text>[standing_height_units] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>9</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Standing Height 2</questionText>
+       <instruction>
+        <text>[standing_height_units] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>10</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Standing Height 3</questionText>
+       <instruction>
+        <text>[standing_height_units] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>11</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Standing Height Average</questionText>
+       <instruction>
+        <text>[standing_height_units] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>mean([standing_height_1_inches]</value>
+         <meaningText>[standing_height_2_inches],[standing_height_3_inches])</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>12</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Standing Height 1</questionText>
+       <instruction>
+        <text>[standing_height_units] = &apos;3&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>13</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Standing Height 2</questionText>
+       <instruction>
+        <text>[standing_height_units] = &apos;3&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>14</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Standing Height 3</questionText>
+       <instruction>
+        <text>[standing_height_units] = &apos;3&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>15</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Standing Height Average</questionText>
+       <instruction>
+        <text>[standing_height_units] = &apos;3&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>mean([standing_height_1_meters]</value>
+         <meaningText>[standing_height_2_meters],[standing_height_3_meters])</meaningText>
+        </validValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX020703</protocolID>
+    <longName>Height - Standing Height</longName>
+    <context>PhenX</context>
+    <shortName>PX020703</shortName>
+    <preferredDefinition>Standing height is measured from the top of the participant&apos;s head to his or her heels. This measure is taken among participants, usually older than 2 years of age, who are able to stand unassisted. The Anthropometrics Expert Review Panel suggests that the measurements be taken to the nearest 0.1 cm.</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

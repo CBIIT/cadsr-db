@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX011201</collectionName>
+  <collectionDescription>Load PhenX PX011201</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-09T10:29:09</dateCreated>
+   <longName> Years Living In The Us</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>The interviewer asks the respondent how long he or she has been in the United States, in years. The number of years (2 digits) is entered by the interviewer. If the respondent has been in the United States for less than 1 year, the entry is &quot;0.&quot;</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-09T10:29:09</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>About how long have you been in the United States?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>About how long have you been in the United States?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>0 </value>
+         <meaningText> less than 1 year,</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>95 </value>
+         <meaningText> 95+ years</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>97 </value>
+         <meaningText> Refused</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>3</displayOrder>
+         <value>99 </value>
+         <meaningText> Don&apos;t know</meaningText>
+        </validValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX011201</protocolID>
+    <longName>Years Living in the U.S.</longName>
+    <context>PhenX</context>
+    <shortName>PX011201</shortName>
+    <preferredDefinition>The interviewer asks the respondent how long he or she has been in the United States, in years. The number of years (2 digits) is entered by the interviewer. If the respondent has been in the United States for less than 1 year, the entry is &quot;0.&quot;</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

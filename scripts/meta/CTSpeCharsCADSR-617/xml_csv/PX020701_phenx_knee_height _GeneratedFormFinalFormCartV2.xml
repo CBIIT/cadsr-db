@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX020701</collectionName>
+  <collectionDescription>Load PhenX PX020701</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-09T10:29:09</dateCreated>
+   <longName> Knee Height</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>Knee height is measured as the distance from the surface over the femoral condyles to the heel, with the knee flexed to approximately 90 degrees. This measure is used for individuals who are 60 years of age or older, who are unable to stand, or who have spinal deformities. It may be necessary to take replicate measurements.</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-09T10:29:09</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Knee height was measured on adults 60 years of age and older during National Health and Nutrition Examination Study III, 1988-94. Measurements are taken in the seated position with both legs dangling. The examiner places the fixed blade of the large sliding caliper under the heel of the right leg just below the lateral malleolus of the fibula. From a squatting position, the examiner raises the leg so that the knee and ankle are both at a 90-degree angle (see Exhibit 1). This is best accomplished by resting the participant&apos;s foot in the palm of the examiner&apos;s hand. The moveable blade of the caliper is placed on the anterior surface of the right thigh, above the condyles of the femur, about two inches above the patella. The shaft of the caliper is held parallel to the shaft of the tibia so that the shaft of the caliper passes over the lateral malleolus of the fibula and just posterior to the head of the fibula. Pressure is applied to compress the tissue. The recorder checks the positioning of the leg and the caliper. Knee height is recorded to the nearest 0.1 cm.</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Exhibit 1. Proper Positioning of the Participant for the Knee Height Protocol</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Knee Height 1</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>3</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Knee Height 2</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>4</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Knee Height 3</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>5</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Knee Height Average</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>mean([knee_height_1]</value>
+         <meaningText>[knee_height_2],[knee_height_3])</meaningText>
+        </validValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX020701</protocolID>
+    <longName>Height - Knee Height</longName>
+    <context>PhenX</context>
+    <shortName>PX020701</shortName>
+    <preferredDefinition>Knee height is measured as the distance from the surface over the femoral condyles to the heel, with the knee flexed to approximately 90 degrees. This measure is used for individuals who are 60 years of age or older, who are unable to stand, or who have spinal deformities. It may be necessary to take replicate measurements.</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX020704</collectionName>
+  <collectionDescription>Load PhenX PX020704</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-11T18:26:15</dateCreated>
+   <longName> Selfreported Height</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>The questions in the protocol ask the study subject his or her height.NOTE: Self-reported height values are considered to be less accurate. Self-reported height is subject to error and is used when measured height cannot be obtained.</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-11T18:26:15</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>How tall {are you/is [participant]} without shoes? ENTER HEIGHT IN FEET AND INCHES OR METERS AND CENTIMETERS</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1</value>
+         <meaningText> FEET AND INCHES</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>2</value>
+         <meaningText> METERS AND CENTIMETERS</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>7777</value>
+         <meaningText> REFUSED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>3</displayOrder>
+         <value>9999</value>
+         <meaningText> DON&apos;T KNOW</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Feet</questionText>
+       <instruction>
+        <text>[self_reported_height_coded] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Inches</questionText>
+       <instruction>
+        <text>[self_reported_height_coded] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>3</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Meters</questionText>
+       <instruction>
+        <text>[self_reported_height_coded] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>4</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Centimeters</questionText>
+       <instruction>
+        <text>[self_reported_height_coded] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>5</displayOrder>
+       <dateCreated>2016-08-11T18:26:15</dateCreated>
+       <questionText>Proxy Name</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX020704</protocolID>
+    <longName>Height - Self-Reported Height</longName>
+    <context>PhenX</context>
+    <shortName>PX020704</shortName>
+    <preferredDefinition>The questions in the protocol ask the study subject his or her height.NOTE: Self-reported height values are considered to be less accurate. Self-reported height is subject to error and is used when measured height cannot be obtained.</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

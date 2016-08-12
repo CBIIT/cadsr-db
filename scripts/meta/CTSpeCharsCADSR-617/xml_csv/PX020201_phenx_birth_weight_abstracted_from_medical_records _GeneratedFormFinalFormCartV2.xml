@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX020201</collectionName>
+  <collectionDescription>Load PhenX PX020201</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-09T10:29:09</dateCreated>
+   <longName> Birth Weight Abstracted From Medical Records</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>Birth weight abstracted from medical charts or perinatal databases or as reported in vital records</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-09T10:29:09</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Weight in gram</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Newborn birth weight abstracted from the medical record/vital record, in gram</questionText>
+       <instruction>
+        <text>[weight_in_gram] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Newborn birth weight abstracted from the medical record/vital record, in pound</questionText>
+       <instruction>
+        <text>[weight_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>3</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Newborn birth weight abstracted from the medical record/vital record, in ounce</questionText>
+       <instruction>
+        <text>[weight_in_gram] = &apos;0&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX020201</protocolID>
+    <longName>Birth Weight - Birth Weight Abstracted from Medical Records</longName>
+    <context>PhenX</context>
+    <shortName>PX020201</shortName>
+    <preferredDefinition>Birth weight abstracted from medical charts or perinatal databases or as reported in vital records</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

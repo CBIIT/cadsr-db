@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX010701</collectionName>
+  <collectionDescription>Load PhenX PX010701</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-04T00:00:00.0</dateCreated>
+   <longName> Gender</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>The interviewer asks the respondent (or proxy) to indicate his or her gender.</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-04T00:00:00.0</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-04T00:00:00.0</dateCreated>
+       <questionText>Are you male or female?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1 </value>
+         <meaningText> MALE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>2 </value>
+         <meaningText> FEMALE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>7 </value>
+         <meaningText> REFUSED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>3</displayOrder>
+         <value>8 </value>
+         <meaningText> DON'T KNOW</meaningText>
+        </validValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX010701</protocolID>
+    <longName>Gender</longName>
+    <context>PhenX</context>
+    <shortName>PX010701</shortName>
+    <preferredDefinition>The interviewer asks the respondent (or proxy) to indicate his or her gender.</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

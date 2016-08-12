@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX011101</collectionName>
+  <collectionDescription>Load PhenX PX011101</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-04T00:00:00.0</dateCreated>
+   <longName> Annual Family Income</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>The interviewer asks the respondent about his or her family&apos;s total income from all sources in the last calendar year. This is an open-ended question. Respondents who do not know or refuse to answer the first annual family income question are asked a series of bracketing questions to obtain the approximate amount.</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-04T00:00:00.0</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-04T00:00:00.0</dateCreated>
+       <questionText>What was your best estimate of the total income of all family members from all sources, before taxes, in last year?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-04T00:00:00.0</dateCreated>
+       <questionText>What was your best estimate of the total income of all family members from all sources, before taxes, in last year?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-04T00:00:00.0</dateCreated>
+       <questionText>Was your total family income from all sources less than $50,000 or $50,000 or more?</questionText>
+       <instruction>
+        <text>[annual_family_income_coded] = &apos;999997&apos; or [annual_family_income_coded] = &apos;999999&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>3</displayOrder>
+       <dateCreated>2016-08-04T00:00:00.0</dateCreated>
+       <questionText>Was your total family income from all sources less than $35,000 or $35,000 or more?</questionText>
+       <instruction>
+        <text>[annual_family_income_50k] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>4</displayOrder>
+       <dateCreated>2016-08-04T00:00:00.0</dateCreated>
+       <questionText>Was your total family income from all sources less than poverty threshold or more?</questionText>
+       <instruction>
+        <text>[annual_family_income_35k] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>5</displayOrder>
+       <dateCreated>2016-08-04T00:00:00.0</dateCreated>
+       <questionText>Was your total family income from all sources less than $100,000 or $100,000 or more?</questionText>
+       <instruction>
+        <text>[annual_family_income_50k] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>6</displayOrder>
+       <dateCreated>2016-08-04T00:00:00.0</dateCreated>
+       <questionText>Was your total family income from all sources less than $75,000 or $75,000 or more?</questionText>
+       <instruction>
+        <text>[annual_family_income_100k] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX011101</protocolID>
+    <longName>Annual Family Income</longName>
+    <context>PhenX</context>
+    <shortName>PX011101</shortName>
+    <preferredDefinition>The interviewer asks the respondent about his or her family&apos;s total income from all sources in the last calendar year. This is an open-ended question. Respondents who do not know or refuse to answer the first annual family income question are asked a series of bracketing questions to obtain the approximate amount.</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

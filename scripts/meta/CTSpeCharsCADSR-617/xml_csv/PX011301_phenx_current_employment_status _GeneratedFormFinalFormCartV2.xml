@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX011301</collectionName>
+  <collectionDescription>Load PhenX PX011301</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-09T10:29:09</dateCreated>
+   <longName> Current Employment Status</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>The interviewer asks the respondent about his or her current employment status.</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-09T10:29:09</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>We would like to know about what you do --are you working now, looking for work, retired, keeping house, a student, or what?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1</value>
+         <meaningText> WORKING NOW</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>2</value>
+         <meaningText> ONLY TEMPORARILY LAID OFF, SICK LEAVE OR MATERNITY LEAVE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>2</displayOrder>
+         <value>3</value>
+         <meaningText> LOOKING FOR WORK, UNEMPLOYED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>3</displayOrder>
+         <value>4</value>
+         <meaningText> RETIRED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>4</displayOrder>
+         <value>5</value>
+         <meaningText> DISABLED, PERMANENTLY OR TEMPORARILY</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>5</displayOrder>
+         <value>6</value>
+         <meaningText> KEEPING HOUSE</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>6</displayOrder>
+         <value>7</value>
+         <meaningText> STUDENT</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>7</displayOrder>
+         <value>8</value>
+         <meaningText> OTHER (SPECIFY):</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>current employment status, Other - specify</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX011301</protocolID>
+    <longName>Current Employment Status</longName>
+    <context>PhenX</context>
+    <shortName>PX011301</shortName>
+    <preferredDefinition>The interviewer asks the respondent about his or her current employment status.</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

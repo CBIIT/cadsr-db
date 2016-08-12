@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX010101</collectionName>
+  <collectionDescription>Load PhenX PX010101</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-08T09:26:30</dateCreated>
+   <longName> Current Age</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>The interviewer asks the respondent for his or her date of birth in MM/DD/YYYY format. If the respondent does not know his or her date of birth, the interviewer asks an alternative question to determine his or her age. NOTE: The current age of the respondent can be calculated, given the date of the interview.</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-08T09:26:30</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-08T09:26:30</dateCreated>
+       <questionText>What is your birthdate?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-08T09:26:30</dateCreated>
+       <instruction>
+        <text>[birthdate] = &apos;&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>9</value>
+         <meaningText> Don&apos;t know [ask follow-up question]</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>7</value>
+         <meaningText> Refused</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-08T09:26:30</dateCreated>
+       <questionText>About how old are you?</questionText>
+       <instruction>
+        <text>[birthdate_coded] = &apos;9&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>3</displayOrder>
+       <dateCreated>2016-08-08T09:26:30</dateCreated>
+       <instruction>
+        <text>[birthdate_coded] = &apos;9&apos; and [age] &gt;= 0 and [age] &lt;= 110</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>999</value>
+         <meaningText> Don&apos;t know</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>7</value>
+         <meaningText> Refused</meaningText>
+        </validValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX010101</protocolID>
+    <longName>Current Age</longName>
+    <context>PhenX</context>
+    <shortName>PX010101</shortName>
+    <preferredDefinition>The interviewer asks the respondent for his or her date of birth in MM/DD/YYYY format. If the respondent does not know his or her date of birth, the interviewer asks an alternative question to determine his or her age. NOTE: The current age of the respondent can be calculated, given the date of the interview.</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>

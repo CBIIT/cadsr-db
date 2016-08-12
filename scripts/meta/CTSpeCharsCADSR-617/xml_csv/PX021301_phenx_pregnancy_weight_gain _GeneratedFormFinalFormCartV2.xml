@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - PX021301</collectionName>
+  <collectionDescription>Load PhenX PX021301</collectionDescription>
+  <form>
+   <context>PhenX</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2016-08-09T10:29:09</dateCreated>
+   <longName> Pregnancy Weight Gain</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>There are many research contexts in which one could collect this information, and how the information is collected will vary depending on the context.  For self-reported total weight gain during pregnancy, the participant is asked to report the total amount of weight gained during her most recent pregnancy. Other data to be collected at the same time are height, duration of the most recent pregnancy, and the date of the delivery.</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>
+   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2016-08-09T10:29:09</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+           <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>Enter weight in pounds or kilograms</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>1</value>
+         <meaningText> pounds</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>2</value>
+         <meaningText> kilograms</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>1</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>For women who are currently at least 20 weeks pregnant, ask the following questions:  Just before you got pregnant with your current pregnancy, how much did you weigh?</questionText>
+       <instruction>
+        <text>[weight_in_pounds] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>2</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>For women who are currently at least 20 weeks pregnant, ask the following questions:  Just before you got pregnant with your current pregnancy, how much did you weigh?</questionText>
+       <instruction>
+        <text>[weight_in_pounds] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>3</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>For women who are currently at least 20 weeks pregnant, ask the following questions:  Just before you got pregnant with your current pregnancy, how much did you weigh?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>UNDEFINED_CODE</value>
+         <meaningText>REFUSED</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>UNDEFINED_CODE_1</value>
+         <meaningText>DON&apos;T KNOW</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>4</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>For women who are currently at least 20 weeks pregnant, ask the following questions:  How much weight have you gained during this pregnancy?</questionText>
+       <instruction>
+        <text>[weight_in_pounds] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>5</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>For women who are currently at least 20 weeks pregnant, ask the following questions:  How much weight have you gained during this pregnancy?</questionText>
+       <instruction>
+        <text>[weight_in_pounds] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>6</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>For women who are currently at least 20 weeks pregnant, ask the following questions:  How much weight have you gained during this pregnancy?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>UNDEFINED_CODE</value>
+         <meaningText>I LOST weight during your pregnancy</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>UNDEFINED_CODE_1</value>
+         <meaningText>I don&apos;t know</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>7</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>For women who are currently at least 20 weeks pregnant, ask the following questions:  How many weeks pregnant are you currently?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>8</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>For women who are not currently pregnant (but parous), ask the following questions:  How much did you weigh before your most recent pregnancy?</questionText>
+       <instruction>
+        <text>[weight_in_pounds] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>9</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>For women who are not currently pregnant (but parous), ask the following questions:  How much did you weigh before your most recent pregnancy?</questionText>
+       <instruction>
+        <text>[weight_in_pounds] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>10</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>For women who are not currently pregnant (but parous), ask the following questions:  How much weight did you gain during your most recent pregnancy?</questionText>
+       <instruction>
+        <text>[weight_in_pounds] = &apos;2&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>11</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>For women who are not currently pregnant (but parous), ask the following questions:  How much weight did you gain during your most recent pregnancy?</questionText>
+       <instruction>
+        <text>[weight_in_pounds] = &apos;1&apos;</text>
+       </instruction>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>12</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>For women who are not currently pregnant (but parous), ask the following questions:  How much weight did you gain during your most recent pregnancy?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+               <validValue>
+         <displayOrder>0</displayOrder>
+         <value>UNDEFINED_CODE</value>
+         <meaningText>I LOST weight during your pregnancy</meaningText>
+        </validValue>
+        <validValue>
+         <displayOrder>1</displayOrder>
+         <value>UNDEFINED_CODE_1</value>
+         <meaningText>I don&apos;t know</meaningText>
+        </validValue>
+             </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>13</displayOrder>
+       <dateCreated>2016-08-09T10:29:09</dateCreated>
+       <questionText>For women who are not currently pregnant (but parous), ask the following questions:  For your most recent pregnancy, how many weeks along were you when you delivered?</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+             </question>
+         </module>
+      <protocol>
+    <protocolID>PX021301</protocolID>
+    <longName>Total Pregnancy Weight Gain - Self-Reported Weight Gain</longName>
+    <context>PhenX</context>
+    <shortName>PX021301</shortName>
+    <preferredDefinition>There are many research contexts in which one could collect this information, and how the information is collected will vary depending on the context.  For self-reported total weight gain during pregnancy, the participant is asked to report the total amount of weight gained during her most recent pregnancy. Other data to be collected at the same time are height, duration of the most recent pregnancy, and the date of the delivery.</preferredDefinition>
+   </protocol>
+  </form>
+ </forms>
