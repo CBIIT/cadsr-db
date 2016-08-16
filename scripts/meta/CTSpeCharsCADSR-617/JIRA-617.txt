@@ -1,0 +1,24 @@
+Found 11 different Special Chars in SBR.VALUE_MEANINGS and PERMISSIBLE_VALUES tables;
+5 of them like +,=,>,<,% could be fixed by update statements 
+
+UPDATE value_meanings set short_meaning=replace(short_meaning,'&'||'gt;','>') where INSTR(short_meaning,'&'||'gt;')>0;
+UPDATE value_meanings set short_meaningt=replace(short_meaning,'&'||'lt;','<') where INSTR(short_meaning, '&lt;')>0;
+UPDATE value_meanings set short_meaning=replace(short_meaning,'&'||'#61;','=') where INSTR(short_meaning,'&'||'#61')>0;
+UPDATE value_meanings set short_meaning=replace(short_meaning,'&'||'#43;','+') where INSTR(short_meaning, '&'||'#43')>0;
+UPDATE value_meanings set short_meaning=replace(short_meaning,'&'||'amp;','%') where INSTR(short_meaning, '&'||'amp')>0;
+
+The group of characters below has to be identified.
+&#947;
+&#948;
+&#8804;
+&#8805;
+&#8236;
+&#945; 
+
+
+select*from PERMISSIBLE_VALUES where 
+ select*from VALUE_MEANINGS where VM_ID='5328834'
+ 
+ 
+   select *from sbr.VALUE_MEANINGS where INSTR(short_meaning,'&'||'gt;')>0 or INSTR(short_meaning, '&'||'lt;')>0 or INSTR(short_meaning,'&'||'#61')>0 or INSTR(short_meaning, '&'||'#43')>0
+  or INSTR(short_meaning, '&'||'amp')>0;
