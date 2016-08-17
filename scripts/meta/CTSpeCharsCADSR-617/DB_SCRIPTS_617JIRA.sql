@@ -1,7 +1,9 @@
+set define off
+/
 create table SBR.CT_PERMISSIBLE_VALUES_BACKUP
-( PV_IDSEQ             CHAR(36 BYTE)            
-  VALUE                VARCHAR2(255 BYTE)       
-  SHORT_MEANING        VARCHAR2(255 BYTE)       
+( PV_IDSEQ             CHAR(36 BYTE) ,           
+  VALUE                VARCHAR2(255 BYTE) ,      
+  SHORT_MEANING        VARCHAR2(255 BYTE) ,      
   MEANING_DESCRIPTION  VARCHAR2(2000 BYTE),
   DATE_MODIFIED        DATE,
   MODIFIED_BY          VARCHAR2(30 BYTE),
@@ -9,36 +11,37 @@ create table SBR.CT_PERMISSIBLE_VALUES_BACKUP
 )
 /
 create table SBR.CT_VALUE_MEANINGS_BACKUP
-( SHORT_MEANING         VARCHAR2(255 BYTE)     
+( SHORT_MEANING         VARCHAR2(255 BYTE)  ,   
   DESCRIPTION           VARCHAR2(2000 BYTE),
   DATE_MODIFIED         DATE,
   MODIFIED_BY           VARCHAR2(30 BYTE),  
-  VM_IDSEQ              CHAR(36 BYTE)           
-  PREFERRED_NAME        VARCHAR2(30 BYTE)       
-  PREFERRED_DEFINITION  VARCHAR2(2000 BYTE)     
+  VM_IDSEQ              CHAR(36 BYTE)  ,         
+  PREFERRED_NAME        VARCHAR2(30 BYTE) ,      
+  PREFERRED_DEFINITION  VARCHAR2(2000 BYTE) ,    
   LONG_NAME             VARCHAR2(255 BYTE),  
-  VERSION               NUMBER                  
-  VM_ID                 NUMBER                  
+  VERSION               NUMBER   ,               
+  VM_ID                 NUMBER  ,                
   CHANGE_NOTE           VARCHAR2(2000 BYTE)
 )
 /
 CREATE TABLE SBREXT.CT_QUEST_CONTENTS_EXT_BKUP
-( QC_IDSEQ              CHAR(36 BYTE)           
+( QC_IDSEQ              CHAR(36 BYTE) ,          
   PREFERRED_NAME        VARCHAR2(30 BYTE),
   DATE_MODIFIED         DATE,
   MODIFIED_BY           VARCHAR2(30 BYTE),
   PREFERRED_DEFINITION  VARCHAR2(2000 BYTE),
   LONG_NAME             VARCHAR2(4000 BYTE)
-)ONG_NAME   VARCHAR2(4000 BYTE)
+)
 /
 CREATE TABLE SBREXT.CT_VALID_VALUES_ATT_EXT_BKUP
-( QC_IDSEQ          CHAR(36 BYTE)               
+( QC_IDSEQ          CHAR(36 BYTE)   ,            
   MEANING_TEXT      VARCHAR2(2000 BYTE),
   DATE_MODIFIED     DATE,
   MODIFIED_BY       VARCHAR2(30 BYTE),
   DESCRIPTION_TEXT  VARCHAR2(2000 BYTE)
 )
 /
+
  CREATE OR REPLACE PROCEDURE SBREXT.CT_FIX_QUEST_CONTENTS_EXT IS
 v_date  date  ;
 V_sdate date:=sysdate;
