@@ -1,8 +1,6 @@
-set define off
-/
 create table SBR.CT_PERMISSIBLE_VALUES_BACKUP
-( PV_IDSEQ             CHAR(36 BYTE) ,           
-  VALUE                VARCHAR2(255 BYTE) ,      
+( PV_IDSEQ             CHAR(36 BYTE),            
+  VALUE                VARCHAR2(255 BYTE),       
   SHORT_MEANING        VARCHAR2(255 BYTE) ,      
   MEANING_DESCRIPTION  VARCHAR2(2000 BYTE),
   DATE_MODIFIED        DATE,
@@ -11,13 +9,13 @@ create table SBR.CT_PERMISSIBLE_VALUES_BACKUP
 )
 /
 create table SBR.CT_VALUE_MEANINGS_BACKUP
-( SHORT_MEANING         VARCHAR2(255 BYTE)  ,   
+( SHORT_MEANING         VARCHAR2(255 BYTE),     
   DESCRIPTION           VARCHAR2(2000 BYTE),
   DATE_MODIFIED         DATE,
   MODIFIED_BY           VARCHAR2(30 BYTE),  
-  VM_IDSEQ              CHAR(36 BYTE)  ,         
+  VM_IDSEQ              CHAR(36 BYTE),           
   PREFERRED_NAME        VARCHAR2(30 BYTE) ,      
-  PREFERRED_DEFINITION  VARCHAR2(2000 BYTE) ,    
+  PREFERRED_DEFINITION  VARCHAR2(2000 BYTE)     
   LONG_NAME             VARCHAR2(255 BYTE),  
   VERSION               NUMBER   ,               
   VM_ID                 NUMBER  ,                
@@ -31,17 +29,16 @@ CREATE TABLE SBREXT.CT_QUEST_CONTENTS_EXT_BKUP
   MODIFIED_BY           VARCHAR2(30 BYTE),
   PREFERRED_DEFINITION  VARCHAR2(2000 BYTE),
   LONG_NAME             VARCHAR2(4000 BYTE)
-)
+)ONG_NAME   VARCHAR2(4000 BYTE)
 /
 CREATE TABLE SBREXT.CT_VALID_VALUES_ATT_EXT_BKUP
-( QC_IDSEQ          CHAR(36 BYTE)   ,            
+( QC_IDSEQ          CHAR(36 BYTE) ,              
   MEANING_TEXT      VARCHAR2(2000 BYTE),
   DATE_MODIFIED     DATE,
   MODIFIED_BY       VARCHAR2(30 BYTE),
   DESCRIPTION_TEXT  VARCHAR2(2000 BYTE)
 )
 /
-
  CREATE OR REPLACE PROCEDURE SBREXT.CT_FIX_QUEST_CONTENTS_EXT IS
 v_date  date  ;
 V_sdate date:=sysdate;
@@ -84,6 +81,19 @@ select     QC_IDSEQ,
            DATE_MODIFIED,                
            MODIFIED_BY
 from SBREXT.QUEST_CONTENTS_EXT
+where INSTR(PREFERRED_NAME,'&'||'gt;')>0 or
+INSTR(PREFERRED_NAME,'&'||'lt;')>0 or
+INSTR(PREFERRED_NAME,'&'||'amp;')>0 or
+INSTR(PREFERRED_NAME,'&'||'#')>0 or 
+INSTR(PREFERRED_DEFINITION,'&'||'gt;')>0 or
+INSTR(PREFERRED_DEFINITION,'&'||'lt;')>0 or
+INSTR(PREFERRED_DEFINITION,'&'||'amp;')>0 or
+INSTR(PREFERRED_DEFINITION,'&'||'#')>0  or
+INSTR(LONG_NAME,'&'||'gt;')>0 or
+INSTR(LONG_NAME,'&'||'lt;')>0 or
+INSTR(LONG_NAME,'&'||'amp;')>0 or
+INSTR(LONG_NAME,'&'||'#')>0;
+/*
 where INSTR(PREFERRED_DEFINITION,'&'||'gt;')>0 or
 INSTR(PREFERRED_DEFINITION,'&'||'lt;')>0 or
 INSTR(PREFERRED_DEFINITION,'&'||'amp;')>0 or
@@ -131,7 +141,7 @@ INSTR(PREFERRED_DEFINITION,'&'||'#946;')>0 or
 INSTR(PREFERRED_DEFINITION,'&'||'#947;')>0 or
 INSTR(PREFERRED_DEFINITION,'&'||'#948;')>0 or
 INSTR(PREFERRED_DEFINITION,'&'||'#954;')>0 or
-INSTR(PREFERRED_DEFINITION,'&'||'#955;')>0;  
+INSTR(PREFERRED_DEFINITION,'&'||'#955;')>0; */ 
  --1  replace '&gt;' by '>'     
 UPDATE QUEST_CONTENTS_EXT set PREFERRED_DEFINITION=replace(PREFERRED_DEFINITION,'&'||'gt;','>') ,   
 PREFERRED_NAME=replace(PREFERRED_NAME,'&'||'gt;','>') ,  
@@ -512,51 +522,11 @@ from SBREXT.VALID_VALUES_ATT_EXT
 where INSTR(MEANING_TEXT,'&'||'gt;')>0 or
 INSTR(MEANING_TEXT,'&'||'lt;')>0 or
 INSTR(MEANING_TEXT,'&'||'amp;')>0 or
-INSTR(MEANING_TEXT,'&'||'#32;')>0 or
-INSTR(MEANING_TEXT,'&'||'#33;')>0 or
-INSTR(MEANING_TEXT,'&'||'#34;')>0 or
-INSTR(MEANING_TEXT,'&'||'#35;')>0 or
-INSTR(MEANING_TEXT,'&'||'#36;')>0 or
-INSTR(MEANING_TEXT,'&'||'#37;')>0 or
-INSTR(MEANING_TEXT,'&'||'#38;')>0 or
-INSTR(MEANING_TEXT,'&'||'#39;')>0 or
-INSTR(MEANING_TEXT,'&'||'#40;')>0 or
-INSTR(MEANING_TEXT,'&'||'#41;')>0 or
-INSTR(MEANING_TEXT,'&'||'#42;')>0 or
-INSTR(MEANING_TEXT,'&'||'#43;')>0 or
-INSTR(MEANING_TEXT,'&'||'#44;')>0 or
-INSTR(MEANING_TEXT,'&'||'#45;')>0 or
-INSTR(MEANING_TEXT,'&'||'#46;')>0 or
-INSTR(MEANING_TEXT,'&'||'#47;')>0 or
-INSTR(MEANING_TEXT,'&'||'#60;')>0 or
-INSTR(MEANING_TEXT,'&'||'#61;')>0 or
-INSTR(MEANING_TEXT,'&'||'#62;')>0 or
-INSTR(MEANING_TEXT,'&'||'#63;')>0 or
-INSTR(MEANING_TEXT,'&'||'#64;')>0 or
-INSTR(MEANING_TEXT,'&'||'#91;')>0 or
-INSTR(MEANING_TEXT,'&'||'#92;')>0 or
-INSTR(MEANING_TEXT,'&'||'#93;')>0 or
-INSTR(MEANING_TEXT,'&'||'#94;')>0 or
-INSTR(MEANING_TEXT,'&'||'#123;')>0 or
-INSTR(MEANING_TEXT,'&'||'#124;')>0 or
-INSTR(MEANING_TEXT,'&'||'#125;')>0 or
-INSTR(MEANING_TEXT,'&'||'#126;')>0 or
-INSTR(MEANING_TEXT,'&'||'#176;')>0 or
-INSTR(MEANING_TEXT,'&'||'#177;')>0 or
-INSTR(MEANING_TEXT,'&'||'#178;')>0 or
-INSTR(MEANING_TEXT,'&'||'#179;')>0 or
-INSTR(MEANING_TEXT,'&'||'#181;')>0 or
-INSTR(MEANING_TEXT,'&'||'#191;')>0 or
-INSTR(MEANING_TEXT,'&'||'#945;')>0 or
-INSTR(MEANING_TEXT,'&'||'#946;')>0 or
-INSTR(MEANING_TEXT,'&'||'#947;')>0 or
-INSTR(MEANING_TEXT,'&'||'#948;')>0 or
-INSTR(MEANING_TEXT,'&'||'#954;')>0 or
-INSTR(MEANING_TEXT,'&'||'#955;')>0 or
-INSTR(MEANING_TEXT,'&'||'#8804;')>0 or 
-INSTR(MEANING_TEXT,'&'||'#8805;')>0 or 
-INSTR(MEANING_TEXT,'&'||'#8800;')>0 or 
-INSTR(MEANING_TEXT,'&'||'#8223;')>0;  
+INSTR(MEANING_TEXT,'&'||'#')>0 or
+INSTR(DESCRIPTION_TEXT,'&'||'gt;')>0 or
+INSTR(DESCRIPTION_TEXT,'&'||'lt;')>0 or
+INSTR(DESCRIPTION_TEXT,'&'||'amp;')>0 or
+INSTR(DESCRIPTION_TEXT,'&'||'#')>0;  
  --1  replace '&gt;' by '>'     
 UPDATE VALID_VALUES_ATT_EXT set MEANING_TEXT=replace(MEANING_TEXT,'&'||'gt;','>') ,
                               DESCRIPTION_TEXT=replace(DESCRIPTION_TEXT,'&'||'gt;','>'),
@@ -876,8 +846,6 @@ or INSTR(MEANING_TEXT,'&'||'#955;')>0
        RAISE;
 END CT_FIX_SPCHAR_VV_ATT_EXT;
 /
-
-
 CREATE OR REPLACE PROCEDURE SBR.CT_FIX_SP_CHAR_PV IS
 v_date  date  ;
 V_sdate date:=sysdate;
@@ -922,54 +890,14 @@ DATE_MODIFIED       ,
 MODIFIED_BY         ,
 VM_IDSEQ   
 from SBR.PERMISSIBLE_VALUES 
-where INSTR(short_meaning,'&'||'gt;')>0 or
+where  INSTR(short_meaning,'&'||'gt;')>0 or
 INSTR(short_meaning,'&'||'lt;')>0 or
 INSTR(short_meaning,'&'||'amp;')>0 or
-INSTR(short_meaning,'&'||'#32;')>0 or
-INSTR(short_meaning,'&'||'#33;')>0 or
-INSTR(short_meaning,'&'||'#34;')>0 or
-INSTR(short_meaning,'&'||'#35;')>0 or
-INSTR(short_meaning,'&'||'#36;')>0 or
-INSTR(short_meaning,'&'||'#37;')>0 or
-INSTR(short_meaning,'&'||'#38;')>0 or
-INSTR(short_meaning,'&'||'#39;')>0 or
-INSTR(short_meaning,'&'||'#40;')>0 or
-INSTR(short_meaning,'&'||'#41;')>0 or
-INSTR(short_meaning,'&'||'#42;')>0 or
-INSTR(short_meaning,'&'||'#43;')>0 or
-INSTR(short_meaning,'&'||'#44;')>0 or
-INSTR(short_meaning,'&'||'#45;')>0 or
-INSTR(short_meaning,'&'||'#46;')>0 or
-INSTR(short_meaning,'&'||'#47;')>0 or
-INSTR(short_meaning,'&'||'#60;')>0 or
-INSTR(short_meaning,'&'||'#61;')>0 or
-INSTR(short_meaning,'&'||'#62;')>0 or
-INSTR(short_meaning,'&'||'#63;')>0 or
-INSTR(short_meaning,'&'||'#64;')>0 or
-INSTR(short_meaning,'&'||'#91;')>0 or
-INSTR(short_meaning,'&'||'#92;')>0 or
-INSTR(short_meaning,'&'||'#93;')>0 or
-INSTR(short_meaning,'&'||'#94;')>0 or
-INSTR(short_meaning,'&'||'#123;')>0 or
-INSTR(short_meaning,'&'||'#124;')>0 or
-INSTR(short_meaning,'&'||'#125;')>0 or
-INSTR(short_meaning,'&'||'#126;')>0 or
-INSTR(short_meaning,'&'||'#176;')>0 or
-INSTR(short_meaning,'&'||'#177;')>0 or
-INSTR(short_meaning,'&'||'#178;')>0 or
-INSTR(short_meaning,'&'||'#179;')>0 or
-INSTR(short_meaning,'&'||'#181;')>0 or
-INSTR(short_meaning,'&'||'#191;')>0 or
-INSTR(SHORT_MEANING,'&'||'#945;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#946;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#947;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#948;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#954;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#955;')>0 or
-INSTR(SHORT_MEANING,'&'||'#8804;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#8805;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#8800;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#8223;')>0; 
+INSTR(short_meaning,'&'||'#')>0 or
+INSTR(MEANING_DESCRIPTION,'&'||'gt;')>0 or
+INSTR(MEANING_DESCRIPTION,'&'||'lt;')>0 or
+INSTR(MEANING_DESCRIPTION,'&'||'amp;')>0 or
+INSTR(MEANING_DESCRIPTION,'&'||'#')>0;
 --1  replace '&gt;' by '>'     
 UPDATE SBR.PERMISSIBLE_VALUES set short_meaning=replace(short_meaning,'&'||'gt;','>') ,
 MEANING_DESCRIPTION=replace(MEANING_DESCRIPTION,'&'||'gt;','>'),
@@ -1290,7 +1218,7 @@ or INSTR(SHORT_MEANING,'&'||'#955;')>0
        RAISE;
 END CT_fix_sp_char_PV;
 /
-CREATE OR REPLACE PROCEDURE SBR.CT_fix_sp_char_VM IS
+CREATE OR REPLACE PROCEDURE SBR.CT_FIX_SP_CHAR_VM IS
 tmpVar NUMBER;
 V_date date:=sysdate;
 /******************************************************************************
@@ -1343,51 +1271,19 @@ from SBR.VALUE_MEANINGS
 where INSTR(short_meaning,'&'||'gt;')>0 or
 INSTR(short_meaning,'&'||'lt;')>0 or
 INSTR(short_meaning,'&'||'amp;')>0 or
-INSTR(short_meaning,'&'||'#32;')>0 or
-INSTR(short_meaning,'&'||'#33;')>0 or
-INSTR(short_meaning,'&'||'#34;')>0 or
-INSTR(short_meaning,'&'||'#35;')>0 or
-INSTR(short_meaning,'&'||'#36;')>0 or
-INSTR(short_meaning,'&'||'#37;')>0 or
-INSTR(short_meaning,'&'||'#38;')>0 or
-INSTR(short_meaning,'&'||'#39;')>0 or
-INSTR(short_meaning,'&'||'#40;')>0 or
-INSTR(short_meaning,'&'||'#41;')>0 or
-INSTR(short_meaning,'&'||'#42;')>0 or
-INSTR(short_meaning,'&'||'#43;')>0 or
-INSTR(short_meaning,'&'||'#44;')>0 or
-INSTR(short_meaning,'&'||'#45;')>0 or
-INSTR(short_meaning,'&'||'#46;')>0 or
-INSTR(short_meaning,'&'||'#47;')>0 or
-INSTR(short_meaning,'&'||'#60;')>0 or
-INSTR(short_meaning,'&'||'#61;')>0 or
-INSTR(short_meaning,'&'||'#62;')>0 or
-INSTR(short_meaning,'&'||'#63;')>0 or
-INSTR(short_meaning,'&'||'#64;')>0 or
-INSTR(short_meaning,'&'||'#91;')>0 or
-INSTR(short_meaning,'&'||'#92;')>0 or
-INSTR(short_meaning,'&'||'#93;')>0 or
-INSTR(short_meaning,'&'||'#94;')>0 or
-INSTR(short_meaning,'&'||'#123;')>0 or
-INSTR(short_meaning,'&'||'#124;')>0 or
-INSTR(short_meaning,'&'||'#125;')>0 or
-INSTR(short_meaning,'&'||'#126;')>0 or
-INSTR(short_meaning,'&'||'#176;')>0 or
-INSTR(short_meaning,'&'||'#177;')>0 or
-INSTR(short_meaning,'&'||'#178;')>0 or
-INSTR(short_meaning,'&'||'#179;')>0 or
-INSTR(short_meaning,'&'||'#181;')>0 or
-INSTR(short_meaning,'&'||'#191;')>0 or
-INSTR(SHORT_MEANING,'&'||'#945;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#946;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#947;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#948;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#954;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#955;')>0 or
-INSTR(SHORT_MEANING,'&'||'#8804;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#8805;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#8800;')>0 or 
-INSTR(SHORT_MEANING,'&'||'#8223;')>0; 
+INSTR(short_meaning,'&'||'#')>0 or
+INSTR(DESCRIPTION,'&'||'gt;')>0 or
+INSTR(DESCRIPTION,'&'||'lt;')>0 or
+INSTR(DESCRIPTION,'&'||'amp;')>0 or
+INSTR(DESCRIPTION,'&'||'#')>0  or
+INSTR(PREFERRED_DEFINITION,'&'||'gt;')>0 or
+INSTR(PREFERRED_DEFINITION,'&'||'lt;')>0 or
+INSTR(PREFERRED_DEFINITION,'&'||'amp;')>0 or
+INSTR(PREFERRED_DEFINITION,'&'||'#')>0  or
+INSTR(LONG_NAME,'&'||'gt;')>0 or
+INSTR(LONG_NAME,'&'||'lt;')>0 or
+INSTR(LONG_NAME,'&'||'amp;')>0 or
+INSTR(LONG_NAME,'&'||'#')>0;
  --replace '&gt;' by '>'     
 UPDATE SBR.value_meanings set short_meaning=replace(short_meaning,'&'||'gt;','>') ,
                               description=replace(description,'&'||'gt;','>'),
