@@ -2854,109 +2854,6 @@ or INSTR(DESCRIPTION,'&'||'#8322;')>0 or
 INSTR(short_meaning,'&'||'#8322;')>0 ;
 
 
-/* update VALUE_MEANINGS  set  date_modified=v_date, modified_by='DWARZEL',
-short_meaning= replace(short_meaning,'&'||'#945;','alpha'),
-DESCRIPTION=  replace(DESCRIPTION,'&'||'#945;','alpha'),
-LONG_NAME= replace(LONG_NAME,'&'||'#945;','alpha'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#945;','alpha')
-where INSTR(PREFERRED_DEFINITION,'&'||'#945;')>0 or
-INSTR(LONG_NAME,'&'||'#945;')>0 
-or INSTR(DESCRIPTION,'&'||'#945;')>0 or
-INSTR(short_meaning,'&'||'#945;')>0 ;
-
-  update VALUE_MEANINGS  set  date_modified=v_date, modified_by='DWARZEL',
-short_meaning= replace(short_meaning,'&'||'#946;','beta'),
-DESCRIPTION=  replace(DESCRIPTION,'&'||'#946;','beta'),
-LONG_NAME= replace(LONG_NAME,'&'||'#946;','beta'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#946;','beta')
-where INSTR(PREFERRED_DEFINITION,'&'||'#946;')>0 or
-INSTR(LONG_NAME,'&'||'#946;')>0
-or INSTR(DESCRIPTION,'&'||'#946;')>0 or
-INSTR(short_meaning,'&'||'#946;')>0 ;
-
-  update VALUE_MEANINGS  set  date_modified=v_date, modified_by='DWARZEL',
-short_meaning= replace(short_meaning,'&'||'#947;','gamma'),
-DESCRIPTION=  replace(DESCRIPTION,'&'||'#947;','gamma'),
-LONG_NAME= replace(LONG_NAME,'&'||'#947;','gamma'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#947;','gamma')
-where INSTR(PREFERRED_DEFINITION,'&'||'#947;')>0 or
-INSTR(LONG_NAME,'&'||'#947;')>0 
-or INSTR(DESCRIPTION,'&'||'#947;')>0 or
-INSTR(short_meaning,'&'||'#947;')>0 ;
-
-  update VALUE_MEANINGS  set  date_modified=v_date, modified_by='DWARZEL',
-short_meaning= replace(short_meaning,'&'||'#948;','delta'),
-DESCRIPTION=  replace(DESCRIPTION,'&'||'#948;','delta'),
-LONG_NAME= replace(LONG_NAME,'&'||'#948;','delta'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#948;','delta')
-where INSTR(PREFERRED_DEFINITION,'&'||'#948;')>0 or
-INSTR(LONG_NAME,'&'||'#948;')>0 
-or INSTR(DESCRIPTION,'&'||'#948;')>0 or
-INSTR(short_meaning,'&'||'#948;')>0 ;
-
-  update VALUE_MEANINGS  set  date_modified=v_date, modified_by='DWARZEL',
-short_meaning= replace(short_meaning,'&'||'#954;','lambda'),
-DESCRIPTION=  replace(DESCRIPTION,'&'||'#954;','lambda'),
-LONG_NAME= replace(LONG_NAME,'&'||'#954;','lambda'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#954;','lambda')
-where INSTR(PREFERRED_DEFINITION,'&'||'#954;')>0 or
-INSTR(LONG_NAME,'&'||'#954;')>0
-or INSTR(DESCRIPTION,'&'||'#954;')>0 or
-INSTR(short_meaning,'&'||'#954;')>0 ;
-
-  update VALUE_MEANINGS  set  date_modified=v_date, modified_by='DWARZEL',
-short_meaning= replace(short_meaning,'&'||'#955;','kappa'),
-DESCRIPTION=  replace(DESCRIPTION,'&'||'#955;','kappa'),
-LONG_NAME= replace(LONG_NAME,'&'||'#955;','kappa'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#955;','kappa')
-where INSTR(PREFERRED_DEFINITION,'&'||'#955;')>0 or
-INSTR(LONG_NAME,'&'||'#955;')>0
-or INSTR(DESCRIPTION,'&'||'#955;')>0 or
-INSTR(short_meaning,'&'||'#955;')>0 ;   
-
-
-
-  update VALUE_MEANINGS  set  date_modified=v_date, modified_by='DWARZEL',
-short_meaning= replace(short_meaning,'&'||'#223;','eszett'),
-DESCRIPTION=  replace(DESCRIPTION,'&'||'#223;','eszett'),
-LONG_NAME= replace(LONG_NAME,'&'||'#223;','eszett'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#223;','eszett')
-where INSTR(PREFERRED_DEFINITION,'&'||'#223;')>0 or
-INSTR(LONG_NAME,'&'||'#223;')>0 
-or INSTR(DESCRIPTION,'&'||'#223;')>0 or
-INSTR(short_meaning,'&'||'#223;')>0 ;  
-
-
-update VALUE_MEANINGS  set  date_modified=v_date, modified_by='DWARZEL',
-short_meaning= replace(short_meaning,'&'||'#565256;','red color'),
-DESCRIPTION=  replace(DESCRIPTION,'&'||'#565256;','red color'),
-LONG_NAME= replace(LONG_NAME,'&'||'#565256;','red color'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#565256;','red color')
-where INSTR(PREFERRED_DEFINITION,'&'||'#565256;')>0 or
-INSTR(LONG_NAME,'&'||'#565256;')>0 
-or INSTR(DESCRIPTION,'&'||'#565256;')>0 or
-INSTR(short_meaning,'&'||'#565256;')>0 ;
-
- update VALUE_MEANINGS  set  date_modified=v_date, modified_by='DWARZEL',
-short_meaning= replace(short_meaning,'&'||'#8594;','rightwards arrow'),
-DESCRIPTION= replace(DESCRIPTION,'&'||'#8594;','rightwards arrow'),
-LONG_NAME= replace(LONG_NAME,'&'||'#8594;','rightwards arrow'),
-PREFERRED_DEFINITION= replace(PREFERRED_DEFINITION,'&'||'#8594;','rightwards arrow')
-where INSTR(PREFERRED_DEFINITION,'&'||'#8594;')>0 or
-INSTR(LONG_NAME,'&'||'#8594;')>0
-or INSTR(DESCRIPTION,'&'||'#8594;')>0 or
-INSTR(short_meaning,'&'||'#8594;')>0 ;
-
- update VALUE_MEANINGS  set  date_modified=v_date, modified_by='DWARZEL',
-short_meaning= replace(short_meaning,'&'||'#8596;','left right arrow'),
-DESCRIPTION=replace(DESCRIPTION,'&'||'#8596;','left right arrow'),
-LONG_NAME= replace(LONG_NAME,'&'||'#8596;','left right arrow'),
-PREFERRED_DEFINITION=replace(PREFERRED_DEFINITION,'&'||'#8596;','left right arrow')
-where INSTR(PREFERRED_DEFINITION,'&'||'#8596;')>0 or
-INSTR(LONG_NAME,'&'||'#8596;')>0
-or INSTR(DESCRIPTION,'&'||'#8596;')>0 or
-INSTR(short_meaning,'&'||'#8596;')>0 ;
-*/ 
 
  update VALUE_MEANINGS  set  date_modified=v_date, modified_by='DWARZEL',
 short_meaning= replace(short_meaning,'&'||'#956;','µ'),
@@ -4335,7 +4232,7 @@ V_sdate date:=sysdate;
 errmsg VARCHAR2(2000):='Non';
 /******************************************************************************
    NAME:       CT_FIX_REF_DOC
-   PURPOSE:    
+   PURPOSE:
 
    REVISIONS:
    Ver        Date        Author           Description
@@ -4347,18 +4244,15 @@ errmsg VARCHAR2(2000):='Non';
       Sysdate:         8/11/2016
       Date and Time:   8/11/2016, 12:31:43 PM, and 8/11/2016 12:31:43 PM
       Username:        trushi2 (set in TOAD Options, Procedure Editor)
-     
+
 ******************************************************************************/
-BEGIN   
+BEGIN
 
-
-select to_date(to_char(sysdate,'mm/dd/yyyy')||'12:34:56','mm/dd/yyyyhh24:mi:ss')
-into v_date from dual;
 
 insert into SBR.CT_REF_DOC_BKUP
 (
 RD_IDSEQ,
-ORG_IDSEQ    ,  
+ORG_IDSEQ    ,
 AC_IDSEQ   ,
 ACH_IDSEQ   ,
 AR_IDSEQ      ,
@@ -4366,12 +4260,64 @@ NAME         ,
 DOC_TEXT ,
 DATE_MODIFIED       ,
 DATE_INSERT,
-MODIFIED_BY         
+MODIFIED_BY,
+COMMENTS
 )
 
-select 
+select
+r.RD_IDSEQ,
+r.ORG_IDSEQ    ,
+r.AC_IDSEQ   ,
+r.ACH_IDSEQ   ,
+r.AR_IDSEQ      ,
+r.NAME         ,
+r.DOC_TEXT ,
+r.DATE_MODIFIED       ,
+SYSDATE,
+R.MODIFIED_BY,
+'Duplicate'
+from SBR.REFERENCE_DOCUMENTS r,
+SBR.REFERENCE_DOCUMENTS g
+where 
+r.DCTL_NAME=g.DCTL_NAME
+and r.AC_IDSEQ=g.AC_IDSEQ
+and  UTL_I18N.UNESCAPE_REFERENCE(replace(replace(replace(replace(r.name,'&'||'#8804;','<='),'&'||'#8805;','>='),'&'||'#8800;','<>'),'&'||'#8304;','°'))=g.name--replace(replace(replace(g.name,'&'||'#8804','<='),'&'||'#8805','>='),'&'||'#8800','>=')
+and r.RD_IDSEQ<>g.RD_IDSEQ
+and ((instr(r.NAME ,'&'||'#')> 0 and instr(r.NAME ,';')> 0)
+or INSTR(r.NAME,'&'||'gt;')>0 
+or INSTR(r.NAME,'&'||'lt;')>0 
+or  INSTR(r.NAME,'&'||'amp;')>0 )
+and  UTL_I18N.UNESCAPE_REFERENCE(replace(replace(replace(replace(r.name,'&'||'#8804;','<='),'&'||'#8805;','>='),'&'||'#8800;','<>'),'&'||'#8304;','°')) not like'%¿%'
+and g.NAME not like '%&#%'
+and r.RD_IDSEQ not in (select distinct RD_IDSEQ from SBR.CT_REF_DOC_BKUP where comments='Duplicate') ;
+
+commit;
+
+
+
+
+select to_date(to_char(sysdate,'mm/dd/yyyy')||'12:34:56','mm/dd/yyyyhh24:mi:ss')
+into v_date from dual;
+
+
+
+insert into SBR.CT_REF_DOC_BKUP
+(
 RD_IDSEQ,
-ORG_IDSEQ    ,  
+ORG_IDSEQ    ,
+AC_IDSEQ   ,
+ACH_IDSEQ   ,
+AR_IDSEQ      ,
+NAME         ,
+DOC_TEXT ,
+DATE_MODIFIED       ,
+DATE_INSERT,
+MODIFIED_BY
+)
+
+select
+RD_IDSEQ,
+ORG_IDSEQ    ,
 AC_IDSEQ   ,
 ACH_IDSEQ   ,
 AR_IDSEQ      ,
@@ -4379,595 +4325,60 @@ NAME         ,
 DOC_TEXT ,
 DATE_MODIFIED       ,
 SYSDATE,
-MODIFIED_BY    
-from SBR.REFERENCE_DOCUMENTS 
-where INSTR(NAME,'&'||'gt;')>0 or
- INSTR(NAME,'&'||'lt;')>0 or
- INSTR(NAME,'&'||'amp;')>0 or
- INSTR(NAME,'&'||'#32;')>0 or
- INSTR(NAME,'&'||'#33;')>0 or
- INSTR(NAME,'&'||'#34;')>0 or
- INSTR(NAME,'&'||'#35;')>0 or
- INSTR(NAME,'&'||'#36;')>0 or
- INSTR(NAME,'&'||'#37;')>0 or
- INSTR(NAME,'&'||'#38;')>0 or
- INSTR(NAME,'&'||'#39;')>0 or
- INSTR(NAME,'&'||'#40;')>0 or
- INSTR(NAME,'&'||'#41;')>0 or
- INSTR(NAME,'&'||'#42;')>0 or
- INSTR(NAME,'&'||'#43;')>0 or
- INSTR(NAME,'&'||'#44;')>0 or
- INSTR(NAME,'&'||'#45;')>0 or
- INSTR(NAME,'&'||'#46;')>0 or
- INSTR(NAME,'&'||'#47;')>0 or
- INSTR(NAME,'&'||'#60;')>0 or
- INSTR(NAME,'&'||'#61;')>0 or
- INSTR(NAME,'&'||'#62;')>0 or
- INSTR(NAME,'&'||'#63;')>0 or
- INSTR(NAME,'&'||'#64;')>0 or
- INSTR(NAME,'&'||'#91;')>0 or
- INSTR(NAME,'&'||'#92;')>0 or
- INSTR(NAME,'&'||'#93;')>0 or
- INSTR(NAME,'&'||'#94;')>0 or
- INSTR(NAME,'&'||'#123;')>0 or
- INSTR(NAME,'&'||'#124;')>0 or
- INSTR(NAME,'&'||'#125;')>0 or
- INSTR(NAME,'&'||'#126;')>0 or
- INSTR(NAME,'&'||'#176;')>0 or
- INSTR(NAME,'&'||'#177;')>0 or
- INSTR(NAME,'&'||'#178;')>0 or
- INSTR(NAME,'&'||'#179;')>0 or
- INSTR(NAME,'&'||'#181;')>0 or
- INSTR(NAME,'&'||'#191;')>0 or
- INSTR(NAME,'&'||'#8804;')>0 or
- INSTR(NAME,'&'||'#8805;')>0 or 
- INSTR(NAME,'&'||'#8800;')>0 or 
- INSTR(NAME,'&'||'#8223;')>0or
- INSTR(DOC_TEXT,'&'||'gt;')>0 or
- INSTR(DOC_TEXT,'&'||'lt;')>0 or
- INSTR(DOC_TEXT,'&'||'amp;')>0 or
- INSTR(DOC_TEXT,'&'||'#32;')>0 or
- INSTR(DOC_TEXT,'&'||'#33;')>0 or
- INSTR(DOC_TEXT,'&'||'#34;')>0 or
- INSTR(DOC_TEXT,'&'||'#35;')>0 or
- INSTR(DOC_TEXT,'&'||'#36;')>0 or
- INSTR(DOC_TEXT,'&'||'#37;')>0 or
- INSTR(DOC_TEXT,'&'||'#38;')>0 or
- INSTR(DOC_TEXT,'&'||'#39;')>0 or
- INSTR(DOC_TEXT,'&'||'#40;')>0 or
- INSTR(DOC_TEXT,'&'||'#41;')>0 or
- INSTR(DOC_TEXT,'&'||'#42;')>0 or
- INSTR(DOC_TEXT,'&'||'#43;')>0 or
- INSTR(DOC_TEXT,'&'||'#44;')>0 or
- INSTR(DOC_TEXT,'&'||'#45;')>0 or
- INSTR(DOC_TEXT,'&'||'#46;')>0 or
- INSTR(DOC_TEXT,'&'||'#47;')>0 or
- INSTR(DOC_TEXT,'&'||'#60;')>0 or
- INSTR(DOC_TEXT,'&'||'#61;')>0 or
- INSTR(DOC_TEXT,'&'||'#62;')>0 or
- INSTR(DOC_TEXT,'&'||'#63;')>0 or
- INSTR(DOC_TEXT,'&'||'#64;')>0 or
- INSTR(DOC_TEXT,'&'||'#91;')>0 or
- INSTR(DOC_TEXT,'&'||'#92;')>0 or
- INSTR(DOC_TEXT,'&'||'#93;')>0 or
- INSTR(DOC_TEXT,'&'||'#94;')>0 or
- INSTR(DOC_TEXT,'&'||'#123;')>0 or
- INSTR(DOC_TEXT,'&'||'#124;')>0 or
- INSTR(DOC_TEXT,'&'||'#125;')>0 or
- INSTR(DOC_TEXT,'&'||'#126;')>0 or
- INSTR(DOC_TEXT,'&'||'#176;')>0 or
- INSTR(DOC_TEXT,'&'||'#177;')>0 or
- INSTR(DOC_TEXT,'&'||'#178;')>0 or
- INSTR(DOC_TEXT,'&'||'#179;')>0 or
- INSTR(DOC_TEXT,'&'||'#181;')>0 or
- INSTR(DOC_TEXT,'&'||'#191;')>0 or
- INSTR(DOC_TEXT,'&'||'#8804;')>0 or
- INSTR(DOC_TEXT,'&'||'#8805;')>0 or 
- INSTR(DOC_TEXT,'&'||'#8800;')>0 or 
- INSTR(DOC_TEXT,'&'||'#8223;')>0 or
- INSTR(NAME,'&'||'#x61;')>0 or
- INSTR(NAME,'&'||'#x62;')>0 or
- INSTR(NAME,'&'||'#x63;')>0 or
- INSTR(NAME,'&'||'#x64;')>0 or
- 
- INSTR(NAME,'&'||'#x69;')>0 or
- INSTR(NAME,'&'||'#x6a;')>0 or
- INSTR(NAME,'&'||'#x70;')>0 or
- INSTR(NAME,'&'||'#x72;')>0 or
- INSTR(NAME,'&'||'#x73;')>0 or
- INSTR(NAME,'&'||'#x74;')>0 or
- INSTR(NAME,'&'||'#x76;')>0 or
- INSTR(NAME,'&'||'#x3a;')>0 or
- INSTR(NAME,'&'||'#x28;')>0 or 
- INSTR(NAME,'&'||'#x29;')>0 or 
- INSTR(NAME,'&'||'#8322;')>0 or
- INSTR(DOC_TEXT,'&'||'#x61;')>0 or
-INSTR(DOC_TEXT,'&'||'#x62;')>0 or
-INSTR(DOC_TEXT,'&'||'#x63;')>0 or
- INSTR(DOC_TEXT,'&'||'#x64;')>0 or
- INSTR(DOC_TEXT,'&'||'#x69;')>0 or
- INSTR(DOC_TEXT,'&'||'#x6a;')>0 or
- INSTR(DOC_TEXT,'&'||'#x70;')>0 or
- INSTR(DOC_TEXT,'&'||'#x72;')>0 or
- INSTR(DOC_TEXT,'&'||'#x73;')>0 or
- INSTR(DOC_TEXT,'&'||'#x74;')>0 or
- INSTR(DOC_TEXT,'&'||'#x76;')>0 or
- INSTR(DOC_TEXT,'&'||'#x3a;')>0 or
- INSTR(DOC_TEXT,'&'||'#x28;')>0 or 
- INSTR(DOC_TEXT,'&'||'#x29;')>0 or 
- INSTR(DOC_TEXT,'&'||'#8322;')>0;
---1  replace '&gt;' by '>'     
-UPDATE SBR.REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'gt;','>') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'gt;','>'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'gt;')>0 or
-INSTR(DOC_TEXT,'&'||'gt;')>0 ;
-         
-UPDATE SBR.REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#62;','>') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#62;','>'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#62;')>0 or
-INSTR(DOC_TEXT,'&'||'#62;')>0 ;
---2  replace '&lt;' by '<'
+MODIFIED_BY
+from SBR.REFERENCE_DOCUMENTS
 
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'lt;','<') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'lt;','<'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'lt;')>0 or
-INSTR(DOC_TEXT,'&'||'lt;')>0 ;
-         
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#60;','<') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#60;','<'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#60;')>0 or
-INSTR(DOC_TEXT,'&'||'#60;')>0 ;        
-         
---3  replace '&amp;' by '<'
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'amp;','&') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'amp;','&'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'amp;')>0 or
-INSTR(DOC_TEXT,'&'||'amp;')>0  ;
-         
---3  replace '&amp;' by '<'
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#38;','&') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#38;','&'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#38;')>0 or
-INSTR(DOC_TEXT,'&'||'#38;')>0  ;        
-         
- 
----   replace &#32; by '  '    
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#32;',' '),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#32;',' '),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#32;')>0 or
-INSTR(DOC_TEXT,'&'||'#32;')>0 ;   
-                    
----   replace &#33; by !        
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#33;','!'),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#33;','!'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#33;')>0 or
-INSTR(DOC_TEXT,'&'||'#33;')>0 ;    
-         
----   replace &#34; by "       
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#34;','"'),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#34;','"'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#34;')>0 or
-INSTR(DOC_TEXT,'&'||'#34;')>0 ;                  
-         
--- 4   $    &#35; 
-           
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#35;','#'),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#35;','#'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#35;')>0 or
-INSTR(DOC_TEXT,'&'||'#35;')>0  ; 
-           
--- 5   $    &#36; 
-           
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#36;','$'),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#36;','$'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#36;')>0 or
-INSTR(DOC_TEXT,'&'||'#36;')>0 ; 
---6    %   &#37;          
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#37;','%'),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#37;','%'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#37;')>0 or
-INSTR(DOC_TEXT,'&'||'#37;')>0 ; 
-         
---6    &#39;    single quote      
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#39;',''''),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#39;',''''),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#39;')>0 or
-INSTR(DOC_TEXT,'&'||'#39;')>0 ;         
-             
-           
--- 7   (   &#40; 
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#40;','('),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#40;','('),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#40;')>0 or
-INSTR(DOC_TEXT,'&'||'#40;')>0 ;
---    )   &#41; 
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#41;',')'),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#41;',')'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#41;')>0 or
-INSTR(DOC_TEXT,'&'||'#41;')>0 ;          
-                             
---    *   &#42; 
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#42;','*'),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#42;','*'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#42;')>0 or
-INSTR(DOC_TEXT,'&'||'#42;')>0 ;  
-           
---    +    &#43; 
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#43;','+'),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#43;','+'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#43;')>0 or
-INSTR(DOC_TEXT,'&'||'#43;')>0 ;  
-           
---    -    &#45; 
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#45;','-'),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#45;','-'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#45;')>0 or
-INSTR(DOC_TEXT,'&'||'#45;')>0 ;     
-         
-            
---    '.'    &#46; 
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#46;','.'),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#46;','.'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#46;')>0 or
-INSTR(DOC_TEXT,'&'||'#46;')>0 ;            
-         
---    /    &#47; 
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#47;','/'),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#47;','/'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#47;')>0 or
-INSTR(DOC_TEXT,'&'||'#47;')>0  ;
---    =    &#61;        
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#61;','=') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#61;','='),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#61;')>0 or
-INSTR(DOC_TEXT,'&'||'#61;')>0  ; 
-           
---    ?   &#63;        
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#63;','?') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#63;','?'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#63;')>0 or
-INSTR(DOC_TEXT,'&'||'#63;')>0 ;
- 
---    ?   &#63;        
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#64;','@') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#64;','@'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#64;')>0 or
-INSTR(DOC_TEXT,'&'||'#64;')>0 ;
-                     
---   [   &#91;  opening bracket      
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#91;','[') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#91;','['),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#91;')>0 or
-INSTR(DOC_TEXT,'&'||'#91;')>0 ;  
-           
---   \   &#92;  backslash      
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#92;','\') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#92;','\'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#92;')>0 or
-INSTR(DOC_TEXT,'&'||'#92;')>0  ; 
-           
---  ]   &#93;  closing bracket      
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#93;',']') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#93;',']'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#93;')>0 or
-INSTR(DOC_TEXT,'&'||'#93;')>0 ; 
-           
---  ^  &#94;  caret - circumflex     
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#94;','^') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#94;','^'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#94;')>0 or
-INSTR(DOC_TEXT,'&'||'#94;')>0  ;  
-           
-           
---  {  &#123;  opening brace     
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#123;','{') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#123;','{'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#123;')>0 or
-INSTR(DOC_TEXT,'&'||'#123;')>0 ;  
-         
-         
---  {  &#123;  opening brace     
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#124;','{') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#124;','|'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#124;')>0 or
-INSTR(DOC_TEXT,'&'||'#124;')>0 ;          
-           
---  {  &#125;  closing brace    
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#125;','}') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#125;','}'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#125;')>0 or
-INSTR(DOC_TEXT,'&'||'#125;')>0  ;                       
-
---  ~  &#125;  equivalency sign - tilde    
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#126;','~') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#126;','~'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#126;')>0 or
-INSTR(DOC_TEXT,'&'||'#126;')>0  ;  
-         
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#191;','') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#191;',''),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#191;')>0 or
-INSTR(DOC_TEXT,'&'||'#191;')>0  ;  
-         
---  °  &#176;    degree sign
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#176;','°') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#176;','°'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#176;')>0 or
-INSTR(DOC_TEXT,'&'||'#176;')>0 ;  
-           
---  ±  &#177;  plus-or-minus sign   
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#177;','±') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#177;','±'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#177;')>0 or
-INSTR(DOC_TEXT,'&'||'#177;')>0 ;  
---  ² &#178;  superscript two - squared    
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#178;','²') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#178;','²'),
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#178;')>0 or
-INSTR(DOC_TEXT,'&'||'#178;')>0 ;
-             
---  ³  &#179;  superscript three - cubed   
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#179;','³') ,
-DOC_TEXT=replace(DOC_TEXT,'&'||'#179;','³'),            
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#179;')>0 or
-INSTR(DOC_TEXT,'&'||'#179;')>0;  
-           
---  µ  &#181;   micro sign  
-UPDATE REFERENCE_DOCUMENTS set NAME=replace(NAME,'&'||'#181;','µ') ,                              
-DOC_TEXT=replace(DOC_TEXT,'&'||'#181;','µ'),                                 
-date_modified=v_date, modified_by='DWARZEL'
-where INSTR(NAME,'&'||'#181;')>0 or
-INSTR(DOC_TEXT,'&'||'#181;')>0  ;  
-         
-           
- update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME=  replace(NAME,'&'||'#x61;','a'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#x61;','a')
-where INSTR(DOC_TEXT,'&'||'#x61;')>0 or
-INSTR(NAME,'&'||'#x61;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME=replace(NAME,'&'||'#x62;','b'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#x62;','b')
-where INSTR(DOC_TEXT,'&'||'#x62;')>0 or
-INSTR(NAME,'&'||'#x62;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME=  replace(NAME,'&'||'#x63;','c'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#x63;','c')
-where INSTR(DOC_TEXT,'&'||'#x63;')>0 or
-INSTR(NAME,'&'||'#x63;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME=replace(NAME,'&'||'#x64;','d'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#x64;','d')
-where INSTR(DOC_TEXT,'&'||'#x64;')>0 or
-INSTR(NAME,'&'||'#x64;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME=replace(NAME,'&'||'#x69;','i'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#x69;','i')
-where INSTR(DOC_TEXT,'&'||'#x69;')>0 or
-INSTR(NAME,'&'||'#x69;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME=replace(NAME,'&'||'#x6a;','j'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#x6a;','j')
-where INSTR(DOC_TEXT,'&'||'#x6a;')>0 or
-INSTR(NAME,'&'||'#x6a;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#x70;','p'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#x70;','p')
-where INSTR(DOC_TEXT,'&'||'#x70;')>0 or
-INSTR(NAME,'&'||'#x70;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME=replace(NAME,'&'||'#x72;','r'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#x72;','r')
-where INSTR(DOC_TEXT,'&'||'#x72;')>0 or
-INSTR(NAME,'&'||'#x72;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME=replace(NAME,'&'||'#x73;','s'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#x73;','s')
-where INSTR(DOC_TEXT,'&'||'#x73;')>0 or
-INSTR(NAME,'&'||'#x73;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME=replace(NAME,'&'||'#x74;','t'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#x74;','t')
-where INSTR(DOC_TEXT,'&'||'#x74;')>0 or
-INSTR(NAME,'&'||'#x74;')>0 ;
+where( (
+(
+(instr(NAME ,'&'||'#')> 0  and instr(NAME ,';')> 0)
+or INSTR(NAME,'&'||'gt;')>0 
+or INSTR(NAME,'&'||'lt;')>0 
+or  INSTR(NAME,'&'||'amp;')>0
+ )
+and  UTL_I18N.UNESCAPE_REFERENCE(replace(replace(replace(replace(name,'&'||'#8804;','<='),'&'||'#8805;','>='),'&'||'#8800;','<>'),'&'||'#8304;','°')) not like'%¿%')
+or 
+(((instr(DOC_TEXT ,'&'||'#')> 0 and instr(DOC_TEXT ,';')> 0)
+or INSTR(DOC_TEXT,'&'||'gt;')>0 
+or INSTR(DOC_TEXT,'&'||'lt;')>0 
+or  INSTR(DOC_TEXT,'&'||'amp;')>0 )
+and   UTL_I18N.UNESCAPE_REFERENCE(replace(replace(replace(replace(DOC_TEXT,'&'||'#8804;','<='),'&'||'#8805;','>='),'&'||'#8800;','<>'),'&'||'#8304;','°')) not like'%¿%') )
+and RD_IDSEQ not in (select distinct RD_IDSEQ from SBR.CT_REF_DOC_BKUP where comments='Duplicate') ;
 
 
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME=replace(NAME,'&'||'#x76;','v'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#x76;','v')
-where INSTR(DOC_TEXT,'&'||'#x76;')>0 or
-INSTR(NAME,'&'||'#x76;')>0 ;
 
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME=replace(NAME,'&'||'#x3a;',':'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#x3a;',':')
-where INSTR(DOC_TEXT,'&'||'#x3a;')>0 or
-INSTR(NAME,'&'||'#x3a;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#x28;','('),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#x28;','(')
-where INSTR(DOC_TEXT,'&'||'#x28;')>0 or
-INSTR(NAME,'&'||'#x28;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#x29;',')'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#x29;',')')
-where INSTR(DOC_TEXT,'&'||'#x29;')>0 or
-INSTR(NAME,'&'||'#x29;')>0 ;
+UPDATE SBR.REFERENCE_DOCUMENTS set 
+date_modified=v_date, modified_by='DWARZEL',
+NAME=UTL_I18N.UNESCAPE_REFERENCE(replace(replace(replace(replace(name,'&'||'#8804;','<='),'&'||'#8805;','>='),'&'||'#8800;','<>'),'&'||'#8304;','°')) 
+where ((instr(NAME ,'&'||'#')> 0  and instr(NAME ,';')> 0)
+or INSTR(NAME,'&'||'gt;')>0 
+or INSTR(NAME,'&'||'lt;')>0 
+or  INSTR(NAME,'&'||'amp;')>0 )
+and UTL_I18N.UNESCAPE_REFERENCE(replace(replace(replace(replace(name,'&'||'#8804;','<='),'&'||'#8805;','>='),'&'||'#8800;','<>'),'&'||'#8304;','°')) not like'%¿%'
+and RD_IDSEQ not in (select distinct RD_IDSEQ from SBR.CT_REF_DOC_BKUP where comments='Duplicate') ;
 
 
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#8804;','<='),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#8804;','<=')
-where INSTR(DOC_TEXT,'&'||'#8804;')>0 or
-INSTR(NAME,'&'||'#8804;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#8805;','>='),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#8805;','>=')
-where INSTR(DOC_TEXT,'&'||'#8805;')>0 or
-INSTR(NAME,'&'||'#8805;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#8800;','<>'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#8800;','<>')
-where INSTR(DOC_TEXT,'&'||'#8800;')>0 or
-INSTR(NAME,'&'||'#8800;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#8223;',''''),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#8223;','''')
-where INSTR(DOC_TEXT,'&'||'#8223;')>0 or
-INSTR(NAME,'&'||'#8223;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#8322;','²'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#8322;','²')
-where INSTR(DOC_TEXT,'&'||'#8322;')>0 or
-INSTR(NAME,'&'||'#8322;')>0 ;
-
-/*  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#945;','alpha'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#945;','alpha')
-where INSTR(DOC_TEXT,'&'||'#945;')>0 or
-INSTR(NAME,'&'||'#945;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#946;','beta'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#946;','beta')
-where INSTR(DOC_TEXT,'&'||'#946;')>0 or
-INSTR(NAME,'&'||'#946;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#947;','gamma'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#947;','gamma')
-where INSTR(DOC_TEXT,'&'||'#947;')>0 or
-INSTR(NAME,'&'||'#947;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#948;','delta'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#948;','delta')
-where INSTR(DOC_TEXT,'&'||'#948;')>0 or
-INSTR(NAME,'&'||'#948;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#954;','lambda'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#954;','lambda')
-where INSTR(DOC_TEXT,'&'||'#954;')>0 or
-INSTR(NAME,'&'||'#954;')>0 ;
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#955;','kappa'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#955;','kappa')
-where INSTR(DOC_TEXT,'&'||'#955;')>0 or
-INSTR(NAME,'&'||'#955;')>0 ;
+UPDATE SBR.REFERENCE_DOCUMENTS set 
+date_modified=v_date, modified_by='DWARZEL',
+DOC_TEXT=UTL_I18N.UNESCAPE_REFERENCE(replace(replace(replace(replace(DOC_TEXT,'&'||'#8804;','<='),'&'||'#8805;','>='),'&'||'#8800;','<>'),'&'||'#8304;','°'))
+where((instr(DOC_TEXT ,'&'||'#')> 0 and instr(DOC_TEXT ,';')> 0)
+or INSTR(DOC_TEXT,'&'||'gt;')>0 
+or INSTR(DOC_TEXT,'&'||'lt;')>0 
+or  INSTR(DOC_TEXT,'&'||'amp;')>0 )
+and UTL_I18N.UNESCAPE_REFERENCE(replace(replace(replace(replace(DOC_TEXT,'&'||'#8804;','<='),'&'||'#8805;','>='),'&'||'#8800;','<>'),'&'||'#8304;','°')) not like'%¿%' 
+and RD_IDSEQ not in (select distinct RD_IDSEQ from SBR.CT_REF_DOC_BKUP where comments='Duplicate') ;
 
 
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#223;','eszett'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#223;','eszett')
-where INSTR(DOC_TEXT,'&'||'#223;')>0 or
-INSTR(NAME,'&'||'#223;')>0 ;
-
-
- update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#65256;','red color'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#65256;','red color')
-where INSTR(DOC_TEXT,'&'||'#65256;')>0 or
-INSTR(NAME,'&'||'#65256;')>0 ;
-
- update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#8594;','rightwards arrow'),
-DOC_TEXT= replace(DOC_TEXT,'&'||'#8594;','rightwards arrow')
-where INSTR(DOC_TEXT,'&'||'#8594;')>0 or
-INSTR(NAME,'&'||'#8594;')>0 ;
-
- update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#8596;','left right arrow'),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#8596;','left right arrow')
-where INSTR(DOC_TEXT,'&'||'#8596;')>0 or
-INSTR(NAME,'&'||'#8596;')>0 ;
-
- update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#3425;','LL'),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#3425;','LL')
-where INSTR(DOC_TEXT,'&'||'#3425;')>0 or
-INSTR(NAME,'&'||'#3425;')>0 ;*/
-
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#956;','µ'),
-DOC_TEXT=  replace(DOC_TEXT,'&'||'#956;','µ')
-where INSTR(DOC_TEXT,'&'||'#956;')>0 or
-INSTR(NAME,'&'||'#956;')>0 ;
-      
-  update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#8200;',' '),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#8200;',' ')
-where INSTR(DOC_TEXT,'&'||'#8200;')>0 or
-INSTR(NAME,'&'||'#8200;')>0 ;     
-
- update REFERENCE_DOCUMENTS  set  date_modified=v_date, modified_by='DWARZEL',
-NAME= replace(NAME,'&'||'#8236;',' '),
-DOC_TEXT=replace(DOC_TEXT,'&'||'#8236;',' ')
-where INSTR(DOC_TEXT,'&'||'#8236;')>0 or
-INSTR(NAME,'&'||'#8236;')>0 ;                                                                               
  commit;
 
  EXCEPTION
- 
-    WHEN OTHERS THEN   
-    
+
+    WHEN OTHERS THEN
+
     errmsg := substr(SQLERRM,1,2000);
          dbms_output.put_line('errmsg  - '||errmsg);
         insert into SBREXT.CT_FB_SPCHAR_ERROR_LOG VALUES('CT_FIX_REF_DOC',   sysdate ,errmsg);
-        
-     commit; 
+
+     commit;
 END CT_FIX_REF_DOC;
 /
 CREATE OR REPLACE PROCEDURE SBREXT.CT_FIX_PROPERTIES_EXT IS
@@ -5518,73 +4929,7 @@ PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#8322;','²')
 where INSTR(PREFERRED_DEFINITION,'&'||'#8322;')>0 or
 INSTR(LONG_NAME,'&'||'#8322;')>0 ;
 
-/*  update PROPERTIES_EXT  set  date_modified=v_date, modified_by='DWARZEL',
-LONG_NAME= replace(LONG_NAME,'&'||'#945;','alpha'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#945;','alpha')
-where INSTR(PREFERRED_DEFINITION,'&'||'#945;')>0 or
-INSTR(LONG_NAME,'&'||'#945;')>0 ;
-
-  update PROPERTIES_EXT  set  date_modified=v_date, modified_by='DWARZEL',
-LONG_NAME= replace(LONG_NAME,'&'||'#946;','beta'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#946;','beta')
-where INSTR(PREFERRED_DEFINITION,'&'||'#946;')>0 or
-INSTR(LONG_NAME,'&'||'#946;')>0 ;
-
-  update PROPERTIES_EXT  set  date_modified=v_date, modified_by='DWARZEL',
-LONG_NAME= replace(LONG_NAME,'&'||'#947;','gamma'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#947;','gamma')
-where INSTR(PREFERRED_DEFINITION,'&'||'#947;')>0 or
-INSTR(LONG_NAME,'&'||'#947;')>0 ;
-
-  update PROPERTIES_EXT  set  date_modified=v_date, modified_by='DWARZEL',
-LONG_NAME= replace(LONG_NAME,'&'||'#948;','delta'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#948;','delta')
-where INSTR(PREFERRED_DEFINITION,'&'||'#948;')>0 or
-INSTR(LONG_NAME,'&'||'#948;')>0 ;
-
-  update PROPERTIES_EXT  set  date_modified=v_date, modified_by='DWARZEL',
-LONG_NAME= replace(LONG_NAME,'&'||'#954;','lambda'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#954;','lambda')
-where INSTR(PREFERRED_DEFINITION,'&'||'#954;')>0 or
-INSTR(LONG_NAME,'&'||'#954;')>0 ;
-
-  update PROPERTIES_EXT  set  date_modified=v_date, modified_by='DWARZEL',
-LONG_NAME= replace(LONG_NAME,'&'||'#955;','kappa'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#955;','kappa')
-where INSTR(PREFERRED_DEFINITION,'&'||'#955;')>0 or
-INSTR(LONG_NAME,'&'||'#955;')>0 ;
-
-
-  update PROPERTIES_EXT  set  date_modified=v_date, modified_by='DWARZEL',
-LONG_NAME= replace(LONG_NAME,'&'||'#223;','eszett'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#223;','eszett')
-where INSTR(PREFERRED_DEFINITION,'&'||'#223;')>0 or
-INSTR(LONG_NAME,'&'||'#223;')>0 ;
-
-
- update PROPERTIES_EXT  set  date_modified=v_date, modified_by='DWARZEL',
-LONG_NAME= replace(LONG_NAME,'&'||'#65256;','red color'),
-PREFERRED_DEFINITION=  replace(PREFERRED_DEFINITION,'&'||'#65256;','red color')
-where INSTR(PREFERRED_DEFINITION,'&'||'#65256;')>0 or
-INSTR(LONG_NAME,'&'||'#65256;')>0 ;
-
- update PROPERTIES_EXT  set  date_modified=v_date, modified_by='DWARZEL',
-LONG_NAME= replace(LONG_NAME,'&'||'#8594;','rightwards arrow'),
-PREFERRED_DEFINITION= replace(PREFERRED_DEFINITION,'&'||'#8594;','rightwards arrow')
-where INSTR(PREFERRED_DEFINITION,'&'||'#8594;')>0 or
-INSTR(LONG_NAME,'&'||'#8594;')>0 ;
-
- update PROPERTIES_EXT  set  date_modified=v_date, modified_by='DWARZEL',
-LONG_NAME= replace(LONG_NAME,'&'||'#8596;','left right arrow'),
-PREFERRED_DEFINITION=replace(PREFERRED_DEFINITION,'&'||'#8596;','left right arrow')
-where INSTR(PREFERRED_DEFINITION,'&'||'#8596;')>0 or
-INSTR(LONG_NAME,'&'||'#8596;')>0 ;
-
- update PROPERTIES_EXT  set  date_modified=v_date, modified_by='DWARZEL',
-LONG_NAME= replace(LONG_NAME,'&'||'#3425;','LL'),
-PREFERRED_DEFINITION=replace(PREFERRED_DEFINITION,'&'||'#3425;','LL')
-where INSTR(PREFERRED_DEFINITION,'&'||'#3425;')>0 or
-INSTR(LONG_NAME,'&'||'#3425;')>0 ;*/
+/*  */
 
   update PROPERTIES_EXT  set  date_modified=v_date, modified_by='DWARZEL',
 LONG_NAME= replace(LONG_NAME,'&'||'#956;','µ'),
