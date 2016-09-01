@@ -1,6 +1,5 @@
-
-
 CREATE OR REPLACE PROCEDURE SBR.META_UPLOAD_CONTACT_SP IS
+
 
 ---contacts do not exist
 CURSOR C1 IS
@@ -35,7 +34,11 @@ on DE_IDSEQ=AC_IDSEQ;
 
 errmsg VARCHAR(110);
 v_cnt NUMBER ;
-v_check_en NUMBER;
+v_check NUMBER;
+
+
+ v_PERID VARCHAR(50);
+ v_ORGID VARCHAR(50);
 
 BEGIN
 
@@ -51,7 +54,8 @@ SBR.META_UPLOAD_CONTACT u
  IF(v_cnt > 0) THEN
  FOR q_rec IN C1 LOOP
   BEGIN
-   
+  
+
    insert into SBR.META_UPLOAD_ERROR_LOG
    select
    'contacts do not exist',
@@ -151,10 +155,38 @@ on DE_IDSEQ=AC_IDSEQ;
  IF(v_cnt > 0) THEN
  FOR q_rec IN C3 LOOP
   BEGIN
+  
+  
+  select PER_IDSEQ, ORG_IDSEQ into  v_PERID, v_ORGID
+  from SBR.CONTACT_COMMS c
+  where  c.ctl_name=q_rec.ctl_name
+  and c.cyber_address=q_rec.cyber_address ;
+  
+  IF v_PERID is not null then 
+   select count(*) into v_check from SBR.META_UPLOAD_CONTACT u  
+   inner join  SBR.DATA_ELEMENTS  e
+   on cde_id=  Public_ID
+   and u.version=e.version
+   inner join SBREXT.CABIO31_AC_CONTACTS_VIEW  c
+    on DE_IDSEQ=AC_IDSEQ
+    and c.PER_IDSEQ=v_PERID;
+ ELSE
+  select count(*) into v_check from SBR.META_UPLOAD_CONTACT u  
+   inner join  SBR.DATA_ELEMENTS  e
+   on cde_id=  Public_ID
+   and u.version=e.version
+   inner join SBREXT.CABIO31_AC_CONTACTS_VIEW  c
+    on DE_IDSEQ=AC_IDSEQ
+    and c.ORG_IDSEQ=v_ORGID;
+ END IF;
+  
+  IF v_check =0 then 
+
+
    
    insert into SBR.META_UPLOAD_ERROR_LOG
    select
-   'CDE have contacts',
+   'CDE has contacts',
    SYSDATE,
    'SBR.META_UPLOAD_CONTACT_SP',
    q_rec.ctl_name||','||q_rec.cyber_address||','||q_rec.ORGANISATION
@@ -170,6 +202,11 @@ on DE_IDSEQ=AC_IDSEQ;
  where Public_ID=q_rec.Public_ID and VERSION=q_rec.VERSION
  and ctl_name=q_rec.ctl_name and cyber_address=q_rec.cyber_address;
  commit;
+ ELSE
+  UPDATE  SBR.META_UPLOAD_CONTACT set COMMENTS='CDE has same contacts'
+ where Public_ID=q_rec.Public_ID and VERSION=q_rec.VERSION
+ and ctl_name=q_rec.ctl_name and cyber_address=q_rec.cyber_address;
+ END IF;
  
  EXCEPTION WHEN NO_DATA_FOUND THEN
   NULL;
@@ -178,9 +215,13 @@ END LOOP;
 END IF;
 
 
+
+
+
+
 DECLARE
 
-CURSOR C4 IS
+CURSOR C5 IS
 select *
 from SBR.META_UPLOAD_CONTACT   where COMMENTS is null;
 
@@ -196,7 +237,7 @@ select count(*) into v_cnt from SBR.META_UPLOAD_CONTACT u
  where COMMENTS is null;
  
  IF(v_cnt > 0) THEN
- FOR q_rec IN C4 LOOP
+ FOR q_rec IN C5 LOOP
   BEGIN
    
  select admincomponent_crud.cmr_guid into v_acc_idseq from dual; 
@@ -242,7 +283,7 @@ select count(*) into v_cnt from SBR.META_UPLOAD_CONTACT u
   errmsg := substr(SQLERRM,1,100);
   insert into SBR.META_UPLOAD_ERROR_LOG
    select
-   'CDE have contacts',
+   errmsg,
    SYSDATE,
    'SBR.META_UPLOAD_CONTACT_SP',
    q_rec.Public_ID||','||q_rec.VERSION||','||q_rec.ctl_name||','||q_rec.cyber_address||','||q_rec.ORGANISATION||','||errmsg
