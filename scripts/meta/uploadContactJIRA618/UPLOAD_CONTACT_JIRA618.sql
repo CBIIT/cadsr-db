@@ -3,7 +3,7 @@ CREATE OR REPLACE PROCEDURE SBR.META_UPLOAD_CONTACT_SP IS
 
 ---contacts do not exist
 CURSOR C1 IS
-select u.Public_ID,u.VERSION ,u.RANK_ORDER,
+select distinct u.Public_ID,u.VERSION ,u.RANK_ORDER,
 u.ORGANISATION,u.LNAME,u.FNAME, u.CTL_NAME ,u.CYBER_ADDRESS
 from SBR.META_UPLOAD_CONTACT u
  left outer join  SBR.CONTACT_COMMS c
@@ -13,7 +13,7 @@ from SBR.META_UPLOAD_CONTACT u
  
  ---CDE do not exist 
 CURSOR C2 IS
-select u.Public_ID,u.VERSION,u.RANK_ORDER,
+select distinct u.Public_ID,u.VERSION,u.RANK_ORDER,
 u.ORGANISATION,u.LNAME,u.FNAME, u.CTL_NAME ,u.CYBER_ADDRESS
 from SBR.META_UPLOAD_CONTACT u
  left outer join  SBR.DATA_ELEMENTS  e
@@ -21,14 +21,14 @@ from SBR.META_UPLOAD_CONTACT u
  and u.version=e.version
  where  DE_IDSEQ is null;
  
- ---CDE have contacts
- CURSOR C3 IS
- select u.Public_ID,u.VERSION,u.RANK_ORDER,
-u.ORGANISATION,u.LNAME,u.FNAME, u.CTL_NAME ,u.CYBER_ADDRESS
+---CDE have contacts
+CURSOR C3 IS
+select distinct u.Public_ID,u.VERSION,u.RANK_ORDER,
+u.ORGANISATION,u.LNAME,u.FNAME, u.CTL_NAME ,u.CYBER_ADDRESS,C.ORG_IDSEQ,C.PER_IDSEQ
 from SBR.META_UPLOAD_CONTACT u  
- inner join  SBR.DATA_ELEMENTS  e
- on cde_id=  Public_ID
- and u.version=e.version
+inner join  SBR.DATA_ELEMENTS  e
+on cde_id=  Public_ID
+and u.version=e.version
 inner join SBREXT.CABIO31_AC_CONTACTS_VIEW  c
 on DE_IDSEQ=AC_IDSEQ;
 
@@ -62,21 +62,26 @@ SBR.META_UPLOAD_CONTACT u
    SYSDATE,
    'SBR.META_UPLOAD_CONTACT_SP',
    q_rec.ctl_name||','||q_rec.cyber_address||','||q_rec.ORGANISATION
-   from 
-SBR.META_UPLOAD_CONTACT u
- left outer join  SBR.CONTACT_COMMS c
- on c.ctl_name=u.ctl_name
- and c.cyber_address=u.cyber_address 
- where  ccomm_IDSEQ is null;
+   from SBR.META_UPLOAD_CONTACT u
+ where ctl_name=q_rec.ctl_name
+ and cyber_address=q_rec.cyber_address ;
  
  UPDATE  SBR.META_UPLOAD_CONTACT set COMMENTS='ERROR'
  where Public_ID=q_rec.Public_ID 
 and VERSION=q_rec.VERSION
  and ctl_name=q_rec.ctl_name 
  and cyber_address=q_rec.cyber_address;
- commit;
- EXCEPTION WHEN NO_DATA_FOUND THEN
-  NULL;
+
+ EXCEPTION WHEN OTHERS THEN
+  errmsg := substr(SQLERRM,1,100);
+  insert into SBR.META_UPLOAD_ERROR_LOG
+   select
+   errmsg,
+   SYSDATE,
+   'SBR.META_UPLOAD_CONTACT_SP',
+   q_rec.Public_ID||','||q_rec.VERSION||','||q_rec.ctl_name||','||q_rec.cyber_address||','||q_rec.ORGANISATION||','||errmsg
+   from SBR.META_UPLOAD_CONTACT ; 
+   commit;
  END;
  
 /*
@@ -116,10 +121,8 @@ select count(*) into v_cnt from SBR.META_UPLOAD_CONTACT u
    'SBR.META_UPLOAD_CONTACT_SP',
   rec.Public_ID||','||rec.VERSION
   from SBR.META_UPLOAD_CONTACT u  
- left outer join  SBR.DATA_ELEMENTS  e
- on cde_id=  Public_ID
- and u.version=e.version
- where  DE_IDSEQ is null;
+ where  Public_ID=  rec.Public_ID
+ and u.version=rec.version;
   
  
  UPDATE  SBR.META_UPLOAD_CONTACT set COMMENTS='ERROR'
@@ -128,11 +131,17 @@ and VERSION=rec.VERSION
  and ctl_name=rec.ctl_name 
  and cyber_address=rec.cyber_address;
  commit;
- EXCEPTION WHEN NO_DATA_FOUND THEN
-  NULL;
+  EXCEPTION WHEN OTHERS THEN
+  errmsg := substr(SQLERRM,1,100);
+  insert into SBR.META_UPLOAD_ERROR_LOG
+   select
+   errmsg,
+   SYSDATE,
+   'SBR.META_UPLOAD_CONTACT_SP',
+   rec.Public_ID||','||rec.VERSION||','||rec.ctl_name||','||rec.cyber_address||','||errmsg
+   from SBR.META_UPLOAD_CONTACT ; 
+   commit; 
  END;
- 
-
 
 END LOOP;
 END IF;
@@ -162,28 +171,10 @@ on DE_IDSEQ=AC_IDSEQ;
   where  c.ctl_name=q_rec.ctl_name
   and c.cyber_address=q_rec.cyber_address ;
   
-  IF v_PERID is not null then 
-   select count(*) into v_check from SBR.META_UPLOAD_CONTACT u  
-   inner join  SBR.DATA_ELEMENTS  e
-   on cde_id=  Public_ID
-   and u.version=e.version
-   inner join SBREXT.CABIO31_AC_CONTACTS_VIEW  c
-    on DE_IDSEQ=AC_IDSEQ
-    and c.PER_IDSEQ=v_PERID;
- ELSE
-  select count(*) into v_check from SBR.META_UPLOAD_CONTACT u  
-   inner join  SBR.DATA_ELEMENTS  e
-   on cde_id=  Public_ID
-   and u.version=e.version
-   inner join SBREXT.CABIO31_AC_CONTACTS_VIEW  c
-    on DE_IDSEQ=AC_IDSEQ
-    and c.ORG_IDSEQ=v_ORGID;
- END IF;
+  dbms_output.put_line('this is PER_IDSEQ, ORG_IDSEQ:'||v_PERID||','||v_PERID);
+  IF NVL(v_PERID,'NF') <> q_rec.PER_IDSEQ and NVL(v_ORGID,'NF') <> q_rec.ORG_IDSEQ
+  THEN
   
-  IF v_check =0 then 
-
-
-   
    insert into SBR.META_UPLOAD_ERROR_LOG
    select
    'CDE has contacts',
@@ -191,11 +182,8 @@ on DE_IDSEQ=AC_IDSEQ;
    'SBR.META_UPLOAD_CONTACT_SP',
    q_rec.ctl_name||','||q_rec.cyber_address||','||q_rec.ORGANISATION
    from SBR.META_UPLOAD_CONTACT u  
- inner join  SBR.DATA_ELEMENTS  e
- on cde_id=  Public_ID
- and u.version=e.version
-inner join SBREXT.CABIO31_AC_CONTACTS_VIEW  c
-on DE_IDSEQ=AC_IDSEQ;
+ where  Public_ID=  q_rec.Public_ID
+ and q_rec.version=version;
 
 
  UPDATE  SBR.META_UPLOAD_CONTACT set COMMENTS='ERROR'
@@ -208,12 +196,19 @@ on DE_IDSEQ=AC_IDSEQ;
  and ctl_name=q_rec.ctl_name and cyber_address=q_rec.cyber_address;
  END IF;
  
- EXCEPTION WHEN NO_DATA_FOUND THEN
-  NULL;
+ EXCEPTION WHEN OTHERS THEN
+  errmsg := substr(SQLERRM,1,100);
+  insert into SBR.META_UPLOAD_ERROR_LOG
+   select
+   errmsg,
+   SYSDATE,
+   'SBR.META_UPLOAD_CONTACT_SP',
+   q_rec.Public_ID||','||q_rec.VERSION||','||q_rec.ctl_name||','||q_rec.cyber_address||','||q_rec.ORGANISATION||','||errmsg
+   from SBR.META_UPLOAD_CONTACT ; 
+   commit; 
  END;
 END LOOP;
 END IF;
-
 
 
 
