@@ -243,7 +243,7 @@ and RD_IDSEQ not in (select distinct RD_IDSEQ from SBR.CT_REF_DOC_BKUP where com
      commit;
 END CT_FIX_REF_DOC11G;
 
-
+/
 CREATE OR REPLACE PROCEDURE SBR.CT_FIX_SP_CHAR_PV11G IS
 v_date  date  ;
 V_sdate date:=sysdate;
