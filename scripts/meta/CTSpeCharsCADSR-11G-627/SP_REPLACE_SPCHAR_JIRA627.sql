@@ -841,6 +841,354 @@ and UTL_I18N.UNESCAPE_REFERENCE(DESCRIPTION_TEXT) not like'%¿%'  ;
      commit; 
 END CT_FIX_SPCHAR_VV_ATT_EXT11G;
 /
+CREATE OR REPLACE PROCEDURE SBR.CT_FIX_DATA_ELEMENT_CONC11G IS
+v_date  date  ;
+V_sdate date:=sysdate;
+errmsg VARCHAR2(2000):='Non';
+/******************************************************************************
+   NAME:       CT_FIX_DATA_ELEMENT_CONCEPTS11G 
+   PURPOSE:    
+
+   REVISIONS:
+   Ver        Date        Author           Description
+   ---------  ----------  ---------------  ------------------------------------
+   1.0        8/11/2016   trushi2       1. Created this procedure.
+
+   NOTES:
+      Object Name:     CT_fix_sp_char_VM
+      Sysdate:         8/11/2016
+      Date and Time:   8/11/2016, 12:31:43 PM, and 8/11/2016 12:31:43 PM
+      Username:        trushi2 (set in TOAD Options, Procedure Editor)
+     
+******************************************************************************/
+BEGIN   
+
+
+select to_date(to_char(sysdate,'mm/dd/yyyy')||'12:34:56','mm/dd/yyyyhh24:mi:ss')
+into v_date from dual;
+
+insert into  SBR.CT_DATA_ELEMENT_CONCEPTS_BKUP
+(
+           DEC_IDSEQ ,
+           PREFERRED_DEFINITION,
+           LONG_NAME,         
+           DATE_MODIFIED, 
+           DATE_INSERT,           
+           MODIFIED_BY          
+)
+
+select     DEC_IDSEQ ,
+           PREFERRED_DEFINITION,
+           LONG_NAME,    
+           DATE_MODIFIED, 
+           SYSDATE    ,       
+           MODIFIED_BY
+from SBR.DATA_ELEMENT_CONCEPTS
+where ((((instr(LONG_NAME ,'&'||'#')> 0  and instr(LONG_NAME ,';')> 0)
+or INSTR(LONG_NAME,'&'||'gt;')>0 
+or INSTR(LONG_NAME,'&'||'lt;')>0 
+or  INSTR(LONG_NAME,'&'||'amp;')>0)
+and  UTL_I18N.UNESCAPE_REFERENCE(LONG_NAME) not like'%¿%')
+or
+(((instr(PREFERRED_DEFINITION ,'&'||'#')> 0  and instr(PREFERRED_DEFINITION ,';')> 0)
+or INSTR(PREFERRED_DEFINITION,'&'||'gt;')>0 
+or INSTR(PREFERRED_DEFINITION,'&'||'lt;')>0 
+or  INSTR(PREFERRED_DEFINITION,'&'||'amp;')>0)
+and  UTL_I18N.UNESCAPE_REFERENCE(PREFERRED_DEFINITION) not like'%¿%'));
+
+
+ UPDATE SBR.DATA_ELEMENT_CONCEPTS set 
+date_modified=v_date, modified_by='DWARZEL',
+LONG_NAME=UTL_I18N.UNESCAPE_REFERENCE(LONG_NAME) 
+where ((instr(LONG_NAME ,'&'||'#')> 0  and instr(LONG_NAME ,';')> 0)
+or INSTR(LONG_NAME,'&'||'gt;')>0 
+or INSTR(LONG_NAME,'&'||'lt;')>0 
+or  INSTR(LONG_NAME,'&'||'amp;')>0 )
+and UTL_I18N.UNESCAPE_REFERENCE(LONG_NAME) not like'%¿%';
+
+
+UPDATE SBR.DATA_ELEMENT_CONCEPTS set 
+date_modified=v_date, modified_by='DWARZEL',
+PREFERRED_DEFINITION=UTL_I18N.UNESCAPE_REFERENCE(PREFERRED_DEFINITION)
+where((instr(PREFERRED_DEFINITION ,'&'||'#')> 0 and instr(PREFERRED_DEFINITION ,';')> 0)
+or INSTR(PREFERRED_DEFINITION,'&'||'gt;')>0 
+or INSTR(PREFERRED_DEFINITION,'&'||'lt;')>0 
+or  INSTR(PREFERRED_DEFINITION,'&'||'amp;')>0 )
+and UTL_I18N.UNESCAPE_REFERENCE(PREFERRED_DEFINITION) not like'%¿%'  ;
+                                                                             
+ commit;  
+    EXCEPTION
+ 
+    WHEN OTHERS THEN   
+       errmsg := substr(SQLERRM,1,2000);
+         dbms_output.put_line('errmsg  - '||errmsg);
+        insert into SBREXT.META_SPCHAR_ERROR_LOG VALUES('CT_FIX_DATA_ELEMENT_CONC',   sysdate ,errmsg);
+        
+     commit; 
+END CT_FIX_DATA_ELEMENT_CONC11G;
+/
+CREATE OR REPLACE PROCEDURE SBR.CT_FIX_DATA_ELEMENTS11G IS
+v_date  date  ;
+V_sdate date:=sysdate;
+errmsg VARCHAR2(2000):='Non';
+/******************************************************************************
+   NAME:       CT_FIX_QUEST_CONTENTS_EXT
+   PURPOSE:    
+
+   REVISIONS:
+   Ver        Date        Author           Description
+   ---------  ----------  ---------------  ------------------------------------
+   1.0        8/11/2016   trushi2       1. Created this procedure.
+
+   NOTES:
+      Object Name:     CT_fix_sp_char_VM
+      Sysdate:         8/11/2016
+      Date and Time:   8/11/2016, 12:31:43 PM, and 8/11/2016 12:31:43 PM
+      Username:        trushi2 (set in TOAD Options, Procedure Editor)
+     
+******************************************************************************/
+BEGIN   
+
+
+select to_date(to_char(sysdate,'mm/dd/yyyy')||'12:34:56','mm/dd/yyyyhh24:mi:ss')
+into v_date from dual;
+
+insert into  SBR.CT_DATA_ELEMENTS_BKUP
+(
+           DE_IDSEQ ,
+           PREFERRED_DEFINITION,
+           LONG_NAME,         
+           DATE_MODIFIED, 
+           DATE_INSERT,           
+           MODIFIED_BY          
+)
+
+select     DE_IDSEQ ,
+           PREFERRED_DEFINITION,
+           LONG_NAME,    
+           DATE_MODIFIED, 
+           SYSDATE    ,       
+           MODIFIED_BY
+from SBR.DATA_ELEMENTS
+where ((((instr(LONG_NAME ,'&'||'#')> 0  and instr(LONG_NAME ,';')> 0)
+or INSTR(LONG_NAME,'&'||'gt;')>0 
+or INSTR(LONG_NAME,'&'||'lt;')>0 
+or  INSTR(LONG_NAME,'&'||'amp;')>0)
+and  UTL_I18N.UNESCAPE_REFERENCE(LONG_NAME) not like'%¿%')
+or
+(((instr(PREFERRED_DEFINITION ,'&'||'#')> 0  and instr(PREFERRED_DEFINITION ,';')> 0)
+or INSTR(PREFERRED_DEFINITION,'&'||'gt;')>0 
+or INSTR(PREFERRED_DEFINITION,'&'||'lt;')>0 
+or  INSTR(PREFERRED_DEFINITION,'&'||'amp;')>0)
+and  UTL_I18N.UNESCAPE_REFERENCE(PREFERRED_DEFINITION) not like'%¿%'));
+
+
+ UPDATE SBR.DATA_ELEMENTS set 
+date_modified=v_date, modified_by='DWARZEL',
+LONG_NAME=UTL_I18N.UNESCAPE_REFERENCE(LONG_NAME) 
+where ((instr(LONG_NAME ,'&'||'#')> 0  and instr(LONG_NAME ,';')> 0)
+or INSTR(LONG_NAME,'&'||'gt;')>0 
+or INSTR(LONG_NAME,'&'||'lt;')>0 
+or  INSTR(LONG_NAME,'&'||'amp;')>0 )
+and UTL_I18N.UNESCAPE_REFERENCE(LONG_NAME) not like'%¿%';
+
+
+UPDATE SBR.DATA_ELEMENTS set 
+date_modified=v_date, modified_by='DWARZEL',
+PREFERRED_DEFINITION=UTL_I18N.UNESCAPE_REFERENCE(PREFERRED_DEFINITION)
+where((instr(PREFERRED_DEFINITION ,'&'||'#')> 0 and instr(PREFERRED_DEFINITION ,';')> 0)
+or INSTR(PREFERRED_DEFINITION,'&'||'gt;')>0 
+or INSTR(PREFERRED_DEFINITION,'&'||'lt;')>0 
+or  INSTR(PREFERRED_DEFINITION,'&'||'amp;')>0 )
+and UTL_I18N.UNESCAPE_REFERENCE(PREFERRED_DEFINITION) not like'%¿%'  ;
+                                                                             
+ commit;  
+    EXCEPTION
+ 
+    WHEN OTHERS THEN   
+       errmsg := substr(SQLERRM,1,2000);
+         dbms_output.put_line('errmsg  - '||errmsg);
+        insert into SBREXT.META_SPCHAR_ERROR_LOG VALUES('CT_FIX_DATA_ELEMENTS',   sysdate ,errmsg);
+        
+     commit; 
+END CT_FIX_DATA_ELEMENTS11G;
+/
+CREATE OR REPLACE PROCEDURE SBREXT.CT_FIX_OBJECT_CLASSES_EXT11G IS
+v_date  date  ;
+V_sdate date:=sysdate;
+errmsg VARCHAR2(2000):='Non';
+/******************************************************************************
+   NAME:       CT_FIX_QUEST_CONTENTS_EXT
+   PURPOSE:    
+
+   REVISIONS:
+   Ver        Date        Author           Description
+   ---------  ----------  ---------------  ------------------------------------
+   1.0        8/11/2016   trushi2       1. Created this procedure.
+
+   NOTES:
+      Object Name:     CT_fix_sp_char_VM
+      Sysdate:         8/11/2016
+      Date and Time:   8/11/2016, 12:31:43 PM, and 8/11/2016 12:31:43 PM
+      Username:        trushi2 (set in TOAD Options, Procedure Editor)
+     
+******************************************************************************/
+BEGIN   
+
+
+select to_date(to_char(sysdate,'mm/dd/yyyy')||'12:34:56','mm/dd/yyyyhh24:mi:ss')
+into v_date from dual;
+
+insert into  SBREXT.CT_OBJECT_CLASSES_EXT_BKUP
+(
+           OC_IDSEQ ,
+           PREFERRED_DEFINITION,
+           LONG_NAME,         
+           DATE_MODIFIED, 
+           DATE_INSERT,           
+           MODIFIED_BY          
+)
+
+select     OC_IDSEQ ,
+           PREFERRED_DEFINITION,
+           LONG_NAME,    
+           DATE_MODIFIED, 
+           SYSDATE    ,       
+           MODIFIED_BY
+from SBREXT.OBJECT_CLASSES_EXT
+where ((((instr(LONG_NAME ,'&'||'#')> 0  and instr(LONG_NAME ,';')> 0)
+or INSTR(LONG_NAME,'&'||'gt;')>0 
+or INSTR(LONG_NAME,'&'||'lt;')>0 
+or  INSTR(LONG_NAME,'&'||'amp;')>0)
+and  UTL_I18N.UNESCAPE_REFERENCE(LONG_NAME) not like'%¿%')
+or
+(((instr(PREFERRED_DEFINITION ,'&'||'#')> 0  and instr(PREFERRED_DEFINITION ,';')> 0)
+or INSTR(PREFERRED_DEFINITION,'&'||'gt;')>0 
+or INSTR(PREFERRED_DEFINITION,'&'||'lt;')>0 
+or  INSTR(PREFERRED_DEFINITION,'&'||'amp;')>0)
+and  UTL_I18N.UNESCAPE_REFERENCE(PREFERRED_DEFINITION) not like'%¿%'));
+
+
+ UPDATE SBREXT.OBJECT_CLASSES_EXT set 
+date_modified=v_date, modified_by='DWARZEL',
+LONG_NAME=UTL_I18N.UNESCAPE_REFERENCE(LONG_NAME) 
+where ((instr(LONG_NAME ,'&'||'#')> 0  and instr(LONG_NAME ,';')> 0)
+or INSTR(LONG_NAME,'&'||'gt;')>0 
+or INSTR(LONG_NAME,'&'||'lt;')>0 
+or  INSTR(LONG_NAME,'&'||'amp;')>0 )
+and UTL_I18N.UNESCAPE_REFERENCE(LONG_NAME) not like'%¿%';
+
+
+UPDATE SBREXT.OBJECT_CLASSES_EXT set 
+date_modified=v_date, modified_by='DWARZEL',
+PREFERRED_DEFINITION=UTL_I18N.UNESCAPE_REFERENCE(PREFERRED_DEFINITION)
+where((instr(PREFERRED_DEFINITION ,'&'||'#')> 0 and instr(PREFERRED_DEFINITION ,';')> 0)
+or INSTR(PREFERRED_DEFINITION,'&'||'gt;')>0 
+or INSTR(PREFERRED_DEFINITION,'&'||'lt;')>0 
+or  INSTR(PREFERRED_DEFINITION,'&'||'amp;')>0 )
+and UTL_I18N.UNESCAPE_REFERENCE(PREFERRED_DEFINITION) not like'%¿%'  ;
+                                                                             
+ commit;  
+    EXCEPTION
+ 
+    WHEN OTHERS THEN   
+       errmsg := substr(SQLERRM,1,2000);
+         dbms_output.put_line('errmsg  - '||errmsg);
+        insert into SBREXT.META_SPCHAR_ERROR_LOG VALUES('CT_FIX_OBJECT_CLASSES_EXT',   sysdate ,errmsg);
+        
+     commit; 
+END CT_FIX_OBJECT_CLASSES_EXT11G;
+/
+CREATE OR REPLACE PROCEDURE SBREXT.CT_FIX_REPRESENTATIONS_EXT11G IS
+v_date  date  ;
+V_sdate date:=sysdate;
+errmsg VARCHAR2(2000):='Non';
+/******************************************************************************
+   NAME:       CT_FIX_QUEST_CONTENTS_EXT
+   PURPOSE:    
+
+   REVISIONS:
+   Ver        Date        Author           Description
+   ---------  ----------  ---------------  ------------------------------------
+   1.0        8/11/2016   trushi2       1. Created this procedure.
+
+   NOTES:
+      Object Name:     CT_fix_sp_char_VM
+      Sysdate:         8/11/2016
+      Date and Time:   8/11/2016, 12:31:43 PM, and 8/11/2016 12:31:43 PM
+      Username:        trushi2 (set in TOAD Options, Procedure Editor)
+     
+******************************************************************************/
+BEGIN   
+
+
+select to_date(to_char(sysdate,'mm/dd/yyyy')||'12:34:56','mm/dd/yyyyhh24:mi:ss')
+into v_date from dual;
+
+insert into  SBREXT.CT_REPRESENTATIONS_EXT_BKUP
+(
+             REP_IDSEQ  ,
+           PREFERRED_DEFINITION,
+           LONG_NAME,         
+           DATE_MODIFIED, 
+           DATE_INSERT,           
+           MODIFIED_BY          
+)
+
+select     REP_IDSEQ ,
+           PREFERRED_DEFINITION,
+           LONG_NAME,    
+           DATE_MODIFIED, 
+           SYSDATE    ,       
+           MODIFIED_BY
+from SBREXT.REPRESENTATIONS_EXT
+where ((((instr(LONG_NAME ,'&'||'#')> 0  and instr(LONG_NAME ,';')> 0)
+or INSTR(LONG_NAME,'&'||'gt;')>0 
+or INSTR(LONG_NAME,'&'||'lt;')>0 
+or  INSTR(LONG_NAME,'&'||'amp;')>0)
+and  UTL_I18N.UNESCAPE_REFERENCE(LONG_NAME) not like'%¿%')
+or
+(((instr(PREFERRED_DEFINITION ,'&'||'#')> 0  and instr(PREFERRED_DEFINITION ,';')> 0)
+or INSTR(PREFERRED_DEFINITION,'&'||'gt;')>0 
+or INSTR(PREFERRED_DEFINITION,'&'||'lt;')>0 
+or  INSTR(PREFERRED_DEFINITION,'&'||'amp;')>0)
+and  UTL_I18N.UNESCAPE_REFERENCE(PREFERRED_DEFINITION) not like'%¿%'));
+
+
+ UPDATE SBREXT.REPRESENTATIONS_EXT set 
+date_modified=v_date, modified_by='DWARZEL',
+LONG_NAME=UTL_I18N.UNESCAPE_REFERENCE(LONG_NAME) 
+where ((instr(LONG_NAME ,'&'||'#')> 0  and instr(LONG_NAME ,';')> 0)
+or INSTR(LONG_NAME,'&'||'gt;')>0 
+or INSTR(LONG_NAME,'&'||'lt;')>0 
+or  INSTR(LONG_NAME,'&'||'amp;')>0 )
+and UTL_I18N.UNESCAPE_REFERENCE(LONG_NAME) not like'%¿%';
+
+
+UPDATE SBREXT.REPRESENTATIONS_EXT set 
+date_modified=v_date, modified_by='DWARZEL',
+PREFERRED_DEFINITION=UTL_I18N.UNESCAPE_REFERENCE(PREFERRED_DEFINITION)
+where((instr(PREFERRED_DEFINITION ,'&'||'#')> 0 and instr(PREFERRED_DEFINITION ,';')> 0)
+or INSTR(PREFERRED_DEFINITION,'&'||'gt;')>0 
+or INSTR(PREFERRED_DEFINITION,'&'||'lt;')>0 
+or  INSTR(PREFERRED_DEFINITION,'&'||'amp;')>0 )
+and UTL_I18N.UNESCAPE_REFERENCE(PREFERRED_DEFINITION) not like'%¿%'  ;
+                                                                             
+ commit;  
+    EXCEPTION
+ 
+    WHEN OTHERS THEN   
+       errmsg := substr(SQLERRM,1,2000);
+         dbms_output.put_line('errmsg  - '||errmsg);
+        insert into SBREXT.META_SPCHAR_ERROR_LOG VALUES('CT_FIX_REPRESENTATIONS_EXT',   sysdate ,errmsg);
+        
+     commit; 
+END CT_FIX_REPRESENTATIONS_EXT11G;
+/
+exec SBREXT.CT_FIX_REPRESENTATIONS_EXT11G;
+exec CT_FIX_OBJECT_CLASSES_EXT11G;
+exec SBR.CT_FIX_DATA_ELEMENT_CONC11G;
+exec SBR.CT_FIX_DATA_ELEMENTS11G;
 exec SBREXT.CT_FIX_SPCHAR_VV_ATT_EXT11G;
 exec SBREXT.CT_FIX_QUEST_CONTENTS_EXT11G;
 exec SBR.CT_FIX_SP_CHAR_PV11G;
