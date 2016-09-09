@@ -145,16 +145,16 @@ R.MODIFIED_BY,
 'Duplicate'
 from SBR.REFERENCE_DOCUMENTS r,
 SBR.REFERENCE_DOCUMENTS g
-where 
+where
 r.DCTL_NAME=g.DCTL_NAME
 and r.AC_IDSEQ=g.AC_IDSEQ
-and  UTL_I18N.UNESCAPE_REFERENCE(r.name)=g.name--replace(replace(replace(g.name,'&'||'#8804','<='),'&'||'#8805','>='),'&'||'#8800','>=')
+and  UTL_I18N.UNESCAPE_REFERENCE(r.NAME )=g.NAME --replace(replace(replace(g.name,'&'||'#8804','<='),'&'||'#8805','>='),'&'||'#8800','>=')
 and r.RD_IDSEQ<>g.RD_IDSEQ
 and ((instr(r.NAME ,'&'||'#')> 0 and instr(r.NAME ,';')> 0)
-or INSTR(r.NAME,'&'||'gt;')>0 
-or INSTR(r.NAME,'&'||'lt;')>0 
+or INSTR(r.NAME,'&'||'gt;')>0
+or INSTR(r.NAME,'&'||'lt;')>0
 or  INSTR(r.NAME,'&'||'amp;')>0 )
-and  UTL_I18N.UNESCAPE_REFERENCE(r.name) not like'%¿%'
+and  UTL_I18N.UNESCAPE_REFERENCE(r.NAME) not like'%¿%'
 and g.NAME not like '%&#%'
 and r.RD_IDSEQ not in (select distinct RD_IDSEQ from SBR.CT_REF_DOC_BKUP where comments='Duplicate') ;
 
@@ -196,38 +196,38 @@ MODIFIED_BY
 from SBR.REFERENCE_DOCUMENTS
 
 where ((((instr(NAME ,'&'||'#')> 0  and instr(NAME ,';')> 0)
-or INSTR(NAME,'&'||'gt;')>0 
-or INSTR(NAME,'&'||'lt;')>0 
+or INSTR(NAME,'&'||'gt;')>0
+or INSTR(NAME,'&'||'lt;')>0
 or  INSTR(NAME,'&'||'amp;')>0)
 and  UTL_I18N.UNESCAPE_REFERENCE(name) not like'%¿%')
 or
-(((instr(DOC_TEXT ,'&'||'#')> 0  and instr(NAME ,';')> 0)
-or INSTR(DOC_TEXT,'&'||'gt;')>0 
-or INSTR(DOC_TEXT,'&'||'lt;')>0 
+(((instr(DOC_TEXT ,'&'||'#')> 0  and instr(DOC_TEXT ,';')> 0)
+or INSTR(DOC_TEXT,'&'||'gt;')>0
+or INSTR(DOC_TEXT,'&'||'lt;')>0
 or  INSTR(NAME,'&'||'amp;')>0)
 and  UTL_I18N.UNESCAPE_REFERENCE(DOC_TEXT) not like'%¿%'))
 and RD_IDSEQ not in (select distinct RD_IDSEQ from SBR.CT_REF_DOC_BKUP where comments='Duplicate') ;
 
 
-UPDATE SBR.REFERENCE_DOCUMENTS set 
+UPDATE SBR.REFERENCE_DOCUMENTS set
 date_modified=v_date, modified_by='DWARZEL',
-NAME=UTL_I18N.UNESCAPE_REFERENCE(name) 
+NAME=UTL_I18N.UNESCAPE_REFERENCE(name)
 where ((instr(NAME ,'&'||'#')> 0  and instr(NAME ,';')> 0)
-or INSTR(NAME,'&'||'gt;')>0 
-or INSTR(NAME,'&'||'lt;')>0 
+or INSTR(NAME,'&'||'gt;')>0
+or INSTR(NAME,'&'||'lt;')>0
 or  INSTR(NAME,'&'||'amp;')>0 )
 and UTL_I18N.UNESCAPE_REFERENCE(name) not like'%¿%'
 and RD_IDSEQ not in (select distinct RD_IDSEQ from SBR.CT_REF_DOC_BKUP where comments='Duplicate') ;
 
 
-UPDATE SBR.REFERENCE_DOCUMENTS set 
+UPDATE SBR.REFERENCE_DOCUMENTS set
 date_modified=v_date, modified_by='DWARZEL',
 DOC_TEXT=UTL_I18N.UNESCAPE_REFERENCE(DOC_TEXT)
 where((instr(DOC_TEXT ,'&'||'#')> 0 and instr(DOC_TEXT ,';')> 0)
-or INSTR(DOC_TEXT,'&'||'gt;')>0 
-or INSTR(DOC_TEXT,'&'||'lt;')>0 
+or INSTR(DOC_TEXT,'&'||'gt;')>0
+or INSTR(DOC_TEXT,'&'||'lt;')>0
 or  INSTR(DOC_TEXT,'&'||'amp;')>0 )
-and UTL_I18N.UNESCAPE_REFERENCE(DOC_TEXT) not like'%¿%' 
+and UTL_I18N.UNESCAPE_REFERENCE(DOC_TEXT) not like'%¿%'
 and RD_IDSEQ not in (select distinct RD_IDSEQ from SBR.CT_REF_DOC_BKUP where comments='Duplicate') ;
 
  commit;
@@ -242,7 +242,6 @@ and RD_IDSEQ not in (select distinct RD_IDSEQ from SBR.CT_REF_DOC_BKUP where com
 
      commit;
 END CT_FIX_REF_DOC11G;
-
 /
 CREATE OR REPLACE PROCEDURE SBR.CT_FIX_SP_CHAR_PV11G IS
 v_date  date  ;
