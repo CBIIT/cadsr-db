@@ -148,20 +148,16 @@ SBR.REFERENCE_DOCUMENTS g
 where
 r.DCTL_NAME=g.DCTL_NAME
 and r.AC_IDSEQ=g.AC_IDSEQ
-and  UTL_I18N.UNESCAPE_REFERENCE(r.NAME )=g.NAME --replace(replace(replace(g.name,'&'||'#8804','<='),'&'||'#8805','>='),'&'||'#8800','>=')
+and  UTL_I18N.UNESCAPE_REFERENCE(r.NAME )=UTL_I18N.UNESCAPE_REFERENCE(g.NAME) --replace(replace(replace(g.name,'&'||'#8804','<='),'&'||'#8805','>='),'&'||'#8800','>=')
 and r.RD_IDSEQ<>g.RD_IDSEQ
 and ((instr(r.NAME ,'&'||'#')> 0 and instr(r.NAME ,';')> 0)
 or INSTR(r.NAME,'&'||'gt;')>0
 or INSTR(r.NAME,'&'||'lt;')>0
 or  INSTR(r.NAME,'&'||'amp;')>0 )
 and  UTL_I18N.UNESCAPE_REFERENCE(r.NAME) not like'%¿%'
-and g.NAME not like '%&#%'
 and r.RD_IDSEQ not in (select distinct RD_IDSEQ from SBR.CT_REF_DOC_BKUP where comments='Duplicate') ;
 
 commit;
-
-
-
 
 select to_date(to_char(sysdate,'mm/dd/yyyy')||'12:34:56','mm/dd/yyyyhh24:mi:ss')
 into v_date from dual;
