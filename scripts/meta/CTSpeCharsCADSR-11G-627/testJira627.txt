@@ -1,0 +1,52 @@
+select count(*) --97
+from SBR.REFERENCE_DOCUMENTS 
+select count(*)from SBR.CD_VMS --80
+select count(*)from SBR.PERMISSIBLE_VALUES --47
+select count(*)--66
+from SBR.VALUE_MEANINGS
+select count(*)--9
+from SBR.VALUE_DOMAINS
+select count(*)--94
+from SBR.DATA_ELEMENT_CONCEPTS
+select count(*)--117
+from SBR.DATA_ELEMENTS
+select count(*) --5
+from SBREXT.REPRESENTATIONS_EXT
+select count(*) --27
+from SBREXT.OBJECT_CLASSES_EXT
+select count(*)--16
+from SBREXT.PROPERTIES_EXT 
+select count(*)--152
+from SBREXT.VALID_VALUES_ATT_EXT 
+
+
+select count(*)from  SBR.CT_REF_DOC_BKUP;--97
+select count(*)from SBR.CT_CD_VMS_BKUP; --80
+select count(*) from SBR.CT_PERMISSIBLE_VALUES_BKUP; --47
+select count(*) from SBR.CT_VALUE_MEANINGS_BKUP;--66
+select count(*) from SBR.CT_VALUE_DOMAINS_BKUP; --9
+select count(*) from SBR.CT_DATA_ELEMENT_CONCEPTS_BKUP;--94
+select count(*) from SBR.CT_DATA_ELEMENTS_BKUP;--117
+select count(*) from SBREXT.CT_REPRESENTATIONS_EXT_BKUP;--5
+select count(*)from SBREXT.CT_OBJECT_CLASSES_EXT_BKUP;--27
+select count(*) from SBREXT.CT_PROPERTIES_EXT_BKUP;--16
+select count(*) from SBREXT.CT_VALID_VALUES_ATT_EXT_BKUP ;--152
+
+
+
+
+
+
+
+
+delete from SBREXT.CT_PROPERTIES_EXT_BKUP;--
+delete from SBREXT.CT_VALID_VALUES_ATT_EXT_BKUP ;
+delete from SBR.CT_PERMISSIBLE_VALUES_BKUP;
+delete from SBR.CT_VALUE_MEANINGS_BKUP;
+delete from SBR.CT_VALUE_DOMAINS_BKUP;
+delete from SBR.CT_CD_VMS_BKUP; --
+delete from  SBR.CT_REF_DOC_BKUP;
+delete from SBR.CT_DATA_ELEMENT_CONCEPTS_BKUP;
+delete from SBR.CT_DATA_ELEMENTS_BKUP;
+delete from SBREXT.CT_OBJECT_CLASSES_EXT_BKUP;
+delete from SBREXT.CT_REPRESENTATIONS_EXT_BKUP;
