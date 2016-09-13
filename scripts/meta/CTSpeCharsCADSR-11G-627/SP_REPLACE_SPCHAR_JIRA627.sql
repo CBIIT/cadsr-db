@@ -1172,7 +1172,6 @@ from SBREXT.OBJECT_CLASSES_EXT
 where SBREXT.meta_FIND_SP_CHAR(LONG_NAME)>0 
 or SBREXT.meta_FIND_SP_CHAR(PREFERRED_DEFINITION)>0 ;
 
-
 commit;
  UPDATE SBREXT.OBJECT_CLASSES_EXT set 
 date_modified=v_date, modified_by='DWARZEL',
@@ -1183,7 +1182,7 @@ where SBREXT.meta_FIND_SP_CHAR(LONG_NAME)>0 ;
 UPDATE SBREXT.OBJECT_CLASSES_EXT set 
 date_modified=v_date, modified_by='DWARZEL',
 PREFERRED_DEFINITION=SBREXT.meta_CleanSP_CHAR(PREFERRED_DEFINITION)
-where SBREXT.meta_FIND_SP_CHAR(LONG_NAME)>0 ;
+where SBREXT.meta_FIND_SP_CHAR(PREFERRED_DEFINITION)>0 ;
                                                                              
  commit;  
     EXCEPTION 
