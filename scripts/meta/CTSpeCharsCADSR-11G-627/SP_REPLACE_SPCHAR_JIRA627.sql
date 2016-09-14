@@ -478,7 +478,7 @@ DATE_MODIFIED       ,
 SYSDATE,
 MODIFIED_BY
 from SBR.REFERENCE_DOCUMENTS
-where SBREXT.meta_FIND_SP_CHAR(NAME)>0 or SBREXT.meta_FIND_SP_CHAR(DOC_TEXT)>0 
+where (SBREXT.meta_FIND_SP_CHAR(NAME)>0 or SBREXT.meta_FIND_SP_CHAR(DOC_TEXT)>0 )
 and RD_IDSEQ not in (select distinct RD_IDSEQ from SBR.CT_REF_DOC_BKUP where comments='Duplicate') ;
 commit;
 
