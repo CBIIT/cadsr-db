@@ -1,5 +1,5 @@
 set serveroutput on size 1000000
-SPOOL cadsrmeta-598d.log
+SPOOL cadsrmeta-598p.log
   
 CREATE OR REPLACE PROCEDURE SBREXT.UPLOAD_VALIDATE_PROTOCOL AS 
 
