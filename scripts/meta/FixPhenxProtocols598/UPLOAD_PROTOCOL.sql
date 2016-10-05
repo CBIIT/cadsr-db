@@ -1,45 +1,7 @@
---------------------------------------------------------
---  File created - Tuesday-June-14-2016   
---------------------------------------------------------     
-drop TABLE "SBREXT"."PROTOCOLS_EXT_TEMP" 
-/
-drop TABLE "SBREXT"."PROTOCOLS_EXT_ERROR_LOG.sql" 
-/
-Alter table SBREXT.PROTOCOLS_EXT modify (origin varchaR2(500))
-/
-
-  CREATE TABLE "SBREXT"."PROTOCOLS_EXT_TEMP" 
-   ("PREFERRED_NAME" VARCHAR2(300), 
-	"LONG_NAME" VARCHAR2(255), 
-	"PREFERRED_DEFINITION" VARCHAR2(3000 ), 
-	"CONTEXT" CHAR(360), 
-	"WORKFLOW" VARCHAR2(360), 
-	"ORIGIN" VARCHAR2(1000), 
-	"TYPE" VARCHAR2(2400), 
-	"PROTOCOL_ID" VARCHAR2(500), 
-	"PHASE" VARCHAR2(300), 
-	"LEAD_ORG" VARCHAR2(1000)   )
-/
-   
-   CREATE TABLE "SBREXT"."PROTOCOLS_EXT_ERROR_LOG" 
-   (	"PROTOCOL_ID" VARCHAR2(500), 
-	"INSERT_DATE" DATE, 
-	"ERROR_TEXT" VARCHAR2(1000), 
-	"PREFERRED_NAME" VARCHAR2(300), 
-	"LONG_NAME" VARCHAR2(255), 
-	"PREFERRED_DEFINITION" VARCHAR2(3000), 
-	"CONTEXT" CHAR(360), 
-	"WORKFLOW" VARCHAR2(360), 
-	"ORIGIN" VARCHAR2(1000), 
-	"TYPE" VARCHAR2(2400),
-	"PHASE" VARCHAR2(300), 
-	"LEAD_ORG" VARCHAR2(1000 BYTE)   )
-/
---------------------------------------------------------
---  DDL for Procedure UPLOAD_VALIDATE_PROTOCOL
---------------------------------------------------------
+set serveroutput on size 1000000
+SPOOL cadsrmeta-598d.log
   
-CREATE OR REPLACE PROCEDURE SBREXT."UPLOAD_VALIDATE_PROTOCOL" AS 
+CREATE OR REPLACE PROCEDURE SBREXT.UPLOAD_VALIDATE_PROTOCOL AS 
 
 cursor c_prot is select * 
 from sbrext.protocols_EXT_TEMP ;
@@ -234,5 +196,5 @@ for i in c_prot loop
  commit;
  end;
 /
-
-
+EXEC SBREXT.UPLOAD_VALIDATE_PROTOCOL;
+SPOOL OFF
