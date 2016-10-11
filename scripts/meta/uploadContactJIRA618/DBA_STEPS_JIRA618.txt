@@ -2,6 +2,9 @@
 DBA steps in SBR: 
 
 1.Run the script in attached file TABLES_JIRA618.sql 
+
+Attention: Please ignore “ORA-04043: object   does not exist” if you see any error of this type.
+
 2.Open the attached control file CONTACTLOAD_DBA.ctl.
 3.Replace  DBA_PATH to the location path where you will place the attached CONTACTLOAD.csv file.
 4.Load data via SQL LOADER using control file CONTACTLOAD_DBA.ctl
