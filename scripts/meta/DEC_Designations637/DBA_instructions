@@ -1,0 +1,9 @@
+DBA steps in SBR:
+1.Run the script in attached file DELETE_TEMP_DESIGNATIONS.sql 
+2.Open the attached control file DBA_DESIGNATIONS.CTL.
+3.Replace  DBA_PATH to the location path where you will place the attached AHRQ_09292016_LoadDesignations_DEC.csv file.
+4.Load data via SQL LOADER using control file DBA_DESIGNATIONS.CTL
+5.Run the script META_INS_DEC_DESIGNATIONS.sql(the file is attached)
+6. Send us 2 files:     
+  cadsrmeta-637t.log    
+  adsrmeta-637p.log
