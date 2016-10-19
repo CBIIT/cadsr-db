@@ -1,7 +1,6 @@
 set serveroutput on size 1000000
 SPOOL cadsrmeta-637p.log
-
-CCREATE OR REPLACE procedure SBR.META_INS_DEC_DESIGNATIONS
+CREATE OR REPLACE procedure SBR.META_INS_DEC_DESIGNATIONS
 as
 cursor c_desig is select * from MDSR_DESIGNATIONS_UPLOAD for update;
 ac_id DESIGNATIONS.AC_IDSEQ%TYPE;
