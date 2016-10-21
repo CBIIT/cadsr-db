@@ -1,3 +1,5 @@
+set serveroutput on size 1000000
+SPOOL cadsrmeta-638.log
 update PERMISSIBLE_VALUES set end_date=to_date('10/06/2016','mm/dd/yyyy') 
 where PV_IDSEQ in(
 select p.PV_IDSEQ from VD_PVS v,
@@ -20,3 +22,4 @@ and v.VD_IDSEQ = d.VD_IDSEQ
  and p.PV_IDSEQ=v.PV_IDSEQ
  and p.value in ('progression/relapse','Toxicities','Unknown')
  and d.version=1);
+ SPOOL OFF
