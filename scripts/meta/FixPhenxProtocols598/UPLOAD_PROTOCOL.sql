@@ -4,7 +4,7 @@ SPOOL cadsrmeta-598p.log
 CREATE OR REPLACE PROCEDURE SBREXT.UPLOAD_VALIDATE_PROTOCOL AS 
 
 cursor c_prot is select * 
-from sbrext.protocols_EXT_TEMP ;
+from sbrext.MDSR_PROTOCOLS_TEMP ;
 errmsg VARCHAR2(4000):=''; 
 v_proto_idseq  VARCHAR2(500) ;
 v_protoid number;
@@ -136,7 +136,7 @@ for i in c_prot loop
         IF length(errmsg)>1 then 
          dbms_output.put_line('err+ length - '||length(errmsg)||'errmsg1 - '||errmsg);
          
-           insert into PROTOCOLS_EXT_ERROR_LOG VALUES (i.PROTOCOL_ID,sysdate,errmsg, i.PREFERRED_name, i.LONG_NAME,i.PREFERRED_DEFINITION,   i.CONTEXT, i.WORKFLOW,i.origin ,i.TYPE,i.PHASE,i.LEAD_ORG); 
+           insert into MDSR_PROTOCOLS_ERR_LOG VALUES (i.PROTOCOL_ID,sysdate,errmsg, i.PREFERRED_name, i.LONG_NAME,i.PREFERRED_DEFINITION,   i.CONTEXT, i.WORKFLOW,i.origin ,i.TYPE,i.PHASE,i.LEAD_ORG); 
        -- goto nextrec; 
          end IF; 
    
@@ -188,7 +188,7 @@ for i in c_prot loop
     WHEN OTHERS THEN
         errmsg := SQLERRM;
          dbms_output.put_line('errmsg5 - '||errmsg);
-                insert into PROTOCOLS_EXT_ERROR_LOG VALUES (i.PROTOCOL_ID,sysdate,errmsg, i.PREFERRED_name, i.LONG_NAME,i.PREFERRED_DEFINITION,   i.CONTEXT, i.WORKFLOW,i.origin ,i.TYPE,i.PHASE,i.LEAD_ORG); 
+                insert into MDSR_PROTOCOLS_ERR_LOG VALUES (i.PROTOCOL_ID,sysdate,errmsg, i.PREFERRED_name, i.LONG_NAME,i.PREFERRED_DEFINITION,   i.CONTEXT, i.WORKFLOW,i.origin ,i.TYPE,i.PHASE,i.LEAD_ORG); 
  commit;
  end;  
 
