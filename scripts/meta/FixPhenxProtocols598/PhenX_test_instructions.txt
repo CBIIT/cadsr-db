@@ -1,0 +1,21 @@
+DBA steps: 
+1.Run the script in attached file DELETE_PROTOCOLS.sql
+2.Open the attached control file LOAD_PROTOCOL_DBA.ctl.
+3.Replace  DBA_PATH to the location path where you will place the attached Phenx_Protocol_all.csv file.
+4.Load data via SQL LOADER using control file LOAD_PROTOCOL_DBA.ctl
+5.Run the script UPLOAD_PROTOCOL.sql
+6. Send us 2 files: 
+    cadsrmeta-598d.log
+    cadsrmeta-598p.log
+	
+sqlplus sbrext/osrqa528@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=ncidb-q110-d.nci.nih.gov)(PORT=1551))(CONNECT_DATA=(SID=DSRQA)))	
+@C:\meta\Jira-598\DELETE_PROTOCOLS.sql
+
+select *  from protocols_ext where preferred_name like 'PX%';--
+select*from SBR.ADMINISTERED_COMPONENTS where ACTL_NAME='PROTOCOL' and PREFERRED_NAME like 'PX%';
+
+@C:\meta\Jira-598\UPLOAD_PROTOCOL.sql
+
+select count(*)  from protocols_ext where preferred_name like 'PX%';--
+select count(*) from SBR.ADMINISTERED_COMPONENTS where ACTL_NAME='PROTOCOL' and PREFERRED_NAME like 'PX%';
+

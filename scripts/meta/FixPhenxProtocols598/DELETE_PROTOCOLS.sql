@@ -2,9 +2,11 @@ set serveroutput on size 1000000
 SPOOL cadsrmeta-598d.log
 delete from SBREXT.PROTOCOL_QC_EXT where  PROTO_IDSEQ in(select PROTO_IDSEQ  from protocols_ext where preferred_name like 'PX%');
 delete from SBREXT.protocols_ext where preferred_name like 'PX%';
+delete from SBR.ADMINISTERED_COMPONENTS where ACTL_NAME='PROTOCOL' and PREFERRED_NAME like 'PX%';
+commit;
 delete from SBREXT.protocols_EXT_TEMP;
 delete from SBREXT.PROTOCOLS_EXT_ERROR_LOG;
-delete from SBR.ADMINISTERED_COMPONENTS where ACTL_NAME='PROTOCOL' and PREFERRED_NAME like 'PX%';
+commit;
 rename PROTOCOLS_EXT_ERROR_LOG to MDSR_PROTOCOLS_ERR_LOG;
 rename protocols_EXT_TEMP to MDSR_PROTOCOLS_TEMP;
 CREATE OR REPLACE PUBLIC SYNONYM CT_PROPERTIES_EXT_BKUP FOR SBREXT.CT_PROPERTIES_EXT_BKUP;

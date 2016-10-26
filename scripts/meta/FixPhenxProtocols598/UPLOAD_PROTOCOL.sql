@@ -17,6 +17,9 @@ begin
 for i in c_prot loop
   
    begin 
+          IF   length(trim(i.PREFERRED_DEFINITION))> 2000 then 
+            i.PREFERRED_DEFINITION:= substr(trim(i.PREFERRED_DEFINITION),1,1990)||' TRUNCATED';     
+          end if; 
           errmsg  :=''; 
           IF   i.PROTOCOL_ID is null then
           errmsg:='PROTOCOL id IS NULL';
@@ -74,20 +77,8 @@ for i in c_prot loop
            else 
            select conte_idseq into v_conte_idseq from sbr.contexts where trim(name) =trim(i.CONTEXT);
            end if;          
-           end if;  
-      
-          /*v_cnt:=0;
-          SELECT     count(*)   into v_cnt
-          FROM PROTOCOLS_EXT p
-          WHERE    ltrim(rtrim(p.protocol_id)) = ltrim(rtrim(i.protocol_id));
+           end if;        
           
-          IF v_cnt > 0 THEN
-          IF  length(errmsg)>1 THEN
-          errmsg:= errmsg||'; Exsisting Protocol';
-          ELSE
-          errmsg:=  'Exsisting Protocol';
-          END IF;
-          END  IF;   */ 
             
           v_cnt:=0;  
           IF i.lead_org is not null then
@@ -114,23 +105,11 @@ for i in c_prot loop
           end if; 
           
           
-           IF   length(trim(i.PREFERRED_DEFINITION))> 2000 then 
-          DBMS_output.put_line('PREFERRED DEFINITION IS '||length(trim(i.PREFERRED_DEFINITION))||' Characters;It has to be not over 2000');
-          IF  length(errmsg)>1 THEN
-          errmsg:= errmsg||'; PREFERRED DEFINITIONIS '||length(trim(i.PREFERRED_DEFINITION))||' Characters;It has to be not over 2000' ;
-          ELSE 
-          errmsg:= errmsg||' PREFERRED DEFINITION IS '||length(trim(i.PREFERRED_DEFINITION))||' Characters;It has to be not over 2000' ;
-          END IF;         
-          end if; 
           
-          IF trim(i.TYPE) not IN ('Treatment trials', 'Prevention trials', 'Screening trials', 'Quality of Life trials') THEN
-           DBMS_output.put_line(' TYPE '||trim(i.TYPE)||' violated check constraint') ;
+          
+          IF trim(i.TYPE) not IN ('Treatment trials', 'Prevention trials', 'Screening trials', 'Quality of Life trials') THEN          
            i.TYPE:=null;
-          /*IF  length(errmsg)>1 THEN
-          errmsg:= errmsg||'; TYPE '||trim(i.TYPE)||' is violated check constraint' ;
-          ELSE 
-          errmsg:= errmsg||' TYPE '||trim(i.TYPE)||' is violated check constraint' ;
-          END IF;  */       
+             
           end if; 
         
         IF length(errmsg)>1 then 
