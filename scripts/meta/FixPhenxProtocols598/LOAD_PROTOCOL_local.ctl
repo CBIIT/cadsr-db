@@ -1,6 +1,6 @@
 OPTIONS ( ERRORS= 10000, SKIP=1)
 LOAD DATA
-INFILE 'C:\meta\JIRA-598\Phenx_Protocol_all.csv' "str \r"
+INFILE 'C:\meta\JIRA-598\Phenx_Protocol_all.csv' "str '\r'"
 INTO TABLE SBREXT.MDSR_PROTOCOLS_TEMP
 INSERT
 FIELDS TERMINATED BY ','
