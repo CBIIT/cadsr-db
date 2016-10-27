@@ -1,0 +1,2613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 1</collectionName>
+  <collectionDescription>Load PhenX PX010101,PX010201,PX010301,PX010401,PX010501,PX010601,PX010701,PX010801,PX010901,PX011001,PX011101,PX011201,PX011301,PX011401,PX011501,PX020201,PX020202,PX020203,PX020301</collectionDescription>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Current Age</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The interviewer asks the respondent for his/her date of birth in MM/DD/YYYY format. If the respondent does not know his/her date of birth the interviewer asks an alternative question to determine his/her age. NOTE:  The current age of the respondent can be calculated, given the date of the interview.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>What is your birthdate?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>birthdate coded</questionText>
+        <instruction>
+         <text>[birthdate] = ''</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know [ask follow-up question]</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>About how old are you?</questionText>
+        <instruction>
+         <text>[birthdate_coded] = '9'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>age coded</questionText>
+        <instruction>
+         <text>[birthdate_coded] = '9' and [age] &gt;= 0 and [age] &lt;= 110</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>999</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX010101</protocolID>
+     <longName>Current Age</longName>
+     <context>PhenX</context>
+     <shortName>PX010101</shortName>
+     <preferredDefinition>The interviewer asks the respondent for his/her date of birth in MM/DD/YYYY format. If the respondent does not know his/her date of birth the interviewer asks an alternative question to determine his/her age. NOTE:  The current age of the respondent can be calculated, given the date of the interview.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Birthplace</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The respondent completes the self-administered questionnaire by indicating his or her place of birth.  If he or she was born in the United States, an additional question captures the state, if known.  If he or she was not born in the United States another open-ended question asks for this location.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Where were you born?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>In the United States</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Outside the United States</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Where were you born?  In the United States - Print name of state.  Outside the United States - Print U.S. Territory (e.g., Puerto Rico, U.S. Virgin Islands, Guam) or name of foreign country etc.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX010201</protocolID>
+     <longName>Birthplace</longName>
+     <context>PhenX</context>
+     <shortName>PX010201</shortName>
+     <preferredDefinition>The respondent completes the self-administered questionnaire by indicating his or her place of birth.  If he or she was born in the United States, an additional question captures the state, if known.  If he or she was not born in the United States another open-ended question asks for this location.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Birthplace Of Parents</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The respondent completes the self-administered questionnaire by indicating his or her biological mother's place of birth.  If he or she was born in the United States, an additional question captures the state, if known.  If he or she was not born in the United States another open-ended question asks for this location.The same procedures would be followed for obtaining the birthplace of the respondent's father.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Where was your biological mother born?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>In the United States</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Outside the United States</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Where was your biological mother born?  In the United States - Print name of state  Outside the United States - Print U.S. Territory (e.g., Puerto Rico, U.S. Virgin Islands, Guam) or name of foreign country etc.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Where was your biological father born?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>In the United States</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Outside the United States</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Where was your biological father born?  In the United States - Print name of state  Outside the United States - Print U.S. Territory (e.g., Puerto Rico, U.S. Virgin Islands, Guam) or name of foreign country etc.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX010301</protocolID>
+     <longName>Birthplace of Parents</longName>
+     <context>PhenX</context>
+     <shortName>PX010301</shortName>
+     <preferredDefinition>The respondent completes the self-administered questionnaire by indicating his or her biological mother's place of birth.  If he or she was born in the United States, an additional question captures the state, if known.  If he or she was not born in the United States another open-ended question asks for this location.The same procedures would be followed for obtaining the birthplace of the respondent's father.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Birthplace Of Grandparents</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The respondent completes the self-administered questionnaire by indicating his or her maternal grandmother's place of birth.  If he or she was born in the United States, an additional question captures the state, if known.  If he or she was not born in the United States, another open-ended question asks for this location.The same procedures would be followed for obtaining the birthplace of the respondent's maternal grandfather, paternal grandmother, and paternal grandfather.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Where was your mother's mother born?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>In the United States</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Outside the United States</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Where was your mother's mother born?  In the United States - Print name of state  Outside the United States - Print U.S. Territory (e.g., Puerto Rico, U.S. Virgin Islands, Guam) or name of foreign country etc.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Where was your mother's father born?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>In the United States</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Outside the United States</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Where was your mother's father born?  In the United States - Print name of state  Outside the United States - Print U.S. Territory (e.g., Puerto Rico, U.S. Virgin Islands, Guam) or name of foreign country etc.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Where was your father's mother born?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>In the United States</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Outside the United States</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Where was your father's mother born?  In the United States - Print name of state  Outside the United States - Print U.S. Territory (e.g., Puerto Rico, U.S. Virgin Islands, Guam) or name of foreign country etc.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Where was your father's father born?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>In the United States</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Outside the United States</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Where was your mother's father born?  In the United States - Print name of state  Outside the United States - Print U.S. Territory (e.g., Puerto Rico, U.S. Virgin Islands, Guam) or name of foreign country etc.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX010401</protocolID>
+     <longName>Birthplace of Grandparents</longName>
+     <context>PhenX</context>
+     <shortName>PX010401</shortName>
+     <preferredDefinition>The respondent completes the self-administered questionnaire by indicating his or her maternal grandmother's place of birth.  If he or she was born in the United States, an additional question captures the state, if known.  If he or she was not born in the United States, another open-ended question asks for this location.The same procedures would be followed for obtaining the birthplace of the respondent's maternal grandfather, paternal grandmother, and paternal grandfather.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Ethnicity</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The interviewer asks the respondent if he or she considers himself or herself to be Hispanic or Latino and, if so, asks an additional question about his or her specific Hispanic origin is asked. One or more Hispanic origin categories may be selected.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Do you consider yourself Hispanic/Latino? [Where did your ancestors come from?]</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES [ask follow-up question]</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Please give me the number of the group that represents your Hispanic origin or ancestry. Please select 1 or more of these categories.</questionText>
+        <instruction>
+         <text>[hispanic_ethnicity] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>10</value>
+          <meaningText>PUERTO RICAN</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>12</value>
+          <meaningText>DOMINICAN (REPUBLIC)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>13</value>
+          <meaningText>MEXICAN/MEXICANO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>14</value>
+          <meaningText>MEXICAN AMERICAN</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>15</value>
+          <meaningText>CHICANO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>18</value>
+          <meaningText>CUBAN</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>19</value>
+          <meaningText>CUBAN AMERICAN</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>20</value>
+          <meaningText>CENTRAL OR SOUTH AMERICAN</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>40</value>
+          <meaningText>OTHER LATIN AMERICAN</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>41</value>
+          <meaningText>OTHER HISPANIC</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>77</value>
+          <meaningText>REFUSED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>99</value>
+          <meaningText>DON'T KNOW</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX010501</protocolID>
+     <longName>Ethnicity</longName>
+     <context>PhenX</context>
+     <shortName>PX010501</shortName>
+     <preferredDefinition>The interviewer asks the respondent if he or she considers himself or herself to be Hispanic or Latino and, if so, asks an additional question about his or her specific Hispanic origin is asked. One or more Hispanic origin categories may be selected.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Race</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The interviewer asks the respondent what race he or she considers himself or herself to be and hands the respondent a card with a list of race categories.  The respondent is asked to pick one or more of the categories on the card.  The interviewer enters the code for the race indicated or keys in an entry if the respondent chooses an "other (specify)" option.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>What race {do you/[if asked of proxy: does Subject Person]} consider {yourself/[if asked of proxy: himself/herself]} to be? Please select 1 or more of these categories. HAND CARD DMQ5 SELECT ONE OR MORE CATEGORIES</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>10</value>
+          <meaningText>WHITE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>11</value>
+          <meaningText>BLACK/AFRICAN AMERICAN</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>12</value>
+          <meaningText>INDIAN (AMERICAN)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>13</value>
+          <meaningText>ALASKA NATIVE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>14</value>
+          <meaningText>NATIVE HAWAIIAN</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>15</value>
+          <meaningText>GUAMANIAN</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>16</value>
+          <meaningText>SAMOAN</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>17</value>
+          <meaningText>OTHER PACIFIC ISLANDER (SPECIFY)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>18</value>
+          <meaningText>ASIAN INDIAN</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>19</value>
+          <meaningText>CHINESE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>20</value>
+          <meaningText>FILIPINO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>21</value>
+          <meaningText>JAPANESE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>22</value>
+          <meaningText>KOREAN</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>13</displayOrder>
+          <value>23</value>
+          <meaningText>VIETNAMESE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>14</displayOrder>
+          <value>24</value>
+          <meaningText>OTHER ASIAN (SPECIFY)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>15</displayOrder>
+          <value>25</value>
+          <meaningText>SOME OTHER RACE (SPECIFY)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>coded race response for "refused" and "don't know"</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>REFUSED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>DON'T KNOW</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>SPECIFY</questionText>
+        <instruction>
+         <text>[race(17)] = '1' or [race(24)] = '1' or [race(25)] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX010601</protocolID>
+     <longName>Race</longName>
+     <context>PhenX</context>
+     <shortName>PX010601</shortName>
+     <preferredDefinition>The interviewer asks the respondent what race he or she considers himself or herself to be and hands the respondent a card with a list of race categories.  The respondent is asked to pick one or more of the categories on the card.  The interviewer enters the code for the race indicated or keys in an entry if the respondent chooses an "other (specify)" option.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Gender</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The interviewer asks the respondent (or proxy) to indicate his/her gender.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Are you male or female?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>MALE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>FEMALE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX010701</protocolID>
+     <longName>Gender</longName>
+     <context>PhenX</context>
+     <shortName>PX010701</shortName>
+     <preferredDefinition>The interviewer asks the respondent (or proxy) to indicate his/her gender.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Current Address</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The interviewer reads the respondent's current address aloud for the respondent.  Information is verified with the respondent and recorded.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>I would like to verify your address. Please give me your complete address. STREET Number</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>I would like to verify your address. Please give me your complete address. STREET NAME</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>I would like to verify your address. Please give me your complete address. Apartment Number</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>I would like to verify your address. Please give me your complete address. CITY</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>I would like to verify your address. Please give me your complete address. STATE</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>I would like to verify your address. Please give me your complete address.  Zip Code</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>I would like to verify your address. Please give me your complete address.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE_9</value>
+          <meaningText>Don't Know</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_10</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX010801</protocolID>
+     <longName>Current Address</longName>
+     <context>PhenX</context>
+     <shortName>PX010801</shortName>
+     <preferredDefinition>The interviewer reads the respondent's current address aloud for the respondent.  Information is verified with the respondent and recorded.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Current Marital Status</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The interviewer asks the respondent about his/her current marital status by going through a list of categories.  The respondent may select one category.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Are you now married, widowed, divorced, separated, never married or living with a partner?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>MARRIED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>WIDOWED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DIVORCED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>SEPARATED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>NEVER MARRIED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>LIVING WITH PARTNER</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX010901</protocolID>
+     <longName>Current Marital Status</longName>
+     <context>PhenX</context>
+     <shortName>PX010901</shortName>
+     <preferredDefinition>The interviewer asks the respondent about his/her current marital status by going through a list of categories.  The respondent may select one category.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Current Educational Attainment</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The interviewer asks the respondent or proxy about his/her education completed to date.  The respondent is asked to indicate the highest grade level or degree received at the time of the interview.  A card with the categories printed on it is provided to the respondent for him/her to indicate one of the applicable categories.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>What is the highest grade or level of school you have completed or the highest degree you have received? [HAND CARD DMQ1. READ HAND CARD CATEGORIES IF NECESSARY. ENTER HIGHEST LEVEL OF SCHOOL.]</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>NEVER ATTENDED/KINDERGARTEN ONLY</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1ST GRADE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2ND GRADE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3RD GRADE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4TH GRADE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>5TH GRADE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>6TH GRADE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>7</value>
+          <meaningText>7TH GRADE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>8</value>
+          <meaningText>8TH GRADE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>9</value>
+          <meaningText>9TH GRADE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>10</value>
+          <meaningText>10TH GRADE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>11</value>
+          <meaningText>11TH GRADE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>12</value>
+          <meaningText>12TH GRADE, NO DIPLOMA</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>13</displayOrder>
+          <value>13</value>
+          <meaningText>HIGH SCHOOL GRADUATE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>14</displayOrder>
+          <value>14</value>
+          <meaningText>GED OR EQUIVALENT</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>15</displayOrder>
+          <value>15</value>
+          <meaningText>SOME COLLEGE, NO DEGREE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>16</displayOrder>
+          <value>16</value>
+          <meaningText>ASSOCIATE DEGREE: OCCUPATIONAL, TECHNICAL, OR VOCATIONAL PROGRAM</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>17</displayOrder>
+          <value>17</value>
+          <meaningText>ASSOCIATE DEGREE: ACADEMIC PROGRAM</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>18</displayOrder>
+          <value>18</value>
+          <meaningText>BACHELOR'S DEGREE (EXAMPLE: BA, AB, BS, BBA)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>19</displayOrder>
+          <value>19</value>
+          <meaningText>MASTER'S DEGREE (EXAMPLE: MA, MS, MEng, MEd, MBA)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>20</displayOrder>
+          <value>20</value>
+          <meaningText>PROFESSIONAL SCHOOL DEGREE (EXAMPLE: MD, DDS, DVM, JD)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>21</displayOrder>
+          <value>21</value>
+          <meaningText>DOCTORAL DEGREE (EXAMPLE: PhD, EdD)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>22</displayOrder>
+          <value>77</value>
+          <meaningText>REFUSED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>23</displayOrder>
+          <value>99</value>
+          <meaningText>DON'T KNOW</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX011001</protocolID>
+     <longName>Current Educational Attainment</longName>
+     <context>PhenX</context>
+     <shortName>PX011001</shortName>
+     <preferredDefinition>The interviewer asks the respondent or proxy about his/her education completed to date.  The respondent is asked to indicate the highest grade level or degree received at the time of the interview.  A card with the categories printed on it is provided to the respondent for him/her to indicate one of the applicable categories.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Annual Family Income</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The interviewer asks the respondent about his/her family's total income from all sources in the last calendar year.  This is an open-ended question. Respondents who don't know or refuse to answer the first annual family income question are asked a series of bracketing questions to obtain the approximate amount.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>What was your best estimate of the total income of all family members from all sources, before taxes, in last year?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>What was your best estimate of the total income of all family members from all sources, before taxes, in last year?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>999995</value>
+          <meaningText>$999,995+</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999997</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>999999</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Was your total family income from all sources less than $50,000 or $50,000 or more?</questionText>
+        <instruction>
+         <text>[annual_family_income_coded] = '999997' or [annual_family_income_coded] = '999999'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than $50,000</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>$50,000 or more</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Was your total family income from all sources less than $35,000 or $35,000 or more?</questionText>
+        <instruction>
+         <text>[annual_family_income_50k] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than $35,000</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>$35,000 or more</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Was your total family income from all sources less than poverty threshold or more?</questionText>
+        <instruction>
+         <text>[annual_family_income_35k] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than $9,500/$12,000/$15,000/$19,000/$22,500/$25,500/$29,000*</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>$9,500/$12, 000/$15,000/$19,000/$22,500/$25,500/$29,000 or more</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Was your total family income from all sources less than $100,000 or $100,000 or more?</questionText>
+        <instruction>
+         <text>[annual_family_income_50k] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than $100,000</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>$100,000 or more</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Was your total family income from all sources less than $75,000 or $75,000 or more?</questionText>
+        <instruction>
+         <text>[annual_family_income_100k] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than $75,000</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>$75,000 or more</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX011101</protocolID>
+     <longName>Annual Family Income</longName>
+     <context>PhenX</context>
+     <shortName>PX011101</shortName>
+     <preferredDefinition>The interviewer asks the respondent about his/her family's total income from all sources in the last calendar year.  This is an open-ended question. Respondents who don't know or refuse to answer the first annual family income question are asked a series of bracketing questions to obtain the approximate amount.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Years Living In The Us</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The interviewer asks the respondent how long he/she has been in the United States, in years.  The number of years (2 digits) is entered by the interviewer.  If the respondent has been in the United States for less than 1 year, the entry is "0."</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>About how long have you been in the United States?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>About how long have you been in the United States?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>less than 1 year,</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>95</value>
+          <meaningText>95+ years</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>97</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>99</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX011201</protocolID>
+     <longName>Years Living in the U.S.</longName>
+     <context>PhenX</context>
+     <shortName>PX011201</shortName>
+     <preferredDefinition>The interviewer asks the respondent how long he/she has been in the United States, in years.  The number of years (2 digits) is entered by the interviewer.  If the respondent has been in the United States for less than 1 year, the entry is "0."</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Current Employment Status</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The interviewer asks the respondent about his/her current employment status.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>We would like to know about what you do --are you working now, looking for work, retired, keeping house, a student, or what?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>WORKING NOW</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>ONLY TEMPORARILY LAID OFF, SICK LEAVE OR MATERNITY LEAVE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>LOOKING FOR WORK, UNEMPLOYED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>RETIRED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>DISABLED, PERMANENTLY OR TEMPORARILY</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>KEEPING HOUSE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STUDENT</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>OTHER (SPECIFY):</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>current employment status, Other - specify</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX011301</protocolID>
+     <longName>Current Employment Status</longName>
+     <context>PhenX</context>
+     <shortName>PX011301</shortName>
+     <preferredDefinition>The interviewer asks the respondent about his/her current employment status.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Household Rosterrelationships</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The respondent is asked to count all the people who currently live in the household.  Then beginning with him/herself, the respondent is systematically asked about the relationship of each person to him/her.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>How many people are living or staying at this address?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>What are Person 1's initials?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>What are Person 2's initials?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>How is this person related to Person 1?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Husband or wife</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Son-in-law or daughter-in-law</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Biological son or daughter</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Other relative</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Adopted son or daughter</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Roomer or boarder</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Stepson or stepdaughter</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>Housemate or roommate</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>Brother or sister</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>Unmarried partner</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Father or mother</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>12</value>
+          <meaningText>Foster child</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>13</value>
+          <meaningText>Grandchild</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>13</displayOrder>
+          <value>14</value>
+          <meaningText>Other nonrelative</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>14</displayOrder>
+          <value>15</value>
+          <meaningText>Parent-in-law</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>15</displayOrder>
+          <value>77</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>16</displayOrder>
+          <value>99</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>What are Person 3's initials?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>How is this person related to Person 1?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Husband or wife</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Son-in-law or daughter-in-law</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Biological son or daughter</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Other relative</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Adopted son or daughter</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Roomer or boarder</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Stepson or stepdaughter</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>Housemate or roommate</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>Brother or sister</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>Unmarried partner</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Father or mother</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>12</value>
+          <meaningText>Foster child</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>13</value>
+          <meaningText>Grandchild</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>13</displayOrder>
+          <value>14</value>
+          <meaningText>Other nonrelative</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>14</displayOrder>
+          <value>15</value>
+          <meaningText>Parent-in-law</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>15</displayOrder>
+          <value>77</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>16</displayOrder>
+          <value>99</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>What are Person 4's initials?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>How is this person related to Person 1?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Husband or wife</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Son-in-law or daughter-in-law</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Biological son or daughter</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Other relative</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Adopted son or daughter</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Roomer or boarder</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Stepson or stepdaughter</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>Housemate or roommate</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>Brother or sister</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>Unmarried partner</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Father or mother</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>12</value>
+          <meaningText>Foster child</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>13</value>
+          <meaningText>Grandchild</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>13</displayOrder>
+          <value>14</value>
+          <meaningText>Other nonrelative</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>14</displayOrder>
+          <value>15</value>
+          <meaningText>Parent-in-law</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>15</displayOrder>
+          <value>77</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>16</displayOrder>
+          <value>99</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX011401</protocolID>
+     <longName>Household Roster-Relationships</longName>
+     <context>PhenX</context>
+     <shortName>PX011401</shortName>
+     <preferredDefinition>The respondent is asked to count all the people who currently live in the household.  Then beginning with him/herself, the respondent is systematically asked about the relationship of each person to him/her.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Health Insurance Coverage</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The respondent is asked about health insurance coverage.  A number of possible types of health care coverage are included, not simply health insurance.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Are you covered by health insurance or some other kind of health care plan?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>What kind of health insurance or health care coverage do you have?     Include those that pay for only one type of service (such as nursing home care, accidents, or dental care). Exclude private plans that only provide extra cash while hospitalized. If you have more than one kind of health insurance, tell me all plans that you have. [CODE ALL THAT APPLY, HAND CARD WITH LIST OF ANSWERS. CAPI INSTRUCTION: DO NOT ALLOW MORE THAN ONE ANSWER WHEN 40 (NO COVERAGE OF ANY TYPE) IS CODED. ]</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE_9</value>
+          <meaningText>PRIVATE HEALTH INSURANCE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_10</value>
+          <meaningText>MEDICARE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_11</value>
+          <meaningText>MEDI-GAP</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_12</value>
+          <meaningText>MEDICAID ({IF AVAILABLE, DISPLAY STATE PLAN NAME})</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_13</value>
+          <meaningText>SCHIP (CHIP/CHILDREN'S HEALTH INSURANCE PROGRAM)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_14</value>
+          <meaningText>MILITARY HEALTH CARE (TRICARE/VA/CHAMP-VA)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_15</value>
+          <meaningText>INDIAN HEALTH SERVICE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_16</value>
+          <meaningText>STATE-SPONSORED HEALTH PLAN ({IF AVAILABLE, DISPLAY STATE PLAN NAME})</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>UNDEFINED_CODE_17</value>
+          <meaningText>OTHER GOVERNMENT PROGRAM</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>UNDEFINED_CODE_18</value>
+          <meaningText>DENTAL, VISION, PRESCRIPTIONS)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>UNDEFINED_CODE_19</value>
+          <meaningText>NO COVERAGE OF ANY TYPE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>UNDEFINED_CODE_20</value>
+          <meaningText>REFUSED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>UNDEFINED_CODE_21</value>
+          <meaningText>DON'T KNOW</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX011501</protocolID>
+     <longName>Health Insurance Coverage</longName>
+     <context>PhenX</context>
+     <shortName>PX011501</shortName>
+     <preferredDefinition>The respondent is asked about health insurance coverage.  A number of possible types of health care coverage are included, not simply health insurance.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Birth Weight Abstracted From Medical Records</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Birth weight abstracted from medical charts or perinatal databases or as reported in vital records</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Weight in gram</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Newborn birth weight abstracted from the medical record/vital record, in gram</questionText>
+        <instruction>
+         <text>[weight_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Newborn birth weight abstracted from the medical record/vital record, in pound</questionText>
+        <instruction>
+         <text>[weight_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Newborn birth weight abstracted from the medical record/vital record, in ounce</questionText>
+        <instruction>
+         <text>[weight_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX020201</protocolID>
+     <longName>Birth Weight - Birth Weight Abstracted from Medical Records</longName>
+     <context>PhenX</context>
+     <shortName>PX020201</shortName>
+     <preferredDefinition>Birth weight abstracted from medical charts or perinatal databases or as reported in vital records</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Measured Weight At Birth</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measured weight at birth</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>weight measured in gram?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>whether infant is weighed with a study blanket</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Weight of the blanket used for weighing in gram</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_1] = '1' and [weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Weight of the blanket used for weighing in pound</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_1] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Weight of the blanket used for weighing in ounce</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_1] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>weight at birth measurement 1, in gram</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>weight at birth measurement 1, in pound</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>weight at birth measurement 1, in ounce</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>whether infant is weighed with a study blanket</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Weight of the blanket used for weighing 2, in gram</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_2] = '1' and [weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Weight of the blanket used for weighing 2, in pound</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_2] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Weight of the blanket used for weighing 2, in ounce</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_2] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>weight at birth measurement 2, in gram</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>weight at birth measurement 2, in pound</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>weight at birth measurement 2, in ounce</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>whether infant is weighed with a study blanket. A third measurement should be taken if the first two measurements differed by &gt;100 grams (3 ounces)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Weight of the blanket used for weighing, in gram</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_3] = '1' and [weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Weight of the blanket used for weighing, in pound</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_3] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Weight of the blanket used for weighing, in ounce</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_3] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>weight at birth measurement 3, in gram. A third measurement should be taken if the first two measurements differed by &gt;100 grams (3 ounces).</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>weight at birth measurement 3, in pound</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>weight at birth measurement 3, in ounce</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Average weight at birth, in gram. If it is necessary to take a third measurement, the two closest measurements are averaged. Should the third measurement fall equally between the first two measurements, all three should be averaged</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Average weight at birth, in pound</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Average weight at birth, in ounce</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>This protocol is for an examination study.´Use calibrated infant scale for weighing infant.´Naked weight of infant is preferred, but if the mother objects, wrap naked infant in study blanket for procedure. Record on form whether infant is weighed with a study blanket. Note: If the infant urinates in the blanket, repeat the measurement using a dry blanket. ´Place the infant on the scale so that weight is distributed equally about the center of the pan.´Record the weight on form.´Remove the infant from the scale, then replace and weigh a second time.´Record the second weight on form.´If the difference in the two weights is greater than 100 grams, obtain a third measurement.´Note the weight of the blanket and subtract the weight of the blanket from the total weight of the infant plus blanket to estimate birth weight of the infant.</longName>
+      <preferredDefinition>This protocol is for an examination study.´Use calibrated infant scale for weighing infant.´Naked weight of infant is preferred, but if the mother objects, wrap naked infant in study blanket for procedure. Record on form whether infant is weighed with a study blanket. Note: If the infant urinates in the blanket, repeat the measurement using a dry blanket. ´Place the infant on the scale so that weight is distributed equally about the center of the pan.´Record the weight on form.´Remove the infant from the scale, then replace and weigh a second time.´Record the second weight on form.´If the difference in the two weights is greater than 100 grams, obtain a third measurement.´Note the weight of the blanket and subtract the weight of the blanket from the total weight of the infant plus blanket to estimate birth weight of the infant.</preferredDefinition>
+           </module>
+        <protocol>
+     <protocolID>PX020202</protocolID>
+     <longName>Birth Weight - Measured Weight at Birth</longName>
+     <context>PhenX</context>
+     <shortName>PX020202</shortName>
+     <preferredDefinition>Measured weight at birth</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Proxyreported Birth Weight</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Proxy-reported birth weight</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>How much did participant weigh at birth? ENTER WEIGHT IN GRAMS OR POUNDS AND OUNCES</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Grams</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Pounds and ounces</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Unknown</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>How much did {you/[participant]} weigh at birth in grams?</questionText>
+        <instruction>
+         <text>[proxy_birthwt_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>How much did {you/[participant]} weigh at birth in pounds?</questionText>
+        <instruction>
+         <text>[proxy_birthwt_gram] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>How much did {you/[participant]} weigh at birth in ounces?</questionText>
+        <instruction>
+         <text>[proxy_birthwt_gram] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Did {you/[participant]} weigh ...?</questionText>
+        <instruction>
+         <text>[proxy_birthwt_gram] = '3'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>More than 5 1/2 pounds (2500 g)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Less than 5 1/2 pounds (2500 g)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Did {you/[participant]} weigh ...?</questionText>
+        <instruction>
+         <text>[proxy_birthwt_gram] = '3'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>More than 9 pounds (4100 g)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Less than 9 pounds (4100 g)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX020203</protocolID>
+     <longName>Birth Weight - Proxy Reported Birth Weight</longName>
+     <context>PhenX</context>
+     <shortName>PX020203</shortName>
+     <preferredDefinition>Proxy-reported birth weight</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-10-27T13:11:49</dateCreated>
+    <longName>Body Composition By Dualenergy Xray Absorptiometry</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Dual-energy X-ray absorptiometry (DXA) is one of the most widely used methods to assess body composition in a laboratory environment. A densitometer scanner device is used to scan the entire body or specific body sites such as the hip, spine, and limbs. DXA uses X-ray energy to measure body fat, muscle, and bone mineral and as a result, a small amount of radiation is delivered to the body during the DXA scan procedure. The results from a whole body DXA scan can be used to estimate total mass (gm), bone mineral content (BMC) (gm), bone area (cm&lt;sup&gt;2&lt;/sup&gt;), bone mineral density, fat mass, lean mass excluding BMC (gm), lean mass including BMC (gm), and percent body fat (%). These measures can also be subdivided from the whole body to regional measures of the arms, legs, trunk, android, gynoid, and head. Furthermore, special algorithms have been created to estimate visceral and subcutaneous adipose tissue. Source: Centers for Disease Control and Prevention, National Center for Health Statistics, National Health and Nutrition Examination Survey (NHANES 2001-2002) DXA file documentation. URL: &lt;a href="http://www.cdc.gov/nchs/data/nhanes/dxa/dxx_b.pdf"&gt;http://www.cdc.gov/nchs/data/nhanes/dxa/dxx_b.pdf&lt;/a&gt; (accessed January 22, 2009).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-10-27T13:11:49</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Make and model name of the Dual-energy x-ray absorptiometry (DXA) instrument</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Whole body scan image name of the first measurement</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>The image quality of your whole body scan is not adequate for reporting your bone density results. I see from your scan that [fill in the problem observed]. With your permission, I would like to repeat the scan to improve the image quality. The amount of radiation from this scan is about 1 millirem, or the amount you would receive for 2 hours on a coast-to-coast airplane flight. This scan is voluntary and there is no penalty for refusing. Do I have your permission to repeat the scan?The image quality of your whole body scan is not adequate for reporting your bone density results I see from your scan that [fill in the problem observed] With your permission, I would like to repeat the scan to improve the image quality The amount of radiation from this scan is about 1 millirem, or the amount you would receive for 2 hours on a coast-to-coast airplane flight This scan is voluntary and there is no penalty for refusing</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE_9</value>
+          <meaningText>Determine if the quality of the first scan is acceptable and if second scan is needed</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_10</value>
+          <meaningText>Do I have your permission to repeat the scan?</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-10-27T13:11:49</dateCreated>
+        <questionText>Whole body scan image name of the second measurement</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX020301</protocolID>
+     <longName>Body Composition - Body Composition by Dual-Energy X-Ray Absorptiometry</longName>
+     <context>PhenX</context>
+     <shortName>PX020301</shortName>
+     <preferredDefinition>Dual-energy X-ray absorptiometry (DXA) is one of the most widely used methods to assess body composition in a laboratory environment. A densitometer scanner device is used to scan the entire body or specific body sites such as the hip, spine, and limbs. DXA uses X-ray energy to measure body fat, muscle, and bone mineral and as a result, a small amount of radiation is delivered to the body during the DXA scan procedure. The results from a whole body DXA scan can be used to estimate total mass (gm), bone mineral content (BMC) (gm), bone area (cm&lt;sup&gt;2&lt;/sup&gt;), bone mineral density, fat mass, lean mass excluding BMC (gm), lean mass including BMC (gm), and percent body fat (%). These measures can also be subdivided from the whole body to regional measures of the arms, legs, trunk, android, gynoid, and head. Furthermore, special algorithms have been created to estimate visceral and subcutaneous adipose tissue. Source: Centers for Disease Control and Prevention, National Center for Health Statistics, National Health and Nutrition Examination Survey (NHANES 2001-2002) DXA file documentation. URL: &lt;a href="http://www.cdc.gov/nchs/data/nhanes/dxa/dxx_b.pdf"&gt;http://www.cdc.gov/nchs/data/nhanes/dxa/dxx_b.pdf&lt;/a&gt; (accessed January 22, 2009).</preferredDefinition>
+    </protocol>
+   </form>
+   </forms>
