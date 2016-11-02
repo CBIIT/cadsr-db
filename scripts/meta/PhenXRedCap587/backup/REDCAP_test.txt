@@ -1,0 +1,89 @@
+Tobacco Age Of Initiation Of Use Adult Protocol-PX030702
+5691668
+	Alcohol Lifetime Abuse And Dependence
+	5691301
+	
+	Waist Circumference Framingham Heart Study
+	5690985 Q#2,3,4
+	
+		Measured Weight
+		5690873 Q#0
+		
+			Systemic Lupus Erythematosus
+			5711550
+			
+				Current Age
+				5689592
+				
+				PX_Forms_Collection_18
+				
+				
+			1.PX020303 - shorten Q#1
+			2.PX040601 Angina -shorten form definition
+			3.Form collection  taking of ®  from INCLUDE Gatorade® and other sports drinks with added sugar. INCLUDE Tampico®, Sunny Delight®, and Twister®--take all 4795
+			Jolt®(2861)
+			
+			6 collection 
+			
+			
+			0. taking of ® from
+			8760 displayOrder>22</displayOrder>
+        <dateCreated>2016-11-01T21:02:28</dateCreated>
+        <questionText>If you used Provera®, what was your usual dose?</questionText>
+			1.17960 taking of ® from
+<questionText>In the past 3 years, please indicate if you have taken either of the following types of medications.  Statin medications such as lovastatin (Mevacor), atorvastatin (Lipitor), rosuvastain (Crestor), pravastatin (Pravachol), simvastatin (Zocor), fluvastatin (Lescol)</questionText>
+
+            2. 17986 taking of ®	
+<questionText>In the past 3 years, please indicate if you have taken either of the following types of medications.  Steroid medication in pill form such as prednisone, dexamethasone (Decadron), solumedrol (Medrol dose-pack)</questionText>
+        <instruction/>			
+		
+		3.16907<meaningText>Femara</meaningText> <meaningText>Aromasin®</meaningText>16902
+		Collection 9 delete all ® 
+		10 collection Evista or Nolvadex delete all ® 
+		 <preferredDefinition>
+		 question text 0
+		 <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:38</dateCreated>
+        <questionText>How many months have you used Evista®?</questionText>
+		<displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:04:38</dateCreated>
+        <questionText>Are you currently using Evista® or Nolvadex®?</questionText>
+		
+		Collection 13 
+		
+		1.(at approximatey 90°,         
+Fasting Plasma Glucose For Diabetes
+<protocolID>PX140801</protocolID>
+
+		
+		2.PhenX PX140802
+		y--Yes
+		<question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-10-28T11:22:51</dateCreated>
+        <questionText>Enter in time 9 hours prior to sample collection:</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory></isMandatory>
+        <multiValue>No</multiValue>
+		
+		Collection 15 Eczema 14021 The Eczema Area and Severity Index©Intensity
+		Total score The EASI score is C1 + C2 + C3 + C4. The Eczema Area and Severity Index ©2010 the New Zealand Dermatological Society Incorporated (NZDSI). All rights reserved.
+		
+		COLLECTION 16 FRACTURE LOCATION CODES
+		
+		select  REGEXP_REPLACE(ASCIISTR(FIELD_LABEL), '\\[[:xdigit:]]{4}', '') from  REDCAP_PROTOCOL_NEW where 
+form_name like 
+protocol='PX170701' and question=86;
+
+
+select  REGEXP_REPLACE(ASCIISTR(FIELD_LABEL), '\\[[:xdigit:]]{4}', '') from  REDCAP_PROTOCOL_NEW where protocol='PX221201' and question=20;
+select  question,FIELD_LABEL from  REDCAP_PROTOCOL_NEW where protocol='PX221201' order by question
+and question=29;
+		
+		Collection 18 protocol='PX221201' and question=20; &#149; replace(text,'÷','/');
+		
+		
+		Collection 23
+		    <preferredDefinition>The Clinician-Administered PTSD Scale (CAPS-5) for &lt;i&gt;The Diagnostic and Statistical Manual of Mental Disorders,&lt;/i&gt; Fifth Edition (DSM-5) (is a 30-item, semistructured interview that is used to make a current (past-month) or lifetime diagnosis of post-traumatic stress disorder (PTSD) and to provide a continuous index of PTSD severity. It also can be used to assess PTSD symptoms over the past week. In addition to assessing the 20 DSM-5 PTSD symptoms, questions target the onset and duration of symptoms, subjective distress, and impact of symptoms on social and occupational functioning, improvement in symptoms since a previous CAPS administration, overall response validity, and features for the dissociative subtype (depersonalization and derealization). Administration requires identification of an index traumatic event to serve as the basis for symptom inquiry. The &lt;a href="index.php?pageLink=browse.protocoldetails&amp;id=630101"&gt;Life Events Checklist&lt;/a&gt; for DSM-5 (LEC-5) is recommended prior to the Criterion A inquiry included in the CAPS-5. Standardized questions and probes are provided for each symptom.</preferredDefinition>

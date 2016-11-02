@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols -  PX510501</collectionName>
+  <collectionDescription>Load PhenX  PX510501</collectionDescription>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-02T13:04:55</dateCreated>
+    <longName>PhenX  Alcohol Breathalyzer - PX510501</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The purpose of this protocol is to measure the concentration of alcohol (ethanol) in the participant's breath.
+After 20 minutes of observation, the participant blows steadily into a device called a breathalyzer used to measure the breath alcohol concentration. The result is measured in grams of alcohol per 210 liters of breath, which is used as a proxy for blood alcohol concentration (BAC). A person's BAC is equivalent to the percent by weight of alcohol in a person's blood based upon grams of alcohol per 100 ml of blood.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-02T13:04:55</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-02T13:04:55</dateCreated>
+        <questionText>Follow the breathalyzer manufacturer's instructions. Explain to the participant that you are about to obtain his/her blood alcohol reading with a breathalyzer device. Also explain that you need to observe him/her for 20 minutes before the test and that he/she should not drink anything including water during that time</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-02T13:04:55</dateCreated>
+        <questionText>Document the time that the observation began. Am/pm</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>am</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>pm</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-02T13:04:55</dateCreated>
+        <questionText>Document the time that the observation began. time</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-02T13:04:55</dateCreated>
+        <questionText>Document the time that the observation ended. Am/pm</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>am</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>pm</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-02T13:04:55</dateCreated>
+        <questionText>Document the time that the observation ended. time</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-02T13:04:55</dateCreated>
+        <questionText>(Ask participant) Have you belched, burped, regurgitated, or taken a drink of anything in the past 20 minutes?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes - Observe for another 20 minutes.</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No - Proceed with breath test.</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-02T13:04:55</dateCreated>
+        <questionText>(Ask participant) Have you belched, burped, regurgitated, or taken a drink of anything in the past 2 minutes?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes - Observe for another 20 minutes.</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No - Proceed with breath test.</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-02T13:04:55</dateCreated>
+        <questionText>Ask participant to blow steadily into the breathalyzer a second time. Record this result.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-02T13:04:55</dateCreated>
+        <questionText>(Ask participant) Have you belched, burped, regurgitated, or taken a drink of anything in the past 2 minutes?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes - Observe for another 20 minutes.</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No - Proceed with breath test.</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-02T13:04:55</dateCreated>
+        <questionText>Ask participant to blow steadily into the breathalyzer a second time. Record this result.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-02T13:04:55</dateCreated>
+        <questionText>Interpretation of Results : A person's blood alcohol concentration (BAC) is related to a number of factors including the quantity of alcohol consumed, rate of consumption, gender, weight, and prior ingestion of food (Hingson et al., 1999 see Figure 1, p. 32). All states in the United States have adopted 0.08% (80 mg/dl) as the legal BAC limit for operating a motor vehicle for drivers aged 21 years or older (Centers for Disease Control and Prevention, 2011). However, drivers younger than 21 are not allowed to operate a motor vehicle with any level of alcohol in their system. The National Highway Traffic Safety Administration (NHTSA) approves "evidential breath testing devices" (EBTs) with reliable results of 0.02% or greater. Although many breathalyzers measure BACs below 0.02% it is considered the lowest positive value. Note: Legal limits do not define a level below which it is safe to operate a vehicle or engage in some other activity. Impairment due to alcohol use can occur at levels well below the legal limit, starting at 0.01% (National Institute on Alcohol Abuse and Alcoholism, 1994), and the level of impairment is positively related to BAC level. The following website link is for a table that generally summarizes these impairments, although the exact clinical presentation is highly varied by individual (Virginia Tech University, 2011): http://www.alcohol.vt.edu/Students/alcoholEffects/index.htm.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX510501</protocolID>
+     <longName>Alcohol Breathalyzer</longName>
+     <context>PhenX</context>
+     <shortName>PX510501</shortName>
+     <preferredDefinition>The purpose of this protocol is to measure the concentration of alcohol (ethanol) in the participant's breath.
+After 20 minutes of observation, the participant blows steadily into a device called a breathalyzer used to measure the breath alcohol concentration. The result is measured in grams of alcohol per 210 liters of breath, which is used as a proxy for blood alcohol concentration (BAC). A person's BAC is equivalent to the percent by weight of alcohol in a person's blood based upon grams of alcohol per 100 ml of blood.</preferredDefinition>
+    </protocol>
+   </form>
+</forms>
