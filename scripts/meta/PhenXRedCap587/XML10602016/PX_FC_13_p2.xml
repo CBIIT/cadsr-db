@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 13.2</collectionName>
+  <collectionDescription>Load PhenX PX150101,PX150102,PX150201,PX150202</collectionDescription>
+  <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:02:42</dateCreated>
+    <longName>PhenX  Integrated Fitness Adult Protocol - PX150201</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Fitness tests used to assess a person's muscle strength, endurance, and flexibility. Adult tests include half sit-ups (abdominal muscle strength), standard or modified push-ups (upper body muscle strength), and the "sit and reach" (flexibility). It is recommended that these fitness tests are performed with a partner.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:02:42</dateCreated>
+      <longName>The Half Sit-Up Test</longName>
+      <preferredDefinition>The Half Sit-Up Test</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Read the following text to study participant: One of the most frequently measured muscle groups is the abdominal (stomach) muscles. Several tests (for example, situp and curlup tests) have been developed to measure mainly abdominal muscular strength and endurance. We are going to use an abdominal muscular strength and endurance test called the "YMCA Half SitUp" test, which is a curlup test since you lift your trunk only partially off the floor. Equipment/Test Setting: Mat or rug, Stopwatch or watch with a second hand, Four strips of tape to place 3.5 inches apart on mat or rug to provide start and end position for the curlup.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>integrated fitness adult 01</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>integrated fitness adult 02</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Prepare the mat or rug with the tape strips as shown in the picture. You need to be able to feel the tape as your fingers move across the mat or rug from the starting and ending positions. We recommend that you do the test with a partner. Directions: 1. Lie faceup on mat or rug with knees at a right angle (that is, 90°) and feet flat on the ground. The feet are not held down. 2. Place hands with palms facing down on the mat or rug with the fingers touching the first piece of tape. 3. Flatten your lower back to the mat or rug, and half situp so that your fingers move from the first piece of tape to the second. Then return your shoulders to the mat or rug and repeat the movement as described. Your head does not have to touch the surface. Keep your lower back flat on the mat or rug during the movements  if you arch your back, it can cause injury. 4. Your partner will count the number of half situps performed in one minute. Pace yourself so you can do half situps for one minute. 5. Record your results. *Used with permission from Fitness Testing and Assessment Manual, 4th ed. © 2000 by YMCA of the USA, Chicago. All rights reserved.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Participant's gender</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Male</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Female</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>The number of half situps performed in one minute</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>1</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:02:42</dateCreated>
+      <longName>Standard and Modified Push-Up</longName>
+      <preferredDefinition>Standard and Modified Push-Up</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Read to the study participant the following text:  Alert! If you have shoulder, elbow, or wrist pain, doing this test may aggravate your condition. The muscles of the upper body and shoulders are another frequently measured muscle group. Several tests (for example, pullup and pushup) are used to measure the strength and endurance of these muscle groups. Less muscular strength and endurance of the upper body and shoulder group may increase the chances that a person may have shoulder pain in middle or older adulthood. In the standard pushup test, you push your body up and down using muscles in your arms, shoulders and chest, while keeping your body straight with your feet serving as the pivot point. Your body weight is your workload. Females can reduce the load by having their knees touching the floor and acting as the pivot point. In this test, only the upper body is the load. We are going to use standard pushups and modified pushups as our tests for upper body and shoulder muscular strength and endurance.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>integrated fitness adult 03</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Directions: 1. Males start in the standard pushup position (elevated). Hands should be shoulder width apart, arms extended straight out under the shoulders, back and legs in a straight line, and toes curled under. Females do a modified pushup with knees bent and touching the floor. Starting in the up position, hands should be slightly ahead of the shoulders so hands are in the proper position for the downward motion. 2. Lower until the chest is about 2 inches from the floor and rise up again. 3. Perform the test until you cannot complete any more pushups while keeping your back straight and, if you are a male, keeping the legs straight as well. The key to completing the test properly is to maintain a rigid position and keep the back flat. If necessary, you can take a brief rest in the up position (not lying on the floor). 4. Record your results. *Normative data for the pushup and modified pushup are based on a population that is 20 years of age and older. These data and the test protocol are used with permission of The Cooper Institute, 12330 Preston Road, Dallas, TX 75230</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Number of pushups completed</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>2</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:02:42</dateCreated>
+      <longName>The Sit-and-Reach Test</longName>
+      <preferredDefinition>The Sit-and-Reach Test</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Alert! If you have lowback pain, doing this test may aggravate your condition. Equipment/Test Setting: Tape measure or yardstick and tape and a partner to record your score. Directions: 1. Perform a series of static stretches. These stretches should focus on stretching the trunk and legs. Following the stretches, you may also want to do some brisk walking. 2. Place a yardstick on the floor and put a long piece of masking tape over the 15 inch mark at a right angle to the yardstick. Image of Sit and Reach exercise Remove your shoes and sit on the floor with the yardstick between the legs (0 mark close to your crotch), with your feet about 12 inches apart. Heels should be at the 14 inch mark at the start of the stretch to account for the fact that the legs tend to move forward when performing the stretch. 4. With the fingertips in contact with the yardstick, slowly stretch forward with both hands as far as possible noting where the fingertips are to the closest inch. Exhaling when you stretch forward and dropping the head may allow you to stretch a bit further. Do not use fast and sudden motions, which can injure your hamstring muscles. 5. Perform the stretch three times with a few seconds of rest between stretches.  6. Record the best of the three measurements. *Used with permission from Fitness Testing and Assessment Manual, 4th ed. © 2000 by YMCA of the USA, Chicago. All rights reserved. If desired, the results from these tests may be entered into an online form at the President's Challenge Adult Fitness Test website. Once entered into the online form, each result will appear as a percentile which is the percentage of adults the same age who would score lower.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>integrated fitness adult 04</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Location of fingertips during first stretch</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Location of fingertips during second stretch</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Location of fingertips during third stretch</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX150201</protocolID>
+     <longName>Integrated Fitness - Adult Protocol</longName>
+     <context>PhenX</context>
+     <shortName>PX150201</shortName>
+     <preferredDefinition>Fitness tests used to assess a person’s muscle strength, endurance, and flexibility. Adult tests include half sit-ups (abdominal muscle strength), standard or modified push-ups (upper body muscle strength), and the "sit and reach" (flexibility). It is recommended that these fitness tests are performed with a partner.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:02:42</dateCreated>
+    <longName>PhenX  Cardiorespiratory Fitnessexercise Test Estimate One Mile - PX150101</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The participant is asked to complete a one-mile walk test as quickly as possible on a track. The participant should walk briskly at a steady pace that can be maintained for the entire mile. A technician utilizes a stopwatch to time the walk. The participant wears a heart-rate (HR) monitor that records HR continuously through the test. After the test is completed, the technician records the HR from the last 10 seconds of the test. In addition, the participant’s age, sex, and body weight are needed to complete an equation to determine maximal oxygen consumption (VO 2 max).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:02:42</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Note: if a track is not used, the location where the timed walk takes place must be flat and premeasured to equal 1 mile. First, obtain the participant's weight in pounds via a reliable scale, and also record his/her sex, and current age. Secure the HR monitor chest strap and watch to the participant. Explain that you will time the participant as he/she walks as quickly as possible for onemile. Once the participant is ready at the starting line, say "go" and start the stopwatch. Time the participant until he/she completes the entire 1 mile walk. Record the time in minutes and seconds and then convert to seconds [(minutes x 60) + seconds].</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Participant's weight</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Participant's sex</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>male</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>female</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Participant's age</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Participant's heart rate during the last 10 minutes of the walk as shown on heart rate monitor</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Time to complete entire 1 mile walk</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Time to complete entire 1 mile walk</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Insert the person's weight, age, sex, time, and heart rate into the following scoring equation to determine VO2max (maximal oxygen consumption  Scoring:  VO2max = 6.9652 + (0.0091 * WEIGHT)  (0.0257 * AGE) + (0.5995 * SEX1)  (0.2240 * TIME)  ( 0.0115 * HEART RATE) (in equation above  Sex1: Male = 1, Female = 0)  Units of VO2max are liters of oxygen per minute (l/min)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX150101</protocolID>
+     <longName>Cardiorespiratory Fitness - Exercise Test Estimate - One Mile Walk</longName>
+     <context>PhenX</context>
+     <shortName>PX150101</shortName>
+     <preferredDefinition>The participant is asked to complete a one-mile walk test as quickly as possible on a track. The participant should walk briskly at a steady pace that can be maintained for the entire mile. A technician utilizes a stopwatch to time the walk. The participant wears a heart-rate (HR) monitor that records HR continuously through the test. After the test is completed, the technician records the HR from the last 10 seconds of the test. In addition, the participant’s age, sex, and body weight are needed to complete an equation to determine maximal oxygen consumption (VO 2 max).</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:02:42</dateCreated>
+    <longName>PhenX  Cardiorespiratory Fitnessexercise Test Estimate Treadm - PX150102</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The participant is asked to walk on a treadmill at a 5% grade for 4 minutes. A technician utilizes a stopwatch to time the walk. Although the test was validated on participants with a range of fitness, it may tend to underestimate fitness in highly trained individuals. The participant wears a heart-rate (HR) monitor that records HR continuously through the test. After the test is completed, the technician records the HR from the last 15 seconds of the test. In addition, the participant’s age and gender are needed to complete an equation to determine maximal oxygen consumption (VO2 max).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:02:42</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Secure the heartrate monitor chest strap and wrist receiver. Ask the study participant to warm up by walking on a treadmill at 0% grade at a brisk, but comfortable pace of 2 to 4.5 mph for 4 minutes. The warm up pace should produce a heart rate that is 5070% of the agepredicted maximum heart rate (220  age in years). After 4 minutes at 0% grade, begin the test by increasing the grade of the treadmill to 5%, start the stopwatch. The speed should remain the same for 4 minutes at the 5% grade. Heart rate from a heartrate monitor should be obtained for the last 15 sec of the test. Record the speed, heart rate, age, and gender into the following scoring equation to determine predicted relative VO2max (maximal oxygen consumption)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Participant's sex</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>male</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>female</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Participant's age</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Treadmill speed during warm up</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Participant's heart rate during the 4minute warmup as shown on the heart rate monitor.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Participant's heart rate during the last 10 minutes of the walk as shown on heart rate monitor</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Time to complete entire 1 mile walk</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Time to complete entire 1 mile walk</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Scoring  VO2max = 15.1 + 21.8*SPEED (mph)  0.327* HEART RATE (bpm)  0.263*SPEED*AGE (yrs) + 0.00504*HEART RATE*AGE + 5.98*GENDER  (0 = female, 1 = male)  Units are milliliters of oxygen per kilogram body weight per minute expressed as mil/kg/min.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX150102</protocolID>
+     <longName>Cardiorespiratory Fitness - Exercise Test Estimate - Treadmill Test</longName>
+     <context>PhenX</context>
+     <shortName>PX150102</shortName>
+     <preferredDefinition>The participant is asked to walk on a treadmill at a 5% grade for 4 minutes. A technician utilizes a stopwatch to time the walk. Although the test was validated on participants with a range of fitness, it may tend to underestimate fitness in highly trained individuals. The participant wears a heart-rate (HR) monitor that records HR continuously through the test. After the test is completed, the technician records the HR from the last 15 seconds of the test. In addition, the participant’s age and gender are needed to complete an equation to determine maximal oxygen consumption (VO2 max).</preferredDefinition>
+    </protocol>
+   </form>
+   
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:02:42</dateCreated>
+    <longName>PhenX  Integrated Fitness Older Adult Protocol - PX150202</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>A battery of tests for older adults completed with the assistance of an examiner. The examiner demonstrates how to do the test, then the participant performs a few trial runs before the actual test. Some tests require minor equipment (e.g., dumbbell, yardstick). There are six primary tests and one alternate. A brief description of each test follows: the number of chair stands completed in 30 seconds; the number of curls (with light dumbbells) completed in 30 seconds; the distance walked in 6 minutes; the number of steps in place in 2 minutes; the distance reached while sitting in a chair with legs straight and extended to the floor; the distance reached up the back with reaching arm at side and hand behind the back; and the time it takes to get out of a chair, walk around an obstacle 8 feet away, and then sit back in the chair. Test results should be recorded and then scored.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:02:42</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Participant's gender</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Male</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Female</meaningText>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>3</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:02:42</dateCreated>
+      <longName>30-Second Chair Stand</longName>
+      <preferredDefinition>30-Second Chair Stand</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Total number of stands executed in 30 seconds</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Purpose. To assess lower body strength. Image of Chair StandEquipment. Stopwatch, straightback or folding chair (without arms), height approximately 17 in. For safety purposes, the chair should be placed against a wall or in some other way stabilized to prevent it from moving during the test. Protocol. The test begins with the participant seated in the middle of the chair, back straight and feet flat on the floor. Arms are crossed at the wrists and held against the chest. On the signal "go" the participant rises to a full stand and then returns to a fully seated position. The participant is encouraged to complete as many full stands as possible within 30 s. After a demonstration by the tester, a practice trial of one to three repetitions should be done to check for proper form, followed by one 30s test trial. Scoring. The score is the total number of stands executed correctly within 30s. If the participant is more than halfway up at the end of 30s, it counts as a full stand.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>integrated fitness older adult 001</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>4</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:02:42</dateCreated>
+      <longName>Arm Curl</longName>
+      <preferredDefinition>Arm Curl</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Purpose. To assess upper body strength. Equipment. Wristwatch with second hand straightback or folding chair (without arms), hand weights (dumbbells5 lb for women, 8 lb for men). Image of Arm CurlProtocol. The participant is seated on a chair, back straight and feet flat on the floor, with the dominant side of the body close to the side edge of the chair. The weight is held at the side in the dominant hand (handshake grip). The test begins with the arm down beside the chair, perpendicular to the floor. At the signal "go" the participant turns the palm up while curling the arm through a full range of motion and then returns to the fully extended position. At the down position the weight should have returned to the handshake grip position. The examiner kneels (or sits in a chair) next to the participant on the dominantarm side, placing his or her fingers on the person's midbiceps to prevent the upper arm from moving and to ensure that a full curl is made (participant's forearm should squeeze examiner's fingers). It is important that the participant's upper arm remain stabilized (still) throughout the test. The examiner may also need to position his or her other hand behind the participant's elbow so that the participant will know when full extension has been reached, as well as to prevent a backswinging motion of the arm.The participant is encouraged to execute as many curls as possible within the 30s time limit. After a demonstration by the examiner, a practice trial of one or two repetitions should be given to check for proper form, followed by one 30s trial. Scoring. The score is the total number of curls made correctly within 30s. If the arm is more than halfway up at the end of the 30s, it counts as a curl.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>integrated fitness older adult 002</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Total number of curls made correctly within 30 seconds</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>5</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:02:42</dateCreated>
+      <longName>6-Minute Walk</longName>
+      <preferredDefinition>6-Minute Walk</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Purpose. To assess aerobic endurance.  Equipment. Stopwatch, long measuring tape, cones, popsicle sticks, chalk, masking tape (or some other type of marker). For safety purposes, chairs should be positioned at several points alongside the walkway.  SetUp. The test involves assessing the maximum distance that can be walked in 6 min along a 50 yd course marked into 5 yd segments (see Figure A1).</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>integrated fitness older adult 003</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Figure A1 50 yd measured into 5 yd segments.  The inside perimeter of the measured distance should be marked with cones, and the 5 yd segments with masking tape or chalk. The walking area, which can be indoors or outdoors, should be well lit, with a nonslippery, level surface.  Protocol. To keep track of distance walked, a popsicle stick (or similar object) can be given to the participant each time he or she rounds a cone, or a partner can mark a score card each time a lap is completed. Two or more participants should be tested at a time, with starting times staggered (10 s apart) so that participants do not walk in clusters or pairs. When testing several people at once, numbers should be placed on the participants to indicate the order of starting and stopping. On the signal "go," participants are instructed to walk as fast as possible (not run) around the course as many times as they can in 6 min. If necessary, participants may stop and rest (on provided chairs), then resume walking. The timer should move to the inside of the marked area after everyone has started. To assist with pacing, elapsed time should be called out when participants are approximately half done, when 2 min are left, and when 1 min is left. Encouragement phrases such as "you are doing well" and "keep up the good work" should be called out at approximately 30s. intervals. At the end of 6 min, participants (staggered every 10 s) are instructed to stop and move to the right, where an assistant will record their score. To assist with proper pacing and to improve scoring accuracy, a practice test should be given prior to the actual test day.  Safety. The test should be discontinued if at any time a participant shows signs of dizziness, pain, nausea, or undue fatigue. At the end of the test each participant should slowly walk around for about a minute to cool down. Scoring. The score is the total number of yards walked in 6 min, to the nearest 5 yd. The test administrator or aide records TRUNCATED</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Total number of yards walked in 6 minutes</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>6</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:02:42</dateCreated>
+      <longName>2-Minute Step-in-Place (An Alternative to the 6-Min Walk Test)</longName>
+      <preferredDefinition>2-Minute Step-in-Place (An Alternative to the 6-Min Walk Test)</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Purpose. To assess aerobic endurance.  Equipment. Stopwatch, tape measure or 30in. piece of cord, masking tape mechanical counter (if possible) to ensure accurate counting of steps.  SetUp. The proper (minimum) kneestepping height for each participant at a level even with the midway point between the patella (middle of the knee cap and the iliac crest (top hip bone). This point can be determined using a tape measure or by simply stretching a piece of cord from the patella to the iliac crest, then folding it in half to determine the midway point. To monitor correct knee height when stepping, books can be stacked on an adjacent table or a ruler can be attached to a chair or wall with masking tape to mark the proper knee height.  Protocol. On the signal "go" the participant begins stepping (not running) in place, starting with the right leg, and completes as many steps as possible within the time period. Although both knees must be raised to the correct height to be counted, the tester only counts the number of times the right knee reaches it. The counter also serves as a spotter in case of loss of balance and ensures that the participant maintains proper knee height. As soon as proper knee height can no longer be maintained, the participant is asked to stop or to stop and rest until proper form can be regained. Stepping may be resumed if the 2min time period has not elapsed. If necessary, the participant can place one hand on the table or chair to assist in maintaining balance.  To assist with proper pacing and to improve scoring accuracy, a practice test should be given prior to the test day. On test day, the examiner should demonstrate the procedure and allow the participants to practice briefly to recheck their understanding of the protocol.  Safety. At the end of the test the participant should slowly walk around for about a minute to cool down. Scoring. The score is the total number of times the right knee reaches the minimum height...TRUNCATED</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>integrated fitness older adult 004</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Total number of times the right knee reaches the minimum height in 2 minutes</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>7</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:02:42</dateCreated>
+      <longName>Chair Sit-and-Reach</longName>
+      <preferredDefinition>Chair Sit-and-Reach</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Purpose. To assess lower body (primarily hamstring) flexibility.  Equipment. Straightback or folding chair (approximately 17in. seat height), 18in. ruler. For safety purposes, the chair should be placed against a wall and checked to see that it remains stable (doesn't tip forward) when the participant sits on the front edge.  Protocol. Starting in a sitting position on a chair, the participant moves forward until she or he is sitting on the front edge. The crease between the top of the leg and the buttocks should be even with the edge of the chair seat. Keeping one leg bent and foot flat on the floor, the other leg (the preferred leg*) is extended straight in front of the hip, with heel on floor and foot flexed (at approximately 90° see the picture).  With the extended leg as straight as possible (but not hyperextended), the participant slowly bends forward at the hip joint (spine should remain as straight as possible, with head in line with spine, not tucked) sliding the hands (one on top of the other with the tips of the middle fingers even) down the extended leg in an attempt to touch the toes. The reach must be held for 2 s. If the extended knee starts to bend, ask the participant to slowly sit back until the knee is straight before scoring. Participants should be reminded to exhale as they bend forward to avoid bouncing or rapid, forceful movements and to never stretch to the point of pain.  After a demonstration by the tester, the participant is asked to determine the preferred leg. The participant is then given two practice (stretching) trials on that leg, followed by two test trials  Scoring. Using an 18in. ruler, the scorer records the number of inches person is short of reaching the toe (minus score) or reaches beyond the toe (plus score). The middle of the toe at the end of the shoe represents a zero score. Record both test scores to the nearest 1/2 in., and circle the best score. The best score is used to evaluate performance....TRUNCATED</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>integrated fitness older adult 005</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>In the first trial, the number of inches person is short of reaching the toe (minus score) or reaches beyond the toe (plus score). The middle of the toe at the end of the shoe represents a zero score.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>In the second trial, the number of inches person is short of reaching the toe (minus score) or reaches beyond the toe (plus score). The middle of the toe at the end of the shoe represents a zero score.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>8</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:02:42</dateCreated>
+      <longName>Back Scratch</longName>
+      <preferredDefinition>Back Scratch</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Purpose. To assess upper body (shoulder) flexibility.  Equipment 18in. ruler (half of a yardstick).  Protocol. In a standing position, the participant places the preferred hand behind the sameside shoulder, palm toward back and fingers extended, reaching down the middle of the back as far as possible (elbow pointed up). The particular places the other hand behind the back, palm out, reaching up as far as possible in an attempt to touch or overlap the extended middle fingers of both hands. Without moving the participant's hands, the tester helps to see that the middle fingers of each hand are directed toward each other. The participant is not allowed to grab his or her fingers together and pull. After a demonstration by the tester, the participant is asked to determine the preferred hand, and is then given two practice (stretching) trials, followed by two test trials. Scoring. The distance of overlap or distance between the tips of the middle fingers is measured to the nearest 1/2 in. A minus score () is given to represent a distance short of touching a plus score (+) represents the amount of an overlap. Record both test scores and circle the best one. The best score is used to evaluate performance. Be sure to indicate "minus" or "plus" on the score card. *The preferred hand is defined as the one that results in the better score. Although it is important to work on flexibility on both sides of the body, only the "better" side has been used in developing norms.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>integrated fitness older adult 006</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>In the first trial, the distance of overlap or distance between the tips of the middle fingers is measured to the nearest 1/2 in. A minus score () is given to represent a distance short of touching a plus score (+) represents the amount of an overlap.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>In the second trial, the distance of overlap or distance between the tips of the middle fingers is measured to the nearest 1/2 in. A minus score () is given to represent a distance short of touching a plus score (+) represents the amount of an overlap.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>9</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:02:42</dateCreated>
+      <longName>8-Foot Up-and-Go</longName>
+      <preferredDefinition>8-Foot Up-and-Go</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>Purpose. To assess agility/dynamic balance.  Equipment. Stopwatch, tape measure, cone (or similar marker), straight back or folding chair (seat height approximately 17 in.).  SetUp. The chair should be positioned against a wall or in some other way secured so that it does not move during testing. It should also be in a clear, unobstructed area, facing a cone marker exactly 8 ft away (measured from a point on the floor even with the front edge of the chair to the back of the marker). There should be at least 4 ft of clearance beyond the cone to allow ample turning room for the participant.  Protocol. The test begins with the participant fully seated in the chair (erect posture), hands on thighs and feet flat on the floor (one foot slightly in front of the other). On the signal "go" the participant gets up from the chair (pushing off thighs or chair is allowed), walks as quickly as possible around the cone (on either side), and returns to the chair. The participant should be told that this is a timed test and that the object is to walk as quickly as possible (without running) around the cone and back to the chair. The tester should serve as a spotter, standing midway between the chair and the cone, ready to assist the participant in case of loss of balance. For reliable scoring, the tester must start the timer on "go," whether or not the participant has started to move, and stop the timer at the exact instant the participant sits in the chair. After a demonstration, the participant walks through the test one time as a practice and then is given two test trials. Participants should be reminded that the timing does not stop until they are fully seated in the chair. Scoring. The score is the time elapsed from the signal "go" until the participant returns to a seated position in the chair. Record both test scores to the nearest 1/10th s and circle the best score (lowest time). The best score is used to evaluate performance. National norms of these tests ..TRUNCATED</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>integrated fitness older adult 007</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>In the first trial, the time elapsed from the signal go" until the participant returns to a seated position in the chair."</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:02:42</dateCreated>
+        <questionText>In the second trial, the time elapsed from the signal go" until the participant returns to a seated position in the chair."</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX150202</protocolID>
+     <longName>Integrated Fitness - Older Adult Protocol</longName>
+     <context>PhenX</context>
+     <shortName>PX150202</shortName>
+     <preferredDefinition>A battery of tests for older adults completed with the assistance of an examiner. The examiner demonstrates how to do the test, then the participant performs a few trial runs before the actual test. Some tests require minor equipment (e.g., dumbbell, yardstick). There are six primary tests and one alternate. A brief description of each test follows: the number of chair stands completed in 30 seconds; the number of curls (with light dumbbells) completed in 30 seconds; the distance walked in 6 minutes; the number of steps in place in 2 minutes; the distance reached while sitting in a chair with legs straight and extended to the floor; the distance reached up the back with reaching arm at side and hand behind the back; and the time it takes to get out of a chair, walk around an obstacle 8 feet away, and then sit back in the chair. Test results should be recorded and then scored.</preferredDefinition>
+    </protocol>
+   </form>
+    </forms>
