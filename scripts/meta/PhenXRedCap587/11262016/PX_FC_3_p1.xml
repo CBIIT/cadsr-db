@@ -1,0 +1,4271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 3.1</collectionName>
+  <collectionDescription>Load PhenX PX021401,PX021501,PX021502,PX021702,PX030101,PX030201,PX030301,PX030401,PX030501,PX030601,PX030602,PX030701,PX030702,PX030801,PX030802,PX030901,PX030902</collectionDescription>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Weight Loss Gain - PX021401</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The protocol contains a question about the participant’s weight 1 year ago.**NOTE: This period can be modified for different periods. Depending on your hypothesis, you may want to modify the time interval as appropriate (e.g., 3 months, 6 months, 1 year).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>ENTER WEIGHT IN POUNDS OR KILOGRAMS</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>POUNDS</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>KILOGRAMS</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How much did {you/[participant]} weigh a year ago?</questionText>
+        <instruction>
+         <text>[wt_in_pounds] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How much did {you/[participant]} weigh a year ago?</questionText>
+        <instruction>
+         <text>[wt_in_pounds] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How much did {you/[participant]} weigh a year ago?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>777</value>
+          <meaningText>REFUSED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>DON'T KNOW</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>[If {you were/she was} pregnant a year ago, how much did {you/she} weigh before your pregnancy?]</questionText>
+        <instruction>
+         <text>[wt_in_pounds] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>[If {you were/she was} pregnant a year ago, how much did {you/she} weigh before your pregnancy?]</questionText>
+        <instruction>
+         <text>[wt_in_pounds] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>[If {you were/she was} pregnant a year ago, how much did {you/she} weigh before your pregnancy?]</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>777</value>
+          <meaningText>REFUSED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>DON'T KNOW</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>When the question is being asked of a proxy respondent, insert the participant's name here</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX021401</protocolID>
+     <longName>Weight Loss/Gain</longName>
+     <context>PhenX</context>
+     <shortName>PX021401</shortName>
+     <preferredDefinition>The protocol contains a question about the participant’s weight 1 year ago.**NOTE: This period can be modified for different periods. Depending on your hypothesis, you may want to modify the time interval as appropriate (e.g., 3 months, 6 months, 1 year).</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Measured Weight - PX021501</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Weight is measured using a digital floor scale. The instrument should be calibrated daily using standardized weights, and a log of calibration results should be maintained.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Measured weight units</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Kilograms</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Pounds</meaningText>
+         </validValue>
+               </question>    
+	    <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Note: Detailed videos illustrating the procedure can be found on the National Health and Nutrition Examination Survey (NHANES) website. A digital scale or beam balance is used to weigh participants. Participants are asked to wear an examination gown and socks or light clothes without shoes. Only undergarments are worn beneath the gown. Infants should wear a clean diaper and tshirt if they have not been placed in an examination gown. The procedures for obtaining the weight measurement are as follows: The examiner briefly informs the participant that his/her weight will be measured. Participants are asked to remove objects such as cell phones, wallets, and toys from their pockets. 1. The health technician directs participants to stand in the center of the scale platform with hands at their sides and looking straight ahead. 2. The weight measurement is recorded in kilograms or pounds. 3. Special situations:Small children: Infants and toddlers who cannot stand alone on the scale will be weighed with an adult, with an infant's scale. If an adult is holding the child, then the adult guardian or the health technician will stand alone on the scale so the scale can be tared. This sets the scale readout to zero. The child is then handed to the adult and the child's weight is measured. If the participant is wearing a cast or medical prosthesis, make a note in the record of the location and place.</questionText>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+       </question>       
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>If the participant wore street clothes instead of the examination gown, make a note of this in the record. It is acceptable for infants to wear diapers or underpants and a tshirt.Participants should not be weighed if they are wearing shoes.Note that special consideration may be needed for participants whose weight exceeds the capacity of the study scale. For example, weight can be obtained using two portable scales:Have the participant stand with one foot on each portable scale.Combine the two results to approximate the weight.Record the weight. If the weight equals the capacity of both portable scales, note that the weight Equals Capacity (EC) of the scales.</questionText>
+        <instruction>
+         <text>[measured_weight_units] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Measured Weight 2</questionText>
+        <instruction>
+         <text>[measured_weight_units] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Measured Weight 3</questionText>
+        <instruction>
+         <text>[measured_weight_units] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Measure Weight Average</questionText>
+        <instruction>
+         <text>[measured_weight_units] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>mean([measured_weight_1_kilograms]</value>
+          <meaningText>[measured_weight_2_kilograms],[measured_weight_3_kilograms])</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Measured Weight 1</questionText>
+        <instruction>
+         <text>[measured_weight_units] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Measured Weight 2</questionText>
+        <instruction>
+         <text>[measured_weight_units] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Measured Weight 3</questionText>
+        <instruction>
+         <text>[measured_weight_units] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Measure Weight Average</questionText>
+        <instruction>
+         <text>[measured_weight_units] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>mean([measured_weight_1_lbs]</value>
+          <meaningText>[measured_weight_2_lbs],[measured_weight_3_lbs])</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cast or Medical Prosthesis</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cast or Medical Prosthesis Location</questionText>
+        <instruction>
+         <text>[cast_or_medical_prosthesis] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Street Clothes</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX021501</protocolID>
+     <longName>Weight - Measured Weight</longName>
+     <context>PhenX</context>
+     <shortName>PX021501</shortName>
+     <preferredDefinition>Weight is measured using a digital floor scale. The instrument should be calibrated daily using standardized weights, and a log of calibration results should be maintained.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Selfreported Weight - PX021502</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The respondent provides his/her self-reported weight.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Weight Units</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Kilograms</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Pounds</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How much {do you/does the participant} weigh without clothes or shoes?[If {you are/she is} currently pregnant, how much did {you/she} weigh before your pregnancy?]</questionText>
+        <instruction>
+         <text>[self_reported_weight_units] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How much {do you/does the participant} weigh without clothes or shoes?[If {you are/she is} currently pregnant, how much did {you/she} weigh before your pregnancy?]</questionText>
+        <instruction>
+         <text>[self_reported_weight_units] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX021502</protocolID>
+     <longName>Weight - Self-Reported Weight</longName>
+     <context>PhenX</context>
+     <shortName>PX021502</shortName>
+     <preferredDefinition>The respondent provides his/her self-reported weight.</preferredDefinition>
+    </protocol>
+   </form>   
+    <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Serial Pregnancy Weight Weights Measured During Gestat - PX021702</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Serial measures of weight either (1) abstracted from health care (prenatal) records, or (2) measured prospectively for the duration of gestation. Data collected entail (1) weights measured at all prenatal visits; (2) dates of all prenatal visits; (3) reported pre-pregnancy weight; (4) reported or measured height; and (5) gestational age at every prenatal visit and at delivery. If the opportunity exists to collect the information prospectively as part of the research protocol, this is preferred.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Weights Measured during Gestation (Research Protocol):  Gestational ages, date of initial examination, and prepregnancy weight are abstracted from medical records (also described in the protocol, Weights Abstracted from Prenatal Charts). Weight in pregnancy is measured at prenatal or research visits using a research protocol (see Measured Weight). Height can be collected by selfreport (see Selfreported Height) or, preferably, by measurement in the 1st trimester (see Standing Height).  Most obstetric practices and prenatal clinics use a standardized form to chart prenatal course. The American Congress of Obstetricians and Gynecologists (ACOG, formerly the American College of Obstetricians and Gynecologists) has an Antenatal Record form that is periodically upgraded and available for its members. There are others, such as the POPRAS (Problem Oriented Perinatal Risk Assessment System) or Hollister Maternal/Newborn Record System forms, which are also in common use. All of the standardized forms have places or spaces to report information on gestational age, prepregnancy weight, and dates of examination, and these can be abstracted. For women carrying a singleton fetus, the expected schedule of prenatal visits suggested by ACOG is monthly through the 7th month (28 weeks), every 23 weeks through the 9th month (36 weeks), and weekly thereafter until delivery. The gestational age at delivery can be found in the labor and delivery chart.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>An example of the relevant section of the ACOG Antenatal Record Form B (Initial Physical Exam) which charts date of exam, prepregnancy weight, and height:</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>An example of the relevant section of the ACOG Antenatal Record Form C which contains the date of the woman's last menstrual period (LMP) and estimated due date(s) (EDD) for establishing (or correcting) gestational age at each prenatal visit:</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the date of initial examination</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's height measured at initial examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's weight measured at initial examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the date of today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's gestational age at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's height at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's weight at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the date of today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's gestational age at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's height at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's weight at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the date of today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's gestational age at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's height at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's weight at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the date of today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's gestational age at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's height at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's weight at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the date of today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's gestational age at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's height at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's weight at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the date of today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's gestational age at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's height at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's weight at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the date of today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's gestational age at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's height at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's weight at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the date of today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's gestational age at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's height at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's weight at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the date of today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's gestational age at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's height at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's weight at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the date of today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's gestational age at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's height at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is the patient's weight at today's prenatal examination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX021702</protocolID>
+     <longName>Serial Pregnancy Weight - Weights Measured During Gestation</longName>
+     <context>PhenX</context>
+     <shortName>PX021702</shortName>
+     <preferredDefinition>Serial measures of weight either (1) abstracted from health care (prenatal) records, or (2) measured prospectively for the duration of gestation. Data collected entail (1) weights measured at all prenatal visits; (2) dates of all prenatal visits; (3) reported pre-pregnancy weight; (4) reported or measured height; and (5) gestational age at every prenatal visit and at delivery. If the opportunity exists to collect the information prospectively as part of the research protocol, this is preferred.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Alcohol Lifetime Use - PX030101</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measurement of whether respondent has ever consumed alcohol.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>The next question is about drinking alcohol. This includes coolers, beer, wine, champagne, liquor such as whiskey, rum, gin, vodka, scotch, or liqueurs, and also any other type of alcohol.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>In your entire life, have you had at least 1 drink of any kind of alcohol, not counting small tastes or sips?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Definition of a standard drink: 1 12oz bottle of beer, 1 glass 4oz nonfortified wine, 1 mixed drink with 1oz liquor.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>If respondent needs a visual reference for the size of a drink, the flashcards from the Wave 1 National Epidemiologic Survey on Alcohol and Related Conditions (NESARC) study are provided below:</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 1A. Cooler ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 1B. Cooler ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 1C. Cooler ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 2A. Wine ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 2B. Wine ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 2C. Wine ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 3A. Liquor ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 3B. Liquor ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 3C. Liquor ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX030101</protocolID>
+     <longName>Alcohol - Lifetime Use</longName>
+     <context>PhenX</context>
+     <shortName>PX030101</shortName>
+     <preferredDefinition>Measurement of whether respondent has ever consumed alcohol.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Alcohol Age Of First Use - PX030201</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measurement to ascertain the respondent's age of initiation of first use of alcohol and duration of use.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>The next question is about drinking alcohol. This includes coolers, beer, wine, champagne, liquor such as whiskey, rum, gin, vodka, scotch, or liqueurs, and also any other type of alcohol.  About how old were you when you first started drinking, not counting small tastes or sips of alcohol?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>The next question is about drinking alcohol. This includes coolers, beer, wine, champagne, liquor such as whiskey, rum, gin, vodka, scotch, or liqueurs, and also any other type of alcohol.  About how old were you when you first started drinking, not counting small tastes or sips of alcohol?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>96</value>
+          <meaningText>Never drank</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>97</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>99</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce size  image 1</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce size  image 2</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce size  image 3</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce size  image 4</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce size  image 5</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce size  image 6</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce size  image 7</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce size  image 8</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce size  image 9</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX030201</protocolID>
+     <longName>Alcohol - Age of First Use</longName>
+     <context>PhenX</context>
+     <shortName>PX030201</shortName>
+     <preferredDefinition>Measurement to ascertain the respondent's age of initiation of first use of alcohol and duration of use.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Alcohol 30 Day Quantity And Frequency - PX030301</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measurements of respondent's 30-day quantity and frequency of consumption of alcohol.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL*], up to and including today. During the past 30 days, on how many days did you drink one or more drinks of an alcoholic beverage?  * DATEFILL is the date 30 days prior to the date of the interview.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>alcohol 30day frequency coded</questionText>
+        <instruction>
+         <text>[alcohol_30day_frequency] &lt;= 0 or [alcohol_30day_frequency] &gt;= 30</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>97</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>99</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>On the days that you drank during the past 30 days, how many drinks did you usually have each day? Count as a drink a can or bottle of beer a wine cooler or a glass of wine, champagne, or sherry a shot of liquor or a mixed drink or cocktail.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>alcohol 30day quantity coded</questionText>
+        <instruction>
+         <text>[alcohol_30day_quantity] &lt;= 1 or [alcohol_30day_quantity] &gt;= 90</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>97</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>99</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Definition of a standard drink: 1 12oz bottle of beer, 1 glass 4oz nonfortified wine, 1 mixed drink with 1oz liquor.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>If respondent needs a visual reference for the size of a drink, the flashcards from the Wave 1 National Epidemiologic Survey on Alcohol and Related Conditions (NESARC) study are provided below:</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 1A. Cooler ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 1B. Cooler ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 1C. Cooler ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 2A. Wine ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 2B. Wine ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 2C. Wine ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 3A. Liquor ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 3B. Liquor ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Card 3C. Liquor ounce size</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX030301</protocolID>
+     <longName>Alcohol - 30-Day Quantity and Frequency</longName>
+     <context>PhenX</context>
+     <shortName>PX030301</shortName>
+     <preferredDefinition>Measurements of respondent's 30-day quantity and frequency of consumption of alcohol.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Alcohol Maximum Drinks In 24 Hours - PX030401</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Lifetime measurement of the largest number of drinks respondent has consumed. The PhenX Working Group modified this question from the source so that it is compatible with the Alcohol - Lifetime Use measure. The original question defined the time period for maximum consumption as the last year.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>The next question is about drinking alcohol. This includes coolers, beer, wine, champagne, liquor such as whiskey, rum, gin, vodka, scotch, or liqueurs, and also any other type of alcohol.  What was the LARGEST number of drinks that you ever drank in a single day?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce  image 1</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce  image 2</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce  image 3</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce  image 4</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce  image 5</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce  image 6</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce  image 7</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce  image 8</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Cooler ounce  image 9</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>The next question is about drinking alcohol. This includes coolers, beer, wine, champagne, liquor such as whiskey, rum, gin, vodka, scotch, or liqueurs, and also any other type of alcohol.  What was the LARGEST number of drinks that you ever drank in a single day?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>96</value>
+          <meaningText>Never drank</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>97</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>99</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX030401</protocolID>
+     <longName>Alcohol - Maximum Drinks in 24 Hours</longName>
+     <context>PhenX</context>
+     <shortName>PX030401</shortName>
+     <preferredDefinition>Lifetime measurement of the largest number of drinks respondent has consumed. The PhenX Working Group modified this question from the source so that it is compatible with the Alcohol - Lifetime Use measure. The original question defined the time period for maximum consumption as the last year.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Alcohol Lifetime Abuse And Dependence - PX030501</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measurement of respondent's symptoms of alcohol abuse and dependence.  These responses correspond with criteria from the Diagnostic and Statistical Manual of Mental Disorders(4th ed.; DSM-IV).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>At what age did you begin to drink regularly that is, drinking at least once a month for 6 months or more?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>At what age did you begin to drink regularly that is, drinking at least once a month for 6 months or more?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>00</value>
+          <meaningText>IF NEVER</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How old were you the first time you got drunk, that is, your speech was slurred or you were unsteady on your feet?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How old were you the first time you got drunk, that is, your speech was slurred or you were unsteady on your feet?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>00</value>
+          <meaningText>IF NEVER</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>In your lifetime, what is the largest number of drinks you have ever had in a 24hour period (including all types of alcohol)?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>In your lifetime, what is the largest number of drinks you have ever had in a 24hour period (including all types of alcohol)?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>00</value>
+          <meaningText>IF NEVER</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Did you ever become tolerant to alcohol that is, you drank a great deal more in order to get an effect, or found you could no longer get high on the amount you used to drink?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>WAS INCREASE 50% OR MORE?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00') and [alcohol_tolerant] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Did you ever find you could drink a lot more before you got drunk?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>WAS INCREASE 50% OR MORE?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00') and [alcohol_more_get_drunk] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Have you 3 or more times wanted to stop or cut down on drinking?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Have you ever tried to stop or cut down on drinking?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>5.2 How many times were you unable to stop or cut down?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00') and [alcohol_cessation] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How many times were you unable to stop or cut down?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00') and [alcohol_cessation] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Was it 3 or more times?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00') and [alcohol_withdrawal_failure_times_coded] &lt;&gt; '9' and [alcohol_withdrawal_failure_times] &lt; 3</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Have you ever started drinking at times you promised yourself that you wouldn't, or have you ever drunk more than you intended? For example, when you decided to drink 2 drinks and ended up drinking 4 or more?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Did this happen 3 or more times?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00') and [alcohol_more_than_intended] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Have you ever started drinking and become drunk when you didn't want to?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Did this happen 3 or more times?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00') and [drunk_not_intended] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Have you ever given up or greatly reduced important activities while drinking  like sports, work, or associating with friends or relatives?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Did this happen 3 or more times or for a month or more?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00') and [alcohol_use_interfere_activity] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Has there ever been a period of several days or more when you spent so much time drinking or recovering from the effects of alcohol that you had little time for anything else?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Did this period last for a month or more or did you have 3 or more periods like that?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00') and [alcohol_use_interfere_life] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>There are several health problems that can result from long stretches of drinking.  Did drinking ever cause you to have liver disease or yellow jaundice?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>There are several health problems that can result from long stretches of drinking.  Did drinking ever cause you to have stomach disease or make you vomit blood?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>There are several health problems that can result from long stretches of drinking.  Did drinking ever cause you to have pancreatitis?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>There are several health problems that can result from long stretches of drinking.  Did drinking ever cause you to have damage to your heart (cardiomyopathy)?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>There are several health problems that can result from long stretches of drinking.  Did drinking ever cause you to have memory problems even when you weren't drinking (so, not counting blackouts)?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>There are several health problems that can result from long stretches of drinking.  Did drinking ever cause you to have any other physical health problems?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>There are several health problems that can result from long stretches of drinking.  Did drinking ever cause you to have any other physical health problems? IF YES, SPECIFY</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Did you continue to drink knowing that drinking caused you to have health problems?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) and ([alcohol_use_liver_disease] &lt;&gt; '1' or [alcohol_use_stomach_disease] &lt;&gt; '1' or [alcohol_use_pancreatitis] &lt;&gt; '1' or [alcohol_use_caTRUNCATED</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Have you ever continued to drink when you knew you had any (other) serious physical illness or condition that might be made worse by drinking?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) and ([alcohol_use_liver_disease] = '1' AND [alcohol_use_stomach_disease] = '1' AND [alcohol_use_pancreatitis] = '1' AND [alcohol_use_caTRUNCATED</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Has drinking ever caused you emotional or psychological problems like feeling depressed or uninterested in things for more than 24 hours to the point that it interfered with your functioning?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00'))</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Has drinking ever caused you emotional or psychological problems like feeling jumpy or easily startled or nervous for more than 24 hours to the point that it interfered with your functioning?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Has drinking ever caused you emotional or psychological problems like having such trouble thinking clearly for more than 24 hours that it interfered with your functioning?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Has drinking ever caused you emotional or psychological problems like feeling paranoid or suspicious of people for more than 24 hours to the point that it interfered with your relationships?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Has drinking ever caused you emotional or psychological problems like hearing, seeing, or smelling things that weren't really there?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Did you continue to drink after you knew it caused you any of these problems?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND ([alcohol_use_depressed_interfere_functioning] &lt;&gt; '1' OR [alcohol_use_nevous_interfere_functioning] &lt;&gt; '1' OR [alcohol_use_clearthiTRUNCATED</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did you have the shakes (hands trembling)?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00') OR [alcohol_use_depressed_interfere_functioning] = '1' OR [alcohol_use_nevous_interfere_functioning] = '1' OR [alcohol_use_clearthinking_TRUNCATED</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Were you unable to sleep?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did you feel anxious?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did you feel depressed or irritable?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did your heart beat fast or did you sweat?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did you have nausea or vomiting?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did you feel physically weak?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did you have headaches?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>46</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Did you see or hear things that weren't there?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>47</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>People who cut down, stop, or go without drinking after drinking steadily for some time may not feel well. These feelings are more intense and can last longer than the usual hangover. When you stopped, cut down or went without drinking, did you ever experience any of the following problems for most of the day for 2 days or longer?  Were you fidgety or restless?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>48</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Was there ever a time when two or more of these problems occurred together?</questionText>
+        <instruction>
+         <text>[largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00') OR ([alcohol_withdrawal_anxious] = '5' OR [alcohol_withdrawal_depressed] = '5'  OR [alcohol_withdrawal_heartracing] = '5'  OR [alcohol_wiTRUNCATED</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>49</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did you have the shakes (hands trembling)?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>50</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Were you unable to sleep?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>51</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did you feel anxious?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>52</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did you feel depressed or irritable?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>53</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did your heart beat fast or did you sweat?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>54</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did you have nausea or vomiting?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>55</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did you feel physically weak?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>56</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did you have headaches?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>57</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Did you see or hear things that weren't there?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>58</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Was there ever a time when two or more of these problems occurred together?  Which ones?  Were you fidgety or restless?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>59</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Have you ever taken a drink to keep from having any of these problems (or to make them go away) (REVIEW ALL 5'S CODED IN COL. 1)?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>60</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Did this happen 3 or more times?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1' AND [drinking_alleviating_alcohol_withdrawal_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>61</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>When you stopped, cut down, or went without drinking, did you ever have fits, seizures, or convulsions, where you lost consciousness, fell to the floor, and had difficulty remembering what happened?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1' AND [drinking_alleviating_alcohol_withdrawal_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>62</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>On 3 or more different occasions have you taken a drink to keep from having fits, seizures, or convulsions or to make them go away?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1' AND [drinking_alleviating_alcohol_withdrawal_symptoms] &lt;&gt; '1' AND [alcohol_withdrawalTRUNCATED</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>63</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>When you stopped, cut down, or went without drinking, did you ever have the DT's, that is, where you were very confused, extremely shaky, felt very frightened or nervous, or saw things that weren't really there?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1' AND [drinking_alleviating_alcohol_withdrawal_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>64</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>On 3 or more different occasions have you taken a drink to keep from having the DT's or to make them go away?</questionText>
+        <instruction>
+         <text>([largest_drinking_24hour] &gt; 3 or ([regular_drinking_age_coded] &lt;&gt; '00' or  [first_drunk_age_coded] &lt;&gt; '00')) AND [alcohol_withdrawal_multiple_symptoms] &lt;&gt; '1' AND [drinking_alleviating_alcohol_withdrawal_symptoms] &lt;&gt; '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW / REFUSED</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX030501</protocolID>
+     <longName>Alcohol - Lifetime Abuse and Dependence</longName>
+     <context>PhenX</context>
+     <shortName>PX030501</shortName>
+     <preferredDefinition>Measurement of respondent's symptoms of alcohol abuse and dependence.  These responses correspond with criteria from the &lt;I&gt;Diagnostic and Statistical Manual of Mental Disorders&lt;/I&gt; (4th ed.; &lt;I&gt;DSM-IV&lt;/I&gt;).</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Tobacco Smoking Status Adolescent Protocol - PX030601</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measurement to determine respondent's smoking status.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Have you ever smoked part or all of a cigarette?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>97</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>99</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Have you smoked at least 100 cigarettes in your entire life?</questionText>
+        <instruction>
+         <text>[cigarette_smoking] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>97</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>99</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Do you now smoke cigarettes every day, some days, or not at all?</questionText>
+        <instruction>
+         <text>[cigarette_smoking] = '1' and [cigarette_smoking_100_adolescent] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Every day</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Some days</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Not at all</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>97</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>99</value>
+          <meaningText>Don't Know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Has there ever been a period in your life when you smoked cigarettes every day for at least 30 days?</questionText>
+        <instruction>
+         <text>[cigarette_smoking] = '1' and [cigarette_smoking_100_adolescent] = '1' and [cigarette_smoking_current_adolescent] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>97</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>99</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX030601</protocolID>
+     <longName>Protocol 1: Tobacco - Smoking Status (Adolescent Protocol)</longName>
+     <context>PhenX</context>
+     <shortName>PX030601</shortName>
+     <preferredDefinition>Measurement to determine respondent's smoking status.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Tobacco Smoking Status Adult Protocol - PX030602</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measurement to determine respondent's smoking status.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Have you smoked at least 100 cigarettes in your entire life? (100 CIGARETTES = APPROXIMATELY 5 PACKS)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>97</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>99</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Do you now smoke cigarettes every day, some days, or not at all?</questionText>
+        <instruction>
+         <text>[cigarette_smoking_100] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Every day</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Some days</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Not at all</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>97</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>99</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Have you EVER smoked cigarettes EVERY DAY for at least 6 months?</questionText>
+        <instruction>
+         <text>[cigarette_smoking_100] = '1' and [cigarette_smoking_current] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>97</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>99</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX030602</protocolID>
+     <longName>Protocol 2:  Tobacco - Smoking Status (Adult Protocol)</longName>
+     <context>PhenX</context>
+     <shortName>PX030602</shortName>
+     <preferredDefinition>Measurement to determine respondent's smoking status.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Tobacco Age Of Initiation Of Use Adolescent - PX030701</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measurement to ascertain the respondent's age of initiation of first/regular use of cigarettes, which can be used to calculate duration of use and pack-years measures.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How old were you the first time you smoked part or all of a cigarette?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How old were you the first time you smoked part or all of a cigarette?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know / Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How old were you when you first started smoking cigarettes every day?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How old were you when you first started smoking cigarettes every day?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know / Refused</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX030701</protocolID>
+     <longName>Protocol 1:  Tobacco - Age of Initiation of Use (Adolescent Protocol)</longName>
+     <context>PhenX</context>
+     <shortName>PX030701</shortName>
+     <preferredDefinition>Measurement to ascertain the respondent's age of initiation of first/regular use of cigarettes, which can be used to calculate duration of use and pack-years measures.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Tobacco Age Of Initiation Of Use Adult Protocol - PX030702</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measurement to ascertain the respondent's age of initiation of first/regular use of cigarettes, which can be used to calculate duration of use and pack-years measures. The PhenX Working Group modified the Adult Protocol to provide a more precise measure. The original wording of "fairly regularly" was changed to "every day."</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How old were you when you first started smoking cigarettes every day?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How old were you when you first started smoking cigarettes every day?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know / Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How old were you when you first started smoking cigarettes FAIRLY REGULARLY?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How old were you when you first started smoking cigarettes FAIRLY REGULARLY?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know / Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Never</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX030702</protocolID>
+     <longName>Protocol 2:  Tobacco - Age of Initiation of Use (Adult Protocol)</longName>
+     <context>PhenX</context>
+     <shortName>PX030702</shortName>
+     <preferredDefinition>Measurement to ascertain the respondent's age of initiation of first/regular use of cigarettes, which can be used to calculate duration of use and pack-years measures. The PhenX Working Group modified the Adult Protocol to provide a more precise measure. The original wording of "fairly regularly" was changed to "every day."</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Tobacco 30day Quantity And Frequency Adolescent - PX030801</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measures used to calculate the respondent's 30-day quantity and frequency use of cigarettes. For the adolescent respondent, there is one set of questions.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Now think about the past 30 days  that is, from [DATEFILL*] up to and including today. During the past 30 days, have you smoked part or all of a cigarette?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>During the past 30 days, that is, since [DATEFILL*], on how many days did you smoke part or all of a cigarette?</questionText>
+        <instruction>
+         <text>[thirthydays_cigarette_smoking] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>During the past 30 days, that is, since [DATEFILL*], on how many days did you smoke part or all of a cigarette?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>What is your best estimate of the number of days you smoked part or all of a cigarette during the past 30 days?</questionText>
+        <instruction>
+         <text>[thirthydays_frequency_count_coded] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1 or 2 days</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>3 to 5 days</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>6 to 9 days</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>10 to 19 days</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>20 to 29 days</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>All 30 days</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>On the [NUMBER OF DAYS REPORTED IN Question 2a OR 2b] you smoked cigarettes during the past 30 days, how many cigarettes did you smoke per day, on average?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than one cigarette per day</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1 cigarette per day</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>2 to 5 cigarettes per day</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>6 to 15 cigarettes per day (about 1/2 pack)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>16 to 25 cigarettes per day (about 1 pack)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>26 to 35 cigarettes per day (about 1 1/2 packs)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>More than 35 cigarettes per day (about 2 packs or more)</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX030801</protocolID>
+     <longName>Protocol 1:  Tobacco - 30-Day Quantity and Frequency (Adolescent Protocol)</longName>
+     <context>PhenX</context>
+     <shortName>PX030801</shortName>
+     <preferredDefinition>Measures used to calculate the respondent's 30-day quantity and frequency use of cigarettes. For the adolescent respondent, there is one set of questions.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Tobacco 30day Quantity And Frequency Adult - PX030802</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measures used to calculate the respondent's 30-day quantity and frequency use of cigarettes.  For the adult respondent, there are three sets of question protocols: (1) a protocol for Every-Day Smokers, (2) a protocol for Some-Day Smokers, and (3) a protocol for Former Smokers.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>SMOKER TYPE</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Every-Day Smokers</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Some-Day Smokers</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Former Smokers</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Protocol A is used with adults who are EveryDay Smokers.  On the average, about how many cigarettes do you now smoke each day?</questionText>
+        <instruction>
+         <text>[smoker_type] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Protocol A is used with adults who are EveryDay Smokers.  On the average, about how many cigarettes do you now smoke each day?</questionText>
+        <instruction>
+         <text>[smoker_type] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know / Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Protocol B is used with adults who are SomeDay Smokers.  On how many of the past 30 days did you smoke cigarettes?</questionText>
+        <instruction>
+         <text>[smoker_type] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Protocol B is used with adults who are SomeDay Smokers.  On how many of the past 30 days did you smoke cigarettes?</questionText>
+        <instruction>
+         <text>[smoker_type] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know / Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>X for "none"</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Protocol B is used with adults who are SomeDay Smokers.  On the average, on those [NUMFILL] days, how many cigarettes did you usually smoke each day?</questionText>
+        <instruction>
+         <text>[smoker_type] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Protocol B is used with adults who are SomeDay Smokers.  On the average, on those [NUMFILL] days, how many cigarettes did you usually smoke each day?</questionText>
+        <instruction>
+         <text>[smoker_type] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know / Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Protocol C is used with adults who are Former Smokers.  Have you EVER smoked cigarettes EVERY DAY for at least 6 months?</questionText>
+        <instruction>
+         <text>[smoker_type] = '3'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know / Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Protocol C is used with adults who are Former Smokers.  When you last smoked every day, on average how many cigarettes did you smoke each day?</questionText>
+        <instruction>
+         <text>[smoker_type] = '3'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Protocol C is used with adults who are Former Smokers.  When you last smoked every day, on average how many cigarettes did you smoke each day?</questionText>
+        <instruction>
+         <text>[smoker_type] = '3'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know / Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Protocol C is used with adults who are Former Smokers.  When you last smoked every day, on average how many cigarettes did you smoke each day?</questionText>
+        <instruction>
+         <text>[smoker_type] = '3'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Protocol C is used with adults who are Former Smokers.  When you last smoked every day, on average how many cigarettes did you smoke each day?</questionText>
+        <instruction>
+         <text>[smoker_type] = '3'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know / Refused</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX030802</protocolID>
+     <longName>Protocol 2:  Tobacco - 30-Day Quantity and Frequency (Adult Protocol)</longName>
+     <context>PhenX</context>
+     <shortName>PX030802</shortName>
+     <preferredDefinition>Measures used to calculate the respondent's 30-day quantity and frequency use of cigarettes.  For the adult respondent, there are three sets of question protocols: (1) a protocol for Every-Day Smokers, (2) a protocol for Some-Day Smokers, and (3) a protocol for Former Smokers.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Tobacco Age Of Offset Of Use Adolescent Protocol - PX030901</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measurement to ascertain when the respondent quit smoking. Response is used to calculate duration of use and pack-years measures and allows one to distinguish recent quitters from long-time quitters.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>How long has it been since you last smoked part or all of a cigarette?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>More than 30 days ago but within the past 12 months</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>More than 12 months ago but within the past 3 years</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>More than 3 years ago</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't Know</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Earlier the computer recorded that you last smoked part or all of a cigarette [input response to Question 1]. How old were you the last time you smoked part or all of a cigarette?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>Earlier the computer recorded that you last smoked part or all of a cigarette [input response to Question 1]. How old were you the last time you smoked part or all of a cigarette?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know / Refused</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX030901</protocolID>
+     <longName>Protocol 1:  Tobacco - Age of Offset of Use (Adolescent Protocol)</longName>
+     <context>PhenX</context>
+     <shortName>PX030901</shortName>
+     <preferredDefinition>Measurement to ascertain when the respondent quit smoking. Response is used to calculate duration of use and pack-years measures and allows one to distinguish recent quitters from long-time quitters.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:59</dateCreated>
+    <longName>PhenX Tobacco Age Of Offset Of Use Adult Protocol - PX030902</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measurement to ascertain when the respondent quit smoking. Response is used to calculate duration of use and pack-years measures and allows one to distinguish recent quitters from long-time quitters.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:59</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>About how long has it been since you COMPLETELY quit smoking cigarettes?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>About how long has it been since you COMPLETELY quit smoking cigarettes?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know / Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:59</dateCreated>
+        <questionText>About how long has it been since you COMPLETELY quit smoking cigarettes?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Days</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Weeks</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Months</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Years</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Don't Know / Refused</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX030902</protocolID>
+     <longName>Protocol 2: Tobacco - Age of Offset of Use (Adult Protocol)</longName>
+     <context>PhenX</context>
+     <shortName>PX030902</shortName>
+     <preferredDefinition>Measurement to ascertain when the respondent quit smoking. Response is used to calculate duration of use and pack-years measures and allows one to distinguish recent quitters from long-time quitters.</preferredDefinition>
+    </protocol>
+   </form>
+   </forms>

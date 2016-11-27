@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 5.2</collectionName>
+  <collectionDescription>Load PhenX PX051301,PX051401</collectionDescription>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:19</dateCreated>
+    <longName>PhenX Sodium - PX051401</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Complete 24-hour urine sample is collected from the study participant in a sterile specimen container. Under- and over-collection can bias results. The specimen is transported to a laboratory on ice and frozen at -20°C or colder until analysis. Urinary sodium concentrations are determined by ion-selective electrode assays (ICEs), which have a between-assay coefficients of variation less then 3%. Standard reference materials are available from the National Institute of Standards and Technology (NIST).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:19</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+            <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:19</dateCreated>
+        <questionText>1. Specimen Collection, Storage, and Handling Procedures Criteria for Specimen Rejection A. Urine specimen should be collected in a urine specimen container that is sterile and prescreened for trace sodium contamination. Sodium is stable frozen indefinitely with multiple freezethaw cycles and for 45 days at room temperature. Bacterial growth must be avoided.B. Ensuring 24hour collection is essential. Sodium excretion varies during a 24hour time period, so overcollection and undercollection must be avoided. Completeness of collection is assessed through selfreporting, total urine volume, normalization to urinary creatinine, or oral paraamino benzoic acid (PABA) administration and recovery. PABA can be administered prior to urine collection to ensure completeness of collection, as 93% of the dose is recovered in urine within 5 hours of administration. The use of PABA to assess completeness of the urine collection is not recommended for field studies. It requires that each participant take a PABA pill three days prior to the start of collection thereby increasing the risks of non?compliance and attrition. In addition, laboratory facilities for the testing of PABA in the urine are limited and where they exist, will increase the costs of the study.C. Sodium and potassium content in the urine may be determined through Ion Selective Electrode. Creatinine content may be determined through the Creatinine (urinary) Jaffe kinetic method. D. Aside from sodium intake, urinary sodium excretion can be modified by potassium intake, physical activity, climate, chronic disease, hypertension, and renal function</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:19</dateCreated>
+        <questionText>Was the specimen collection container prescreened for traces of sodium contamination?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:19</dateCreated>
+        <questionText>Did the patient take a PABA pill at least three days prior to urine collection?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:19</dateCreated>
+        <questionText>What is the sodium and potassium content in the urine as determined through Ion Selective Electrode?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:03:19</dateCreated>
+        <questionText>What is the creatinine content as determined through the Creatinine (urinary) Jaffe kinetic method?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:03:19</dateCreated>
+        <questionText>Urinary sodium Concentration from bioassay</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX051401</protocolID>
+     <longName>Sodium</longName>
+     <context>PhenX</context>
+     <shortName>PX051401</shortName>
+     <preferredDefinition>Complete 24-hour urine sample is collected from the study participant in a sterile specimen container. Under- and over-collection can bias results. The specimen is transported to a laboratory on ice and frozen at -20°C or colder until analysis. Urinary sodium concentrations are determined by ion-selective electrode assays (ICEs), which have a between-assay coefficients of variation &lt; 3%. Standard reference materials are available from the National Institute of Standards and Technology (NIST).</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:03:19</dateCreated>
+    <longName>PhenX Iodine - PX051301</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>A urine sample is collected from the study participant in a sterile specimen container. The specimen is transported to a laboratory on ice and frozen at -20°C or colder until analysis. Urinary iodine concentrations are determined by inductively coupled plasma dynamic reaction cell mass spectroscopy (ICP-DRC-MS). The 2011-12 National Health Examination Survey (NHANES) Lab Procedures Manual for Measuring Iodine and Mercury in Urine is the source, and the full protocol is found at www.cdc.gov/nchs/data/nhanes/nhanes_11_12/UIOUHG_G_met_iodine_mercury.pdf or www.cdc.gov/nchs/data/nhanes/nhanes_11_12/UIOUHG_G_met_iodine_mercury.pdf</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:03:19</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:03:19</dateCreated>
+        <questionText>1. Specimen Collection, Storage, and Handling Procedures Criteria for Specimen RejectionA. Urine specimen should be collected in a urine specimen container that is sterile and prescreened for trace iodine contamination. The optimal amount of specimen required is more than 1.8 mL, minimum volume required for analysis is about 0.8 mL. B. Specimens should be frozen at 20°C until analysis. Specimen stability has been demonstrated for 1 year at 20°C. C. The criteria for unacceptable specimens are either a low volume (&lt; 0.8 mL) or suspected contamination due to improper collection procedures or collection devices. In all cases, a second specimen should be requested. D. Specimen characteristics that may compromise test results include contamination of urine by contact with dust, dirt, etc. from improper handling. E. In general, urine specimens should be transported and stored at 20°C. Once received, they can be frozen at 20°C for up to 1 year until analysis. Portions of the sample that remain after analytical aliquots are withdrawn and should be refrozen at 20°C. Samples thawed and refrozen several times are not compromised.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:03:19</dateCreated>
+        <questionText>2. Reference Ranges (Normal Values) Element/Isotope Monitored</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:03:19</dateCreated>
+        <questionText>I127Reference Ranges (10th95th Percentile, mg/L) (weighted, noncreatinine corrected NHANES 2001 &amp; 2002 results) 41803</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:03:19</dateCreated>
+        <questionText>Was the urine specimen frozen at 20 degrees Celsius?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:03:19</dateCreated>
+        <questionText>Is the urine specimen less than one year old?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:03:19</dateCreated>
+        <questionText>Urinary Iodine Concentration from bioassay</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX051301</protocolID>
+     <longName>Iodine</longName>
+     <context>PhenX</context>
+     <shortName>PX051301</shortName>
+     <preferredDefinition>A urine sample is collected from the study participant in a sterile specimen container. The specimen is transported to a laboratory on ice and frozen at -20°C or colder until analysis. Urinary iodine concentrations are determined by inductively coupled plasma dynamic reaction cell mass spectroscopy (ICP-DRC-MS).&lt;a name="section_SPECIFIC_INSTRUCTIONS"&gt;&lt;/a&gt; The 2011-12 National Health Examination Survey (NHANES) Lab Procedures Manual for Measuring Iodine and Mercury in Urine is the source, and the full protocol is found at [link[www.cdc.gov/nchs/data/nhanes/nhanes_11_12/UIOUHG_G_met_iodine_mercury.pdf|http://www.cdc.gov/nchs/data/nhanes/nhanes_11_12/UIOUHG_G_met_iodine_mercury.pdf]]</preferredDefinition>
+    </protocol>
+   </form>
+   </forms>

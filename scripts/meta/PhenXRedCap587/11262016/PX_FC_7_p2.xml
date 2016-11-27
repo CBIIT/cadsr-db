@@ -1,0 +1,4209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 7.2</collectionName>
+  <collectionDescription>Load PhenX PX080301,PX080801</collectionDescription>
+  <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Dental Caries Experience Prevalence - PX080301</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Decayed, Missing, or Filled Tooth Surfaces (DMFS) Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Upper Right 2M</questionText>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>13</displayOrder>
+          <value>Y</value>
+          <meaningText>Tooth present, condition cannot be assessed</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Upper Right 2M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Upper Right 1M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Upper Right 1M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Upper Right 2B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Upper Right 2B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Upper Right 1B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Upper Right 1B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Upper Right C</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Upper Right C</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Upper Right LI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Upper Right LI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Upper Right CI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Upper Right CI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Lower Right 2M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Lower Right 2M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Lower Right 1M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Lower Right 1M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Lower Right 2B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Lower Right 2B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Lower Right 1B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Lower Right 1B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Lower Right C</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Lower Right C</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Lower Right LI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Lower Right LI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Lower Right CI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Lower Right CI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Upper Right 2M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Upper Right 2M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Upper Right 1M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Upper Right 1M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Upper Right 2B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Upper Right 2B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Upper Right 1B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Upper Right 1B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Upper Right C</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Upper Right C</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Upper Right LI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Upper Right LI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Upper Right CI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Upper Right CI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Lower Left 2M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Lower Left 2M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Lower Left 1M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Lower Left 1M</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>46</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Lower Left 2B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>47</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Lower Left 2B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>48</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Lower Left 1B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>49</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Lower Left 1B</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>50</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Lower Left C</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>51</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Lower Left C</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>52</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Lower Left LI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>53</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Lower Left LI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>54</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth code to assess the Missing Teeth (the M Component of the DMFS Index) for tooth Lower Left CI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>S</value>
+          <meaningText>Sound permanent tooth (no decay or filling on any surface)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>Z</value>
+          <meaningText>Permanent tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>D</value>
+          <meaningText>Sound primary (deciduous) tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>K</value>
+          <meaningText>Primary tooth with surface condition</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>U</value>
+          <meaningText>Unerupted tooth</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>E</value>
+          <meaningText>Missing due to dental disease (caries/periodontal disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>M</value>
+          <meaningText>Missing due to other causes (orthodontic/traumatic or other non-disease)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>R</value>
+          <meaningText>Missing due to dental disease but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>X</value>
+          <meaningText>Missing due to other causes but replaced by a fixed restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>P</value>
+          <meaningText>Missing due to dental disease but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>Q</value>
+          <meaningText>Missing due to other causes but replaced by a removable restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>J</value>
+          <meaningText>Permanent root tip is present but no restorative replacement is present</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>T</value>
+          <meaningText>Permanent root tip is present but a restorative replacement is present</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>55</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Decayed, Missing, or Filled Tooth Surfaces Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components. This variable records tooth surface code to assess the Decayed Tooth Surfaces (the D component of the DMFS Index) and Filled Tooth Surfaces (the F component of the DMFS Index) for tooth Lower Left CI</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Lingual caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Occlusal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Facial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Mesial caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Distal caries</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>For filled teeth or restoration, the allowable surface codes are as follows:</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Lingual restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>6</value>
+          <meaningText>Occlusal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Facial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>8</value>
+          <meaningText>Mesial restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>9</value>
+          <meaningText>Distal restoration</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>C</value>
+          <meaningText>Crown (short call for both primary and permanent teeth)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>56</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Dental caries image</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX080301</protocolID>
+     <longName>Dental Caries Experience - Prevalence</longName>
+     <context>PhenX</context>
+     <shortName>PX080301</shortName>
+     <preferredDefinition>The Decayed, Missing, or Filled Tooth Surfaces (DMFS) Index is used by a dentist or dental hygienist to determine the prevalence of coronal caries in permanent and primary teeth through an examination that records the three components.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Number Of Natural Teeth - PX080801</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Questions ask for self-reports about the number of natural teeth an adult or child has in his or her mouth. In addition, one question asks a parent or caregiver to record information on the number of teeth in his or her infant's mouth at 3-12 months of age.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many natural teeth do you have?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>None</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1-10</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>11-16</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>17-24</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>25-32</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many natural teeth does your child have?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>None</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1-10</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>11-16</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>17-24</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>25-32</meaningText>
+         </validValue>
+        </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many teeth does your baby have now? (Write in 0 if none.)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+        </question>
+        </module>
+        <protocol>
+     <protocolID>PX080801</protocolID>
+     <longName>Number of Natural Teeth</longName>
+     <context>PhenX</context>
+     <shortName>PX080801</shortName>
+     <preferredDefinition>Questions ask for self-reports about the number of natural teeth an adult or child has in his or her mouth. In addition, one question asks a parent or caregiver to record information on the number of teeth in his or her infant's mouth at 3–12 months of age.</preferredDefinition>
+    </protocol>
+   </form>     
+ </forms>

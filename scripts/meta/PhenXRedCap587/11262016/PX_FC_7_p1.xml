@@ -1,0 +1,3880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 7.1</collectionName>
+  <collectionDescription>Load PhenX PX080201,PX080401,PX080501,PX080601,PX080701,PX080901,PX081001,PX081301,PX081401,PX081501,PX090201,PX090301,PX090401,PX090601,PX090701,PX090801</collectionDescription>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Consumption Of Sweet Beverages - PX080201</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>These parent-report questions provide information on the amount of concentrated sweets a 3-to-5-year-old child consumed during the past week.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Please complete the following table by clicking YES or NO for each of the beverages that your child may have consumed during the past week. For beverages that your child drank, write the number of servings (per day or week) that your child drank, and the amount drank per serving during the past week.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Did your child consume Cows' Milk during the past week?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Cows' Milk per day did your child drink?</questionText>
+        <instruction>
+         <text>[cow_milk_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Cows' Milk per week did your child drink?</questionText>
+        <instruction>
+         <text>[cow_milk_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The amount (in ounces) of Cows' Milk per serving during the past week?</questionText>
+        <instruction>
+         <text>[cow_milk_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Did your child consume 100% Juice during the past week?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of 100% Juice per day did your child drink?</questionText>
+        <instruction>
+         <text>[pure_juice_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of 100% Juice per week did your child drink?</questionText>
+        <instruction>
+         <text>[pure_juice_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The amount (in ounces) of 100% Juice per serving during the past week?</questionText>
+        <instruction>
+         <text>[pure_juice_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Did your child consume Juice Drinks during the past week?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Juice Drinks per day did your child drink?</questionText>
+        <instruction>
+         <text>[juice_drinks_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Juice Drinks per week did your child drink?</questionText>
+        <instruction>
+         <text>[juice_drinks_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The amount (in ounces) of Juice Drinks per serving during the past week?</questionText>
+        <instruction>
+         <text>[juice_drinks_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Did your child consume Water during the past week?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Water per day did your child drink?</questionText>
+        <instruction>
+         <text>[water_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Water per week did your child drink?</questionText>
+        <instruction>
+         <text>[water_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The amount (in ounces) of Water per serving during the past week?</questionText>
+        <instruction>
+         <text>[water_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Did your child consume Flavored Water during the past week?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Flavored Water per day did your child drink?</questionText>
+        <instruction>
+         <text>[flavored_water_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Flavored Water per week did your child drink?</questionText>
+        <instruction>
+         <text>[flavored_water_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The amount (in ounces) of Flavored Water per serving during the past week?</questionText>
+        <instruction>
+         <text>[flavored_water_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Did your child consume Sugared Beverages made from Powder (e.g., KoolAid®) during the past week?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Sugared Beverages made from Powder (e.g., KoolAid®) per day did your child drink?</questionText>
+        <instruction>
+         <text>[sugared_powder_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Sugared Beverages made from Powder (e.g., KoolAid®) per week did your child drink?</questionText>
+        <instruction>
+         <text>[sugared_powder_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The amount (in ounces) of Sugared Beverages made from Powder (e.g., KoolAid®) per serving during the past week?</questionText>
+        <instruction>
+         <text>[sugared_powder_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Did your child consume Sugarfree Beverages made from Powder (e.g., Crystal Light®) during the past week?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Sugarfree Beverages made from Powder (e.g., Crystal Light®) per day did your child drink?</questionText>
+        <instruction>
+         <text>[sugar_free_powder_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Sugarfree Beverages made from Powder (e.g., Crystal Light®) per week did your child drink?</questionText>
+        <instruction>
+         <text>[sugar_free_powder_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The amount (in ounces) of Sugarfree Beverages made from Powder (e.g., Crystal Light®) per serving during the past week?</questionText>
+        <instruction>
+         <text>[sugar_free_powder_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Did your child consume Regular Pop (e.g., Pepsi®, Coke®) during the past week?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Regular Pop (e.g., Pepsi®, Coke®) per day did your child drink?</questionText>
+        <instruction>
+         <text>[regular_pop_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Regular Pop (e.g., Pepsi®, Coke®) per week did your child drink?</questionText>
+        <instruction>
+         <text>[regular_pop_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The amount (in ounces) of Regular Pop (e.g., Pepsi®, Coke®) per serving during the past week?</questionText>
+        <instruction>
+         <text>[regular_pop_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Did your child consume Diet Pop during the past week?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Diet Pop per day did your child drink?</questionText>
+        <instruction>
+         <text>[diet_pop_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Diet Pop per week did your child drink?</questionText>
+        <instruction>
+         <text>[diet_pop_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The amount (in ounces) of Diet Pop per serving during the past week?</questionText>
+        <instruction>
+         <text>[diet_pop_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Did your child consume Sports Drinks (e.g., Gatorade®, Powerade®) during the past week?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Sports Drinks (e.g., Gatorade®, Powerade®) per day did your child drink?</questionText>
+        <instruction>
+         <text>[sports_drinks_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Sports Drinks (e.g., Gatorade®, Powerade®) per week did your child drink?</questionText>
+        <instruction>
+         <text>[sports_drinks_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The amount (in ounces) of Sports Drinks (e.g., Gatorade®, Powerade®) per serving during the past week?</questionText>
+        <instruction>
+         <text>[sports_drinks_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Did your child consume Other Sugared Beverages (e.g., lemonade, sweetened tea) during the past week?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Other Sugared Beverages (e.g., lemonade, sweetened tea) per day did your child drink?</questionText>
+        <instruction>
+         <text>[other_sugared_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Other Sugared Beverages (e.g., lemonade, sweetened tea) per week did your child drink?</questionText>
+        <instruction>
+         <text>[other_sugared_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The amount (in ounces) of Other Sugared Beverages (e.g., lemonade, sweetened tea) per serving during the past week?</questionText>
+        <instruction>
+         <text>[other_sugared_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Did your child consume Other Sugarfree Beverages (e.g., iced tea, coffee) during the past week?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>46</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Other Sugarfree Beverages (e.g., iced tea, coffee) per day did your child drink?</questionText>
+        <instruction>
+         <text>[other_sugar_free_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>47</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How many servings of Other Sugarfree Beverages (e.g., iced tea, coffee) per week did your child drink?</questionText>
+        <instruction>
+         <text>[other_sugar_free_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>48</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The amount (in ounces) of Other Sugarfree Beverages (e.g., iced tea, coffee) per serving during the past week?</questionText>
+        <instruction>
+         <text>[other_sugar_free_past_week] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>49</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Please check the best response to the following questions.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>50</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>If your child drinks cows' milk, what type of cows' milk does your child usually drink?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Whole milk</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2% milk</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>1% milk</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Chocolate milk</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Other flavored milk (e.g., strawberry, vanilla)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Doesn't drink milk</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>51</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>What type of container does your child most often use for beverages?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Infant bottle</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Open cup</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Closed cup (sippy cup)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Cup with nonspilling, straw mechanism</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Water bottle</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Product container (e.g., juice box, pop can, or bottle)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>52</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>What beverage does your child most often consume at meals?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Cows' milk</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Juice or juice drinks</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Water</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Regular soda pop or other sugared beverages</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Diet soda pop or other sugar-free beverages</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>53</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>What beverage does your child most often consume between meals?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Cows' milk</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Juice or juice drinks</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Water</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Regular soda pop or other sugared beverages</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Diet soda pop or other sugar-free beverages</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Other</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>54</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>For "Other," specify what beverage your child most often consumes between meals:</questionText>
+        <instruction>
+         <text>[beverage_most_consume_between_meals] = '6'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>55</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Which statement best describes your child's nighttime feedings?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>My child falls asleep with a bottle</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>My child has a bottle in the middle of the night</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>My child has a snack at bedtime</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>My child has a snack in the middle of the night</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>None of the above</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX080201</protocolID>
+     <longName>Consumption of Sweet Beverages</longName>
+     <context>PhenX</context>
+     <shortName>PX080201</shortName>
+     <preferredDefinition>These parent-report questions provide information on the amount of concentrated sweets a 3-to-5-year-old child consumed during the past week.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Dry Mouth - PX080401</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>These interviewer-administered questions are used to determine if the participant has xerostomia (dry mouth).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Does your mouth frequently feel dry?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Does your mouth feel dry when eating?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Does the amount of saliva in your mouth seem to be:</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Too little</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Too much</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Don't notice it</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Do you sip liquids frequently during the day to keep your mouth moist?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Not sure</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Do you have difficulties swallowing food if you eat without additional fluids?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Not sure</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX080401</protocolID>
+     <longName>Dry Mouth</longName>
+     <context>PhenX</context>
+     <shortName>PX080401</shortName>
+     <preferredDefinition>These interviewer-administered questions are used to determine if the participant has xerostomia (dry mouth).</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Existence Of Cleft Lip Or Palate - PX080501</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>These interviewer-administered questions ask the subject or biological parents of a child with cleft lip or palate for a description of the orofacial defects present, the extent of the defect, and if another family member has been diagnosed with the same condition.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Have you been diagnosed with a cleft lip or palate?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Cleft lip</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Cleft palate</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Cleft lip and palate</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Submucous cleft palate</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't Know/Non-Applicable/Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Subject's Right Lip</questionText>
+        <instruction>
+         <text>[self_cleft_lip_palate] = 'UNDEFINED_CODE_1' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_2' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_3' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>A</value>
+          <meaningText>yes, but unknown if complete or incomplete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>C</value>
+          <meaningText>complete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>I</value>
+          <meaningText>incomplete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>X</value>
+          <meaningText>not cleft</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNKNOWN</value>
+          <meaningText>unknown</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>STAR</value>
+          <meaningText>microform or submuccous cleft</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Subject's Right Alveolus</questionText>
+        <instruction>
+         <text>[self_cleft_lip_palate] = 'UNDEFINED_CODE_1' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_2' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_3' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>A</value>
+          <meaningText>yes, but unknown if complete or incomplete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>C</value>
+          <meaningText>complete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>I</value>
+          <meaningText>incomplete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>X</value>
+          <meaningText>not cleft</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNKNOWN</value>
+          <meaningText>unknown</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>STAR</value>
+          <meaningText>microform or submuccous cleft</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Subject's Right Hard palate</questionText>
+        <instruction>
+         <text>[self_cleft_lip_palate] = 'UNDEFINED_CODE_1' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_2' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_3' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>A</value>
+          <meaningText>yes, but unknown if complete or incomplete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>C</value>
+          <meaningText>complete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>I</value>
+          <meaningText>incomplete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>X</value>
+          <meaningText>not cleft</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNKNOWN</value>
+          <meaningText>unknown</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>STAR</value>
+          <meaningText>microform or submuccous cleft</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Subject's Soft palate</questionText>
+        <instruction>
+         <text>[self_cleft_lip_palate] = 'UNDEFINED_CODE_1' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_2' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_3' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>A</value>
+          <meaningText>yes, but unknown if complete or incomplete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>C</value>
+          <meaningText>complete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>I</value>
+          <meaningText>incomplete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>X</value>
+          <meaningText>not cleft</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNKNOWN</value>
+          <meaningText>unknown</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>STAR</value>
+          <meaningText>microform or submuccous cleft</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Subject's Left Hard palate</questionText>
+        <instruction>
+         <text>[self_cleft_lip_palate] = 'UNDEFINED_CODE_1' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_2' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_3' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>A</value>
+          <meaningText>yes, but unknown if complete or incomplete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>C</value>
+          <meaningText>complete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>I</value>
+          <meaningText>incomplete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>X</value>
+          <meaningText>not cleft</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNKNOWN</value>
+          <meaningText>unknown</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>STAR</value>
+          <meaningText>microform or submuccous cleft</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Subject's Left Alveolus</questionText>
+        <instruction>
+         <text>[self_cleft_lip_palate] = 'UNDEFINED_CODE_1' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_2' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_3' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>A</value>
+          <meaningText>yes, but unknown if complete or incomplete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>C</value>
+          <meaningText>complete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>I</value>
+          <meaningText>incomplete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>X</value>
+          <meaningText>not cleft</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNKNOWN</value>
+          <meaningText>unknown</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>STAR</value>
+          <meaningText>microform or submuccous cleft</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Subject's Left Lip</questionText>
+        <instruction>
+         <text>[self_cleft_lip_palate] = 'UNDEFINED_CODE_1' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_2' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_3' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>A</value>
+          <meaningText>yes, but unknown if complete or incomplete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>C</value>
+          <meaningText>complete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>I</value>
+          <meaningText>incomplete</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>X</value>
+          <meaningText>not cleft</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNKNOWN</value>
+          <meaningText>unknown</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>STAR</value>
+          <meaningText>microform or submuccous cleft</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Has any relative in your family been diagnosed with a cleft lip or palate?</questionText>
+        <instruction>
+         <text>[self_cleft_lip_palate] = 'UNDEFINED_CODE_1' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_2' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_3' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4' or [self_cleft_lip_palate] = 'UNDEFINED_CODE_4'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Non-Applicable/Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>If "Yes," provide details on who has the condition:</questionText>
+        <instruction>
+         <text>[relative_cleft_lip_palate_enum(UNDEFINED_CODE_1)] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX080501</protocolID>
+     <longName>Existence of Cleft Lip or Palate</longName>
+     <context>PhenX</context>
+     <shortName>PX080501</shortName>
+     <preferredDefinition>These interviewer-administered questions ask the subject or biological parents of a child with cleft lip or palate for a description of the orofacial defects present, the extent of the defect, and if another family member has been diagnosed with the same condition.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Fluoride Use - PX080601</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>These questions address fluoride use by adults and children. The participant is asked about the use of fluoridated toothpaste and dietary fluoride supplements.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Does anyone in the family use toothpaste with fluoride?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Who is this?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_in_family] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Anyone else?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_in_family] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Who is this?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_anyone_else_1] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Anyone else?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_anyone_else_1] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Who is this?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_anyone_else_2] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Anyone else?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_anyone_else_2] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Who is this?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_anyone_else_3] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Anyone else?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_anyone_else_3] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Who is this?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_anyone_else_4] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Anyone else?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_anyone_else_4] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Who is this?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_anyone_else_5] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Anyone else?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_anyone_else_5] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Who is this?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_anyone_else_6] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Anyone else?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_anyone_else_6] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Who is this?</questionText>
+        <instruction>
+         <text>[fluoride_toothpaste_anyone_else_7] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Does [child's name] now take vitamins with FLUORIDE in them or any other kind of FLUORIDE tablets, drops or supplements? [Doctors or dentists may prescribe or provide tablets, drops, or supplements with fluoride in them. (Sometimes these are given at school.)]</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX080601</protocolID>
+     <longName>Fluoride Use</longName>
+     <context>PhenX</context>
+     <shortName>PX080601</shortName>
+     <preferredDefinition>These questions address fluoride use by adults and children. The participant is asked about the use of fluoridated toothpaste and dietary fluoride supplements.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Malocclusion - PX080701</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Angle's Classification is a set of criteria that categorizes the three different types of malocclusion. The interviewer-administered questions are used to determine if the participant has ever had orthodontic treatment.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Malocclusion image</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Have you ever had any orthodontic treatment?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How long did you wear fixed braces on your teeth?</questionText>
+        <instruction>
+         <text>[orthodontic_treatment_ever] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Not Applicable</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 year or less</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>1-2 years</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>&gt; 2 years</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Angle's Classification is a set of criteria that categorizes the three different types of malocclusion.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Class I</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Class II</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Class III</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX080701</protocolID>
+     <longName>Malocclusion</longName>
+     <context>PhenX</context>
+     <shortName>PX080701</shortName>
+     <preferredDefinition>Angle's Classification is a set of criteria that categorizes the three different types of malocclusion. The interviewer-administered questions are used to determine if the participant has ever had orthodontic treatment.</preferredDefinition>
+    </protocol>
+   </form>   
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Oral Hygiene Personal Care - PX080901</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>These interview-administered questions were administered during a participant visit that included a complete dental examination. They address an individual's dental hygiene, including the frequency of brushing and flossing.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>How often do you brush your teeth?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Do not</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1/day</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2/day</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>&gt; 2/day</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Sporadically</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>Not applicable (Full Dentures, Upper and Lower-FDUL)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>1 or 2/day</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>9</value>
+          <meaningText>Unknown (missing)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Do you use dental floss?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Rarely</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>1-3x/week</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Daily</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Not applicable (Full Dentures, Upper and Lower-FDUL)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Unknown (missing)</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX080901</protocolID>
+     <longName>Oral Hygiene - Personal Care</longName>
+     <context>PhenX</context>
+     <shortName>PX080901</shortName>
+     <preferredDefinition>These interview-administered questions were administered during a participant visit that included a complete dental examination. They address an individual's dental hygiene, including the frequency of brushing and flossing.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Oral Mucosal Lesions - PX081001</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>These interviewer-administered questions address painful sores around or in the mouth and assess the existence of oral mucosal lesions.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>(During the past 6 months) Did you have painful sores or irritations around the lips or on the tongue, cheeks, or gums more than once?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Did you first have the sores or irritations more than 6 months ago?</questionText>
+        <instruction>
+         <text>[mouth_sore_irritation_multiple_times] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX081001</protocolID>
+     <longName>Oral Mucosal Lesions</longName>
+     <context>PhenX</context>
+     <shortName>PX081001</shortName>
+     <preferredDefinition>These interviewer-administered questions address painful sores around or in the mouth and assess the existence of oral mucosal lesions.</preferredDefinition>
+    </protocol>
+   </form>   
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Professional Dental Care - PX081301</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Interviewer-administered questions for adults to determine when the participant last visited the dentist and the purpose of the visit. These questions may also be administered to an adult as a proxy for a child.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>About how long has it been since {you/Sample Person} last visited a dentist? Include all types of dentists, such as, orthodontists, oral surgeons, and all other dental specialists, as well as dental hygienists.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>6 months or less</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>More than 6 months, but not more than 1 year ago</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>More than 1 year, but not more than 2 years ago</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>More than 2 years, but not more than 3 years ago</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>More than 3 years, but not more than 5 years ago</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>More than 5 years ago</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Never have been</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>77</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>99</value>
+          <meaningText>Don't Know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>What was the main reason {you/Sample Person} last visited the dentist?</questionText>
+        <instruction>
+         <text>[dentist_last_visit_duration] = '1' or [dentist_last_visit_duration] = '2' or [dentist_last_visit_duration] = '3' or [dentist_last_visit_duration] = '4' or [dentist_last_visit_duration] = '5' or [dentist_last_visit_duration] = '6'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Went in on own for check-up, examination, or cleaning</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Was called in by the dentist for check-up, examination, or cleaning</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Something was wrong, bothering, or hurting {Me/Sample Person}</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Went for treatment of a condition that dentist discovered at earlier check-up or examination</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Other</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX081301</protocolID>
+     <longName>Professional Dental Care</longName>
+     <context>PhenX</context>
+     <shortName>PX081301</shortName>
+     <preferredDefinition>Interviewer-administered questions for adults to determine when the participant last visited the dentist and the purpose of the visit. These questions may also be administered to an adult as a proxy for a child.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Tobacco Noncigarette Product Use - PX081401</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>These questions provide information on a participant's cigar, pipe, snuff, and chewing tobacco use during an entire lifetime.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The Working Group acknowledges that the following questions may gather sensitive information relating to the use of substances and/or illegal conduct. If the information is released it might be damaging to an individual's employability, lead to social stigmatization, or other consequences. For information on obtaining a Certificate of Confidentiality, which helps researchers protect the privacy of human research participants, please go to the National Human Genome Research Institute's Institutional Review Board website and search for IRB resources.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>In your ENTIRE LIFE, have you ever: Smoked at least 50 cigars?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Don't Know/Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>In your ENTIRE LIFE, have you ever: Smoked a pipe at least 50 times?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Don't Know/Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>In your ENTIRE LIFE, have you ever: Used snuff, such as Skoal®, Skoal Bandit®, or Copenhagen® at least 20 times?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Don't Know/Refused</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>In your ENTIRE LIFE, have you ever: Used chewing tobacco, such as Redman®, Levi Garrett®, or Beechnut® at least 20 times?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Don't Know/Refused</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX081401</protocolID>
+     <longName>Tobacco (non-cigarette) - Product Use</longName>
+     <context>PhenX</context>
+     <shortName>PX081401</shortName>
+     <preferredDefinition>These questions provide information on a participant's cigar, pipe, snuff, and chewing tobacco use during an entire lifetime.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Toothache And Orofacial Pain - PX081501</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>These interviewer-administered questions may be useful to assess toothaches and chronic orofacial pain during the past 6 months.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>During the past 6 months, did you have a toothache more than once, when biting or chewing?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>On a scale of 110, where 1 is mild and 10 is severe, how would you rate this pain at its worst?</questionText>
+        <instruction>
+         <text>[multiple_tooth_pain_biting_chewing] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>(During the past 6 months) Did you have pain in the jaw joint or in front of the ear more than once?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>When you have this pain, does it come and go or is it continuous and uninterrupted?</questionText>
+        <instruction>
+         <text>[multiple_jaw_front_ear_pain] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Come and go</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Continuous/uninterrupted</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>Other</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>DK (Don't Know)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>On a scale of 110, where 1 is mild and 10 is severe, how would you rate this pain at its worst?</questionText>
+        <instruction>
+         <text>[multiple_jaw_front_ear_pain] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>(During the past 6 months) Did you have a dull, aching pain across your face or cheek more than once? Do not count sinus pain.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>When you have this pain, does it come and go or is it continuous and uninterrupted?</questionText>
+        <instruction>
+         <text>[multiple_face_cheek_pain] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Come and go</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Continuous/uninterrupted</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>Other</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>DK (Don't Know)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>On a scale of 110, where 1 is mild and 10 is severe, how would you rate this pain at its worst?</questionText>
+        <instruction>
+         <text>[multiple_face_cheek_pain] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX081501</protocolID>
+     <longName>Toothache and Orofacial Pain</longName>
+     <context>PhenX</context>
+     <shortName>PX081501</shortName>
+     <preferredDefinition>These interviewer-administered questions may be useful to assess toothaches and chronic orofacial pain during the past 6 months.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Arterial Blood Gas Abg - PX090201</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol describes the procedures for blood collection for arterial blood gas (ABG) analysis. It involves puncturing an artery with a thin needle and syringe and drawing a small volume of blood. The most common puncture site is the radial artery at the wrist, but sometimes the femoral artery in the groin or other sites are used.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Blood is drawn anaerobically from a peripheral artery (radial, brachial, femoral, or dorsalis pedis) via a single percutaneous needle puncture, or from an indwelling arterial cannula or catheter for multiple samples. Either method provides a blood specimen for direct measurement of partial pressures of carbon dioxide (PaCO2) and oxygen (PaO2), hydrogen ion activity (pH), total hemoglobin (Hbtotal), oxyhemoglobin saturation (HbO2), and the dyshemoglobins carboxyhemoglobin (COHb) and methemoglobin (MetHb).</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Time at Blood Draw</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Patient's Body Temperature</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Patient's Position</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Patient's Activity Level</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Patient's Respiratory Rate</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Sample Site</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Allen Test</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Inspired Oxygen Concentration</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Supplemental Oxygen Flow</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Mode of Supported Ventilation</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Partial Pressure of Carbon Dioxide (PaCO2)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Partial Pressure of Oxygen (PaO2)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Hydrogen Ion Activity (pH)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Total Hemoglobin (Hbtotal)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Oxyhemoglobin Saturation (HbO2)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Carboxyhemoglobin (COHb)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Methemoglobin (MetHb)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX090201</protocolID>
+     <longName>Arterial Blood Gas (ABG)</longName>
+     <context>PhenX</context>
+     <shortName>PX090201</shortName>
+     <preferredDefinition>This protocol describes the procedures for blood collection for arterial blood gas (ABG) analysis. It involves puncturing an artery with a thin needle and syringe and drawing a small volume of blood. The most common puncture site is the radial artery at the wrist, but sometimes the femoral artery in the groin or other sites are used.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Bronchodilator Responsiveness Bdr - PX090301</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>A series of spirometry maneuvers is performed to obtain acceptable and reproducible results. An inhaled bronchodilator medication is administered, and a second series of spirometry maneuvers is performed.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Pulse Rate</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Spirometry Contraindicated</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Reason for Contraindication</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>PreBronchodilator Forced Expiratory Volume (FEV1) in 1 second 1</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>PreBronchodilator Forced Expiratory Volume (FEV1) in 1 second 2</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>PreBronchodilator Forced Expiratory Volume (FEV1) in 1 second 3</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>PreBronchodilator Forced Vital Capacity (FVC) 1</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>PreBronchodilator Forced Vital Capacity (FVC) 2</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>PreBronchodilator Forced Vital Capacity (FVC) 3</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>PostBronchodilator Forced Expiratory Volume (FEV1) in 1 second 1</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>PostBronchodilator Forced Expiratory Volume (FEV1) in 1 second 2</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>PostBronchodilator Forced Expiratory Volume (FEV1) in 1 second 3</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>PostBronchodilator Forced Vital Capacity (FVC) 1</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>PostBronchodilator Forced Vital Capacity (FVC) 2</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>PostBronchodilator Forced Vital Capacity (FVC) 3</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Percent of Baseline Forced Expiratory Volume in 1 second</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Percent of Predicted Forced Expiratory Volume in 1 second</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Absolute Volume</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX090301</protocolID>
+     <longName>Bronchodilator Responsiveness (BDR)</longName>
+     <context>PhenX</context>
+     <shortName>PX090301</shortName>
+     <preferredDefinition>A series of spirometry maneuvers is performed to obtain acceptable and reproducible results. An inhaled bronchodilator medication is administered, and a second series of spirometry maneuvers is performed.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Chest Computed Tomography CT - PX090401</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>A chest computed tomography (CT) is a non-invasive test that shows the size, shape, and structure of the lungs and other structures in the thorax. The chest CT scanning machine takes many pictures, called slices, of the lungs and the inside of the chest. A computer processes these pictures to be viewed on a monitor or printed on film. The computer can also stack the pictures to create a very detailed, three-dimensional (3D) model of the organs. This three-dimensional digital information can be used to measure the dimensions of the structure, such as the bronchial tree, or the density of the structure, such as the lung parenchyma. It is very important that the CT scanner used in any clinical research study be calibrated regularly against calibration standards that are provided by the manufacturer or in some instances by the study itself.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>See protocol details.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Conditions that might affect ability to comply with breathing instructions</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Supine Inspiratory CT Image ID</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Supine Expiratory CT Image ID</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Inspiratory CT table  image</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Expiratory CT table  image</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX090401</protocolID>
+     <longName>Chest Computed Tomography (CT)</longName>
+     <context>PhenX</context>
+     <shortName>PX090401</shortName>
+     <preferredDefinition>A chest computed tomography (CT) is a non-invasive test that shows the size, shape, and structure of the lungs and other structures in the thorax. The chest CT scanning machine takes many pictures, called slices, of the lungs and the inside of the chest. A computer processes these pictures to be viewed on a monitor or printed on film. The computer can also stack the pictures to create a very detailed, three-dimensional (3D) model of the organs. This three-dimensional digital information can be used to measure the dimensions of the structure, such as the bronchial tree, or the density of the structure, such as the lung parenchyma. It is very important that the CT scanner used in any clinical research study be calibrated regularly against calibration standards that are provided by the manufacturer or in some instances by the study itself.</preferredDefinition>
+    </protocol>
+   </form><form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Exercise Capacity Sixminute Walk Test - PX090601</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Six-Minute Walk Test is a timed test that requires minimal technical resources to measure the distance that a patient can quickly walk on a flat, hard surface in a period of 6 minutes (the six-minute walk distance, 6MWD). This measure has been shown to be a reproducible, objective indicator of functional capacity and is a part of the multicomponent BODE index (body-mass index, airflow obstruction, dyspnea, and exercise capacity) that correlates with survival. It is important to emphasize that this is a test of maximum exercise performance; subjects should be instructed and encouraged to push themselves to achieve maximal distance.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>See instrument details and worksheets &lt;a href="https://www.phenxtoolkit.org/index.php?pageLink=browse.protocoldetails&amp;id=90601" target="_blank"&gt;here&lt;/a&gt;.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>23</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>MEASUREMENTS</longName>
+      <preferredDefinition>MEASUREMENTS</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>1. Repeat testing should be performed about the same time of day to minimize intraday variability. 2. A "warmup" period before the test should not be performed. 3. The patient should sit at rest in a chair, located near the starting position, for at least 10 minutes before the test starts. During this time, check for contraindications, measure pulse and blood pressure, and make sure that clothing and shoes are appropriate. Complete the first portion of the worksheet (see &lt;a href="https://www.phenxtoolkit.org/index.php?pageLink=browse.protocoldetails&amp;id=90601" target="_blank:&gt;Table 1&lt;/a&gt; under Measurements).</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Contraindication</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Lap counter</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Blood pressure Systolic</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Blood pressure Diastolic</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Medications taken before the test (name)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Medications taken before the test (dose)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Medications taken before the test (time)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Supplemental oxygen during the test</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Supplemental oxygen during the test flow</questionText>
+        <instruction>
+         <text>[supplemental_oxygen] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Supplemental oxygen during the test type</questionText>
+        <instruction>
+         <text>[supplemental_oxygen] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Baseline Time</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Baseline Heart Rate</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Baseline Dyspnea (from the Borg scale)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Nothing at all</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0.5</value>
+          <meaningText>Very, very slight (just noticeable)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>1</value>
+          <meaningText>Very slight</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>2</value>
+          <meaningText>Slight (light)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>4</value>
+          <meaningText>Somewhat severe</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Severe (heavy)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>6</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Very severe</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>UNDEFINED_CODE_9</value>
+          <meaningText>8</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>UNDEFINED_CODE_10</value>
+          <meaningText>9</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>10</value>
+          <meaningText>Very, very severe (maximal)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Baseline Fatigue (from the Borg scale)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Nothing at all</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0.5</value>
+          <meaningText>Very, very slight (just noticeable)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>1</value>
+          <meaningText>Very slight</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>2</value>
+          <meaningText>Slight (light)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>4</value>
+          <meaningText>Somewhat severe</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Severe (heavy)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>6</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Very severe</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>UNDEFINED_CODE_9</value>
+          <meaningText>8</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>UNDEFINED_CODE_10</value>
+          <meaningText>9</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>10</value>
+          <meaningText>Very, very severe (maximal)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Baseline Oxygen Saturation (SpO2)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>End of Test Time</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>End of Test Heart Rate</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>End of Test Dyspnea (from Borg scale)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Nothing at all</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0.5</value>
+          <meaningText>Very, very slight (just noticeable)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>1</value>
+          <meaningText>Very slight</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>2</value>
+          <meaningText>Slight (light)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>4</value>
+          <meaningText>Somewhat severe</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Severe (heavy)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>6</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Very severe</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>UNDEFINED_CODE_9</value>
+          <meaningText>8</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>UNDEFINED_CODE_10</value>
+          <meaningText>9</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>10</value>
+          <meaningText>Very, very severe (maximal)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>End of Test Fatigue (from Borg scale)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Nothing at all</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0.5</value>
+          <meaningText>Very, very slight (just noticeable)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>1</value>
+          <meaningText>Very slight</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>2</value>
+          <meaningText>Slight (light)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>4</value>
+          <meaningText>Somewhat severe</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>5</value>
+          <meaningText>Severe (heavy)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>6</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>7</value>
+          <meaningText>Very severe</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>UNDEFINED_CODE_9</value>
+          <meaningText>8</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>UNDEFINED_CODE_10</value>
+          <meaningText>9</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>10</value>
+          <meaningText>Very, very severe (maximal)</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>End of Test Oxygen Saturation (SpO2)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Stopped or paused before 6 minutes?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Reason stopped or paused before 6 minutes</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Other symptoms at end of exercise</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Angina</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Dizziness</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Hip, Leg or Calf Pain</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Number of laps</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Final partial lap distance</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Total distance walked in 6 minutes (Number of laps X 60 meters + Final partial lap distance)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Predicted distance</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Percent predicted</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Technicians Comments</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Interpretation (including comparison with a preintervention 6MWD</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX090601</protocolID>
+     <longName>Exercise Capacity/Six-Minute Walk Test</longName>
+     <context>PhenX</context>
+     <shortName>PX090601</shortName>
+     <preferredDefinition>The Six-Minute Walk Test is a timed test that requires minimal technical resources to measure the distance that a patient can quickly walk on a flat, hard surface in a period of 6 minutes (the six-minute walk distance, 6MWD). This measure has been shown to be a reproducible, objective indicator of functional capacity and is a part of the multicomponent BODE index (body-mass index, airflow obstruction, dyspnea, and exercise capacity) that correlates with survival. It is important to emphasize that this is a test of maximum exercise performance; subjects should be instructed and encouraged to push themselves to achieve maximal distance.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Immunoglobulin E Total And Specific - PX090701</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Blood collection and bioassay for ascertaining levels of Immunoglobulin E</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Draw 24 cc of blood into one 5 ml SST gold top Vacutainer® tube for IgE. The tube should be allowed to sit at room temperature for 30 minutes to clot. The sample should then be spun at 2,000 rpm (room temperature: 2024oC) for 10 minutes to separate off the serum. The serum should be aliquoted in 1.8 ml screwtop cryogenic microcontainer tubes (0.5 cc minimum per tube). The IgE can be processed immediately or kept frozen (20oC to 70oC) and processed in batches.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Concentration of Immunoglobulin E</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX090701</protocolID>
+     <longName>Immunoglobulin E (Total and Specific)</longName>
+     <context>PhenX</context>
+     <shortName>PX090701</shortName>
+     <preferredDefinition>Blood collection and bioassay for ascertaining levels of Immunoglobulin E</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2016-11-01T21:04:01</dateCreated>
+    <longName>PhenX Peak Expiratory Flow Rate Pefr - PX090801</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>A patient is instructed to inhale deeply and blow into a peak expiratory flow monitor three times. Peak Expiratory Flow Rate (PEFR) can be measured as part of spirometry testing (see Spirometry measure) or as a separate measurement. The highest PEFR value is typically used for analysis.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2016-11-01T21:04:01</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>The largest value from at least three acceptable blows is recorded.</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Peak Expiratory Flow Rate 1</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Peak Expiratory Flow Rate 1 units</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>L/sec</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>L/min</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Peak Expiratory Flow Rate 2</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Peak Expiratory Flow Rate 2 units</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>L/sec</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>L/min</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Peak Expiratory Flow Rate 3</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2016-11-01T21:04:01</dateCreated>
+        <questionText>Peak Expiratory Flow Rate 3 units</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>L/sec</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>L/min</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX090801</protocolID>
+     <longName>Peak Expiratory Flow Rate (PEFR)</longName>
+     <context>PhenX</context>
+     <shortName>PX090801</shortName>
+     <preferredDefinition>A patient is instructed to inhale deeply and blow into a peak expiratory flow monitor three times. Peak Expiratory Flow Rate (PEFR) can be measured as part of spirometry testing (see Spirometry measure) or as a separate measurement. The highest PEFR value is typically used for analysis.</preferredDefinition>
+    </protocol>
+   </form>
+   </forms>
