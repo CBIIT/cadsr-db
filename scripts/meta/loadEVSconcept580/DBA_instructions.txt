@@ -1,0 +1,10 @@
+DBA steps: 
+1.Run the script in attached file CREATE_TABLES.sql
+2.Open the attached control file CONCEPTS_DBA.ctl.
+3.Replace  DBA_PATH to the location path where you will place the attached EVSConceptLoad Mod.csv file.
+4.Load data via SQL LOADER using control file CONCEPTS_DBA.ctl
+5.Run the script UPLOAD_CONCEPTS.sql
+6.Send us 2 log files: 
+    cadsrmeta-580a.log
+    cadsrmeta-580b.log
+
