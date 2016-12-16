@@ -1,0 +1,13 @@
+
+DBA steps: 
+1.all actions should be performed in SBREXT schema 
+2.Run the script in attached file DELETE_TEMP_CONCEPTS.sql
+3.Open the attached control file CONCEPTS_DBA.ctl.
+4.Replace  DBA_PATH to the location path where you will place the attached CONCEPTS.csv file.
+5.Load data via SQL LOADER using control file CONCEPTS_DBA.ctl
+6.Run the script UPLOAD_CONCEPTS.sql
+7.Send us 2 log files: 
+    cadsrmeta-cona.log
+    cadsrmeta-conb.log
+
+
