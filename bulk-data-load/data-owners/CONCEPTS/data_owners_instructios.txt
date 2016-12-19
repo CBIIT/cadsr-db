@@ -1,0 +1,17 @@
+Please follow the steps to create CONSEPTS.csv file:
+
+1.Create Excel file with a format as the attached Sample_Upload_Concepts.csv
+2.Names and order columns must be the same as in Sample_Upload_Concepts.csv
+3.Columns PREFERRED_NAME,LONG_NAME,PREFERRED_DEFINITION must be populated
+4.If value of EVS_Source=NCI_CONCEPT_CODE,then there are no needs to fill out columns ORIGIN and SOURCE_DEFINITION.
+  Default values if not provided in the file for NCI_CONCEPT_CODE: 
+  a.ORIGIN : NCI Thesaurus
+  b.SOURCE_DEFINITION: NCI 
+5.If value of EVS_Source other then NCI_CONCEPT_CODE,then columns ORIGIN and SOURCE_DEFINITION should be fill out 
+  otherwise they will be empty.
+6.Name the created file CONSEPTS.
+4 Convert an Excel worksheet to CONSEPTS.csv file by using the Save As command. 
+5.Click the File tab, and then click Save As. 
+6.In the Save as type box, choose CSV (Comma delimited). 
+
+7.When the  new file CONSEPTS.csv is created, move it to DB box.(send upload request and CONSEPTS.csv to DBA team)
