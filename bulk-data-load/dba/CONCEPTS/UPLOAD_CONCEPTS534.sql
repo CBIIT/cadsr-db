@@ -1,3 +1,6 @@
+set serveroutput on size 1000000
+SPOOL cadsrmeta-conb.log
+
 CREATE OR REPLACE PROCEDURE SBREXT.UPLOAD_VALIDATE_CONCEPTS AS
 
 cursor c_load is
@@ -148,3 +151,5 @@ commit;
 
 END ;
 /
+exec SBREXT.UPLOAD_VALIDATE_CONCEPTS;
+SPOOL OFF
