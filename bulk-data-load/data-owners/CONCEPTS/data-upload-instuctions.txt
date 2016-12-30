@@ -3,14 +3,14 @@ Please follow the steps to create CONCEPTS.csv file:
 1.Create Excel file with a format as the attached Sample_Upload_Concepts.csv
 2.Names and order columns must be the same as in Sample_Upload_Concepts.csv
 3.Column names:
-  PREFERRED_NAME ,  LONG_NAME ,PREFERRED_DEFINITION , EVS_SOURCE ,  ORIGIN ,  SOURCE_DEFINITION
+ PREFERRED_NAME, LONG_NAME,PREFERRED_DEFINITION, EVS_SOURCE, ORIGIN, SOURCE_DEFINITION
 4.Columns PREFERRED_NAME ,  LONG_NAME ,PREFERRED_DEFINITION must be populated otherwise a record will be rejected.
-5.The columns EVS_SOURCE , ORIGIN , SOURCE_DEFINITION have follwing ruls:
-  a. If all three columns(EVS_SOURCE ,  ORIGIN ,  SOURCE_DEFINITION) are empty, default value (NCI Thesuarus, NCI_CONCEPT_CODE, NCI) 
+5.The columns EVS_SOURCE , ORIGIN , SOURCE_DEFINITION have following rules:
+  a. If all three columns(EVS_SOURCE, ORIGIN, SOURCE_DEFINITION) are empty, default value (NCI Thesaurus, NCI_CONCEPT_CODE, NCI) 
      will be created for the concept.
   b. If all three columns are not empty and evsSource is valid, concept will be loaded with the data in the file.
   c. If one or two out of the three columns are empty, concept will NOT be loaded. 
-  Alloud Columns length:
+  Authorized columns length:
   PREFERRED_NAME  must not exceed 30 Characters. 
   LONG_NAME  must not exceed 255 Characters. 
   PREFERRED_DEFINITION must not exceed 2000.
@@ -21,7 +21,8 @@ Please follow the steps to create CONCEPTS.csv file:
 7.Name the created file CONCEPTS.
 8 Convert an Excel worksheet to CONCEPTS.csv file by using the Save As command. 
 9.Click the File menu, and then click Save As. 
-10.In the Save as type box, choose CSV (Comma delimited). 
+10.In the Save as type box, choose CSV (Comma delimited).
+
 
 11.When the new file CONSEPTS.csv is created,send CONCEPTS upload request to DBA team with attached files:
 1.Newly created Concepts.csv  
