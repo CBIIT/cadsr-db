@@ -1,0 +1,36 @@
+Please follow the steps to create PROTOCOLS.csv file:
+
+1.Create Excel file with a format as the attached Sample_Protocols_Upload.csv
+  When you create Protocols.csv file make sure it has the same format as Sample_Protocols_Upload.csv. 
+2.First row consists of columns names:
+PREFERRED_NAME, LONG_NAME, PREFERRED_DEFINITION, CONTEXT, WORKFLOW_STATUS, ORIGIN, TYPE, PROTOCOL_ID, PHASE, LEAD_ORG.
+3.All other rows have to contain corresponding data.
+  Names and order the columns must remain as given.
+4.Columns PREFERRED_NAME, LONG_NAME, PREFERRED_DEFINITION, CONTEXT, PROTOCOL_ID, must be populated otherwise a record will be rejected.
+5.Authorized columns length: 
+  PREFERRED_NAME must not exceed 30 Characters. 
+  LONG_NAME must not exceed 255 Characters. 
+  PREFERRED_DEFINITION must not exceed 2000 Characters. 
+  CONTEXT must not exceed 30 Characters.
+  WORKFLOW_STATUS must not exceed 20 Characters. (if WORKFLOW_STATUS value is not provided, it will be set to "RELEASED")
+  YPE must not exceed 240 Characters. (valid values=null, 'Treatment trials', 'Screening trials, 'Prevention trials', 'Quality of Life trial')
+  ORIGIN must not exceed 240 Characters. 
+  PROTOCOL_ID must not exceed 30 Characters. 
+  PHASE must not exceed 3 Characters.
+  LEAD_ORG must not exceed 30 Characters.
+
+6.Name the created file PROTOCOLS.
+7 Convert an Excel worksheet to PROTOCOLS.csv file by using the Save As command. 
+8.Click the File menu, and then click Save As. 
+9.In the Save as type box, choose CSV (Comma delimited). 
+
+10.When the new file PROTOCOLS.csv is created,send PROTOCOLS upload request to DBA team with attached files:
+  1.Newly created PROTOCOLS.csv  
+  2.DBA_Upload_Instructions.txt
+  3.PROTOCOLS_DBA.ctl 
+  4.DELETE_TEMP_PROTOCOLS.sql
+  5.UPLOAD_PROTOCOLS.sql
+
+Files 2,3,4,5 can be find at :
+https://github.com/CBIIT/cadsr-db/tree/master/bulk-data-load/dba/PROTOCOLS
+Please copy and them and make sure to attach to the request.
