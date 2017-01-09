@@ -14,6 +14,10 @@ begin
 for i in c_prot loop
 
    begin
+   
+          IF i.WORKFLOW is null then
+             i.WORKFLOW:='RELEASED';
+           end if;
           errmsg  :='';
           IF   i.PROTOCOL_ID is null then
           errmsg:='PROTOCOL id IS NULL';
@@ -120,7 +124,7 @@ for i in c_prot loop
           END IF;
           end if;
 
-          IF trim(i.TYPE) not IN ('Treatment trials', 'Prevention trials', 'Screening trials', 'Quality of Life trials') THEN
+          IF i.TYPE is not null and trim(i.TYPE) not IN ('Treatment trials', 'Prevention trials', 'Screening trials', 'Quality of Life trials') THEN
            DBMS_output.put_line(' TYPE '||trim(i.TYPE)||' violated check constraint') ;
            i.TYPE:=null;
           /*IF  length(errmsg)>1 THEN
@@ -141,7 +145,7 @@ for i in c_prot loop
 
         IF (NVL(errmsg,'A'))='A' or errmsg='' then
 
-
+            
             select sbr.admincomponent_crud.cmr_guid into v_PROTO_IDSEQ from dual;
             select cde_id_seq.nextval into V_protoid from dual;
 
@@ -152,6 +156,7 @@ for i in c_prot loop
 	        ,PREFERRED_DEFINITION
             ,ASL_NAME
 	        ,LONG_NAME
+            ,ORIGIN
             ,TYPE
 	        ,PHASE
 	        ,LEAD_ORG
@@ -169,7 +174,8 @@ for i in c_prot loop
 	        ,i.PREFERRED_DEFINITION
             ,i.workflow
 	        ,i.LONG_NAME
-            ,NULL
+            ,i.ORIGIN
+            ,i.TYPE
 	        ,i.PHASE
 	        ,V_org_idseq
             ,i.PROTOCOL_ID
