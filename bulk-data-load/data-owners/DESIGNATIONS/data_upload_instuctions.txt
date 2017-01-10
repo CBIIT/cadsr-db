@@ -1,29 +1,29 @@
 Please follow the steps to create Designations.csv file:
 
 
-1.1.When you create Designations.csv file make sure it has the same format as Sample_Designations_Upload.csv. 
+1.When you create Designations.csv file make sure it has the same format as Sample_Designations_Upload.csv. 
 2.First row consists of columns names:
  PUBLICID, VERSION, LONGNAME, TYPE, CREATEDBY, DATECREATED, DATEMODIFIED, ID, LANGUAGENAME, MODIFIEDBY, NAME, TYPE2, 
  DESIGNATIONCLASSSCHEMEITEMCOL, CONTEXT 
  All other rows have to contain corresponding data.
 3.Names and order the columns must remain as given.
 4.Columns PUBLICID, VERSION are holding values of existing DATA_ELEMENT_CONCEPTS
-4.Columns PUBLICID, VERSION, CREATEDBY, NAME, TYPE2, CONTEXT must be populated otherwise a record will be rejected.
-5.Authorized columns length:   
+5.Columns PUBLICID, VERSION, CREATEDBY, NAME, TYPE2, CONTEXT must be populated otherwise a record will be rejected.
+6.Authorized columns length:   
   TYPE2 must not exceed 20 Characters. 
   NAME must not exceed 2000 Characters. 
   CONTEXT must not exceed 30 Characters.
   LANGUAGENAME must not exceed 30 Characters.
   CREATEDBY must not exceed 30 Characters. 
  
-6.Name the created file Designations.
-7 Convert an Excel worksheet to Designations.csv file by using the Save As command. 
-8.Click the File menu, and then click Save As. 
-9.In the Save as type box, choose CSV (Comma delimited). 
-5.Name the created file Designations.
-6 Convert an Excel worksheet to Designations.csv file by using the Save As command. 
-7.Click the File menu, and then click Save As. 
-8.In the Save as type box, choose CSV (Comma delimited).
+7.Name the created file Designations.
+8 Convert an Excel worksheet to Designations.csv file by using the Save As command. 
+10.Click the File menu, and then click Save As. 
+11.In the Save as type box, choose CSV (Comma delimited). 
+12.Name the created file Designations.
+13 Convert an Excel worksheet to Designations.csv file by using the Save As command. 
+14.Click the File menu, and then click Save As. 
+15.In the Save as type box, choose CSV (Comma delimited).
 
 2.Every time when Curators make request on bulk data loading to caDSR has to include 5 attached files:
 1.Newly created Designations.csv  
