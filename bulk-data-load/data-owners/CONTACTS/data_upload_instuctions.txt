@@ -1,0 +1,26 @@
+Please follow the steps to create CONTACTS.csv file:
+
+
+1.When you create Contacts.csv file make sure it has the same format as Sample_Contacts_Upload.csv. 
+2.First row consists of columns names:
+ Public_ID ,VERSION, RANK_ORDER, LNAME, FNAME, CROLE, CTL_NAME, ORGANISATION, CYBER_ADDRESS
+ All other rows have to contain corresponding data.
+3.Names and order the columns must remain as given.
+4.All Columns must be populated otherwise a record will be rejected.
+
+ 
+5.Name the created file Contacts.
+6 Convert an Excel worksheet to Contacts.csv file by using the Save As command. 
+7.Click the File menu, and then click Save As. 
+8.In the Save as type box, choose CSV (Comma delimited).
+
+2.Every time when Curators make request on bulk data loading to caDSR has to include 5 attached files:
+1.Newly created Contacts.csv  
+2.DBA_Upload_Instructions.txt
+3.CONTACTS_DBA.ctl 
+4.DELETE_TEMP_CONTACTS.sql
+5.UPLOAD_CONTACTS.sql
+Files 2,3,4,5 can be find at https://github.com/CBIIT/cadsr-db/tree/master/bulk-data-load/dba/CONTACTS
+Please copy and them and make sure to attach to the request.
+
+
