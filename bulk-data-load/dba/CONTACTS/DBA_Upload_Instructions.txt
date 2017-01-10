@@ -1,0 +1,10 @@
+DBA steps: 
+1.All actions should be performed in SBR schema 
+2.Run the script in attached file DELETE_TEMP_CONTACTS.sql
+3.Open the attached control file ORIGINS_DBA.ctl.
+4.Replace  DBA_PATH to the location path where you will place the attached CONTACTS.csv file.
+5.Load data via SQL LOADER using control file  CONTACTS_DBA.ctl
+6.Run the script  UPLOAD_CONTACTS.sql
+7.Send us 2 log files: 
+    cadsrmeta-618d.log
+    cadsrmeta-618i.log 
