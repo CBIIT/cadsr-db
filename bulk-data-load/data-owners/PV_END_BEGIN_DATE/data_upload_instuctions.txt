@@ -1,0 +1,24 @@
+Please follow the steps to create PV_BE_DATES.csv file:
+
+1.When you create PV_BE_DATES.csv file make sure it has the same format as Sample_PV_DATES_Upload.csv. 
+2.First row consists of columns names:
+ VALUE, PUBLICID, VERSION, BEGIN_DATE, END_DATE, MODIFIED_BY 
+ All other rows have to contain corresponding data.
+3.Names and order the columns must remain as given.
+4.Columns VALUE, PUBLICID, VERSION must be populated otherwise a record will be rejected.
+5.If BEGIN_DATE or END_DATE have no value ,they won’t be updated.
+
+6.Name the created file PV_BE_DATES.csv.
+7 Convert an Excel worksheet to PV_BE_DATES.csv file by using the Save As command. 
+8.Click the File menu, and then click Save As. 
+9.In the Save as type box, choose CSV (Comma delimited).
+
+2.Every time when Curators make request on bulk data loading to caDSR has to include 5 attached files:
+1.Newly created PV_BE_DATES.csv
+2.DBA_Upload_Instructions.txt
+3.PV_VD_DBA.ctl 
+4.DELETE_TEMP_PV_BE_DATES.sql
+5.UPDATE_PV_DATES.sql
+Files 2,3,4,5 can be find at https://github.com/CBIIT/cadsr-db/tree/master/bulk-data-load/dba/PV_END_BEGIN_DATE 
+Please copy and them and make sure to attach to the request.
+
