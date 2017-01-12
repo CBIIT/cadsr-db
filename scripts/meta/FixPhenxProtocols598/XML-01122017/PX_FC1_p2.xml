@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 1</collectionName>
+  <collectionDescription>Load PhenX PX011501,PX020201,PX020202,PX020203,PX020301</collectionDescription>
+     <form>   
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-01-12T14:08:31</dateCreated>
+    <longName>PhenX Health Insurance Coverage - PX011501</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The respondent is asked about health insurance coverage.  A number of possible types of health care coverage are included, not simply health insurance.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-01-12T14:08:31</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Are you covered by health insurance or some other kind of health care plan?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>What kind of health insurance or health care coverage do you have?     Include those that pay for only one type of service (such as nursing home care, accidents, or dental care). Exclude private plans that only provide extra cash while hospitalized. If you have more than one kind of health insurance, tell me all plans that you have. [CODE ALL THAT APPLY, HAND CARD WITH LIST OF ANSWERS. CAPI INSTRUCTION: DO NOT ALLOW MORE THAN ONE ANSWER WHEN 40 (NO COVERAGE OF ANY TYPE) IS CODED. ]</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE_9</value>
+          <meaningText>PRIVATE HEALTH INSURANCE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_10</value>
+          <meaningText>MEDICARE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_11</value>
+          <meaningText>MEDI-GAP</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_12</value>
+          <meaningText>MEDICAID ({IF AVAILABLE, DISPLAY STATE PLAN NAME})</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_13</value>
+          <meaningText>SCHIP (CHIP/CHILDREN'S HEALTH INSURANCE PROGRAM)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_14</value>
+          <meaningText>MILITARY HEALTH CARE (TRICARE/VA/CHAMP-VA)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_15</value>
+          <meaningText>INDIAN HEALTH SERVICE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_16</value>
+          <meaningText>STATE-SPONSORED HEALTH PLAN ({IF AVAILABLE, DISPLAY STATE PLAN NAME})</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>UNDEFINED_CODE_17</value>
+          <meaningText>OTHER GOVERNMENT PROGRAM</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>UNDEFINED_CODE_18</value>
+          <meaningText>DENTAL, VISION, PRESCRIPTIONS)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>UNDEFINED_CODE_19</value>
+          <meaningText>NO COVERAGE OF ANY TYPE</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>UNDEFINED_CODE_20</value>
+          <meaningText>REFUSED</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>UNDEFINED_CODE_21</value>
+          <meaningText>DON'T KNOW</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX011501</protocolID>
+     <longName>Health Insurance Coverage</longName>
+     <context>PhenX</context>
+     <shortName>PX011501</shortName>
+     <preferredDefinition>The respondent is asked about health insurance coverage.  A number of possible types of health care coverage are included, not simply health insurance.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-01-12T14:08:31</dateCreated>
+    <longName>PhenX Birth Weight Abstracted From Medical Records - PX020201</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Birth weight abstracted from medical charts or perinatal databases or as reported in vital records</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-01-12T14:08:31</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Weight in gram</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Newborn birth weight abstracted from the medical record/vital record, in gram</questionText>
+        <instruction>
+         <text>[weight_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Newborn birth weight abstracted from the medical record/vital record, in pound</questionText>
+        <instruction>
+         <text>[weight_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Newborn birth weight abstracted from the medical record/vital record, in ounce</questionText>
+        <instruction>
+         <text>[weight_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX020201</protocolID>
+     <longName>Birth Weight - Birth Weight Abstracted from Medical Records</longName>
+     <context>PhenX</context>
+     <shortName>PX020201</shortName>
+     <preferredDefinition>Birth weight abstracted from medical charts or perinatal databases or as reported in vital records</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-01-12T14:08:31</dateCreated>
+    <longName>PhenX Measured Weight At Birth - PX020202</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measured weight at birth</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-01-12T14:08:31</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>weight measured in gram?</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>whether infant is weighed with a study blanket</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Weight of the blanket used for weighing in gram</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_1] = '1' and [weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Weight of the blanket used for weighing in pound</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_1] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Weight of the blanket used for weighing in ounce</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_1] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>1</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-01-12T14:08:31</dateCreated>
+      <longName>This protocol is for an examination study.´Use calibrated infant scale for weighing infant.´Naked weight of infant is preferred, but if the mother objects, wrap naked infant in study blanket for procedure. Record on form whether infant is weighed with a study blanket. Note: If the infant urinates in the blanket, repeat the measurement using a dry blanket. ´Place the infant on the scale so that weight is distributed equally about the center of the pan.´Record the weight on form.´Remove the infant from the scale, then replace and weigh a second time.´Record the second weight on form.´If the difference in the two weights is greater than 100 grams, obtain a third measurement.´Note the weight of the blanket and subtract the weight of the blanket from the total weight of the infant plus blanket to estimate birth weight of the infant.</longName>
+      <preferredDefinition>This protocol is for an examination study.´Use calibrated infant scale for weighing infant.´Naked weight of infant is preferred, but if the mother objects, wrap naked infant in study blanket for procedure. Record on form whether infant is weighed with a study blanket. Note: If the infant urinates in the blanket, repeat the measurement using a dry blanket. ´Place the infant on the scale so that weight is distributed equally about the center of the pan.´Record the weight on form.´Remove the infant from the scale, then replace and weigh a second time.´Record the second weight on form.´If the difference in the two weights is greater than 100 grams, obtain a third measurement.´Note the weight of the blanket and subtract the weight of the blanket from the total weight of the infant plus blanket to estimate birth weight of the infant.</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>weight at birth measurement 1, in gram</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>weight at birth measurement 1, in pound</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>weight at birth measurement 1, in ounce</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>whether infant is weighed with a study blanket</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Weight of the blanket used for weighing 2, in gram</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_2] = '1' and [weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Weight of the blanket used for weighing 2, in pound</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_2] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Weight of the blanket used for weighing 2, in ounce</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_2] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>weight at birth measurement 2, in gram</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>weight at birth measurement 2, in pound</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>weight at birth measurement 2, in ounce</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>whether infant is weighed with a study blanket. A third measurement should be taken if the first two measurements differed by &gt;100 grams (3 ounces)</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Weight of the blanket used for weighing, in gram</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_3] = '1' and [weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Weight of the blanket used for weighing, in pound</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_3] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Weight of the blanket used for weighing, in ounce</questionText>
+        <instruction>
+         <text>[weighed_with_blanket_3] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>weight at birth measurement 3, in gram. A third measurement should be taken if the first two measurements differed by &gt;100 grams (3 ounces).</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>weight at birth measurement 3, in pound</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>weight at birth measurement 3, in ounce</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Average weight at birth, in gram. If it is necessary to take a third measurement, the two closest measurements are averaged. Should the third measurement fall equally between the first two measurements, all three should be averaged</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Average weight at birth, in pound</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Average weight at birth, in ounce</questionText>
+        <instruction>
+         <text>[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX020202</protocolID>
+     <longName>Birth Weight - Measured Weight at Birth</longName>
+     <context>PhenX</context>
+     <shortName>PX020202</shortName>
+     <preferredDefinition>Measured weight at birth</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-01-12T14:08:31</dateCreated>
+    <longName>PhenX Proxyreported Birth Weight - PX020203</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Proxy-reported birth weight</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-01-12T14:08:31</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>How much did participant weigh at birth? ENTER WEIGHT IN GRAMS OR POUNDS AND OUNCES</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Grams</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Pounds and ounces</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Unknown</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>How much did {you/[participant]} weigh at birth in grams?</questionText>
+        <instruction>
+         <text>[proxy_birthwt_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>How much did {you/[participant]} weigh at birth in pounds?</questionText>
+        <instruction>
+         <text>[proxy_birthwt_gram] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>How much did {you/[participant]} weigh at birth in ounces?</questionText>
+        <instruction>
+         <text>[proxy_birthwt_gram] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Did {you/[participant]} weigh ...?</questionText>
+        <instruction>
+         <text>[proxy_birthwt_gram] = '3'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>More than 5 1/2 pounds (2500 g)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Less than 5 1/2 pounds (2500 g)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Did {you/[participant]} weigh ...?</questionText>
+        <instruction>
+         <text>[proxy_birthwt_gram] = '3'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>More than 9 pounds (4100 g)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Less than 9 pounds (4100 g)</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX020203</protocolID>
+     <longName>Birth Weight - Proxy Reported Birth Weight</longName>
+     <context>PhenX</context>
+     <shortName>PX020203</shortName>
+     <preferredDefinition>Proxy-reported birth weight</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-01-12T14:08:31</dateCreated>
+    <longName>PhenX Body Composition By Dualenergy Xray Absorptiometry - PX020301</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Dual-energy X-ray absorptiometry (DXA) is one of the most widely used methods to assess body composition in a laboratory environment. A densitometer scanner device is used to scan the entire body or specific body sites such as the hip, spine, and limbs. DXA uses X-ray energy to measure body fat, muscle, and bone mineral and as a result, a small amount of radiation is delivered to the body during the DXA scan procedure. The results from a whole body DXA scan can be used to estimate total mass (gm), bone mineral content (BMC) (gm), bone area (cm 2), bone mineral density, fat mass, lean mass excluding BMC (gm), lean mass including BMC (gm), and percent body fat (%). These measures can also be subdivided from the whole body to regional measures of the arms, legs, trunk, android, gynoid, and head. Furthermore, special algorithms have been created to estimate visceral and subcutaneous adipose tissue. Source: Centers for Disease Control and Prevention, National Center for Health Statistics, National Health and Nutrition Examination Survey (NHANES 2001-2002) DXA file documentation. URL: http://www.cdc.gov/nchs/data/nhanes/dxa/dxx_b.pdf (accessed January 22, 2009).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-01-12T14:08:31</dateCreated>
+      <longName>N/A</longName>
+      <preferredDefinition>No definition</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Make and model name of the Dualenergy xray absorptiometry (DXA) instrument</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Whole body scan image name of the first measurement</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>The image quality of your whole body scan is not adequate for reporting your bone density results. I see from your scan that [fill in the problem observed]. With your permission, I would like to repeat the scan to improve the image quality. The amount of radiation from this scan is about 1 millirem, or the amount you would receive for 2 hours on a coasttocoast airplane flight. This scan is voluntary and there is no penalty for refusing. Do I have your permission to repeat the scan?The image quality of your whole body scan is not adequate for reporting your bone density results I see from your scan that [fill in the problem observed] With your permission, I would like to repeat the scan to improve the image quality The amount of radiation from this scan is about 1 millirem, or the amount you would receive for 2 hours on a coasttocoast airplane flight This scan is voluntary and there is no penalty for refusing</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE_9</value>
+          <meaningText>Determine if the quality of the first scan is acceptable and if second scan is needed</meaningText>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_10</value>
+          <meaningText>Do I have your permission to repeat the scan?</meaningText>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-01-12T14:08:31</dateCreated>
+        <questionText>Whole body scan image name of the second measurement</questionText>
+        <instruction/>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX020301</protocolID>
+     <longName>Body Composition - Body Composition by Dual-Energy X-Ray Absorptiometry</longName>
+     <context>PhenX</context>
+     <shortName>PX020301</shortName>
+     <preferredDefinition>Dual-energy X-ray absorptiometry (DXA) is one of the most widely used methods to assess body composition in a laboratory environment. A densitometer scanner device is used to scan the entire body or specific body sites such as the hip, spine, and limbs. DXA uses X-ray energy to measure body fat, muscle, and bone mineral and as a result, a small amount of radiation is delivered to the body during the DXA scan procedure. The results from a whole body DXA scan can be used to estimate total mass (gm), bone mineral content (BMC) gm), bone area(cm2), bone mineral density, fat mass, lean mass excluding BMC (gm), lean mass including BMC (gm), and percent body fat (%). These measures can also be subdivided from the whole body to regional measures of the arms, legs, trunk, android, gynoid, and head. Furthermore, special algorithms have been created to estimate visceral and subcutaneous adipose tissue. Source: Centers for Disease Control and Prevention, National Center for Health Statistics, National Health and Nutrition Examination Survey (NHANES 2001-2002) DXA file documentation. URL: http://www.cdc.gov/nchs/data/nhanes/dxa/dxx_b.pdf;http://www.cdc.gov/nchs/data/nhanes/dxa/dxx_b.pdf&lt;/a&gt; (accessed January 22, 2009).</preferredDefinition>
+    </protocol>
+   </form>
+   </forms>
