@@ -1,0 +1,25 @@
+Please follow the steps to create PV_VALUE.csv file:
+
+
+1.When you create PV_VALUE.csv file make sure it has the same format as Sample_PV_Upload.csv. 
+2.First row consists of columns names:
+VD_ID	,VD_Version, VD_LongName,Type,Existing_PV_Value,PV_dateModified,PV_ModifiedBy,New_PV_Value
+
+ All other rows have to contain corresponding data.
+3.Names and order the columns must remain as given.
+4.Columns VD_ID,VD_Version, Existing_PV_Value, New_PV_Value must be populated otherwise a record will be rejected.
+5.If New_PV_Value column holds no value, it won’t be updated.
+
+6.Name the created file PV_VALUE.csv.
+7 Convert an Excel worksheet to PV_VALUE.csv file by using the Save As command. 
+8.Click the File menu, and then click Save As. 
+9.In the Save as type box, choose CSV (Comma delimited).
+
+2.Every time when Curators make request on bulk data loading to caDSR has to include 5 attached files:
+1.Newly created PV_VALUE.csv
+2.DBA_Upload_Instructions.txt
+3.PV_VD_DBA.ctl 
+4.DELETE_TEMP_PV.sql
+5.UPDATE_PV_VALUE.sql
+Files 2,3,4,5 can be find at https://github.com/CBIIT/cadsr-db/tree/master/bulk-data-load/dba/PV_VALUE
+Please copy and them and make sure to attach to the request.
