@@ -1,13 +1,13 @@
 
 DBA steps: 
 1.all actions should be performed in SBR schema 
-2.Run the script in attached file DELETE_TEMP_PV_BE_DATES.sql 
-3.Open the attached control file PV_VD_DBA.ctl.
-4.Replace  DBA_PATH to the location path where you will place the attached PV_BE_DATES.csv file.
-5.Load data via SQL LOADER using control file PV_VD_DBA.ctl.
-6.Run the script UPDATE_PV_DATES.sql(the file is attached)
+2.Run the script in attached file DELETE_TEMP_PV.sql
+3.Open the attached control file PV_VAL_DBA.CTL.
+4.Replace  DBA_PATH to the location path where you will place the attached PV_VALUE.csv file.
+5.Load data via SQL LOADER using control file PV_VAL_DBA.CTL.
+6.Run the script UPDATE_PV_VALUE.sql(the file is attached)
 7. Send us 2 files:     
-    cadsrmeta-517a.log
-    cadsrmeta-517b.log
+    cadsrmeta-501d.log
+    cadsrmeta-501i.log
 
 
