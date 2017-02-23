@@ -24,7 +24,7 @@ BEGIN
 V_error := NULL;
 select COUNT(*) into V_cnt_old from SBR.contexts where name =p_Context_name ;--and version=p_ver_CNT;
 IF V_cnt_old=0 THEN
-insert into SBR.MDSR_MODIFY_ERR_LOG VALUES('MDSR_UPD_CONTE_IDSEQ','SBR.contexts', sysdate ,'Context does not exist. ');
+insert into SBR.MDSR_MODIFY_ERR_LOG VALUES('SBR.MDSR_DELETE_CONTEXT','SBR.contexts', sysdate ,p_Context_name||': Context does not exist.');
 commit;
 END IF;    
 
