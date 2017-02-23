@@ -267,8 +267,7 @@ END;
 
 exception
 when others then
-  V_error:=V_error||substr(SQLERRM,1,1000);
-  --  V_error := substr(SQLERRM,1,2000);
+  V_error:=substr(SQLERRM,1,1000);
       insert into SBR.MDSR_MODIFY_ERR_LOG VALUES('SBR.MDSR_DELETE_CONTEXT', 'ALL',sysdate ,V_error);
   commit; 
 END;
