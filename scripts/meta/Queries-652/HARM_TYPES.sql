@@ -7,15 +7,15 @@ CREATE OR REPLACE TYPE SBREXT."HARMONY_FORM_CDE_T"    AS OBJECT
 
 )
 /
-CREATE OR REPLACE TYPE SBREXT.HARMONY_FORM_CDE_LIST_T AS TABLE OF SBREXT.HARMONY_FORM_CDE_T;
+CREATE OR REPLACE TYPE SBREXT.HARMONY_FORM_CDE_LIST_T AS TABLE OF SBREXT.HARMONY_FORM_CDE_T
 /
 CREATE OR REPLACE TYPE SBREXT."HARMONY_DESIGN_T"                                          as object(
    "DES_CONTEXT_NAME"                                     VARCHAR2(30)
    ,"DES_CONTEXT_VERSION"                                  NUMBER(4,2)
    ,"Alternate Name"                                               VARCHAR2(2000)
    ,"DES_DETL_NAME"                                          VARCHAR2(20))
-   ;
-   CREATE OR REPLACE TYPE SBREXT."HARMONY_DESIGN_LIST_T"                                          AS TABLE OF SBREXT.HARMONY_DESIGN_T;
+/
+   CREATE OR REPLACE TYPE SBREXT."HARMONY_DESIGN_LIST_T"                                          AS TABLE OF SBREXT.HARMONY_DESIGN_T
 /
 
 CREATE OR REPLACE TYPE SBREXT."HARMONY_DEFINITION_T"                                          as object(
@@ -23,8 +23,8 @@ CREATE OR REPLACE TYPE SBREXT."HARMONY_DEFINITION_T"                            
    ,"DEF_CONTEXT_VERSION"                                  NUMBER(4,2)
    ,"Alternate DEFINITION"                                               VARCHAR2(2000)
    ,"DEFL_NAME"                                          VARCHAR2(20))
-   ;
-   CREATE OR REPLACE TYPE SBREXT."HARMONY_DEF_LIST_T"                                          AS TABLE OF SBREXT.HARMONY_DEFINITION_T;
+/
+   CREATE OR REPLACE TYPE SBREXT."HARMONY_DEF_LIST_T"                                          AS TABLE OF SBREXT.HARMONY_DEFINITION_T
 /
 
 CREATE OR REPLACE TYPE SBREXT."HARMONY_DOC_REF_T"                                          as object(
@@ -33,7 +33,7 @@ CREATE OR REPLACE TYPE SBREXT."HARMONY_DOC_REF_T"                               
    ,"Alternate Q TEXT"                                               VARCHAR2(2000)
    ,"RDTL_NAME"                                          VARCHAR2(20))
 /
-   CREATE OR REPLACE TYPE SBREXT."HARMONY_DOC_REF_LIST_T"            AS TABLE OF SBREXT.HARMONY_DOC_REF_T;
+   CREATE OR REPLACE TYPE SBREXT."HARMONY_DOC_REF_LIST_T"            AS TABLE OF SBREXT.HARMONY_DOC_REF_T
 /
 
 CREATE OR REPLACE TYPE SBREXT."HARMONY_VD_TYPE_T"      as object
@@ -41,7 +41,7 @@ CREATE OR REPLACE TYPE SBREXT."HARMONY_VD_TYPE_T"      as object
   "VD_PREFERRED_NAME"      VARCHAR2(70)
    ,"VD_TYPE"                VARCHAR2(40))
 /
-   CREATE OR REPLACE TYPE SBREXT."HARMONY_VD_TYPE_LIST_T"         AS TABLE OF SBREXT.HARMONY_VD_TYPE_T;
+   CREATE OR REPLACE TYPE SBREXT."HARMONY_VD_TYPE_LIST_T"         AS TABLE OF SBREXT.HARMONY_VD_TYPE_T
 /
 CREATE OR REPLACE TYPE SBREXT.HARMONY_FORM_PROTO_T    AS OBJECT
 ("FormID"          number, 
