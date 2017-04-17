@@ -428,12 +428,16 @@ having count(*)>1
 
 11.populate section number and order in SBREXT.REDCAP_PROTOCOL_NEW and TABLE SBREXT.REDCAP_SECTION if section is not null
 a.create TABLE SBREXT.REDCAP_SECTION
-CREATE TABLE SBREXT.REDCAP_SECTION(
-  PROTOCOL  VARCHAR2(40 BYTE),
-  FORM_NAME            VARCHAR2(400 BYTE),
-  SECTION              VARCHAR2(2000 BYTE),
-  SECTION_SEQ  NUMBER,
-  QUESTION NUMBER)
+CREATE TABLE SBREXT.REDCAP_SECTION
+(
+  PROTOCOL       VARCHAR2(40 BYTE),
+  FORM_NAME      VARCHAR2(400 BYTE),
+  SECTION        VARCHAR2(2000 BYTE),
+  SECTION_SEQ    NUMBER,
+  QUESTION       NUMBER,
+  QUESTION_TEXT  VARCHAR2(2000 BYTE),
+  INSTUCTION     VARCHAR2(2000 BYTE)
+)
   
  b.
 select distinct protocol  FROM SBREXT.REDCAP_PROTOCOL_NEW where NVL(SECTION,'A')<>'A'
@@ -1559,3 +1563,141 @@ WHERE LENGTH(FIELD_LABEL||' ('||VARIABLE_FIELD_NAME||')')>1999
 UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=
 substr(FIELD_LABEL,1,1999-LENGTH('..TRUNCATED..('||VARIABLE_FIELD_NAME||')'))||'..TRUNCATED('||VARIABLE_FIELD_NAME||')'
 WHERE LENGTH(FIELD_LABEL||' ('||VARIABLE_FIELD_NAME||')')>1999
+
+
+
+UPDATE REDCAP_PROTOCOL_NEW set INSTRUCTIONS = 
+CASE WHEN INSTRUctions is not null then INSTRUctions||'; UOM='||substr(FIELD_NOTE,1,(REGEXP_INSTR(FIELD_NOTE,'\|', 1, 1))-1) 
+else 'UOM='||substr(FIELD_NOTE,1,(REGEXP_INSTR(FIELD_NOTE,'\|', 1, 1))-1) 
+end
+where  instr(FIELD_NOTE,'|')> 0
+
+
+UPDATE SBREXT.REDCAP_XML_GROUP set GROUP_NUM= CASE  
+WHEN protocol in ('PX010101','PX010201','PX010301','PX010401','PX010701','PX010801','PX011001','PX011101','PX011201','PX011301')
+then 1
+WHEN protocol in ('PX020101','PX020201','PX020202','PX020203','PX020302','PX020702','PX220101')
+then 2  
+WHEN protocol in ('PX020401','PX020601','PX020602','PX020701','PX020704','PX020802','PX020901','PX021001','PX021101','PX021301')
+then 3 
+WHEN protocol in ('PX020304','PX020305','PX020501')
+then 4
+WHEN protocol in ('PX020303','PX020703')
+then 5
+WHEN protocol in ('PX021302,PX021303,PX021401,PX021501,PX021502,PX021602')
+then 6 
+WHEN protocol in ('PX021603','PX021701','PX021702','PX030101','PX030201','PX030301','PX030401','PX030501','PX030701','PX030902')
+THEN 7
+WHEN protocol in ('PX031001','PX031101','PX031301','PX040101','PX040201','PX040301','PX040401','PX040501','PX040601','PX040701')
+then 8 
+WHEN protocol in ('PX031401','PX040801','PX040901','PX041001','PX041101')
+THEN 9  
+WHEN protocol in ('PX041201','PX041301','PX041401','PX050101','PX050201')
+then 10 
+WHEN protocol in ('PX050202','PX050301','PX050401','PX050501','PX050601','PX050701','PX050801','PX050901','PX051001','PX051101','PX051301')
+THEN 11
+WHEN protocol in ('PX050801','PX050901','PX051001','PX051101','PX051301')
+THEN 12
+WHEN group_num =20 THEN 15
+WHEN group_num =7 THEN 13
+WHEN group_num =8 THEN 14
+WHEN group_num =0 THEN 35
+else GROUP_NUM+8
+end ;
+
+
+CREATE TABLE SBREXT.REDCAP_SECTION
+(
+  PROTOCOL       VARCHAR2(40 BYTE),
+  FORM_NAME      VARCHAR2(400 BYTE),
+  SECTION        VARCHAR2(2000 BYTE),
+  SECTION_SEQ    NUMBER,
+  QUESTION       NUMBER,
+  QUESTION_TEXT  VARCHAR2(2000 BYTE),
+  INSTUCTION     VARCHAR2(2000 BYTE),
+  SECTION_NEW    VARCHAR2(2000 BYTE)
+)
+
+CREATE TABLE SBREXT.REDCAP_PROTOCOL_FORM
+(
+  PROTOCOL              VARCHAR2(40 BYTE),
+  FORM_NAME             VARCHAR2(449 BYTE),
+  PREFERRED_DEFINITION  VARCHAR2(2000 BYTE)    ,
+  PROTOCOL_NAME         VARCHAR2(500 BYTE),
+  INSTRUCTION           VARCHAR2(2000 BYTE)
+)
+
+
+update  REDCAP_PROTOCOL_FORM set protocol_name=substr(form_name,19);
+
+merge into REDCAP_PROTOCOL_FORM t1
+using (select protocol, field_label from (
+SELECT min( question) OVER (PARTITION BY
+protocol ORDER BY protocol) form_inst_q,question,
+protocol, field_label,section
+from REDCAP_PROTOCOL_NEW
+where field_Type='descriptive')
+where form_inst_q=question) t2
+on (t1.PROTOCOL = t2.PROTOCOL)
+when matched then 
+update set t1.instruction = t2.field_label;
+
+
+UPDATE  REDCAP_SECTION set SECTION_new = SECTION where section is not null;
+
+merge into  REDCAP_SECTION t1
+using(select* from REDCAP_PROTOCOL_FORM)t2
+on (t1.PROTOCOL = t2.PROTOCOL
+and t1.protocol=t2.protocol
+and section is null and SECTION_SEQ=0)
+when matched then 
+update set t1.SECTION_new = t2.protocol_name
+
+
+UPDATE REDCAP_PROTOCOL_FORM set INSTRUCTION=replace(replace(INSTRUCTION,'<a href=',''),'</a>','') where instr(INSTRUCTION,'<a href=')>0
+UPDATE REDCAP_PROTOCOL_FORM set INSTRUCTION=replace(replace(INSTRUCTION,'<a target="_blank" href=',''),'</a>','') where instr(INSTRUCTION,'<a target="_blank" href=')>0
+UPDATE REDCAP_PROTOCOL_FORM set INSTRUCTION=replace(INSTRUCTION,'target="_blank">','') where instr(INSTRUCTION,'target="_blank">')>0
+UPDATE REDCAP_PROTOCOL_FORM set INSTRUCTION=replace(replace(INSTRUCTION,'<i>',''),'</i>','') where instr(INSTRUCTION,'<i>')>0
+UPDATE REDCAP_PROTOCOL_FORM set INSTRUCTION=replace(replace(INSTRUCTION,'<b>',''),'</b>','') where instr(INSTRUCTION,'<b>')>0
+UPDATE REDCAP_PROTOCOL_FORM set INSTRUCTION=replace(replace(INSTRUCTION,'<p>',''),'</p>','') where instr(INSTRUCTION,'<p>')>0
+
+CREATE OR REPLACE PROCEDURE SBREXT.REDCAP_PREVIW_TRANSFORM IS
+
+l_file_name VARCHAR2(500):='Phenx FORMS';
+ errmsg VARCHAR2(500):='Non';
+BEGIN 
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(replace(field_label,'<a href=',''),'</a>','') where instr(field_label,'<a href=')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(replace(field_label,'<a target="_blank" href=',''),'</a>','') where instr(field_label,'<a target="_blank" href=')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'target="_blank">','') where instr(field_label,'target="_blank">')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(replace(field_label,'<i>',''),'</i>','') where instr(field_label,'<i>')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(replace(field_label,'<b>',''),'</b>','') where instr(field_label,'<b>')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(replace(field_label,'<p>',''),'</p>','') where instr(field_label,'<p>')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'@@','') where  instr( FIELD_LABEL,'@@')>0;  
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'÷','/')where  instr( FIELD_LABEL,'÷')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'&'||'#149;','') where  instr( FIELD_LABEL,'&'||'#149;')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'°','DDDD') where instr(field_label,'°')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'©','CCCC') where instr(field_label,'©')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'®','RRRR') where instr(field_label,'®')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'™','TTTT') where instr(field_label,'™')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'™','TTTT') where instr(field_label,'™')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'µ','MUMUMU') where instr(field_label,'µ')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'×','XxXxXx') where instr(field_label,'×')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'±','PMPMPM') where instr(field_label,'±')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'¢','ctctct') where instr(field_label,'¢')>0;
+ commit;   
+UPDATE REDCAP_PROTOCOL_NEW set field_label=REGEXP_REPLACE(ASCIISTR(field_label), '\\[[:xdigit:]]{4}', '');
+ commit;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=regexp_replace(trim(FIELD_LABEL),'['||chr(128)||'-'||chr(255)||';]','',1,0,'in');
+ commit;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=regexp_replace(trim(FIELD_LABEL),'['||chr(1)||'-'||chr(31)||']','',1,0,'in');
+
+ commit;     
+ EXCEPTION
+    WHEN OTHERS THEN
+   errmsg := SQLERRM;
+         dbms_output.put_line('errmsg  - '||errmsg);
+        insert into REDCAP_ERROR_LOG VALUES (l_file_name,  errmsg, sysdate);
+    
+
+END ;
+/
