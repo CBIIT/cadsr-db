@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 2b</collectionName>
+  <collectionDescription>Load PhenX PX020202,PX020702</collectionDescription>
+      <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-19T12:07:04</dateCreated>
+    <longName>PhenX PX020702 -  Recumbent Length</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Recumbent length is measured from the top of the participant's head to his or her heels while he or she is lying recumbent. This measure is taken on neonates, infants, and young children. The Anthropometrics Working Group suggests that the measurements be taken to the nearest 0.1 cm.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Recumbent length is measured on infants and children ages birth through 47 months of age in NHANES 200708. An infantometer device is used. The device has a fixed headpiece, horizontal backboard, and movable foot piece. If the child is not wear..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-19T12:07:04</dateCreated>
+      <longName>Recumbent Length</longName>
+      <instruction/>
+      <preferredDefinition>Recumbent Length</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Review protocol instructions (recumbent_instruction)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Recumbent length is measured on infants and children ages birth through 47 months of age in NHANES 200708. An infantometer device is used. The device has a fixed headpiece, horizontal backboard, and movable foot piece. If the child is not wearing an examination gown, ask the parent or guardian to remove the child's clothes except for a diaper or underpants and tshirt.Position the child on the infantometer with the feet positioned against the foot piece (Exhibit 1) and the head against the headpiece (Exhibit 2). Children often cry when placed on the infantometer, so ask the parent or guardian to stand between the examiner and recorder, make eye contact, and reassure the child (recumbent_length_desc_1)</questionText>
+        <instruction>
+         <text>[recumbent_instruction] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Exhibit 1. Proper Positioning of the Foot Piece of the Infantometer (recumbent_length_desc_2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Exhibit 2. Proper Positioning of the Headpiece of the Infantometer (recumbent_length_desc_3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>One person supports the child's head and ensures that the head is positioned in the Frankfort horizontal plane. To do this, apply gentle traction to bring the top of the head in contact with the fixed headpiece. Secure the child's head in the proper alignment by lightly cupping the palms of your hands over the ears.A second person can align the child's legs by placing one hand gently but with mild pressure over the knees. With the other hand, slide the foot piece to rest firmly against the soles of the feet. The toes should point upward with both soles of the feet flexed perpendicular against the acrylic foot piece. To encourage the child to flex the feet, run the tip of your finger down the inside of the foot.NOTE: If you are unable to position both legs correctly, make certain that at least one leg is straight with the foot flexed against the foot piece so that a measurement can be made. The oneleg positioning is the exception rather than the rule and is only used when children are extremely agitated or uncooperative. (recumbent_length_desc_4)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Recumbent Length 1 (recumbent_length_1)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0; UOM=Record to the nearest 0.1 cm</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Recumbent Length 2 (recumbent_length_2)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0; UOM=Record to the nearest 0.1 cm</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Recumbent Length 3 (recumbent_length_3)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0; UOM=Record to the nearest 0.1 cm</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Recumbent Length Average (recumbent_length_average)</questionText>
+        <instruction>
+         <text>Calc: mean([recumbent_length_1],[recumbent_length_2],[recumbent_length_3])</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX020702</protocolID>
+     <longName>Height - Recumbent Length</longName>
+     <context>PhenX</context>
+     <shortName>PX020702</shortName>
+     <preferredDefinition>Recumbent length is measured from the top of the participant's head to his or her heels while he or she is lying recumbent. This measure is taken on neonates, infants, and young children. The Anthropometrics Working Group suggests that the measurements be taken to the nearest 0.1 cm.</preferredDefinition>
+    </protocol>
+   </form>     
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-19T12:07:04</dateCreated>
+    <longName>PhenX PX020202 -  Measured Weight At Birth</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measured weight at birth</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-19T12:07:04</dateCreated>
+      <longName>Measured Weight At Birth</longName>
+      <instruction/>
+      <preferredDefinition>Measured Weight At Birth</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>weight measured in gram? (weight_measured_in_gram)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>whether infant is weighed with a study blanket (weighed_with_blanket_1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Weight of the blanket used for weighing in gram (blanket_weight_1_g)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=100;[weighed_with_blanket_1] = '1' and [weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Weight of the blanket used for weighing in pound (blanket_weight_1_lb)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=20;[weighed_with_blanket_1] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Weight of the blanket used for weighing in ounce (blanket_weight_1_oz)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=16;[weighed_with_blanket_1] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>1</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-19T12:07:04</dateCreated>
+      <longName>This protocol is for an examination study. Use calibrated infant scale for weighing infant. Naked weight of infant is preferred, but if the mother objects, wrap naked infant in study blanket for procedure. Record on form whether infant is weighed with a study blanket. Note: If the infant urinates in the blanket, repeat the measurement using a dry blanket.  Place the infant on the scale so that weight is distributed equally about the center of the pan. Record the weight on form. Remove the infant from the scale, then replace and weigh a second time. Record the second weight on form. If the difference in the two weights is greater than 100 grams, obtain a third measurement. Note the weight of the blanket and subtract the weight of the blanket from the total weight of the infant plus blanket to estimate birth weight of the infant.</longName>
+      <instruction/>
+      <preferredDefinition>This protocol is for an examination study. Use calibrated infant scale for weighing infant. Naked weight of infant is preferred, but if the mother objects, wrap naked infant in study blanket for procedure. Record on form whether infant is weighed with a study blanket. Note: If the infant urinates in the blanket, repeat the measurement using a dry blanket.  Place the infant on the scale so that weight is distributed equally about the center of the pan. Record the weight on form. Remove the infant from the scale, then replace and weigh a second time. Record the second weight on form. If the difference in the two weights is greater than 100 grams, obtain a third measurement. Note the weight of the blanket and subtract the weight of the blanket from the total weight of the infant plus blanket to estimate birth weight of the infant.</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>weight at birth measurement 1, in gram (measured_birthweight_1_g)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=4000;[weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>weight at birth measurement 1, in pound (measured_birthweight_1_lb)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=20;[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>weight at birth measurement 1, in ounce (measured_birthweight_1_oz)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=128;[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>whether infant is weighed with a study blanket (weighed_with_blanket_2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Weight of the blanket used for weighing 2, in gram (blanket_weight_2_g)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=4000;[weighed_with_blanket_2] = '1' and [weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Weight of the blanket used for weighing 2, in pound (blanket_weight_2_lb)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=20;[weighed_with_blanket_2] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Weight of the blanket used for weighing 2, in ounce (blanket_weight_2_oz)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=128;[weighed_with_blanket_2] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>weight at birth measurement 2, in gram (measured_birthweight_2_g)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=4000;[weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>weight at birth measurement 2, in pound (measured_birthweight_2_lb)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=20;[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>weight at birth measurement 2, in ounce (measured_birthweight_2_oz)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=128;[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>whether infant is weighed with a study blanket. A third measurement should be taken if the first two measurements differed by greater than 100 grams (3 ounces) (weighed_with_blanket_3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Weight of the blanket used for weighing, in gram (blanket_weight_3_g)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=4000;[weighed_with_blanket_3] = '1' and [weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Weight of the blanket used for weighing, in pound (blanket_weight_3_lb)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=20;[weighed_with_blanket_3] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Weight of the blanket used for weighing, in ounce (blanket_weight_3_oz)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=128;[weighed_with_blanket_3] = '1' and [weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>weight at birth measurement 3, in gram. A third measurement should be taken if the first two measurements differed by greater than 100 grams (3 ounces). (measured_birthweight_3_g)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=4000;[weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>weight at birth measurement 3, in pound (measured_birthweight_3_lb)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=20;[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>weight at birth measurement 3, in ounce (measured_birthweight_3_oz)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=128;[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Average weight at birth, in gram. If it is necessary to take a third measurement, the two closest measurements are averaged. Should the third measurement fall equally between the first two measurements, all three should be averaged (measured_birthwt_ave_g)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=4000;[weight_measured_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Average weight at birth, in pound (measured_birthwt_ave_lb)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=20;[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Average weight at birth, in ounce (measured_birthwt_ave_oz)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=128;[weight_measured_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX020202</protocolID>
+     <longName>Birth Weight - Measured Weight at Birth</longName>
+     <context>PhenX</context>
+     <shortName>PX020202</shortName>
+     <preferredDefinition>Measured weight at birth</preferredDefinition>
+    </protocol>
+   </form>     
+   
+   </forms>

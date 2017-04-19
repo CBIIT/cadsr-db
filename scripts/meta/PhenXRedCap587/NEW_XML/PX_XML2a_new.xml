@@ -1,0 +1,1549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 2a</collectionName>
+  <collectionDescription>Load PhenX PX020101,PX020201,PX020203,PX020302,PX220101</collectionDescription>
+            <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-19T12:07:04</dateCreated>
+    <longName>PhenX PX020101 -  Arm Span</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The individual stands against the wall with his or her arms outstretched at shoulder level. Measurement of the arm span is the maximum distance between the extended middle fingers of the right and left hands, measured across the back.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-19T12:07:04</dateCreated>
+      <longName>This protocol is part of an examination survey. It requires a tape measure at least 2 m long, a flat surface (usually a wall), and an adjustable block that is fixed to the wall. The spool of the tape measure is fixed to the adjustable block. The block serves as the contact point for the middle (longest) finger of the right hand, which is in contact with the block when the participant is positioned. The block must be movable so that it can be adjusted vertically to accommodate individuals of varying stature. The block is adjusted to bring the tape to the shoulder level for the subject, and then the tape is pulled horizontally along the wall. The participant stands with the feet together so that his or her back is against the wall. The arms are outstretched laterally and maximally at the level of the shoulders, in contact with the wall, and with the palms facing forward. The tip of the middle (longest) finger (excluding the fingernail) of the right hand is kept in contact with the block, while the zero end of the tape is set at the tip of the middle (longest) finger (excluding the fingernail) of the left hand. Two people (measurers) are necessary, one at the zero end of the tape to be sure the tape end is positioned correctly and the other at the block end to make the reading. The measurement is recorded to the nearest 0.1 cm (1/4"). Occasionally, a small stool may be required for the measurers to make this measurement on tall subjects (when the measurer is shorter than the study subject). When making this measurement, it is imperative that the participant's arms be outstretched maximally and that they are held in this position until the reading is taken. Special care must be taken with young children and older individuals as they tend to lower their arms during the measurement.* Please note that there might be high levels of participant discomfort (see Burden Table) for the elderly and young children who may not be as flexible.</longName>
+      <instruction/>
+      <preferredDefinition>This protocol is part of an examination survey. It requires a tape measure at least 2 m long, a flat surface (usually a wall), and an adjustable block that is fixed to the wall. The spool of the tape measure is fixed to the adjustable block. The block serves as the contact point for the middle (longest) finger of the right hand, which is in contact with the block when the participant is positioned. The block must be movable so that it can be adjusted vertically to accommodate individuals of varying stature. The block is adjusted to bring the tape to the shoulder level for the subject, and then the tape is pulled horizontally along the wall. The participant stands with the feet together so that his or her back is against the wall. The arms are outstretched laterally and maximally at the level of the shoulders, in contact with the wall, and with the palms facing forward. The tip of the middle (longest) finger (excluding the fingernail) of the right hand is kept in contact with the block, while the zero end of the tape is set at the tip of the middle (longest) finger (excluding the fingernail) of the left hand. Two people (measurers) are necessary, one at the zero end of the tape to be sure the tape end is positioned correctly and the other at the block end to make the reading. The measurement is recorded to the nearest 0.1 cm (1/4"). Occasionally, a small stool may be required for the measurers to make this measurement on tall subjects (when the measurer is shorter than the study subject). When making this measurement, it is imperative that the participant's arms be outstretched maximally and that they are held in this position until the reading is taken. Special care must be taken with young children and older individuals as they tend to lower their arms during the measurement.* Please note that there might be high levels of participant discomfort (see Burden Table) for the elderly and young children who may not be as flexible.</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Arm Span measured in centimeter, first measurement. (arm_span_1)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=1;maxLength=200</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Arm Span measured in centimeter, second measurement (arm_span_2)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=1;maxLength=200</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Arm Span measured in centimeter,  third measurement. A third measurement should be taken if the first two measurements differed by greater than 1.0 cm (1/4") for participants 12 years or older or greater than 0.5 cm (1/8") for participants 11 years and younger. (arm_span_3)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=1;maxLength=200</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Average Arm Span measurement. If it is necessary to take a third measurement, the two closest measurements are averaged. Should the third measurement fall equally between the first two measurements, all three should be averaged. (arm_span_average)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=1;maxLength=200</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX020101</protocolID>
+     <longName>Arm Span</longName>
+     <context>PhenX</context>
+     <shortName>PX020101</shortName>
+     <preferredDefinition>The individual stands against the wall with his or her arms outstretched at shoulder level. Measurement of the arm span is the maximum distance between the extended middle fingers of the right and left hands, measured across the back.</preferredDefinition>
+    </protocol>
+   </form> 
+   
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-19T12:07:04</dateCreated>
+    <longName>PhenX PX220101 -  Ataxia Rating Scale</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Scale for the Assessment and Rating of Ataxia (SARA) is a clinical scale used to assess cerebellar ataxia. The scale includes 8 items that are related to gait, stance, sitting, speech, finger-chase test, nose-finger test, fast alternating movements and heel-shin test. A trained physician observes the participant perform these physical function tests and gives each one a value from the scale.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-19T12:07:04</dateCreated>
+      <longName>Ataxia Rating Scale</longName>
+      <instruction/>
+      <preferredDefinition>Ataxia Rating Scale</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Proband is asked (1) to walk at a safe distance parallel to a wall including a halfturn (turn around to face the opposite direction of gait) and (2) to walk in tandem (heels to toes) without support. Score _______ (ataxia_proband_gait)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=8</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Normal, no difficulties in walking, turning and walking tandem (up to one misstep allowed)</meaningText>
+          <description>Normal, no difficulties in walking, turning and walking tandem (up to one misstep allowed)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight difficulties, only visible when walking 10 consecutive steps in tandem</meaningText>
+          <description>Slight difficulties, only visible when walking 10 consecutive steps in tandem</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Clearly abnormal, tandem walking &gt;10 steps not possible</meaningText>
+          <description>Clearly abnormal, tandem walking &gt;10 steps not possible</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Considerable staggering, difficulties in half-turn, but without support</meaningText>
+          <description>Considerable staggering, difficulties in half-turn, but without support</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Marked staggering, intermittent support of the wall required</meaningText>
+          <description>Marked staggering, intermittent support of the wall required</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>Severe staggering, permanent support of one stick or light support by one arm required</meaningText>
+          <description>Severe staggering, permanent support of one stick or light support by one arm required</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>Walking &gt; 10 m only with strong support (two special sticks or stroller or accompanying person)</meaningText>
+          <description>Walking &gt; 10 m only with strong support (two special sticks or stroller or accompanying person)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>7</value>
+          <meaningText>Walking &lt; 10 m only with strong support (two special sticks or stroller or accompanying person)</meaningText>
+          <description>Walking &lt; 10 m only with strong support (two special sticks or stroller or accompanying person)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>8</value>
+          <meaningText>Unable to walk, even supported</meaningText>
+          <description>Unable to walk, even supported</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Proband is asked to stand (1) in natural position, (2) with feet together in parallel (big toes touching each other) and (3) in tandem (both feet on one line, no space between  heel and toe). Proband does not wear shoes, eyes are open. For each condition, three trials are allowed. Best trial is rated. Score __________ (ataxia_proband_stance)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=6</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Normal, able to stand in tandem for &gt; 10 s</meaningText>
+          <description>Normal, able to stand in tandem for &gt; 10 s</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Able to stand with feet together without sway, but not in tandem for &gt; 10s</meaningText>
+          <description>Able to stand with feet together without sway, but not in tandem for &gt; 10s</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Able to stand with feet together for &gt; 10 s, but only with sway</meaningText>
+          <description>Able to stand with feet together for &gt; 10 s, but only with sway</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Able to stand for &gt; 10 s without support in natural position but not with feet together</meaningText>
+          <description>Able to stand for &gt; 10 s without support in natural position but not with feet together</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Able to stand for &gt;10 s in natural position only with intermittent support</meaningText>
+          <description>Able to stand for &gt;10 s in natural position only with intermittent support</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>Able to stand &gt;10 s in natural position only with constant support of one arm</meaningText>
+          <description>Able to stand &gt;10 s in natural position only with constant support of one arm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>Unable to stand for &gt;10 s even with constant support of one arm</meaningText>
+          <description>Unable to stand for &gt;10 s even with constant support of one arm</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Proband is asked to sit on an examination bed without support of feet, eyes open and arms outstretched to the front. Score _____________ (ataxia_proband_sitting)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Normal, no difficulties sitting &gt;10 sec</meaningText>
+          <description>Normal, no difficulties sitting &gt;10 sec</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight difficulties, intermittent sway</meaningText>
+          <description>Slight difficulties, intermittent sway</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Constant sway, but able to sit &gt; 10 s without support</meaningText>
+          <description>Constant sway, but able to sit &gt; 10 s without support</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Able to sit for &gt; 10 s only with intermittent support</meaningText>
+          <description>Able to sit for &gt; 10 s only with intermittent support</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Unable to sit for &gt;10 s without continuous support</meaningText>
+          <description>Unable to sit for &gt;10 s without continuous support</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Speech is assessed during normal conversation. (ataxia_speech_disturbance)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=6</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Normal</meaningText>
+          <description>Normal</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Suggestion of speech disturbance</meaningText>
+          <description>Suggestion of speech disturbance</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Impaired speech, but easy to understand</meaningText>
+          <description>Impaired speech, but easy to understand</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Occasional words difficult to understand</meaningText>
+          <description>Occasional words difficult to understand</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Many words difficult to understand</meaningText>
+          <description>Many words difficult to understand</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>Only single words understandable</meaningText>
+          <description>Only single words understandable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>Speech unintelligible / anarthria</meaningText>
+          <description>Speech unintelligible / anarthria</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Rated separately for each side  Proband sits comfortably. If necessary, support of feet and trunk is allowed. Examiner sits in front of proband and performs 5 consecutive sudden and fast pointing  movements in unpredictable directions in a frontal plane, at about 50 % of proband's reach. Movements have an amplitude of 30 cm and a frequency of 1 movement  every 2 s. Proband is asked to follow the movements with his index finger, as fast and precisely as possible. Average performance of last 3 movements is rated.  Score Right ___________ (ataxia_finger_chase_right_side)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No dysmetria</meaningText>
+          <description>No dysmetria</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Dysmetria, under/overshooting target &lt; 5 cm</meaningText>
+          <description>Dysmetria, under/overshooting target &lt; 5 cm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Dysmetria, under/overshooting target &lt; 15 cm</meaningText>
+          <description>Dysmetria, under/overshooting target &lt; 15 cm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Dysmetria, under/overshooting target &gt; 15 cm</meaningText>
+          <description>Dysmetria, under/overshooting target &gt; 15 cm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Unable to perform 5 pointing movements</meaningText>
+          <description>Unable to perform 5 pointing movements</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Rated separately for each side  Proband sits comfortably. If necessary, support of feet and trunk is allowed. Examiner sits in front of proband and performs 5 consecutive sudden and fast pointing  movements in unpredictable directions in a frontal plane, at about 50 % of proband's reach. Movements have an amplitude of 30 cm and a frequency of 1 movement  every 2 s. Proband is asked to follow the movements with his index finger, as fast and precisely as possible. Average performance of last 3 movements is rated.  Score Left: ____________ (ataxia_finger_chase_left_side)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No dysmetria</meaningText>
+          <description>No dysmetria</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Dysmetria, under/overshooting target &lt; 5 cm</meaningText>
+          <description>Dysmetria, under/overshooting target &lt; 5 cm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Dysmetria, under/overshooting target &lt; 15 cm</meaningText>
+          <description>Dysmetria, under/overshooting target &lt; 15 cm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Dysmetria, under/overshooting target &gt; 15 cm</meaningText>
+          <description>Dysmetria, under/overshooting target &gt; 15 cm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Unable to perform 5 pointing movements</meaningText>
+          <description>Unable to perform 5 pointing movements</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Mean of both sides (R+L)/2:______________ (ataxia_finger_chase_mean_both_sides)</questionText>
+        <instruction>
+         <text>Calc: ([ataxia_finger_chase_right_side]+[ataxia_finger_chase_left_side])/2</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Rated separately for each side  Proband sits comfortably. If necessary, support of feet and trunk is allowed. Proband is asked to point repeatedly with his index finger from his nose to examiner's finger which is in front of the proband at about 90 % of proband's reach. Movements are performed at moderate speed. Average performance of movements is rated according to the amplitude of the kinetic tremor. Score Right: ______________ (ataxia_nose_finger_right_side)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No tremor</meaningText>
+          <description>No tremor</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Tremor with an amplitude &lt; 2 cm</meaningText>
+          <description>Tremor with an amplitude &lt; 2 cm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Tremor with an amplitude &lt; 5 cm</meaningText>
+          <description>Tremor with an amplitude &lt; 5 cm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Tremor with an amplitude &gt; 5 cm</meaningText>
+          <description>Tremor with an amplitude &gt; 5 cm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Unable to perform 5 pointing movements</meaningText>
+          <description>Unable to perform 5 pointing movements</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Rated separately for each side  Proband sits comfortably. If necessary, support of feet and trunk is allowed. Proband is asked to point repeatedly with his index finger from his nose to examiner's finger which is in front of the proband at about 90 % of proband's reach. Movements are performed at moderate speed. Average performance of movements is rated according to the amplitude of the kinetic tremor.  Score Left: _______________ (ataxia_nose_finger_left_side)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No tremor</meaningText>
+          <description>No tremor</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Tremor with an amplitude &lt; 2 cm</meaningText>
+          <description>Tremor with an amplitude &lt; 2 cm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Tremor with an amplitude &lt; 5 cm</meaningText>
+          <description>Tremor with an amplitude &lt; 5 cm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Tremor with an amplitude &gt; 5 cm</meaningText>
+          <description>Tremor with an amplitude &gt; 5 cm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Unable to perform 5 pointing movements</meaningText>
+          <description>Unable to perform 5 pointing movements</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Mean of both sides (R+L)/2:______________ (ataxia_nose_finger_mean_both_sides)</questionText>
+        <instruction>
+         <text>Calc: ([ataxia_nose_finger_right_side]+[ataxia_nose_finger_left_side])/2</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Rated separately for each side  roband sits comfortably. If necessary, support of feet and trunk is allowed. Proband is asked to perform 10 cycles of repetitive alternation of pro and supinations of  possible. Movement is demonstrated by examiner at a speed of approx. 10 cycles within 7 s. Exact times for movement execution have to be taken.  Score Right: ___________ (ataxia_fast_alternating_hand_movement_right)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Normal, no irregularities (performs &lt;10 s)</meaningText>
+          <description>Normal, no irregularities (performs &lt;10 s)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slightly irregular (performs &lt;10s)</meaningText>
+          <description>Slightly irregular (performs &lt;10s)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Clearly irregular, single movements difficult to distinguish or relevant interruptions, but performs &lt;10s</meaningText>
+          <description>Clearly irregular, single movements difficult to distinguish or relevant interruptions, but performs &lt;10s</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Very irregular, single movements difficult to distinguish or relevant interruptions,  performs &gt;10s</meaningText>
+          <description>Very irregular, single movements difficult to distinguish or relevant interruptions,  performs &gt;10s</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Unable to complete 10 cycles</meaningText>
+          <description>Unable to complete 10 cycles</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Rated separately for each side  roband sits comfortably. If necessary, support of feet and trunk is allowed. Proband is asked to perform 10 cycles of repetitive alternation of pro and supinations of  possible. Movement is demonstrated by examiner at a speed of approx. 10 cycles within 7 s. Exact times for movement execution have to be taken.  Score Left: ___________ (ataxia_fast_alternating_hand_movement_left)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Normal, no irregularities (performs &lt;10 s)</meaningText>
+          <description>Normal, no irregularities (performs &lt;10 s)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slightly irregular (performs &lt;10s)</meaningText>
+          <description>Slightly irregular (performs &lt;10s)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Clearly irregular, single movements difficult to distinguish or relevant interruptions, but performs &lt;10s</meaningText>
+          <description>Clearly irregular, single movements difficult to distinguish or relevant interruptions, but performs &lt;10s</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Very irregular, single movements difficult to distinguish or relevant interruptions,  performs &gt;10s</meaningText>
+          <description>Very irregular, single movements difficult to distinguish or relevant interruptions,  performs &gt;10s</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Unable to complete 10 cycles</meaningText>
+          <description>Unable to complete 10 cycles</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Mean of both sides (R+L)/2:______________ (ataxia_fast_alternating_handmovement_mean)</questionText>
+        <instruction>
+         <text>Calc: ([ataxia_fast_alternating_hand_movement_left]+[ataxia_fast_alternating_hand_movement_right])/2</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Rated separately for each side  roband lies on examination bed, without sight of his legs. Proband is asked to lift one leg, point with the heel to the opposite knee, slide down along the shin to the ankle, and lay the leg back on the examination bed. The task is performed 3 times. Slidedown movements should be performed within 1 s. If proband slides down without contact to shin in all three trials, rate 'Unable to perform the task'.  Score Right:_____________ (ataxia_heel_shin_slide_right)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Normal</meaningText>
+          <description>Normal</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slightly abnormal, contact to shin maintained</meaningText>
+          <description>Slightly abnormal, contact to shin maintained</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Clearly abnormal, goes off shin up to 3 times during 3 cycles</meaningText>
+          <description>Clearly abnormal, goes off shin up to 3 times during 3 cycles</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Severely abnormal, goes off shin 4 or more times during 3 cycles</meaningText>
+          <description>Severely abnormal, goes off shin 4 or more times during 3 cycles</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Unable to perform the task</meaningText>
+          <description>Unable to perform the task</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Rated separately for each side  roband lies on examination bed, without sight of his legs. Proband is asked to lift one leg, point with the heel to the opposite knee, slide down along the shin to the ankle, and lay the leg back on the examination bed. The task is performed 3 times. Slidedown movements should be performed within 1 s. If proband slides down without contact to shin in all three trials, rate 'Unable to perform the task'.  Score Left:_____________ (ataxia_heel_shin_slide_left)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Normal</meaningText>
+          <description>Normal</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly abnormal, contact to shin maintained</meaningText>
+          <description>Slightly abnormal, contact to shin maintained</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Clearly abnormal, goes off shin up to 3 times during 3 cycles</meaningText>
+          <description>Clearly abnormal, goes off shin up to 3 times during 3 cycles</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Severely abnormal, goes off shin 4 or more times during 3 cycles</meaningText>
+          <description>Severely abnormal, goes off shin 4 or more times during 3 cycles</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Unable to perform the task</meaningText>
+          <description>Unable to perform the task</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Mean of both sides (R+L)/2:______________ (ataxia_heel_shin_slide_mean)</questionText>
+        <instruction>
+         <text>Calc: ([ataxia_heel_shin_slide_right]+[ataxia_heel_shin_slide_left])/2</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>[Calculated score]  Mean values from each one of the eight items are summed to obtain the total score.  The total scores range from 0 (no ataxia) to 40 (severe ataxia). (ataxia_total_score2_752)</questionText>
+        <instruction>
+         <text>Calc: [ataxia_proband_gait]+[ataxia_proband_stance]+[ataxia_speech_disturbance]+[ataxia_proband_sitting]+[ataxia_finger_chase_mean_both_sides]+[ataxia_nose_finger_mean_both_sides]+[ataxia_fast_alternating_handmovement_mean]+[ataxia_heel_shin_slide_mean]</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX220101</protocolID>
+     <longName>Ataxia Rating Scale</longName>
+     <context>PhenX</context>
+     <shortName>PX220101</shortName>
+     <preferredDefinition>The Scale for the Assessment and Rating of Ataxia (SARA) is a clinical scale used to assess cerebellar ataxia. The scale includes 8 items that are related to gait, stance, sitting, speech, finger-chase test, nose-finger test, fast alternating movements and heel-shin test. A trained physician observes the participant perform these physical function tests and gives each one a value from the scale.</preferredDefinition>
+    </protocol>
+   </form>    
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-19T12:07:04</dateCreated>
+    <longName>PhenX PX020203 -  Proxyreported Birth Weight</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Proxy-reported birth weight</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-19T12:07:04</dateCreated>
+      <longName>Proxyreported Birth Weight</longName>
+      <instruction/>
+      <preferredDefinition>Proxyreported Birth Weight</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>How much did participant weigh at birth? ENTER WEIGHT IN GRAMS OR POUNDS AND OUNCES (proxy_birthwt_gram)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Grams</meaningText>
+          <description>Grams</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Pounds and ounces</meaningText>
+          <description>Pounds and ounces</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>How much did {you/[participant]} weigh at birth in grams? (proxy_report_birthwt_g)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=1;maxLength=4000;[proxy_birthwt_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>How much did {you/[participant]} weigh at birth in pounds? (proxy_reported_birthweight_pounds)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=1;maxLength=20;[proxy_birthwt_gram] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>How much did {you/[participant]} weigh at birth in ounces? (proxy_reported_birthweight_ounces)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=15;[proxy_birthwt_gram] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Did {you/[participant]} weigh ...? (proxy_reported_birthweight_2500g)</questionText>
+        <instruction>
+         <text>[proxy_birthwt_gram] = '3'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>More than 5 1/2 pounds (2500 g)</meaningText>
+          <description>More than 5 1/2 pounds (2500 g)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Less than 5 1/2 pounds (2500 g)</meaningText>
+          <description>Less than 5 1/2 pounds (2500 g)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Did {you/[participant]} weigh ...? (proxy_reported_birthweight_4100g)</questionText>
+        <instruction>
+         <text>[proxy_birthwt_gram] = '3'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>More than 9 pounds (4100 g)</meaningText>
+          <description>More than 9 pounds (4100 g)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Less than 9 pounds (4100 g)</meaningText>
+          <description>Less than 9 pounds (4100 g)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX020203</protocolID>
+     <longName>Birth Weight - Proxy Reported Birth Weight</longName>
+     <context>PhenX</context>
+     <shortName>PX020203</shortName>
+     <preferredDefinition>Proxy-reported birth weight</preferredDefinition>
+    </protocol>
+   </form>
+      <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-19T12:07:04</dateCreated>
+    <longName>PhenX PX020201 -  Birth Weight Abstracted From Medical Records</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Birth weight abstracted from medical charts or perinatal databases or as reported in vital records</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-19T12:07:04</dateCreated>
+      <longName>Birth Weight Abstracted From Medical Records</longName>
+      <instruction/>
+      <preferredDefinition>Birth Weight Abstracted From Medical Records</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Weight in gram (weight_in_gram)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Newborn birth weight abstracted from the medical record/vital record, in gram (medical_record_birthwt_g)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=1;maxLength=10000;[weight_in_gram] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Newborn birth weight abstracted from the medical record/vital record, in pound (medical_record_birthwt_lb)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=20;[weight_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Newborn birth weight abstracted from the medical record/vital record, in ounce (medical_record_birthwt_oz)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0.1;maxLength=128;[weight_in_gram] = '0'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX020201</protocolID>
+     <longName>Birth Weight - Birth Weight Abstracted from Medical Records</longName>
+     <context>PhenX</context>
+     <shortName>PX020201</shortName>
+     <preferredDefinition>Birth weight abstracted from medical charts or perinatal databases or as reported in vital records</preferredDefinition>
+    </protocol>
+   </form>
+   
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-19T12:07:04</dateCreated>
+    <longName>PhenX PX020302 -  Body Composition Body Composition By Dualenergy X</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Dual-energy X-ray absorptiometry (DXA) is one of the most widely used methods to assess body composition in a laboratory environment. A densitometer scanner device is used to scan the entire body or specific body sites such as the hip, spine, and limbs. DXA uses X-ray energy to measure body fat, muscle, and bone mineral and as a result, a small amount of radiation is delivered to the body during the DXA scan procedure. The results from a whole body DXA scan can be used to estimate total mass (gm), bone mineral content (BMC) (gm), bone area (cm2), bone mineral density, fat mass, lean mass excluding BMC (gm), lean mass including BMC (gm), and percent body fat (%). These measures can also be subdivided from the whole body to regional measures of the arms, legs, trunk, android, gynoid, and head. Furthermore, special algorithms have been created to estimate visceral and subcutaneous adipose tissue. Source: Centers for Disease Control and Prevention, National Center for Health Statistics, National Health and Nutrition Examination Survey (NHANES 2001-2002) DXA file documentation. URL: [link[www.cdc.gov/nchs/data/nhanes/dxa/dxx_b.pdf|http://www.cdc.gov/nchs/data/nhanes/dxa/dxx_b.pdf]] (accessed January 22, 2009).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>A downloadable PDF of the full National Health and Nutrition Examination Survey (NHANES) Body Composition Procedures Manual is available at: http://www.cdc.gov/nchs/data/nhanes/nhanes_11_12/Body_Composition_Procedures_Manual.pdf The following ..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-19T12:07:04</dateCreated>
+      <longName>Body Composition Body Composition By Dualenergy X</longName>
+      <instruction/>
+      <preferredDefinition>Body Composition Body Composition By Dualenergy X</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>A downloadable PDF of the full National Health and Nutrition Examination Survey (NHANES) Body Composition Procedures Manual is available at: http://www.cdc.gov/nchs/data/nhanes/nhanes_11_12/Body_Composition_Procedures_Manual.pdf The following is a summary version of the full NHANES protocol. There are several overarching, critical issues for high-quality data collection of anthropometric measures which optimize the data in gene-environment etiologic research. These issues include: (1) the need for training (and retraining) of study staff in anthropometric data collection; (2) duplicate collection of measurements, especially under field conditions; (3) use of more than one person for proper collection of measurements where required; (4) accurate recording of the protocols and the measurement units of data collection; and (5) use of required and properly calibrated equipment. NOTE: Dual-energy X-ray absorptiometry (DXA) measurement is not complex, but does require costly hardware, specialized software to analyze the DXA scans, rigorous quality control, certified examiners, and continuous equipment calibration and monitoring. Although excerpts of the National Health and Nutrition Examination Survey (NHANES) protocol are provided for informational purposes, investigators should review all facets of the protocol prior to undertaking DXA examinations in a study. A detailed description of the NHANES protocol is available from the Centers for Disease Control and Prevention (CDC) website. The following excerpts from the NHANES 1999-2006 protocols refer to a specific make and model DXA scanner. Several brands of DXA scanners are available and manufacturer-specific software, calibration, and quality control practices should be followed. DXA Equipment: Several DXA densitometer devices are marketed commercially. The Hologic™ 4500A fan beam X-ray bone densitometer was used in NHANES 1999-2009 protocol. In 2011, the NHANES systems were replaced with the D..TRUNCATED(info_20302)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Did the subject report or did urine pregnancy tests indicate the the subject is pregnant? (bodycomposition_dxa_pregnancy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Which DXA system is being used for this procedure? (bodycomposition_dxa_system)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Hologic Horizon</meaningText>
+          <description>Hologic Horizon</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>GE_Lunar iDXA</meaningText>
+          <description>GE_Lunar iDXA</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>other</meaningText>
+          <description>other</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Does the subject weight less than 450 lb? (bodycomposition_dxa_weight450)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Does the subject weight more than 300 lb? (bodycomposition_dxa_weight300)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Is the subject taller than 6'5?" (bodycomposition_dxa_height65)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Have the study staff undergone any training or retraining in anthropometric data collection? (bodycomposition_dxa_staff_training)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Will duplicate measurements be taken? (bodycomposition_dxa_duplicate_measurements)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Is the team adequately staffed so that more than one person is available for proper collection of measurements where required? (bodycomposition_dxa_adequate_staffing)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Has the staff been properly trained to acquire an accurate recording of the protocols and measurements units of data collection? (bodycomposition_dxa_quality_training)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Has the staff been properly trained in the use of and have access to required and properly calibrated equipment? (bodycomposition_dxa_calibration_training)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Has the staff checked whether the patient is wearing metallic items such as jewelry or eyeglasses, has implanted medical devices such as a pacemaker or artificial joint, or has undergone certain types of medical tests that might affect the scan results? (bodycomposition_dxa_subject_prohibited_items)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Does the subject have any amputations other than fingers and toes? (bodycomposition_dxa_amputations)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Are there quality assurance and quality control measures in place, such as those described in the NHANES DXA Procedures Manual? (bodycomposition_dxa_quality_assurance_andcontrol)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>What is the subject's height? (bodycomposition_dxa_wholebody_height)</questionText>
+        <instruction>
+         <text>UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>What is the subject's weight? (bodycomposition_dxa_wholebody_weight)</questionText>
+        <instruction>
+         <text>UOM=pounds</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>What is the subject's gender? (bodycomposition_dxa_wholebody_gender)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Male</meaningText>
+          <description>Male</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Female</meaningText>
+          <description>Female</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>What is the subject's ethnicity? (bodycomposition_dxa_wholebody_ethnicity)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Is the subject's body being correctly position for the whole body scans as recommended by the International Society for Clinical Densitometry? (bodycomposition_dxa_wholebody_correct_poisitioning)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Has the subject been instructed to not speak or move during the whole body examination? (bodycomposition_dxa_conductingscan_patient_instructions)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Does the DXA image appear, similar to a whole body Xray with bones and soft tissue clearly visible, without any distortion from movement, and with the whole body in the field? (bodycomposition_dxa_conductingscan_image_quality)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>If not, was the scan repeated (up to 3x)? (bodycomposition_dxa_conductingscan_repeat_scan)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Is the subject too wide for the table so that his/her hands cannot be positioned flat by their side? (bodycomposition_dxa_ensuringquality_patient_width)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-04-19T12:07:04</dateCreated>
+        <questionText>Was a radiolucent pillow used to support the subject's head? (bodycomposition_dxa_ensuringquality_pillow)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX020302</protocolID>
+     <longName>Body Composition - Body Composition by Dual-Energy X-Ray Absorptiometry</longName>
+     <context>PhenX</context>
+     <shortName>PX020302</shortName>
+     <preferredDefinition>Dual-energy X-ray absorptiometry (DXA) is one of the most widely used methods to assess body composition in a laboratory environment. A densitometer scanner device is used to scan the entire body or specific body sites such as the hip, spine, and limbs. DXA uses X-ray energy to measure body fat, muscle, and bone mineral and as a result, a small amount of radiation is delivered to the body during the DXA scan procedure. The results from a whole body DXA scan can be used to estimate total mass (gm), bone mineral content (BMC) (gm), bone area (cm&lt;sup&gt;2&lt;/sup&gt;), bone mineral density, fat mass, lean mass excluding BMC (gm), lean mass including BMC (gm), and percent body fat (%). These measures can also be subdivided from the whole body to regional measures of the arms, legs, trunk, android, gynoid, and head. Furthermore, special algorithms have been created to estimate visceral and subcutaneous adipose tissue. Source: Centers for Disease Control and Prevention, National Center for Health Statistics, National Health and Nutrition Examination Survey (NHANES 2001-2002) DXA file documentation. URL: [link[www.cdc.gov/nchs/data/nhanes/dxa/dxx_b.pdf|http://www.cdc.gov/nchs/data/nhanes/dxa/dxx_b.pdf]] (accessed January 22, 2009).</preferredDefinition>
+    </protocol>
+   </form>
+   </forms>
