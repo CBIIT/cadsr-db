@@ -1,0 +1,1555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 6</collectionName>
+  <collectionDescription>Load PhenX PX021302,PX021303,PX021401,PX021501,PX021502,PX021602</collectionDescription>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-24T23:08:32</dateCreated>
+    <longName>PhenX PX021302 -  Total Pregnancy Weight Gain Abstracted From Prenatal C</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>There are several research contexts in which this information could be collected, and how the information is collected will vary depending on the context and availability of related information. Weight gain during pregnancy is commonly monitored as a part of prenatal care. Total weight gain is calculated at the end of pregnancy (typically the last prenatal visit before delivery, and usually within 1 week of delivery) based on information abstracted from prenatal charts.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Total Weight Gain Abstracted from Prenatal ChartsMost obstetric practices and prenatal clinics use a standardized form to chart prenatal course. The American Congress of Obstetricians and Gynecologists (ACOG, formerly the American College of O..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-24T23:08:32</dateCreated>
+      <longName>Total Pregnancy Weight Gain Abstracted From Prenatal C</longName>
+      <instruction/>
+      <preferredDefinition>Total Pregnancy Weight Gain Abstracted From Prenatal C</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's weight at final prenatal visit to the nearest 100g? (totalweight_prenatalcharts_weight_first_visit)</questionText>
+        <instruction>
+         <text>UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the date of the final visit? (totalweight_prenatalcharts_date_final_visit)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's gestational age at final visit? (totalweight_prenatalcharts_gestational_age_finalvisit)</questionText>
+        <instruction>
+         <text>UOM=weeks</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's gestational age at delivery? (totalweight_prenatalcharts_gestational_age_delivery)</questionText>
+        <instruction>
+         <text>UOM=weeks</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's prepregnancy weight? (totalweight_prenatalcharts_prepregnancy_weight)</questionText>
+        <instruction>
+         <text>UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's height? (totalweight_prenatalcharts_patient_height)</questionText>
+        <instruction>
+         <text>UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX021302</protocolID>
+     <longName>Total Pregnancy Weight Gain - Abstracted From Prenatal Charts</longName>
+     <context>PhenX</context>
+     <shortName>PX021302</shortName>
+     <preferredDefinition>There are several research contexts in which this information could be collected, and how the information is collected will vary depending on the context and availability of related information. Weight gain during pregnancy is commonly monitored as a part of prenatal care. Total weight gain is calculated at the end of pregnancy (typically the last prenatal visit before delivery, and usually within 1 week of delivery) based on information abstracted from prenatal charts.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-24T23:08:32</dateCreated>
+    <longName>PhenX PX021401 -  Weight Loss Gain</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The protocol contains a question about the participant's weight 1 year ago.**NOTE: This period can be modified for different periods. Depending on your hypothesis, you may want to modify the time interval as appropriate (e.g., 3 months, 6 months, 1 year).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-24T23:08:32</dateCreated>
+      <longName>Weight Loss Gain</longName>
+      <instruction/>
+      <preferredDefinition>Weight Loss Gain</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>ENTER WEIGHT IN POUNDS OR KILOGRAMS (wt_in_pounds)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>POUNDS</meaningText>
+          <description>POUNDS</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>KILOGRAMS</meaningText>
+          <description>KILOGRAMS</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>How much did {you/[participant]} weigh a year ago? (weight_1year_ago_kgs)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=23;maxLength=338;[wt_in_pounds] = '2'; UOM=Kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>How much did {you/[participant]} weigh a year ago? (weight_1year_ago_lbs)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=50;maxLength=750;[wt_in_pounds] = '1'; UOM=Pounds</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>How much did {you/[participant]} weigh a year ago? (weight_1year_ago_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>777</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>[If {you were/she was} pregnant a year ago, how much did {you/she} weigh before your pregnancy?] (weight_before_pregnancy_kgs)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=23;maxLength=338;[wt_in_pounds] = '2'; UOM=Kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>[If {you were/she was} pregnant a year ago, how much did {you/she} weigh before your pregnancy?] (weight_before_pregnancy_lbs)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=50;maxLength=750;[wt_in_pounds] = '1'; UOM=Pounds</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>[If {you were/she was} pregnant a year ago, how much did {you/she} weigh before your pregnancy?] (wt_before_pregnancy_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>777</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>When the question is being asked of a proxy respondent, insert the participant's name here (wt_bef_pregn_proxy_name)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX021401</protocolID>
+     <longName>Weight Loss/Gain</longName>
+     <context>PhenX</context>
+     <shortName>PX021401</shortName>
+     <preferredDefinition>The protocol contains a question about the participant's weight 1 year ago.**NOTE: This period can be modified for different periods. Depending on your hypothesis, you may want to modify the time interval as appropriate (e.g., 3 months, 6 months, 1 year).</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-24T23:08:32</dateCreated>
+    <longName>PhenX PX021501 -  Measured Weight</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Weight is measured using a digital floor scale. The instrument should be calibrated daily using standardized weights, and a log of calibration results should be maintained.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Note: Detailed videos illustrating the procedure can be found on the National Health and Nutrition Examination Survey (NHANES) website. A digital scale or beam balance is used to weigh participants. Participants are asked to wear an examinatio..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-24T23:08:32</dateCreated>
+      <longName>Measured Weight</longName>
+      <instruction/>
+      <preferredDefinition>Measured Weight</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>measured weight units (measured_weight_units)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Kilograms</meaningText>
+          <description>Kilograms</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Pounds</meaningText>
+          <description>Pounds</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>If the participant wore street clothes instead of the examination gown, make a note of this in the record. It is acceptable for infants to wear diapers or underpants and a tshirt.Participants should not be weighed if they are wearing shoes.Note that special consideration may be needed for participants whose weight exceeds the capacity of the study scale. For example, weight can be obtained using two portable scales:Have the participant stand with one foot on each portable scale.Combine the two results to approximate the weight.Record the weight.If the weight equals the capacity of both portable scales, note that the weight Equals Capacity (EC) of the scales. (measured_weight_1_kilograms)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;[measured_weight_units] = '1'; UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured Weight 2 (measured_weight_2_kilograms)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;[measured_weight_units] = '1'; UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured Weight 3 (measured_weight_3_kilograms)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;[measured_weight_units] = '1'; UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measure Weight Average (measured_weight_average_kilograms)</questionText>
+        <instruction>
+         <text>Calc: [measured_weight_units] = '1';mean([measured_weight_1_kilograms],[measured_weight_2_kilograms],[measured_weight_3_kilograms]); UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured Weight 1 (measured_weight_1_lbs)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;[measured_weight_units] = '2'; UOM=pounds</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured Weight 2 (measured_weight_2_lbs)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;[measured_weight_units] = '2'; UOM=pounds</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured Weight 3 (measured_weight_3_lbs)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;[measured_weight_units] = '2'; UOM=pounds</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measure Weight Average (measured_weight_average_lbs)</questionText>
+        <instruction>
+         <text>Calc: [measured_weight_units] = '2';mean([measured_weight_1_lbs],[measured_weight_2_lbs],[measured_weight_3_lbs]); UOM=pounds</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Cast or Medical Prosthesis (cast_or_medical_prosthesis)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Cast or Medical Prosthesis Location (cast_or_medical_prosthesis_location)</questionText>
+        <instruction>
+         <text>[cast_or_medical_prosthesis] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Street Clothes (street_clothes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX021501</protocolID>
+     <longName>Weight - Measured Weight</longName>
+     <context>PhenX</context>
+     <shortName>PX021501</shortName>
+     <preferredDefinition>Weight is measured using a digital floor scale. The instrument should be calibrated daily using standardized weights, and a log of calibration results should be maintained.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-24T23:08:32</dateCreated>
+    <longName>PhenX PX021502 -  Selfreported Weight</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The respondent provides his/her self-reported weight.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-24T23:08:32</dateCreated>
+      <longName>Selfreported Weight</longName>
+      <instruction/>
+      <preferredDefinition>Selfreported Weight</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Weight Units (self_reported_weight_units)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Kilograms</meaningText>
+          <description>Kilograms</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Pounds</meaningText>
+          <description>Pounds</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>How much {do you/does the participant} weigh without clothes or shoes?[If {you are/she is} currently pregnant, how much did {you/she} weigh before your pregnancy?] (self_reported_weight_kgs)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;[self_reported_weight_units] = '1'; UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>How much {do you/does the participant} weigh without clothes or shoes?[If {you are/she is} currently pregnant, how much did {you/she} weigh before your pregnancy?] (self_reported_weight_lbs)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;[self_reported_weight_units] = '2'; UOM=pounds</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX021502</protocolID>
+     <longName>Weight - Self-Reported Weight</longName>
+     <context>PhenX</context>
+     <shortName>PX021502</shortName>
+     <preferredDefinition>The respondent provides his/her self-reported weight.</preferredDefinition>
+    </protocol>
+   </form>
+      <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-24T23:08:32</dateCreated>
+    <longName>PhenX PX021303 -  Total Pregnancy Weight Gain Weight Measured During Ges</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>There are several research contexts in which this information could be collected, and how the information is collected will vary depending on the context and availability of related information. Weight gain during pregnancy is commonly monitored as a part of prenatal care. Total weight gain is calculated at the end of pregnancy using a self-reported pre-pregnancy weight and weight measured at the last prenatal visit before delivery (usually within 1 week of delivery). The information to be collected would be (1) weight measured at final prenatal visit (to the nearest 100 g, e.g., 59.1 kg); (2) date of final visit; (3) pre-pregnancy weight; (4) height; (5) gestational age at final visit; and (6) gestational age at delivery. If the opportunity exists to collect the gestational weight prospectively as part of the research protocol, this is preferred because weights taken using a research protocol are better standardized for amount of participant clothing and scales are regularly calibrated. See [link[www.phenxtoolkit.org/index.php?pageLink=browse.protocoldetails id=21501|Measured Weight]] protocol regarding the measurement of weight, and record weight to the nearest 100 g. Data to be collected are (1) weight during pregnancy; (2) date on which the weight is taken; (3) gestational age when measurement taken; (4) pre-pregnancy weight; (5) height; and (6) gestational age at delivery.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-24T23:08:32</dateCreated>
+      <longName>Total Pregnancy Weight Gain Weight Measured During Ges</longName>
+      <instruction/>
+      <preferredDefinition>Total Pregnancy Weight Gain Weight Measured During Ges</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the date of initial examination? (totalweight_duringgestation_initialexamination_date)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's gestational age at initial examination? (totalweight_duringgestation_initialexamination_gestational_age)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=weeks</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's prepregnancy weight to the nearest 100g? (totalweight_duringgestation_initialexamination_weight)</questionText>
+        <instruction>
+         <text>UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's height? (totalweight_duringgestation_initialexamination_height)</questionText>
+        <instruction>
+         <text>UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is today's date of examination? (totalweight_duringgestation_date_visit_1)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current gestational age? (totalweight_duringgestation_gestationalage_visit_1)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=weeks</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current weight to the nearest 100g? (totalweight_duringgestation_weight_visit_1)</questionText>
+        <instruction>
+         <text>UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current height? (totalweight_duringgestation_height_visit_1)</questionText>
+        <instruction>
+         <text>UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is today's date of examination? (totalweight_duringgestation_date_visit_2)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current gestational age? (totalweight_duringgestation_gestationalage_visit_2)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=weeks</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current weight to the nearest 100g? (totalweight_duringgestation_weight_visit_2)</questionText>
+        <instruction>
+         <text>UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current height? (totalweight_duringgestation_height_visit_2)</questionText>
+        <instruction>
+         <text>UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is today's date of examination? (totalweight_duringgestation_date_visit_3)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current gestational age? (totalweight_duringgestation_gestationalage_visit_3)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=weeks</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current weight to the nearest 100g? (totalweight_duringgestation_weight_visit_3)</questionText>
+        <instruction>
+         <text>UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current height? (totalweight_duringgestation_height_visit_3)</questionText>
+        <instruction>
+         <text>UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is today's date of examination? (totalweight_duringgestation_date_visit_4)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current gestational age? (totalweight_duringgestation_gestationalage_visit_4)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=weeks</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current weight to the nearest 100g? (totalweight_duringgestation_weight_visit_4)</questionText>
+        <instruction>
+         <text>UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current height? (totalweight_duringgestation_height_visit_4)</questionText>
+        <instruction>
+         <text>UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is today's date of examination? (totalweight_duringgestation_date_visit_5)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current gestational age? (totalweight_duringgestation_gestationalage_visit_5)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=weeks</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current weight to the nearest 100g? (totalweight_duringgestation_weight_visit_5)</questionText>
+        <instruction>
+         <text>UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current height? (totalweight_duringgestation_height_visit_5)</questionText>
+        <instruction>
+         <text>UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is today's date of examination? (totalweight_duringgestation_date_visit_6)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current gestational age? (totalweight_duringgestation_gestationalage_visit_6)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=weeks</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current weight to the nearest 100g? (totalweight_duringgestation_weight_visit_6)</questionText>
+        <instruction>
+         <text>UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current height? (totalweight_duringgestation_height_visit_6)</questionText>
+        <instruction>
+         <text>UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is today's date of examination? (totalweight_duringgestation_date_visit_7)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current gestational age? (totalweight_duringgestation_gestationalage_visit_7)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=weeks</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current weight to the nearest 100g? (totalweight_duringgestation_weight_visit_7)</questionText>
+        <instruction>
+         <text>UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current height? (totalweight_duringgestation_height_visit_7)</questionText>
+        <instruction>
+         <text>UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is today's date of examination? (totalweight_duringgestation_date_visit_8)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current gestational age? (totalweight_duringgestation_gestationalage_visit_8)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=weeks</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current weight to the nearest 100g? (totalweight_duringgestation_weight_visit_8)</questionText>
+        <instruction>
+         <text>UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current height? (totalweight_duringgestation_height_visit_8)</questionText>
+        <instruction>
+         <text>UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is today's date of examination? (totalweight_duringgestation_date_visit_9)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current gestational age? (totalweight_duringgestation_gestationalage_visit_9)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=weeks</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current weight to the nearest 100g? (totalweight_duringgestation_weight_visit_9)</questionText>
+        <instruction>
+         <text>UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current height? (totalweight_duringgestation_height_visit_9)</questionText>
+        <instruction>
+         <text>UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is today's date of examination? (totalweight_duringgestation_date_visit_10)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current gestational age? (totalweight_duringgestation_gestationalage_visit_10)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=weeks</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current weight to the nearest 100g? (totalweight_duringgestation_weight_visit_10)</questionText>
+        <instruction>
+         <text>UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>What is the patient's current height? (totalweight_duringgestation_height_visit_10)</questionText>
+        <instruction>
+         <text>UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX021303</protocolID>
+     <longName>Total Pregnancy Weight Gain - Weight Measured During Gestation</longName>
+     <context>PhenX</context>
+     <shortName>PX021303</shortName>
+     <preferredDefinition>There are several research contexts in which this information could be collected, and how the information is collected will vary depending on the context and availability of related information. Weight gain during pregnancy is commonly monitored as a part of prenatal care. Total weight gain is calculated at the end of pregnancy using a self-reported pre-pregnancy weight and weight measured at the last prenatal visit before delivery (usually within 1 week of delivery). The information to be collected would be (1) weight measured at final prenatal visit (to the nearest 100 g, e.g., 59.1 kg); (2) date of final visit; (3) pre-pregnancy weight; (4) height; (5) gestational age at final visit; and (6) gestational age at delivery. If the opportunity exists to collect the gestational weight prospectively as part of the research protocol, this is preferred because weights taken using a research protocol are better standardized for amount of participant clothing and scales are regularly calibrated. See [link[www.phenxtoolkit.org/index.php?pageLink=browse.protocoldetails id=21501|Measured Weight]] protocol regarding the measurement of weight, and record weight to the nearest 100 g. Data to be collected are (1) weight during pregnancy; (2) date on which the weight is taken; (3) gestational age when measurement taken; (4) pre-pregnancy weight; (5) height; and (6) gestational age at delivery.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-24T23:08:32</dateCreated>
+    <longName>PhenX PX021602 -  Waist Circumference Adult Protocol</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Waist circumference is measured at several body sites in the scientific literature. During the National Children's Food Survey, the participant's waist circumference was measured midway between the lowest rib and the iliac crest. This protocol is used most commonly for adults and children in European, Asian, and South American surveys and studies, and for children, several area- or country-specific references are available to define a 90th percentile cutoff, which is the main criterion for metabolic syndrome in children. This is important because there are ethnic-specific cutoffs for central (i.e., abdominal) obesity in adults using waist circumference, and it is presumed that comparable racial/ethnic differences exist for children and adolescents. In both children and adults, and compared with measurements taken using other protocols, measurements taken midway between the lowest rib and the iliac crest tend to be several centimeters smaller than measurements taken over the iliac crest (NHANES protocol). It is more comparable with measurements taken at the level of the umbilicus (Framingham protocol), except when waist circumference is measured at the level of the umbilicus in an obese participant, and the umbilicus has been displaced downward (i.e., pendulous abdomen). This measurement can be used to calculate a waist-to-height ratio (WHtR) because it will accurately estimate the prevalence in the abnormal range (WHtR greater than 0.5). The relationship of this measure with cardiometabolic risk factors is also comparable with waist circumference measures taken at other sites. NOTE: Waist circumference can be measured on pregnant women. However, national reference data do not include pregnant women, and waist circumference has different associations with abdominal and total body fat among those who are not pregnant.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-24T23:08:32</dateCreated>
+      <longName>Waist Circumference Adult Protocol</longName>
+      <instruction/>
+      <preferredDefinition>Waist Circumference Adult Protocol</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Waist circumference measured in centimeter or inch (ad_waist_circ_in_cm)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>centimeter</meaningText>
+          <description>centimeter</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>inch</meaningText>
+          <description>inch</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Exhibit 1. Location of Measurement Landmarks between the Lowest Rib and Iliac Crest (Ilium). (waist_circum_exhibit_1a)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured circumference at the top of the hips measured to the nearest 0.1 centimeter, first measurement. (waist_circumference_iliac_crest_1)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=1000;[ad_waist_circ_in_cm] = '1'; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured circumference at the top of the hips measured to the nearest 0.1 centimeter, second measurement. (waist_circumference_iliac_crest_2)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=1000;[ad_waist_circ_in_cm] = '1'; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured circumference at the top of the hips measured to the nearest 0.1 centimeter, thrid measurement (waist_circumference_iliac_crest_3)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=1000;[ad_waist_circ_in_cm] = '1'; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured circumference at the top of the hips measured to the nearest 0.1 centimeter, average (waist_circumference_iliac_crest_average)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=1000;[ad_waist_circ_in_cm] = '1'; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Waist Circumference  image 2 (waist_circum_exhibit_2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Waist circumference taken at the narrowest part of the torso measured to the nearest 0.1 centimeter, first measurement. (waist_circumference_natural_waist_1)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=1000;[ad_waist_circ_in_cm] = '1'; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Waist circumference taken at the narrowest part of the torso measured to the nearest 0.1 centimeter, second measurement. (waist_circumference_natural_waist_2)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=1000;[ad_waist_circ_in_cm] = '1'; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Waist circumference taken at the narrowest part of the torso measured to the nearest 0.1 centimeter, thrid measurement (waist_circumference_natural_waist_3)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=1000;[ad_waist_circ_in_cm] = '1'; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured circumference at the top of the hips measured to the nearest 0.1 centimeter, average (waist_circumference_natural_waist_average)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=1000;[ad_waist_circ_in_cm] = '1'; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Waist circumference taken at the narrowest part of the torso measured to the nearest 0.1 centimeter, first measurement. (waist_circumference_umbilicus_1)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=1000;[ad_waist_circ_in_cm] = '1'; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Waist circumference taken at the narrowest part of the torso measured to the nearest 0.1 centimeter, second measurement. (waist_circumference_umbilicus_2)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=1000;[ad_waist_circ_in_cm] = '1'; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Waist circumference taken at the narrowest part of the torso measured to the nearest 0.1 centimeter, thrid measurement (waist_circumference_umbilicus_3)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=1000;[ad_waist_circ_in_cm] = '1'; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured circumference taken at the narrowest part of the torso measured to the nearest 0.1 centimeter, average. (waist_circumference_umbilicus_average)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=1000;[ad_waist_circ_in_cm] = '1'; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Waist Circumference  image 3 (waist_circum_exhibit_3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured circumference at the top of the hips measured to the nearest 1/4 inch, first measurement. (ad_wc_iliac_crest_1)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured circumference at the top of the hips measured to the nearest 1/4 inch, second measurement. (ad_wc_iliac_crest_2)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured circumference at the top of the hips measured to the nearest 1/4 inch, third measurement. (ad_wc_iliac_crest_3)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured circumference at the top of the hips measured to the nearest 1/4 inch, average. (ad_wc_iliac_crest_ave)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured distance between the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, first measurement. (ad_d_bottom_ribiliac_crest1)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured distance between the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, second measurement. (ad_d_bottom_ribiliac_crest2)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured distance between the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, third measurement. (ad_d_bottom_ribiliac_crest3)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Measured distance between the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, average. (ad_d_btm_ribiliac_crest_ave)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Midpoint of the length from the bottom of the ribcage to the top of the hips recorded to the nearest 1/4 inch, first measurement. (ad_mpt_btm_ribiliac_crest1)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Midpoint of the length from the bottom of the ribcage to the top of the hips recorded to the nearest 1/4 inch, second measurement. (ad_mpt_btm_ribiliac_crest2)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Midpoint of the length from the bottom of the ribcage to the top of the hips recorded to the nearest 1/4 inch, third measurement. (ad_mpt_btm_ribiliac_crest3)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Midpoint of the length from the bottom of the ribcage to the top of the hips recorded to the nearest 1/4 inch, average. (ad_mpt_btm_ribiliac_crest_ave)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Waist circumference taken at the midpoint from the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, first measurement. (ad_wc_mpt_btm_ribiliac_crest1)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Waist circumference taken at the midpoint from the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, second measurement. (ad_wc_mpt_btm_ribiliac_crest2)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Waist circumference taken at the midpoint from the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, third measurement (ad_wc_mpt_btm_ribiliac_crest3)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Waist circumference taken at the midpoint from the bottom of the ribcage to the top of the hips measured to the nearest 1/4 inch, average. (ad_wc_mpt_btm_ribiliac_crest_av)</questionText>
+        <instruction>
+         <text>[ad_waist_circ_in_cm] = '2'; UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-04-24T23:08:32</dateCreated>
+        <questionText>Obesity Status of Adults  Image (waist_circum_exhibit_4a)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX021602</protocolID>
+     <longName>Waist Circumference - Waist Circumference NCFS</longName>
+     <context>PhenX</context>
+     <shortName>PX021602</shortName>
+     <preferredDefinition>Waist circumference is measured at several body sites in the scientific literature. During the National Children's Food Survey, the participant's waist circumference was measured midway between the lowest rib and the iliac crest. This protocol is used most commonly for adults and children in European, Asian, and South American surveys and studies, and for children, several area- or country-specific references are available to define a 90th percentile cutoff, which is the main criterion for metabolic syndrome in children. This is important because there are ethnic-specific cutoffs for central (i.e., abdominal) obesity in adults using waist circumference, and it is presumed that comparable racial/ethnic differences exist for children and adolescents. In both children and adults, and compared with measurements taken using other protocols, measurements taken midway between the lowest rib and the iliac crest tend to be several centimeters smaller than measurements taken over the iliac crest (NHANES protocol). It is more comparable with measurements taken at the level of the umbilicus (Framingham protocol), except when waist circumference is measured at the level of the umbilicus in an obese participant, and the umbilicus has been displaced downward (i.e., pendulous abdomen). This measurement can be used to calculate a waist-to-height ratio (WHtR) because it will accurately estimate the prevalence in the abnormal range (WHtR greater than 0.5). The relationship of this measure with cardiometabolic risk factors is also comparable with waist circumference measures taken at other sites. NOTE: Waist circumference can be measured on pregnant women. However, national reference data do not include pregnant women, and waist circumference has different associations with abdominal and total body fat among those who are not pregnant.</preferredDefinition>
+    </protocol>
+   </form>   
+   </forms>
