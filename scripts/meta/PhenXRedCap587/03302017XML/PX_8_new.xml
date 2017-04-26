@@ -1,0 +1,4017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 8</collectionName>
+  <collectionDescription>Load PhenX PX031001,PX031101,PX031301,PX040101,PX040201,PX040301,PX040401,PX040501,PX040601,PX040701</collectionDescription>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T11:39:34</dateCreated>
+    <longName>PhenX PX040301 -  Blood Pressure Adult Primary</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>A measure to assess a respondent's systolic and diastolic blood pressure, which is used to determine high blood pressure (hypertension).  Assessment must also include measures for personal history of high blood pressure and a history of medication usage.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T11:39:34</dateCreated>
+      <longName>Blood Pressure Adult Primary</longName>
+      <instruction/>
+      <preferredDefinition>Blood Pressure Adult Primary</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Has a doctor or nurse ever said that you have high blood pressure or hypertension? (ever_have_high_blood_pressure)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>Not Sure</meaningText>
+          <description>Not Sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>At what age were you first told this? (age_have_high_blood_pressure)</questionText>
+        <instruction>
+         <text>datatype=number;[ever_have_high_blood_pressure] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>FOR WOMEN: Was this during pregnancy only? (hbp_during_pregnancy_only)</questionText>
+        <instruction>
+         <text>[ever_have_high_blood_pressure] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Have you ever taken medication for hypertension/high blood pressure? (ever_take_hbp_medication)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes, now</meaningText>
+          <description>Yes, now</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Yes, not now</meaningText>
+          <description>Yes, not now</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>unknown</meaningText>
+          <description>unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>At what age did you begin taking medicine for this? (age_take_hbp_medication)</questionText>
+        <instruction>
+         <text>datatype=number;[ever_take_hbp_medication] = '1' or [ever_take_hbp_medication] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>At what age did you begin taking medicine for this? (age_take_hbp_medication_coded)</questionText>
+        <instruction>
+         <text>[ever_take_hbp_medication] = '1' or [ever_take_hbp_medication] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>99</value>
+          <meaningText>unknown</meaningText>
+          <description>unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Blood pressure measurement, sphygmomanometer name and model. (sphygmomanometer)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Cuff size  image (cardio_003_image002)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Blood pressure measurement, cuff size. (cuff_size)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>S</meaningText>
+          <description>S</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>M</meaningText>
+          <description>M</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>L</meaningText>
+          <description>L</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>XL</meaningText>
+          <description>XL</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Wrapping blood pressure cuff  image (cardio_003_image004)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Locating brachial artery  image (cardio_003_image006)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Securing cuff firmly  image (cardio_003_image008)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>AC adapter plugged in  image (cardio_003_image010)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Turn ON/Off button to on  image (cardio_003_image012)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Set the MODE selector  image (cardio_003_image014)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Set the PSET (inflation level)  image (cardio_003_image016)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Connect the air  image (cardio_003_image018)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Taking measurements  image (cardio_003_image020)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Systolic Pressure measurement 1 (mm Hg). (systolic_blood_pressure_1)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=mm Hg</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Diastolic Pressure measurement 1 (mm Hg). (diastolic_blood_pressure_1)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=mm Hg</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Systolic Pressure measurement 2 (mm Hg). (systolic_blood_pressure_2)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=mm Hg</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Diastolic Pressure measurement 2 (mm Hg). (diastolic_blood_pressure_2)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=mm Hg</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Systolic Pressure measurement 3 (mm Hg). (systolic_blood_pressure_3)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=mm Hg</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Diastolic Pressure measurement 3 (mm Hg). (diastolic_blood_pressure_3)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=mm Hg</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Date of measurement of blood pressure. (blood_pressure_measurement_date)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX040301</protocolID>
+     <longName>Blood Pressure (Adult/Primary)</longName>
+     <context>PhenX</context>
+     <shortName>PX040301</shortName>
+     <preferredDefinition>A measure to assess a respondent's systolic and diastolic blood pressure, which is used to determine high blood pressure (hypertension).  Assessment must also include measures for personal history of high blood pressure and a history of medication usage.</preferredDefinition>
+    </protocol>
+   </form>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T11:39:34</dateCreated>
+    <longName>PhenX PX031001 -  Tobacco Nicotine Dependence</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measurement of respondent's symptoms of cigarette dependence.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T11:39:34</dateCreated>
+      <longName>Tobacco Nicotine Dependence</longName>
+      <instruction/>
+      <preferredDefinition>Tobacco Nicotine Dependence</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>CURRENT SMOKER? (current_smoker)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>CURRENT SMOKER</meaningText>
+          <description>CURRENT SMOKER</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>FORMER SMOKER</meaningText>
+          <description>FORMER SMOKER</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Was there a 6month period when you smoked more than you do now? (current_smoker_more_enum)</questionText>
+        <instruction>
+         <text>[current_smoker] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Current EveryDay or Current SomeDay Smokers  How soon after you wake up do/did you smoke your first cigarette? (current_smoker_1stsmoke_time)</questionText>
+        <instruction>
+         <text>[current_smoker] = '1' and [current_smoker_more_enum] = 'Yes'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Within 5 minutes [3 points]</meaningText>
+          <description>Within 5 minutes [3 points]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>6-30 minutes [2 points]</meaningText>
+          <description>6-30 minutes [2 points]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>31-60 minutes [1 point]</meaningText>
+          <description>31-60 minutes [1 point]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>After 60 minutes [0 points]</meaningText>
+          <description>After 60 minutes [0 points]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Current EveryDay or Current SomeDay Smokers  Do/Did you find it difficult to refrain from smoking in places where it is forbidden, e.g., in church, at the library, in a cinema, etc.? (current_smoker_refraining_difficulty)</questionText>
+        <instruction>
+         <text>[current_smoker] = '1' and [current_smoker_more_enum] = 'Yes'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes [1 point]</meaningText>
+          <description>Yes [1 point]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [0 points]</meaningText>
+          <description>No [0 points]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Current EveryDay or Current SomeDay Smokers  Which cigarette would you hate most to give up? (current_smoker_1stsmoke_givingup)</questionText>
+        <instruction>
+         <text>[current_smoker] = '1' and [current_smoker_more_enum] = 'Yes'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>The first one in the morning [1 point]</meaningText>
+          <description>The first one in the morning [1 point]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>All others [0 points]</meaningText>
+          <description>All others [0 points]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Current EveryDay or Current SomeDay Smokers  How many cigarettes per day do/did you smoke? (current_smoker_quantity_1day)</questionText>
+        <instruction>
+         <text>[current_smoker] = '1' and [current_smoker_more_enum] = 'Yes'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>10 or less [0 points]</meaningText>
+          <description>10 or less [0 points]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>11-20 [1 point]</meaningText>
+          <description>11-20 [1 point]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>21-30 [2 points]</meaningText>
+          <description>21-30 [2 points]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>31 or more [3 points]</meaningText>
+          <description>31 or more [3 points]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Current EveryDay or Current SomeDay Smokers  Do/did you smoke more frequently during the first hours after waking than during the rest of the day? (current_smoker_more_1sthour)</questionText>
+        <instruction>
+         <text>[current_smoker] = '1' and [current_smoker_more_enum] = 'Yes'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes [1 point]</meaningText>
+          <description>Yes [1 point]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [0 points]</meaningText>
+          <description>No [0 points]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Current EveryDay or Current SomeDay Smokers  Do/did you smoke if you are so ill that you are in bed most of the day? (current_smoker_smoking_during_illness)</questionText>
+        <instruction>
+         <text>[current_smoker] = '1' and [current_smoker_more_enum] = 'Yes'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes [1 point]</meaningText>
+          <description>Yes [1 point]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [0 points]</meaningText>
+          <description>No [0 points]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Former Smokers  How soon after you wake up do/did you smoke your first cigarette? (former_smoker_1stsmoke_time)</questionText>
+        <instruction>
+         <text>[current_smoker] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Within 5 minutes [3 points]</meaningText>
+          <description>Within 5 minutes [3 points]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>6-30 minutes [2 points]</meaningText>
+          <description>6-30 minutes [2 points]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>31-60 minutes [1 point]</meaningText>
+          <description>31-60 minutes [1 point]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>After 60 minutes [0 points]</meaningText>
+          <description>After 60 minutes [0 points]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Former Smokers  Do/Did you find it difficult to refrain from smoking in places where it is forbidden, e.g., in church, at the library, in a cinema, etc.? (former_smoker_refraining_difficulty)</questionText>
+        <instruction>
+         <text>[current_smoker] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes [1 point]</meaningText>
+          <description>Yes [1 point]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [0 points]</meaningText>
+          <description>No [0 points]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Former Smokers  Which cigarette would you hate most to give up? (former_smoker_1stsmoke_givingup)</questionText>
+        <instruction>
+         <text>[current_smoker] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>The first one in the morning [1 point]</meaningText>
+          <description>The first one in the morning [1 point]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>All others [0 points]</meaningText>
+          <description>All others [0 points]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Former Smokers  How many cigarettes per day do/did you smoke? (former_smoker_quantity_1day)</questionText>
+        <instruction>
+         <text>[current_smoker] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>10 or less [0 points]</meaningText>
+          <description>10 or less [0 points]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>11-20 [1 point]</meaningText>
+          <description>11-20 [1 point]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>21-30 [2 points]</meaningText>
+          <description>21-30 [2 points]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>31 or more [3 points]</meaningText>
+          <description>31 or more [3 points]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Former Smokers  Do/did you smoke more frequently during the first hours after waking than during the rest of the day? (former_smoker_more_1sthour)</questionText>
+        <instruction>
+         <text>[current_smoker] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes [1 point]</meaningText>
+          <description>Yes [1 point]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [0 points]</meaningText>
+          <description>No [0 points]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Former Smokers  Do/did you smoke if you are so ill that you are in bed most of the day? (former_smoker_smoking_during_illness)</questionText>
+        <instruction>
+         <text>[current_smoker] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes [1 point]</meaningText>
+          <description>Yes [1 point]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [0 points]</meaningText>
+          <description>No [0 points]</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX031001</protocolID>
+     <longName>Tobacco - Nicotine Dependence</longName>
+     <context>PhenX</context>
+     <shortName>PX031001</shortName>
+     <preferredDefinition>Measurement of respondent's symptoms of cigarette dependence.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T11:39:34</dateCreated>
+    <longName>PhenX PX031301 -  Substances 30day Frequency</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measurement of respondent's 30-day frequency of use of drugs.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T11:39:34</dateCreated>
+      <longName>Substances 30day Frequency</longName>
+      <instruction/>
+      <preferredDefinition>Substances 30day Frequency</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use sedatives? (frequency_sedatives)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=30</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use sedatives? (frequency_sedatives_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use tranquilizers or antianxiety drugs? (frequency_tranquilizers)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=30</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use tranquilizers or antianxiety drugs? (frequency_tranquilizers_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use painkillers? (frequency_painkillers)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=30</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use painkillers? (frequency_painkillers_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use stimulants? (frequency_stimulants)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=30</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use stimulants? (frequency_stimulants_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use marijuana or hashish? (frequency_marijuana)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=30</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use marijuana or hashish? (frequency_marijuana_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use cocaine? (frequency_cocaine)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=30</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use cocaine? (frequency_cocaine_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use crack? (frequency_crack)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=30</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use crack? (frequency_crack_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use any hallucinogens? (frequency_hallucinogens)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=30</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use any hallucinogens? (frequency_hallucinogens_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use any inhalant for kicks or to get high? (frequency_inhalant)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=30</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use any inhalant for kicks or to get high? (frequency_inhalant_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use any heroin? (frequency_heroin)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=30</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use any heroin? (frequency_heroin_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use any other medicines or drugs or substances? (frequency_other)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=30</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Think specifically about the past 30 days, from [DATEFILL] up to and including today. During the past 30 days, on how many days did you use any other medicines or drugs or substances? (frequency_other_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX031301</protocolID>
+     <longName>Substances - 30-Day Frequency</longName>
+     <context>PhenX</context>
+     <shortName>PX031301</shortName>
+     <preferredDefinition>Measurement of respondent's 30-day frequency of use of drugs.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T11:39:34</dateCreated>
+    <longName>PhenX PX040101 -  Family History Of Heart Attack</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This measure assesses if the respondent's biological parents, siblings, and children have had a heart attack.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T11:39:34</dateCreated>
+      <longName>Family History Of Heart Attack</longName>
+      <instruction/>
+      <preferredDefinition>Family History Of Heart Attack</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did your mother, father, fullblooded sisters, fullblooded brothers, daughters, or sons ever have a heart attack or myocardial infarction? (family_ever_have_heart_attack)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>For these questions, please think about fullblooded relatives only. Do not think about halfsisters or halfbrothers, or relatives who are related to you by marriage or adoption. Fullblooded sisters and brothers are those who had the same two parents as you. If you are adopted or are not sure about some relatives' health history, please include any family history that you know about. (instruction1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did your mom, dad, siblings, kids have heart attack? (var1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>0 No</meaningText>
+          <description>0 No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1 Yes</meaningText>
+          <description>1 Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>9 Don't Know</meaningText>
+          <description>9 Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did your mother have a heart attack? (mother_heart_attack_history)</questionText>
+        <instruction>
+         <text>[var1] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes. Less than 55 when the first heart attack occurred</meaningText>
+          <description>Yes. Less than 55 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Yes. 55-64 when the first heart attack occurred</meaningText>
+          <description>Yes. 55-64 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Yes. 65 or older when the first heart attack occurred</meaningText>
+          <description>Yes. 65 or older when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Yes. Don't know age when the first heart attack occurred</meaningText>
+          <description>Yes. Don't know age when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know if she had a heart attack</meaningText>
+          <description>Don't know if she had a heart attack</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did your father have a heart attack? (father_heart_attack_history)</questionText>
+        <instruction>
+         <text>[var1] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes. Less than 55 when the first heart attack occurred</meaningText>
+          <description>Yes. Less than 55 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Yes. 55-64 when the first heart attack occurred</meaningText>
+          <description>Yes. 55-64 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Yes. 65 or older when the first heart attack occurred</meaningText>
+          <description>Yes. 65 or older when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Yes. Don't know age when the first heart attack occurred</meaningText>
+          <description>Yes. Don't know age when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know if he had a heart attack</meaningText>
+          <description>Don't know if he had a heart attack</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did your sister 1 have a heart attack? (sister_1_heart_attack_history)</questionText>
+        <instruction>
+         <text>[var1] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes. Less than 55 when the first heart attack occurred</meaningText>
+          <description>Yes. Less than 55 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Yes. 55-64 when the first heart attack occurred</meaningText>
+          <description>Yes. 55-64 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Yes. 65 or older when the first heart attack occurred</meaningText>
+          <description>Yes. 65 or older when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Yes. Don't know age when the first heart attack occurred</meaningText>
+          <description>Yes. Don't know age when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know if she had a heart attack</meaningText>
+          <description>Don't know if she had a heart attack</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did your sister 2 have a heart attack? (sister_2_heart_attack_history)</questionText>
+        <instruction>
+         <text>[var1] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes. Less than 55 when the first heart attack occurred</meaningText>
+          <description>Yes. Less than 55 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Yes. 55-64 when the first heart attack occurred</meaningText>
+          <description>Yes. 55-64 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Yes. 65 or older when the first heart attack occurred</meaningText>
+          <description>Yes. 65 or older when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Yes. Don't know age when the first heart attack occurred</meaningText>
+          <description>Yes. Don't know age when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know if she had a heart attack</meaningText>
+          <description>Don't know if she had a heart attack</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did your sister 3 have a heart attack? (sister_3_heart_attack_history)</questionText>
+        <instruction>
+         <text>[var1] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes. Less than 55 when the first heart attack occurred</meaningText>
+          <description>Yes. Less than 55 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Yes. 55-64 when the first heart attack occurred</meaningText>
+          <description>Yes. 55-64 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Yes. 65 or older when the first heart attack occurred</meaningText>
+          <description>Yes. 65 or older when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Yes. Don't know age when the first heart attack occurred</meaningText>
+          <description>Yes. Don't know age when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know if she had a heart attack</meaningText>
+          <description>Don't know if she had a heart attack</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did your brother 1 have a heart attack? (brother_1_heart_attack_history)</questionText>
+        <instruction>
+         <text>[var1] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes. Less than 55 when the first heart attack occurred</meaningText>
+          <description>Yes. Less than 55 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Yes. 55-64 when the first heart attack occurred</meaningText>
+          <description>Yes. 55-64 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Yes. 65 or older when the first heart attack occurred</meaningText>
+          <description>Yes. 65 or older when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Yes. Don't know age when the first heart attack occurred</meaningText>
+          <description>Yes. Don't know age when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know if he had a heart attack</meaningText>
+          <description>Don't know if he had a heart attack</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did your brother 2 have a heart attack? (brother_2_heart_attack_history)</questionText>
+        <instruction>
+         <text>[var1] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes. Less than 55 when the first heart attack occurred</meaningText>
+          <description>Yes. Less than 55 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Yes. 55-64 when the first heart attack occurred</meaningText>
+          <description>Yes. 55-64 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Yes. 65 or older when the first heart attack occurred</meaningText>
+          <description>Yes. 65 or older when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Yes. Don't know age when the first heart attack occurred</meaningText>
+          <description>Yes. Don't know age when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know if he had a heart attack</meaningText>
+          <description>Don't know if he had a heart attack</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did your brother 3 have a heart attack? (brother_3_heart_attack_history)</questionText>
+        <instruction>
+         <text>[var1] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes. Less than 55 when the first heart attack occurred</meaningText>
+          <description>Yes. Less than 55 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Yes. 55-64 when the first heart attack occurred</meaningText>
+          <description>Yes. 55-64 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Yes. 65 or older when the first heart attack occurred</meaningText>
+          <description>Yes. 65 or older when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Yes. Don't know age when the first heart attack occurred</meaningText>
+          <description>Yes. Don't know age when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know if he had a heart attack</meaningText>
+          <description>Don't know if he had a heart attack</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did your daughter 1 have a heart attack? (daughter_1_heart_attack_history)</questionText>
+        <instruction>
+         <text>[var1] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes. Less than 55 when the first heart attack occurred</meaningText>
+          <description>Yes. Less than 55 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Yes. 55-64 when the first heart attack occurred</meaningText>
+          <description>Yes. 55-64 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Yes. 65 or older when the first heart attack occurred</meaningText>
+          <description>Yes. 65 or older when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Yes. Don't know age when the first heart attack occurred</meaningText>
+          <description>Yes. Don't know age when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know if she had a heart attack</meaningText>
+          <description>Don't know if she had a heart attack</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did your daughter 2 have a heart attack? (daughter_2_heart_attack_history)</questionText>
+        <instruction>
+         <text>[var1] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes. Less than 55 when the first heart attack occurred</meaningText>
+          <description>Yes. Less than 55 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Yes. 55-64 when the first heart attack occurred</meaningText>
+          <description>Yes. 55-64 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Yes. 65 or older when the first heart attack occurred</meaningText>
+          <description>Yes. 65 or older when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Yes. Don't know age when the first heart attack occurred</meaningText>
+          <description>Yes. Don't know age when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know if she had a heart attack</meaningText>
+          <description>Don't know if she had a heart attack</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did your son 1 have a heart attack? (son_1_heart_attack_history)</questionText>
+        <instruction>
+         <text>[var1] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes. Less than 55 when the first heart attack occurred</meaningText>
+          <description>Yes. Less than 55 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Yes. 55-64 when the first heart attack occurred</meaningText>
+          <description>Yes. 55-64 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Yes. 65 or older when the first heart attack occurred</meaningText>
+          <description>Yes. 65 or older when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Yes. Don't know age when the first heart attack occurred</meaningText>
+          <description>Yes. Don't know age when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know if he had a heart attack</meaningText>
+          <description>Don't know if he had a heart attack</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did your son 2 have a heart attack? (son_2_heart_attack_history)</questionText>
+        <instruction>
+         <text>[var1] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes. Less than 55 when the first heart attack occurred</meaningText>
+          <description>Yes. Less than 55 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Yes. 55-64 when the first heart attack occurred</meaningText>
+          <description>Yes. 55-64 when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Yes. 65 or older when the first heart attack occurred</meaningText>
+          <description>Yes. 65 or older when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Yes. Don't know age when the first heart attack occurred</meaningText>
+          <description>Yes. Don't know age when the first heart attack occurred</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know if he had a heart attack</meaningText>
+          <description>Don't know if he had a heart attack</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX040101</protocolID>
+     <longName>Family History of Heart Attack</longName>
+     <context>PhenX</context>
+     <shortName>PX040101</shortName>
+     <preferredDefinition>This measure assesses if the respondent's biological parents, siblings, and children have had a heart attack.</preferredDefinition>
+    </protocol>
+   </form>   
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T11:39:34</dateCreated>
+    <longName>PhenX PX040401 -  High Blood Pressure During Pregnancy</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>A measure to assess high blood pressure during a current pregnancy.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T11:39:34</dateCreated>
+      <longName>High Blood Pressure During Pregnancy</longName>
+      <instruction/>
+      <preferredDefinition>High Blood Pressure During Pregnancy</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did you have (Have you had) any of these illnesses or complications during this pregnancy?  Toxemia including all of the following: high blood pressure, albumin (protein) in urine, and swelling of the ankles? (toxemia_during_pregnancy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>Not Sure</meaningText>
+          <description>Not Sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did you have (Have you had) any of these illnesses or complications during this pregnancy?  High blood pressure without toxemia? (hbp_no_toxemia_during_pregnancy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>Not Sure</meaningText>
+          <description>Not Sure</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX040401</protocolID>
+     <longName>High Blood Pressure During Pregnancy</longName>
+     <context>PhenX</context>
+     <shortName>PX040401</shortName>
+     <preferredDefinition>A measure to assess high blood pressure during a current pregnancy.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T11:39:34</dateCreated>
+    <longName>PhenX PX040501 -  Heart Valve Function</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measure to assess the structure and function of the valves within the heart to determine the presence of dysfunction.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T11:39:34</dateCreated>
+      <longName>Heart Valve Function</longName>
+      <instruction/>
+      <preferredDefinition>Heart Valve Function</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Has a doctor ever told you that you had rheumatic heart disease or heart valve problems? (ever_have_heart_valve_problem)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Date of Electrocardiogram (ECG) Examination (mm/dd/yyyy). (ecg_examination_date)</questionText>
+        <instruction>
+         <text>datatype=date_mdy;[ever_have_heart_valve_problem] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Electrocardiogram Trace/Image ID. (ecg_image_id)</questionText>
+        <instruction>
+         <text>[ever_have_heart_valve_problem] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Classification of Severity of Valve Disease in Adults  image (cardio_005_image002)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX040501</protocolID>
+     <longName>Heart Valve Function</longName>
+     <context>PhenX</context>
+     <shortName>PX040501</shortName>
+     <preferredDefinition>Measure to assess the structure and function of the valves within the heart to determine the presence of dysfunction.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T11:39:34</dateCreated>
+    <longName>PhenX PX040601 -  Angina</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The interviewer asks the respondent about his/her personal history of angina and chest discomfort characteristics to determine presence of angina.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T11:39:34</dateCreated>
+      <longName>Angina</longName>
+      <instruction/>
+      <preferredDefinition>Angina</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Has a doctor ever told you that you had angina? (have_angina)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Any chest discomfort ever/since last exam or medical history update? (chest_discomfort_since_lastexam)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Maybe</meaningText>
+          <description>Maybe</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest discomfort with exertion or excitement (chest_discomfort_exertion)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Maybe</meaningText>
+          <description>Maybe</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest discomfort when quiet or resting (chest_discomfort_quite)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Maybe</meaningText>
+          <description>Maybe</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Date of onset (mo) (chest_discomfort_onset_month)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=1;maxLength=12;[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Date of onset (mo) (chest_discomfort_onset_month_coded)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>99</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Date of onset (yr) (chest_discomfort_onset_year)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=1900;[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Date of onset (yr) (chest_discomfort_onset_year_coded)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>9999</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Usual duration (minutes) (chest_discomfort_usual_duration_minute)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=2;maxLength=899;[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Usual duration (minutes) (chest_discomfort_usual_duration_minute_coded)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1 min or less</meaningText>
+          <description>1 min or less</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>900</value>
+          <meaningText>15 hrs or more</meaningText>
+          <description>15 hrs or more</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>999</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Longest duration (minutes) (chest_discomfort_longest_duration_minute)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=2;maxLength=899;[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Longest duration (minutes) (chest_discomfort_longest_duration_minute_coded)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1 min or less</meaningText>
+          <description>1 min or less</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>900</value>
+          <meaningText>15 hrs or more</meaningText>
+          <description>15 hrs or more</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>999</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Location (chest_discomfort_location)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Central sternum and upper chest</meaningText>
+          <description>Central sternum and upper chest</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Left upper Quadrant</meaningText>
+          <description>Left upper Quadrant</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Left lower ribcage</meaningText>
+          <description>Left lower ribcage</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Right chest</meaningText>
+          <description>Right chest</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>Other</meaningText>
+          <description>Other</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>Combination</meaningText>
+          <description>Combination</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>9</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Radiation (chest_discomfort_radiation)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Left shoulder or left arm</meaningText>
+          <description>Left shoulder or left arm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Neck</meaningText>
+          <description>Neck</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Right shoulder or arm</meaningText>
+          <description>Right shoulder or arm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Back</meaningText>
+          <description>Back</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>Abdomen</meaningText>
+          <description>Abdomen</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>Other</meaningText>
+          <description>Other</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>7</value>
+          <meaningText>Combination</meaningText>
+          <description>Combination</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Frequency (number in past month) (chest_discomfort_frequency_past_month)</questionText>
+        <instruction>
+         <text>datatype=number;[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Frequency (number in past month) (chest_discomfort_frequency_past_month_coded)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>999</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Frequency (number in past year) (chest_discomfort_frequency_past_year)</questionText>
+        <instruction>
+         <text>datatype=number;[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Frequency (number in past year) (chest_discomfort_frequency_past_year_coded)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>999</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Type (chest_discomfort_type)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Pressure, heavy, vise</meaningText>
+          <description>Pressure, heavy, vise</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Sharp</meaningText>
+          <description>Sharp</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dull</meaningText>
+          <description>Dull</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Other</meaningText>
+          <description>Other</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Relief by nitroglycerine in &lt; 15 minutes (chest_discomfort_relief_nitroglycerine)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>Not tried</meaningText>
+          <description>Not tried</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Relief by rest in &lt; 15 minutes (chest_discomfort_relief_rest)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>Not tried</meaningText>
+          <description>Not tried</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Relief spontaneously in &lt; 15 minutes (chest_discomfort_relief_spontaneously)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>Not tried</meaningText>
+          <description>Not tried</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Chest Discomfort Characteristics  Relief by other cause in &lt; 15 minutes (chest_discomfort_relief_other)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>Not tried</meaningText>
+          <description>Not tried</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Since your last exam, have you been told by a doctor you had a heart attack? (heart_attack_since_lastexam)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Maybe</meaningText>
+          <description>Maybe</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>CHD First Opinions  Angina pectoris in interim (angina_pectoris_interim)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Maybe</meaningText>
+          <description>Maybe</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>CHD First Opinions  Angina pectoris since revascularization procedure (angina_pectoris_revascularization)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Maybe</meaningText>
+          <description>Maybe</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>CHD First Opinions  Coronary insufficiency in interim (coronary_insufficiency_interim)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Maybe</meaningText>
+          <description>Maybe</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>CHD First Opinions  Myocardial infarct in interim (myocardial_infarct_interim)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Maybe</meaningText>
+          <description>Maybe</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Comment (comments)</questionText>
+        <instruction>
+         <text>[have_angina] = '1' or [chest_discomfort_since_lastexam] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX040601</protocolID>
+     <longName>Angina</longName>
+     <context>PhenX</context>
+     <shortName>PX040601</shortName>
+     <preferredDefinition>The interviewer asks the respondent about his/her personal history of angina and chest discomfort characteristics to determine presence of angina.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T11:39:34</dateCreated>
+    <longName>PhenX PX040701 -  Sudden Cardiac Arrest</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This measure assesses if a patient died of sudden cardiac arrest by reviewing symptoms prior to death, timing of death, possible cardiac origin via autopsy evidence, and/or demonstration of a history of cardiac disease via physician questionnaire and medical records review.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>To be completed by physician who signed the death certificate and/or the patient's physician.</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T11:39:34</dateCreated>
+      <longName>Sudden Cardiac Arrest</longName>
+      <instruction/>
+      <preferredDefinition>Sudden Cardiac Arrest</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Are you familiar with the events surrounding the decedent's death? (physician_familiar_with_event)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did you witness the death? (physician_witness_death)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Was there any pain in the chest, left arm or shoulder or jaw within 72 hours of death? (pain)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Uncertain</meaningText>
+          <description>Uncertain</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did the pain include the chest? (pain_include_chest)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Uncertain</meaningText>
+          <description>Uncertain</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did you think this pain was of a cardiac origin? (pain_cardiac_origin)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Uncertain</meaningText>
+          <description>Uncertain</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Did you think this pain was of a cardiac origin? If no, specify what you think was the cause. (pain_cardiac_origin_specify_cause)</questionText>
+        <instruction>
+         <text>[pain_cardiac_origin] = 'UNDEFINED_CODE_1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Was cardiopulmonary resuscitation (CPR) and/or cardioversion performed within 24 hours of death? (cpr)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Uncertain</meaningText>
+          <description>Uncertain</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Please give time between onset of acute symptoms to death. (We are defining death as the point where spontaneous breathing ceased and the patient never recovered). (symptom_time)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>More than three days</meaningText>
+          <description>More than three days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Two - three days</meaningText>
+          <description>Two - three days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>One day</meaningText>
+          <description>One day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>At least 12 hours, but less than 24 hours</meaningText>
+          <description>At least 12 hours, but less than 24 hours</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>At least 4 hours, but less than 12 hours</meaningText>
+          <description>At least 4 hours, but less than 12 hours</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>At least 1 hour, but less than 4 hours</meaningText>
+          <description>At least 1 hour, but less than 4 hours</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>Less than 1 hour</meaningText>
+          <description>Less than 1 hour</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>Death instantaneous, no symptoms</meaningText>
+          <description>Death instantaneous, no symptoms</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>UNDEFINED_CODE_8</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Would you classify the decedent's cause of death as due to Coronary Heart Disease (CHD)? (chd)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Uncertain</meaningText>
+          <description>Uncertain</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Location of death (location)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Out-of-Hospital</meaningText>
+          <description>Out-of-Hospital</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Emergency Room (not dead on arrival- DOA)</meaningText>
+          <description>Emergency Room (not dead on arrival- DOA)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>In Hospital</meaningText>
+          <description>In Hospital</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Nursing Home, Skilled Nursing Facility (SNF), or Extended Care Facility (ECF)</meaningText>
+          <description>Nursing Home, Skilled Nursing Facility (SNF), or Extended Care Facility (ECF)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Other</meaningText>
+          <description>Other</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Location of death (location_other_specify)</questionText>
+        <instruction>
+         <text>([physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE' ) and [location] = 'UNDEFINED_CODE_4'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Was the death witnessed? (witness_record)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>MultiEthnic Study of Atherosclerosis (MESA) classification of underlying cause of death (choose one) (cause)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Atherosclerotic coronary heart disease</meaningText>
+          <description>Atherosclerotic coronary heart disease</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Stroke</meaningText>
+          <description>Stroke</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Atherosclerotic disease other than coronary disease or stroke</meaningText>
+          <description>Atherosclerotic disease other than coronary disease or stroke</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Other cardiovascular disease, not defined above</meaningText>
+          <description>Other cardiovascular disease, not defined above</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Non-cardiovascular disease</meaningText>
+          <description>Non-cardiovascular disease</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Unknown because death certificate unavailable</meaningText>
+          <description>Unknown because death certificate unavailable</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>MultiEthnic Study of Atherosclerosis (MESA) classification of underlying cause of death: Atherosclerotic disease other than coronary disease or stroke (specify) (cause_other_atherosclerotic_disease_specify)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>MultiEthnic Study of Atherosclerosis (MESA) classification of underlying cause of death: Other cardiovascular disease, not defined above (specify) (cause_other_cardiovascular_disease_specify)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>MultiEthnic Study of Atherosclerosis (MESA) classification of underlying cause of death: Noncardiovascular disease (specify) (cause_noncardiovascular_disease_specify)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Type of fatal coronary heart disease. (fatal_chd_type)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Definite fatal myocardial infarction (MI) (no known non-atherosclerotic cause and definite myocardial infarction within 4 weeks of death)</meaningText>
+          <description>Definite fatal myocardial infarction (MI) (no known non-atherosclerotic cause and definite myocardial infarction within 4 weeks of death)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Definite fatal coronary heart disease (CHD) (no known non-atherosclerotic cause, and one or both of the following: chest pain within 72 hours of death or a history of chronic ischemic heart disease)</meaningText>
+          <description>Definite fatal coronary heart disease (CHD) (no known non-atherosclerotic cause, and one or both of the following: chest pain within 72 hours of death or a history of chronic ischemic heart disease)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Possible fatal coronary heart disease (CHD) (no known non-atherosclerotic cause, and death certificate underlying cause: I20-25, I46, I51.6, R96 or R98-99)</meaningText>
+          <description>Possible fatal coronary heart disease (CHD) (no known non-atherosclerotic cause, and death certificate underlying cause: I20-25, I46, I51.6, R96 or R98-99)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Estimated time between onset of acute cardiac symptoms and death. (symptom_time_estimated)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Less than five minutes</meaningText>
+          <description>Less than five minutes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Five minutes to one hour</meaningText>
+          <description>Five minutes to one hour</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>One hour to 24 hours</meaningText>
+          <description>One hour to 24 hours</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>More than 24 hours</meaningText>
+          <description>More than 24 hours</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Unknown</meaningText>
+          <description>Unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Mechanism of death in patients dying of cardiovascular causes (check all that apply). (mechanism)</questionText>
+        <instruction>
+         <text>[physician_familiar_with_event] = 'UNDEFINED_CODE' or [physician_witness_death] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Primary arrhythmic death</meaningText>
+          <description>Primary arrhythmic death</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Secondary arrhythmic/mechanical death</meaningText>
+          <description>Secondary arrhythmic/mechanical death</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Congestive heart failure (CHF)</meaningText>
+          <description>Congestive heart failure (CHF)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Cardiac procedure such as coronary artery bypass graft (CABG) or angioplasty</meaningText>
+          <description>Cardiac procedure such as coronary artery bypass graft (CABG) or angioplasty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Hemorrhage from thrombolytic therapy</meaningText>
+          <description>Hemorrhage from thrombolytic therapy</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Other</meaningText>
+          <description>Other</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>Unknown or Uncertain</meaningText>
+          <description>Unknown or Uncertain</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Mechanism of death in patients dying of cardiovascular causes (mechanism_other_specify)</questionText>
+        <instruction>
+         <text>[mechanism] = 'UNDEFINED_CODE_5'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX040701</protocolID>
+     <longName>Sudden Cardiac Arrest</longName>
+     <context>PhenX</context>
+     <shortName>PX040701</shortName>
+     <preferredDefinition>This measure assesses if a patient died of sudden cardiac arrest by reviewing symptoms prior to death, timing of death, possible cardiac origin via autopsy evidence, and/or demonstration of a history of cardiac disease via physician questionnaire and medical records review.</preferredDefinition>
+    </protocol>
+   </form>
+      <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T11:39:34</dateCreated>
+    <longName>PhenX PX031101 -  Substances Lifetime Use</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measurement of respondent's lifetime use of illicit and prescribed substances.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T11:39:34</dateCreated>
+      <longName>Substances Lifetime Use</longName>
+      <instruction/>
+      <preferredDefinition>Substances Lifetime Use</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Have you EVER used any of these medicines or drugs?  Sedatives, for example, sleeping pills, barbiturates, Seconal, Quaaludes, or Chloral Hydrate  Specify (lifetime_use_sedatives)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Have you EVER used any of these medicines or drugs?  Tranquilizers or antianxiety drugs, for example, Valium, Librium, muscle relaxants, or Zanax Specify (lifetime_use_tranquilizers)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Have you EVER used any of these medicines or drugs?  Painkillers, for example, Codeine, Darvon, Percodan, Oxycontin, Dilaudid, Demerol, Celebrex, or Vioxx  Specify (lifetime_use_painkillers)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Have you EVER used any of these medicines or drugs?  Stimulants, for example, Preludin, Benzedrine, Methedrine, Ritalin, uppers, or speed  Specify (lifetime_use_stimulants)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Have you EVER used any of these medicines or drugs?  Marijuana, hash, THC, or grass  Specify (lifetime_use_marijuana)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Have you EVER used any of these medicines or drugs?  Cocaine or crack  Specify (lifetime_use_cocaine)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Have you EVER used any of these medicines or drugs?  Hallucinogens, for example, Ecstasy/MDMA, LSD, mescaline, psilocybin, PCP, angel dust, or peyote  Specify (lifetime_use_hallucinogens)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Have you EVER used any of these medicines or drugs?  Inhalants or solvents, for example, amyl nitrite, nitrous oxide, glue, toluene or gasoline  Specify (lifetime_use_inhalant)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Have you EVER used any of these medicines or drugs?  Heroin (lifetime_use_heroin)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Have you EVER used any of these medicines or drugs?  Any OTHER medicines, or drugs, or substances, for example, methadone, Elavil, steroids, Thorazine or Haldol?  (SELECT MOST FREQUENTLY USED OTHER DRUG) (lifetime_use_other)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX031101</protocolID>
+     <longName>Substances - Lifetime Use</longName>
+     <context>PhenX</context>
+     <shortName>PX031101</shortName>
+     <preferredDefinition>Measurement of respondent's lifetime use of illicit and prescribed substances.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T11:39:34</dateCreated>
+    <longName>PhenX PX040201 -  Lipid Profile</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measure of plasma lipid levels in blood samples to predict risk for the development of heart attack or to define metabolic syndrome.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>If the respondent answers "yes" to question 1, then the interviewer will proceed to question 2. The use of lipidlowering medications must be captured, as the use of medications can have profound and predictable effects on the lipid levels and ..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T11:39:34</dateCreated>
+      <longName>Lipid Profile</longName>
+      <instruction/>
+      <preferredDefinition>Lipid Profile</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Has a doctor or nurse ever said that you have high blood cholesterol? (ever_have_high_blood_cholesterol)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>Not sure</meaningText>
+          <description>Not sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Have you ever taken medication for high blood cholesterol? (ever_take_high_blood_cholesterol_medication)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Yes, now</meaningText>
+          <description>Yes, now</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Yes, not now</meaningText>
+          <description>Yes, not now</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>unknown</meaningText>
+          <description>unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>At what age did you begin taking medicine for this? (age_take_high_blood_cholesterol_medication)</questionText>
+        <instruction>
+         <text>datatype=number;[ever_take_high_blood_cholesterol_medication] = '1' or [ever_take_high_blood_cholesterol_medication] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>At what age did you begin taking medicine for this? (age_take_high_blood_cholesterol_medication_coded)</questionText>
+        <instruction>
+         <text>[ever_take_high_blood_cholesterol_medication] = '1' or [ever_take_high_blood_cholesterol_medication] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>99</value>
+          <meaningText>unknown</meaningText>
+          <description>unknown</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Interview: Was blood requested for lipid profile? (lipid_requested)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Interview: Was consent given? (lipid_consent)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Interview: Was blood drawn successfully? (lipid_blood_drawn)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Date blood drawn for lipid profile (mm/dd/yyyy) (lipid_date)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Time blood drawn for lipid profile (hh:mm am/pm) (lipid_time)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Total cholesterol from lipid profile (lipid_total_cholesterol)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=900</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>LDL from lipid profile (lipid_ldl)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=900</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>HDL from lipid profile (lipid_hdl)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=900</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-26T11:39:34</dateCreated>
+        <questionText>Triglycerides from lipid profile (lipid_triglyceride)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=900</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX040201</protocolID>
+     <longName>Lipid Profile</longName>
+     <context>PhenX</context>
+     <shortName>PX040201</shortName>
+     <preferredDefinition>Measure of plasma lipid levels in blood samples to predict risk for the development of heart attack or to define metabolic syndrome.</preferredDefinition>
+    </protocol>
+   </form>
+   </forms>
