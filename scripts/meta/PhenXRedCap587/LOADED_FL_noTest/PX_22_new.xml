@@ -1,0 +1,4231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 22</collectionName>
+  <collectionDescription>Load PhenX PX111001,PX111101,PX111201,PX111301,PX111302,PX111402,PX111501</collectionDescription>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T18:47:01</dateCreated>
+    <longName>PhenX PX111001 - Personal And Family History Of Strabismus</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>A series of self-administered questions to assess family and personal history of strabismus, including history of treatments and surgeries.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T18:47:01</dateCreated>
+      <longName>Personal And Family History Of Strabismus</longName>
+      <instruction/>
+      <preferredDefinition>Personal And Family History Of Strabismus</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Have you ever had a crossed or wandering eye (amblyopia)? (amblyopia_crossed_wandering_eye_ever)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>I'm not sure</meaningText>
+          <description>I'm not sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Have you ever had double vision? (double_vision_ever)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>I'm not sure</meaningText>
+          <description>I'm not sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Do you ever tilt your head when looking straight? (tilt_head_looking_straight_ever)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>I'm not sure</meaningText>
+          <description>I'm not sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Have you ever undergone eye muscle surgery? (eye_muscle_surgery)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>I'm not sure</meaningText>
+          <description>I'm not sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Have you ever worn a patch or used eye drops (atropine penalization) for eye correction? (patch_eye_drops_correction_ever)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>I'm not sure</meaningText>
+          <description>I'm not sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Have you ever worn glasses or contacts? (glasses_contacts_ever)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>I'm not sure</meaningText>
+          <description>I'm not sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>If you answered YES to any of the above questions (about wandering eye/amblyopia, double vision, tilting head when looking straight, eye muscle surgery, patch/eye drops, glasses/contacts), please provide further details (i.e., age of onset of eye condition, dates of surgery, name of procedure if known, reason for glasses, etc.) (details_question_1_to_6)</questionText>
+        <instruction>
+         <text>[amblyopia_crossed_wandering_eye_ever] = 'UNDEFINED_CODE' or [double_vision_ever] = 'UNDEFINED_CODE' or [tilt_head_looking_straight_ever] = 'UNDEFINED_CODE' or [eye_muscle_surgery] = 'UNDEFINED_CODE' or [glasses_contacts_ever] = 'UNDEFINED_COD..TRUNCATED</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Do you have a coloboma? (Absence or defect of ocular tissue ranging from a small pit in the optic disk to extensive defects in the iris, ciliary body, choroid, retina, or optic disk) (coloboma_absence_defect_ocular_tissue)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>I'm not sure</meaningText>
+          <description>I'm not sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Do you have microphthalmia? (Abnormally small eye) (microphthalmia_abnormally_small_eye)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>I'm not sure</meaningText>
+          <description>I'm not sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Do you have epibulbar dermoid? (Eye tumors that are not recurrent or progressive) (epibulbar_dermoids_eye_tumor)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>I'm not sure</meaningText>
+          <description>I'm not sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Do you have any abnormal ocular features? (e.g., epicanthal foldstissue overlapping the nasal corner of the eye, telecanthusincreased distance between the inner corners of the eyes, slanting of the palpebral fissure(s)opening for the eyes between the eyelids?) (abnormal_ocular_features)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>I'm not sure</meaningText>
+          <description>I'm not sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Do you have any retinal defects? (retinal tears, detachments, etc.) (retinal_defect_tear_detachment)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>I'm not sure</meaningText>
+          <description>I'm not sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Do you have any visual impairment other than previously noted? (other_visual_impairment)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>I'm not sure</meaningText>
+          <description>I'm not sure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>If you answered YES to any question above (coloboma, microphthalmia, epibulbar dermoids, abnormal ocular features, retinal defects, other visual impairment), please describe. (details_question_8_to_13)</questionText>
+        <instruction>
+         <text>[coloboma_absence_defect_ocular_tissue] = 'UNDEFINED_CODE' or [microphthalmia_abnormally_small_eye] = 'UNDEFINED_CODE' or [epibulbar_dermoids_eye_tumor] = 'UNDEFINED_CODE' or [abnormal_ocular_features] = 'UNDEFINED_CODE' or [retinal_defect_tea..TRUNCATED</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Family Ocular History Chart: (family_ocular_history_heading)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Glasses before age 6: (glasses_before_6_other_relative_enum)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE_Mother</value>
+          <meaningText>Mother</meaningText>
+          <description>Mother</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_Father</value>
+          <meaningText>Father</meaningText>
+          <description>Father</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_Brother</value>
+          <meaningText>Brother</meaningText>
+          <description>Brother</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_Sister</value>
+          <meaningText>Sister</meaningText>
+          <description>Sister</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_Sibling</value>
+          <meaningText>1/2 sibling through mother/father</meaningText>
+          <description>1/2 sibling through mother/father</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_Grandparent</value>
+          <meaningText>Grandfather/mother</meaningText>
+          <description>Grandfather/mother</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_Uncle</value>
+          <meaningText>Aunt/uncle</meaningText>
+          <description>Aunt/uncle</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_Relative</value>
+          <meaningText>Other</meaningText>
+          <description>Other</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Specify other relative (glasses before age 6): (glasses_before_6_other_relative_specify)</questionText>
+        <instruction>
+         <text>[glasses_before_6_other_relative_enum(UNDEFINED_CODE_Relative)] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Patching: (patching_other_relative_enum)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE_Mother</value>
+          <meaningText>Mother</meaningText>
+          <description>Mother</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_Father</value>
+          <meaningText>Father</meaningText>
+          <description>Father</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_Brother</value>
+          <meaningText>Brother</meaningText>
+          <description>Brother</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_Sister</value>
+          <meaningText>Sister</meaningText>
+          <description>Sister</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_Sibling</value>
+          <meaningText>1/2 sibling through mother/father</meaningText>
+          <description>1/2 sibling through mother/father</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_Grandparent</value>
+          <meaningText>Grandfather/mother</meaningText>
+          <description>Grandfather/mother</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_Uncle</value>
+          <meaningText>Aunt/uncle</meaningText>
+          <description>Aunt/uncle</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_Relative</value>
+          <meaningText>Other</meaningText>
+          <description>Other</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Specify other relative (patching): (patching_other_relative_specify)</questionText>
+        <instruction>
+         <text>[patching_other_relative_enum(UNDEFINED_CODE_Relative)] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Eye muscle surgery: (eye_muscle_surgery_other_relative_enum)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE_Mother</value>
+          <meaningText>Mother</meaningText>
+          <description>Mother</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_Father</value>
+          <meaningText>Father</meaningText>
+          <description>Father</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_Brother</value>
+          <meaningText>Brother</meaningText>
+          <description>Brother</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_Sister</value>
+          <meaningText>Sister</meaningText>
+          <description>Sister</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_Sibling</value>
+          <meaningText>1/2 sibling through mother/father</meaningText>
+          <description>1/2 sibling through mother/father</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_Grandparent</value>
+          <meaningText>Grandfather/mother</meaningText>
+          <description>Grandfather/mother</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_Uncle</value>
+          <meaningText>Aunt/uncle</meaningText>
+          <description>Aunt/uncle</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_Relative</value>
+          <meaningText>Other</meaningText>
+          <description>Other</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Specify other relative (eye muscle surgery): (eye_muscle_surgery_other_relative)</questionText>
+        <instruction>
+         <text>[eye_muscle_surgery_other_relative_enum(UNDEFINED_CODE_Relative)] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX111001</protocolID>
+     <longName>Personal and Family History of Strabismus</longName>
+     <context>PhenX</context>
+     <shortName>PX111001</shortName>
+     <preferredDefinition>A series of self-administered questions to assess family and personal history of strabismus, including history of treatments and surgeries.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T18:47:01</dateCreated>
+    <longName>PhenX PX111101 - Visual Acuity</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Measurement of clarity or sharpness of vision (visual acuity) using the Early Treatment Diabetic Retinopathy Study (ETDRS) charts.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>To view e examples of ETDRS Visual Acuity Charts click "https://www.phenxtoolkit.org/index.php?pageLink=browse.protocoldetails&amp;id=111101" here.</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T18:47:01</dateCreated>
+      <longName>Visual Acuity</longName>
+      <instruction/>
+      <preferredDefinition>Visual Acuity</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Right Eye (visual_acuity_right_eye_heading)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The distance from the patient's eyes to the ETDRS Visual Acuity Chart (Feet): (visual_acuity_righteye_testing_distance)</questionText>
+        <instruction>
+         <text>UOM=foot</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>visual acuity ETDRS chart1  image (visual_acuity_etdrs_chart1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 1 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_righteye_letter_line1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 2 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_righteye_letter_line2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 3 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_righteye_letter_line3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 4 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_righteye_letter_line4)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 5 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_righteye_letter_line5)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 6 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_righteye_letter_line6)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 7 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_righteye_letter_line7)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 8 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_righteye_letter_line8)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 9 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_righteye_letter_line9)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 10 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_righteye_letter_line10)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 11 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_righteye_letter_line11)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 12 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_righteye_letter_line12)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 13 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_righteye_letter_line13)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 14 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_righteye_letter_line14)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Actual visual acuity is the measured visual acuity as defined by the number of letters that could be read from the chart at 4 meters (actual_visual_acuity_right_eye)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>visual_acuity_ETDRS_table 2  image (visual_acuity_etdrs_table2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The equivalent visual acuity from table based on number of letters read correctly. (equivalent_visual_acuity_right_eye)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The visual acuity LogMAR value converted from visual acuity score. LogMAR is another commonly used scale for Visual Acuity which is expressed as the logarithm of the minimum angle of resolution. (visual_acuity_logmar_right_eye)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Left Eye (visual_acuity_left_eye)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The distance from the patient's eyes to the ETDRS Visual Acuity Chart (feet): (visual_acuity_lefteye_testing_distance)</questionText>
+        <instruction>
+         <text>UOM=foot</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>visual acuity ETDRS chart2  image (visual_acuity_etdrs_chart2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 1 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_lefteye_letter_line1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 2 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_lefteye_letter_line2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 3 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_lefteye_letter_line3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 4 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_lefteye_letter_line4)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 5 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_lefteye_letter_line5)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 6 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_lefteye_letter_line6)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 7 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_lefteye_letter_line7)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 8 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_lefteye_letter_line8)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 9 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_lefteye_letter_line9)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 10 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_lefteye_letter_line10)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 11 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_lefteye_letter_line11)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 12 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_lefteye_letter_line12)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 13 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_lefteye_letter_line13)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The letter on line 14 in the ETDRS Visual Acuity Chart read by the patient (visual_acuity_lefteye_letter_line14)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Actual visual acuity is the measured visual acuity as defined by the number of letters that could be read from the chart at 4 meters (actual_visual_acuity_left_eye)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>visual_acuity_ETDRS_table 2  image (visual_acuity_etdrs_table2_cont)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The equivalent visual acuity from table based on number of letters read correctly. (equivalent_visual_acuity_left_eye)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>The visual acuity LogMAR value converted from visual acuity score. LogMAR is another commonly used scale for Visual Acuity which is expressed as the logarithm of the minimum angle of resolution. (visual_acuity_logmar_left_eye)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX111101</protocolID>
+     <longName>Visual Acuity</longName>
+     <context>PhenX</context>
+     <shortName>PX111101</shortName>
+     <preferredDefinition>Measurement of clarity or sharpness of vision (visual acuity) using the Early Treatment Diabetic Retinopathy Study (ETDRS) charts.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T18:47:01</dateCreated>
+    <longName>PhenX PX111201 - Visual Function</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Self-reported vision-targeted health status is measured with the Vision Function Questionnaire (VFQ-25). This interviewer or self administered questionnaire consists of a base set of 25 vision-targeted questions representing 11 vision-related constructs, plus an additional single-item general health rating question. The VFQ-25 also includes an appendix of additional items from the 51-item National Eye Institute Vision Function Questionnaire version that researchers can use to expand the scales up to 39 total items. Scoring of the VRQ-25 yields 12 sub-scale scores and an overall composite score.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Administration Instructions: Participants should answer all the questions as if the participant is wearing his/her glasses or contact lenses (if any). An Appendix of additional questions may be added to address other subscales of visiontargete..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T18:47:01</dateCreated>
+      <longName>Visual Function</longName>
+      <instruction/>
+      <preferredDefinition>Visual Function</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>PART 1: GENERAL HEALTH AND VISION (general_health_vision_heading)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>In general, would you say your overall health is: (general_overall_health)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>excellent</meaningText>
+          <description>excellent</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>very good</meaningText>
+          <description>very good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>good</meaningText>
+          <description>good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>fair</meaningText>
+          <description>fair</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>poor</meaningText>
+          <description>poor</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>At the present time, would you say your eyesight using both eyes (with glasses or contact lenses, if you wear them) is excellent, good, fair, poor, or very poor or are you completely blind? (eyesight_both_eyes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>excellent</meaningText>
+          <description>excellent</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>good</meaningText>
+          <description>good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>fair</meaningText>
+          <description>fair</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>poor</meaningText>
+          <description>poor</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>very poor</meaningText>
+          <description>very poor</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>completely blind</meaningText>
+          <description>completely blind</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>How much of the time do you worry about your eyesight? (time_worry_eyesight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>none of the time</meaningText>
+          <description>none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little of the time</meaningText>
+          <description>a little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>some of the time</meaningText>
+          <description>some of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>most of the time</meaningText>
+          <description>most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>all of the time</meaningText>
+          <description>all of the time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>How much pain or discomfort have you had in and around your eyes (for example, burning, itching, or aching)? Would you say it is: (pain_discomfort_in_around_eyes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>very severe</meaningText>
+          <description>very severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>PART 2: DIFFICULTY WITH ACTIVITIES The next questions are about how much difficulty, if any, you have doing certain activities wearing your glasses or contact lenses if you use them for that activity PART 2: DIFFICULTY WITH ACTIVITIES The next questions are about how much difficulty, if any, you have doing certain activities wearing your glasses or contact lenses if you use them for that activity. (difficulty_activities_heading)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>How much difficulty do you have reading ordinary print in newspapers? Would you say you have: (difficulty_read_ordinary_print_newspapers)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>How much difficulty do you have doing work or hobbies that require you to see well up close, such as cooking, sewing, fixing things around the house, or using hand tools? Would you say: (difficulty_work_hobby_see_close)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Because of your eyesight, how much difficulty do you have finding something on a crowded shelf? (difficulty_find_something_crowded_shelf)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>How much difficulty do you have reading street signs or the names of stores? (difficulty_read_sign_store_name)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Because of your eyesight, how much difficulty do you have going down steps, stairs, or curbs in dim light or at night? (difficulty_stair_curb_dim_light_night)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Because of your eyesight, how much difficulty do you have noticing objects off to the side while you are walking along? (difficulty_notice_object_off_side)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Because of your eyesight, how much difficulty do you have seeing how people react to things you say? (difficulty_see_people_react)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Because of your eyesight, how much difficulty do you have picking out and matching your own clothes? (difficulty_pick_out_match_clothes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Because of your eyesight, how much difficulty do you have visiting with people in their homes, at parties, or in restaurants? (difficulty_visit_people)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Because of your eyesight, how much difficulty do you have going out to see movies, plays, or sports events? (difficulty_go_out)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Now, I'd like to ask about driving a car. Are you currently driving, at least once in a while? (currently_driving)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Have you never driven a car or have you given up driving? (never_or_gave_up)</questionText>
+        <instruction>
+         <text>[currently_driving] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>never drove</meaningText>
+          <description>never drove</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>gave up</meaningText>
+          <description>gave up</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Was that mainly because of your eyesight, mainly for some other reason, or because of both your eyesight and other reasons? (is_eyesight_reason)</questionText>
+        <instruction>
+         <text>[never_or_gave_up] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>mainly eyesight</meaningText>
+          <description>mainly eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>mainly other reasons</meaningText>
+          <description>mainly other reasons</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>both eyesight and other reasons</meaningText>
+          <description>both eyesight and other reasons</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>How much difficulty do you have driving during the daytime in familiar places? Would you say you have: (difficulty_driving_daytime_familiar_places)</questionText>
+        <instruction>
+         <text>[currently_driving] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>How much difficulty do you have driving at night? Would you say you have: (difficulty_driving_night)</questionText>
+        <instruction>
+         <text>[currently_driving] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>PART 3: RESPONSES TO VISION PROBLEMS The next questions are about how things you do may be affected by your vision. For each one, I'd like you to tell me if this is true for you all, most, some, a little, or none of the time. (responses_vision_problems_heading)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>How much difficulty do you have driving in difficult conditions, such as in bad weather, during rush hour, on the freeway, or in city traffic? Would you say you have: (difficulty_driving_difficult_conditions)</questionText>
+        <instruction>
+         <text>[currently_driving] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Do you accomplish less than you would like because of your vision? (accomplish_less_because_vision)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>all of the time</meaningText>
+          <description>all of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>most of the time</meaningText>
+          <description>most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>some of the time</meaningText>
+          <description>some of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>a little of the time</meaningText>
+          <description>a little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>none of the time</meaningText>
+          <description>none of the time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Are you limited in how long you can work or do other activities because of your vision? (limited_work_activity_time_because_vision)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>all of the time</meaningText>
+          <description>all of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>most of the time</meaningText>
+          <description>most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>some of the time</meaningText>
+          <description>some of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>a little of the time</meaningText>
+          <description>a little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>none of the time</meaningText>
+          <description>none of the time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>How much does pain or discomfort in or around your eyes, for example, burning, itching, or aching, keep you from doing what you'd like to be doing? Would you say: (pain_discomfort_eyes_limit_doing)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>all of the time</meaningText>
+          <description>all of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>most of the time</meaningText>
+          <description>most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>some of the time</meaningText>
+          <description>some of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>a little of the time</meaningText>
+          <description>a little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>none of the time</meaningText>
+          <description>none of the time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>For each of the following statements, please tell me if it is definitely true, mostly true, mostly false, or definitely false for you or you are not sure. (eyesight_difficulties_instructions)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>I stay home most of the time because of my eyesight (stay_home_because_eyesight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>definitely true</meaningText>
+          <description>definitely true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>mostly true</meaningText>
+          <description>mostly true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>not sure</meaningText>
+          <description>not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>mostly false</meaningText>
+          <description>mostly false</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>definitely false</meaningText>
+          <description>definitely false</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>I feel frustrated a lot of the time because of my eyesight (frustrated_because_eyesight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>definitely true</meaningText>
+          <description>definitely true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>mostly true</meaningText>
+          <description>mostly true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>not sure</meaningText>
+          <description>not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>mostly false</meaningText>
+          <description>mostly false</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>definitely false</meaningText>
+          <description>definitely false</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>I have much less control over what I do, because of my eyesight (less_control_because_eyesight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>definitely true</meaningText>
+          <description>definitely true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>mostly true</meaningText>
+          <description>mostly true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>not sure</meaningText>
+          <description>not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>mostly false</meaningText>
+          <description>mostly false</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>definitely false</meaningText>
+          <description>definitely false</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Because of my eyesight, I have to rely too much on what other people tell me (rely_other_people_because_eyesight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>definitely true</meaningText>
+          <description>definitely true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>mostly true</meaningText>
+          <description>mostly true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>not sure</meaningText>
+          <description>not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>mostly false</meaningText>
+          <description>mostly false</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>definitely false</meaningText>
+          <description>definitely false</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>I need a lot of help from others because of my eyesight (need_other_help_because_eyesight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>definitely true</meaningText>
+          <description>definitely true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>mostly true</meaningText>
+          <description>mostly true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>not sure</meaningText>
+          <description>not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>mostly false</meaningText>
+          <description>mostly false</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>definitely false</meaningText>
+          <description>definitely false</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>I worry about doing things that will embarrass myself or others, because of my eyesight (worry_embarrass_because_eyesight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>definitely true</meaningText>
+          <description>definitely true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>mostly true</meaningText>
+          <description>mostly true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>not sure</meaningText>
+          <description>not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>mostly false</meaningText>
+          <description>mostly false</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>definitely false</meaningText>
+          <description>definitely false</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Appendix of Optional Additional Questions SUBSCALE: GENERAL HEALTH (subscale_general_health_heading)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>How would you rate your overall health, on a scale where zero is as bad as death and 10 is best possible health? (optional_overall_health_scale_rate)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>7</meaningText>
+          <description>7</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>8</meaningText>
+          <description>8</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>9</meaningText>
+          <description>9</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>10</meaningText>
+          <description>10</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>SUBSCALE: GENERAL VISION (general_vision_heading)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>How would you rate your eyesight now (with glasses or contact lens on, if you wear them), on a scale of from 1 to 10, where zero means the worst possible eyesight, as bad or worse than being blind, and 10 means the best possible eyesight? (optional_eyesight_scale_rate)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>7</meaningText>
+          <description>7</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>8</meaningText>
+          <description>8</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>9</meaningText>
+          <description>9</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>10</meaningText>
+          <description>10</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>SUBSCALE: NEAR VISION (near_vision_heading)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Wearing glasses, how much difficulty do you have reading the small print in a telephone book, on a medicine bottle, or on legal forms? Would you say: (optional_difficulty_read_small_print)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Because of your eyesight, how much difficulty do you have figuring out whether bills you receive are accurate? (optional_difficulty_accurate_bills)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Because of your eyesight, how much difficulty do you have doing things like shaving, styling your hair, or putting on makeup? (optional_difficulty_shave_hair_makeup)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>SUBSCALE: DISTANCE VISION (distance_vision_heading)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Because of your eyesight, how much difficulty do you have recognizing people you know from across a room? (optional_difficulty_recognize_people_across)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Because of your eyesight, how much difficulty do you have taking part in active sports or other outdoor activities that you enjoy (like golf, bowling, jogging, or walking)? (optional_difficulty_sports_outdoor_activities)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Because of your eyesight, how much difficulty do you have seeing and enjoying programs on TV? (optional_difficulty_tv_program)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>46</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>SUBSCALE: SOCIAL FUNCTION (social_function_heading)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>47</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Because of your eyesight, how much difficulty do you have entertaining friends and family in your home? (optional_difficulty_entertain_friends_family)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no difficulty at all</meaningText>
+          <description>no difficulty at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>a little difficulty</meaningText>
+          <description>a little difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>moderate difficulty</meaningText>
+          <description>moderate difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>extreme difficulty</meaningText>
+          <description>extreme difficulty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>stopped doing this because of your eyesight</meaningText>
+          <description>stopped doing this because of your eyesight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>stopped doing this for other reasons or not interested in doing this</meaningText>
+          <description>stopped doing this for other reasons or not interested in doing this</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>48</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>SUBSCALE: ROLE LIMITATIONS The next questions are about things you may do because of your vision. For each item, I'd like you to tell me if this is true for you all, most, some, a little, or none of the time. (role_limitations_heading)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>49</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Do you have more help from others because of your vision? (optional_have_more_help_because_vision)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>all of the time</meaningText>
+          <description>all of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>most of the time</meaningText>
+          <description>most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>some of the time</meaningText>
+          <description>some of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>a little of the time</meaningText>
+          <description>a little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>none of the time</meaningText>
+          <description>none of the time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>50</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Are you limited in the kinds of things you can do because of your vision? (optional_limited_do_things_because_vision)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>all of the time</meaningText>
+          <description>all of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>most of the time</meaningText>
+          <description>most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>some of the time</meaningText>
+          <description>some of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>a little of the time</meaningText>
+          <description>a little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>none of the time</meaningText>
+          <description>none of the time</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX111201</protocolID>
+     <longName>Visual Function</longName>
+     <context>PhenX</context>
+     <shortName>PX111201</shortName>
+     <preferredDefinition>Self-reported vision-targeted health status is measured with the Vision Function Questionnaire (VFQ-25). This interviewer or self administered questionnaire consists of a base set of 25 vision-targeted questions representing 11 vision-related constructs, plus an additional single-item general health rating question. The VFQ-25 also includes an appendix of additional items from the 51-item National Eye Institute Vision Function Questionnaire version that researchers can use to expand the scales up to 39 total items. Scoring of the VRQ-25 yields 12 sub-scale scores and an overall composite score.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T18:47:01</dateCreated>
+    <longName>PhenX PX111301 - Contact Lens Use Adult</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>These self-administered questions are used to assess an individual's current and past contact lens use. The respondent answers an initial question regarding current contact lens use. The respondent then proceeds to a set of two follow-up questions based upon the response to the initial question.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T18:47:01</dateCreated>
+      <longName>Contact Lens Use Adult</longName>
+      <instruction/>
+      <preferredDefinition>Contact Lens Use Adult</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Do you currently wear contact lenses? (contact_lenses_currently)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Have you ever worn contact lenses? (contact_lenses_ever)</questionText>
+        <instruction>
+         <text>[contact_lenses_currently] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Are you considering wearing contact lenses in the next year? (contact_lenses_consider_next_year)</questionText>
+        <instruction>
+         <text>[contact_lenses_currently] = '2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>What type of contact lenses do you wear? (contact_lenses_type)</questionText>
+        <instruction>
+         <text>[contact_lenses_currently] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>soft</meaningText>
+          <description>soft</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>hard</meaningText>
+          <description>hard</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>gas permeable</meaningText>
+          <description>gas permeable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>not known</meaningText>
+          <description>not known</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Do you sleep with your contact lenses in? (contact_lenses_sleep_with)</questionText>
+        <instruction>
+         <text>[contact_lenses_currently] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>sometimes</meaningText>
+          <description>sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>usually</meaningText>
+          <description>usually</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX111301</protocolID>
+     <longName>Contact Lens Use- Adult</longName>
+     <context>PhenX</context>
+     <shortName>PX111301</shortName>
+     <preferredDefinition>These self-administered questions are used to assess an individual's current and past contact lens use. The respondent answers an initial question regarding current contact lens use. The respondent then proceeds to a set of two follow-up questions based upon the response to the initial question.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T18:47:01</dateCreated>
+    <longName>PhenX PX111302 - Use Of Glasses And Or Contact Lenses As A Child</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The respondent is asked a series of 5 questions to assess their child's current and past use of glasses and contact lenses, duration of use, and reason for use.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T18:47:01</dateCreated>
+      <longName>Use Of Glasses And Or Contact Lenses As A Child</longName>
+      <instruction/>
+      <preferredDefinition>Use Of Glasses And Or Contact Lenses As A Child</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Does your child currently wear glasses or contact lenses to correct, or partially correct, his/her eyesight? (glasses_contact_lenses_correct_currently)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Glasses</meaningText>
+          <description>Glasses</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Contact lenses</meaningText>
+          <description>Contact lenses</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>How often are the glasses or contact lenses worn? (glasses_contact_lenses_frequency_currently)</questionText>
+        <instruction>
+         <text>[glasses_contact_lenses_correct_currently] = 'UNDEFINED_CODE_1' or [glasses_contact_lenses_correct_currently] = 'UNDEFINED_CODE_2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>All the time</meaningText>
+          <description>All the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Most of the time</meaningText>
+          <description>Most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Hardly ever</meaningText>
+          <description>Hardly ever</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Only when eyes feel tired</meaningText>
+          <description>Only when eyes feel tired</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Were the glasses/contact lenses prescribed for Astigmatism? (glasses_contact_lenses_astigmatism)</questionText>
+        <instruction>
+         <text>[glasses_contact_lenses_correct_currently] = 'UNDEFINED_CODE_1' or [glasses_contact_lenses_correct_currently] = 'UNDEFINED_CODE_2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>DK</meaningText>
+          <description>DK</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Were the glasses/contact lenses prescribed for Shortsightedness/myopia? (glasses_contact_lenses_short_sightedness_myopia)</questionText>
+        <instruction>
+         <text>[glasses_contact_lenses_correct_currently] = 'UNDEFINED_CODE_1' or [glasses_contact_lenses_correct_currently] = 'UNDEFINED_CODE_2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>DK</meaningText>
+          <description>DK</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Were the glasses/contact lenses prescribed for Longsightedness/hyperopia? (glasses_contact_lenses_long_sightedness_hyperopia)</questionText>
+        <instruction>
+         <text>[glasses_contact_lenses_correct_currently] = 'UNDEFINED_CODE_1' or [glasses_contact_lenses_correct_currently] = 'UNDEFINED_CODE_2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>DK</meaningText>
+          <description>DK</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Were the glasses/contact lenses prescribed for Other? (glasses_contact_lenses_other)</questionText>
+        <instruction>
+         <text>[glasses_contact_lenses_correct_currently] = 'UNDEFINED_CODE_1' or [glasses_contact_lenses_correct_currently] = 'UNDEFINED_CODE_2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>DK</meaningText>
+          <description>DK</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Specify other glasses/contact lenses prescribed. (glasses_contact_lenses_other_specify)</questionText>
+        <instruction>
+         <text>[glasses_contact_lenses_correct_currently] = 'UNDEFINED_CODE_1' or [glasses_contact_lenses_correct_currently] = 'UNDEFINED_CODE_2'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Has your child worn glasses or contact lenses in the past, but no longer needs to wear them? (glasses_contact_lenses_no_longer_need)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Unsure</meaningText>
+          <description>Unsure</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Please state the date when first prescribed. (glasses_contact_lenses_first_date)</questionText>
+        <instruction>
+         <text>datatype=date_mdy;[glasses_contact_lenses_no_longer_need] = 'UNDEFINED_CODE_1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Please state the age when first prescribed. (glasses_contact_lenses_first_age)</questionText>
+        <instruction>
+         <text>datatype=number;[glasses_contact_lenses_no_longer_need] = 'UNDEFINED_CODE_1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Date stopped? (glasses_contact_lenses_stop_date)</questionText>
+        <instruction>
+         <text>datatype=date_mdy;[glasses_contact_lenses_no_longer_need] = 'UNDEFINED_CODE_1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Reason stopped? (glasses_contact_lenses_stop_reason)</questionText>
+        <instruction>
+         <text>[glasses_contact_lenses_no_longer_need] = 'UNDEFINED_CODE_1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>How often did you child wear their glasses/contact lenses? (glasses_contact_lenses_frequency_before)</questionText>
+        <instruction>
+         <text>[glasses_contact_lenses_no_longer_need] = 'UNDEFINED_CODE_1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>All the time</meaningText>
+          <description>All the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Most of the time</meaningText>
+          <description>Most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Hardly ever</meaningText>
+          <description>Hardly ever</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Only when eyes feel tired</meaningText>
+          <description>Only when eyes feel tired</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX111302</protocolID>
+     <longName>Use of Glasses and/or Contact Lenses as a Child</longName>
+     <context>PhenX</context>
+     <shortName>PX111302</shortName>
+     <preferredDefinition>The respondent is asked a series of 5 questions to assess their child's current and past use of glasses and contact lenses, duration of use, and reason for use.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T18:47:01</dateCreated>
+    <longName>PhenX PX111402 - Refractive Error Children</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Refractive error in children is measured using cycloplegic autorefraction with the Retinomax. Eyes undergo cycloplegia after pupillary dilating eyedrops and eight readings of refractive error of each eye are taken with the Retinomax in the Refractions and Keratometry mode. In instances where cycloplegic autorefraction cannot be obtained on an eye or when it is of poor quality (Retinomax confidence rating ≤ 7), cycloplegic retinoscopy is performed to obtain a measure of refractive error.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>See instrument details refer "https://www.phenxtoolkit.org/index.php?pageLink=browse.protocoldetails&amp;id=111402" here.</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T18:47:01</dateCreated>
+      <longName>Refractive Error Children</longName>
+      <instruction/>
+      <preferredDefinition>Refractive Error Children</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>ID of Subject who is taking the Refractive Error measurement (subject_id)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Model of Cycloplegic Autorefraction (Retinomax) used to measure Refractive Error (retinomax_model)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Corneal vertex distance measured by Retinomax (autorefraction_corneal_vertex_distance)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Right Eye Spherical Power measured (right_eye_autorefraction_spherical_power)</questionText>
+        <instruction>
+         <text>UOM=diopter (D)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Right Eye Cylindrical Power measured (right_eye_autorefraction_cylindrical_power)</questionText>
+        <instruction>
+         <text>UOM=diopter (D)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Right Eye Cylinder Axis measured (right_eye_autorefraction_cylinder_axis)</questionText>
+        <instruction>
+         <text>UOM=degree ()</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Left Eye Spherical Power measured (left_eye_autorefraction_spherical_power)</questionText>
+        <instruction>
+         <text>UOM=diopter (D)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Left Eye Cylindrical Power measured (left_eye_autorefraction_cylindrical_power)</questionText>
+        <instruction>
+         <text>UOM=diopter (D)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Left Eye Cylinder Axis measured (left_eye_autorefraction_cylinder_axis)</questionText>
+        <instruction>
+         <text>UOM=degree ()</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Model of Cycloplegic retinoscopy used to measure Refractive Error (cycloplegic_retinoscopy_model)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Right Eye Spherical Power measured (right_eye_retinoscopy_spherical_power)</questionText>
+        <instruction>
+         <text>UOM=diopter (D)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Right Eye Cylindrical Power measured (right_eye_retinoscopy_cylindrical_power)</questionText>
+        <instruction>
+         <text>UOM=diopter (D)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Right Eye Cylinder Axis measured (right_eye_retinoscopy_cylinder_axis)</questionText>
+        <instruction>
+         <text>UOM=degree ()</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Left Eye Spherical Power measured (left_eye_retinoscopy_spherical_power)</questionText>
+        <instruction>
+         <text>UOM=diopter (D)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Left Eye Cylindrical Power measured (left_eye_retinoscopy_cylindrical_power)</questionText>
+        <instruction>
+         <text>UOM=diopter (D)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Left Eye Cylinder Axis measured (left_eye_retinoscopy_cylinder_axis)</questionText>
+        <instruction>
+         <text>UOM=degree ()</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Retinoscopy readings is recorded in plus or minus cylinder form (recording_cylinder_form)</questionText>
+        <instruction>
+         <text>UOM=plus or minus</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Check which eye if the child was unable to complete testing for either eye (which_eye)</questionText>
+        <instruction>
+         <text>UOM=right or left</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX111402</protocolID>
+     <longName>Refractive Error - Children</longName>
+     <context>PhenX</context>
+     <shortName>PX111402</shortName>
+     <preferredDefinition>Refractive error in children is measured using cycloplegic autorefraction with the Retinomax. Eyes undergo cycloplegia after pupillary dilating eyedrops and eight readings of refractive error of each eye are taken with the Retinomax in the Refractions and Keratometry mode. In instances where cycloplegic autorefraction cannot be obtained on an eye or when it is of poor quality (Retinomax confidence rating ≤ 7), cycloplegic retinoscopy is performed to obtain a measure of refractive error.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-04-26T18:47:01</dateCreated>
+    <longName>PhenX PX111501 - Retinal Digital Photography</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Two 45¿ digital retinal images (Field 1 and 2) will be taken of each eye of the participant using the Canon Non-Mydriatic Retinal CR6-45NM camera with a digital Canon D60 camera back (6.3 megapixels per image). Field 1 is centered on the optic disc and Field 2 is centered on the macula, providing photographic documentation of the optic disc, macula, and substantial portions of the temporal arcades. These photographs may be graded for retinal microvascular characteristics, including focal arteriolar narrowing, arterio-venous nicking, retinopathy (e.g., microaneurysms, retinal hemorrhages) and other conditions. In addition, generalized arteriolar narrowing is quantified using a computer assisted measure of retinal vascular caliber.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>See instrument details "https://www.phenxtoolkit.org/index.php?pageLink=browse.protocoldetails&amp;id=111501" here.</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-04-26T18:47:01</dateCreated>
+      <longName>Retinal Digital Photography</longName>
+      <instruction/>
+      <preferredDefinition>Retinal Digital Photography</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Participant ID (participant_id)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Photographer ID (photographer_id)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Retinal Digital Photography instrument model (retinal_digital_photography_instrument_model)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Right Eye Fields photographed in the Retinal Digital Photography (right_eye_rdg_fields_photographed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Can not be photographed</meaningText>
+          <description>Can not be photographed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Field 1</meaningText>
+          <description>Field 1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Field 2</meaningText>
+          <description>Field 2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Other</meaningText>
+          <description>Other</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Right Eye Fields cannot be photographed in the Retinal Digital Photography. Please describe. (right_eye_rdg_fields_cannot_be_photographed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Right Eye Fields photographed in the Retinal Digital Photography. Other, please describe. (right_eye_rdg_fields_other)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Right Eye Flash Setting in the Retinal Digital Photography (right_eye_rdg_flash_setting)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Right Eye Number of images captured in the Retinal Digital Photography (right_eye_number_images_captured)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Right Eye Estimated Diameter of Pupil at 1st Photograph (right_eye_estimated_pupil_diameter)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Right Eye Describe any problems or unusual findings (right_eye_problem)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Left Eye Fields photographed in the Retinal Digital Photography (left_eye_rdg_fields_photographed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Can not be photographed</meaningText>
+          <description>Can not be photographed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Field 1</meaningText>
+          <description>Field 1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Field 2</meaningText>
+          <description>Field 2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Other</meaningText>
+          <description>Other</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Left Eye Fields cannot be photographed in the Retinal Digital Photography. Please describe. (left_eye_rdg_fields_cannot_be_photographed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Left Eye Fields photographed in the Retinal Digital Photography. Other, please describe. (left_eye_rdg_fields_other)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Left Eye Flash Setting in the Retinal Digital Photography (left_eye_rdg_flash_setting)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Left Eye Number of images captured in the Retinal Digital Photography (left_eye_number_images_captured)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Left Eye Estimated Diameter of Pupil at 1st Photograph (left_eye_estimated_pupil_diameter)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-04-26T18:47:01</dateCreated>
+        <questionText>Left Eye Describe any problems or unusual findings (left_eye_problem)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX111501</protocolID>
+     <longName>Retinal Digital Photography</longName>
+     <context>PhenX</context>
+     <shortName>PX111501</shortName>
+     <preferredDefinition>Two 45¿ digital retinal images (Field 1 and 2) will be taken of each eye of the participant using the Canon Non-Mydriatic Retinal CR6-45NM camera with a digital Canon D60 camera back (6.3 megapixels per image). Field 1 is centered on the optic disc and Field 2 is centered on the macula, providing photographic documentation of the optic disc, macula, and substantial portions of the temporal arcades. These photographs may be graded for retinal microvascular characteristics, including focal arteriolar narrowing, arterio-venous nicking, retinopathy (e.g., microaneurysms, retinal hemorrhages) and other conditions. In addition, generalized arteriolar narrowing is quantified using a computer assisted measure of retinal vascular caliber.</preferredDefinition>
+    </protocol>
+   </form>
+   </forms>
