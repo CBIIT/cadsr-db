@@ -1,0 +1,3275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+ <collectionName>PhenX Protocols - 9</collectionName>
+ <collectionDescription>Load PhenX PX031401,PX040801,PX040901,PX041001,PX041101</collectionDescription>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>PhenX PX040901 - Peripheral Arterial Disease</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>This measure begins with a set of interviewer-administered questions about whether the person has been told by a physician that he or she has poor blood flow to the legs or blocked or narrowed arteries to the legs and whether they have had any procedures, such as angiography, angioplasty, or surgery, for the condition. A protocol is provided to assess the presence of peripheral arterial disease (PAD) using the ankle brachial index (ABI). The ABI involves the use of ultrasound to measure blood pressure.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>Peripheral Arterial Disease</longName>
+ <instruction/>
+ <preferredDefinition>Peripheral Arterial Disease</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Did a doctor ever say that you had claudication or peripheral arterial disease (poor blood flow to the legs or blocked or narrowed arteries to the legs)? Do not include varicose veins or phlebitis. (ever_have_peripheral_arterial_disease)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>For the above condition have you ever had... Angiography (dye in the arteries of the legs)? (pad_angiography)</questionText>
+ <instruction>
+ <text>[ever_have_peripheral_arterial_disease] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>For the above condition have you ever had... Angioplasty (balloon catheter to open blockage)? (pad_angioplasty)</questionText>
+ <instruction>
+ <text>[ever_have_peripheral_arterial_disease] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>For the above condition have you ever had... Surgery to improve blood flow in your legs (do not include surgery for varicose veins)? (pad_surgery)</questionText>
+ <instruction>
+ <text>[ever_have_peripheral_arterial_disease] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Blood pressure measurement, sphygmomanometer name and model. (sphygmomanometer_0)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Blood pressure measurement, cuff size for arm. (cuff_size_arm)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>S</meaningText>
+ <description>S</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>M</meaningText>
+ <description>M</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>L</meaningText>
+ <description>L</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>XL</meaningText>
+ <description>XL</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Blood pressure measurement, cuff size for ankle. (cuff_size_ankle)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>S</meaningText>
+ <description>S</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>M</meaningText>
+ <description>M</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>L</meaningText>
+ <description>L</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>XL</meaningText>
+ <description>XL</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Arterial Blood Pressure Measurement. Measure systolic blood pressure of: Right brachial artery (Q1a) (mm Hg). (sbp_q1a)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=mm Hg</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Arterial Blood Pressure Measurement. Measure systolic blood pressure of: Right dorsalis pedis artery (Q1b) (sbp_q1b)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=mm Hg</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Arterial Blood Pressure Measurement. Measure systolic blood pressure of: Right posterior tibial artery (Q1c) (mm Hg). (sbp_q1c)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=mm Hg</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Arterial Blood Pressure Measurement. Measure systolic blood pressure of: Left posterior tibial artery (Q1d) (mm Hg). (sbp_q1d)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=mm Hg</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Arterial Blood Pressure Measurement. Measure systolic blood pressure of: Left dorsalis pedis artery (Q1e) (mm Hg). (sbp_q1e)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=mm Hg</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Arterial Blood Pressure Measurement. Measure systolic blood pressure of: Left brachial artery (Q1f) (mm Hg). (sbp_q1f)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=mm Hg</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Right ABI = (the higher of the right posterior tibial SBP or the right dorsalis pedis SBP) / (the higher arm SBP) (right_abi)</questionText>
+ <instruction>
+ <text>datatype=number</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>LEFT ABI = (the higher of the left posterior tibial SBP or the left dorsalis pedis SBP) / (the higher arm SBP) (left_abi)</questionText>
+ <instruction>
+ <text>datatype=number</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX040901</protocolID>
+ <longName>Peripheral Arterial Disease</longName>
+ <context>PhenX</context>
+ <shortName>PX040901</shortName>
+ <preferredDefinition>This measure begins with a set of interviewer-administered questions about whether the person has been told by a physician that he or she has poor blood flow to the legs or blocked or narrowed arteries to the legs and whether they have had any procedures, such as angiography, angioplasty, or surgery, for the condition. A protocol is provided to assess the presence of peripheral arterial disease (PAD) using the ankle brachial index (ABI). The ABI involves the use of ultrasound to measure blood pressure.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>PhenX PX041001 - Abdominal Aortic Aneurysm</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Measure to assess the presence of an abdominal aortic aneurysm through the use of ultrasound.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>Abdominal Aortic Aneurysm</longName>
+ <instruction/>
+ <preferredDefinition>Abdominal Aortic Aneurysm</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Have you ever been diagnosed by a doctor as having an abdominal aortic aneurysm? (ever_have_abdominal_aortic_aneurysm)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Have you had surgery or other repair for this aneurysm? (aaa_surgery)</questionText>
+ <instruction>
+ <text>[ever_have_abdominal_aortic_aneurysm] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Ultrasound machine name and model. (ultrasound_machine)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Maximum transverse diameter (cm) of the aorta. (max_transverse_diameter)</questionText>
+ <instruction>
+ <text>UOM=Centimeter</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Maximum anteriorposterior diameter (cm) in the longitudinal plane. (max_anterior_posterior_diameter)</questionText>
+ <instruction>
+ <text>UOM=Centimeter</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Maximum aortic diameter (cm). (max_aortic_diameter)</questionText>
+ <instruction>
+ <text>UOM=Centimeter</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Ultrasound scan image ID. (ultrasound_image_id)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX041001</protocolID>
+ <longName>Abdominal Aortic Aneurysm</longName>
+ <context>PhenX</context>
+ <shortName>PX041001</shortName>
+ <preferredDefinition>Measure to assess the presence of an abdominal aortic aneurysm through the use of ultrasound.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>PhenX PX041101 - Arrhythmia Atrial And Ventricular</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Measure to assess presence of arrhythmias through collection of personal history, treatments and procedures, medication usage, and administration of an electrocardiograph (ECG).</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>Arrhythmia Atrial And Ventricular</longName>
+ <instruction/>
+ <preferredDefinition>Arrhythmia Atrial And Ventricular</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Have you been told you have/had a heart rhythm problem called atrial fibrillation? (ever_have_atrial_fibrillation)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>2</value>
+ <meaningText>Maybe</meaningText>
+ <description>Maybe</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>9</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Date of first episode (mm/dd/yyyy) (first_episode_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;[ever_have_atrial_fibrillation] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Date of first episode (mm/dd/yyyy) (first_episode_date_coded)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>99,99,9999</value>
+ <meaningText>unknown</meaningText>
+ <description>unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>ER/hospitalized or saw M.D.? (atrial_fibrillation_er_hospitalized_md)</questionText>
+ <instruction>
+ <text>[ever_have_atrial_fibrillation] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Hosp/ER</meaningText>
+ <description>Hosp/ER</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>2</value>
+ <meaningText>Saw M.D.</meaningText>
+ <description>Saw M.D.</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>9</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Hospitalized at: (atrial_fibrillation_hospitalized_at)</questionText>
+ <instruction>
+ <text>[atrial_fibrillation_er_hospitalized_md] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>M.D. seen: (atrial_fibrillation_md_seen)</questionText>
+ <instruction>
+ <text>[atrial_fibrillation_er_hospitalized_md] = '2'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Permanent pacemaker insertion? (pacemaker)</questionText>
+ <instruction>
+ <text>[ever_have_atrial_fibrillation] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>2</value>
+ <meaningText>Maybe</meaningText>
+ <description>Maybe</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>9</value>
+ <meaningText>Don't Know</meaningText>
+ <description>Don't Know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Year inserted permanent pacemaker. (pacemaker_year)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1900;[ever_have_atrial_fibrillation] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Year inserted permanent pacemaker. (pacemaker_year_coded)</questionText>
+ <instruction>
+ <text>[ever_have_atrial_fibrillation] = '1' and [pacemaker] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>9999</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Are you taking any of the cardiovascular medications below? Anticoagulants (Coumadin, Warfarin, etc.) (cardiovascular_medication_anticoagulant)</questionText>
+ <instruction>
+ <text>[ever_have_atrial_fibrillation] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Yes, now</meaningText>
+ <description>Yes, now</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>2</value>
+ <meaningText>Yes, not now</meaningText>
+ <description>Yes, not now</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>3</value>
+ <meaningText>Maybe</meaningText>
+ <description>Maybe</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>9</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Are you taking any of the cardiovascular medications below? Antiarrhythmics (Quinidine, Procainamide, Norpace, Disopyramide, etc.) (cardiovascular_medication_antiarrhythmic)</questionText>
+ <instruction>
+ <text>[ever_have_atrial_fibrillation] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Yes, now</meaningText>
+ <description>Yes, now</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>2</value>
+ <meaningText>Yes, not now</meaningText>
+ <description>Yes, not now</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>3</value>
+ <meaningText>Maybe</meaningText>
+ <description>Maybe</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>9</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Electrocardiogram Trace/Image ID. (pxt41101_ecg_image_id)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Other, specify (ecg_other)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Limb leads image (cardio_011_image002)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>V6 Electrode placement image (cardio_011_image004)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>MAC PC and LCD display image (cardio_011_image006)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Typical Electrocardiogram using MAC PC (cardio_011_image008)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX041101</protocolID>
+ <longName>Arrhythmia (Atrial and Ventricular)</longName>
+ <context>PhenX</context>
+ <shortName>PX041101</shortName>
+ <preferredDefinition>Measure to assess presence of arrhythmias through collection of personal history, treatments and procedures, medication usage, and administration of an electrocardiograph (ECG).</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>PhenX PX040801 - Myocardial Infarction</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>This measure assesses if an individual has had a myocardial infarction (MI) through collection of personal history of disease, treatment and procedure histories, and medical record abstraction.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>Myocardial Infarction</longName>
+ <instruction/>
+ <preferredDefinition>Myocardial Infarction</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Has a doctor ever told you that you had a myocardial infarction or heart attack? (ever_have_myocardial_infarction)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>9</value>
+ <meaningText>Don't Know</meaningText>
+ <description>Don't Know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Have you had an outpatient or day surgery procedure to unblock blocked or narrowed blood vessels of the heart (called a PTCA, coronary angioplasty, stent, or atherectomy)? (ever_have_stent)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Was there an acute episode of pain, discomfort or tightness in the chest, left arm or jaw within 72 hours of the hospitalization or within 72 hours of the inhospital event? (chest_discomfort)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Was the discomfort or pain diagnosed as having a noncardiac origin? (chest_discomfort_non_cardiac)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Were electrocardiograms (ECGs or EKGs) recorded? (electrocardiogram)</questionText>
+ <instruction>
+ <text>[chest_discomfort_non_cardiac] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Dates of ECGs image (cardio_008_image002)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Were any cardiac enzyme measurements performed during this admission? (serum_enzyme)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Did the participant have any active liver disease (cirrhosis, hepatitis, liver cancer, etc.)? (liver_disease)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Did the participant have any active liver disease (cirrhosis, hepatitis, liver cancer, etc.)? If Yes specify. (liver_disease_specify)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Is there any mention of the participant having either trauma, a surgical procedure, or rhabdomyolysis within one week prior to the measurement of the cardiac enzymes? (trauma_before_enzyme_measurement)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Is there any mention of the participant having either trauma, a surgical procedure, or rhabdomyolysis within one week prior to the measurement of the cardiac enzymes? If Yes specify date of trauma or procedure. (trauma_before_enzyme_measurement_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Is there any mention of the participant having either trauma, a surgical procedure, or rhabdomyolysis within one week prior to the measurement of the cardiac enzymes? If Yes specify type of trauma or procedure. (trauma_before_enzyme_measurement_type)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Enzyme Chart image (cardio_008_image004)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Enzyme Chart image 2 (cardio_008_image006)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Record all serum enzyme values Serum enzyme (enzyme_chart_enzyme)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Total CK</meaningText>
+ <description>Total CK</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>CK-MB</meaningText>
+ <description>CK-MB</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>LDH</meaningText>
+ <description>LDH</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>LDH-1</meaningText>
+ <description>LDH-1</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>LDH-2</meaningText>
+ <description>LDH-2</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Troponin I</meaningText>
+ <description>Troponin I</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>Troponin T</meaningText>
+ <description>Troponin T</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Record all serum enzyme values Normal Range (enzyme_chart_range)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=3;[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Record all serum enzyme values Lowest enzyme value (enzyme_chart_value_low)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>17</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Record all serum enzyme values Highest enzyme value (enzyme_chart_value_high)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>18</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Record all serum enzyme values Date (mm/dd/yy) (enzyme_chart_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>19</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Record all serum enzyme values Time (hh:mm am/pm) (enzyme_chart_time)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>20</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Myocardial infarction (myocardial_infarction)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Definite</meaningText>
+ <description>Definite</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Probable</meaningText>
+ <description>Probable</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>No MI</meaningText>
+ <description>No MI</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>21</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Myocardial infarction Date (myocardial_infarction_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;[myocardial_infarction] = 'UNDEFINED_CODE' or [myocardial_infarction] = 'UNDEFINED_CODE_1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>22</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Chest Pain (chest_pain)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Present</meaningText>
+ <description>Present</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Absent</meaningText>
+ <description>Absent</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>23</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Cardiac Enzymes (cardiac_enzyme)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Abnormal</meaningText>
+ <description>Abnormal</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Equivocal</meaningText>
+ <description>Equivocal</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Incomplete</meaningText>
+ <description>Incomplete</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Normal</meaningText>
+ <description>Normal</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>24</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>ECG Serial Reading (pick one) (ecg_serial_reading)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Evolution of Major Q-Wave</meaningText>
+ <description>Evolution of Major Q-Wave</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Evolution of ST-T Elevation with or without Q-Wave</meaningText>
+ <description>Evolution of ST-T Elevation with or without Q-Wave</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>New LBBB</meaningText>
+ <description>New LBBB</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Evolution of ST-Depression/Inversion alone</meaningText>
+ <description>Evolution of ST-Depression/Inversion alone</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>Evolution of Minor Q-Wave alone</meaningText>
+ <description>Evolution of Minor Q-Wave alone</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Single ECG with Major Q-Wave</meaningText>
+ <description>Single ECG with Major Q-Wave</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>Single ECG with LBBB, described as new</meaningText>
+ <description>Single ECG with LBBB, described as new</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>Absent, Uncodable or Other ECG</meaningText>
+ <description>Absent, Uncodable or Other ECG</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>25</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Procedurerelated (procedure_related)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes, cardiovascular</meaningText>
+ <description>Yes, cardiovascular</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, non-cardiovascular</meaningText>
+ <description>Yes, non-cardiovascular</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX040801</protocolID>
+ <longName>Myocardial Infarction</longName>
+ <context>PhenX</context>
+ <shortName>PX040801</shortName>
+ <preferredDefinition>This measure assesses if an individual has had a myocardial infarction (MI) through collection of personal history of disease, treatment and procedure histories, and medical record abstraction.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>PhenX PX041301 - Pulmonary Embolism</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>A screening question is asked about whether a person has been told that they have pulmonary embolus or blood clots. If the response is yes, then the second protocol provides a method for abstracting additional information from the person's medical record about the history of pulmonary embolism.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>Pulmonary Embolism</longName>
+ <instruction/>
+ <preferredDefinition>Pulmonary Embolism</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Has a doctor ever told you that you had pulmonary embolus or blood clots in your lungs? (ever_have_pulmonary_embolism)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>9</value>
+ <meaningText>Don't Know</meaningText>
+ <description>Don't Know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Complete the following for all hospitalized pulmonary embolism (PE)/deep vein thrombosis (DVT). Complete the following if outpatient (OP) records confirm deep vein thrombosis (DVT) or an autopsy report confirms pulmonary embolism. (pulmonary_embolism_dvt_intro)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Pulmonary embolism (PE) requiring hospitalization: (pe_hospitalization)</questionText>
+ <instruction>
+ <text>[ever_have_pulmonary_embolism] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Date of Diagnosis: (mm/dd/yyyy) (pe_diagnosis_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;[ever_have_pulmonary_embolism] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Diagnosis: (Mark the one category that applies best.) (pe_diagnosis)</questionText>
+ <instruction>
+ <text>[ever_have_pulmonary_embolism] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Pulmonary embolism not resulting from a procedure within 60 days</meaningText>
+ <description>Pulmonary embolism not resulting from a procedure within 60 days</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Pulmonary embolism during or following a procedure within 60 days</meaningText>
+ <description>Pulmonary embolism during or following a procedure within 60 days</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Diagnosis of pulmonary embolism is based on: (Mark all that apply.) (pe_diagnosis_based_on)</questionText>
+ <instruction>
+ <text>[ever_have_pulmonary_embolism] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Hospital discharge summary with a diagnosis of pulmonary embolism</meaningText>
+ <description>Hospital discharge summary with a diagnosis of pulmonary embolism</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>High probability on ventilation-perfusion lung scan (exclude moderate, intermediate, or low probability on ventilation-perfusion lung scan)</meaningText>
+ <description>High probability on ventilation-perfusion lung scan (exclude moderate, intermediate, or low probability on ventilation-perfusion lung scan)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Positive findings on pulmonary angiogram or spiral CAT scan (CT)</meaningText>
+ <description>Positive findings on pulmonary angiogram or spiral CAT scan (CT)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>Diagnosis of deep vein thrombosis (DVT) based on ? 1 deep vein thrombosis (DVT) criteria in question 1.3 (link to Form 126 in Source section below) plus signs and symptoms suggestive of pulmonary embolism (PE) (e.g., acute chest pain, dyspnea, tachypnea, hypoxemia, tachycardia, or chest x-ray findings suggestive of pulmonary embolism)</meaningText>
+ <description>Diagnosis of deep vein thrombosis (DVT) based on ? 1 deep vein thrombosis (DVT) criteria in question 1.3 (link to Form 126 in Source section below) plus signs and symptoms suggestive of pulmonary embolism (PE) (e.g., acute chest pain, dyspnea, tachypnea, hypoxemia, tachycardia, or chest x-ray findings suggestive of pulmonary embolism)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>8</value>
+ <meaningText>Other, including autopsy</meaningText>
+ <description>Other, including autopsy</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX041301</protocolID>
+ <longName>Pulmonary Embolism</longName>
+ <context>PhenX</context>
+ <shortName>PX041301</shortName>
+ <preferredDefinition>A screening question is asked about whether a person has been told that they have pulmonary embolus or blood clots. If the response is yes, then the second protocol provides a method for abstracting additional information from the person's medical record about the history of pulmonary embolism.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>PhenX PX041401 - Rheumatic Fever Rheumatic Heart Disease</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Measure to assess history of Rheumatic Fever or Rheumatic Heart Disease.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>Rheumatic Fever Rheumatic Heart Disease</longName>
+ <instruction/>
+ <preferredDefinition>Rheumatic Fever Rheumatic Heart Disease</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Has a doctor ever said you had rheumatic fever (inflammatory rheumatism)? (have_rheumatic_fever)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Have you had it in the past 12 months? (rheumatic_fever_past_12month)</questionText>
+ <instruction>
+ <text>[have_rheumatic_fever] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Don't Know</meaningText>
+ <description>Don't Know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Are you taking any pills or medicine for it? (rheumatic_fever_medication)</questionText>
+ <instruction>
+ <text>[have_rheumatic_fever] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>What is it? (rheumatic_fever_medication_name)</questionText>
+ <instruction>
+ <text>[rheumatic_fever_medication] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX041401</protocolID>
+ <longName>Rheumatic Fever/Rheumatic Heart Disease</longName>
+ <context>PhenX</context>
+ <shortName>PX041401</shortName>
+ <preferredDefinition>Measure to assess history of Rheumatic Fever or Rheumatic Heart Disease.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>PhenX PX050101 - Breastfeeding</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>These interviewer-administered questions ascertain whether an infant was breastfed, the duration of breastfeeding, and the introduction of solid foods.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>Breastfeeding</longName>
+ <instruction/>
+ <preferredDefinition>Breastfeeding</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Was Sample Person ever breastfed or fed breast milk? (ever_breast_milk)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>7</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>9</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How old was Sample Person when {he/she} was first fed something other than breastmilk or water? (age_other_than_breast_milk)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=365</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How old was Sample Person when {he/she} was first fed something other than breastmilk or water? INCLUDE FORMULA, JUICE, SOLID FOODS. (age_other_than_breast_milk_coded)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>6666</value>
+ <meaningText>NEVER</meaningText>
+ <description>NEVER</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>7777</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>9999</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How old was Sample Person when {he/she} was first fed something other than breastmilk or water? INCLUDE FORMULA, JUICE, SOLID FOODS. ENTER UNIT (age_otherthan_breast_milk_unit)</questionText>
+ <instruction>
+ <text>[age_other_than_breast_milk] = ''</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>DAYS</meaningText>
+ <description>DAYS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>WEEKS</meaningText>
+ <description>WEEKS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>MONTHS</meaningText>
+ <description>MONTHS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>YEARS</meaningText>
+ <description>YEARS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>7</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>9</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How old was Sample Person when {he/she} completely stopped breastfeeding or being fed breast milk? (age_stop_breast_milk)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=365;[ever_breast_milk] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How old was Sample Person when {he/she} completely stopped breastfeeding or being fed breast milk? (age_stop_breast_milk_coded)</questionText>
+ <instruction>
+ <text>[ever_breast_milk] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>6666</value>
+ <meaningText>STILL BREASTFEEDING</meaningText>
+ <description>STILL BREASTFEEDING</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>7777</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>9999</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How old was Sample Person when {he/she} completely stopped breastfeeding or being fed breast milk? ENTER UNIT (age_stop_breast_milk_unit)</questionText>
+ <instruction>
+ <text>[ever_breast_milk] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>DAYS</meaningText>
+ <description>DAYS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>WEEKS</meaningText>
+ <description>WEEKS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>MONTHS</meaningText>
+ <description>MONTHS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>YEARS</meaningText>
+ <description>YEARS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>7</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>9</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX050101</protocolID>
+ <longName>Breastfeeding</longName>
+ <context>PhenX</context>
+ <shortName>PX050101</shortName>
+ <preferredDefinition>These interviewer-administered questions ascertain whether an infant was breastfed, the duration of breastfeeding, and the introduction of solid foods.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>PhenX PX050201 - Calcium Intake By Children Daily</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>These self-administered questions are for use with children of middle school-age (aged 11-14 years). Each question has a multichoice answer. Pictures help guide the children's responses to the questions.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction>
+ <text>Think about your usual eating habits over the past month.</text>
+ </headerInstruction>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>Calcium Intake By Children Daily</longName>
+ <instruction/>
+ <preferredDefinition>Calcium Intake By Children Daily</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you drink 100% orange juice? Do not count fruit drinks like Tang® and Sunny D®. (orange_juice_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 time per day</meaningText>
+ <description>1 time per day</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>8</value>
+ <meaningText>2 or more times per day</meaningText>
+ <description>2 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Each time you drink orange juice, how much do you usually drink? (orange_juice_quantity)</questionText>
+ <instruction>
+ <text>[orange_juice_frequency] = '2' or [orange_juice_frequency] = '3' or [orange_juice_frequency] = '4' or [orange_juice_frequency] = '5' or [orange_juice_frequency] = '6' or [orange_juice_frequency] = '7' or [orange_juice_frequency] = '8'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 1 cup</meaningText>
+ <description>Less than 1 cup</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 cup (8 ounces)</meaningText>
+ <description>1 cup (8 ounces)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 1 cup</meaningText>
+ <description>More than 1 cup</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often is the orange juice you drink calcium fortified? (orange_juice_calcium_fortified_frequency)</questionText>
+ <instruction>
+ <text>[orange_juice_frequency] = '2' and [orange_juice_frequency] = '3' and [orange_juice_frequency] = '4' and [orange_juice_frequency] = '5' and [orange_juice_frequency] = '6' and [orange_juice_frequency] = '7' and [orange_juice_frequency] = '8'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Almost never or never</meaningText>
+ <description>Almost never or never</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Sometimes</meaningText>
+ <description>Sometimes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Almost always or always</meaningText>
+ <description>Almost always or always</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you drink milk as a beverage (NOT in cereal)? (milk_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 time per day</meaningText>
+ <description>1 time per day</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>8</value>
+ <meaningText>2 times per day</meaningText>
+ <description>2 times per day</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>9</value>
+ <meaningText>3 or more times per day</meaningText>
+ <description>3 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Each time you drink milk, how much do you usually drink? (milk_quantity)</questionText>
+ <instruction>
+ <text>[milk_frequency] = '2' or [milk_frequency] = '3' or [milk_frequency] = '4' or [milk_frequency] = '5' or [milk_frequency] = '6' or [milk_frequency] = '7' or [milk_frequency] = '8' or [milk_frequency] = '9'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 1 cup</meaningText>
+ <description>Less than 1 cup</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 cup (8 ounces)</meaningText>
+ <description>1 cup (8 ounces)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 1 cup</meaningText>
+ <description>More than 1 cup</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>8 ounce glass of milk image (calcium_intake_image001)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>What kind of milk do you usually drink? (milk_variety)</questionText>
+ <instruction>
+ <text>[milk_frequency] = '2' or [milk_frequency] = '3' or [milk_frequency] = '4' or [milk_frequency] = '5' or [milk_frequency] = '6' or [milk_frequency] = '7' or [milk_frequency] = '8' or [milk_frequency] = '9'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Whole milk</meaningText>
+ <description>Whole milk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>2% fat milk</meaningText>
+ <description>2% fat milk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>1% fat milk</meaningText>
+ <description>1% fat milk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>Skim or nonfat milk</meaningText>
+ <description>Skim or nonfat milk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>Chocolate milk</meaningText>
+ <description>Chocolate milk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>Soy or rice milk</meaningText>
+ <description>Soy or rice milk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you eat yogurt? (yogurt_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 or more times per day</meaningText>
+ <description>1 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you eat cold cereal? (cereal_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than one time per month</meaningText>
+ <description>Never or less than one time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 time per day</meaningText>
+ <description>1 time per day</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>8</value>
+ <meaningText>2 or more times per day</meaningText>
+ <description>2 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Each time you eat cold cereal, how much do you usually eat? (cereal_quantity)</questionText>
+ <instruction>
+ <text>[cereal_frequency] = '2' or [cereal_frequency] = '3' or [cereal_frequency] = '4' or [cereal_frequency] = '5' or [cereal_frequency] = '6' or [cereal_frequency] = '7' or [cereal_frequency] = '8'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 2 cups</meaningText>
+ <description>Less than 2 cups</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>2 cups</meaningText>
+ <description>2 cups</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 2 cups</meaningText>
+ <description>More than 2 cups</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Two cups of cold cereal image (calcium_intake_image002)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Think about your usual eating habits over the past month. How often do you eat Mexican foods such as tacos, tostados, burritos, tamales, fajitas, enchiladas, quesadillas, or chimichangas? (mexican_food_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 or more times per day</meaningText>
+ <description>1 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Each time you eat Mexican foods, how much do you usually eat? (mexican_food_quantity)</questionText>
+ <instruction>
+ <text>[mexican_food_frequency] = '2' or [mexican_food_frequency] = '3' or [mexican_food_frequency] = '4' or [mexican_food_frequency] = '5' or [mexican_food_frequency] = '6' or [mexican_food_frequency] = '7'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 1 taco or burrito</meaningText>
+ <description>Less than 1 taco or burrito</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 taco or burrito</meaningText>
+ <description>1 taco or burrito</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 1 taco or burrito</meaningText>
+ <description>More than 1 taco or burrito</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you eat pizza? (pizza_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 or more times per day</meaningText>
+ <description>1 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Think about your usual eating habits over the past month. Each time you eat pizza, how much do you usually eat? (pizza_quantity)</questionText>
+ <instruction>
+ <text>[pizza_frequency] = '2' or [pizza_frequency] = '3' or [pizza_frequency] = '4' or [pizza_frequency] = '5' or [pizza_frequency] = '6' or [pizza_frequency] = '7'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>1 slice</meaningText>
+ <description>1 slice</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>2 slices or one mini pizza</meaningText>
+ <description>2 slices or one mini pizza</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>3 or more slices 5</meaningText>
+ <description>3 or more slices 5</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you eat macaroni and cheese? (macaroni_cheese_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 or more times per day</meaningText>
+ <description>1 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>17</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Each time you eat macaroni and cheese, how much do you usually eat? (macaroni_cheese_quantity)</questionText>
+ <instruction>
+ <text>[macaroni_cheese_frequency] = '2' or [macaroni_cheese_frequency] = '3' or [macaroni_cheese_frequency] = '4' or [macaroni_cheese_frequency] = '5' or [macaroni_cheese_frequency] = '6' or [macaroni_cheese_frequency] = '7'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 1 cup</meaningText>
+ <description>Less than 1 cup</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 cup (SEE THE PICTURE BELOW)</meaningText>
+ <description>1 cup (SEE THE PICTURE BELOW)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 1 cup</meaningText>
+ <description>More than 1 cup</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>18</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>One cup of macaroni and cheese image (calcium_intake_image003)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>19</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you eat ice cream, ice cream bars, milk shakes, or frozen yogurt? (ice_cream_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 or more times per day</meaningText>
+ <description>1 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>20</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Each time you eat ice cream, ice cream bars, milkshakes, or frozen yogurt, how much do you usually eat? (ice_cream_quantity)</questionText>
+ <instruction>
+ <text>[ice_cream_frequency] = '2' or [ice_cream_frequency] = '3' or [ice_cream_frequency] = '4' or [ice_cream_frequency] = '5' or [ice_cream_frequency] = '6' or [ice_cream_frequency] = '7'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 1 cup</meaningText>
+ <description>Less than 1 cup</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 cup (2 scoops)</meaningText>
+ <description>1 cup (2 scoops)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 1 cup</meaningText>
+ <description>More than 1 cup</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>21</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you eat cheese (including on salads or in sandwiches or subs)? (cheese_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 or more times per day</meaningText>
+ <description>1 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>22</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Think about your usual eating habits over the past month. Each time you eat cheese, how much do you usually eat? (cheese_quantity)</questionText>
+ <instruction>
+ <text>[cheese_frequency] = '2' or [cheese_frequency] = '3' or [cheese_frequency] = '4' or [cheese_frequency] = '5' or [cheese_frequency] = '6' or [cheese_frequency] = '7'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 1 slice</meaningText>
+ <description>Less than 1 slice</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 slice</meaningText>
+ <description>1 slice</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 1 slice</meaningText>
+ <description>More than 1 slice</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>23</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Think about your usual eating habits over the past month. How often do you eat bread, toast or dinner rolls, including bread as part of a sandwich (DO NOT count buns with hamburgers or hot dogs)? (bread_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 time per day</meaningText>
+ <description>1 time per day</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>8</value>
+ <meaningText>2 or more times per day</meaningText>
+ <description>2 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>24</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Think about your usual eating habits over the past month. Each time you eat bread, toast or dinner rolls, how much do you usually eat? (bread_quantity)</questionText>
+ <instruction>
+ <text>[bread_frequency] = '2' or [bread_frequency] = '3' or [bread_frequency] = '4' or [bread_frequency] = '5' or [bread_frequency] = '6' or [bread_frequency] = '7' or [bread_frequency] = '8'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>1 slice or 1 dinner roll</meaningText>
+ <description>1 slice or 1 dinner roll</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>2 slices or 2 dinner rolls</meaningText>
+ <description>2 slices or 2 dinner rolls</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 2 slices or 2 dinner rolls</meaningText>
+ <description>More than 2 slices or 2 dinner rolls</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX050201</protocolID>
+ <longName>Calcium Intake - Children</longName>
+ <context>PhenX</context>
+ <shortName>PX050201</shortName>
+ <preferredDefinition>These self-administered questions are for use with children of middle school-age (aged 11-14 years). Each question has a multichoice answer. Pictures help guide the children's responses to the questions.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>PhenX PX041201 - Deep Venous Thrombosis</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>A screening question is asked about whether a person has been told that they have deep venous thrombosis (DVT) or blood clots in their legs. If the response is "yes," then two questions are asked about treatment for the condition. The third protocol provides a method to improve documentation of the condition by abstracting additional information from the person's medical record about the history and laboratory findings of DVT.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>Deep Venous Thrombosis</longName>
+ <instruction/>
+ <preferredDefinition>Deep Venous Thrombosis</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Has a doctor ever told you that you had deep venous thrombosis or blood clots in your legs? (ever_have_deep_venous_thrombosis)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>9</value>
+ <meaningText>Don't Know</meaningText>
+ <description>Don't Know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Have you ever been treated by a doctor or a nurse with shots at home or as an outpatient (usually followed by blood thinning medications such as Coumadin, Warfarin) for blood clots in the legs called deep vein thrombosis or DVT? (ever_been_treated)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Have you ever had outpatient test(s) performed for blood clots in the legs called deep vein thrombosis or DVT? (ever_have_outpatient_test)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Complete the following for all hospitalized pulmonary embolism (PE)/deep vein thrombosis (DVT). Complete the following if outpatient (OP) records confirm deep vein thrombosis (DVT) or an autopsy report confirms pulmonary embolism. (pe_dvt_intro)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Deep vein thrombosis (DVT) (dvt)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Date of Diagnosis (mm/dd/yyyy). (dvt_diagnosis_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;[dvt] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Diagnosis: (Mark the one category that applies best.) (dvt_diagnosis)</questionText>
+ <instruction>
+ <text>[dvt] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Deep vein thrombosis of lower extremities not resulting from a procedure within 60 days</meaningText>
+ <description>Deep vein thrombosis of lower extremities not resulting from a procedure within 60 days</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Deep vein thrombosis of lower extremities during or following a procedure within 60 days</meaningText>
+ <description>Deep vein thrombosis of lower extremities during or following a procedure within 60 days</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Diagnosis of deep vein thrombosis is based on: (Mark all that apply.) (dvt_diagnosis_based_on_isotope_scan_enum)</questionText>
+ <instruction>
+ <text>[dvt] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Hospital discharge summary with a diagnosis of deep vein thrombosis</meaningText>
+ <description>Hospital discharge summary with a diagnosis of deep vein thrombosis</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Positive findings on a venogram</meaningText>
+ <description>Positive findings on a venogram</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Positive findings using impedance plethysmography</meaningText>
+ <description>Positive findings using impedance plethysmography</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>Positive findings on doppler duplex, ultrasound, sonogram, or other non-invasive test examination</meaningText>
+ <description>Positive findings on doppler duplex, ultrasound, sonogram, or other non-invasive test examination</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>Positive findings on isotope scan</meaningText>
+ <description>Positive findings on isotope scan</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Diagnosis of deep vein thrombosis reporting source: (Mark one. If more than one category applies, mark the first applicable category.) (dvt_diagnosis_reporting_source)</questionText>
+ <instruction>
+ <text>[dvt] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Hospital inpatient</meaningText>
+ <description>Hospital inpatient</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Hospital outpatient facility or clinic</meaningText>
+ <description>Hospital outpatient facility or clinic</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Radiology or imaging facility</meaningText>
+ <description>Radiology or imaging facility</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>Physician's office/private medical practitioner</meaningText>
+ <description>Physician's office/private medical practitioner</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>Nursing/convalescent home/hospice</meaningText>
+ <description>Nursing/convalescent home/hospice</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>Autopsy only</meaningText>
+ <description>Autopsy only</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>Death Certificate only</meaningText>
+ <description>Death Certificate only</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>8</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX041201</protocolID>
+ <longName>Deep Venous Thrombosis</longName>
+ <context>PhenX</context>
+ <shortName>PX041201</shortName>
+ <preferredDefinition>A screening question is asked about whether a person has been told that they have deep venous thrombosis (DVT) or blood clots in their legs. If the response is "yes," then two questions are asked about treatment for the condition. The third protocol provides a method to improve documentation of the condition by abstracting additional information from the person's medical record about the history and laboratory findings of DVT.</preferredDefinition>
+ </protocol>
+ </form> 
+ </forms>

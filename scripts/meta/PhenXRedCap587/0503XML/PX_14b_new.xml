@@ -1,0 +1,5188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+ <collectionName>PhenX Protocols - 14b</collectionName>
+ <collectionDescription>Load PhenX PX070701,PX070801,PX070901,PX071001,PX071101,PX071201</collectionDescription>  
+   <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>PhenX PX070701 - Personal Perception and Knowledge of Smoking-related Cancer Risk</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>These questions ask current and former smokers how often they worry about lung cancer and ask them to assess their perception of being diagnosed with lung cancer.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>Personal Perception and Knowledge of Smoking-related Cancer Risk</longName>
+ <instruction/>
+ <preferredDefinition>Personal Perception And Knowledge Of Smokingrelated Can</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How often do you worry about getting lung cancer? Would you say: (lung_cancer_worry)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Rarely or never</meaningText>
+ <description>Rarely or never</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Sometimes</meaningText>
+ <description>Sometimes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Often</meaningText>
+ <description>Often</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>All of the time</meaningText>
+ <description>All of the time</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Compared to others your age who currently smoke, what do you think are your chances of being diagnosed with lung cancer during your lifetime? Are you: (lung_cancer_risk_assessment)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>at much less risk</meaningText>
+ <description>at much less risk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>at less risk</meaningText>
+ <description>at less risk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>at the same risk</meaningText>
+ <description>at the same risk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>at higher risk</meaningText>
+ <description>at higher risk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>at much higher risk</meaningText>
+ <description>at much higher risk</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX070701</protocolID>
+ <longName>Personal Perception and Knowledge of Smoking-related Cancer Risk</longName>
+ <context>PhenX</context>
+ <shortName>PX070701</shortName>
+ <preferredDefinition>These questions ask current and former smokers how often they worry about lung cancer and ask them to assess their perception of being diagnosed with lung cancer.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>PhenX PX070801 - Preexisting Conditions Associated With Cancer</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>This self-administered protocol asks respondents to indicate the year of diagnosis for clinician-diagnosed illnesses. The respondent is also asked to provide the year of first diagnosis.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>Preexisting Conditions Associated With Cancer</longName>
+ <instruction/>
+ <preferredDefinition>Preexisting Conditions Associated With Cancer</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Myocardial infarction (heart attack)? (myocardial_infarction_heart_attack_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Myocardial infarction (heart attack)? (myocardial_infarction_heart_attack_year)</questionText>
+ <instruction>
+ <text>datatype=number;[myocardial_infarction_heart_attack_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Angina pectoris? (angina_pectoris_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Angina pectoris? (angina_pectoris_year)</questionText>
+ <instruction>
+ <text>datatype=number;[angina_pectoris_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Confirmed angiography? (angina_pectoris_confirmed_angiography)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Coronary bypass, angioplasty, or stent? (coronary_bypass_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Coronary bypass, angioplasty, or stent? (coronary_bypass_year)</questionText>
+ <instruction>
+ <text>datatype=number;[coronary_bypass_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Transient ischemic attack (TIA)? (transient_ischemic_attack_tia_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Transient ischemic attack (TIA)? (transient_ischemic_attack_tia_year)</questionText>
+ <instruction>
+ <text>datatype=number;[transient_ischemic_attack_tia_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Stroke (CVA)? (stroke_cva_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Stroke (CVA)? (stroke_cva_year)</questionText>
+ <instruction>
+ <text>datatype=number;[stroke_cva_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Deep vein thrombosis/Pulmonary embolism? (dvt_thrombosis_pe_embolism_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Deep vein thrombosis/Pulmonary embolism? (dvt_thrombosis_pe_embolism_year)</questionText>
+ <instruction>
+ <text>datatype=number;[dvt_thrombosis_pe_embolism_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Melanoma? (melanoma_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Melanoma? (melanoma_year)</questionText>
+ <instruction>
+ <text>datatype=number;[melanoma_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Basal cell skin cancer? (basal_cell_skin_cancer_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Basal cell skin cancer? (basal_cell_skin_cancer_year)</questionText>
+ <instruction>
+ <text>datatype=number;[basal_cell_skin_cancer_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>17</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Squamous cell skin cancer? (squamous_cell_skin_cancer_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>18</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Squamous cell skin cancer? (squamous_cell_skin_cancer_year)</questionText>
+ <instruction>
+ <text>datatype=number;[squamous_cell_skin_cancer_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>19</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Fibrocystic/other benign breast disease? (fibrocystic_benign_breast_disease_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>20</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Fibrocystic/other benign breast disease? (fibrocystic_benign_breast_disease_year)</questionText>
+ <instruction>
+ <text>datatype=number;[fibrocystic_benign_breast_disease_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>21</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Confirmed by breast biopsy? (fibrocystic_benign_breast_confirmed_biopsy)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>22</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Confirmed by aspiration? (fibrocystic_benign_breast_confirmed_aspiration)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>23</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Breast cancer? (breast_cancer_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>24</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Breast cancer? (breast_cancer_year)</questionText>
+ <instruction>
+ <text>datatype=number;[breast_cancer_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>25</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Other cancer? (other_cancer_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>26</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Other cancer? (other_cancer_year)</questionText>
+ <instruction>
+ <text>datatype=number;[other_cancer_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>27</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Specify site of other cancer. (other_cancer_site)</questionText>
+ <instruction>
+ <text>[other_cancer_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>28</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Colon or rectal polyp (benign)? (colon_rectal_polyp_benign_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>29</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Colon or rectal polyp (benign)? (colon_rectal_polyp_benign_year)</questionText>
+ <instruction>
+ <text>datatype=number;[colon_rectal_polyp_benign_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>30</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Ulcerative colitis/Crohn's? (ulcerative_colitis_crohns_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>31</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Ulcerative colitis/Crohn's? (ulcerative_colitis_crohns_year)</questionText>
+ <instruction>
+ <text>datatype=number;[ulcerative_colitis_crohns_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>32</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Gastric or duodenal ulcer? (gastric_duodenal_ulcer_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>33</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Gastric or duodenal ulcer? (gastric_duodenal_ulcer_year)</questionText>
+ <instruction>
+ <text>datatype=number;[gastric_duodenal_ulcer_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>34</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Barrett's Esophagus? (barretts_esophagus_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>35</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Barrett's Esophagus? (barretts_esophagus_year)</questionText>
+ <instruction>
+ <text>datatype=number;[barretts_esophagus_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>36</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Gallstones? (gallstones_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>37</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Gallstones? (gallstones_year)</questionText>
+ <instruction>
+ <text>datatype=number;[gallstones_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>38</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you have symptoms? (gallstones_symptoms)</questionText>
+ <instruction>
+ <text>[gallstones_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>39</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How diagnosed? (gallstones_diagnosed)</questionText>
+ <instruction>
+ <text>[gallstones_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>X-ray or ultrasound</meaningText>
+ <description>X-ray or ultrasound</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>40</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Cholecystectomy? (cholecystectomy_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>41</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Cholecystectomy? (cholecystectomy_year)</questionText>
+ <instruction>
+ <text>datatype=number;[cholecystectomy_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>42</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Diabetes mellitus? (diabetes_mellitus_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>43</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Diabetes mellitus? (diabetes_mellitus_year)</questionText>
+ <instruction>
+ <text>datatype=number;[diabetes_mellitus_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>44</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Elevated cholesterol? (elevated_cholesterol_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>45</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Elevated cholesterol? (elevated_cholesterol_year)</questionText>
+ <instruction>
+ <text>datatype=number;[elevated_cholesterol_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>46</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? High blood pressure? (high_blood_pressure_hbp_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>47</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, High blood pressure? (high_blood_pressure_hbp_year)</questionText>
+ <instruction>
+ <text>datatype=number;[high_blood_pressure_hbp_history]='UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>48</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Endometriosis1st diagnosis? (endometriosis_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>49</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Endometriosis1st diagnosis? (endometriosis_year)</questionText>
+ <instruction>
+ <text>datatype=number;[endometriosis_history]='UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>50</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Confirmed by laparoscopy? (endometriosis_confirmed_laparoscopy)</questionText>
+ <instruction>
+ <text>[endometriosis_history]='UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>51</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Uterine fibroids1st diagnosis? (uterine_fibroids_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>52</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Uterine fibroids1st diagnosis? (uterine_fibroids_year)</questionText>
+ <instruction>
+ <text>datatype=number;[uterine_fibroids_history]='UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>53</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Confirmed by pelvic exam? (uterine_fibroids_confirmed_pelvic_exam)</questionText>
+ <instruction>
+ <text>[uterine_fibroids_history]='UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>54</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Confirmed by ultrasound/hysterectomy? (uterine_fibroids_confirmed_ultrasound_hysterectomy)</questionText>
+ <instruction>
+ <text>[uterine_fibroids_history]='UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>55</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Premenstrual syndrome (PMS)? (premenstrual_syndrome_pms_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>56</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Premenstrual syndrome (PMS)? (premenstrual_syndrome_pms_year)</questionText>
+ <instruction>
+ <text>datatype=number;[premenstrual_syndrome_pms_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>57</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Kidney stones? (kidney_stones_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>58</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Kidney stones? (kidney_stones_year)</questionText>
+ <instruction>
+ <text>datatype=number;[kidney_stones_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>59</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Multiple Sclerosis? (multiple_sclerosis_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>60</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Multiple Sclerosis? (multiple_sclerosis_year)</questionText>
+ <instruction>
+ <text>datatype=number;[multiple_sclerosis_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>61</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Asthma, doctor diagnosed? (asthma_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>62</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Asthma, doctor diagnosed? (asthma_year)</questionText>
+ <instruction>
+ <text>datatype=number;[asthma_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>63</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Emphysema/Chronic Bronchitis, doctor diagnosis? (emphysema_chronic_bronchitis_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>64</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Emphysema/Chronic Bronchitis, doctor diagnosis? (emphysema_chronic_bronchitis_year)</questionText>
+ <instruction>
+ <text>datatype=number;[emphysema_chronic_bronchitis_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>65</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Pneumonia, xray confirmed? (pneumonia_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>66</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Pneumonia, xray confirmed? (pneumonia_year)</questionText>
+ <instruction>
+ <text>datatype=number;[pneumonia_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>67</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Graves' Disease/Hyperthyroidism (graves_disease_hyperthyroidism_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>68</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Graves' Disease/Hyperthyroidism (graves_disease_hyperthyroidism_year)</questionText>
+ <instruction>
+ <text>datatype=number;[graves_disease_hyperthyroidism_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>69</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Hypothyroidism? (hypothyroidism_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>70</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Hypothyroidism? (hypothyroidism_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hypothyroidism_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>71</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Thyroid nodule (benign)? (thyroid_nodule_benign_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>72</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Thyroid nodule (benign)? (thyroid_nodule_benign_year)</questionText>
+ <instruction>
+ <text>datatype=number;[thyroid_nodule_benign_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>73</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Gout? (gout_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>74</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Gout? (gout_year)</questionText>
+ <instruction>
+ <text>datatype=number;[gout_history]='UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>75</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? SLE (systemic lupus)? (sle_systemic_lupus_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>76</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, SLE (systemic lupus)? (sle_systemic_lupus_year)</questionText>
+ <instruction>
+ <text>datatype=number;[sle_systemic_lupus_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>77</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Rheumatoid arthritis, doctor diagnosis? (rheumatoid_arthritis_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>78</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Rheumatoid arthritis, doctor diagnosis? (rheumatoid_arthritis_year)</questionText>
+ <instruction>
+ <text>datatype=number;[rheumatoid_arthritis_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>79</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Other arthritis? (other_arthritis_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>80</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Other arthritis? (other_arthritis_year)</questionText>
+ <instruction>
+ <text>datatype=number;[other_arthritis_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>81</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Depression, clinician diagnosis? (depression_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>82</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Depression, clinician diagnosis? (depression_year)</questionText>
+ <instruction>
+ <text>datatype=number;[depression_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>83</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had any of these cliniciandiagnosed illnesses? Other major illness or surgery? (other_major_illness_surgery_history)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>84</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Year of Diagnosis, Other major illness or surgery? (other_major_illness_surgery_year)</questionText>
+ <instruction>
+ <text>datatype=number;[other_major_illness_surgery_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>85</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Please specify Date (Other major illness or surgery). (other_major_illness_surgery_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;[other_major_illness_surgery_history] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX070801</protocolID>
+ <longName>Pre-existing Conditions Associated with Cancer</longName>
+ <context>PhenX</context>
+ <shortName>PX070801</shortName>
+ <preferredDefinition>This self-administered protocol asks respondents to indicate the year of diagnosis for clinician-diagnosed illnesses. The respondent is also asked to provide the year of first diagnosis.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>PhenX PX070901 - Cancer Screenings</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>These self-administered questions ask about different cancer screening tests a respondent may have had in the past 3 years. The protocol includes the following screenings: mammogram, pap smear, pelvic examination, Prostate Specific Antigen (PSA) test, colonoscopy, ultrasound of the ovaries, barium enema, chest x-ray, sigmoidoscopy, and digital rectal examination.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>Cancer Screenings</longName>
+ <instruction/>
+ <preferredDefinition>Cancer Screenings</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>During the past three years, have you had a chest xray? (chest_x_ray)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, once</meaningText>
+ <description>Yes, once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Yes, more than once</meaningText>
+ <description>Yes, more than once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>During the past three years, have you had a test for blood in the stool? (blood_stool)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, once</meaningText>
+ <description>Yes, once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Yes, more than once</meaningText>
+ <description>Yes, more than once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>During the past three years, have you had a colonoscopy, sigmoidoscopy, or barium enema to examine the colon and rectum? (colonoscopy_sigmoidoscopy_barium_enema)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, once</meaningText>
+ <description>Yes, once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Yes, more than once</meaningText>
+ <description>Yes, more than once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ </module>
+ <module>
+ <displayOrder>1</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>Questions for Females Only</longName>
+ <instruction/>
+ <preferredDefinition>Questions for Females Only</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>During the past three years, have you had a mammogram? (mammogram)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, once</meaningText>
+ <description>Yes, once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Yes, more than once</meaningText>
+ <description>Yes, more than once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>During the past three years, have you had a pap smear? (pap_smear)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, once</meaningText>
+ <description>Yes, once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Yes, more than once</meaningText>
+ <description>Yes, more than once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>During the past three years, have you had a pelvic examination? (pelvic_examination)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, once</meaningText>
+ <description>Yes, once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Yes, more than once</meaningText>
+ <description>Yes, more than once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>During the past three years, have you had an ultrasound or scan of your ovaries? (ovary_ultrasound_scan)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, once</meaningText>
+ <description>Yes, once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Yes, more than once</meaningText>
+ <description>Yes, more than once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>During the past three years, have you had a blood test for ovarian cancer, for example, CA125? (ovarian_cancer_blood_test_ca125)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, once</meaningText>
+ <description>Yes, once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Yes, more than once</meaningText>
+ <description>Yes, more than once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ </module>
+ <module>
+ <displayOrder>2</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>Questions for Males Only</longName>
+ <instruction/>
+ <preferredDefinition>Questions for Males Only</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>During the past three years, have you had a digital rectal examination of the prostate? (digital_rectal_examination_prostate)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, once</meaningText>
+ <description>Yes, once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Yes, more than once</meaningText>
+ <description>Yes, more than once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>During the past three years, have you had a blood test for prostate cancer, for example, PSA? (prostate_cancer_blood_test_psa)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, once</meaningText>
+ <description>Yes, once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Yes, more than once</meaningText>
+ <description>Yes, more than once</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX070901</protocolID>
+ <longName>Cancer Screenings</longName>
+ <context>PhenX</context>
+ <shortName>PX070901</shortName>
+ <preferredDefinition>These self-administered questions ask about different cancer screening tests a respondent may have had in the past 3 years. The protocol includes the following screenings: mammogram, pap smear, pelvic examination, Prostate Specific Antigen (PSA) test, colonoscopy, ultrasound of the ovaries, barium enema, chest x-ray, sigmoidoscopy, and digital rectal examination.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>PhenX PX071001 - Smoking Quit Attempts</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>These self-administered questions ask current and former smokers about their intention to quit smoking, details of past attempts to quit, and whether a health care professional advised the respondent to quit smoking.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>Smoking Quit Attempts</longName>
+ <instruction/>
+ <preferredDefinition>Smoking Quit Attempts</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Are you considering quitting smoking during the next 6 months? (quit_smoking_consider)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes, plan to stop within next 30 days</meaningText>
+ <description>Yes, plan to stop within next 30 days</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, plan to stop within next 6 months, but not within next 30 days</meaningText>
+ <description>Yes, plan to stop within next 6 months, but not within next 30 days</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>No, not thinking of quitting in next 6 months</meaningText>
+ <description>No, not thinking of quitting in next 6 months</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>In the past, have you ever made a serious attempt to quit smoking? That is, have you stopped smoking for at least one day or longer because you were trying to quit? (quit_smoking_attempt)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>What was the longest length of time you stopped smoking because you were trying to quit? (quit_smoking_longest_time)</questionText>
+ <instruction>
+ <text>[quit_smoking_attempt] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Less than 1 week</meaningText>
+ <description>Less than 1 week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>1 to 3 weeks</meaningText>
+ <description>1 to 3 weeks</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>1 to 2 months</meaningText>
+ <description>1 to 2 months</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>3 to 11 months</meaningText>
+ <description>3 to 11 months</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>1 to 4 years</meaningText>
+ <description>1 to 4 years</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>5 to 9 years</meaningText>
+ <description>5 to 9 years</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>10 years or more</meaningText>
+ <description>10 years or more</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How old were you when you most recently quit smoking? (quit_smoking_age)</questionText>
+ <instruction>
+ <text>datatype=number;[quit_smoking_attempt] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Thinking of the most recent time you quit smoking, did you use any of the following products? Nicotine gum: (quit_smoking_product_nicotine_gum)</questionText>
+ <instruction>
+ <text>[quit_smoking_attempt] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Thinking of the most recent time you quit smoking, did you use any of the following products? Nicotine patch: (quit_smoking_product_nicotine_patch)</questionText>
+ <instruction>
+ <text>[quit_smoking_attempt] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Thinking of the most recent time you quit smoking, did you use any of the following products? Nicotine nasal spray, inhaler, lozenge, or tablet: (quit_smoking_product_nicotine_other)</questionText>
+ <instruction>
+ <text>[quit_smoking_attempt] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Thinking of the most recent time you quit smoking, did you use any of the following products? Prescription pill such as Zyban®, Buproprion, or Wellbutrin®: (quit_smoking_product_prescription_pill)</questionText>
+ <instruction>
+ <text>[quit_smoking_attempt] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Thinking of the most recent time you quit smoking, did you use any of the following products? None of these: (quit_smoking_product_none)</questionText>
+ <instruction>
+ <text>[quit_smoking_attempt] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>During the past 12 months, did any doctor, dentist, nurse, or any other health professional advise you to quit smoking? (quit_smoking_professional_advise)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No, was not advised to quit</meaningText>
+ <description>No, was not advised to quit</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>No, did not see a health professional in past 12 months</meaningText>
+ <description>No, did not see a health professional in past 12 months</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>No, did not smoke in past 12 months</meaningText>
+ <description>No, did not smoke in past 12 months</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX071001</protocolID>
+ <longName>Smoking Quit Attempts</longName>
+ <context>PhenX</context>
+ <shortName>PX071001</shortName>
+ <preferredDefinition>These self-administered questions ask current and former smokers about their intention to quit smoking, details of past attempts to quit, and whether a health care professional advised the respondent to quit smoking.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>PhenX PX071201 - Medications (Current and Past Use of Pain Relievers, Statins, and Steroids)</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>This measure assesses current and past use of prescription and over-the-counter (OTC) medications. Protocol obtains information about pain-relieving medications, statins, steroids, and inhaled bronchodilators.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>Medications (Current and Past Use of Pain Relievers, Statins, and Steroids)</longName>
+ <instruction/>
+ <preferredDefinition>Medications (Current and Past Use of Pain Relievers, Statins, and Steroids)</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Do you currently take any of the following painrelieving medications regularly (at least once a week)? "Baby" or lowdose aspirin. (baby_low_aspirin_regular)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No (0 or &lt; 1 per week)</meaningText>
+ <description>No (0 or &lt; 1 per week)</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Total tablets per week? "Baby" or lowdose aspirin. (baby_low_aspirin_tablets_quantity)</questionText>
+ <instruction>
+ <text>[baby_low_aspirin_regular] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>1-2 per week</meaningText>
+ <description>1-2 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>3-4 per week</meaningText>
+ <description>3-4 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>5-6 per week</meaningText>
+ <description>5-6 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>7-8 per week</meaningText>
+ <description>7-8 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>9-10 per week</meaningText>
+ <description>9-10 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>11-12 per week</meaningText>
+ <description>11-12 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>13-14 per week</meaningText>
+ <description>13-14 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>15-21 per week</meaningText>
+ <description>15-21 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>22-28 per week</meaningText>
+ <description>22-28 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>29+ per week</meaningText>
+ <description>29+ per week</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Do you currently take any of the following painrelieving medications regularly (at least once a week)? Aspirin or aspirincontaining product (Bayer®, Bufferin®, Excedrin®). (aspirin_regular)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No (0 or &lt; 1 per week)</meaningText>
+ <description>No (0 or &lt; 1 per week)</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Total tablets per week? Aspirin or aspirincontaining product (Bayer®, Bufferin®, Excedrin®). (aspirin_tablets_quantity)</questionText>
+ <instruction>
+ <text>[aspirin_regular] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>1-2 per week</meaningText>
+ <description>1-2 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>3-4 per week</meaningText>
+ <description>3-4 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>5-6 per week</meaningText>
+ <description>5-6 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>7-8 per week</meaningText>
+ <description>7-8 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>9-10 per week</meaningText>
+ <description>9-10 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>11-12 per week</meaningText>
+ <description>11-12 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>13-14 per week</meaningText>
+ <description>13-14 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>15-21 per week</meaningText>
+ <description>15-21 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>22-28 per week</meaningText>
+ <description>22-28 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>29+ per week</meaningText>
+ <description>29+ per week</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Do you currently take any of the following painrelieving medications regularly (at least once a week)? Ibuprofen (Advil®, Motrin®). (ibuprofen_regular)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No (0 or &lt; 1 per week)</meaningText>
+ <description>No (0 or &lt; 1 per week)</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Total tablets per week? Ibuprofen (Advil®, Motrin®). (ibuprofen_tablets_quantity)</questionText>
+ <instruction>
+ <text>[ibuprofen_regular] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>1-2 per week</meaningText>
+ <description>1-2 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>3-4 per week</meaningText>
+ <description>3-4 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>5-6 per week</meaningText>
+ <description>5-6 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>7-8 per week</meaningText>
+ <description>7-8 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>9-10 per week</meaningText>
+ <description>9-10 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>11-12 per week</meaningText>
+ <description>11-12 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>13-14 per week</meaningText>
+ <description>13-14 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>15-21 per week</meaningText>
+ <description>15-21 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>22-28 per week</meaningText>
+ <description>22-28 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>29+ per week</meaningText>
+ <description>29+ per week</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Do you currently take any of the following painrelieving medications regularly (at least once a week)? Naproxen, ketoprofen or other nonsteroidal (Aleve®, Feldene®, Indocin®, Naprosyn®, Orudis®, Relafen®). (naproxen_ketoprofen_regular)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No (0 or &lt; 1 per week)</meaningText>
+ <description>No (0 or &lt; 1 per week)</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Total tablets per week? Naproxen, ketoprofen or other nonsteroidal (Aleve®, Feldene®, Indocin®, Naprosyn®, Orudis®, Relafen®). (naproxen_ketoprofen_tablets_quantity)</questionText>
+ <instruction>
+ <text>[naproxen_ketoprofen_regular] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>1-2 per week</meaningText>
+ <description>1-2 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>3-4 per week</meaningText>
+ <description>3-4 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>5-6 per week</meaningText>
+ <description>5-6 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>7-8 per week</meaningText>
+ <description>7-8 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>9-10 per week</meaningText>
+ <description>9-10 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>11-12 per week</meaningText>
+ <description>11-12 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>13-14 per week</meaningText>
+ <description>13-14 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>15-21 per week</meaningText>
+ <description>15-21 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>22-28 per week</meaningText>
+ <description>22-28 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>29+ per week</meaningText>
+ <description>29+ per week</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Do you currently take any of the following painrelieving medications regularly (at least once a week)? Cox2 inhibitor (Celebrex®, Vioxx®). (cox2_inhibitor_regular)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No (0 or &lt; 1 per week)</meaningText>
+ <description>No (0 or &lt; 1 per week)</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Total tablets per week? Cox2 inhibitor (Celebrex®, Vioxx®). (cox2_inhibitor_tablets_quantity)</questionText>
+ <instruction>
+ <text>[cox2_inhibitor_regular] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>1-2 per week</meaningText>
+ <description>1-2 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>3-4 per week</meaningText>
+ <description>3-4 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>5-6 per week</meaningText>
+ <description>5-6 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>7-8 per week</meaningText>
+ <description>7-8 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>9-10 per week</meaningText>
+ <description>9-10 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>11-12 per week</meaningText>
+ <description>11-12 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>13-14 per week</meaningText>
+ <description>13-14 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>15-21 per week</meaningText>
+ <description>15-21 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>22-28 per week</meaningText>
+ <description>22-28 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>29+ per week</meaningText>
+ <description>29+ per week</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Do you currently take any of the following painrelieving medications regularly (at least once a week)? Acetaminophen (Aspirinfree Excedrin®, Tylenol®, Tempra®). (acetaminophen_regular)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No (0 or &lt; 1 per week)</meaningText>
+ <description>No (0 or &lt; 1 per week)</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Total tablets per week? Acetaminophen (Aspirinfree Excedrin®, Tylenol®, Tempra®). (acetaminophen_tablets_quantity)</questionText>
+ <instruction>
+ <text>[acetaminophen_regular] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>1-2 per week</meaningText>
+ <description>1-2 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>3-4 per week</meaningText>
+ <description>3-4 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>5-6 per week</meaningText>
+ <description>5-6 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>7-8 per week</meaningText>
+ <description>7-8 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>9-10 per week</meaningText>
+ <description>9-10 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>11-12 per week</meaningText>
+ <description>11-12 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>13-14 per week</meaningText>
+ <description>13-14 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>15-21 per week</meaningText>
+ <description>15-21 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>22-28 per week</meaningText>
+ <description>22-28 per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>29+ per week</meaningText>
+ <description>29+ per week</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you stop the regular use of any of the following medications during the past 3 years? "Baby" or lowdose aspirin. (baby_low_aspirin_stop)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Never took regularly or did not stop use</meaningText>
+ <description>Never took regularly or did not stop use</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, I stopped regular use</meaningText>
+ <description>Yes, I stopped regular use</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Why did you stop regular use? "Baby" or lowdose aspirin. (baby_low_aspirin_stop_reason)</questionText>
+ <instruction>
+ <text>[baby_low_aspirin_stop] = 'UNDEFINED_CODE_1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Condition improved</meaningText>
+ <description>Condition improved</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Don't work</meaningText>
+ <description>Don't work</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>I had side effects</meaningText>
+ <description>I had side effects</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>I heard about side effects</meaningText>
+ <description>I heard about side effects</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>Drug no longer available</meaningText>
+ <description>Drug no longer available</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you stop the regular use of any of the following medications during the past 3 years? Aspirin or aspirincontaining product. (aspirin_stop)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Never took regularly or did not stop use</meaningText>
+ <description>Never took regularly or did not stop use</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, I stopped regular use</meaningText>
+ <description>Yes, I stopped regular use</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Why did you stop regular use? Aspirin or aspirincontaining product. (aspirin_stop_reason)</questionText>
+ <instruction>
+ <text>[aspirin_stop] = 'UNDEFINED_CODE_1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Condition improved</meaningText>
+ <description>Condition improved</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Don't work</meaningText>
+ <description>Don't work</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>I had side effects</meaningText>
+ <description>I had side effects</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>I heard about side effects</meaningText>
+ <description>I heard about side effects</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>Drug no longer available</meaningText>
+ <description>Drug no longer available</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you stop the regular use of any of the following medications during the past 3 years? Ibuprofen. (ibuprofen_stop)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Never took regularly or did not stop use</meaningText>
+ <description>Never took regularly or did not stop use</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, I stopped regular use</meaningText>
+ <description>Yes, I stopped regular use</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>17</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Why did you stop regular use? Ibuprofen. (ibuprofen_stop_reason)</questionText>
+ <instruction>
+ <text>[ibuprofen_stop] = 'UNDEFINED_CODE_1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Condition improved</meaningText>
+ <description>Condition improved</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Don't work</meaningText>
+ <description>Don't work</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>I had side effects</meaningText>
+ <description>I had side effects</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>I heard about side effects</meaningText>
+ <description>I heard about side effects</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>Drug no longer available</meaningText>
+ <description>Drug no longer available</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>18</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you stop the regular use of any of the following medications during the past 3 years? Naproxen, ketoprofen, or other nonsteroidal. (naproxen_ketoprofen_stop)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Never took regularly or did not stop use</meaningText>
+ <description>Never took regularly or did not stop use</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, I stopped regular use</meaningText>
+ <description>Yes, I stopped regular use</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>19</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Why did you stop regular use? Naproxen, ketoprofen, or other nonsteroidal. (naproxen_ketoprofen_stop_reason)</questionText>
+ <instruction>
+ <text>[naproxen_ketoprofen_stop] = 'UNDEFINED_CODE_1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Condition improved</meaningText>
+ <description>Condition improved</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Don't work</meaningText>
+ <description>Don't work</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>I had side effects</meaningText>
+ <description>I had side effects</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>I heard about side effects</meaningText>
+ <description>I heard about side effects</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>Drug no longer available</meaningText>
+ <description>Drug no longer available</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>20</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you stop the regular use of any of the following medications during the past 3 years? Cox2 inhibitor. (cox2_inhibitor_stop)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Never took regularly or did not stop use</meaningText>
+ <description>Never took regularly or did not stop use</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, I stopped regular use</meaningText>
+ <description>Yes, I stopped regular use</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>21</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Why did you stop regular use? Cox2 inhibitor. (cox2_inhibitor_stop_reason)</questionText>
+ <instruction>
+ <text>[cox2_inhibitor_stop] = 'UNDEFINED_CODE_1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Condition improved</meaningText>
+ <description>Condition improved</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Don't work</meaningText>
+ <description>Don't work</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>I had side effects</meaningText>
+ <description>I had side effects</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>I heard about side effects</meaningText>
+ <description>I heard about side effects</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>Drug no longer available</meaningText>
+ <description>Drug no longer available</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>22</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you stop the regular use of any of the following medications during the past 3 years? Acetaminophen. (acetaminophen_stop)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Never took regularly or did not stop use</meaningText>
+ <description>Never took regularly or did not stop use</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, I stopped regular use</meaningText>
+ <description>Yes, I stopped regular use</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>23</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Why did you stop regular use? Acetaminophen. (acetaminophen_stop_reason)</questionText>
+ <instruction>
+ <text>[acetaminophen_stop] = 'UNDEFINED_CODE_1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Condition improved</meaningText>
+ <description>Condition improved</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Don't work</meaningText>
+ <description>Don't work</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>I had side effects</meaningText>
+ <description>I had side effects</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>I heard about side effects</meaningText>
+ <description>I heard about side effects</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>Drug no longer available</meaningText>
+ <description>Drug no longer available</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>24</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>In the past 3 years, please indicate if you have taken either of the following types of medications. Statin medications such as lovastatin (Mevacor®), atorvastatin (Lipitor®), rosuvastain (Crestor®), pravastatin (Pravachol®), simvastatin (Zocor®), fluvastatin (Lescol®) (statin)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes, regularly (daily for at least 2 months)</meaningText>
+ <description>Yes, regularly (daily for at least 2 months)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, but not regularly</meaningText>
+ <description>Yes, but not regularly</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>25</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>In the past 3 years, please indicate if you have taken either of the following types of medications. Steroid medication in pill form such as prednisone, dexamethasone (Decadron®), solumedrol (Medrol dosepack®) (steroid_pill)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes, regularly (daily for at least 2 months)</meaningText>
+ <description>Yes, regularly (daily for at least 2 months)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, but not regularly</meaningText>
+ <description>Yes, but not regularly</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX071201</protocolID>
+ <longName>Medications (Current and Past Use of Pain Relievers, Statins, and Steroids)</longName>
+ <context>PhenX</context>
+ <shortName>PX071201</shortName>
+ <preferredDefinition>This measure assesses current and past use of prescription and over-the-counter (OTC) medications. Protocol obtains information about pain-relieving medications, statins, steroids, and inhaled bronchodilators.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>PhenX PX070101 - Cumulative Lifetime Alcohol Exposure</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>These interviewer-administered questions ask about drinking alcohol at least once a week for 6 months or more. This question is asked for different age ranges, reflecting alcohol consumption during different periods of life.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction>
+ <text>We would like to know about what kinds of alcohol and how much you drank at different times in your life.</text>
+ </headerInstruction>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>Cumulative Lifetime Alcohol Exposure</longName>
+ <instruction/>
+ <preferredDefinition>Cumulative Lifetime Alcohol Exposure</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you ever consumed alcoholic beverages, such as beer, wine, or liquor at least once a week for 6 months or more? (drinking_ever)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>DK/Refused</meaningText>
+ <description>DK/Refused</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>When you were Under 20 years of age, did you drink alcoholic beverages at least once a week for 6 months or more? (drinking_under_20)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>For how many years? (drinking_years_under_20)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_under_20] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How many drinks per day (did/do) you usually have when you were Under 20 years of age? (drinking_daily_quantity_under_20)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_under_20] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How many drinks per week (did/do) you usually have when you were Under 20 years of age? (drinking_weekly_quantity_under_20)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_under_20] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>When you were 20-29 years of age, did you drink alcoholic beverages at least once a week for 6 months or more? (drinking_twenties)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>For how many years? (drinking_years_twenties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_twenties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How many drinks per day(did/do) you usually have when you were 20-29 years of age? (drinking_daily_quantity_twenties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_twenties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How many drinks per week (did/do) you usually have when you were 20-29 years of age? (drinking_weekly_quantity_twenties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_twenties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>When you were 30-39 years of age, did you drink alcoholic beverages at least once a week for 6 months or more? (drinking_thirties)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Not that old yet</meaningText>
+ <description>Not that old yet</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>For how many years? (drinking_years_thirties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_thirties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How many drinks per day (did/do) you usually have when you were 30-39 years of age? (drinking_daily_quantity_thirties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_thirties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How many drinks per week (did/do) you usually have when you were 30-39 years of age? (drinking_weekly_quantity_thirties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_thirties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>When you were 40-49 years of age, did you drink alcoholic beverages at least once a week for 6 months or more? (drinking_forties)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Not that old yet</meaningText>
+ <description>Not that old yet</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>For how many years? (drinking_years_forties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_forties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How many drinks per day (did/do) you usually have when you were 40-49 years of age? (drinking_daily_quantity_forties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_forties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>17</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How many drinks per week (did/do) you usually have when you were 40-49 years of age? (drinking_weekly_quantity_forties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_forties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>18</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>When you were 50-59 years of age, did you drink alcoholic beverages at least once a week for 6 months or more? (drinking_fifties)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Not that old yet</meaningText>
+ <description>Not that old yet</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>19</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>For how many years? (drinking_years_fifties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_fifties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>20</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How many drinks per day (did/do) you usually have when you were 50-59 years of age? (drinking_daily_quantity_fifties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_fifties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>21</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How many drinks per week (did/do) you usually have when you were 50-59 years of age? (drinking_weekly_quantity_fifties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_fifties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>22</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>When you were Age 60 or older, did you drink alcoholic beverages at least once a week for 6 months or more? (drinking_sixties)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Not that old yet</meaningText>
+ <description>Not that old yet</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>23</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>For how many years? (drinking_years_sixties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_sixties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>24</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How many drinks per day (did/do) you usually have when you were Age 60 or older? (drinking_daily_quantity_sixties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_sixties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>25</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>How many drinks per week (did/do) you usually have when you were Age 60 or older? (drinking_weekly_quantity_sixties)</questionText>
+ <instruction>
+ <text>datatype=number;[drinking_sixties] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX070101</protocolID>
+ <longName>Cumulative Lifetime Alcohol Exposure</longName>
+ <context>PhenX</context>
+ <shortName>PX070101</shortName>
+ <preferredDefinition>These interviewer-administered questions ask about drinking alcohol at least once a week for 6 months or more. This question is asked for different age ranges, reflecting alcohol consumption during different periods of life.</preferredDefinition>
+ </protocol>
+ </form>
+  <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>PhenX PX071101 - Cancer Treatments</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>These questions start by asking if the respondent has had cancer. For respondents who have had cancer, detailed follow-up questions ask about the type of cancer treatment, including surgery, chemotherapy, radiation, and hormone therapy.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <longName>Cancer Treatments</longName>
+ <instruction/>
+ <preferredDefinition>Cancer Treatments</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you ever had cancer? (had_cancer)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Cancer Site/Type: (Example: Breast Cancer) (cancer_site)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Laterality: (cancer_laterality)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Left</meaningText>
+ <description>Left</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Right</meaningText>
+ <description>Right</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Both</meaningText>
+ <description>Both</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Not Applicable</meaningText>
+ <description>Not Applicable</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Date of Diagnosis: (cancer_diagnosis_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;minLength=1/1/1900;maxLength=12/31/2099;[had_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Age of Diagnosis: (cancer_diagnosis_age)</questionText>
+ <instruction>
+ <text>datatype=number;[had_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you have Surgery for this Cancer: (cancer_surgery)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Not Sure</meaningText>
+ <description>Not Sure</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Name of Procedure: (Example: Radical mastectomy [left]) (cancer_surgery_name)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [cancer_surgery] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Surgery Date: (cancer_surgery_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;minLength=1/1/1900;maxLength=12/31/2099;[had_cancer] = 'UNDEFINED_CODE' and [cancer_surgery] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Treatment Hospital: (cancer_surgery_hospital)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [cancer_surgery] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you receive Chemotherapy for this Cancer? (cancer_chemotherapy)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Not Sure</meaningText>
+ <description>Not Sure</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Type of Chemo: (cancer_chemotherapy_drug_name)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [cancer_chemotherapy] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Adriamycin®</meaningText>
+ <description>Adriamycin®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Taxol® (Paclitaxel)</meaningText>
+ <description>Taxol® (Paclitaxel)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Taxotere® (Docetaxel)</meaningText>
+ <description>Taxotere® (Docetaxel)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Cytoxan®</meaningText>
+ <description>Cytoxan®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>Xeloda®</meaningText>
+ <description>Xeloda®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Leucovorin®</meaningText>
+ <description>Leucovorin®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>Fluorouracil®</meaningText>
+ <description>Fluorouracil®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>Methotrexate</meaningText>
+ <description>Methotrexate</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>Herceptin®</meaningText>
+ <description>Herceptin®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>Avastin®</meaningText>
+ <description>Avastin®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>10</displayOrder>
+ <value>UNDEFINED_CODE_10</value>
+ <meaningText>Aromasin®</meaningText>
+ <description>Aromasin®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>11</displayOrder>
+ <value>UNDEFINED_CODE_11</value>
+ <meaningText>Femara®</meaningText>
+ <description>Femara®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>12</displayOrder>
+ <value>UNDEFINED_CODE_12</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Date Chemo completed: (cancer_chemotherapy_completed_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;minLength=1/1/1900;maxLength=12/31/2099;[had_cancer] = 'UNDEFINED_CODE' and [cancer_chemotherapy] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Treatment Hospital: (cancer_chemotherapy_hospital)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [cancer_chemotherapy] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you receive Radiation for this Cancer? (cancer_radiation)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Not Sure</meaningText>
+ <description>Not Sure</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Date Radiation completed: (cancer_radiation_completed_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;minLength=1/1/1900;maxLength=12/31/2099;[had_cancer] = 'UNDEFINED_CODE' and [cancer_radiation] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Treatment Hospital: (cancer_radiation_hospital)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [cancer_radiation] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you receive Hormonal Therapy for this Cancer? (cancer_hormonal_therapy)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Not Sure</meaningText>
+ <description>Not Sure</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>17</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Name of Hormone Therapy: (cancer_hormonal_therapy_drug_name)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [cancer_hormonal_therapy] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Tamoxifen</meaningText>
+ <description>Tamoxifen</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Aromasin®</meaningText>
+ <description>Aromasin®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Femara®</meaningText>
+ <description>Femara®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>18</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Date Hormonal Therapy started: (cancer_hormonal_therapy_started_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;minLength=1/1/1900;maxLength=12/31/2099;[had_cancer] = 'UNDEFINED_CODE' and [cancer_hormonal_therapy] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>19</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Treatment Hospital: (cancer_hormonal_therapy_hospital)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [cancer_hormonal_therapy] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>20</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you receive any other type(s) of therapy? (cancer_other_therapy)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Not Sure</meaningText>
+ <description>Not Sure</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>21</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Name of Other Therapy: (cancer_other_therapy_name)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [cancer_other_therapy] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>22</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Date Other Therapy started: (cancer_other_therapy_started_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;minLength=1/1/1900;maxLength=12/31/2099;[had_cancer] = 'UNDEFINED_CODE' and [cancer_other_therapy] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>23</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Treatment Hospital: (cancer_other_therapy_hospital)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [cancer_other_therapy] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>24</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had a Recurrence with this Cancer? (cancer_recurrence)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Not Sure</meaningText>
+ <description>Not Sure</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>25</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Date of Recurrence: (cancer_recurrence_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;minLength=1/1/1900;maxLength=12/31/2099;[had_cancer] = 'UNDEFINED_CODE' and [cancer_recurrence] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>26</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Where did this cancer recur? (ex. lung, breast, liver) (cancer_recurrence_site)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [cancer_recurrence] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>27</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Treatment Hospital: (cancer_recurrence_hospital)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>28</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>If you have been diagnosed with more than one cancer, please complete the following: (cancer_second_intro)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>29</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you ever had a second cancer? (had_second_cancer)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>30</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Cancer Site/Type: (Example: Second Cancer: Breast Cancer) (cancer_site2)</questionText>
+ <instruction>
+ <text>[had_second_cancer] = 'UNDEFINED_CODE' and [had_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>31</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Laterality: (cancer_laterality2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Left</meaningText>
+ <description>Left</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Right</meaningText>
+ <description>Right</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Both</meaningText>
+ <description>Both</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Not Applicable</meaningText>
+ <description>Not Applicable</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>32</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Date of Diagnosis: (cancer_diagnosis_date2)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;minLength=1/1/1900;maxLength=12/31/2099;[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>33</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Age of Diagnosis: (cancer_diagnosis_age2)</questionText>
+ <instruction>
+ <text>datatype=number;[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>34</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you have Surgery for this Cancer? (cancer_surgery2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Not Sure</meaningText>
+ <description>Not Sure</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>35</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Name of Procedure: (cancer_surgery_name2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_surgery2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>36</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Surgery Date: (cancer_surgery_date2)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;minLength=1/1/1900;maxLength=12/31/2099;[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_surgery2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>37</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Treatment Hospital: (cancer_surgery_hospital2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_surgery2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>38</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you receive Chemotherapy for this Cancer? (cancer_chemotherapy2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Not Sure</meaningText>
+ <description>Not Sure</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>39</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Type of Chemo: (cancer_chemotherapy_drug_name2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_chemotherapy2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Adriamycin®</meaningText>
+ <description>Adriamycin®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Taxol® (Paclitaxel)</meaningText>
+ <description>Taxol® (Paclitaxel)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Taxotere® (Docetaxel)</meaningText>
+ <description>Taxotere® (Docetaxel)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Cytoxan®</meaningText>
+ <description>Cytoxan®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>Xeloda®</meaningText>
+ <description>Xeloda®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Leucovorin®</meaningText>
+ <description>Leucovorin®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>Fluorouracil®</meaningText>
+ <description>Fluorouracil®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>Methotrexate</meaningText>
+ <description>Methotrexate</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>Herceptin®</meaningText>
+ <description>Herceptin®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>Avastin®</meaningText>
+ <description>Avastin®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>10</displayOrder>
+ <value>UNDEFINED_CODE_10</value>
+ <meaningText>Aromasin®</meaningText>
+ <description>Aromasin®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>11</displayOrder>
+ <value>UNDEFINED_CODE_11</value>
+ <meaningText>Femara®</meaningText>
+ <description>Femara®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>12</displayOrder>
+ <value>UNDEFINED_CODE_12</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>40</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Date Chemotherapy started: (cancer_chemotherapy_started_date2)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;minLength=1/1/1955;maxLength=12/31/2099;[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_chemotherapy2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>41</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Treatment Hospital: (cancer_chemotherapy_hospital2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_chemotherapy2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>42</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you receive Radiation for this Cancer? (cancer_radiation2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Not Sure</meaningText>
+ <description>Not Sure</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>43</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Date Radiation started: (cancer_radiation_started_date2)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;minLength=1/1/1900;maxLength=12/31/2099;[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_radiation2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>44</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Treatment Hospital: (cancer_radiation_hospital2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_radiation2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>45</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you receive Hormonal Therapy for this Cancer? (cancer_hormonal_therapy2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Not Sure</meaningText>
+ <description>Not Sure</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>46</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Name of Hormone Therapy: (cancer_hormonal_therapy_drug_name2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_hormonal_therapy2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Tamoxifen</meaningText>
+ <description>Tamoxifen</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Aromasin®</meaningText>
+ <description>Aromasin®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Femara®</meaningText>
+ <description>Femara®</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>47</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Date Hormonal Therapy started: (cancer_hormonal_therapy_started_date2)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;minLength=1/1/1900;maxLength=12/31/2099;[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_hormonal_therapy2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>48</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Treatment Hospital: (cancer_hormonal_therapy_hospital2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_hormonal_therapy2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>49</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Did you receive any other type(s) of therapy? (cancer_other_therapy2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Not Sure</meaningText>
+ <description>Not Sure</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>50</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Name of Other Therapy: (cancer_other_therapy_name2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_other_therapy2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>51</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Date Other Therapy started: (cancer_other_therapy_started_date2)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;minLength=1/1/1900;maxLength=12/31/2099;[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_other_therapy2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>52</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Treatment Hospital: (cancer_other_therapy_hospital2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_other_therapy2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>53</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Have you had a Recurrence with this Cancer? (cancer_recurrence2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Not Sure</meaningText>
+ <description>Not Sure</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>54</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Date of Recurrence: (cancer_recurrence_date2)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;minLength=1/1/1900;maxLength=12/31/2099;[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_recurrence2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>55</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Where did this cancer recur? (ex. lung, breast, liver) (cancer_recurrence_site2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_recurrence2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>56</displayOrder>
+ <dateCreated>2017-04-26T15:01:23</dateCreated>
+ <questionText>Treatment Hospital: (cancer_recurrence_hospital2)</questionText>
+ <instruction>
+ <text>[had_cancer] = 'UNDEFINED_CODE' and [had_second_cancer] = 'UNDEFINED_CODE' and [cancer_recurrence2] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX071101</protocolID>
+ <longName>Cancer Treatments</longName>
+ <context>PhenX</context>
+ <shortName>PX071101</shortName>
+ <preferredDefinition>These questions start by asking if the respondent has had cancer. For respondents who have had cancer, detailed follow-up questions ask about the type of cancer treatment, including surgery, chemotherapy, radiation, and hormone therapy.</preferredDefinition>
+ </protocol>
+ </form>
+ </forms>

@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+ <collectionName>PhenX Protocols - 10</collectionName>
+ <collectionDescription>Load PhenX PX040801,PX040901,PX041001,PX041101,PX041201,PX041301,PX041401,PX050101,PX050201</collectionDescription>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>PhenX PX041301 - Pulmonary Embolism</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>A screening question is asked about whether a person has been told that they have pulmonary embolus or blood clots. If the response is yes, then the second protocol provides a method for abstracting additional information from the person's medical record about the history of pulmonary embolism.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>Pulmonary Embolism</longName>
+ <instruction/>
+ <preferredDefinition>Pulmonary Embolism</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Has a doctor ever told you that you had pulmonary embolus or blood clots in your lungs? (ever_have_pulmonary_embolism)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>9</value>
+ <meaningText>Don't Know</meaningText>
+ <description>Don't Know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Complete the following for all hospitalized pulmonary embolism (PE)/deep vein thrombosis (DVT). Complete the following if outpatient (OP) records confirm deep vein thrombosis (DVT) or an autopsy report confirms pulmonary embolism. (pulmonary_embolism_dvt_intro)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Pulmonary embolism (PE) requiring hospitalization: (pe_hospitalization)</questionText>
+ <instruction>
+ <text>[ever_have_pulmonary_embolism] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Date of Diagnosis: (mm/dd/yyyy) (pe_diagnosis_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;[ever_have_pulmonary_embolism] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Diagnosis: (Mark the one category that applies best.) (pe_diagnosis)</questionText>
+ <instruction>
+ <text>[ever_have_pulmonary_embolism] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Pulmonary embolism not resulting from a procedure within 60 days</meaningText>
+ <description>Pulmonary embolism not resulting from a procedure within 60 days</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Pulmonary embolism during or following a procedure within 60 days</meaningText>
+ <description>Pulmonary embolism during or following a procedure within 60 days</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Diagnosis of pulmonary embolism is based on: (Mark all that apply.) (pe_diagnosis_based_on)</questionText>
+ <instruction>
+ <text>[ever_have_pulmonary_embolism] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Hospital discharge summary with a diagnosis of pulmonary embolism</meaningText>
+ <description>Hospital discharge summary with a diagnosis of pulmonary embolism</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>High probability on ventilation-perfusion lung scan (exclude moderate, intermediate, or low probability on ventilation-perfusion lung scan)</meaningText>
+ <description>High probability on ventilation-perfusion lung scan (exclude moderate, intermediate, or low probability on ventilation-perfusion lung scan)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Positive findings on pulmonary angiogram or spiral CAT scan (CT)</meaningText>
+ <description>Positive findings on pulmonary angiogram or spiral CAT scan (CT)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>Diagnosis of deep vein thrombosis (DVT) based on ? 1 deep vein thrombosis (DVT) criteria in question 1.3 (link to Form 126 in Source section below) plus signs and symptoms suggestive of pulmonary embolism (PE) (e.g., acute chest pain, dyspnea, tachypnea, hypoxemia, tachycardia, or chest x-ray findings suggestive of pulmonary embolism)</meaningText>
+ <description>Diagnosis of deep vein thrombosis (DVT) based on ? 1 deep vein thrombosis (DVT) criteria in question 1.3 (link to Form 126 in Source section below) plus signs and symptoms suggestive of pulmonary embolism (PE) (e.g., acute chest pain, dyspnea, tachypnea, hypoxemia, tachycardia, or chest x-ray findings suggestive of pulmonary embolism)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>8</value>
+ <meaningText>Other, including autopsy</meaningText>
+ <description>Other, including autopsy</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX041301</protocolID>
+ <longName>Pulmonary Embolism</longName>
+ <context>PhenX</context>
+ <shortName>PX041301</shortName>
+ <preferredDefinition>A screening question is asked about whether a person has been told that they have pulmonary embolus or blood clots. If the response is yes, then the second protocol provides a method for abstracting additional information from the person's medical record about the history of pulmonary embolism.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>PhenX PX041401 - Rheumatic Fever Rheumatic Heart Disease</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Measure to assess history of Rheumatic Fever or Rheumatic Heart Disease.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>Rheumatic Fever Rheumatic Heart Disease</longName>
+ <instruction/>
+ <preferredDefinition>Rheumatic Fever Rheumatic Heart Disease</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Has a doctor ever said you had rheumatic fever (inflammatory rheumatism)? (have_rheumatic_fever)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Have you had it in the past 12 months? (rheumatic_fever_past_12month)</questionText>
+ <instruction>
+ <text>[have_rheumatic_fever] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Don't Know</meaningText>
+ <description>Don't Know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Are you taking any pills or medicine for it? (rheumatic_fever_medication)</questionText>
+ <instruction>
+ <text>[have_rheumatic_fever] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>What is it? (rheumatic_fever_medication_name)</questionText>
+ <instruction>
+ <text>[rheumatic_fever_medication] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX041401</protocolID>
+ <longName>Rheumatic Fever/Rheumatic Heart Disease</longName>
+ <context>PhenX</context>
+ <shortName>PX041401</shortName>
+ <preferredDefinition>Measure to assess history of Rheumatic Fever or Rheumatic Heart Disease.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>PhenX PX050101 - Breastfeeding</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>These interviewer-administered questions ascertain whether an infant was breastfed, the duration of breastfeeding, and the introduction of solid foods.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>Breastfeeding</longName>
+ <instruction/>
+ <preferredDefinition>Breastfeeding</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Was Sample Person ever breastfed or fed breast milk? (ever_breast_milk)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>7</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>9</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How old was Sample Person when {he/she} was first fed something other than breastmilk or water? (age_other_than_breast_milk)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=365</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How old was Sample Person when {he/she} was first fed something other than breastmilk or water? INCLUDE FORMULA, JUICE, SOLID FOODS. (age_other_than_breast_milk_coded)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>6666</value>
+ <meaningText>NEVER</meaningText>
+ <description>NEVER</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>7777</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>9999</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How old was Sample Person when {he/she} was first fed something other than breastmilk or water? INCLUDE FORMULA, JUICE, SOLID FOODS. ENTER UNIT (age_otherthan_breast_milk_unit)</questionText>
+ <instruction>
+ <text>[age_other_than_breast_milk] = ''</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>DAYS</meaningText>
+ <description>DAYS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>WEEKS</meaningText>
+ <description>WEEKS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>MONTHS</meaningText>
+ <description>MONTHS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>YEARS</meaningText>
+ <description>YEARS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>7</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>9</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How old was Sample Person when {he/she} completely stopped breastfeeding or being fed breast milk? (age_stop_breast_milk)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=365;[ever_breast_milk] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How old was Sample Person when {he/she} completely stopped breastfeeding or being fed breast milk? (age_stop_breast_milk_coded)</questionText>
+ <instruction>
+ <text>[ever_breast_milk] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>6666</value>
+ <meaningText>STILL BREASTFEEDING</meaningText>
+ <description>STILL BREASTFEEDING</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>7777</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>9999</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How old was Sample Person when {he/she} completely stopped breastfeeding or being fed breast milk? ENTER UNIT (age_stop_breast_milk_unit)</questionText>
+ <instruction>
+ <text>[ever_breast_milk] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>DAYS</meaningText>
+ <description>DAYS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>WEEKS</meaningText>
+ <description>WEEKS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>MONTHS</meaningText>
+ <description>MONTHS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>YEARS</meaningText>
+ <description>YEARS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>7</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>9</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX050101</protocolID>
+ <longName>Breastfeeding</longName>
+ <context>PhenX</context>
+ <shortName>PX050101</shortName>
+ <preferredDefinition>These interviewer-administered questions ascertain whether an infant was breastfed, the duration of breastfeeding, and the introduction of solid foods.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>PhenX PX050201 - Calcium Intake By Children Daily</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>These self-administered questions are for use with children of middle school-age (aged 11-14 years). Each question has a multichoice answer. Pictures help guide the children's responses to the questions.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction>
+ <text>Think about your usual eating habits over the past month.</text>
+ </headerInstruction>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>Calcium Intake By Children Daily</longName>
+ <instruction/>
+ <preferredDefinition>Calcium Intake By Children Daily</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you drink 100% orange juice? Do not count fruit drinks like Tang® and Sunny D®. (orange_juice_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 time per day</meaningText>
+ <description>1 time per day</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>8</value>
+ <meaningText>2 or more times per day</meaningText>
+ <description>2 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Each time you drink orange juice, how much do you usually drink? (orange_juice_quantity)</questionText>
+ <instruction>
+ <text>[orange_juice_frequency] = '2' or [orange_juice_frequency] = '3' or [orange_juice_frequency] = '4' or [orange_juice_frequency] = '5' or [orange_juice_frequency] = '6' or [orange_juice_frequency] = '7' or [orange_juice_frequency] = '8'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 1 cup</meaningText>
+ <description>Less than 1 cup</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 cup (8 ounces)</meaningText>
+ <description>1 cup (8 ounces)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 1 cup</meaningText>
+ <description>More than 1 cup</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often is the orange juice you drink calcium fortified? (orange_juice_calcium_fortified_frequency)</questionText>
+ <instruction>
+ <text>[orange_juice_frequency] = '2' and [orange_juice_frequency] = '3' and [orange_juice_frequency] = '4' and [orange_juice_frequency] = '5' and [orange_juice_frequency] = '6' and [orange_juice_frequency] = '7' and [orange_juice_frequency] = '8'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Almost never or never</meaningText>
+ <description>Almost never or never</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Sometimes</meaningText>
+ <description>Sometimes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Almost always or always</meaningText>
+ <description>Almost always or always</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you drink milk as a beverage (NOT in cereal)? (milk_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 time per day</meaningText>
+ <description>1 time per day</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>8</value>
+ <meaningText>2 times per day</meaningText>
+ <description>2 times per day</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>9</value>
+ <meaningText>3 or more times per day</meaningText>
+ <description>3 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Each time you drink milk, how much do you usually drink? (milk_quantity)</questionText>
+ <instruction>
+ <text>[milk_frequency] = '2' or [milk_frequency] = '3' or [milk_frequency] = '4' or [milk_frequency] = '5' or [milk_frequency] = '6' or [milk_frequency] = '7' or [milk_frequency] = '8' or [milk_frequency] = '9'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 1 cup</meaningText>
+ <description>Less than 1 cup</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 cup (8 ounces)</meaningText>
+ <description>1 cup (8 ounces)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 1 cup</meaningText>
+ <description>More than 1 cup</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>8 ounce glass of milk image (calcium_intake_image001)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>What kind of milk do you usually drink? (milk_variety)</questionText>
+ <instruction>
+ <text>[milk_frequency] = '2' or [milk_frequency] = '3' or [milk_frequency] = '4' or [milk_frequency] = '5' or [milk_frequency] = '6' or [milk_frequency] = '7' or [milk_frequency] = '8' or [milk_frequency] = '9'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Whole milk</meaningText>
+ <description>Whole milk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>2% fat milk</meaningText>
+ <description>2% fat milk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>1% fat milk</meaningText>
+ <description>1% fat milk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>Skim or nonfat milk</meaningText>
+ <description>Skim or nonfat milk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>Chocolate milk</meaningText>
+ <description>Chocolate milk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>Soy or rice milk</meaningText>
+ <description>Soy or rice milk</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you eat yogurt? (yogurt_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 or more times per day</meaningText>
+ <description>1 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you eat cold cereal? (cereal_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than one time per month</meaningText>
+ <description>Never or less than one time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 time per day</meaningText>
+ <description>1 time per day</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>8</value>
+ <meaningText>2 or more times per day</meaningText>
+ <description>2 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Each time you eat cold cereal, how much do you usually eat? (cereal_quantity)</questionText>
+ <instruction>
+ <text>[cereal_frequency] = '2' or [cereal_frequency] = '3' or [cereal_frequency] = '4' or [cereal_frequency] = '5' or [cereal_frequency] = '6' or [cereal_frequency] = '7' or [cereal_frequency] = '8'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 2 cups</meaningText>
+ <description>Less than 2 cups</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>2 cups</meaningText>
+ <description>2 cups</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 2 cups</meaningText>
+ <description>More than 2 cups</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Two cups of cold cereal image (calcium_intake_image002)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Think about your usual eating habits over the past month. How often do you eat Mexican foods such as tacos, tostados, burritos, tamales, fajitas, enchiladas, quesadillas, or chimichangas? (mexican_food_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 or more times per day</meaningText>
+ <description>1 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Each time you eat Mexican foods, how much do you usually eat? (mexican_food_quantity)</questionText>
+ <instruction>
+ <text>[mexican_food_frequency] = '2' or [mexican_food_frequency] = '3' or [mexican_food_frequency] = '4' or [mexican_food_frequency] = '5' or [mexican_food_frequency] = '6' or [mexican_food_frequency] = '7'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 1 taco or burrito</meaningText>
+ <description>Less than 1 taco or burrito</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 taco or burrito</meaningText>
+ <description>1 taco or burrito</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 1 taco or burrito</meaningText>
+ <description>More than 1 taco or burrito</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you eat pizza? (pizza_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 or more times per day</meaningText>
+ <description>1 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Think about your usual eating habits over the past month. Each time you eat pizza, how much do you usually eat? (pizza_quantity)</questionText>
+ <instruction>
+ <text>[pizza_frequency] = '2' or [pizza_frequency] = '3' or [pizza_frequency] = '4' or [pizza_frequency] = '5' or [pizza_frequency] = '6' or [pizza_frequency] = '7'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>1 slice</meaningText>
+ <description>1 slice</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>2 slices or one mini pizza</meaningText>
+ <description>2 slices or one mini pizza</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>3 or more slices 5</meaningText>
+ <description>3 or more slices 5</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you eat macaroni and cheese? (macaroni_cheese_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 or more times per day</meaningText>
+ <description>1 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>17</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Each time you eat macaroni and cheese, how much do you usually eat? (macaroni_cheese_quantity)</questionText>
+ <instruction>
+ <text>[macaroni_cheese_frequency] = '2' or [macaroni_cheese_frequency] = '3' or [macaroni_cheese_frequency] = '4' or [macaroni_cheese_frequency] = '5' or [macaroni_cheese_frequency] = '6' or [macaroni_cheese_frequency] = '7'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 1 cup</meaningText>
+ <description>Less than 1 cup</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 cup (SEE THE PICTURE BELOW)</meaningText>
+ <description>1 cup (SEE THE PICTURE BELOW)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 1 cup</meaningText>
+ <description>More than 1 cup</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>18</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>One cup of macaroni and cheese image (calcium_intake_image003)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>19</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you eat ice cream, ice cream bars, milk shakes, or frozen yogurt? (ice_cream_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 or more times per day</meaningText>
+ <description>1 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>20</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Each time you eat ice cream, ice cream bars, milkshakes, or frozen yogurt, how much do you usually eat? (ice_cream_quantity)</questionText>
+ <instruction>
+ <text>[ice_cream_frequency] = '2' or [ice_cream_frequency] = '3' or [ice_cream_frequency] = '4' or [ice_cream_frequency] = '5' or [ice_cream_frequency] = '6' or [ice_cream_frequency] = '7'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 1 cup</meaningText>
+ <description>Less than 1 cup</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 cup (2 scoops)</meaningText>
+ <description>1 cup (2 scoops)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 1 cup</meaningText>
+ <description>More than 1 cup</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>21</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>How often do you eat cheese (including on salads or in sandwiches or subs)? (cheese_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 or more times per day</meaningText>
+ <description>1 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>22</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Think about your usual eating habits over the past month. Each time you eat cheese, how much do you usually eat? (cheese_quantity)</questionText>
+ <instruction>
+ <text>[cheese_frequency] = '2' or [cheese_frequency] = '3' or [cheese_frequency] = '4' or [cheese_frequency] = '5' or [cheese_frequency] = '6' or [cheese_frequency] = '7'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 1 slice</meaningText>
+ <description>Less than 1 slice</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 slice</meaningText>
+ <description>1 slice</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 1 slice</meaningText>
+ <description>More than 1 slice</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>23</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Think about your usual eating habits over the past month. How often do you eat bread, toast or dinner rolls, including bread as part of a sandwich (DO NOT count buns with hamburgers or hot dogs)? (bread_frequency)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Never or less than 1 time per month</meaningText>
+ <description>Never or less than 1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>1 time per month</meaningText>
+ <description>1 time per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>2-3 times per month</meaningText>
+ <description>2-3 times per month</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>1-2 times per week</meaningText>
+ <description>1-2 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>3-4 times per week</meaningText>
+ <description>3-4 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>5-6 times per week</meaningText>
+ <description>5-6 times per week</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>1 time per day</meaningText>
+ <description>1 time per day</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>8</value>
+ <meaningText>2 or more times per day</meaningText>
+ <description>2 or more times per day</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>24</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Think about your usual eating habits over the past month. Each time you eat bread, toast or dinner rolls, how much do you usually eat? (bread_quantity)</questionText>
+ <instruction>
+ <text>[bread_frequency] = '2' or [bread_frequency] = '3' or [bread_frequency] = '4' or [bread_frequency] = '5' or [bread_frequency] = '6' or [bread_frequency] = '7' or [bread_frequency] = '8'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>1 slice or 1 dinner roll</meaningText>
+ <description>1 slice or 1 dinner roll</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>2 slices or 2 dinner rolls</meaningText>
+ <description>2 slices or 2 dinner rolls</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>More than 2 slices or 2 dinner rolls</meaningText>
+ <description>More than 2 slices or 2 dinner rolls</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX050201</protocolID>
+ <longName>Calcium Intake - Children</longName>
+ <context>PhenX</context>
+ <shortName>PX050201</shortName>
+ <preferredDefinition>These self-administered questions are for use with children of middle school-age (aged 11-14 years). Each question has a multichoice answer. Pictures help guide the children's responses to the questions.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>PhenX PX041201 - Deep Venous Thrombosis</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>A screening question is asked about whether a person has been told that they have deep venous thrombosis (DVT) or blood clots in their legs. If the response is "yes," then two questions are asked about treatment for the condition. The third protocol provides a method to improve documentation of the condition by abstracting additional information from the person's medical record about the history and laboratory findings of DVT.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <longName>Deep Venous Thrombosis</longName>
+ <instruction/>
+ <preferredDefinition>Deep Venous Thrombosis</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Has a doctor ever told you that you had deep venous thrombosis or blood clots in your legs? (ever_have_deep_venous_thrombosis)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>9</value>
+ <meaningText>Don't Know</meaningText>
+ <description>Don't Know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Have you ever been treated by a doctor or a nurse with shots at home or as an outpatient (usually followed by blood thinning medications such as Coumadin, Warfarin) for blood clots in the legs called deep vein thrombosis or DVT? (ever_been_treated)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Have you ever had outpatient test(s) performed for blood clots in the legs called deep vein thrombosis or DVT? (ever_have_outpatient_test)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Complete the following for all hospitalized pulmonary embolism (PE)/deep vein thrombosis (DVT). Complete the following if outpatient (OP) records confirm deep vein thrombosis (DVT) or an autopsy report confirms pulmonary embolism. (pe_dvt_intro)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Deep vein thrombosis (DVT) (dvt)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Date of Diagnosis (mm/dd/yyyy). (dvt_diagnosis_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;[dvt] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Diagnosis: (Mark the one category that applies best.) (dvt_diagnosis)</questionText>
+ <instruction>
+ <text>[dvt] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Deep vein thrombosis of lower extremities not resulting from a procedure within 60 days</meaningText>
+ <description>Deep vein thrombosis of lower extremities not resulting from a procedure within 60 days</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Deep vein thrombosis of lower extremities during or following a procedure within 60 days</meaningText>
+ <description>Deep vein thrombosis of lower extremities during or following a procedure within 60 days</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Diagnosis of deep vein thrombosis is based on: (Mark all that apply.) (dvt_diagnosis_based_on_isotope_scan_enum)</questionText>
+ <instruction>
+ <text>[dvt] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Hospital discharge summary with a diagnosis of deep vein thrombosis</meaningText>
+ <description>Hospital discharge summary with a diagnosis of deep vein thrombosis</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Positive findings on a venogram</meaningText>
+ <description>Positive findings on a venogram</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Positive findings using impedance plethysmography</meaningText>
+ <description>Positive findings using impedance plethysmography</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>Positive findings on doppler duplex, ultrasound, sonogram, or other non-invasive test examination</meaningText>
+ <description>Positive findings on doppler duplex, ultrasound, sonogram, or other non-invasive test examination</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>Positive findings on isotope scan</meaningText>
+ <description>Positive findings on isotope scan</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T11:41:53</dateCreated>
+ <questionText>Diagnosis of deep vein thrombosis reporting source: (Mark one. If more than one category applies, mark the first applicable category.) (dvt_diagnosis_reporting_source)</questionText>
+ <instruction>
+ <text>[dvt] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Hospital inpatient</meaningText>
+ <description>Hospital inpatient</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Hospital outpatient facility or clinic</meaningText>
+ <description>Hospital outpatient facility or clinic</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Radiology or imaging facility</meaningText>
+ <description>Radiology or imaging facility</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>Physician's office/private medical practitioner</meaningText>
+ <description>Physician's office/private medical practitioner</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>Nursing/convalescent home/hospice</meaningText>
+ <description>Nursing/convalescent home/hospice</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>Autopsy only</meaningText>
+ <description>Autopsy only</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>Death Certificate only</meaningText>
+ <description>Death Certificate only</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>8</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX041201</protocolID>
+ <longName>Deep Venous Thrombosis</longName>
+ <context>PhenX</context>
+ <shortName>PX041201</shortName>
+ <preferredDefinition>A screening question is asked about whether a person has been told that they have deep venous thrombosis (DVT) or blood clots in their legs. If the response is "yes," then two questions are asked about treatment for the condition. The third protocol provides a method to improve documentation of the condition by abstracting additional information from the person's medical record about the history and laboratory findings of DVT.</preferredDefinition>
+ </protocol>
+ </form> 
+ </forms>
