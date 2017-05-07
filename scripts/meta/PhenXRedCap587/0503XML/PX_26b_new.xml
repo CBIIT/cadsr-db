@@ -1,0 +1,1335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 26</collectionName>
+  <collectionDescription>Load PhenX PX130401,PX130501,PX130601,PX130701,PX131201,PX131202,PX131203,PX131301,PX140101,PX140201,PX140301,PX140401</collectionDescription>
+ <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:29:59</dateCreated>
+    <longName>PhenX PX130501 - Migraine</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Self-Administered Questionnaire for Migraine is a 20-item questionnaire that assesses the frequency of severe headaches, the level of pain, whether the person is taking medications, and associated complications such as nausea.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:59</dateCreated>
+      <longName>Migraine</longName>
+      <preferredDefinition>Migraine</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>1. Over the past year, have you suffered from severe headaches? (severe_headaches_last_year)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>2. Age: (current_age)</questionText>
+        <instruction>
+         <text>datatype=number;[severe_headaches_last_year] = '1'; UOM=year</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>3. Sex (gender)</questionText>
+        <instruction>
+         <text>[severe_headaches_last_year] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Male</meaningText>
+          <description>Male</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Female</meaningText>
+          <description>Female</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>4. When you have a severe headache, do you experience any of the following?  (check all that apply) (headache_complications_numbness_enum)</questionText>
+        <instruction>
+         <text>[severe_headaches_last_year] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Nausea</meaningText>
+          <description>Nausea</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Vomiting</meaningText>
+          <description>Vomiting</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>One side of head only</meaningText>
+          <description>One side of head only</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Pulsating/throbbing headaches</meaningText>
+          <description>Pulsating/throbbing headaches</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Pain-free intervals of days or weeks between severe headache attacks</meaningText>
+          <description>Pain-free intervals of days or weeks between severe headache attacks</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Sensitivity to light</meaningText>
+          <description>Sensitivity to light</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Sensitivity to noise</meaningText>
+          <description>Sensitivity to noise</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>Blurring of vision</meaningText>
+          <description>Blurring of vision</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>Seeing shimmering lights, circles, other shapes, or colors before the eyes, before the headache starts</meaningText>
+          <description>Seeing shimmering lights, circles, other shapes, or colors before the eyes, before the headache starts</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>Numbness of lips, tongue, fingers, or legs before the headache starts</meaningText>
+          <description>Numbness of lips, tongue, fingers, or legs before the headache starts</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>4a. About how often do your severe headaches occur? (Write In Number Of Headache Days You Have Per Week, Month or Year  please specify which in answer) (severe_headaches_average_frequency)</questionText>
+        <instruction>
+         <text>[severe_headaches_last_year] = '1'; UOM=week, month, year</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>5. Which statement best describes the pain of your severe headaches? (Check ONE) (severe_headache_pain_type)</questionText>
+        <instruction>
+         <text>[severe_headaches_last_year] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Extremely severe pain</meaningText>
+          <description>Extremely severe pain</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Severe pain</meaningText>
+          <description>Severe pain</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderately severe pain</meaningText>
+          <description>Moderately severe pain</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Mild pain</meaningText>
+          <description>Mild pain</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>6. Which best describes how you are usually affected by severe headaches? (Check ONE) (how_affected_by_headaches)</questionText>
+        <instruction>
+         <text>[severe_headaches_last_year] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Able to work/function normally</meaningText>
+          <description>Able to work/function normally</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Working ability or activity impaired to some degree</meaningText>
+          <description>Working ability or activity impaired to some degree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Working ability or activity severely impaired</meaningText>
+          <description>Working ability or activity severely impaired</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Bed rest required</meaningText>
+          <description>Bed rest required</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>7. Each time you have a severe headache, how long are you unable to work or undertake normal activities? (Check ONE) (how_long_unable_to_work)</questionText>
+        <instruction>
+         <text>[severe_headaches_last_year] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>0 days (no activity restriction)</meaningText>
+          <description>0 days (no activity restriction)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Less than 1 day</meaningText>
+          <description>Less than 1 day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>1-2 days</meaningText>
+          <description>1-2 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>3-5 days</meaningText>
+          <description>3-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>6 or more days</meaningText>
+          <description>6 or more days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>8. On how many days in the last 3 months did you have a headache (if headache lasted more than 1 day, count each day)? (headache_frequency_last_three_months)</questionText>
+        <instruction>
+         <text>datatype=number;[severe_headaches_last_year] = '1'; UOM=day</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>9a. Because of your headaches on how many days in the last 3 months... ?  did you miss work or school (number_days_miss_school)</questionText>
+        <instruction>
+         <text>datatype=number;[severe_headaches_last_year] = '1'; UOM=day</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>9b. Because of your headaches on how many days in the last 3 months... ?  was your productivity at work/school reduced by half or more (not including days missed in qu. 9a above) (number_days_reduced_productivity)</questionText>
+        <instruction>
+         <text>datatype=number;[severe_headaches_last_year] = '1'; UOM=day</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>9c. Because of your headaches on how many days in the last 3 months... ?  did you not do household work (number_days_no_house_work)</questionText>
+        <instruction>
+         <text>datatype=number;[severe_headaches_last_year] = '1'; UOM=day</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>9d. Because of your headaches on how many days in the last 3 months... ?  was your productivity in household work reduced by half or more (not including days counted in qu. 9c above) (number_days_housework_reduced_half)</questionText>
+        <instruction>
+         <text>datatype=number;[severe_headaches_last_year] = '1'; UOM=day</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>9e. Because of your headaches on how many days in the last 3 months... ?  did you miss family, social, or leisure activities (number_days_miss_activities)</questionText>
+        <instruction>
+         <text>datatype=number;[severe_headaches_last_year] = '1'; UOM=day</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>10. At what age did you BEGIN having severe headaches? (age_headaches_began)</questionText>
+        <instruction>
+         <text>datatype=number;[severe_headaches_last_year] = '1'; UOM=year</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>11. Have you ever gone to the hospital emergency room or to an urgent care clinic because of your severe headaches? (ever_goneto_hospital_for_headaches)</questionText>
+        <instruction>
+         <text>[severe_headaches_last_year] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>12. Which best describes the way you usually treat severe headaches? (Check ONE) (usual_headache_treatment)</questionText>
+        <instruction>
+         <text>[severe_headaches_last_year] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Take non-prescription medications</meaningText>
+          <description>Take non-prescription medications</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Take prescription medications</meaningText>
+          <description>Take prescription medications</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Take both prescription and non-prescription medications</meaningText>
+          <description>Take both prescription and non-prescription medications</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Take no medications</meaningText>
+          <description>Take no medications</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>13. Have you ever taken prescription medication for headache on a DAILY basis, whether or not you have a headache, to help prevent a severe headache from happening in the first place? (headache_prescription_medication_daily_basis)</questionText>
+        <instruction>
+         <text>[severe_headaches_last_year] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>14. Are you currently taking any other medication on a DAILY basis?  (Check all that apply) (any_other_daily_medication_prescription_depression_enum)</questionText>
+        <instruction>
+         <text>[severe_headaches_last_year] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Water pill or prescription diuretic for high blood pressure</meaningText>
+          <description>Water pill or prescription diuretic for high blood pressure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Prescription medicine (other than water pill) for high blood pressure</meaningText>
+          <description>Prescription medicine (other than water pill) for high blood pressure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Prescription medicine for seizures, epilepsy, or fits</meaningText>
+          <description>Prescription medicine for seizures, epilepsy, or fits</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Prescription medicine for diabetes</meaningText>
+          <description>Prescription medicine for diabetes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Prescription medicine for cholesterol</meaningText>
+          <description>Prescription medicine for cholesterol</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Prescription medicine for depression or anxiety</meaningText>
+          <description>Prescription medicine for depression or anxiety</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>15. When did you last take prescription medication for headache on a DAILY basis to help prevent a severe headache from happening in the first place? (Check ONE) (last_took_daily_headache_medication)</questionText>
+        <instruction>
+         <text>[severe_headaches_last_year] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Currently taking</meaningText>
+          <description>Currently taking</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Last took within the past 3 months</meaningText>
+          <description>Last took within the past 3 months</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Last took 3 to 12 months ago</meaningText>
+          <description>Last took 3 to 12 months ago</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Last took more than 12 months ago</meaningText>
+          <description>Last took more than 12 months ago</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Never took</meaningText>
+          <description>Never took</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>16. Do you consider your severe headaches to be migraines? (consider_headaches_tobe_migraines)</questionText>
+        <instruction>
+         <text>[severe_headaches_last_year] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>17. Have you ever been diagnosed by a physician or other health professional as suffering from... (Check all that apply) (diagnosed_with_headache_type_migraine_enum)</questionText>
+        <instruction>
+         <text>[severe_headaches_last_year] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Tension headaches</meaningText>
+          <description>Tension headaches</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Sinus headaches</meaningText>
+          <description>Sinus headaches</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Cluster headaches</meaningText>
+          <description>Cluster headaches</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Stress headaches</meaningText>
+          <description>Stress headaches</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Sick headaches</meaningText>
+          <description>Sick headaches</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Migraine headaches</meaningText>
+          <description>Migraine headaches</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>18. If diagnosed with migraines, at what age were you FIRST DIAGNOSED with migraines? (age_diagnosed_with_migraines)</questionText>
+        <instruction>
+         <text>datatype=number;[severe_headaches_last_year] = '1'; UOM=year</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>19a. Height  in feet? (height_feet)</questionText>
+        <instruction>
+         <text>datatype=number;[severe_headaches_last_year] = '1'; UOM=foot</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>19b. Height  in inches? (height_inches)</questionText>
+        <instruction>
+         <text>datatype=number;[severe_headaches_last_year] = '1'; UOM=inch</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>20.  Current weight  in pounds? (weight)</questionText>
+        <instruction>
+         <text>datatype=number;[severe_headaches_last_year] = '1'; UOM=pound</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>Scoring Instructions    In Lipton et al. (2001), respondents were classified as suffering from migraine if they fulfill the criteria for migraine with aura and migraine without aura established in 1998 by the International Headache Society (IHS) (Headache Classification Committee of the International Headache Society, 1998). This included one or more severe headache in the last year with "unilateral or pulsatile pain, and either nausea, vomiting, or phonophobia with photophobia or visual or sensory aura before the headache" (Lipton et al., 2001). These criteria were updated by the International Headache Society in 2004 (Headache Classification Subcommittee of the International Headache Society, 2004). (scoring_130501)</questionText>
+        <instruction>
+         <text>[severe_headaches_last_year] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX130501</protocolID>
+     <longName>Migraine</longName>
+     <context>PhenX</context>
+     <shortName>PX130501</shortName>
+     <preferredDefinition>The Self-Administered Questionnaire for Migraine is a 20-item questionnaire that assesses the frequency of severe headaches, the level of pain, whether the person is taking medications, and associated complications such as nausea.</preferredDefinition>
+    </protocol>
+   </form>  
+  <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:29:59</dateCreated>
+    <longName>PhenX PX130601 - History Of Head Trauma</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Ohio State University Traumatic Brain Injury Identification Method Short Form (OSU TBI-ID) is an interviewer-administered questionnaire that captures the lifetime history of traumatic brain injury. The OSU TBI-ID gives data for calculating summary indices that reflect the likelihood that consequences have resulted from lifetime exposure to traumatic brain injury.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>We would like to ask you about injuries to your head or neck that you may have had at anytime in your life. LOC=loss of consciousness (knocked out) TBI=traumatic brain injury</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:59</dateCreated>
+      <longName>History of Head Trauma</longName>
+      <preferredDefinition>History of Head Trauma</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>1. Have you ever been hospitalized or treated in an emergency room following an injury to your head or neck? Think about any childhood injuries you remember or were told about. (hospitalized_head_injury)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>Cause of injury reported in question 1 (hospitalized_head_injury_cause)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>1a. Were you knocked out or did you lose consciousness?  If yes, how long? (head_or_neck_injury_loc)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>No LOC</meaningText>
+          <description>No LOC</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>&lt; 30 min</meaningText>
+          <description>&lt; 30 min</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>30 min-24 hrs</meaningText>
+          <description>30 min-24 hrs</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>&gt; 24 hrs</meaningText>
+          <description>&gt; 24 hrs</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>1b. If no, were you dazed or did you have a gap in your memory from the injury? (head_injury_memory_gap)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>1c. How old were you? (head_or_neck_injury_age)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=year</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>2. Have you ever injured your head or neck in a car accident or from some other moving vehicle accident (e.g. motorcycle, ATV)? (moving_vehicle_head_injury)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>Cause of injury reported in question 2 (moving_vehicle_head_injury_cause)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>2a. Were you knocked out or did you lose consciousness (LOC)?  If yes, how long? (moving_vehicle_head_injury_loc)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>No LOC</meaningText>
+          <description>No LOC</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>&lt; 30 min</meaningText>
+          <description>&lt; 30 min</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>30 min-24 hrs</meaningText>
+          <description>30 min-24 hrs</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>&gt; 24 hrs</meaningText>
+          <description>&gt; 24 hrs</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>2b. If no, were you dazed or did you have a gap in your memory from the injury? (vehicular_head_injury_memory_gap)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>2c. How old were you? (moving_vehicle_head_injury_age)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=year</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>3. Have you ever injured your head or neck in a fall or from being hit by something (e.g. falling from a bike, horse, or rollerblades, falling on ice, being hit by a rock)? Have you ever injured your head or neck playing sports or on the playground? (head_injury_fall_hit_sports)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>Cause of injury reported in question 3 (fall_head_injury_cause)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>3a. Were you knocked out or did you lose consciousness (LOC)?  If yes, how long? (fall_head_injury_loc)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>No LOC</meaningText>
+          <description>No LOC</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>&lt; 30 min</meaningText>
+          <description>&lt; 30 min</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>30 min-24 hrs</meaningText>
+          <description>30 min-24 hrs</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>&gt; 24 hrs</meaningText>
+          <description>&gt; 24 hrs</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>3b. If no, were you dazed or did you have a gap in your memory from the injury? (fall_head_injury_memory_gap)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>3c. How old were you? (fall_head_injury_age)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=year</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>4. Have you ever injured your head or neck in a fight, from being hit by someone, or from being shaken violently? Have you ever been shot in the head? (head_injury_fight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>Cause of injury reported in question 4 (fight_head_injury_cause)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>4a. Were you knocked out or did you lose consciousness (LOC)?  If yes, how long? (fight_head_injury_loc)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>No LOC</meaningText>
+          <description>No LOC</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>&lt; 30 min</meaningText>
+          <description>&lt; 30 min</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>30 min-24 hrs</meaningText>
+          <description>30 min-24 hrs</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>&gt; 24 hrs</meaningText>
+          <description>&gt; 24 hrs</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>4b. If no, were you dazed or did you have a gap in your memory from the injury? (fight_head_injury_memory_gap)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>4c. How old were you? (fight_head_injury_age)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=year</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>5. Have you ever been nearby when an explosion or a blast occurred? If you served in the military, think about any combat or trainingrelated incidents. (explosion_head_injury)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>Cause of injury reported in question 5 (explosion_head_injury_cause)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>5a. Were you knocked out or did you lose consciousness (LOC)?  If yes, how long? (explosion_head_injury_loc)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>No LOC</meaningText>
+          <description>No LOC</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>&lt; 30 min</meaningText>
+          <description>&lt; 30 min</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>30 min-24 hrs</meaningText>
+          <description>30 min-24 hrs</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>&gt; 24 hrs</meaningText>
+          <description>&gt; 24 hrs</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>5b. If no, were you dazed or did you have a gap in your memory from the injury? (explosion_head_injury_memory_gap)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>5c. How old were you? (explosion_head_injury_age)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=year</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>6. If more injuries with LOC:  How many more? (number_other_injuries_with_loc)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>If more injuries with LOC:  Longest knocked out (other_injuries_with_loc_longest)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>If more injuries with LOC:  How many &gt; 30 mins.? (number_other_injuries_with_loc_30min)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>If more injuries with LOC:  Youngest age? (number_other_injuries_with_loc_age)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=year</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>7a. Have you ever lost consciousness from a drug overdose?  If so, record the number of times. (loc_from_drug_overdose)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-05-03T22:29:59</dateCreated>
+        <questionText>7b. Have you ever lost consciousness from being choked? If so, record the number of times. (loc_from_being_choked)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+    <isEditable>No</isEditable>
+    <isMandatory>No</isMandatory>
+    <multiValue>No</multiValue>
+        </question>
+    <question>
+    <isDerived>false</isDerived>
+    <displayOrder>32</displayOrder>
+    <dateCreated>2017-05-03T22:29:59</dateCreated>
+     <questionText>SCORING     _____ # TBILOC (number of TBI's with loss of consciousness from #15a) ____ # TBILOC ? 30 (number of TBI's with loss of consciousness ? 30 minutes from #15a)  ____ age at first TBILOC (youngest age from #15c)  ____ TBILOC before age 15 (if youngest age from #15c less than 15 then =1, if ? 15 then = 0) ____ Worst Injury (15):    If responses to #15 are "no", classify as 1 "improbable TBI".   If in response to #15a and #15b reports never having LOC, being dazed or having memory lapses, classify as 1 "improbable TBI".  If in response to #15b reports being dazed or having a memory lapse, classify as 2 "possible TBI".  If in response to #15a loss of consciousness (LOC) does not exceed 30 minutes for any injury, classify as 3 "mild TBI".  If in response to #15a LOC for any one injury is between 30 minutes and 24 hours, classify as 4 "moderate TBI".   If in response to #15a LOC for any one injury exceeds 24 hours, classify as 5 "severe TBI".____ # anoxic injuries (sum of incidents reported in #7ab)   This protocol was adapted with permission from the Ohio State University TBI Identification Method reserved 2007, The Ohio Valley Center for Brain Injury Prevention and Rehabilitation (scoring_130601)</questionText>
+     <instruction>
+     <text>N/A</text>
+    </instruction>
+    <isEditable>No</isEditable>
+    <isMandatory>No</isMandatory>
+    <multiValue>No</multiValue>
+        </question>
+      </module>
+    <protocol>
+   <protocolID>PX130601</protocolID>
+   <longName>History of Head Trauma</longName>
+   <context>PhenX</context>
+   <shortName>PX130601</shortName>
+   <preferredDefinition>The Ohio State University Traumatic Brain Injury Identification Method Short Form (OSU TBI-ID) is an interviewer-administered questionnaire that captures the lifetime history of traumatic brain injury. The OSU TBI-ID gives data for calculating summary indices that reflect the likelihood that consequences have resulted from lifetime exposure to traumatic brain injury.</preferredDefinition>
+  </protocol>
+  </form>  
+  </forms>
