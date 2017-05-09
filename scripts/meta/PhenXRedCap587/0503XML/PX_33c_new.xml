@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 33b</collectionName>
+  <collectionDescription>Load PhenX PX180501,PX190301,PX190501,PX191001,PX191101,PX200101  </collectionDescription>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:30:44</dateCreated>
+    <longName>PhenX PX190301 - Celiac Sprue Assay</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol uses two-step serologic testing of serum to determine the presence of antihuman recombinant tissue transglutaminase (TTG) and endomysial antibody (EMA). When both tests are positive, the subject is notified that they are positive for celiac sprue. The test is most accurate if patients have not been on a gluten-free diet in the weeks leading up to the assay, as a gluten-free diet may cause the serologic assays to normalize in many patients.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:30:44</dateCreated>
+      <longName>Celiac Sprue Assay</longName>
+      <preferredDefinition>Celiac Sprue Assay</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Do you have hemophilia? (pxt190301_hemophilia)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Have you received cancer chemotherapy in the past four weeks or do you anticipate such therapy in the next four weeks? (pxt190301_chemotherapy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Exclusion Criteria (pxt190301_exclusion_criteria)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Hemophilia</meaningText>
+          <description>Hemophilia</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Received cancer chemotherapy in the last 4 weeks</meaningText>
+          <description>Received cancer chemotherapy in the last 4 weeks</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>None - proceed with blood draw</meaningText>
+          <description>None - proceed with blood draw</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Venipuncture Procedures: Venipuncture should generally be performed using the median cubital, cephalic, or basilic veins in the left arm unless this arm is unsuitable. If the veins in the left arm are unsuitable, look for suitable veins on the right arm. If the veins in the antecubital space on both arms are not suitable, then look for veins in the forearm or dorsal side of the hand on the left arm/hand and then the right arm/hand. For a full description of phlebotomy procedures, please refer to Chapter 4 in the downloadable PDF of the 20092010 National Health and Nutrition Examination Survey (NHANES) Laboratory Procedures Manual available here: NHANES 20092010 Lab Manual (venip_proc_celiac)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Was blood drawn? (pxt190301_blood_draw_done)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Was full sample obtained? (pxt190301_blood_draw_sample)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Record any comments about the blood draw, including any reasons for the tube not being drawn according to the protocol. (pxt190301_blood_draw_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Record any comments about the sample during processing. (pxt190301_sample_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Record the type of assay used to perform the determination of tissue transglutaminase antibody. (assay_type_ttg)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Make of the equipment used to perform the determination of tissue transglutaminase antibody (equipment_make_ttg)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Manufacturer of the equipment used to perform the determination of tissue transglutaminase antibody. (equipment_manufacturer_ttg)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Repeatability of the assay for tissue transglutaminase antibody (assay_repeatability_ttg)</questionText>
+        <instruction>
+         <text>UOM=percentage</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Coefficient of variation for the assay for tissue transglutaminase antibody (coefficient_of_variation_ttg)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Results of tissue transglutaminase antibody assay (ttg_assay_results)</questionText>
+        <instruction>
+         <text>UOM=Units</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Record the type of assay used to perform the determination of endomysial antibody titer (assay_type_ema)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Make of the equipment used to perform the determination of endomysial antibody antibody titer (equipment_make_ema)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Manufacturer of the equipment used to perform the determination of endomysial antibody antibody titer (equipment_manufacturer_ema)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Repeatability of the assay for endomysial antibody titer (assay_repeatability_ema)</questionText>
+        <instruction>
+         <text>UOM=percentage</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Coefficient of variation for the assay for endomysial antibody titer (coefficient_of_variation_ema)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Results of endomysial antibody antibody titer (ema_assay_results)</questionText>
+        <instruction>
+         <text>UOM=Dilution factor</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX190301</protocolID>
+     <longName>Celiac Sprue Assay</longName>
+     <context>PhenX</context>
+     <shortName>PX190301</shortName>
+     <preferredDefinition>This protocol uses two-step serologic testing of serum to determine the presence of antihuman recombinant tissue transglutaminase (TTG) and endomysial antibody (EMA). When both tests are positive, the subject is notified that they are positive for celiac sprue. The test is most accurate if patients have not been on a gluten-free diet in the weeks leading up to the assay, as a gluten-free diet may cause the serologic assays to normalize in many patients.</preferredDefinition>
+    </protocol>
+   </form>
+      <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:30:44</dateCreated>
+    <longName>PhenX PX190501 - Computed Tomography Ct Of The Abdominal Organs</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol is divided into two parts. Part I consists of abdominal computed tomography (CT) imaging to measure liver fat, or hepatic steatosis. Part II is a secondary analysis and consists of abdominal CT imaging to determine the normal distribution of abdominal organ volumes. Organs are outlined by hand on each CT image by using a computer. The organs studied include left and right kidneys, left and right adrenals, spleen, pancreas, and liver; the first lumbar vertebrae are also studied.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:30:44</dateCreated>
+      <longName>Part I: Computed Tomography--Liver Fat/Hepatic Steatosis</longName>
+      <preferredDefinition>Part I: Computed Tomography--Liver Fat/Hepatic Steatosis</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Multidetector Computed Tomography (MDCT) Scan Protocol Individuals were scanned using an eight-slice MDCT (LightSpeed Ultra, General Electric, Milwaukee, WI, USA) in the supine position and amounted to a total effective radiation exposure of 2.7 mSv. Twenty-five contiguous 5-mm thick slices (120 kVp, 400 mA, gantry rotation time 500 ms, table feed 3:1) were acquired, covering 125 mm above the level of S1; raw data were reconstructed using a 55 cm field of view. In the chest, 48 continuous 2.5-mm thick slices (120 kVp, 320/400 mA [for less and  greater then 100 kg of body weight, respectively], gantry rotation time 500 ms, and temporal resolution 330 ms) were acquired during a single breath hold and reconstructed using a 35 cm field of view. A calibration control (phantom, Image Analysis, Lexington, KY, USA) with a water equivalent compound (CT-Water, Light Speed Ultra, General Electric, Milwaukee, WI, USA) and calcium hydroxyapatite at 0 mg/cm3, 75 mg/cm3, and 150 mg/cm3 was placed under each patient. We used the 150 mg/cm3 phantom to standardize all liver measurements, as this phantom had the least percentage error in its measure (data not shown). Protocol Development We measured the Hounsfield units (HUs) of the liver, spleen, and paraspinal muscles and an external phantom control. In order to determine the optimal number of CT slices to interpret, we measured two separate areas over an area of 100 mm2 in the liver, intentionally avoiding blood vessels in the liver. We also measured two separate areas in the spleen and one area each in the paraspinal muscles, avoiding fat planes. We conducted the measures in two abdominal and two chest CT slices per individual in a total of 10 individuals. In order to determine whether to use the chest or abdominal scans for the fatty liver measurement, we measured six separate areas in the liver, three in the spleen, and one each of the paraspinal muscles, and determined whether the variation in these measureme..TRUNCATED(desc1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Supine Liver Fat or Hepatic Steatosis CT Scanner Model (hepatic_steatosis_ct_scanner_model)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Supine Liver Fat or Hepatic Steatosis CT Image ID (hepatic_steatosis_ct_image_id)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>1</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:30:44</dateCreated>
+      <longName>Part II: Computed Tomography--Organ Volumes</longName>
+      <preferredDefinition>Part II: Computed Tomography--Organ Volumes</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>All patients were scanned on a General Electric® Lightspeed QX multislice scanner (Waukesha, WI, USA) or a General Electric® CT/I single-slice scanner. Scanning parameters depended on the clinical indication for the study, and all techniques were part of established clinical protocols. Consistent with this, all patients were scanned at 120 kVp, and the section thickness varied between 5 and 10 mm for all subjects. Most studies were contrast enhanced. Analysis of patient images The abdominal CT images were downloaded from our research PACS system (eFilm, eFilm, Inc., Toronto, ON, Canada) and transferred to a PC workstation. Studies were viewed on the workstation monitor for review of DICOM header information (age, sex, display field of view, and section thickness), which was subsequently recorded in a spreadsheet. The image files were saved sequentially as DICOM files. For organ identification (i.e., segmentation), images were displayed on a computer monitor with a resolution of 1280 X 1024 pixels. Custom mouse-and-cursor software, written in C and using a Windows 2000 platform (C/C++ 5.0, Microsoft Corporation, Redmond, WA, USA) enabled handoutlining of the ROIs. Each image was magnified by a factor of 2 during the outlining process to reduce eye fatigue and improve positioning fidelity of the mouse/cursor pointing system. Window and level settings were selectable in the custom software, but settings were typically close to a window of 400 and a level of 30. All outlining was performed by a single investigator (E.M.G.; at the time, a fourth-year medical student) trained to recognize the relevant organ boundaries by a board-certified radiologist specializing in abdominal imaging (J.P.M.). The outlining of more than 18,000 organ boundaries took place over a period of 9 months, and lengthy outlining sessions were avoided to reduce fatigue. Each of the solid abdominal organs and L1 were located and subsequently hand-outlined by using 10-pixel..TRUNCATED(desc2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>table1 (table1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>The trends in organ volume as a function of age were assessed with linear regression. Compared with body mass and height, organ volume was found to have minor correlations (0.44 greater than r greater than 0.08) with age. A minimum of data correction was sought to increase the utility of the data compiled. Even though corrections for height and weight of the patient seemed obvious in light of the wide range in patient size, age dependency was determined to be a much smaller effect. Therefore, no age corrections were performed on these data.Volume calculationThe volume calculation for the ROIs was implemented from the boundary data. The individual boundary points correspond to individual pixels in the image, with each point spaced approximately 10 pixels apart. Software was written which summed the number of pixels inside the outline boundaries. Single pixel area (s2) was computed from the known pixel width, s. The organ area (cm2) was computed from each outline as the product of the number of pixels (N) in the outline and the pixel area for that image. The volume (V) of an organ on a single section j was calculated as the product of the organ area and the CT section thickness (Tj where Vj =Tj Nj sj2). The total volume (Vtotal) for each organ was computed by summing the volumes from each section that included that organ (Vtotal = ?Vj).Anthropometric measurementsPrevious research has shown that the volumes for many of the abdominal organs can be correlated to a person's sex, height, and weight. Unfortunately, height and weight values were not available for a number of the subjects, even after careful review of their medical records. For these patients, a technique developed previously was used to estimate height and weight from ROI parameters measured on a single CT image. Additional ROIs were outlined for these patients, and predictive equations for each patient's height and weight were used. These methods are described elsewhere (Geraghty and Boone, 2003)..TRUNCATED(desc4)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Supine Organ Volumes CT Scanner Model (organ_volumes_ct_scanner_model)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:30:44</dateCreated>
+        <questionText>Supine Organ Volumes CT Image ID (organ_volumes_ct_image_id)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX190501</protocolID>
+     <longName>Computed Tomography (CT) of the Abdominal Organs</longName>
+     <context>PhenX</context>
+     <shortName>PX190501</shortName>
+     <preferredDefinition>This protocol is divided into two parts. Part I consists of abdominal computed tomography (CT) imaging to measure liver fat, or hepatic steatosis. Part II is a secondary analysis and consists of abdominal CT imaging to determine the normal distribution of abdominal organ volumes. Organs are outlined by hand on each CT image by using a computer. The organs studied include left and right kidneys, left and right adrenals, spleen, pancreas, and liver; the first lumbar vertebrae are also studied.</preferredDefinition>
+    </protocol>
+   </form>        
+   </forms>
