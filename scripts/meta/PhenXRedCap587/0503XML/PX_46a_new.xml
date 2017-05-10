@@ -1,0 +1,3172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 46a</collectionName>
+  <collectionDescription>Load PhenX PX640105,PX640106,PX640107,PX640108</collectionDescription>  
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:07:24</dateCreated>
+    <longName>PhenX PX640105 - Classif Of Suicidal Ideation And Suicidal Beh Adult</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes two subscales from the Screening version of the Columbia-Suicide Severity Rating Scale © (C-SSRS): Severity of Suicidal Ideation and Suicidal Behavior. Both subscales provide definitions of suicidal ideation and behavior and corresponding probes. The severity of ideation subscale is rated on a 5-point ordinal scale: 1 = wish to be dead, 2 = nonspecific active suicidal thoughts, 3 = suicidal thoughts with methods, 4 = suicidal intent, and 5 = suicidal intent with plan. The suicidal behavior subscale is rated on a nominal scale that includes actual, aborted, and interrupted attempts; preparatory behavior; and nonsuicidal, self-injurious behavior. The Current version of the C-SSRS assesses suicidality during a two time periods-ideation in the past month and suicidal behavior in the past 3 months. This version is meant to assess patient eligibility based on study-defined suicidality inclusion/exclusion criteria or assess current severity of suicidal ideation and behavior.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Suicidal Ideation: Ask questions 1 and 2. If both are negative, proceed to "Suicidal Behavior" section. If the answer to question 2 is "yes," ask questions 3, 4, and 5. If the answer to question 1 and/or 2 is "yes," complete "Intensity of Idea..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:07:24</dateCreated>
+      <longName>Classification of Suicidal Ideation and Suicidal Behavior - Adult - Current</longName>
+      <preferredDefinition>Classification of Suicidal Ideation and Suicidal Behavior - Adult - Current</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>1. Subject endorses thoughts about a wish to be dead or not alive anymore, or wish to fall asleep and not wake up.  Have you wished you were dead or wished you could go to sleep and not wake up? (pxt640105_wish_tobe_dead_pastonemonth)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640105_wish_tobe_dead_pastonemonth_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>2. General, nonspecific thoughts of wanting to end one's life/commit suicide (e.g., "I've thought about killing myself") without thoughts of ways to kill oneself/associated methods, intent, or plan during the assessment period.  Have you actually had any thoughts of killing yourself? (pxt640105_suicidalthoughts_nonspecific_active_pastonemonth)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640105_suicidalthoughts_nonspecific_active_pastonemonth_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>3. Subject endorses thoughts of suicide and has thought of at least one method during the assessment period. This is different than a specific plan with time, place or method details worked out (e.g., thought of method to kill self but not a specific plan).  Includes person who would say, "I thought about taking an overdose but I never made a specific plan as to when, where or how I would actually do it...and I would never go through with it."  Have you been thinking about how you might do this? (pxt640105_suicidalideation_withmethods_withoutintent_pastonemonth)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640105_suicidalideation_withmethods_withoutintent_pastonemonth_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>4. Active suicidal thoughts of killing oneself and subject reports having some intent to act on such thoughts, as opposed to "I have the thoughts but I definitely will not do anything about them."  Have you had these thoughts and had some intention of acting on them? (pxt640105_suicidalideation_withintent_withoutplan_pastonemonth)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640105_suicidalideation_withintent_withoutplan_pastonemonth_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>5. Thoughts of killing oneself with details of plan fully or partially worked out and subject has some intent to carry it out.  Have you started to work out or worked out the details of how to kill yourself? Do you intend to carry out this plan? (pxt640105_suicidalideation_withintent_withplan_pastonemonth)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640105_suicidalideation_withintent_withplan_pastonemonth_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Suicidal Behavior (sb_640105)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>A potentially selfinjurious act committed with at least some wish to die, as a result of act. Behavior was in part thought of as method to kill oneself. Intent does not have to be 100%.  If there is any intent/desire to die associated with the act, then it can be considered an actual suicide attempt. There does not have to be any injury or harm, just the potential for injury or harm. If person pulls trigger while gun is in mouth but gun is broken so no injury results, this is considered an attempt.  Inferring Intent: Even if an individual denies intent/wish to die, it may be inferred clinically from the behavior or circumstances. For example, a highly lethal act that is clearly not an accident so no other intent but suicide can be inferred (e.g., gunshot to head, jumping from window of a high floor/story). Also, if someone denies intent to die, but they thought that what they did could be lethal, intent may be inferred.  Have you made a suicide attempt?  Have you done anything to harm yourself?  Have you done anything dangerous where you could have died?  What did you do?  Did you___ as a way to end your life?  Did you want to die (even a little) when you___?  Were you trying to end your life when you ___?  Or did you think it was possible you could have died from___?  Or did you do it purely for other reasons / without ANY intention of killing yourself (like to relieve stress, feel better, get sympathy, or get something else to happen)?  (SelfInjurious Behavior without suicidal intent) (pxt640105_suicide_actual_attempt_pastthreemonths)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640105_suicide_actual_attempt_pastthreemonths_description)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Total number of attempts: (pxt640105_suicide_actual_attempt_totalnumber_pastthreemonths)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Has subject engaged in NonSuicidal SelfInjurious Behavior? (pxt640105_nonsuicidal_selfinjurious_behavior_pastthreemonths)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Interrupted Attempt (ia_640105)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>When the person is interrupted (by an outside circumstance) from starting the potentially selfinjurious act (if not for that, actual attempt would have occurred).  Overdose: Person has pills in hand but is stopped from ingesting.  Once they ingest any pills, this becomes an attempt rather than an interrupted attempt. Shooting: Person has gun pointed toward self, gun is taken away by someone else, or is somehow prevented from pulling trigger. Once they pull the trigger, even if the gun fails to fire, it is an attempt. Jumping: Person is poised to jump, is grabbed and taken down from ledge. Hanging: Person has noose around neck but has not yet started to hang  is stopped from doing so.  Has there been a time when you started to do something to end your life but someone or something stopped you before you actually did anything? (pxt640105_suicide_interrupted_attempt_pastthreemonths)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640105_suicide_interrupted_attempt_pastthreemonths_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Total number of interrupted attempts: (pxt640105_suicide_interrupted_attempt_totalnumber_pastthreemonths)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Aborted Attempts: (aa_640105)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>When person begins to take steps toward making a suicide attempt, but stops themselves before they actually have engaged in any selfdestructive behavior. Examples are similar to interrupted attempts, except that the individual stops him/herself, instead of being stopped by something else.  Has there been a time when you started to do something to try to end your life but you stopped yourself before you actually did anything? (pxt640105_suicide_aborted_attempt_pastthreemonths)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640105_suicide_aborted_attempt_pastthreemonths_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Total number of aborted attempts: (pxt640105_suicide_aborted_attempt_totalnumber_pastthreemonths)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Preparatory Acts or Behavior: (pa_640105)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Acts or preparation towards imminently making a suicide attempt. This can include anything beyond a verbalization or thought, such as assembling a specific method (e.g., buying pills, purchasing a gun) or preparing for one's death by suicide (e.g., giving things away, writing a suicide note).  Have you taken any steps towards making a suicide attempt or preparing to kill yourself (such as collecting pills, getting a gun, giving valuables away or writing a suicide note)? (pxt640105_suicide_preparatory_acts_behavior_lifetime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640105_suicide_preparatory_acts_behavior_lifetime_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Suicidal behavior was present during the assessment period? (suicidal_behavior_present_assessment_period)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Scoring information can be found at:  https://www.phenxtoolkit.org/toolkit_content/supplemental_info/suicide/measures/CSSRS_Scoring_and_DataAnalysisGuide_Feb2013.pdf (scoring_640105)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX640105</protocolID>
+     <longName>Classification of Suicidal Ideation and Suicidal Behavior - Adult - Current</longName>
+     <context>PhenX</context>
+     <shortName>PX640105</shortName>
+     <preferredDefinition>This protocol includes two subscales from the Screening version of the Columbia-Suicide Severity Rating Scale © (C-SSRS): Severity of Suicidal Ideation and Suicidal Behavior. Both subscales provide definitions of suicidal ideation and behavior and corresponding probes. The severity of ideation subscale is rated on a 5-point ordinal scale: 1 = wish to be dead, 2 = nonspecific active suicidal thoughts, 3 = suicidal thoughts with methods, 4 = suicidal intent, and 5 = suicidal intent with plan. The suicidal behavior subscale is rated on a nominal scale that includes actual, aborted, and interrupted attempts; preparatory behavior; and nonsuicidal, self-injurious behavior. The Current version of the C-SSRS assesses suicidality during a two time periods-ideation in the past month and suicidal behavior in the past 3 months. This version is meant to assess patient eligibility based on study-defined suicidality inclusion/exclusion criteria or assess current severity of suicidal ideation and behavior.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:07:24</dateCreated>
+    <longName>PhenX PX640106 - Classif Of Suicidal Ideation And Suicidal Behavior Ad</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes two subscales from the Baseline version of the Columbia-Suicide Severity Rating Scale© (C-SSRS): Severity of Suicidal Ideation and Suicidal Behavior. Both subscales provide definitions of suicidal ideation and behavior and corresponding probes. The severity of ideation subscale is rated on a 5-point ordinal scale: 1 = wish to be dead, 2 = nonspecific active suicidal thoughts, 3 = suicidal thoughts with methods, 4 = suicidal intent, and 5 = suicidal intent with plan. The suicidal behavior subscale is rated on a nominal scale that includes actual, aborted, and interrupted attempts; preparatory behavior; and nonsuicidal, self-injurious behavior. The Baseline version of the C-SSRS assesses lifetime suicidal ideation and behavior. This version is suitable as part of a patient's first interview as part of a clinical study.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:07:24</dateCreated>
+      <longName>Classification of Suicidal Ideation and Suicidal Behavior - Adult - Lifetime</longName>
+      <preferredDefinition>Classification of Suicidal Ideation and Suicidal Behavior - Adult - Lifetime</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Suicidal Ideation: Ask questions 1 and 2. If both are negative, proceed to "Suicidal Behavior" section. If the answer to question 2 is "yes," ask questions 3, 4, and 5. If the answer to question 1 and/or 2 is "yes," complete "Intensity of Ideation" section below. (si_640106)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>1. Subject endorses thoughts about a wish to be dead or not alive anymore, or wish to fall asleep and not wake up.  Have you wished you were dead or wished you could go to sleep and not wake up? (pxt640106_wish_tobe_dead_lifetime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640106_wish_tobe_dead_lifetime_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>2. General, nonspecific thoughts of wanting to end one's life/commit suicide (e.g., "I've thought about killing myself") without thoughts of ways to kill oneself/associated methods, intent, or plan during the assessment period.  Have you actually had any thoughts of killing yourself? (pxt640106_suicidalthoughts_nonspecific_active_lifetime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640106_suicidalthoughts_nonspecific_active_lifetime_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>3. Subject endorses thoughts of suicide and has thought of at least one method during the assessment period. This is different than a specific plan with time, place or method details worked out (e.g., thought of method to kill self but not a specific plan).  Includes person who would say, "I thought about taking an overdose but I never made a specific plan as to when, where or how I would actually do it..and I would never go through with it."  Have you been thinking about how you might do this? (pxt640106_suicidalideation_withmethods_withoutintent_lifetime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640106_suicidalideation_withmethods_withoutintent_lifetime_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>4. Active suicidal thoughts of killing oneself and subject reports having some intent to act on such thoughts, as opposed to "I have the thoughts but I definitely will not do anything about them."  Have you had these thoughts and had some intention of acting on them? (pxt640106_suicidalideation_withintent_withoutplan_lifetime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640106_suicidalideation_withintent_withoutplan_lifetime_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>5. Thoughts of killing oneself with details of plan fully or partially worked out and subject has some intent to carry it out.  Have you started to work out or worked out the details of how to kill yourself? Do you intend to carry out this plan? (pxt640106_suicidalideation_withintent_withplan_lifetime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640106_suicidalideation_withintent_withplan_lifetime_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Suicidal Behavior: (sb_640106)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>A potentially selfinjurious act committed with at least some wish to die, as a result of act. Behavior was in part thought of as method to kill oneself. Intent does not have to be 100%.  If there is any intent/desire to die associated with the act, then it can be considered an actual suicide attempt. There does not have to be any injury or harm, just the potential for injury or harm. If person pulls trigger while gun is in mouth but gun is broken so no injury results, this is considered an attempt.  Inferring Intent: Even if an individual denies intent/wish to die, it may be inferred clinically from the behavior or circumstances. For example, a highly lethal act that is clearly not an accident so no other intent but suicide can be inferred (e.g., gunshot to head, jumping from window of a high floor/story). Also, if someone denies intent to die, but they thought that what they did could be lethal, intent may be inferred.  Have you made a suicide attempt?  Have you done anything to harm yourself?  Have you done anything dangerous where you could have died?  What did you do?  Did you___ as a way to end your life?  Did you want to die (even a little) when you___?  Were you trying to end your life when you ___?  Or did you think it was possible you could have died from___?  Or did you do it purely for other reasons / without ANY intention of killing yourself (like to relieve stress, feel better, get sympathy, or get something else to happen)?  (SelfInjurious Behavior without suicidal intent) (pxt640106_suicide_actual_attempt_lifetime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640106_suicide_actual_attempt_lifetime_description)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Total number of attempts (pxt640106_suicide_actual_attempt_totalnumber_lifetime)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Has subject engaged in NonSuicidal SelfInjurious Behavior? (pxt640106_nonsuicidal_selfinjurious_behavior_lifetime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Interrupted Attempt: (ia_640106)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>When the person is interrupted (by an outside circumstance) from starting the potentially selfinjurious act (if not for that, actual attempt would have occurred).  Overdose: Person has pills in hand but is stopped from ingesting.  Once they ingest any pills, this becomes an attempt rather than an interrupted attempt. Shooting: Person has gun pointed toward self, gun is taken away by someone else, or is somehow prevented from pulling trigger. Once they pull the trigger, even if the gun fails to fire, it is an attempt. Jumping: Person is poised to jump, is grabbed and taken down from ledge. Hanging: Person has noose around neck but has not yet started to hang  is stopped from doing so.  Has there been a time when you started to do something to end your life but someone or something stopped you before you actually did anything? (pxt640106_suicide_interrupted_attempt_lifetime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640106_suicide_interrupted_attempt_lifetime_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Total number of interrupted attempts: (pxt640106_interrupted_attempt_totalnumber_lifetime)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Aborted attempts (aa_640106)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>When person begins to take steps toward making a suicide attempt, but stops themselves before they actually have engaged in any selfdestructive behavior. Examples are similar to interrupted attempts, except that the individual stops him/herself, instead of being stopped by something else.  Has there been a time when you started to do something to try to end your life but you stopped yourself before you actually did anything? (pxt640106_suicide_aborted_attempt_lifetime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640106_suicide_aborted_attempt_lifetime_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Total number of aborted attempts: (pxt640106_suicide_aborted_attempt_totalnumber_lifetime)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Preparatory Acts or Behavior: (pa_640106)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Acts or preparation towards imminently making a suicide attempt. This can include anything beyond a verbalization or thought, such as assembling a specific method (e.g., buying pills, purchasing a gun) or preparing for one's death by suicide (e.g., giving things away, writing a suicide note).  Have you taken any steps towards making a suicide attempt or preparing to kill yourself (such as collecting pills, getting a gun, giving valuables away or writing a suicide note)? (pxt640106_suicide_preparatory_acts_behavior_lifetime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640106_suicide_preparatory_acts_behavior_lifetime_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Suicidal behavior was present during the assessment period? (pxt640106_suicidal_behavior_present_assessment_period)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Scoring information can be found at:  https://www.phenxtoolkit.org/toolkit_content/supplemental_info/suicide/measures/CSSRS_Scoring_and_DataAnalysisGuide_Feb2013.pdf (scoring_640106)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX640106</protocolID>
+     <longName>Classification of Suicidal Ideation and Suicidal Behavior - Adult - Lifetime</longName>
+     <context>PhenX</context>
+     <shortName>PX640106</shortName>
+     <preferredDefinition>This protocol includes two subscales from the Baseline version of the Columbia-Suicide Severity Rating Scale© (C-SSRS): Severity of Suicidal Ideation and Suicidal Behavior. Both subscales provide definitions of suicidal ideation and behavior and corresponding probes. The severity of ideation subscale is rated on a 5-point ordinal scale: 1 = wish to be dead, 2 = nonspecific active suicidal thoughts, 3 = suicidal thoughts with methods, 4 = suicidal intent, and 5 = suicidal intent with plan. The suicidal behavior subscale is rated on a nominal scale that includes actual, aborted, and interrupted attempts; preparatory behavior; and nonsuicidal, self-injurious behavior. The Baseline version of the C-SSRS assesses lifetime suicidal ideation and behavior. This version is suitable as part of a patient's &lt;i&gt;first&lt;/i&gt; interview as part of a clinical study.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:07:24</dateCreated>
+    <longName>PhenX PX640107 - Classif Of Suicidal Ideation And Beh Adult Since L</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes two subscales from the Since Last Visit from the Adult version of the Columbia-Suicide Severity Rating Scale © (C-SSRS): Severity of Suicidal Ideation and Suicidal Behavior. Both subscales provide definitions of suicidal ideation and behavior and corresponding probes. The severity of ideation subscale is rated on a 5-point ordinal scale: 1 = wish to be dead, 2 = nonspecific active suicidal thoughts, 3 = suicidal thoughts with methods, 4 = suicidal intent, and 5 = suicidal intent with plan. The suicidal behavior subscale is rated on a nominal scale that includes actual, aborted, and interrupted attempts; preparatory behavior; and nonsuicidal self-injurious behavior. The Since Last Visit version of the scale assesses suicidality since the patient's last visit. This version is meant to assess patients who have completed at least one initial C-SSRS assessment, and should be used in subsequent visits.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>SUICIDAL IDEATION Ask questions 1 and 2. If both are negative, proceed to "Suicidal Behavior" section. If the answer to question 2 is "yes," ask questions 3, 4, and 5. If the answer to question 1 and/or 2 is "yes," complete "Intensity of Ideat..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:07:24</dateCreated>
+      <longName>Classification of Suicidal Ideation and Suicidal Behavior - Adult - Since Last Visit</longName>
+      <preferredDefinition>Classification of Suicidal Ideation and Suicidal Behavior - Adult - Since Last Visit</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>1. Subject endorses thoughts about a wish to be dead or not alive anymore, or wish to fall asleep and not wake up.  Have you wished you were dead or wished you could go to sleep and not wake up? (pxt640107_wish_tobe_dead_sincelastvisit)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640107_wish_tobe_dead_sincelastvisit_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>2. General, nonspecific thoughts of wanting to end one's life/commit suicide (e.g.,  'I've thought about killing myself") without thoughts of ways to kill oneself/associated methods, intent, or plan during the assessment period.  Have you actually had any thoughts of killing yourself? (pxt640107_suicidalthoughts_nonspecific_active_sincelastvisit)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640107_suicidalthoughts_nonspecific_active_sincelastvisit_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>3. Subject endorses thoughts of suicide and has thought of at least one method during the assessment period. This is different than a specific plan with time, place or method details worked out (e.g., thought of method to kill self but not a specific plan).  Includes person who would say, "I thought about taking an overdose but I never made a specific plan as to when, where or how I would actually do it...and I would never go through with it."  Have you been thinking about how you might do this? (pxt640107_suicidalideation_withmethods_withoutintent_sincelastvisit)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640107_suicidalideation_withmethods_withoutintent_sincelastvisit_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>4. Active suicidal thoughts of killing oneself and subject reports having some intent to act on such thoughts, as opposed to "I have the thoughts but I definitely will not do anything about them."  Have you had these thoughts and had some intention of acting on them? (pxt640107_suicidalideation_withintent_withoutplan_sincelastvisit)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640107_suicidalideation_withintent_withoutplan_sincelastvisit_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>5. Thoughts of killing oneself with details of plan fully or partially worked out and subject has some intent to carry it out.  Have you started to work out or worked out the details of how to kill yourself? Do you intend to carry out this plan? (pxt640107_suicidalideation_withintent_withplan_sincelastvisit)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640107_suicidalideation_withintent_withplan_sincelastvisit_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>The following features should be rated with respect to the most severe type of ideation (i.e., 15 from above, with 1 being the least severe and 5 being the most severe). Ask about time he/she was feeling the most suicidal.  Most Severe Ideation:  Type # (15) (suicidalideation_mostseveretype_sincelastvisit)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Suicidal Behavior (sb_640107)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>A potentially selfinjurious act committed with at least some wish to die, as a result of act. Behavior was in part thought of as method to kill oneself. Intent does not have to be 100%.  If there is any intent/desire to die associated with the act, then it can be considered an actual suicide attempt. There does not have to be any injury or harm, just the potential for injury or harm. If person pulls trigger while gun is in mouth but gun is broken so no injury results, this is considered an attempt.  Inferring Intent: Even if an individual denies intent/wish to die, it may be inferred clinically from the behavior or circumstances. For example, a highly lethal act that is clearly not an accident so no other intent but suicide can be inferred (e.g., gunshot to head, jumping from window of a high floor/story). Also, if someone denies intent to die, but they thought that what they did could be lethal, intent may be inferred.  Have you made a suicide attempt?  Have you done anything to harm yourself?  Have you done anything dangerous where you could have died?  What did you do?  Did you___ as a way to end your life?  Did you want to die (even a little) when you___?  Were you trying to end your life when you ___?  Or did you think it was possible you could have died from___?  Or did you do it purely for other reasons / without ANY intention of killing yourself (like to relieve stress, feel better, get sympathy, or get something else to happen)?  (SelfInjurious Behavior without suicidal intent) (pxt640107_suicide_actual_attempt_sincelastvisit)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640107_suicide_actual_attempt_sincelastvisit_description)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Total number of attempts: (pxt640107_suicide_actual_attempt_totalnumber_sincelastvisit)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Has subject engaged in NonSuicidal SelfInjurious Behavior? (pxt640107_nonsuicidal_selfinjurious_behavior_sincelastvisit)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Interrupted Attempt (ia_640107)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>When the person is interrupted (by an outside circumstance) from starting the potentially selfinjurious act (if not for that, actual attempt would have occurred).  Overdose: Person has pills in hand but is stopped from ingesting.  Once they ingest any pills, this becomes an attempt rather than an interrupted attempt. Shooting: Person has gun pointed toward self, gun is taken away by someone else, or is somehow prevented from pulling trigger. Once they pull the trigger, even if the gun fails to fire, it is an attempt. Jumping: Person is poised to jump, is grabbed and taken down from ledge. Hanging: Person has noose around neck but has not yet started to hang  is stopped from doing so.  Has there been a time when you started to do something to end your life but someone or something stopped you before you actually did anything? (pxt640107_suicide_interrupted_attempt_sincelastvisit)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640107_suicide_interrupted_attempt_sincelastvisit_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Total number of interrupted attempts: (pxt640107_suicide_interrupted_attempt_totalnumber_sincelastvisit)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Aborted Attempt (aa_640107)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>When person begins to take steps toward making a suicide attempt, but stops themselves before they actually have engaged in any selfdestructive behavior. Examples are similar to interrupted attempts, except that the individual stops him/herself, instead of being stopped by something else.  Has there been a time when you started to do something to try to end your life but you stopped yourself before you actually did anything? (pxt640107_suicide_aborted_attempt_sincelastvisit)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640107_suicide_aborted_attempt_sincelastvisit_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Total number of aborted attempts: (pxt640107_suicide_aborted_attempt_totalnumber_sincelastvisit)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Preparatory Acts or Behavior: (pa_640107)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Acts or preparation towards imminently making a suicide attempt. This can include anything beyond a verbalization or thought, such as assembling a specific method (e.g., buying pills, purchasing a gun) or preparing for one's death by suicide (e.g., giving things away, writing a suicide note).  Have you taken any steps towards making a suicide attempt or preparing to kill yourself (such as collecting pills, getting a gun, giving valuables away or writing a suicide note)? (pxt640107_suicide_preparatory_acts_behavior_sincelastvisit)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>If yes, describe: (pxt640107_suicide_preparatory_acts_behavior_sincelastvisit_describe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Suicidal behavior was present during the assessment period? (pxt640107_suicidal_behavior_present_assessment_period)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Scoring information can be found at: https://www.phenxtoolkit.org/toolkit_content/supplemental_info/suicide/measures/CSSRS_Scoring_and_DataAnalysisGuide_Feb2013.pdf (scoring_640107)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX640107</protocolID>
+     <longName>Classification of Suicidal Ideation and Suicidal Behavior - Adult - Since Last Visit</longName>
+     <context>PhenX</context>
+     <shortName>PX640107</shortName>
+     <preferredDefinition>This protocol includes two subscales from the Since Last Visit from the Adult version of the Columbia-Suicide Severity Rating Scale © (C-SSRS): Severity of Suicidal Ideation and Suicidal Behavior. Both subscales provide definitions of suicidal ideation and behavior and corresponding probes. The severity of ideation subscale is rated on a 5-point ordinal scale: 1 = wish to be dead, 2 = nonspecific active suicidal thoughts, 3 = suicidal thoughts with methods, 4 = suicidal intent, and 5 = suicidal intent with plan. The suicidal behavior subscale is rated on a nominal scale that includes actual, aborted, and interrupted attempts; preparatory behavior; and nonsuicidal self-injurious behavior. The Since Last Visit version of the scale assesses suicidality since the patient's last visit. This version is meant to assess patients who have completed at least one initial C-SSRS assessment, and should be used in subsequent visits.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:07:24</dateCreated>
+    <longName>PhenX PX640108 - Classif Of Suicidal Ideation And Beh Adult Epidemi</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Suicidality module of the World Mental Health Composite International Diagnostic Interview includes 14 interviewer-administered questions that address suicidal ideation, plans, attempts, intent, lethality, and method in the past 12 months and over a lifetime. The protocol includes parallel questions for those who can and cannot read.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:07:24</dateCreated>
+      <longName>Classification of Suicidal Ideation and Suicidal Behavior - Adult - Epidemiology</longName>
+      <preferredDefinition>Classification of Suicidal Ideation and Suicidal Behavior - Adult - Epidemiology</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>1. INTERVIEWER CHECKPOINT: (pxt640108_interviewer_checkpoint_can_respondent_read)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>RESPONDENT IS ABLE TO READ</meaningText>
+          <description>RESPONDENT IS ABLE TO READ</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>ALL OTHERS GO TO #15</meaningText>
+          <description>ALL OTHERS GO TO #15</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>2. Three experiences are listed in your booklet on page 20 labeled A, B, and C. Did Experience A ever happen to you?  INTERVIEWER: EXPERIENCE A IS "YOU SERIOUSLY THOUGHT ABOUT COMMITTING SUICIDE" (thoughtabout_committingsuicide_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO - GO TO NEXT SECTION</meaningText>
+          <description>NO - GO TO NEXT SECTION</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW - GO TO NEXT SECTION</meaningText>
+          <description>DON'T KNOW - GO TO NEXT SECTION</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED - GO TO NEXT SECTION</meaningText>
+          <description>REFUSED - GO TO NEXT SECTION</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>2a. How old were you the first time this happened? (thoughtabout_committingsuicide_firsttimeage_abletoread)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=Years</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>2a. How old were you the first time this happened? (thoughtabout_committingsuicide_firsttimeagecoded_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>3. Did Experience A happen to you at any time in the past 12 months?  INTERVIEWER: EXPERIENCE A IS "YOU SERIOUSLY THOUGHT ABOUT COMMITTING SUICIDE" (thoughtabout_committingsuicide_pastyear_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES - GO TO 4</meaningText>
+          <description>YES - GO TO 4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW - GO TO NEXT SECTION</meaningText>
+          <description>DON'T KNOW - GO TO NEXT SECTION</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED - GO TO NEXT SECTION</meaningText>
+          <description>REFUSED - GO TO NEXT SECTION</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>3a. How old were you the last time this experience happened to you? (thoughtabout_committingsuicide_lasttimeage_abletoread)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=Years</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>3a. How old were you the last time this experience happened to you? (thoughtabout_committingsuicide_lasttimeagecoded_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>4. Now look at the second of the three experiences on the list, Experience B. Did Experience B ever happen to you?  INTERVIEWER: EXPERIENCE B IS "YOU MADE A PLAN FOR COMMITTING SUICIDE" (planfor_committingsuicide_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO - GO TO 6</meaningText>
+          <description>NO - GO TO 6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW - GO TO 6</meaningText>
+          <description>DON'T KNOW - GO TO 6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED - GO TO 6</meaningText>
+          <description>REFUSED - GO TO 6</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>4a. How old were you the first time this happened? (planfor_committingsuicide_firsttimeage_abletoread)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=Years</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>4a. How old were you the first time this happened? (planfor_committingsuicide_firsttimeagecoded_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>4.1. INTERVIEWER INSTRUCTION: CIRCLE LETTER "J" IN LONG/SHORT GROUP ON REFERENCE CARD (SIDE TWO). THEN GO TO 5. (info_640108)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>5. Did Experience B happen to you at any time in the past 12 months?  INTERVIEWER: EXPERIENCE B IS "YOU MADE A PLAN FOR COMMITTING SUICIDE" (planfor_committingsuicide_pastyear_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES - GO TO 6</meaningText>
+          <description>YES - GO TO 6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>5a. How old were you the last time this experience happened to you? (planfor_committingsuicide_lasttimeage_abletoread)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=Years</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>5a. How old were you the last time this experience happened to you? (planfor_committingsuicide_lasttimeagecoded_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>6. Now look at the third of the three experiences on the list, Experience C. Did experience C ever happen to you?  INTERVIEWER: EXPERIENCE C IS "YOU ATTEMPTED SUICIDE" (attempted_suicide_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO - GO TO NEXT SECTION</meaningText>
+          <description>NO - GO TO NEXT SECTION</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW - GO TO NEXT SECTION</meaningText>
+          <description>DON'T KNOW - GO TO NEXT SECTION</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED - GO TO NEXT SECTION</meaningText>
+          <description>REFUSED - GO TO NEXT SECTION</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>6a. How many times did Experience C ever happen to you in your lifetime? (attempted_suicide_timeslifetime_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>6.1. INTERVIEWER INSTRUCTION: CIRCLE LETTER "K" IN LONG/SHORT GROUP ON REFERENCE CARD (SIDE TWO). THEN GO TO 7.  7. INTERVIEWER CHECKPOINT: (SEE 6a)  6a CODED "1" ................................................. 1 GO TO 10  ALL OTHERS ......................................................... 2 (info_1_640108)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>8. How old were you the first time? (attempted_suicide_firsttimeage_abletoread)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=Years</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>8a. How old were you the first time? (attempted_suicide_firsttimeagecoded_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>9. There are three statements.  Which of these three statements best describes your situation when Experience C happened to you the first time? (attempted_suicide_situationfirsttime_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>I MADE A SERIOUS ATTEMPT TO KILL MYSELF AND IT WAS ONLY LUCK THAT I DID NOT SUCCEED</meaningText>
+          <description>I MADE A SERIOUS ATTEMPT TO KILL MYSELF AND IT WAS ONLY LUCK THAT I DID NOT SUCCEED</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>I TRIED TO KILL MYSELF, BUT KNEW THAT THE METHOD MAY NOT WORK</meaningText>
+          <description>I TRIED TO KILL MYSELF, BUT KNEW THAT THE METHOD MAY NOT WORK</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>MY ATTEMPT WAS A CRY FOR HELP. I DID NOT INTEND TO DIE</meaningText>
+          <description>MY ATTEMPT WAS A CRY FOR HELP. I DID NOT INTEND TO DIE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>10. Did Experience C happen to you in the past 12 months?  INTERVIEWER: EXPERIENCE C IS "YOU ATTEMPTED SUICIDE" (attempted_suicide_pastyear_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES - GO TO 11</meaningText>
+          <description>YES - GO TO 11</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>10a. How old were you (when/the last time) Experience C happened to you?   GO TO 14 (attempted_suicide_lasttimeage_abletoread)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=Years</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>10a. How old were you (when/the last time) Experience C happened to you? (attempted_suicide_lasttimeagecoded_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>DON'T KNOW - GO TO 14</meaningText>
+          <description>DON'T KNOW - GO TO 14</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>REFUSED - GO TO 14</meaningText>
+          <description>REFUSED - GO TO 14</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>11. Did it result in an injury or poisoning? (attempted_suicide_lasttimeresult_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO - GO TO 14</meaningText>
+          <description>NO - GO TO 14</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW - GO TO 14</meaningText>
+          <description>DON'T KNOW - GO TO 14</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED - GO TO 14</meaningText>
+          <description>REFUSED - GO TO 14</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>12. Did it require medical attention? (attempted_suicide_lasttimemedicalattention_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO - GO TO 14</meaningText>
+          <description>NO - GO TO 14</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW - GO TO 14</meaningText>
+          <description>DON'T KNOW - GO TO 14</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED - GO TO 14</meaningText>
+          <description>REFUSED - GO TO 14</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>13. Did it require overnight hospitalization? (attempted_suicide_lasttimehospitalization_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>14. Which of the three statements best describes your situation when Experience C happened to you (the last time) (attempted_suicide_lasttimesituation_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>I MADE A SERIOUS ATTEMPT TO KILL MYSELF AND IT WAS ONLY LUCK THAT I DID NOT SUCCEED</meaningText>
+          <description>I MADE A SERIOUS ATTEMPT TO KILL MYSELF AND IT WAS ONLY LUCK THAT I DID NOT SUCCEED</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>I TRIED TO KILL MYSELF, BUT KNEW THAT THE METHOD MAY NOT WORK</meaningText>
+          <description>I TRIED TO KILL MYSELF, BUT KNEW THAT THE METHOD MAY NOT WORK</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>MY ATTEMPT WAS A CRY FOR HELP. I DID NOT INTEND TO DIE</meaningText>
+          <description>MY ATTEMPT WAS A CRY FOR HELP. I DID NOT INTEND TO DIE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>14.1 INTERVIEWER CHECKPOINT: (SEE 10) 10 CODED "1" ................................................. 1 ALL OTHERS ......................................................... 2 GO TO NEXT SECTION (info_2_640108)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>14.2 What method did you use (when/the last time) Experience C happened to you? (Select all that apply) (attempted_suicide_lasttimemethod_gun_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>A. Gun</meaningText>
+          <description>A. Gun</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>B. RAZOR, KNIFE OR OTHER SHARP INSTRUMENT</meaningText>
+          <description>B. RAZOR, KNIFE OR OTHER SHARP INSTRUMENT</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>C. OVERDOSE OF PRESCRIPTION MEDICATIONS</meaningText>
+          <description>C. OVERDOSE OF PRESCRIPTION MEDICATIONS</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>D. OVERDOSE OF OVER-THE-COUNTER MEDICATIONS</meaningText>
+          <description>D. OVERDOSE OF OVER-THE-COUNTER MEDICATIONS</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>E. OVERDOSE OF OTHER DRUG (E.G., HEROIN, CRACK, ALCOHOL)</meaningText>
+          <description>E. OVERDOSE OF OTHER DRUG (E.G., HEROIN, CRACK, ALCOHOL)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>F. POISONING (E.G., CARBON MONOXIDE, RAT POISON)</meaningText>
+          <description>F. POISONING (E.G., CARBON MONOXIDE, RAT POISON)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>G. HANGING, STRANGULATION, SUFFOCATION</meaningText>
+          <description>G. HANGING, STRANGULATION, SUFFOCATION</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>H. DROWNING</meaningText>
+          <description>H. DROWNING</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>I. JUMPING FROM HIGH PLACES</meaningText>
+          <description>I. JUMPING FROM HIGH PLACES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>J. MOTOR VEHICLE CRASH</meaningText>
+          <description>J. MOTOR VEHICLE CRASH</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>K. OTHER (PLEASE DESCRIBE)</meaningText>
+          <description>K. OTHER (PLEASE DESCRIBE)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>98</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>99</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>OTHER (PLEASE DESCRIBE) (attempted_suicide_lasttimemethod_specify_abletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>The next few questions are about thoughts of hurting yourself. (info_4_640108)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>15. Have you ever seriously thought about committing suicide? (thoughtabout_committingsuicide_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO - GO TO NEXT SECTION</meaningText>
+          <description>NO - GO TO NEXT SECTION</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW - GO TO NEXT SECTION</meaningText>
+          <description>DON'T KNOW - GO TO NEXT SECTION</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED - GO TO NEXT SECTION</meaningText>
+          <description>REFUSED - GO TO NEXT SECTION</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>15a. How old were you the first time this happened? (thoughtabout_committingsuicide_firsttimeage_unabletoread)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=Years</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>15a. How old were you the first time this happened? (thoughtabout_committingsuicide_firsttimeagecoded_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>16. Have you seriously thought about committing suicide at any time in the past 12 months? (thoughtabout_committingsuicide_pastyear_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES - GO TO 17</meaningText>
+          <description>YES - GO TO 17</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>16a. How old were you the last time this experience happened to you? (thoughtabout_committingsuicide_lasttimeage_unabletoread)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=Years</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>16a. How old were you the last time this experience happened to you? (thoughtabout_committingsuicide_lasttimeagecoded_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>17. Have you ever made a plan for committing suicide? (planfor_committingsuicide_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO - GO TO 19</meaningText>
+          <description>NO - GO TO 19</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW - GO TO 19</meaningText>
+          <description>DON'T KNOW - GO TO 19</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED - GO TO 19</meaningText>
+          <description>REFUSED - GO TO 19</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>17a. How old were you the first time this happened? (planfor_committingsuicide_firsttimeage_unabletoread)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=years</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>17a. How old were you the first time this happened?  Don't Know/Refused (planfor_committingsuicide_firsttimeagecoded_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>18. Did you make a plan for committing suicide at any time in the past 12 months? (planfor_committingsuicide_pastyear_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES - GO TO 19</meaningText>
+          <description>YES - GO TO 19</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>18a. How old were you the last time this experience happened to you? (planfor_committingsuicide_lasttimeage_unabletoread)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>18a. How old were you the last time this experience happened to you? (planfor_committingsuicide_lasttimeagecoded_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>19 Have you ever attempted suicide? (attempted_suicide_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO - GO TO NEXT SECTION</meaningText>
+          <description>NO - GO TO NEXT SECTION</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW - GO TO NEXT SECTION</meaningText>
+          <description>DON'T KNOW - GO TO NEXT SECTION</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED - GO TO NEXT SECTION</meaningText>
+          <description>REFUSED - GO TO NEXT SECTION</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>19a. How many times have you attempted suicide in your lifetime? (attempted_suicide_timeslifetime_unabletoread)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>19. How many times have you attempted suicide in your lifetime? (attempted_suicide_timeslifetimecoded_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>46</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>19.1. INTERVIEWER INSTRUCTION: CIRCLE LETTER "M" IN LONG/SHORT GROUP ON REFERENCE CARD (SIDE TWO). THEN GO TO 20. 20. INTERVIEWER CHECKPOINT (SEE 19a):  19a CODED "1" ...............................................1 GO TO 23 ALL OTHERS ......................................................... (info_5_640108)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>47</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>21. How old were you the first time? (attempted_suicide_firsttimeage_unabletoread)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>48</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>21a. How old were you the first time? (attempted_suicide_firsttimeagecoded_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>999</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>49</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>22. There are three statements. Please select the statement that best describes your situation when you tried to kill yourself the first time (attempted_suicide_situationfirsttime_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>I MADE A SERIOUS ATTEMPT TO KILL MYSELF AND IT WAS ONLY LUCK THAT I DID NOT SUCCEED</meaningText>
+          <description>I MADE A SERIOUS ATTEMPT TO KILL MYSELF AND IT WAS ONLY LUCK THAT I DID NOT SUCCEED</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>I TRIED TO KILL MYSELF, BUT KNEW THAT THE METHOD MAY NOT WORK</meaningText>
+          <description>I TRIED TO KILL MYSELF, BUT KNEW THAT THE METHOD MAY NOT WORK</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>MY ATTEMPT WAS A CRY FOR HELP. I DID NOT INTEND TO DIE</meaningText>
+          <description>MY ATTEMPT WAS A CRY FOR HELP. I DID NOT INTEND TO DIE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>50</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>23. Have you attempted suicide in the past 12 months? (attempted_suicide_pastyear_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES - GO TO 24</meaningText>
+          <description>YES - GO TO 24</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>51</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>23a. How old were you (when/the last time) you attempted suicide? (go to 27) (attempted_suicide_lasttimeage_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>52</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>23a. How old were you (when/the last time) you attempted suicide? (attempted_suicide_lasttimeagecoded_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>DON'T KNOW - GO TO 27</meaningText>
+          <description>DON'T KNOW - GO TO 27</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>REFUSED - GO TO 27</meaningText>
+          <description>REFUSED - GO TO 27</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>53</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>24. Did it result in an injury or poisoning? (attempted_suicide_lasttimeresult_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO - GO TO 27</meaningText>
+          <description>NO - GO TO 27</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW - GO TO 27</meaningText>
+          <description>DON'T KNOW - GO TO 27</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED - GO TO 27</meaningText>
+          <description>REFUSED - GO TO 27</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>54</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>25. Did it require medical attention? (attempted_suicide_lasttimemedicalattention_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO - GO TO 27</meaningText>
+          <description>NO - GO TO 27</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW - GO TO 27</meaningText>
+          <description>DON'T KNOW - GO TO 27</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED - GO TO 27</meaningText>
+          <description>REFUSED - GO TO 27</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>55</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>26. Did it require overnight hospitalization? (attempted_suicide_lasttimehospitalization_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>56</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>27. There are three statements.  Please select the statement that best describes your situation when you tried to kill yourself (the last time) (attempted_suicide_lasttimesituation_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>I MADE A SERIOUS ATTEMPT TO KILL MYSELF AND IT WAS ONLY LUCK THAT I DID NOT SUCCEED</meaningText>
+          <description>I MADE A SERIOUS ATTEMPT TO KILL MYSELF AND IT WAS ONLY LUCK THAT I DID NOT SUCCEED</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>I TRIED TO KILL MYSELF, BUT KNEW THAT THE METHOD MAY NOT WORK</meaningText>
+          <description>I TRIED TO KILL MYSELF, BUT KNEW THAT THE METHOD MAY NOT WORK</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>MY ATTEMPT WAS A CRY FOR HELP. I DID NOT INTEND TO DIE</meaningText>
+          <description>MY ATTEMPT WAS A CRY FOR HELP. I DID NOT INTEND TO DIE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>57</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>28, INTERVIEWER CHECKPOINT: (SEE 23) 23 CODED "1" ................................................. 1 ALL OTHERS ......................................................... 2 GO TO NEXT SECTION (info_6_640108)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>58</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>29. What method did you use?  (Select all that apply) (attempted_suicide_lasttimemethod_gun_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>A. Gun</meaningText>
+          <description>A. Gun</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>B. RAZOR, KNIFE OR OTHER SHARP INSTRUMENT</meaningText>
+          <description>B. RAZOR, KNIFE OR OTHER SHARP INSTRUMENT</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>C. OVERDOSE OF PRESCRIPTION MEDICATIONS</meaningText>
+          <description>C. OVERDOSE OF PRESCRIPTION MEDICATIONS</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>D. OVERDOSE OF OVER-THE-COUNTER MEDICATIONS</meaningText>
+          <description>D. OVERDOSE OF OVER-THE-COUNTER MEDICATIONS</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>E. OVERDOSE OF OTHER DRUG (E.G., HEROIN, CRACK, ALCOHOL)</meaningText>
+          <description>E. OVERDOSE OF OTHER DRUG (E.G., HEROIN, CRACK, ALCOHOL)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>F. POISONING (E.G., CARBON MONOXIDE, RAT POISON)</meaningText>
+          <description>F. POISONING (E.G., CARBON MONOXIDE, RAT POISON)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>G. HANGING, STRANGULATION, SUFFOCATION</meaningText>
+          <description>G. HANGING, STRANGULATION, SUFFOCATION</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>H. DROWNING</meaningText>
+          <description>H. DROWNING</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>I. JUMPING FROM HIGH PLACES</meaningText>
+          <description>I. JUMPING FROM HIGH PLACES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>J. MOTOR VEHICLE CRASH</meaningText>
+          <description>J. MOTOR VEHICLE CRASH</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>K. OTHER (PLEASE DESCRIBE)</meaningText>
+          <description>K. OTHER (PLEASE DESCRIBE)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>98</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>99</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>59</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>OTHER (PLEASE DESCRIBE) (attempted_suicide_lasttimemethod_specify_unabletoread)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>60</displayOrder>
+        <dateCreated>2017-05-09T15:07:24</dateCreated>
+        <questionText>Downloadable PDF of Reference Booklet: https://www.phenxtoolkit.org/toolkit_content/supplemental_info/suicide/measures/CIDI_PAPI%20V7.1%20%20CAPI%20V21_Respondent%20Booklet.pdf (reference_640108)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX640108</protocolID>
+     <longName>Classification of Suicidal Ideation and Suicidal Behavior - Adult - Epidemiology</longName>
+     <context>PhenX</context>
+     <shortName>PX640108</shortName>
+     <preferredDefinition>The Suicidality module of the World Mental Health Composite International Diagnostic Interview includes 14 interviewer-administered questions that address suicidal ideation, plans, attempts, intent, lethality, and method in the past 12 months and over a lifetime. The protocol includes parallel questions for those who can and cannot read.</preferredDefinition>
+    </protocol>
+   </form>  
+   </forms>

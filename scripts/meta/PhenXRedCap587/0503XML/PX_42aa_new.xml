@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 42</collectionName>
+  <collectionDescription>Load PhenX PX530101,PX530102,PX530201,PX530301,PX540101,PX540201,PX540301,PX540501,PX540601,PX540602,PX550401,PX550801</collectionDescription>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:22</dateCreated>
+    <longName>PhenX PX530101 - Cognitive Flexibility Dimensional Change Card Sort Old</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Dimensional Change Card Sort (DCCS) Border Version is an interviewer-administered task that measures the flexible use of rules to govern behavior as a means of providing an index of executive function development. In this task, the assessor asks the participant to sort bivalent test cards according to a randomly changing dimension (e.g., color or shape). The dimension by which to sort is indicated by the presence or absence of a border on the card. The Dimensional Change Card Sort task is a freely available, simplified version of the Wisconsin Card Sort test. For more information about the Wisconsin Card Sort test, please refer to the [link[www.cognitiveatlas.org/task/id/tsk_4a57abb949f21|Cognitive Atlas Interpretation]].</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Summary of the Dimensional Change Card Sort (DCCS) Border Version .The Dimensional Change Card Sort (DCCS) Border Version makes use of two different styles of bivalent cards, displaying for example a red boat and blue rabbit. The test cards ad..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:22</dateCreated>
+      <longName>Cognitive Flexibility (Dimensional Change Card Sort) - Older Children, Adolescents, and Adults</longName>
+      <preferredDefinition>Cognitive Flexibility (Dimensional Change Card Sort) - Older Children, Adolescents, and Adults</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Dimension used for sorting border cards. (dimension_sorting_border_cards)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>color</meaningText>
+          <description>color</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>shape</meaningText>
+          <description>shape</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of cards correctly sorted: __________ (number_cards_correctly_sorted)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Standard and Border version administered? (standard_border_version_administered)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Combined (Standard and Border version) score. (combined_score)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Participant failed the pre-switch phase of the standard version.</meaningText>
+          <description>Participant failed the pre-switch phase of the standard version.</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Participant passed the pre-switch phase of the standard version, but failed the post-switch phase.</meaningText>
+          <description>Participant passed the pre-switch phase of the standard version, but failed the post-switch phase.</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Participant passed the pre-switch and post-switch phases of the standard version, but failed the border version.</meaningText>
+          <description>Participant passed the pre-switch and post-switch phases of the standard version, but failed the border version.</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Participant passed the pre-switch and post-switch phases of the standard version and passed the border version.</meaningText>
+          <description>Participant passed the pre-switch and post-switch phases of the standard version and passed the border version.</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Scoring: Participants who correctly sort nine or more of the twelve test cards are considered to have passed the task. If both the DCCS Standard Version and DCCS Border Version are administered, an alternative scoring scheme is as follows: Score of 0  Participant failed the preswitch phase of the standard version. Score of 1  Participant passed the preswitch phase of the standard version, but failed the postswitch phase. Score of 2  Participant passed the preswitch and postswitch phases of the standard version, but failed the border version. Score of 3  Participant passed the preswitch and postswitch phases of the standard version and passed the border version. (scoring_530101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX530101</protocolID>
+     <longName>Cognitive Flexibility (Dimensional Change Card Sort) - Older Children, Adolescents, and Adults</longName>
+     <context>PhenX</context>
+     <shortName>PX530101</shortName>
+     <preferredDefinition>The Dimensional Change Card Sort (DCCS) Border Version is an interviewer-administered task that measures the flexible use of rules to govern behavior as a means of providing an index of executive function development. In this task, the assessor asks the participant to sort bivalent test cards according to a randomly changing dimension (e.g., color or shape). The dimension by which to sort is indicated by the presence or absence of a border on the card. The Dimensional Change Card Sort task is a freely available, simplified version of the Wisconsin Card Sort test. For more information about the Wisconsin Card Sort test, please refer to the [link[www.cognitiveatlas.org/task/id/tsk_4a57abb949f21|Cognitive Atlas Interpretation]].</preferredDefinition>
+    </protocol>
+   </form>    
+   </forms>

@@ -1,0 +1,2551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 42</collectionName>
+  <collectionDescription>Load PhenX PX530101,PX530102,PX530201,PX530301,PX540101,PX540201,PX540301,PX540501,PX540601,PX540602,PX550401,PX550801</collectionDescription>  
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:22</dateCreated>
+    <longName>PhenX PX530102 - Cognitive Flexibility Dimensional Change Card Sort You</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Dimensional Change Card Sort (DCCS) Standard Version is an interviewer-administered task that measures the flexible use of rules to govern behavior as a means of providing an index of executive function in young children. In this task, the assessor asks the participant to sort bivalent test cards according to one dimension (e.g., color) and then the other (e.g., shape). The Dimensional Change Card Sort task is a freely available, simplified version of the Wisconsin Card Sort test. For more information about the Wisconsin Card Sort test, please refer to the www.cognitiveatlas.org/task/id/tsk_4a57abb949f21|Cognitive Atlas Interpretation.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Summary of the Dimensional Change Card Sort (DCCS) Standard Version :The Dimensional Change Card Sort (DCCS) Standard Version makes use of two different styles of bivalent cards, displaying for example a red boat and blue rabbit. The protocol ..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:22</dateCreated>
+      <longName>Cognitive Flexibility (Dimensional Change Card Sort) - Young Children</longName>
+      <preferredDefinition>Cognitive Flexibility (Dimensional Change Card Sort) - Young Children</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Dimension used for preswitch phase of sorting. (dimension_preswitch_phase)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>color</meaningText>
+          <description>color</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>shape</meaningText>
+          <description>shape</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of preswitch cards correctly sorted: __________ (number_preswitch_cards_correctly_sorted)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of postswitch cards correctly sorted: __________ (number_postswitch_cards_correctly_sorted)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Scoring: Typically, postswitch performance is only evaluated for participants who correctly sort five or more of the six preswitch cards. Participants are scored as having passed or failed the task as scores are usually bimodally distributed between being all correct or all incorrect on postswitch trials. Participants who correctly sort five or more of the six postswitch cards are considered to have passed the task. Most healthy threeyearold children fail the postswitch phase of the standard version of the DCCS, exhibiting inflexibility, while most healthy four and fiveyearold children pass as their flexibility increases. (scoring_530102)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX530102</protocolID>
+     <longName>Cognitive Flexibility (Dimensional Change Card Sort) - Young Children</longName>
+     <context>PhenX</context>
+     <shortName>PX530102</shortName>
+     <preferredDefinition>The Dimensional Change Card Sort (DCCS) Standard Version is an interviewer-administered task that measures the flexible use of rules to govern behavior as a means of providing an index of executive function in young children. In this task, the assessor asks the participant to sort bivalent test cards according to one dimension (e.g., color) and then the other (e.g., shape). The Dimensional Change Card Sort task is a freely available, simplified version of the Wisconsin Card Sort test. For more information about the Wisconsin Card Sort test, please refer to the www.cognitiveatlas.org/task/id/tsk_4a57abb949f21|Cognitive Atlas Interpretation.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:22</dateCreated>
+    <longName>PhenX PX530201 - Decision Making Iowa Gambling Task Child</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The child version of the Iowa Gambling Test™, developed by Garon and Moore (2004), is an interviewer-administered task originally given to children aged 3-6. The participant selects one card at a time from four decks. Participants are instructed that each card selected will result in winning candy, with some cards also taking candy away. The goal of the task is to accumulate as much candy as possible. Several summary scores can be calculated, including total candy won and difference between advantageous and disadvantageous selections. For more information about the Iowa Gambling Test, please refer to www.cognitiveatlas.org/task/id/tsk_4a57abb949ae5|Cognitive Atlas Interpretation.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Summary of the Child Version of the Iowa Gambling Test™ Developed by Garon and Moore (2004) .Participants are given a starting loan of 15 pieces of candy and then instructed that the goal of the task is to win as much candy as possible by d..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:22</dateCreated>
+      <longName>Decision Making (Iowa Gambling Task) - Child</longName>
+      <preferredDefinition>Decision Making (Iowa Gambling Task) - Child</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Participant wants to play the game. (participant_wants_to_play)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Participant understands the rules of the game. (participant_understands_the_rules)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 1 was chosen from (deck_chosen_card_1)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 1. (number_candies_won_card1)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 1. (number_candies_lost_card1)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0;maxLength=15</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 2 was chosen from (deck_chosen_card_2)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 2. (number_candies_won_card2)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 2. (number_candies_lost_card2)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 3 was chosen from (deck_chosen_card_3)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 3. (number_candies_won_card3)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 3. (number_candies_lost_card3)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 4 was chosen from (deck_chosen_card_4)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 4. (number_candies_won_card4)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 4. (number_candies_lost_card4)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 5 was chosen from (deck_chosen_card_5)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 5. (number_candies_won_card5)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 5. (number_candies_lost_card5)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 6 was chosen from (deck_chosen_card_6)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 6. (number_candies_won_card6)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 6. (number_candies_lost_card6)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 7 was chosen from (deck_chosen_card_7)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 7. (number_candies_won_card7)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 7. (number_candies_lost_card7)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 8 was chosen from (deck_chosen_card_8)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 8. (number_candies_won_card8)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 8. (number_candies_lost_card8)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 9 was chosen from (deck_chosen_card_9)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 9. (number_candies_won_card9)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 9. (number_candies_lost_card9)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 10 was chosen from (deck_chosen_card_10)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 10. (number_candies_won_card10)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 10. (number_candies_lost_card10)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 11 was chosen from (deck_chosen_card_11)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 11. (number_candies_won_card11)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 11. (number_candies_lost_card11)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 12 was chosen from (deck_chosen_card_12)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 12. (number_candies_won_card12)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 12. (number_candies_lost_card12)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 13 was chosen from (deck_chosen_card_13)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 13. (number_candies_won_card13)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 13. (number_candies_lost_card13)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 14 was chosen from (deck_chosen_card_14)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 14. (number_candies_won_card14)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 14. (number_candies_lost_card14)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 15 was chosen from (deck_chosen_card_15)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>46</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 15. (number_candies_won_card15)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>47</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 15. (number_candies_lost_card15)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>48</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 16 was chosen from (deck_chosen_card_16)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>49</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 16. (number_candies_won_card16)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>50</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 16. (number_candies_lost_card16)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>51</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 17 was chosen from (deck_chosen_card_17)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>52</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 17. (number_candies_won_card17)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>53</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 17. (number_candies_lost_card17)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>54</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 18 was chosen from (deck_chosen_card_18)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>55</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 18. (number_candies_won_card18)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>56</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 18. (number_candies_lost_card18)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>57</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 19 was chosen from (deck_chosen_card_19)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>58</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 19. (number_candies_won_card19)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>59</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 19. (number_candies_lost_card19)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>60</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 20 was chosen from (deck_chosen_card_20)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>61</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 20. (number_candies_won_card20)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>62</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 20. (number_candies_lost_card20)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>63</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 21 was chosen from (deck_chosen_card_21)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>64</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 21. (number_candies_won_card21)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>65</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 21. (number_candies_lost_card21)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>66</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 22 was chosen from (deck_chosen_card_22)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>67</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 22. (number_candies_won_card22)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>68</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 22. (number_candies_lost_card22)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>69</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 23 was chosen from (deck_chosen_card_23)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>70</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 23. (number_candies_won_card23)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>71</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 23. (number_candies_lost_card23)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>72</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 24 was chosen from (deck_chosen_card_24)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>73</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 24. (number_candies_won_card24)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>74</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 24. (number_candies_lost_card24)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>75</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 25 was chosen from (deck_chosen_card_25)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>76</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 25. (number_candies_won_card25)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>77</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 25. (number_candies_lost_card25)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>78</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 26 was chosen from (deck_chosen_card_26)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>79</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 26. (number_candies_won_card26)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>80</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 26. (number_candies_lost_card26)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>81</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 27 was chosen from (deck_chosen_card_27)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>82</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 27. (number_candies_won_card27)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>83</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 27. (number_candies_lost_card27)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>84</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 28 was chosen from (deck_chosen_card_28)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>85</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 28. (number_candies_won_card28)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>86</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 28. (number_candies_lost_card28)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>87</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 29 was chosen from (deck_chosen_card_29)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>88</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 29. (number_candies_won_card29)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>89</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 29. (number_candies_lost_card29)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>90</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 30 was chosen from (deck_chosen_card_30)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>91</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 30. (number_candies_won_card30)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>92</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 30. (number_candies_lost_card30)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>93</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 31 was chosen from (deck_chosen_card_31)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>94</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 31. (number_candies_won_card31)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>95</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 31. (number_candies_lost_card31)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>96</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 32 was chosen from (deck_chosen_card_32)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>97</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 32. (number_candies_won_card32)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>98</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 32. (number_candies_lost_card32)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>99</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 33 was chosen from (deck_chosen_card_33)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>100</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 33. (number_candies_won_card33)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>101</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 33. (number_candies_lost_card33)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>102</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 34 was chosen from (deck_chosen_card_34)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>103</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 34. (number_candies_won_card34)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>104</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 34. (number_candies_lost_card34)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>105</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 35 was chosen from (deck_chosen_card_35)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>106</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 35. (number_candies_won_card35)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>107</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 35. (number_candies_lost_card35)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>108</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 36 was chosen from (deck_chosen_card_36)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>109</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 36. (number_candies_won_card36)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>110</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 36. (number_candies_lost_card36)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>111</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 37 was chosen from (deck_chosen_card_37)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>112</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 37. (number_candies_won_card37)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>113</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 37. (number_candies_lost_card37)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>114</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 38 was chosen from (deck_chosen_card_38)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>115</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 38. (number_candies_won_card38)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>116</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 38. (number_candies_lost_card38)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>117</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 39 was chosen from (deck_chosen_card_39)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>118</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 39. (number_candies_won_card39)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>119</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 39. (number_candies_lost_card39)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>120</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Deck card 40 was chosen from (deck_chosen_card_40)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=1;maxLength=4</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>121</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies won with card 40. (number_candies_won_card40)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>122</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of candies lost with card 40. (number_candies_lost_card40)</questionText>
+        <instruction>
+         <text>datatype=integer;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>123</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Now that we are done with the game, which deck was the best to pick from? (best_deck_to_pick_from)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>disadvantageous deck</meaningText>
+          <description>disadvantageous deck</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>advantageous deck</meaningText>
+          <description>advantageous deck</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>124</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Why do you think this was the best to pick from? (why_best_to_pick_from)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>incorrect answer</meaningText>
+          <description>incorrect answer</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>child indicates ratio of bears to tigers has higher in the advantageous deck</meaningText>
+          <description>child indicates ratio of bears to tigers has higher in the advantageous deck</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>125</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Which deck was the worst to pick from? (worst_deck_to_pick_from)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>disadvantageous deck</meaningText>
+          <description>disadvantageous deck</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>advantageous deck</meaningText>
+          <description>advantageous deck</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>126</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Why do you think this was the worst to pick from? (why_worst_to_pick_from)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>incorrect answer</meaningText>
+          <description>incorrect answer</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>child indicates ratio of tigers to bears has higher in the disadvantageous deck</meaningText>
+          <description>child indicates ratio of tigers to bears has higher in the disadvantageous deck</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>127</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Scoring: Several summary scores can be derived, including total amount of candy won, total number of cards selected from each deck, and the total scores from the awareness portion of the test (see Garon and Moore, 2004, for more details). The Iowa Gambling Test™ is a trademark of PAR, Inc (scoring_530201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX530201</protocolID>
+     <longName>Decision Making (Iowa Gambling Task) - Child</longName>
+     <context>PhenX</context>
+     <shortName>PX530201</shortName>
+     <preferredDefinition>The child version of the Iowa Gambling Test, developed by Garon and Moore (2004), is an interviewer-administered task originally given to children aged 3-6. The participant selects one card at a time from four decks. Participants are instructed that each card selected will result in winning candy, with some cards also taking candy away. The goal of the task is to accumulate as much candy as possible. Several summary scores can be calculated, including total candy won and difference between advantageous and disadvantageous selections. For more information about the Iowa Gambling Test, please refer to www.cognitiveatlas.org/task/id/tsk_4a57abb949ae5|Cognitive Atlas Interpretation.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:22</dateCreated>
+    <longName>PhenX PX530301 - Delayed Reward Discounting Monetary Choice Questionnaire</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Monetary-Choice Questionnaire is a 27-item self-administered questionnaire. For each item, the participant chooses between a smaller, immediate monetary reward and a larger, delayed monetary reward. The protocol is scored by calculating where the respondent's answers place him/her amid reference discounting curves, where placement amid steeper curves indicates higher levels of impulsivity. For more information about the Monetary-Choice Questionnaire, please refer to  www.cognitiveatlas.org/task/id/tsk_4a57abb949e98|Cognitive Atlas Interpretation.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>For each of the next 27 choices, please indicate which reward you would prefer: the smaller reward today, or the larger reward in the specified number of days.</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:22</dateCreated>
+      <longName>Delayed Reward Discounting (Monetary Choice Questionnaire)</longName>
+      <preferredDefinition>Delayed Reward Discounting (Monetary Choice Questionnaire)</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $54 today, or $55 in 117 days? (fiftyforus_or_55_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $55 today, or $75 in 61 days? (fiftyfive_or_75_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $19 today, or $25 in 53 days? (ninetheen_or_25_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $31 today, or $85 in 7 days? (thirthyone_or_85_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $14 today, or $25 in 19 days? (fortheen_or_25_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $47 today, or $50 in 160 days? (forthy7_or_50_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $15 today, or $35 in 13 days? (fifteen_or_35_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $25 today, or $60 in 14 days? (twentyfive_or_60_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $78 today, or $80 in 162 days? (seventy_or_80_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $40 today, or $55 in 62 days? (forthy_or_55_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $11 today, or $30 in 7 days? (eleven_or_30_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $67 today, or $75 in 119 days? (sixtyseven_or_75_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $34 today, or $35 in 186 days? (thirthyfive_or_35_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $27 today, or $50 in 21 days? (twentyseven_or_50_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $69 today, or $85 in 91 days? (sixtynine_or_85_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $49 today, or $60 in 89 days? (forthynine_or_60_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $80 today, or $85 in 157 days? (eighty_or_85_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $24 today, or $35 in 29 days? (twenty_or_35_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $33 today, or $80 in 14 days? (thirthythree_or_80_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $28 today, or $30 in 179 days? (twentyeight_or_30_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $34 today, or $50 in 30 days? (thirthyfour_or_50_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $25 today, or $30 in 80 days? (twentyfive_or_30_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $41 today, or $75 in 20 days? (forthyone_or_75_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $54 today, or $60 in 111 days? (fiftyfour_or_60_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $54 today, or $80 in 30 days? (fiftyfour_or_80_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $22 today, or $25 in 136 days? (twentytwo_or_25_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would you prefer $20 today, or $55 in 7 days? (twenty_or_55_mcq)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>smaller reward today</meaningText>
+          <description>smaller reward today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>larger reward in the specified number of days</meaningText>
+          <description>larger reward in the specified number of days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Scoring: A participant's discounting curve may be calculated according to the following function:  V = A/(1+kD); V is the present value of the delayed reward A at delay D, and k is the rate of discounting. k typically falls between 0.0 and 0.5, with smaller values indicating a lack of discounting and preference for delayed rewards and higher values indicating strong discounting and a preference for immediate rewards. Thus higher values of k are indicative of high levels of impulsivity. There are two ways of scoring the Monetary-Choice Questionnaire. The first involves hand scoring to get an estimate of k following the guidelines given in Kirby (2000). The second involves fitting a logistic regression function to individual responses following procedures described in Wileyto et al. (2004). Estimating Discounting Rate. The following lists the calculated k values (the degree of discounting) at indifference for each question (i.e., when the subjective value of the  immediate and delayed rewards are equivalent). *Questions 13, 1 and 9:  k at indifference=.00016 *Questions 20, 6 and 17:  k at indifference=.00040 *Questions 26, 24 and 12:  k at indifference=.0010 *Questions 22, 16 and 15:  k at indifference=.0025 *Questions 3, 10 and 2:  k at indifference=.0060 *Questions 18, 21 and 25:  k at indifference=.016 *Questions 5, 14 and 23:  k at indifference=.041 *Questions 7, 8 and 19:  k at indifference=.10 *Questions 11, 27 and 4:  k at indifference=.25  An estimate of the respondent's discounting rate can be calculated as the geometric mean (to avoid underweighting) of the k at indifference between the two questions that reflect when the respondent changes between choosing the delayed reward versus the immediate reward. In cases where the respondent's change between preferring the delayed versus the immediate reward is not consistent, the two questions that are most proportional to their responses are chosen. If the participant always..TRUNCATED(scoring_530301)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX530301</protocolID>
+     <longName>Delayed Reward Discounting (Monetary Choice Questionnaire)</longName>
+     <context>PhenX</context>
+     <shortName>PX530301</shortName>
+     <preferredDefinition>The Monetary-Choice Questionnaire is a 27-item self-administered questionnaire. For each item, the participant chooses between a smaller, immediate monetary reward and a larger, delayed monetary reward. The protocol is scored by calculating where the respondent's answers place him/her amid reference discounting curves, where placement amid steeper curves indicates higher levels of impulsivity. For more information about the Monetary-Choice Questionnaire, please refer to  www.cognitiveatlas.org/task/id/tsk_4a57abb949e98|Cognitive Atlas Interpretation.</preferredDefinition>
+    </protocol>
+   </form> 
+<form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:22</dateCreated>
+    <longName>PhenX PX530101 - Cognitive Flexibility Dimensional Change Card Sort Old</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Dimensional Change Card Sort (DCCS) Border Version is an interviewer-administered task that measures the flexible use of rules to govern behavior as a means of providing an index of executive function development. In this task, the assessor asks the participant to sort bivalent test cards according to a randomly changing dimension (e.g., color or shape). The dimension by which to sort is indicated by the presence or absence of a border on the card. The Dimensional Change Card Sort task is a freely available, simplified version of the Wisconsin Card Sort test. For more information about the Wisconsin Card Sort test, please refer to the www.cognitiveatlas.org/task/id/tsk_4a57abb949f21|Cognitive Atlas Interpretation.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Summary of the Dimensional Change Card Sort (DCCS) Border Version .The Dimensional Change Card Sort (DCCS) Border Version makes use of two different styles of bivalent cards, displaying for example a red boat and blue rabbit. The test cards ad..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:22</dateCreated>
+      <longName>Cognitive Flexibility (Dimensional Change Card Sort) - Older Children, Adolescents, and Adults</longName>
+      <preferredDefinition>Cognitive Flexibility (Dimensional Change Card Sort) - Older Children, Adolescents, and Adults</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Dimension used for sorting border cards. (dimension_sorting_border_cards)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>color</meaningText>
+          <description>color</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>shape</meaningText>
+          <description>shape</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of cards correctly sorted: __________ (number_cards_correctly_sorted)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Standard and Border version administered? (standard_border_version_administered)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Combined (Standard and Border version) score. (combined_score)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Participant failed the pre-switch phase of the standard version.</meaningText>
+          <description>Participant failed the pre-switch phase of the standard version.</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Participant passed the pre-switch phase of the standard version, but failed the post-switch phase.</meaningText>
+          <description>Participant passed the pre-switch phase of the standard version, but failed the post-switch phase.</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Participant passed the pre-switch and post-switch phases of the standard version, but failed the border version.</meaningText>
+          <description>Participant passed the pre-switch and post-switch phases of the standard version, but failed the border version.</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Participant passed the pre-switch and post-switch phases of the standard version and passed the border version.</meaningText>
+          <description>Participant passed the pre-switch and post-switch phases of the standard version and passed the border version.</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Scoring: Participants who correctly sort nine or more of the twelve test cards are considered to have passed the task. If both the DCCS Standard Version and DCCS Border Version are administered, an alternative scoring scheme is as follows: Score of 0 Participant failed the preswitch phase of the standard version. Score of 1 Participant passed the preswitch phase of the standard version, but failed the postswitch phase. Score of 2 Participant passed the preswitch and postswitch phases of the standard version, but failed the border version. Score of 3 Participant passed the preswitch and postswitch phases of the standard version and passed the border version. (scoring_530101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX530101</protocolID>
+     <longName>Cognitive Flexibility (Dimensional Change Card Sort) - Older Children, Adolescents, and Adults</longName>
+     <context>PhenX</context>
+     <shortName>PX530101</shortName>
+     <preferredDefinition>The Dimensional Change Card Sort (DCCS) Border Version is an interviewer-administered task that measures the flexible use of rules to govern behavior as a means of providing an index of executive function development. In this task, the assessor asks the participant to sort bivalent test cards according to a randomly changing dimension (e.g., color or shape). The dimension by which to sort is indicated by the presence or absence of a border on the card. The Dimensional Change Card Sort task is a freely available, simplified version of the Wisconsin Card Sort test. For more information about the Wisconsin Card Sort test, please refer to the [link[www.cognitiveatlas.org/task/id/tsk_4a57abb949f21|Cognitive Atlas Interpretation]].</preferredDefinition>
+    </protocol>
+   </form>       
+   </forms>

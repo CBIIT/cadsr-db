@@ -1,0 +1,1659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 48d</collectionName>
+  <collectionDescription>Load PhenX PX651201</collectionDescription>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:07:49</dateCreated>
+    <longName>PhenX PX651201 - Questionnaire Of Eating And Weight Patterns Adult</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Questionnaire of Eating and Weight Patterns-5 (QEWP-5) has been updated to accommodate binge-eating disorder (BED) and bulimia nervosa criteria in the Diagnostic and Statistical Manual of Eating Disorders. It includes 26 items that screen respondents for BED. The questionnaire can be used to differentiate BED from bulimia nervosa and to document the presence of "subjective binge" episodes (i.e., episodes of loss-of-control eating that are not characterized by the intake of an objectively large amount of food). The QEWP-5 also includes body silhouettes and respondents choose those that most resemble the body builds of their biological father and mother at their heaviest. These silhouettes are scored on a 1-9 scale. Scoring instructions are included.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:07:49</dateCreated>
+      <longName>Questionnaire on Eating and Weight Patterns - Adult</longName>
+      <preferredDefinition>Questionnaire on Eating and Weight Patterns - Adult</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>What is your last name? (eatingweightpatterns_adult_lastname)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>What is your first name? (eatingweightpatterns_adult_firstname)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>What is your middle initial? (eatingweightpatterns_adult_middleinitial)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>What is today's date? (eatingweightpatterns_adult_date)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>What is your ID number (eatingweightpatterns_adult_identification_number)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>1. What is your age? (eatingweightpatterns_adult_age)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=years</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>2. What is your sex? (eatingweightpatterns_adult_sex)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Male</meaningText>
+          <description>Male</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Female</meaningText>
+          <description>Female</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>3a. Are you Latino, Hispanic, or of Spanish origin? (eatingweightpatterns_adult_latino_background)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>3b. Which of the following best describes you? (You may check more than one.) (eatingweightpatterns_adult_background_description)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>African American/Black</meaningText>
+          <description>African American/Black</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>American Indian/Native American/Alaskan Native</meaningText>
+          <description>American Indian/Native American/Alaskan Native</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Asian</meaningText>
+          <description>Asian</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Pacific Islander</meaningText>
+          <description>Pacific Islander</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>White</meaningText>
+          <description>White</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>Other (please describe below)</meaningText>
+          <description>Other (please describe below)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>Other  describe (eatingweightpatterns_adult_background_description_other)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>4. How far did you go in school? (eatingweightpatterns_adult_education)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Some high school or less</meaningText>
+          <description>Some high school or less</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>High school graduate or equivalent (GED)</meaningText>
+          <description>High school graduate or equivalent (GED)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some college or associate degree</meaningText>
+          <description>Some college or associate degree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Completed college</meaningText>
+          <description>Completed college</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Advanced degree</meaningText>
+          <description>Advanced degree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>5. How tall are you?  (feet) (eatingweightpatterns_adult_height_feet)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=feet</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>5a. How tall are you? (inches) (eatingweightpatterns_adult_height_inches)</questionText>
+        <instruction>
+         <text>UOM=inches</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>6. How much do you weigh now (if you are unsure, please provide your best guess)? (pounds) (eatingweightpatterns_adult_weight)</questionText>
+        <instruction>
+         <text>UOM=pounds</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>7. What has been your highest adult weight ever (for women, when not pregnant)? (pounds) (eatingweightpatterns_adult_heaviest_weight)</questionText>
+        <instruction>
+         <text>UOM=pounds</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>8. During the past three months, did you ever eat, in a short period of time (for example, a two hour period), what most people would think was an unusually large amount of food? (eatingweightpatterns_adult_threemonths_unusualamount)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No - skip to #21</meaningText>
+          <description>No - skip to #21</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>9. During the times when you ate an unusually large amount of food, did you ever feel you could not stop eating or control what or how much you were eating? (eatingweightpatterns_adult_threemonths_unusualamount_lostcontrol)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No - skip to #21</meaningText>
+          <description>No - skip to #21</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>10. During the past three months, how often, on average, did you have episodes like this? That is, eating large amounts of food plus the feeling that you're eating was out of control? (There may have been some weeks when this did not happen, just average those in.) (episodes_651201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than 1 episode per week</meaningText>
+          <description>Less than 1 episode per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1 episode per week</meaningText>
+          <description>1 episode per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>2-3 episodes per week</meaningText>
+          <description>2-3 episodes per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4-7 episodes per week</meaningText>
+          <description>4-7 episodes per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>8-13 episodes per week</meaningText>
+          <description>8-13 episodes per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>14 or more episodes per week</meaningText>
+          <description>14 or more episodes per week</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>11a. During these episodes, did you experience eating much more rapidly than normal? (eatingweightpatterns_adult_threemonths_unusualamount_rapidly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>11b. During these episodes, did you experience eating until feeling uncomfortably full? (eatingweightpatterns_adult_threemonths_unusualamount_uncomfortablyfull)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>11c. During these episodes, did you experience eating large amounts of food when not feeling physically hungry? (eatingweightpatterns_adult_threemonths_unusualamount_nothungry)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>11d. During these episodes, did you experience eating alone because of feeling embarrassed by how much you were eating? (eatingweightpatterns_adult_threemonths_unusualamount_alone)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>11e. During these episodes, did you experience feeling disgusted with yourself, depressed, or feeling very guilty afterward? (eatingweightpatterns_adult_threemonths_unusualamount_disgusteddepressed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>12a. Think about a typical episode when you ate this way (That is, when you ate a large amount of food and felt your eating was out of control): What time of day did the episode start? (eatingweightpatterns_adult_typicalepisode_time)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>(8 AM to 12 Noon)</meaningText>
+          <description>(8 AM to 12 Noon)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>(12 Noon to 4 PM)</meaningText>
+          <description>(12 Noon to 4 PM)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>(4 PM to 8 PM)</meaningText>
+          <description>(4 PM to 8 PM)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>(8 PM to 12 Midnight)</meaningText>
+          <description>(8 PM to 12 Midnight)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>(12 Midnight to 8 AM)</meaningText>
+          <description>(12 Midnight to 8 AM)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>12b.  Approximately how long did this episode of eating last? Hours (eatingweightpatterns_adult_typicalepisode_hours)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=hours</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>12b.  Approximately how long did this episode of eating last? Minutes (eatingweightpatterns_adult_typicalepisode_minutes)</questionText>
+        <instruction>
+         <text>UOM=minutes</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>12c.  As best you can remember, please list everything you ate and drank during that episode. Please list the foods eaten and liquids consumed during the episode. Be specific  include brand names where possible, and amounts or portion sizes as best you can estimate. (eatingweightpatterns_adult_typicalepisode_list)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>12d. At the time this episode started, how long had it been since you had previously finished eating a meal or snack? Hours (eatingweightpatterns_adult_typicalepisode_previous_hours)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=hours</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>12d. At the time this episode started, how long had it been since you had previously finished eating a meal or snack? Minutes (eatingweightpatterns_adult_typicalepisode_previous_minutes)</questionText>
+        <instruction>
+         <text>UOM=minutes</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>13. In general, during the past three months, how upset were you by these episodes? (When you ate a large amount of food and felt your eating was out of control)? (eatingweightpatterns_adult_threemonths_episodes_upset)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly</meaningText>
+          <description>Slightly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Greatly</meaningText>
+          <description>Greatly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Extremely</meaningText>
+          <description>Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>14. During the past three months, did you ever make yourself vomit in order to avoid gaining weight after episodes of eating like you described (when you ate a large amount of food and felt your eating was out of control)? (eatingweightpatterns_adult_threemonths_vomit)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>14a. IF YES: How often, on average, was that? (eatingweightpatterns_adult_threemonths_vomityes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than 1 episode per week</meaningText>
+          <description>Less than 1 episode per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1 episode per week</meaningText>
+          <description>1 episode per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>2-3 episodes per week</meaningText>
+          <description>2-3 episodes per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4-7 episodes per week</meaningText>
+          <description>4-7 episodes per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>8-13 episodes per week</meaningText>
+          <description>8-13 episodes per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>14 or more episodes per week</meaningText>
+          <description>14 or more episodes per week</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>15. During the past three months, did you ever take more than the recommended dose of laxatives in order to avoid gaining weight after episodes of eating like you described (when you ate a large amount of food and felt your eating was out of control)? (eatingweightpatterns_adult_threemonths_laxatives)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>15a. IF YES: How often, on average, was that? (eatingweightpatterns_adult_threemonths_laxativesyes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than 1 time per week</meaningText>
+          <description>Less than 1 time per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1 time per week</meaningText>
+          <description>1 time per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>2-3 times per week</meaningText>
+          <description>2-3 times per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4-5 times per week</meaningText>
+          <description>4-5 times per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>6-7 times per week</meaningText>
+          <description>6-7 times per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>8 or more times per week</meaningText>
+          <description>8 or more times per week</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>16. During the past three months, did you ever take more than the recommended dose of diuretics (water pills) in order to avoid gaining weight after episodes of eating like you described (when you ate a large amount of food and felt your eating was out of control)? (eatingweightpatterns_adult_threemonths_diuretics)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>16a. IF YES: How often, on average, was that? (eatingweightpatterns_adult_threemonths_diureticsyes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than 1 time per week</meaningText>
+          <description>Less than 1 time per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1 time per week</meaningText>
+          <description>1 time per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>2-3 times per week</meaningText>
+          <description>2-3 times per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4-5 times per week</meaningText>
+          <description>4-5 times per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>6-7 times per week</meaningText>
+          <description>6-7 times per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>8 or more times per week</meaningText>
+          <description>8 or more times per week</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>17. During the past three months, did you ever fast  for example, not eat anything at all for at least 24 hours  in order to avoid gaining weight after episodes of eating like you described (when you ate a large amount of food and felt your eating was out of control)? (eatingweightpatterns_adult_threemonths_fasting)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>17a. IF YES: How often, on average, was that? (eatingweightpatterns_adult_threemonths_fastingyes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than 1 day per week</meaningText>
+          <description>Less than 1 day per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1 day per week</meaningText>
+          <description>1 day per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>2 days per week</meaningText>
+          <description>2 days per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>3 days per week</meaningText>
+          <description>3 days per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>4-5 days per week</meaningText>
+          <description>4-5 days per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>More than 5 days per week</meaningText>
+          <description>More than 5 days per week</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>18. During the past three months, did you ever exercise excessively for example, exercised even though it interfered with important activities or despite being injured, specifically in order to avoid gaining weight after episodes of eating like you described. (When you ate a large amount of food and felt your eating was out of control)? (eatingweightpatterns_adult_threemonths_exercise)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>18a. IF YES: How often, on average, was that? (eatingweightpatterns_adult_threemonths_exerciseyes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than 1 time per week</meaningText>
+          <description>Less than 1 time per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1 time per week</meaningText>
+          <description>1 time per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>2-3 times per week</meaningText>
+          <description>2-3 times per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4-7 times per week</meaningText>
+          <description>4-7 times per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>8-13 times per week</meaningText>
+          <description>8-13 times per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>14 or more times per week</meaningText>
+          <description>14 or more times per week</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>19. During the past three months, did you ever take more than the recommended dose of a diet pill in order to avoid gaining weight after episodes of eating like you described (When you ate a large amount of food and felt your eating was out of control)? (eatingweightpatterns_adult_threemonths_dietpill)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>19a. IF YES: How often, on average, was that? (eatingweightpatterns_adult_threemonths_dietpillyes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than 1 time per week</meaningText>
+          <description>Less than 1 time per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1 time per week</meaningText>
+          <description>1 time per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>2-3 times per week</meaningText>
+          <description>2-3 times per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4-5 times per week</meaningText>
+          <description>4-5 times per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>6-7 times per week</meaningText>
+          <description>6-7 times per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>8 or more times per week</meaningText>
+          <description>8 or more times per week</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>20. During the past three months, on average, how important has your weight or shape been in how you feel about or evaluate yourself as a person as compared to other aspects of your life, such as your performance at work or as a parent, or how you get along with other people? (eatingweightpatterns_adult_threemonths_weightshape)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Weight and shape were not very important</meaningText>
+          <description>Weight and shape were not very important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Weight and shape played a part in how you felt about yourself</meaningText>
+          <description>Weight and shape played a part in how you felt about yourself</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Weight and shape were among the main things that affected how you felt about yourself</meaningText>
+          <description>Weight and shape were among the main things that affected how you felt about yourself</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Weight and shape were the most important things that affected how you felt about yourself.</meaningText>
+          <description>Weight and shape were the most important things that affected how you felt about yourself.</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>Continue here after completing question 20 OR if you skipped to question 21 from question 8 or 9. (continue_651201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>21. During the past three months, did you ever have episodes during which you felt you could not stop eating or control what or how much you were eating but in which you did not consume what most people would think was an unusually large amount of food? (eatingweightpatterns_adult_threemonths_losecontrol)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No - skip to 26</meaningText>
+          <description>No - skip to 26</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>22. During the past three months how often did you have episodes like this  the feeling that your eating was out of control, but you did not consume what most people would think was an unusually large amount of food? (There may have been some weeks when this did not happen  just average those in.) (eatingweightpatterns_adult_threemonths_losecontrol_frequency)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than 1 episode per week</meaningText>
+          <description>Less than 1 episode per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1 episode per week</meaningText>
+          <description>1 episode per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>2-3 episodes per week</meaningText>
+          <description>2-3 episodes per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4-7 episodes per week</meaningText>
+          <description>4-7 episodes per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>8-13 episodes per week</meaningText>
+          <description>8-13 episodes per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>14 or more episodes per week</meaningText>
+          <description>14 or more episodes per week</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>46</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>23a. During these episodes, did you experience eating much more rapidly than normal? (eatingweightpatterns_adult_episodes_rapidly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>47</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>23b. During these episodes, did you experience eating until feeling uncomfortably full? (eatingweightpatterns_adult_episodes_uncomfortablyfull)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>48</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>23c. During these episodes, did you experience eating large amounts of food when not feeling physically hungry? (eatingweightpatterns_adult_episodes_hungry)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>49</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>23d. During these episodes, did you experience eating alone because of feeling embarrassed by how much you were eating? (eatingweightpatterns_adult_episodes_alone)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>50</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>23e. During these episodes, did you experience feeling disgusted with yourself, depressed, or feeling very guilty afterward? (eatingweightpatterns_adult_episodes_disgusteddepressed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>51</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>24a.  Think about a typical episode when you ate this way (That is, when you ate a large amount of food and felt your eating was out of control): What time of day did the episode start? (eatingweightpatterns_adult_typicalepisode_time_2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>(8 AM to 12 Noon)</meaningText>
+          <description>(8 AM to 12 Noon)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>(12 Noon to 4 PM)</meaningText>
+          <description>(12 Noon to 4 PM)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>(4 PM to 8 PM)</meaningText>
+          <description>(4 PM to 8 PM)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>(8 PM to 12 Midnight)</meaningText>
+          <description>(8 PM to 12 Midnight)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>(12 Midnight to 8 AM)</meaningText>
+          <description>(12 Midnight to 8 AM)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>52</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>24b. Approximately how long did this episode of eating last? Hours (eatingweightpatterns_adult_typicalepisode_hours_2)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=hours</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>53</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>24b.  Approximately how long did this episode of eating last? Minutes (eatingweightpatterns_adult_typicalepisode_minutes_2)</questionText>
+        <instruction>
+         <text>UOM=minutes</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>54</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>24c. As best you can remember, please list everything you ate and drank during that episode. Please list the foods eaten and liquids consumed during the episode. Be specific  include brand names where possible, and amounts or portion sizes as best you can estimate. (eatingweightpatterns_adult_typicalepisode_list_2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>55</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>24d. At the time this episode started, how long had it been since you had previously finished eating a meal or snack? Hours (eatingweightpatterns_adult_typicalepisode_previoushours_2)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=hours</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>56</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>24d. At the time this episode started, how long had it been since you had previously finished eating a meal or snack? Minutes (eatingweightpatterns_adult_typicalepisode_previousminutes_2)</questionText>
+        <instruction>
+         <text>UOM=minutes</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>57</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>25. In general, during the past three months, how upset were you by these episodes? (When you ate a large amount of food and felt your eating was out of control)? (eatingweightpatterns_adult_episodes_upset)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly</meaningText>
+          <description>Slightly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Greatly</meaningText>
+          <description>Greatly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Extremely</meaningText>
+          <description>Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>58</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>26. Please take a look at these silhouettes. choose the number of the silhouette that most resemble the body builds of your biological father and mother at their heaviest. If you have no knowledge of your biological father and/or mother, don't circle anything for that parent. (silhouettes_651201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>59</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>IMAGE  651201_img_1      Father (img_1_651201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>60</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>Father: (scale_father_651201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>7</meaningText>
+          <description>7</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>8</meaningText>
+          <description>8</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>9</meaningText>
+          <description>9</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>61</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>IMAGE  651201_img_2     Mother (img_2_651201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>62</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>Mother: (scale_mother_651210)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>7</meaningText>
+          <description>7</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>8</meaningText>
+          <description>8</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>9</meaningText>
+          <description>9</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>63</displayOrder>
+        <dateCreated>2017-05-09T15:07:49</dateCreated>
+        <questionText>Scoring: DECISION RULES FOR SCREENING FOR POSSIBLE DIAGNOSIS OF BINGE EATING DISORDER(BED) USING THE QUESTIONNAIRE ON EATING AND WEIGHT PATTERNS  5(FOR RATER'S USE ONLYPOSSIBLE DIAGNOSIS OF BED.QUESTION NUMBERRESPONSE*8 AND 9 1 (BINGE EATING)*10 2, 3, 4, 5, OR 6 (AT LEAST 1 EPISODE PER WEEK FOR THREE MONTHS)*11 a through e 3 OR MORE ITEMS MARKED "YES" (AT LEAST 3 ASSOCIATED SYMPTOMS DURING BINGE EATING EPISODES)* 13 4 0R 5 (MARKED DISTRESS REGARDING BINGE EATING)POSSIBLE DIAGNOSIS OF BED REQUIRES ALL OF THE ABOVE ALONG WITH THE ABSENCE OF INAPPROPRIATE COMPENSATORY BEHAVIORS AS SEEN IN BULIMIA NERVOSA, AS DEFINED BELOW.POSSIBLE DIAGNOSIS OF BULIMIA NERVOSA.QUESTION NUMBERRESPONSE*8 AND 9 1 (BINGE EATING)*10 2, 3, 4, 5, OR 6 (AT LEAST 1 EPISODE PER WEEK FOR THREE MONTHS)*14,15,16,17,18, OR 19 ANY RESPONSE 2, 3, 4, 5, OR 6 (INAPPROPRIATE COMPENSATORY BEHAVIOR AT LEAST 1 TIME PER WEEK FOR THREE MONTHS)*13 4 0R 5 (MARKED DISTRESS REGARDING BINGE EATING)QUESTIONS FOR RESEARCH PURPOSES ONLY (NOT TO BE USED FOR DIAGNOSIS OF BED OR BULIMIA NERVOSA) QUESTION NUMBERRESPONSE*12 a through d EXAMINER'S JUDGMENT THAT AMOUNT OF FOOD DESCRIBED IS UNUSUALLY LARGE GIVEN CIRCUMSTANCES (I.E., TIME OF DAY, HOURS SINCE PREVIOUS MEAL)Yes _____ NO____ UNSURE*21 1 (SUBJECTIVE BULIMIC EPISODE/LOSS OF CONTROL EATING)*24 a through d EXAMINER'S JUDGMENT THAT AMOUNT OF FOOD DESCRIBED IS UNUSUALLY LARGE GIVEN CIRCUMSTANCES (I.E., TIME OF DAY, HOURS SINCE PREVIOUS MEAL) Yes _____ NO____ UNSURE*26 SILHOUETTES MAY BE USED TO ESTIMATE PARENTAL HISTORY OF OBESITY (scoring_651201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX651201</protocolID>
+     <longName>Questionnaire on Eating and Weight Patterns - Adult</longName>
+     <context>PhenX</context>
+     <shortName>PX651201</shortName>
+     <preferredDefinition>The Questionnaire of Eating and Weight Patterns-5 (QEWP-5) has been updated to accommodate binge-eating disorder (BED) and bulimia nervosa criteria in the &lt;i&gt;Diagnostic and Statistical Manual of Eating Disorders. &lt;/i&gt;It includes 26 items that screen respondents for BED. The questionnaire can be used to differentiate BED from bulimia nervosa and to document the presence of "subjective binge" episodes (i.e., episodes of loss-of-control eating that are not characterized by the intake of an objectively large amount of food). The QEWP-5 also includes body silhouettes and respondents choose those that most resemble the body builds of their biological father and mother at their heaviest. These silhouettes are scored on a 1-9 scale. Scoring instructions are included.</preferredDefinition>
+    </protocol>
+   </form>   
+   </forms>

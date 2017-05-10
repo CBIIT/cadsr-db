@@ -1,0 +1,2237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 44</collectionName>
+  <collectionDescription>Load PhenX PX610201,PX630101,PX630102,PX630201,PX630202,PX630301,PX630302</collectionDescription>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:48</dateCreated>
+    <longName>PhenX PX610201 - Broad Psychopathology Adult</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5) Level 1 Cross-Cutting Symptom Measure is a self- or informant-rated measure that assesses mental health domains that are important across psychiatric diagnoses. It is intended to help clinicians identify additional areas of inquiry that may have significant impact on the individual's treatment and prognosis. In addition, the measure may be used to track changes in the individual's symptom presentation over time. This adult version of the measure consists of 23 questions that assess 13 psychiatric domains, including depression, anger, mania, anxiety, somatic symptoms, suicidal ideation, psychosis, sleep problems, memory, repetitive thoughts and behaviors, dissociation, personality functioning, and substance use. Each item inquires about how much (or how often) the individual has been bothered by the specific symptom during the past 2 weeks. If the individual is of impaired capacity and unable to complete the form (e.g., an individual with dementia), a knowledgeable adult informant may complete the measure. The measure was found to be clinically useful and to have good test-retest reliability in the DSM-5 Field Trials that were conducted in adult clinical samples across the United States and in Canada. Frequency of Use To track change in the individual's symptom presentation over time, the measure may be completed at regular intervals as clinically indicated, depending on the stability of the individual's symptoms and treatment status. For individuals with impaired capacity, it is preferable that the same knowledgeable informant completes the measures at follow-up appointments. Consistently high scores on a particular domain may indicate significant and problematic symptoms for the individual that might warrant further assessment, treatment, and follow-up. Clinical judgment should guide decision making.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>DSM5 SelfRated Level 1 CrossCutting Symptom MeasureAdult</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:48</dateCreated>
+      <longName>Broad Psychopathology - Adult</longName>
+      <preferredDefinition>Broad Psychopathology - Adult</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>If this questionnaire is completed by an informant, what is your relationship with the individual? (relationship_to_sample_person)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>In a typical week, approximately how much time do you spend with the individual?  hours/week (hours_with_sample_person)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=Hours</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Instructions: The questions below ask about things that might have bothered you. For each question, select the choice that best describes how much (or how often) you have been bothered by each problem during the past TWO (2) WEEKS. (instructions_610201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Little interest or pleasure in doing things? (little_interest_pleasure)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Feeling down, depressed, or hopeless? (feeling_depressed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Feeling more irritated, grouchy, or angry than usual? (feeling_irritated_angry)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Sleeping less than usual, but still have a lot of energy? (little_sleep_same_energy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Starting lots more projects than usual or doing more risky things than usual? (doing_more_than_usual)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Feeling nervous, anxious, frightened, worried, or on edge? (feeling_nervous_anxious)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Feeling panic or being frightened? (feeling_panic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Avoiding situations that make you anxious (avoiding_anxious_situations)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Unexplained aches and pains (e.g., head, back, joints, abdomen, legs)? (unexplained_aches)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Feeling that your illnesses are not being taken seriously enough? (feeling_illnesses_not_taken_seriously)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Thoughts of actually hurting yourself? (thoughts_of_hurting_self)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Hearing things other people couldn't hear, such as voices even when no one was around? (hearing_voices)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Feeling that someone could hear your thoughts, or that you could hear what another person was thinking? (hear_thoughts)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Problems with sleep that affected your sleep quality over all? (sleep_problems)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Problems with memory (e.g., learning new information) or with location (e.g., finding your way home)? (memory_problems)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Unpleasant thoughts, urges, or images that repeatedly enter your mind? (unpleasant_thoughts)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Feeling driven to perform certain behaviors or mental acts over and over again? (perform_acts_overandover)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Feeling detached or distant from yourself, your body, your physical surroundings, or your memories? (feeling_detached_from_body)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Not knowing who you really are or what you want out of life? (not_knowing_self)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Not feeling close to other people or enjoying your relationships with them? (not_feeling_close_to_others)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Drinking at least 4 drinks of any kind of alcohol in a single day? (four_or_more_drinks)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Smoking any cigarettes, a cigar, or pipe, or using snuff or chewing tobacco? (tobacco_use)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Using any of the following medicines ON YOUR OWN, that is, without a doctor's prescription, in greater amounts or longer than prescribed [e.g., painkillers (like Vicodin), stimulants (like Ritalin or Adderall), sedatives or tranquilizers (like sleeping pills or Valium), or drugs like marijuana, cocaine or crack, club drugs (like ecstasy), hallucinogens (like LSD), heroin, inhalants or solvents (like glue), or methamphetamine (like speed)]? (drug_use)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None (Not at all)</meaningText>
+          <description>None (Not at all)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Slight (Rare, less than a day or two)</meaningText>
+          <description>Slight (Rare, less than a day or two)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Mild (Several Days)</meaningText>
+          <description>Mild (Several Days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate (More than half the days)</meaningText>
+          <description>Moderate (More than half the days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Severe (Nearly every day)</meaningText>
+          <description>Severe (Nearly every day)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Scoring and Interpretation: Each item on the measure is rated on a 5point scale (0 = none or not at all 1 = slight or rare, less than a day or two 2 = mild or several days 3 = moderate or more than half the days and 4 = severe or nearly every day). The score on each item within a domain should be reviewed. Because additional inquiry is based on the highest score on any item within a domain, the clinician is asked to indicate that score in the "Highest Domain Score" column. A rating of mild (i.e., 2) or greater on any item within a domain (except for substance use, suicidal ideation, and psychosis) may serve as a guide for additional inquiry and followup to determine if a more detailed assessment for that domain is necessary. For substance use, suicidal ideation, and psychosis, a rating of slight (i.e., 1) or greater on any item within the domain may serve as a guide for additional inquiry and followup to determine if a more detailed assessment is needed. The DSM5 Level 2 CrossCutting Symptom Measures may be used to provide more detailed information on the symptoms associated with some of the Level 1 domains (see Table 1 below). (scoring_610201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Adult DSM5 SelfRated Level 1 CrossCutting Symptom Measure: domains, thresholds for further inquiry, and associated Level 2 measures for adults ages 18 and over (dsm_5_610201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>IMAGE adult DSM5 (adult_dsm_5_jpg_610201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX610201</protocolID>
+     <longName>Broad Psychopathology - Adult</longName>
+     <context>PhenX</context>
+     <shortName>PX610201</shortName>
+     <preferredDefinition>The Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5) Level 1 Cross-Cutting Symptom Measure is a self- or informant-rated measure that assesses mental health domains that are important across psychiatric diagnoses. It is intended to help clinicians identify additional areas of inquiry that may have significant impact on the individual's treatment and prognosis. In addition, the measure may be used to track changes in the individual's symptom presentation over time. This adult version of the measure consists of 23 questions that assess 13 psychiatric domains, including depression, anger, mania, anxiety, somatic symptoms, suicidal ideation, psychosis, sleep problems, memory, repetitive thoughts and behaviors, dissociation, personality functioning, and substance use. Each item inquires about how much (or how often) the individual has been bothered by the specific symptom during the past 2 weeks. If the individual is of impaired capacity and unable to complete the form (e.g., an individual with dementia), a knowledgeable adult informant may complete the measure. The measure was found to be clinically useful and to have good test-retest reliability in the DSM-5 Field Trials that were conducted in adult clinical samples across the United States and in Canada. Frequency of Use To track change in the individual's symptom presentation over time, the measure may be completed at regular intervals as clinically indicated, depending on the stability of the individual's symptoms and treatment status. For individuals with impaired capacity, it is preferable that the same knowledgeable informant completes the measures at follow-up appointments. Consistently high scores on a particular domain may indicate significant and problematic symptoms for the individual that might warrant further assessment, treatment, and follow-up. Clinical judgment should guide decision making.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:48</dateCreated>
+    <longName>PhenX PX630101 - Trauma And Adversity Exposure General</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Life Events Checklist (LEC-5) for The Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5) is a self-report measure designed to screen for potentially traumatic events in a respondent's lifetime. The sum of endorsements can be used as a variable for analysis, but the LEC-5 typically is used to facilitate identification of an index trauma for assessment of PTSD symptoms with an instrument such as the Clinician-Administered PTSD Scale (CAPS; see PTSD Symptoms, Severity and Diagnosis measure in the PhenX Toolkit). The LEC-5 assesses exposure to 16 event categories with known potential to result in significant distress and PTSD, and it includes an additional item addressing any other extraordinarily stressful events not captured by the 16 categories. For each item, the respondent selects: Happened to me; Witnessed it; Learned about it; Part of my job; Not sure; or Doesn't apply. These options reflect DSM-based modalities of trauma exposure. LEC-5 quantifies types of exposures but does not address features (such as age at onset and perpetrator) or parameters (such as severity, frequency, and duration). Such information is provided in the PhenX Toolkit with the "index.php?pageLink=browse.protocols filter=1 id=181400"&gt;Lifetime Trauma and Victimization History (LTVH) measure.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Summary of the Life Events Checklist for DSM5 (LEC5) The LEC5 assesses exposure to 17 event types with known potential to result in significant distress or PTSD. These events include: * Natural disaster * Fire/explosion * Accident at work, hom..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:48</dateCreated>
+      <longName>Trauma and Adversity Exposure - General</longName>
+      <preferredDefinition>Trauma and Adversity Exposure - General</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Scoring: The LEC5 generates: * Number of events experienced * Number of events witnessed * Number of events learned about  Endorsements of potentially traumatic events are used to facilitate identification of an index trauma for a semistructured PTSD interview such as the ClinicianAdministered PTSD scale (CAPSsee PTSD Symptoms, Severity and Diagnosis measure in the PhenX Toolkit). (scoring_630101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Availability: The Life Events Checklist for DSM5 (LEC5) is available for download from the National Center for PTSD at www.ptsd.va.gov. (availability_630101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX630101</protocolID>
+     <longName>Trauma and Adversity Exposure - General</longName>
+     <context>PhenX</context>
+     <shortName>PX630101</shortName>
+     <preferredDefinition>The Life Events Checklist (LEC-5) for &lt;i&gt;The Diagnostic and Statistical Manual of Mental Disorders,&lt;/i&gt; Fifth Edition (DSM-5) is a self-report measure designed to screen for potentially traumatic events in a respondent's lifetime. The sum of endorsements can be used as a variable for analysis, but the LEC-5 typically is used to facilitate identification of an index trauma for assessment of PTSD symptoms with an instrument such as the Clinician-Administered PTSD Scale (CAPS; see PTSD Symptoms, Severity and Diagnosis measure in the PhenX Toolkit). The LEC-5 assesses exposure to 16 event categories with known potential to result in significant distress and PTSD, and it includes an additional item addressing any other extraordinarily stressful events not captured by the 16 categories. For each item, the respondent selects: Happened to me; Witnessed it; Learned about it; Part of my job; Not sure; or Doesn't apply. These options reflect DSM-based modalities of trauma exposure. LEC-5 quantifies types of exposures but does not address features (such as age at onset and perpetrator) or parameters (such as severity, frequency, and duration). Such information is provided in the PhenX Toolkit with the &lt;a href="index.php?pageLink=browse.protocols&amp;filter=1&amp;id=181400"&gt;Lifetime Trauma and Victimization History (LTVH) measure&lt;/a&gt;.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:48</dateCreated>
+    <longName>PhenX PX630102 - Trauma And Adversity Exposure Military</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes the following four self-reported, deployment-related subscales from the Deployment Risk and Resilience Inventory-2 (DRRI-2): Difficult Living and Working Environment (14 items); Combat Experiences (17 items); Aftermath of Battle (13 items); and Perceived Threat (12 items). Items are rated on Likert-style scales and added together to give a score for each scale.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Summary of the DRRI2: This protocol includes the following four deploymentrelated subscales from the Deployment Risk and Resilience Inventory2 (DRRI2): Difficult Living and Working Environment Combat Experiences Aftermath of Battle and Perceived Threat.</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:48</dateCreated>
+      <longName>Trauma and Adversity Exposure - Military</longName>
+      <preferredDefinition>Trauma and Adversity Exposure - Military</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Difficult Living and Working Environment Scale: 14 items from Section C: Deployment Environment, including:  * Climate * Food quality * Access to bathroom * Adequate shelter * Ability to rest * Heavy gear Scoring:  Each item is rated on a 5point Likert scale (1 = Almost none of the time 5 = Almost all of the time). Scores are summed across all items for a range of 14 to 70. Higher scores are indicative of more difficult living and working environment (diff_living_630102)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>indicating more impairment.                  Combat Experiences Scale:17 items from Section D: Combat Experiences, including: *  Witnessed someone (from unit or civilians) wounded or killed  * Exposed to hostile or friendly fire  * Part of convoy that was attacked  * Injured in combatrelated incident  * Fired weapon at enemy  * Searched for or disarmed enemy   Scoring: Each item is rated on a 6point Likert scale (1 = Never 6 = Daily or almost daily). Scores are summed across all items for a range of 17 to 102. Higher scores are indicative of greater exposure to combat (combat_630102)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Aftermath of Battle Scale:13 items from Section E: Postbattle Experiences, including: * Saw refugees * Saw wounded or disfigured civilians * Saw bodies of enemy * Interacted with detainees * Handled human remains   Scoring: Each item is rated on a 6point Likert scale (1 = Never 6 = Daily or almost daily). Scores are summed across all items for a range of 17 to 102. Higher scores are indicative of greater exposure to the aftermath of combat. (aftermath_630102)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Perceived Threat (Section G: Deployment Concerns) 12 items from Section G: Deployment Concerns, including: * Concerned health might suffer from nuclear, biological, chemical, or infectious agent * Danger of being wounded * Thought would not survive * Concerned about being taken hostage  Scoring: Each item is rated on a 5point Likert scale (1 = Strongly agree 5 = Strongly disagree). Scores are summed across all items for a range of 12 to 60. Higher scores are indicative of more perceived threat. (perceived_630102)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Selfreport of exposure to these events may facilitate identification of an index trauma for the assessment of PTSD symptoms (e.g., the Clinician Administered PTSD Scale or CAPSsee PTSD Symptoms, Severity and Diagnosis measure in the PhenX Toolkit). (self_report_630102)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Availability: The Deployment Risk and Resilience Inventory2 (DRRI2) is available for download from the National Center for PTSD at www.ptsd.va.gov. (availabilty_630201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX630102</protocolID>
+     <longName>Trauma and Adversity Exposure - Military</longName>
+     <context>PhenX</context>
+     <shortName>PX630102</shortName>
+     <preferredDefinition>This protocol includes the following four self-reported, deployment-related subscales from the Deployment Risk and Resilience Inventory-2 (DRRI-2): Difficult Living and Working Environment (14 items); Combat Experiences (17 items); Aftermath of Battle (13 items); and Perceived Threat (12 items). Items are rated on Likert-style scales and added together to give a score for each scale.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:48</dateCreated>
+    <longName>PhenX PX630201 - Ptsd Screener Dsmiv</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Primary Care-PTSD Screen (PC-PTSD-IV) for The Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition (DSM-IV) is a self-administered instrument that includes four yes/no items that capture post-traumatic stress disorder (PTSD)-related experiences in the past month. It is designed to be used in primary care settings but is not restricted to those settings. It has most often been used to screen for PTSD in veterans at the U.S. Department of Veterans Affairs but is not limited to military-related PTSD. Screening with PC-PTSD-IV is considered positive if the respondent answers yes to any three items. Provisional PTSD status based on screening typically requires verification with a structured interview for PTSD such as the Clinician-Administered PTSD Scale (CAPS; see [mlink[630400|PTSD Symptoms, Severity and Diagnosis]]).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Primary CarePTSD Screen (PCPTSDIV) for The Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition (DSMIV)</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:48</dateCreated>
+      <longName>PTSD Screener - DSM-IV</longName>
+      <preferredDefinition>PTSD Screener - DSM-IV</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>In your life, have you ever had any experience that was so frightening, horrible, or upsetting that, in the past month, you: Have had nightmares about it or thought about it when you did not want to? (ptsd_experience_upsetting_nightmares)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>In your life, have you ever had any experience that was so frightening, horrible, or upsetting that, in the past month, you: Tried hard not to think about it or went out of your way to avoid situations that reminded you of it? (ptsd_experience_upsetting_avoid)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>In your life, have you ever had any experience that was so frightening, horrible, or upsetting that, in the past month, you: Were constantly on guard, watchful, or easily startled? (ptsd_experience_upsetting_onguard)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>In your life, have you ever had any experience that was so frightening, horrible, or upsetting that, in the past month, you: Felt numb or detached from others, activities, or your surroundings? (ptsd_experience_upsetting_numb)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>The results of the PCPTSD should be considered "positive" if a patient answers "yes" to any three items." (scoring_630201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX630201</protocolID>
+     <longName>PTSD Screener - DSM-IV</longName>
+     <context>PhenX</context>
+     <shortName>PX630201</shortName>
+     <preferredDefinition>The Primary Care-PTSD Screen (PC-PTSD-IV) for &lt;i&gt;The Diagnostic and Statistical Manual of Mental Disorders,&lt;/i&gt; Fourth Edition (DSM-IV) is a self-administered instrument that includes four yes/no items that capture post-traumatic stress disorder (PTSD)-related experiences in the past month. It is designed to be used in primary care settings but is not restricted to those settings. It has most often been used to screen for PTSD in veterans at the U.S. Department of Veterans Affairs but is not limited to military-related PTSD. Screening with PC-PTSD-IV is considered positive if the respondent answers yes to any three items. Provisional PTSD status based on screening typically requires verification with a structured interview for PTSD such as the Clinician-Administered PTSD Scale (CAPS; see [mlink[630400|PTSD Symptoms, Severity and Diagnosis]]).</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:48</dateCreated>
+    <longName>PhenX PX630202 - Ptsd Screener Dsm 5</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Primary Care-PTSD Screen (PC-PTSD-5) for The Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5) is a self-administered instrument that includes five yes/no items that capture post-traumatic stress disorder (PTSD)-related experiences in the past month. It is designed to be used in primary care settings but is not restricted to those settings. It has been used to screen for PTSD in veterans at the U.S. Department of Veterans Affairs but is not limited to military-related PTSD. In comparison to the PC-PTSD-IV Screen (PC-PTSD-IV) for The Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition (DSM-IV), the DSM-5 version includes an additional symptom question and revised wording about exposure to a potentially traumatic event to better reflect new DSM criteria. Screening with PC-PTSD-5 is considered positive if the respondent answers yes to any three items. Provisional PTSD status based on screening typically requires verification with a structured interview for PTSD such as the Clinician-Administered PTSD Scale (CAPS; see [mlink[630400|PTSD Symptoms, Severity and Diagnosis]]).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Summary of the Primary Care PTSD screen for DSM5  The PCPTSD for DSM5 includes an introductory statement about potentially traumatic events followed by 5 yes/no questions that capture: * Nightmares or unwanted thoughts about the event  * Not t..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:48</dateCreated>
+      <longName>PTSD Screener - DSM 5</longName>
+      <preferredDefinition>PTSD Screener - DSM 5</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Scoring: The results of the PCPTSD should be considered "positive" if a patient answers "yes" to any three items. (scoring_630202)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Availability: The PCPTSD screen for DSM5 is under development. When it is released, it will be available from the National Center for PTSD at www.ptsd.va.gov. (availability_630202)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX630202</protocolID>
+     <longName>PTSD Screener - DSM 5</longName>
+     <context>PhenX</context>
+     <shortName>PX630202</shortName>
+     <preferredDefinition>The Primary Care-PTSD Screen (PC-PTSD-5) for &lt;i&gt;The Diagnostic and Statistical Manual of Mental Disorders,&lt;/i&gt; Fifth Edition (DSM-5) is a self-administered instrument that includes five yes/no items that capture post-traumatic stress disorder (PTSD)-related experiences in the past month. It is designed to be used in primary care settings but is not restricted to those settings. It has been used to screen for PTSD in veterans at the U.S. Department of Veterans Affairs but is not limited to military-related PTSD. In comparison to the PC-PTSD-IV Screen (PC-PTSD-IV) for &lt;i&gt;The Diagnostic and Statistical Manual of Mental Disorders,&lt;/i&gt; Fourth Edition (DSM-IV), the DSM-5 version includes an additional symptom question and revised wording about exposure to a potentially traumatic event to better reflect new DSM criteria. Screening with PC-PTSD-5 is considered positive if the respondent answers yes to any three items. Provisional PTSD status based on screening typically requires verification with a structured interview for PTSD such as the Clinician-Administered PTSD Scale (CAPS; see [mlink[630400|PTSD Symptoms, Severity and Diagnosis]]).</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:48</dateCreated>
+    <longName>PhenX PX630301 - Ptsd Symptoms Selfreport Dsmiv</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The PTSD Checklist (PCL) for The Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition (DSM-IV) is a 17-item self-report measure that assesses DSM-IV-based criteria in the past month. Each item is rated on a 5-point Likert-type scale (1 = Not at all; 5 = Extremely) that indicates how much the participant has been bothered by the event.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>PCLC   INSTRUCTIONS: Below is a list of problems and complaints that people sometimes have in response to stressful life experiences. Please read each one carefully then select one choice to indicate how much you have been bothered by that pro..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:48</dateCreated>
+      <longName>PTSD Symptoms, Self-report - DSM-IV</longName>
+      <preferredDefinition>PTSD Symptoms, Self-report - DSM-IV</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Repeated, disturbing memories, thoughts, or images of a stressful experience from the past? (ptsd_symptoms_memories)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Repeated, disturbing dreams of a stressful experience from the past? (ptsd_symptoms_dreams)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Suddenly acting or feeling as if a stressful experience were happening again (as if you were reliving it)? (ptsd_symptoms_reliving)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Feeling very upset when something reminded you of a stressful experience from the past? (ptsd_symptoms_upset)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Having physical reactions (e.g., heart pounding, trouble breathing, sweating) when something reminded you of a stressful experience from the past? (ptsd_symptoms_physical_reaction)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Avoiding thinking about or talking about a stressful experience from the past or avoiding having feelings related to it? (ptsd_symptoms_avoidance_thoughts)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Avoiding activities or situations because they reminded you of a stressful experience from the past? (ptsd_symptoms_avoidance_activities)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Trouble remembering important parts of a stressful experience from the past? (ptsd_symptoms_trouble_remembering)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Loss of interest in activities that you used to enjoy? (ptsd_symptoms_lossof_interest)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Feeling distant or cut off from other people? (ptsd_symptoms_feeling_distant)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Feeling emotionally numb or being unable to have loving feelings for those close to you? (ptsd_symptoms_emotionally_numb)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Feeling as if your future will somehow be cut short? (ptsd_symptoms_future_short)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Trouble falling or staying asleep? (ptsd_symptoms_trouble_sleeping)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Feeling irritable or having angry outbursts? (ptsd_symptoms_irritable)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Having difficulty concentrating? (ptsd_symptoms_concentrating)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Being "superalert" or watchful or on guard? (ptsd_symptoms_on_guard)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Feeling jumpy or easily startled? (ptsd_symptoms_feeling_jumpy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- not at all</meaningText>
+          <description>1- not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little bit</meaningText>
+          <description>2- A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Moderately</meaningText>
+          <description>3- Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Quite a bit</meaningText>
+          <description>4- Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- Extremely</meaningText>
+          <description>5- Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Scoring: Scoring instructions are adapted from the handout "Using the PTSD Checklist for DSMIV (PCL)" available from the National Center for PTSD at www.ptsd.va.gov. A total symptom severity score (range = 1785) can be obtained by summing the scores from each of the 17 items that have response options ranging from 1 "Not at all" to 5 "Extremely." A provisional diagnosis can be established in three ways: 1) Determine whether an individual meets DSMIV symptom criteria as defined by at least 1 B item (questions 15), 3 C items (questions 612), and at least 2 D items (questions 1317). Symptoms that are rated as "Moderately" or above (responses 3 through 5 on individual items) are counted as present. 2) Determine whether the total severity score exceeds a relevant normative threshold (e.g., for primary care settings). 3) Combine methods (1) and (2) to ensure that an individual meets both the symptom pattern and severity threshold. (scoring_630301)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX630301</protocolID>
+     <longName>PTSD Symptoms, Self-report - DSM-IV</longName>
+     <context>PhenX</context>
+     <shortName>PX630301</shortName>
+     <preferredDefinition>The PTSD Checklist (PCL) for &lt;i&gt;The Diagnostic and Statistical Manual of Mental Disorders,&lt;/i&gt; Fourth Edition (DSM-IV) is a 17-item self-report measure that assesses DSM-IV-based criteria in the past month. Each item is rated on a 5-point Likert-type scale (1 = Not at all; 5 = Extremely) that indicates how much the participant has been bothered by the event.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:48</dateCreated>
+    <longName>PhenX PX630302 - Ptsd Symptoms Selfreport Dsm 5</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The PTSD Checklist (PCL-5) for The Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5) is a 20-item self-report measure that assesses DSM-5-based criteria for PTSD symptoms. Each item is rated on a 5-point Likert-type scale (0 = Not at all; 5 = Extremely) that indicates how much the participant has been bothered by an identified "worst" stressful event in the past month.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Summary of the PTSD Checklist (PCL) for DSM5  The PTSD Checklist (PCL) for DSM5 includes 20 items that capture:  Repeated, disturbing, and unwanted memories and/or dreams  Feeling and/or acting as if the experience was happening again  Feeling..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:48</dateCreated>
+      <longName>PTSD Symptoms, Self-report - DSM 5</longName>
+      <preferredDefinition>PTSD Symptoms, Self-report - DSM 5</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Scoring: Each item is scored on a 5point Likert scale (0 = Not at all 4 = Extremely) indicating how much the participant has been bothered by the event in the past month. A total symptom severity score can be obtained by totaling the scores of the 20 individual items. Preliminary validation work suggests a cutoff score of 38 for PTSD screening. DSM5 symptom cluster severity scores can be calculated according to the following:  Cluster B  sum items 15 Cluster C  sum items 67 Cluster D  sum items 814 Cluster E  sum items 1520 A provisional PTSD diagnosis can be made by counting each item rated as 2 ("Moderately") or higher as a symptom endorsement, then following the DSM5 diagnostic rule, which requires at least 1 item from cluster B (questions 15), 1 item from cluster C (questions 67), 2 items from cluster D (questions 814), and 2 items from cluster E (questions 1520). Interpretation of the PCL5 should be made by a clinician. Change scores for PCL5 have not yet been documented, but it is expected that reliable and clinically meaningful change will be in a similar range to the scores established for the PCL for DSMIV (reliable &gt; 5 clinically meaningful &gt; 10). (scoring_630302)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:48</dateCreated>
+        <questionText>Availability: The PTSD Checklist (PCL) for DSM5 is available for download from the National Center for PTSD at www.ptsd.va.gov. (availability_630302)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX630302</protocolID>
+     <longName>PTSD Symptoms, Self-report - DSM 5</longName>
+     <context>PhenX</context>
+     <shortName>PX630302</shortName>
+     <preferredDefinition>The PTSD Checklist (PCL-5) for &lt;i&gt;The Diagnostic and Statistical Manual of Mental Disorders,&lt;/i&gt; Fifth Edition (DSM-5) is a 20-item self-report measure that assesses DSM-5-based criteria for PTSD symptoms. Each item is rated on a 5-point Likert-type scale (0 = Not at all; 5 = Extremely) that indicates how much the participant has been bothered by an identified "worst" stressful event in the past month.</preferredDefinition>
+    </protocol>
+   </form>
+   </forms>
