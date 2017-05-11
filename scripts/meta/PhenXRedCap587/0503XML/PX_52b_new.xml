@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 52b</collectionName>
+  <collectionDescription>Load PhenX PX740904,PX740905,PX740906,PX740907,PX741001,PX741101</collectionDescription>
+       <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:42:24</dateCreated>
+    <longName>PhenX PX740904 - Selfreported Tobacco Product Purchase Location Ecigarettes</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the purchase location of e-cigarettes.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Self-reported Tobacco Product Purchase Location - E-Cigarettes</longName>
+      <preferredDefinition>Self-reported Tobacco Product Purchase Location - E-Cigarettes</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>ASK: Current users and former users 12 month. How [do/did] you usually buy [ECIGFILL] [and eliquid] for yourself? Is it.... (selfreported_methodof_purchase_ecigarette)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In person</meaningText>
+          <description>In person</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>From the internet</meaningText>
+          <description>From the internet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>By telephone</meaningText>
+          <description>By telephone</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I [do/did] not buy my own [ECIGFILL][and e-liquid]</meaningText>
+          <description>I [do/did] not buy my own [ECIGFILL][and e-liquid]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>[Do/Did] you usually buy [ECIGFILL] [and eliquid]? (selfreported_locationof_purchase_ecigarette)</questionText>
+        <instruction>
+         <text>[selfreported_methodof_purchase_ecigarette] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In your own state</meaningText>
+          <description>In your own state</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>In another state</meaningText>
+          <description>In another state</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Outside the US</meaningText>
+          <description>Outside the US</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Where [do/did] you buy your [ECIGFILL] [and eliquid] most of the time? (selfreported_locationof_vendor_ecigarette)</questionText>
+        <instruction>
+         <text>[selfreported_methodof_purchase_ecigarette] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>A convenience store or gas station</meaningText>
+          <description>A convenience store or gas station</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>A supermarket, grocery store, or drug store</meaningText>
+          <description>A supermarket, grocery store, or drug store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A warehouse club, such as Sam's or Costco</meaningText>
+          <description>A warehouse club, such as Sam's or Costco</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>A smoke shop, tobacco specialty store, or tobacco outlet store</meaningText>
+          <description>A smoke shop, tobacco specialty store, or tobacco outlet store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A duty-free shop or military commisionary</meaningText>
+          <description>A duty-free shop or military commisionary</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>A bar, pub, restaurant, or casino</meaningText>
+          <description>A bar, pub, restaurant, or casino</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>A friend or relative</meaningText>
+          <description>A friend or relative</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>A swap meet or flea market</meaningText>
+          <description>A swap meet or flea market</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>A store on an Indian reservation</meaningText>
+          <description>A store on an Indian reservation</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>A liquor store</meaningText>
+          <description>A liquor store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Or somewhere else; SPECIFY below</meaningText>
+          <description>Or somewhere else; SPECIFY below</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>12</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>13</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Where [do/did] you buy your [ECIGFILL] [and eliquid] most of the time? (selfreported_locationof_vendor_ecigarette_othervendor)</questionText>
+        <instruction>
+         <text>[selfreported_methodof_purchase_ecigarette] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740904</protocolID>
+     <longName>Self-reported Tobacco Product Purchase Location - E-Cigarettes</longName>
+     <context>PhenX</context>
+     <shortName>PX740904</shortName>
+     <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the purchase location of e-cigarettes.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:42:24</dateCreated>
+    <longName>PhenX PX740905 - Selfreported Tobacco Product Purchase Location Hookah</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the purchase location of hookah tobacco.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Self-reported Tobacco Product Purchase Location - Hookah Tobacco</longName>
+      <preferredDefinition>Self-reported Tobacco Product Purchase Location - Hookah Tobacco</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>ASK: Current users, experimental current users, 30day user HOOK, and former users 12 month. How [do/did] you usually buy shisha or hookah tobacco for yourself? Is it (selfreported_methodof_purchase_hookah)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In person (such as at a store or hookah bar)</meaningText>
+          <description>In person (such as at a store or hookah bar)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>From the internet</meaningText>
+          <description>From the internet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>By telephone</meaningText>
+          <description>By telephone</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I [do/did] not buy my own [cigarettes/cigarette tobacco]</meaningText>
+          <description>I [do/did] not buy my own [cigarettes/cigarette tobacco]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>[Do/Did] you usually buy shisha or hookah tobacco...? (selfreported_locationof_purchase_hookah)</questionText>
+        <instruction>
+         <text>[selfreported_methodof_purchase_hookah] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In your own state</meaningText>
+          <description>In your own state</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>In another state</meaningText>
+          <description>In another state</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Outside the US</meaningText>
+          <description>Outside the US</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Where [do/did] you buy your shisha or hookah tobacco most of the time? (selfreported_locationof_vendor_hookah)</questionText>
+        <instruction>
+         <text>[selfreported_methodof_purchase_hookah] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>A convenience store or gas station</meaningText>
+          <description>A convenience store or gas station</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>A supermarket, grocery store, or drug store</meaningText>
+          <description>A supermarket, grocery store, or drug store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A warehouse club, such as Sam's or Costco</meaningText>
+          <description>A warehouse club, such as Sam's or Costco</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>A smoke shop, tobacco specialty store, or tobacco outlet store</meaningText>
+          <description>A smoke shop, tobacco specialty store, or tobacco outlet store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A duty-free shop or military commisionary</meaningText>
+          <description>A duty-free shop or military commisionary</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>A bar, pub, restaurant, or casino</meaningText>
+          <description>A bar, pub, restaurant, or casino</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>A friend or relative</meaningText>
+          <description>A friend or relative</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>A swap meet or flea market</meaningText>
+          <description>A swap meet or flea market</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>A store on an Indian reservation</meaningText>
+          <description>A store on an Indian reservation</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>A liquor store</meaningText>
+          <description>A liquor store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Or somewhere else; SPECIFY below</meaningText>
+          <description>Or somewhere else; SPECIFY below</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>12</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>13</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Where [do/did] you buy your shisha or hookah tobacco most of the time? (selfreported_locationof_vendor_hookah_othervendor)</questionText>
+        <instruction>
+         <text>[selfreported_methodof_purchase_hookah] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740905</protocolID>
+     <longName>Self-reported Tobacco Product Purchase Location - Hookah Tobacco</longName>
+     <context>PhenX</context>
+     <shortName>PX740905</shortName>
+     <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the purchase location of hookah tobacco.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:42:24</dateCreated>
+    <longName>PhenX PX740906 - Selfreported Tobacco Product Purchase Location Pipe</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the purchase location of pipe tobacco.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Self-reported Tobacco Product Purchase Location - Pipe</longName>
+      <preferredDefinition>Self-reported Tobacco Product Purchase Location - Pipe</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>ASK: Current users and former users 12 month. How [do/did] you usually buy pipe tobacco for yourself? Is it ..... (pxt740906_selfreported_methodof_purchase_hookah)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In person</meaningText>
+          <description>In person</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>From the internet</meaningText>
+          <description>From the internet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>By telephone</meaningText>
+          <description>By telephone</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I [do/did] not buy my own pipe tobacco</meaningText>
+          <description>I [do/did] not buy my own pipe tobacco</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>[Do/Did] you usually buy pipe tobacco...? (pxt740906_selfreported_locationof_purchase_hookah)</questionText>
+        <instruction>
+         <text>[pxt740906_selfreported_methodof_purchase_hookah] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In your own state</meaningText>
+          <description>In your own state</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>In another state</meaningText>
+          <description>In another state</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Outside the US</meaningText>
+          <description>Outside the US</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Where [do/did] you buy your pipe tobacco most of the time? (pxt740906_selfreported_locationof_vendor_hookah)</questionText>
+        <instruction>
+         <text>[pxt740906_selfreported_methodof_purchase_hookah] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>A convenience store or gas station</meaningText>
+          <description>A convenience store or gas station</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>A supermarket, grocery store, or drug store</meaningText>
+          <description>A supermarket, grocery store, or drug store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A warehouse club, such as Sam's or Costco</meaningText>
+          <description>A warehouse club, such as Sam's or Costco</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>A smoke shop, tobacco specialty store, or tobacco outlet store</meaningText>
+          <description>A smoke shop, tobacco specialty store, or tobacco outlet store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A duty-free shop or military commisionary</meaningText>
+          <description>A duty-free shop or military commisionary</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>A bar, pub, restaurant, or casino</meaningText>
+          <description>A bar, pub, restaurant, or casino</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>A friend or relative</meaningText>
+          <description>A friend or relative</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>A swap meet or flea market</meaningText>
+          <description>A swap meet or flea market</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>A store on an Indian reservation</meaningText>
+          <description>A store on an Indian reservation</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>A liquor store</meaningText>
+          <description>A liquor store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Or somewhere else; SPECIFY below</meaningText>
+          <description>Or somewhere else; SPECIFY below</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>12</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>13</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Where [do/did] you buy your pipe tobacco most of the time? (pxt740906_selfreported_locationof_vendor_hookah_othervendor)</questionText>
+        <instruction>
+         <text>[pxt740906_selfreported_methodof_purchase_hookah] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740906</protocolID>
+     <longName>Self-reported Tobacco Product Purchase Location - Pipe</longName>
+     <context>PhenX</context>
+     <shortName>PX740906</shortName>
+     <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the purchase location of pipe tobacco.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:42:24</dateCreated>
+    <longName>PhenX PX740907 - Selfreported Tobacco Product Purchase Location Smokeless Tobacco</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the purchase location of smokeless tobacco.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Self-reported Tobacco Product Purchase Location - Smokeless Tobacco</longName>
+      <preferredDefinition>Self-reported Tobacco Product Purchase Location - Smokeless Tobacco</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>ASK: Current users and former users 12 month. 1.How [do/did] you usually buy smokeless tobacco for yourself? Is it (selfreported_switch_cigarettes_low_tar)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In person</meaningText>
+          <description>In person</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>From the internet</meaningText>
+          <description>From the internet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>By telephone</meaningText>
+          <description>By telephone</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I [do I did] not buy my own smokeless tobacco</meaningText>
+          <description>I [do I did] not buy my own smokeless tobacco</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>2. [Do/Did] you usually buy smokeless tobacco? (selfreported_quit_cigarettes_one_day)</questionText>
+        <instruction>
+         <text>[selfreported_switch_cigarettes_low_tar] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In your own state</meaningText>
+          <description>In your own state</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>In another state</meaningText>
+          <description>In another state</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Outside the U.S.</meaningText>
+          <description>Outside the U.S.</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>3. Where [do/did] you buy your smokeless tobacco most of the time? (selfreported_quit_cigarettes_one_day_history)</questionText>
+        <instruction>
+         <text>[selfreported_switch_cigarettes_low_tar] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>A convenience store or gas station</meaningText>
+          <description>A convenience store or gas station</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>A supermarket, grocery store, or drug store</meaningText>
+          <description>A supermarket, grocery store, or drug store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A warehouse club, such as Sam's or Costco</meaningText>
+          <description>A warehouse club, such as Sam's or Costco</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>A smoke shop, tobacco specialty store, or tobacco outlet store</meaningText>
+          <description>A smoke shop, tobacco specialty store, or tobacco outlet store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A duty-free shop or military commissary</meaningText>
+          <description>A duty-free shop or military commissary</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>A bar, pub, restaurant, or casino</meaningText>
+          <description>A bar, pub, restaurant, or casino</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>A friend or relative</meaningText>
+          <description>A friend or relative</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>A swap meet or flea market</meaningText>
+          <description>A swap meet or flea market</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>A liquor store</meaningText>
+          <description>A liquor store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>Or from somewhere else; SPECIFY below</meaningText>
+          <description>Or from somewhere else; SPECIFY below</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>12</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Please specify where you bu/bought your smokeless tobacco most of the time? (specify_740907)</questionText>
+        <instruction>
+         <text>[selfreported_switch_cigarettes_low_tar] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740907</protocolID>
+     <longName>Self-reported Tobacco Product Purchase Location - Smokeless Tobacco</longName>
+     <context>PhenX</context>
+     <shortName>PX740907</shortName>
+     <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the purchase location of smokeless tobacco.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:42:24</dateCreated>
+    <longName>PhenX PX741101 - Tobacco Industry And Retailer Public Relations</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>California's Statewide Youth Tobacco Purchase Survey (YTPS) is an 11-item instrument developed to assess retailer compliance with signage policies related to tobacco sales to minors and tobacco industry public relations signage in the retail sector. The survey collects information about the minor's purchase attempt and observations of the purchaser during the purchase attempt. For the purpose of this measure, items within the "Observations" section of the YTPS are used; these relate to the presence, type, and location of signs stating that tobacco sales to minors are unlawful.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Tobacco Industry and Retailer Public Relations</longName>
+      <preferredDefinition>Tobacco Industry and Retailer Public Relations</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>(Check all that apply) Location of federal, state, and local signs stating that sales to minors are unlawful (tobaccoindustry_retailer_signs_federalstatelocal)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Checkout counter</meaningText>
+          <description>Checkout counter</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Tobacco display site</meaningText>
+          <description>Tobacco display site</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Doors/windows</meaningText>
+          <description>Doors/windows</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Other; specify below</meaningText>
+          <description>Other; specify below</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Location of federal, state, and local signs stating that sales to minors are unlawful  Other please specify (tobaccoindustry_retailer_signs_federalstatelocal_other)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Please check all tobacco industry signs stating that sales to minors are unlawful at the checkout counter (tobaccoindustry_retailersigns_checkout_counter_options)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>If You Ask/We Ask</meaningText>
+          <description>If You Ask/We Ask</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>It's the Law</meaningText>
+          <description>It's the Law</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>We CARD</meaningText>
+          <description>We CARD</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Support the Law: It Works</meaningText>
+          <description>Support the Law: It Works</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Help stop underage smoking: Don't Buy Cigarettes For Kids</meaningText>
+          <description>Help stop underage smoking: Don't Buy Cigarettes For Kids</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Other; specify below</meaningText>
+          <description>Other; specify below</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Please check all tobacco industry signs stating that sales to minors are unlawful at the checkout counter  Other please specify (tobaccoindustry_retailersigns_checkout_counter_other)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Location of tobacco industry signs stating that sales to minors are unlawful  If you Ask/We ask (location_ask_740101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Location of tobacco industry signs stating that sales to minors are unlawful  It's the Law (location_law_740101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Location of tobacco industry signs stating that sales to minors are unlawful  We CARD (location_card_740101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Location of tobacco industry signs stating that sales to minors are unlawful  Support the Law: it Works (location_works_740101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Location of tobacco industry signs stating that sales to minors are unlawful  Help Stop underage smoking: Don't buy cigarettes for kids (location_kids_740101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Location of tobacco industry signs stating that sales to minors are unlawful  Other (location_other_740101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX741101</protocolID>
+     <longName>Tobacco Industry and Retailer Public Relations</longName>
+     <context>PhenX</context>
+     <shortName>PX741101</shortName>
+     <preferredDefinition>California's Statewide Youth Tobacco Purchase Survey (YTPS) is an 11-item instrument developed to assess retailer compliance with signage policies related to tobacco sales to minors and tobacco industry public relations signage in the retail sector. The survey collects information about the minor's purchase attempt and observations of the purchaser during the purchase attempt. For the purpose of this measure, items within the "Observations" section of the YTPS are used; these relate to the presence, type, and location of signs stating that tobacco sales to minors are unlawful.</preferredDefinition>
+    </protocol>
+   </form>   
+   </forms>

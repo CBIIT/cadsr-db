@@ -1,0 +1,2887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 50</collectionName>
+  <collectionDescription>Load PhenX PX711101,PX720101,PX720301,PX720401,PX720501,PX720601,PX720602,PX720801,PX720901,PX721001</collectionDescription>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:07</dateCreated>
+    <longName>PhenX PX720101 - Amount Type And Frequency Of Recent Cigarette Use</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The TLFB (Timeline Followback) protocol can be used to track use of single or multiple products. It traditionally tracks cigarette use for 30 days and has also been used for marijuana, alcohol and other drugs. The TLFB can be administered by an interviewer, self-administered, or administered by computer. It involves asking clients to retrospectively estimate their tobacco use 7 days to 2 years prior to the interview date. For cigarettes, individuals are asked to estimate the number of cigarettes smoked per day.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:07</dateCreated>
+      <longName>Instructions for Filling Out the Timeline Cigarette Use Calendar</longName>
+      <preferredDefinition>Instructions for Filling Out the Timeline Cigarette Use Calendar</preferredDefinition>
+        <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>To help us evaluate your cigarette use, we need to get an idea of what your smoking was like in the past ____ days. To do this, we would like you to fill out the attached calendr. Filling out the calendar is not hard! Try to be as accurate as possible.  We recognize you won't have perfect recall. That's OKAY. WHAT TO FILL IN The idea is to record how many cigarettes you smoked for each day on the calendar.On days when you did not smoke cigarettes, not even one, you should write a "0It's important that something is written for every day, even if it is a 0". YOUR BEST ESTIMATE We realize it isn't easy to recall things with 100% accuracy.If you are not sure whether you smoked 15 or 16 cigarettes or whether you smoked on a Thursday or a Friday, give it your best guess! What is important is that 15 or 16 cigarettes is very different from 1 cigarette. The goal is to get a sense of how frequently you smoked, how much you smoked, and your patterns of smoking.✓HELPFUL HINTS If you have an appointment book you can use it to help you recall your use. Holidays such as Thanksgiving and Christmas are marked on the calendar to help you recall your smoking. Also, think about how much you smoked on personal holidays and events such as birthdays, vacations, or parties. If you have regular patterns to your smoking, you can use these to help you recall your use. For example, some people may only smoke during social situations.✓ COMPLETING THE CALENDAR A blank calendar is attached. Write in the number of cigarettes you smoked on each day. The time period we are talking about on the calendar is from __________ to __________. In estimating the number of cigarettes you smoked, be as accurate as possible. DOUBLE CHECK THAT ALL DAYS ARE FILLED IN BEFORE RETURNING THE CALENDAR.  Before you start look at the SAMPLE CALENDAR. (inst_720101_1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>&amp;#10003SAMPLE CALENDAR (calendar)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>To help us evaluate your cigarette use, we need to get an idea of what your smoking was like in the past ____days. To do this, we would like you to fill out a calendar (cigarette_use_assessment_period_days)</questionText>
+        <instruction>
+         <text>minLength=1; UOM=day</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Assessment of how much smoked, derived from the filled out cigarette use calendar (cigarette_use_assessment_amount)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Assessment of patterns of smoking, derived from the filled out cigarette use calendar (cigarette_use_assessment_type)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Assessment of how frequently smoked, derived from the filled out cigarette use calendar (cigarette_use_assessment_frequency)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX720101</protocolID>
+     <longName>Amount, Type, and Frequency of Recent Cigarette Use</longName>
+     <context>PhenX</context>
+     <shortName>PX720101</shortName>
+     <preferredDefinition>The TLFB (Timeline Followback) protocol can be used to track use of single or multiple products. It traditionally tracks cigarette use for 30 days and has also been used for marijuana, alcohol and other drugs. The TLFB can be administered by an interviewer, self-administered, or administered by computer. It involves asking clients to retrospectively estimate their tobacco use 7 days to 2 years prior to the interview date. For cigarettes, individuals are asked to estimate the number of cigarettes smoked per day.</preferredDefinition>
+    </protocol>
+   </form>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:07</dateCreated>
+    <longName>PhenX PX720501 - Cue Reactions To Tobacco Stimuli</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This exercise is an interactive activity between a researcher and participant in which tobacco products are discussed and presented and the participant's reactions to the stimuli are measured and recorded.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:07</dateCreated>
+      <longName>Relaxation Trial</longName>
+      <preferredDefinition>Relaxation Trial</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Instructions: [Read to respondent, or prerecord and play over intercom]: "For the next 5 minutes, please sit quietly and relax." [Let 5 minutes elapse]. "Please take Folder #1 [contains study Brief]1, place it in front of you and open it. It is important that you clearly mark only one response for each line and that you choose a response for each line. Remember these questions (Selfreported Craving  Specific  Tobacco) are about how you're feeling right now. When you have finished the questionnaire in this folder, place it inside the folder and [return the folder to the rack].2 Do you have any questions? If not, you can begin." (relax_inst_720501)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Participant's reactions to the stimuli by conducting the Brief Questionnaire of Smoking Urges (QSUBrief) in the Relaxation Trial (qsu_relaxation_trial_score)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>1</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:07</dateCreated>
+      <longName>Neutral Cues Trial</longName>
+      <preferredDefinition>Neutral Cues Trial</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Experimenter: Take tray containing neutral cues (a small notepad, pencil and eraser) into lab. These neutral cues are the control stimuli for the smoking cues below). The stimuli are placed on a tray and covered with a box. In person: "Now we're ready to begin the next part of the study. In a moment I will give you instructions over the intercom". From observation room, via intercom: "Please remove the cover and place it to the side. Please pick up the pencil. (8 seconds) Hold and look at the pencil for the next few minutes. (10 seconds)  Pick up the eraser with your other hand. Hold the pencil in front of you. (40 seconds) Put the eraser down on the table. (5 seconds) Hold the pencil and look at it for the next few minutes. (1 minute) Please gently place the pencil and eraser back on the tray. We're going to continue with the questionnaires (Selfreported Craving  Specific  Tobacco). Now, please take Folder #2, place it in front of you.3 The instructions are the same as before. Remember, it is important that you clearly mark only one response for each line and that you choose a response for each line. These questions ask about how you're feeling right now. When you have finished the questionnaire in this folder, place it inside the folder and [return the folder to the rack]. Do you have any questions? If not, you can begin."[Once the participant completes the questionnaire, puts it in the folder and moves the folder out of the way] (neutral_cues_720501)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Participant's reactions to the stimuli by conducting the Brief Questionnaire of Smoking Urges (QSUBrief) in the Neutral Cues Trial (qsu_neutral_cues_trial_score)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>2</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:07</dateCreated>
+      <longName>Smoking Cues Trial</longName>
+      <preferredDefinition>Smoking Cues Trial</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Experimenter: Prepare tray with cigarette pack (opened), ashtray and lighter, cover stimuli with box. Take tray into lab. Remove neutral trial tray. From observation room, via intercom: "We are now ready to begin the next part of the study. Please remove the cover and place it to the side. Pick up one of the cigarettes and hold the cigarette in whichever hand is comfortable. (8 seconds) Pick up the lighter with your other hand. Hold the cigarette in front of you and light the lighter. (10 seconds) Hold the cigarette at a downward angle in front of you and put the tip of the cigarette in the lighter flame until the cigarette begins to burn. Do not smoke or puff on the cigarette. (40 seconds) Please relight the cigarette if it goes out during this trial. Put the lighter down on the table. (5 seconds) Hold the cigarette as you usually would, and look at it for the next few minutes without smoking it. (1 minute) Please gently put out the cigarette. Place the cigarette and lighter back on the tray. Now, take Folder #3 and place it in front of you.3 This is the same questionnaire as before (Selfreported Craving  Specific  Tobacco). Remember to answer it for how you are feeling right now. When you finish, [place the folder back in the rack]." (smoking_cues_720501)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Participant's reactions to the stimuli by conducting the Brief Questionnaire of Smoking Urges (QSUBrief) in the Smoking Cues Trial (qsu_smoking_cues_trial_score)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX720501</protocolID>
+     <longName>Cue Reactions to Tobacco Stimuli</longName>
+     <context>PhenX</context>
+     <shortName>PX720501</shortName>
+     <preferredDefinition>This exercise is an interactive activity between a researcher and participant in which tobacco products are discussed and presented and the participant's reactions to the stimuli are measured and recorded.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:07</dateCreated>
+    <longName>PhenX PX720301 - Expired Carbon Monoxide</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol describes standard operating procedures for collecting carbon monoxide samples.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Carbon Monoxide Collection: Standard Operating Procedure (SOP)1. Make sure the participant is standing before beginning CO collection.   a. If the participant is unable to stand, have him or   her sit up as straight as possible.2. Turn on the ..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:07</dateCreated>
+      <longName>Expired Carbon Monoxide</longName>
+      <preferredDefinition>Expired Carbon Monoxide</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Expired carbon monoxide concentration in COppm/COHb (expired_carbon_monoxide_concentration)</questionText>
+        <instruction>
+         <text>UOM=COppm/%COHb</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX720301</protocolID>
+     <longName>Expired Carbon Monoxide</longName>
+     <context>PhenX</context>
+     <shortName>PX720301</shortName>
+     <preferredDefinition>This protocol describes standard operating procedures for collecting carbon monoxide samples.</preferredDefinition>
+    </protocol>
+   </form>
+      <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:07</dateCreated>
+    <longName>PhenX PX720602 - Flavor Preference Ecigarettes Youth</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This is a 5-item youth questionnaire to determine flavor preference when using e-cigarettes.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:07</dateCreated>
+      <longName>Flavor Preference - e-cigarettes - Youth</longName>
+      <preferredDefinition>Flavor Preference - e-cigarettes - Youth</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Was the first ecigarette you used flavored to taste like menthol, mint, clove, spice, fruit, chocolate, alcoholic drinks, candy or other sweets? (pxt720602_first_ecig_flavor_indicator)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Yes</meaningText>
+          <description>1 Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 no</meaningText>
+          <description>2 no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>8 Don't Know</meaningText>
+          <description>8 Don't Know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>7 Refused</meaningText>
+          <description>7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>What flavor was that first ecigarette? If multiple flavors were mixed together, choose all that apply. (pxt720602_first_ecig_flavor_choice)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Menthol or mint</meaningText>
+          <description>1 Menthol or mint</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Clove or spice</meaningText>
+          <description>2 Clove or spice</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Fruit</meaningText>
+          <description>3 Fruit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Chocolate</meaningText>
+          <description>4 Chocolate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5 An alcoholic drink (Such as wine, cognac, margarita or other cocktails)</meaningText>
+          <description>5 An alcoholic drink (Such as wine, cognac, margarita or other cocktails)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6 candy or other sweets</meaningText>
+          <description>6 candy or other sweets</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>7 Some other flavor</meaningText>
+          <description>7 Some other flavor</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>8 Don't know</meaningText>
+          <description>8 Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>UNDEFINED_CODE_8</value>
+          <meaningText>9 Refused</meaningText>
+          <description>9 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>In the past 30 days, [were/was] any of the [ECIGFILL2]* you used flavored to taste like menthol, mint, clove, spice, fruit, chocolate, alcoholic drinks, candy or other sweets? (pxt720602_thirthydays_days_ecig_flavor_indicator)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Yes</meaningText>
+          <description>1 Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 no</meaningText>
+          <description>2 no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>8 Don't Know</meaningText>
+          <description>8 Don't Know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>7 Refused</meaningText>
+          <description>7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Which flavors have you used in the past 30 days? Choose all that apply. (pxt720602_thirthydays_days_ecig_flavor_choice)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Menthol or mint</meaningText>
+          <description>1 Menthol or mint</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Clove or spice</meaningText>
+          <description>2 Clove or spice</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Fruit</meaningText>
+          <description>3 Fruit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Chocolate</meaningText>
+          <description>4 Chocolate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5 An alcoholic drink (Such as wine, cognac, margarita or other cocktails)</meaningText>
+          <description>5 An alcoholic drink (Such as wine, cognac, margarita or other cocktails)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6 candy or other sweets</meaningText>
+          <description>6 candy or other sweets</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>7 Some other flavor</meaningText>
+          <description>7 Some other flavor</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>8 Don't know</meaningText>
+          <description>8 Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>UNDEFINED_CODE_8</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Some ecigarettes come in flavors like menthol, mint, clove, spice, fruit, chocolate, alcoholic drinks, candy or other sweets. Are flavored ecigarettes easier to use, about the same, or harder to use than unflavored ecigarettes? (ecig_flavor_ease_of_use)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Easier to use</meaningText>
+          <description>1 Easier to use</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 About the same</meaningText>
+          <description>2 About the same</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Harder to use</meaningText>
+          <description>3 Harder to use</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>8 Don't know</meaningText>
+          <description>8 Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>7 Refused</meaningText>
+          <description>7 Refused</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX720602</protocolID>
+     <longName>Flavor Preference - e-cigarettes - Youth</longName>
+     <context>PhenX</context>
+     <shortName>PX720602</shortName>
+     <preferredDefinition>This is a 5-item youth questionnaire to determine flavor preference when using e-cigarettes.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:07</dateCreated>
+    <longName>PhenX PX720401 - Nnal In Urine</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Detailed laboratory protocol for measuring urinary NNAL as used by the Centers for Disease Control and Prevention to analyze urine specimens from the National Health and Nutrition Examination Survey (NHANES).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>NNAL is measured by using liquid chromatography linked to tandem mass spectrometry (LCMS/MS). For "total" NNAL assays, the urine sample is fortified with an NNAL13C6 internal standard, and then hydrolyzed using ?glucuronidase in incubations fo..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:07</dateCreated>
+      <longName>NNAL in Urine</longName>
+      <preferredDefinition>NNAL in Urine</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Urinary total NNAL concentration in ng/nL (urine_total_nnal_concentration)</questionText>
+        <instruction>
+         <text>UOM=ng/nL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX720401</protocolID>
+     <longName>NNAL in Urine</longName>
+     <context>PhenX</context>
+     <shortName>PX720401</shortName>
+     <preferredDefinition>Detailed laboratory protocol for measuring urinary NNAL as used by the Centers for Disease Control and Prevention to analyze urine specimens from the National Health and Nutrition Examination Survey (NHANES).</preferredDefinition>
+    </protocol>
+   </form> 
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:07</dateCreated>
+    <longName>PhenX PX720601 - Flavor Preference Ecigarettes Adult</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This is a 6-item adult questionnaire to determine flavor preference when using e-cigarette products.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:07</dateCreated>
+      <longName>Flavor Preference - e-cigarettes - Adult</longName>
+      <preferredDefinition>Flavor Preference - e-cigarettes - Adult</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>When you first started using ecigarettes, were they flavored to taste like menthol, mint, clove, spice, fruit, chocolate, alcoholic drinks, candy or other sweets? (first_ecig_flavor_indicator)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Yes</meaningText>
+          <description>1 Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 no</meaningText>
+          <description>2 no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>-8 Don't Know</meaningText>
+          <description>-8 Don't Know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>-7 Refused</meaningText>
+          <description>-7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Which flavor did you first start using? If multiple flavors were mixed together, choose all that apply. (first_ecig_flavor_choice)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Menthol or mint</meaningText>
+          <description>1 Menthol or mint</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Clove or spice</meaningText>
+          <description>2 Clove or spice</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Fruit</meaningText>
+          <description>3 Fruit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Chocolate</meaningText>
+          <description>4 Chocolate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5 An alcoholic drink (Such as wine, cognac, margarita or other cocktails)</meaningText>
+          <description>5 An alcoholic drink (Such as wine, cognac, margarita or other cocktails)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6 candy or other sweets</meaningText>
+          <description>6 candy or other sweets</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>7 Some other flavor</meaningText>
+          <description>7 Some other flavor</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>-8 Don't know</meaningText>
+          <description>-8 Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>UNDEFINED_CODE_8</value>
+          <meaningText>-7 Refused</meaningText>
+          <description>-7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>In the past 30 days, [were/was] any of the [ECIGFILL2]* you used flavored to taste like menthol, mint, clove, spice, fruit, chocolate, alcoholic drinks, candy or other sweets? (thirthydays_days_ecig_flavor_indicator)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Yes</meaningText>
+          <description>1 Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 no</meaningText>
+          <description>2 no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>-8 Don't Know</meaningText>
+          <description>-8 Don't Know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>-7 Refused</meaningText>
+          <description>-7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Which flavors have you used in the past 30 days? Choose all that apply. (thirthydays_days_ecig_flavor_choice)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Menthol or mint</meaningText>
+          <description>1 Menthol or mint</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Clove or spice</meaningText>
+          <description>2 Clove or spice</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Fruit</meaningText>
+          <description>3 Fruit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Chocolate</meaningText>
+          <description>4 Chocolate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5 An alcoholic drink (Such as wine, cognac, margarita or other cocktails)</meaningText>
+          <description>5 An alcoholic drink (Such as wine, cognac, margarita or other cocktails)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6 candy or other sweets</meaningText>
+          <description>6 candy or other sweets</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>7 Some other flavor</meaningText>
+          <description>7 Some other flavor</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>-8 Don't know</meaningText>
+          <description>-8 Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>UNDEFINED_CODE_8</value>
+          <meaningText>-7 Refused</meaningText>
+          <description>-7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>[Is/was] [your regular brand/the last brand] you [use/used] flavored to taste like menthol, mint, clove, spice, fruit, chocolate, alcoholic drinks, candy or other sweets? (ecig_regular_brand_flavor_indicator)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Yes</meaningText>
+          <description>1 Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 no</meaningText>
+          <description>2 no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>-8 Don't Know</meaningText>
+          <description>-8 Don't Know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>-7 Refused</meaningText>
+          <description>-7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Which flavor [is/was] it? If multiple flavors were mixed together, choose all that apply. (ecig_regular_brand_flavor_choice)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Menthol or mint</meaningText>
+          <description>1 Menthol or mint</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Clove or spice</meaningText>
+          <description>2 Clove or spice</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Fruit</meaningText>
+          <description>3 Fruit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Chocolate</meaningText>
+          <description>4 Chocolate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5 An alcoholic drink (Such as wine, cognac, margarita or other cocktails)</meaningText>
+          <description>5 An alcoholic drink (Such as wine, cognac, margarita or other cocktails)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6 candy or other sweets</meaningText>
+          <description>6 candy or other sweets</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>7 Some other flavor</meaningText>
+          <description>7 Some other flavor</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>-8 Don't know</meaningText>
+          <description>-8 Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>UNDEFINED_CODE_8</value>
+          <meaningText>-7 Refused</meaningText>
+          <description>-7 Refused</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX720601</protocolID>
+     <longName>Flavor Preference - e-cigarettes - Adult</longName>
+     <context>PhenX</context>
+     <shortName>PX720601</shortName>
+     <preferredDefinition>This is a 6-item adult questionnaire to determine flavor preference when using e-cigarette products.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:07</dateCreated>
+    <longName>PhenX PX720801 - Pregnancy Status And Tobacco Use</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Population Assessment of Tobacco and Health (PATH) questions that assess number of pregnancies, kinds of complications, pregnancy status, alcohol, average cigarettes per day during pregnancy (not by trimester), and other tobacco product use.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>The next questions are about your pregnancy history.</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:07</dateCreated>
+      <longName>Pregnancy Status and Tobacco Use</longName>
+      <preferredDefinition>Pregnancy Status and Tobacco Use</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Have you ever been pregnant? Please include current pregnancy, live births, miscarriages, abortions, ectopic or tubal pregnancies and stillbirths. (ever_pregnant_indicator)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Yes</meaningText>
+          <description>1 Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 No</meaningText>
+          <description>2 No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>-8 Don't Know</meaningText>
+          <description>-8 Don't Know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>-7 Refused</meaningText>
+          <description>-7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>How many of your pregnancies have resulted in a live birth? (number_live_birth)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>How many of your pregnancies have resulted in a live birth? (number_live_birth2_56e)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>-8 Don't know</meaningText>
+          <description>-8 Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>-7 Refused</meaningText>
+          <description>-7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>For [that birth  those FILL## births], did any of the following occur? Choose all that apply. (birth_event)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Preterm birth (birth of baby less than 37 weeks gestational age)</meaningText>
+          <description>1 Preterm birth (birth of baby less than 37 weeks gestational age)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 baby with low birth weight (Less than 5 pounds 8 ounces</meaningText>
+          <description>2 baby with low birth weight (Less than 5 pounds 8 ounces</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 baby with birth defects</meaningText>
+          <description>3 baby with birth defects</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Placenta Previa</meaningText>
+          <description>4 Placenta Previa</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5 Placenta Abrupation</meaningText>
+          <description>5 Placenta Abrupation</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6 Pre-eclampsia</meaningText>
+          <description>6 Pre-eclampsia</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>7 None of the above</meaningText>
+          <description>7 None of the above</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>-8 Don't know</meaningText>
+          <description>-8 Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>UNDEFINED_CODE_8</value>
+          <meaningText>-7 Refused</meaningText>
+          <description>-7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Are you pregnant now? (pregnant_now_indicator)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Yes</meaningText>
+          <description>1 Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 no</meaningText>
+          <description>2 no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>-8 Don't Know</meaningText>
+          <description>-8 Don't Know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>-7 Refused</meaningText>
+          <description>-7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>How many months or weeks pregnant are you? Please enter the number of months or weeks. (month_week_pregnancy)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>How many months or weeks pregnant are you? Please enter the number of months or weeks. (month_week_pregnancy2_d2e)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>-8 Don't Know</meaningText>
+          <description>-8 Don't Know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>-7 Refused</meaningText>
+          <description>-7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>During your [most recent / current] pregnancy, [did you smoke / have you smoked] any cigarettes? (pregnancy_smoke_cigarette_indicator)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Yes</meaningText>
+          <description>1 Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 No</meaningText>
+          <description>2 No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>-8 Don't Know</meaningText>
+          <description>-8 Don't Know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>-7 Refused</meaningText>
+          <description>-7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>During your [most recent / current] pregnancy, how many cigarettes [did you smoke/have you smoked] on an average day? A pack usually has 20 cigarettes in it. (pregnancy_smoke_cigarettes_quantity)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Less than 1 cigarette a day</meaningText>
+          <description>1 Less than 1 cigarette a day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 1 to 5 cigarettes a day</meaningText>
+          <description>2 1 to 5 cigarettes a day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 6 to 10 cigarettes a day</meaningText>
+          <description>3 6 to 10 cigarettes a day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 11 to 20 cigarettes a day</meaningText>
+          <description>4 11 to 20 cigarettes a day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5 21 to 40 cigarettes a day</meaningText>
+          <description>5 21 to 40 cigarettes a day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6 41 cigarettes a day</meaningText>
+          <description>6 41 cigarettes a day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>-8 Don't know</meaningText>
+          <description>-8 Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>-7 Refused</meaningText>
+          <description>-7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>During your [most recent/ current] pregnancy, [did/have] you [use TOBACCO PRODUCT LIST below]? (pregnancy_tobacco_product_use)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 yes</meaningText>
+          <description>1 yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 no</meaningText>
+          <description>2 no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>-8 Don't Know</meaningText>
+          <description>-8 Don't Know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>-7 Refused</meaningText>
+          <description>-7 Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>TOBACCO PRODUCT LIST, use the ones the respondent has ever used, excluding cigarettes1. Cigarettes 2. Ecigarettes3. Traditional cigars 4. Cigarillos5. Filtered cigars 6. Pipe filled with tobacco7. Hookah8. Snuff pouches 9. Smokeless tobacco (such as loose snuff, moist snuff, dip, spit or chew) 10. Dissolvable tobacco 11. A nicotine patch, gum, inhaler, nasal spray, lozenge or pill12. Chantix, varenicline, Wellbutrin, Zyban, or ibupropion (tobacco_list_720801)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX720801</protocolID>
+     <longName>Pregnancy Status and Tobacco Use</longName>
+     <context>PhenX</context>
+     <shortName>PX720801</shortName>
+     <preferredDefinition>Population Assessment of Tobacco and Health (PATH) questions that assess number of pregnancies, kinds of complications, pregnancy status, alcohol, average cigarettes per day during pregnancy (not by trimester), and other tobacco product use.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:07</dateCreated>
+    <longName>PhenX PX720901 - Pregnancy Status Mother And Baby Health</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>These six questions from the Pregnancy Risk Assessment Monitoring System (PRAMS) assess problems during pregnancy and after childbirth.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Did you have any of the following problems during your most recent pregnancy? For each item, choose Yes if you had the problem or choose No if you did not.</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:07</dateCreated>
+      <longName>Pregnancy Status - Mother and Baby Health</longName>
+      <preferredDefinition>Pregnancy Status - Mother and Baby Health</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Did you have any of the following problems during your most recent pregnancy?  Vaginal bleeding (pregnancy_problem_vaginal_bleeding)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Did you have any of the following problems during your most recent pregnancy?  Kidney or bladder (urinary tract) infection (pregnancy_problem_kidney_bladder_infection)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Did you have any of the following problems during your most recent pregnancy?  Severe nausea, vomiting, or dehydration (pregnancy_problem_nausea_dehydration)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Did you have any of the following problems during your most recent pregnancy?  Cervix had to be sewn shut (cerclage for incompetent cervix) (pregnancy_problem_cervix_sewn_shut)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Did you have any of the following problems during your most recent pregnancy?  High blood pressure, hypertension (including pregnancyinduced hypertension [PIH]), preeclampsia, or toxemia (pregnancy_problem_hypertension_toxemia)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Did you have any of the following problems during your most recent pregnancy?  Problems with the placenta (such as abruptio placentae or placenta previa) (pregnancy_problem_placenta)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Did you have any of the following problems during your most recent pregnancy?  Labor pains more than 3 weeks before my baby was due (preterm or early labor) (pregnancy_problem_labor_pain_3weeks)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Did you have any of the following problems during your most recent pregnancy?  Water broke more than 3 weeks before my baby was due (premature rupture of membranes [PROM]) (pregnancy_problem_water_broke_3weeks)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Did you have any of the following problems during your most recent pregnancy?  I had to have a blood transfusion (pregnancy_problem_blood_infusion)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Did you have any of the following problems during your most recent pregnancy?  I was hurt in a car accident (pregnancy_problem_car_accident)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>The next questions are about the time since your new baby was born. (baby_question_720901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>After your baby was born, was he or she put in an intensive care unit? (baby_hospital_stay_period)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>I don't know</meaningText>
+          <description>I don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>After your baby was born, how long did he or she stay in the hospital? (baby_intensive_care)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than 24 hours (less than 1 day)</meaningText>
+          <description>Less than 24 hours (less than 1 day)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>24 to 48 hours (1 to 2 days)</meaningText>
+          <description>24 to 48 hours (1 to 2 days)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3 to 5 days</meaningText>
+          <description>3 to 5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>6 to 14 days</meaningText>
+          <description>6 to 14 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>More than 14 days</meaningText>
+          <description>More than 14 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>My baby was not born in a hospital</meaningText>
+          <description>My baby was not born in a hospital</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>My baby is still in the hospital</meaningText>
+          <description>My baby is still in the hospital</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Is your baby alive now? (baby_alive_now)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Is your baby living with you now? (baby_living_with_you)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Did you ever breastfeed or pump breast milk to feed your new baby after delivery, even for a short period of time? (ever_breastfeed_pump)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Did you quit smoking for 7 days or longer during your pregnancy with your last child? (quit_smoking_during_pregnancy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>[If yes above:] In what month of your pregnancy did you first quit for 7 days or longer? (pregnancy_month_quit_smoking)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>First</meaningText>
+          <description>First</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Second</meaningText>
+          <description>Second</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Third</meaningText>
+          <description>Third</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Fourth</meaningText>
+          <description>Fourth</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Fifth</meaningText>
+          <description>Fifth</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Sixth</meaningText>
+          <description>Sixth</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Seventh</meaningText>
+          <description>Seventh</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>Eighth</meaningText>
+          <description>Eighth</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>Ninth</meaningText>
+          <description>Ninth</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Did you start smoking again during that pregnancy or did you stay off cigarettes for the rest of the pregnancy? (pregnancy_start_smoking_again)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Stayed off rest of pregnancy</meaningText>
+          <description>Stayed off rest of pregnancy</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Started again</meaningText>
+          <description>Started again</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Never started again</meaningText>
+          <description>Never started again</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX720901</protocolID>
+     <longName>Pregnancy Status - Mother and Baby Health</longName>
+     <context>PhenX</context>
+     <shortName>PX720901</shortName>
+     <preferredDefinition>These six questions from the Pregnancy Risk Assessment Monitoring System (PRAMS) assess problems during pregnancy and after childbirth.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:07</dateCreated>
+    <longName>PhenX PX721001 - Withdrawal From Tobacco Use</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Minnesota Withdrawal Scale - Revised offers a self-report protocol which reviews symptoms of withdrawal. This protocol has been validated for use with adults and adolescents.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Behavior Rating Scale  SelfReport. Please rate yourself in the following questions for the period for the last  ___________ (measurement of time, EX day, week, month)</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:07</dateCreated>
+      <longName>Withdrawal from Tobacco Use</longName>
+      <preferredDefinition>Withdrawal from Tobacco Use</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Angry, irritable, frustrated (tobacco_use_withdrawal_angry)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Anxious, nervous (tobacco_use_withdrawal_anxious)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Depressed mood, sad (tobacco_use_withdrawal_depressed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Desire or craving to smoke (tobacco_use_withdrawal_craving_smoke)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Difficulty concentrating (tobacco_use_withdrawal_difficulty_concentrating)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Increased appetite, hungry, weight gain (tobacco_use_withdrawal_appetite)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Insomnia, sleep problems, awakening at night (tobacco_use_withdrawal_insomnia)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Restless (tobacco_use_withdrawal_restless)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Impatient (tobacco_use_withdrawal_impatient)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Constipation (tobacco_use_withdrawal_constipation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Dizziness (tobacco_use_withdrawal_dizziness)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Coughing (tobacco_use_withdrawal_coughing)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Dreaming or nightmares (tobacco_use_withdrawal_dreaming_nightmares)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Nausea (tobacco_use_withdrawal_nausea)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Sore throat (tobacco_use_withdrawal_sore_throat)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Behavior Rating Scale  ObserverRating: Rate the subject on the following symptoms according to whether you observed the symptom in the subject in the last ________________ (measurement of time). It does not matter whether the subject complained of the symptom. We want to know whether you noticed the symptom. (observer_rating_721001)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Angry/irritable/frustrated (tobacco_use_withdrawal_observed_angry)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Anxious/tense (tobacco_use_withdrawal_observed_anxious)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Depressed (tobacco_use_withdrawal_observed_depressed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Restless/Impatient (tobacco_use_withdrawal_observed_restless)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>none</meaningText>
+          <description>none</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>slight</meaningText>
+          <description>slight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>mild</meaningText>
+          <description>mild</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>moderate</meaningText>
+          <description>moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>severe</meaningText>
+          <description>severe</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>How confident are you that this rating is accurate? (tobacco_use_withdrawal_confident_rating_accurate)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>not at all</meaningText>
+          <description>not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>somewhat confident</meaningText>
+          <description>somewhat confident</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>moderately confident</meaningText>
+          <description>moderately confident</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>very confident</meaningText>
+          <description>very confident</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX721001</protocolID>
+     <longName>Withdrawal from Tobacco Use</longName>
+     <context>PhenX</context>
+     <shortName>PX721001</shortName>
+     <preferredDefinition>The Minnesota Withdrawal Scale - Revised offers a self-report protocol which reviews symptoms of withdrawal. This protocol has been validated for use with adults and adolescents.</preferredDefinition>
+    </protocol>
+   </form>
+        <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:07</dateCreated>
+    <longName>PhenX PX711101 - House Rules About Tobacco Use</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions ask about smoking burned and not burned tobacco products in the home.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>These next few questions ask about rules of using tobacco inside your home. Please think about everyone who might be in your home including children, adults, visitors, guests, or workers.</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:07</dateCreated>
+      <longName>House Rules About Tobacco Use</longName>
+      <preferredDefinition>House Rules About Tobacco Use</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>For tobacco products that are burned, such as cigarettes, cigars, pipes, or hookah, which statement best describes the rules about smoking a tobacco product inside your home? (tobaccoproducts_burned_rules_smoking_insidehome)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>It is not allowed anywhere or at any time inside my home</meaningText>
+          <description>It is not allowed anywhere or at any time inside my home</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>It is allowed in some places or at some times inside my home</meaningText>
+          <description>It is allowed in some places or at some times inside my home</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>It is allowed anywhere and at anytime inside my home</meaningText>
+          <description>It is allowed anywhere and at anytime inside my home</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:07</dateCreated>
+        <questionText>Now think about other tobacco products that are not burned, like smokeless tobacco, dissolvable tobacco, and electronic cigarettes. Which statement best describes the rules about using these products inside your home? (tobaccoproducts_notburned_rules_use_insidehome)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>It is not allowed anywhere or at any time inside my home</meaningText>
+          <description>It is not allowed anywhere or at any time inside my home</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>It is allowed in some places or at some times inside my home</meaningText>
+          <description>It is allowed in some places or at some times inside my home</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>It is allowed anywhere and at anytime inside my home</meaningText>
+          <description>It is allowed anywhere and at anytime inside my home</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX711101</protocolID>
+     <longName>House Rules About Tobacco Use</longName>
+     <context>PhenX</context>
+     <shortName>PX711101</shortName>
+     <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions ask about smoking burned and not burned tobacco products in the home.</preferredDefinition>
+    </protocol>
+   </form>
+   </forms>

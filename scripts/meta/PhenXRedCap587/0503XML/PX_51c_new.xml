@@ -1,0 +1,1223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 51c</collectionName>
+  <collectionDescription>Load PhenX PX730401,PX730501,PX730701</collectionDescription>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:40:45</dateCreated>
+    <longName>PhenX PX730401 - Passive Exposures To Tobacco Products</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes the National Adult Tobacco Survey (NATS) and the Population Assessment of Tobacco and Health (PATH) Survey. Collectively, the questions are used to assess a respondent's exposure to smoke in different environments.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:40:45</dateCreated>
+      <longName>Passive Exposures to Tobacco Products</longName>
+      <preferredDefinition>Passive Exposures to Tobacco Products</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Not counting decks, porches, or garages, during the past 7 days, that is,  since last [TODAY'S DAY OF WEEK], on how many days did someone other than you smoke tobacco inside your home while you were at home? (days_someone_smoke_inside_homedays)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Not counting decks, porches, or garages, during the past 7 days, that is,  since last [TODAY'S DAY OF WEEK], on how many days did someone other than you smoke tobacco inside your home while you were at home? (days_someone_smoke_inside_home)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>88</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>77</value>
+          <meaningText>Don't know/Not Sure</meaningText>
+          <description>Don't know/Not Sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>99</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Not counting decks, porches, or garages, inside your home, is smoking ____________? (inside_home_smoking_is)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Always allowed</meaningText>
+          <description>Always allowed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Allowed only at some times or in some places</meaningText>
+          <description>Allowed only at some times or in some places</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Never allowed</meaningText>
+          <description>Never allowed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>7</value>
+          <meaningText>Don't know/Not sure</meaningText>
+          <description>Don't know/Not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Not counting decks, porches, or garages, to your knowledge, during the past 7 days, that is, since last [TODAY'S DAY OF WEEK], has anyone, including yourself, smoked tobacco inside your home when he or she was not supposed to? (past7days_anyone_smoked_tobacco_insidenotsupposeto)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Don't know/Not sure</meaningText>
+          <description>Don't know/Not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Do you currently have one job or more than one job? (currently_have_oneormore_job)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>One Job</meaningText>
+          <description>One Job</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>More than one job</meaningText>
+          <description>More than one job</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Most of the time, do you work __________? (most_of_time_doyou_work)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Outdoors</meaningText>
+          <description>Outdoors</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>In a vehicle</meaningText>
+          <description>In a vehicle</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Indoors at home</meaningText>
+          <description>Indoors at home</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Indoors in a place like an office building, retail store, restaurant or factory</meaningText>
+          <description>Indoors in a place like an office building, retail store, restaurant or factory</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>96</value>
+          <meaningText>Somewhere else (specify)</meaningText>
+          <description>Somewhere else (specify)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>77</value>
+          <meaningText>Don't know/Not sure</meaningText>
+          <description>Don't know/Not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>99</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>At your workplace, is smoking in indoor areas __________? (workplace_smoking_indoor_areas)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Always allowed</meaningText>
+          <description>Always allowed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Allowed only at some times or in some places</meaningText>
+          <description>Allowed only at some times or in some places</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Never allowed</meaningText>
+          <description>Never allowed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>7</value>
+          <meaningText>Don't know/Not sure</meaningText>
+          <description>Don't know/Not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>At your workplace, is smoking in outdoor areas ________? (workplace_smoking_outdorr_areas)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Always allowed</meaningText>
+          <description>Always allowed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Allowed only at some times or in some places</meaningText>
+          <description>Allowed only at some times or in some places</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Never allowed</meaningText>
+          <description>Never allowed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>7</value>
+          <meaningText>Don't know/Not sure</meaningText>
+          <description>Don't know/Not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>At your workplace, is the use of chewing tobacco, snuff, dip, or snus _______? (workplace_use_chewingtobacco_dip_smokeless)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Always allowed</meaningText>
+          <description>Always allowed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Allowed only at some times or in some places</meaningText>
+          <description>Allowed only at some times or in some places</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Never allowed</meaningText>
+          <description>Never allowed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>7</value>
+          <meaningText>Don't know/Not sure</meaningText>
+          <description>Don't know/Not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>To your knowledge, during the past 30 = days, that is, since [DATE FILL], has anyone, including yourself, used tobacco products of any kind, including electronic cigarettes, at your work when he or she was not supposed to? (pas30days_hasanyone_usedtobacco_work_notsupposeto)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Don't know/Not sure</meaningText>
+          <description>Don't know/Not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>During the past 7 days, that is, since last [TODAY'S DAY OF WEEK], on how many days did you ride in a vehicle where someone other than you was smoking tobacco? (pas7days_ride_vehicle_someonesmoking)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>88</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>77</value>
+          <meaningText>Don't know/Not Sure</meaningText>
+          <description>Don't know/Not Sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>During the past 7 days, that is, since last [TODAY'S DAY OF WEEK], on how many days did you ride in a vehicle where someone other than you was smoking tobacco? (pas7days_ride_vehicle_someonesmoking_days)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Not counting motorcycles, in the vehicles that you or family members who live with you own or lease, is smoking ___________ (notmotorcycles_vehicles_family_smoking_allowed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Always allowed in all vehicles</meaningText>
+          <description>Always allowed in all vehicles</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Sometimes allowed in at least one vehicle</meaningText>
+          <description>Sometimes allowed in at least one vehicle</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Never allowed in any vehicle</meaningText>
+          <description>Never allowed in any vehicle</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>8</value>
+          <meaningText>Respondents family does not own or lease a vehicle</meaningText>
+          <description>Respondents family does not own or lease a vehicle</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>7</value>
+          <meaningText>Don't know/Not sure</meaningText>
+          <description>Don't know/Not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Not counting times while you were at work, during the past 7 days, that is, since last TODAY'S DAY OF WEEK], on how many days did you breathe the smoke from someone else who was smoking in an indoor or outdoor public place? (notwork_7days_breathesmoke_someelse_smoking)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>88</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>77</value>
+          <meaningText>Don't know/Not Sure</meaningText>
+          <description>Don't know/Not Sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>9</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Not counting times while you were at work, during the past 7 days, that is, since last [TODAY'S DAY OF WEEK], on how many days did you breathe the smoke from someone else who was smoking in an indoor or outdoor public place? (notwork_7days_breathesmoke_someelse_smokingdays)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0;maxLength=7</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Not counting times while you were at work, to your knowledge, during the past 7 days, that is, since last [TODAY'S DAY OF WEEK], has anyone, including yourself, used tobacco of any kind in an indoor or outdoor public place when he or she was not supposed to? (notwork_7days_anyonetobacco_notsupposedto)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Don't know/Not sure</meaningText>
+          <description>Don't know/Not sure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Secondhand Smoke Exposure Section:The next questions ask about tobacco use at your workplace and your home. (secondhand_730401)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Which best describes your current job or paid employment status? (best_describes_currentjob_status)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Work full-time at least 35 hours per week</meaningText>
+          <description>Work full-time at least 35 hours per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Work part-time 15 to 34hours per week</meaningText>
+          <description>Work part-time 15 to 34hours per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Work part-time less than 15 hours per week</meaningText>
+          <description>Work part-time less than 15 hours per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I don't currently work for pay</meaningText>
+          <description>I don't currently work for pay</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>How recently did someone smoke around you while you were at work? (how_recently_someone_smoke_aroundyouwork)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Today</meaningText>
+          <description>Today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>In the past week</meaningText>
+          <description>In the past week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>In the past two weeks</meaningText>
+          <description>In the past two weeks</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>In the past month</meaningText>
+          <description>In the past month</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Longer than a month ago but within the past year</meaningText>
+          <description>Longer than a month ago but within the past year</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>More than a year ago</meaningText>
+          <description>More than a year ago</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>In your childhood, did you live with a regular smoker who smoked inside your home?Please think about anyone who smoked cigarettes, cigars, a pipe, or hookah. (your_childhood_livewith_smoker_inside)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>The next question asks about the rules of using tobacco inside your home. (rules_730401)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Does anyone who lives with you now do any of the following? Choose all that  apply. (anyone_liveswith_younow_dofollowing_chooseallapply)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Smoke cigarettes</meaningText>
+          <description>Smoke cigarettes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Use smokeless tobacoo, such as chewing tobacco, snuff, dip, or snus</meaningText>
+          <description>Use smokeless tobacoo, such as chewing tobacco, snuff, dip, or snus</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Smoke cigars, cigarillos, or filtered cigars</meaningText>
+          <description>Smoke cigars, cigarillos, or filtered cigars</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Use any other form of tobacco, including electronic cigarettes</meaningText>
+          <description>Use any other form of tobacco, including electronic cigarettes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>No one who lives with me now uses any form of tobacco</meaningText>
+          <description>No one who lives with me now uses any form of tobacco</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>During the past seven days, about how many hours were you around others who were smoking in a car, whether or not you were smoking yourself ? (past7days_hours_around_smoking_car)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>During the past seven days, about how many hours were you around others who were smoking at school, whether or not you were smoking yourself ? (past7days_hours_around_smoking_school)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>During the past seven days, about how many hours were you around others who were smoking outdoors, whether or not you were smoking yourself? (past7days_hours_around_smoking_outdoors)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>During the past seven days, about how many hours were you around others who were smoking, whether or not you were smoking yourself? (past7days_hours_around_smoking_encoded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX730401</protocolID>
+     <longName>Passive Exposures to Tobacco Products</longName>
+     <context>PhenX</context>
+     <shortName>PX730401</shortName>
+     <preferredDefinition>This protocol includes the National Adult Tobacco Survey (NATS) and the Population Assessment of Tobacco and Health (PATH) Survey. Collectively, the questions are used to assess a respondent's exposure to smoke in different environments.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:40:45</dateCreated>
+    <longName>PhenX PX730501 - Physical Properties Of Tobacco Products Cigarettes And Filtered Cigars</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The 1999 Massachusetts Benchmark Study protocol includes physical methods and tests to evaluate the length, circumference, filter ventilation, tobacco weight, filter composition, and filter overwrap length of cigarettes and filtered cigars. This information is collected directly through visual inspections.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:40:45</dateCreated>
+      <longName>Physical Properties of Tobacco Products - Cigarettes and Filtered Cigars</longName>
+      <preferredDefinition>Physical Properties of Tobacco Products - Cigarettes and Filtered Cigars</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Cigarette Length (cig_length_730501)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Ten cigarettes, laid mouth to butt, are placed in a Cerulean cd2 express or Borgwaldt S10. The total length of the ten cigarettes is determined.  The average length is calculated by dividing the total length by the number measured (10). Results are measured in millimeters. (ten_cigarettes_total_length_withfilters)</questionText>
+        <instruction>
+         <text>UOM=mm</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>The filters from each cigarette are removed, and the total length of ten filters laid end to end is determined. The average length is calculated by dividing the total length by the number measured (10). Results are measured in millimeters. (ten_cigarettes_total_length_withoutfilters)</questionText>
+        <instruction>
+         <text>UOM=mm</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Circumference (circumference_730501)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>A Cerulean cd2 express or Borgwaldt S10 is used for the circumference determination. Samples consist of 20 cigarettes, with each cigarette being tested individually. The AHL transports individual cigarettes to the testing station. The second module determines cigarette circumference by the linear displacement of a tape gauge that encircles the cigarette. Circumference results are measured to the one hundredth of a millimeter. (cigarette_averageof20_circumference)</questionText>
+        <instruction>
+         <text>UOM=mm</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Tobacco Weight (tobacco_weight_730501)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Tobacco weight is determined using an indirect method. A group of 15 cigarettes is weighed and the composite weight recorded. The tobacco weight is calculated by difference. The average tobacco weight per cigarette is obtained by dividing the difference by 15. Results are reported in grams. (tobaccoweight_15cigarettes_composite_weighttotal)</questionText>
+        <instruction>
+         <text>UOM=g</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>The paper and filters of the corresponding 15 cigarettes are then removed and weighed and the composite weight recorded. The tobacco weight is calculated by difference. The average tobacco weight per cigarette is obtained by dividing the difference by 15. Results are reported in grams. (tobaccoweight_15cigarettes_compositweight_papersfiltersonly)</questionText>
+        <instruction>
+         <text>UOM=g</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Filter Type (filter_type_730501)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Filter type is determined through visual or chemical techniques. After outer papers are removed, a visual examination is conducted. If a visual determination cannot be made, the sample is placed in acetone or sulfuric acid. Cellulose acetate dissolves in acetone and paper dissolves in sulfuric acid. Only 1 cigarette is required per determination. (filtertype_celluloseacetate_paper_cigarette)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Filter Ventilation (ventilation_730501)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Ventilation is the percentage of total air flow drawn through the sample via the sides of the filter generally entering through perforations in the cigarette tipping paper. The Borgwaldt PV10 is used to perform the measurement. Results represent the average filter tip ventilation of 15 cigarettes and are reported in percent (%). (filterventilation_total_airflow_cigarettecigar)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=100; UOM=percent</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX730501</protocolID>
+     <longName>Physical Properties of Tobacco Products - Cigarettes and Filtered Cigars</longName>
+     <context>PhenX</context>
+     <shortName>PX730501</shortName>
+     <preferredDefinition>The 1999 Massachusetts Benchmark Study protocol includes physical methods and tests to evaluate the length, circumference, filter ventilation, tobacco weight, filter composition, and filter overwrap length of cigarettes and filtered cigars. This information is collected directly through visual inspections.</preferredDefinition>
+    </protocol>
+   </form>   
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:40:45</dateCreated>
+    <longName>PhenX PX730701 - Tobacco Brand And Variety Cigars</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Three questions asked by an interviewer to determine the cigar brand and type smoked by respondents.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:40:45</dateCreated>
+      <longName>Tobacco Brand and Variety - Cigars</longName>
+      <preferredDefinition>Tobacco Brand and Variety - Cigars</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>During the PAST 30 days, what BRAND of CIGAR did you smoke MOST OFTEN? (past30days_brand_cigar_mostoften)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Al Capone (makes regular and little/small cigars)</meaningText>
+          <description>Al Capone (makes regular and little/small cigars)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Backwoods (regular only)</meaningText>
+          <description>Backwoods (regular only)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Black &amp; Milds (makes regular and cigarillo-medium size cigars) (in Spanish use 'medium size cigars' instead of the word 'cigarillo' here) with plastic hard filters)</meaningText>
+          <description>Black &amp; Milds (makes regular and cigarillo-medium size cigars) (in Spanish use 'medium size cigars' instead of the word 'cigarillo' here) with plastic hard filters)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Captain Black (little only)</meaningText>
+          <description>Captain Black (little only)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Dutch Masters (regular/large cigar)</meaningText>
+          <description>Dutch Masters (regular/large cigar)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Dutch Treats (little cigar)</meaningText>
+          <description>Dutch Treats (little cigar)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Erik (little only)</meaningText>
+          <description>Erik (little only)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>Hav-a-tampa  (makes regular and little/small cigars)</meaningText>
+          <description>Hav-a-tampa  (makes regular and little/small cigars)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>King Edward( makes  regular and little/small cigars)</meaningText>
+          <description>King Edward( makes  regular and little/small cigars)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>Muriel (makes regular and little/small cigars)</meaningText>
+          <description>Muriel (makes regular and little/small cigars)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Phillies (makes regular and little/small cigars)</meaningText>
+          <description>Phillies (makes regular and little/small cigars)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>12</value>
+          <meaningText>Prime Time (little only)</meaningText>
+          <description>Prime Time (little only)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>13</value>
+          <meaningText>Smoker's Choice (little only)</meaningText>
+          <description>Smoker's Choice (little only)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>13</displayOrder>
+          <value>14</value>
+          <meaningText>Swisher Sweet*  (makes regular and little/small cigars)</meaningText>
+          <description>Swisher Sweet*  (makes regular and little/small cigars)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>14</displayOrder>
+          <value>15</value>
+          <meaningText>Other</meaningText>
+          <description>Other</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Is that a regular or little cigar? Little cigars are cigarette size with a filter. (regularorlittle_cigar)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=4;[past30days_brand_cigar_mostoften] = '1' or [past30days_brand_cigar_mostoften] = '3' or [past30days_brand_cigar_mostoften] = '5' or [past30days_brand_cigar_mostoften] = '8' or [past30days_brand_cigar_mostoften] = '9' or [past30days_brand_cigar..TRUNCATED</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Regular cigar</meaningText>
+          <description>Regular cigar</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Little/small cigars</meaningText>
+          <description>Little/small cigars</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>None of the above</meaningText>
+          <description>None of the above</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Don't know, Refused</meaningText>
+          <description>Don't know, Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>During the past 30 days, did you USUALLY smoke flavored cigars? By flavored we mean fruit, candy, alcohol, clove or any other flavorings. (past30days_usually_flavoredcigars_fruitcandyflavor)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=2;[past30days_brand_cigar_mostoften] = '1' and [past30days_brand_cigar_mostoften] = '2' and [past30days_brand_cigar_mostoften] = '3' and [past30days_brand_cigar_mostoften] = '4' and [past30days_brand_cigar_mostoften] = '5' and [past30days_brand_..TRUNCATED</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX730701</protocolID>
+     <longName>Tobacco Brand and Variety - Cigars</longName>
+     <context>PhenX</context>
+     <shortName>PX730701</shortName>
+     <preferredDefinition>Three questions asked by an interviewer to determine the cigar brand and type smoked by respondents.</preferredDefinition>
+    </protocol>
+   </form>   
+   </forms>
