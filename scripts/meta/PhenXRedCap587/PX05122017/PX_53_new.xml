@@ -1,0 +1,4012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 53</collectionName>
+  <collectionDescription>Load PhenX PX740401,PX740501,PX740601,PX740701,PX740801,PX740802,PX740803,PX740804,PX740901,PX740902</collectionDescription>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:48</dateCreated>
+    <longName>PhenX PX740401 - Selfreported Exposure To And Use Of Price Promotions Fo</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes 14 questions taken from a combination of the Wave 1 Adult and Youth Population Assessment of Tobacco and Health (PATH) Survey instruments. Collectively, the questions are used to measure consumer exposure to tobacco-product price promotions, including (but not limited to) lower price paid or free tobacco products, discounted prices when buying multiple tobacco product units, and free or discounted tobacco product with purchase of tobacco products.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>Self-reported Exposure to and Use of Price Promotions for Tobacco Products</longName>
+      <preferredDefinition>Self-reported Exposure to and Use of Price Promotions for Tobacco Products</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 6 months, have you gotten a discount coupon for any tobacco product? ASK: All respondents (tobacco_pricepromotions_6months_coupongotten)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Where did you get discount coupons from? Choose all that apply. (tobacco_pricepromotions_coupons_from)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>The mail</meaningText>
+          <description>The mail</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>E-mail</meaningText>
+          <description>E-mail</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>The Internet</meaningText>
+          <description>The Internet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Social Networks (such as Facebook and Twitter)</meaningText>
+          <description>Social Networks (such as Facebook and Twitter)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A text message</meaningText>
+          <description>A text message</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>On a cigarette pack or other tobacco product</meaningText>
+          <description>On a cigarette pack or other tobacco product</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>From a friend or other person</meaningText>
+          <description>From a friend or other person</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>Some other way: SPECIFY below</meaningText>
+          <description>Some other way: SPECIFY below</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>SPECIFY Where did you get discount coupons from? (tobacco_pricepromotions_coupons_from_otherway)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 6 months, have you received an email message with promotions or coupons for cigarettes or tobacco products? ASK: All respondents (tobacco_pricepromotions_6months_emailcoupons)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 6 months, have you received promotions or coupons for cigarettes or tobacco products in the mail? ASK: All respondents (tobacco_pricepromotions_6months_mailcoupons)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 6 months, have you used a discount coupon to purchase a tobacco product? (tobacco_pricepromotions_6months_couponused)</questionText>
+        <instruction>
+         <text>[tobacco_pricepromotions_6months_emailcoupons] = '1' or [tobacco_pricepromotions_6months_mailcoupons] = '1' or [tobacco_pricepromotions_6months_coupongotten] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 30 days, when you were in a store that sells tobacco, did you buy a brand of tobacco product other than your usual brand because you noticed a special price offer? ASK: Current tobacco users who have a regular brand (tobacco_pricepromotions_30days_buyspecialoffer)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 30 days, have you bought a brand of tobacco product other than your usual brand because of a promotion? ASK: Current tobacco users who have a regular brand (tobacco_pricepromotions_30days_boughtalternatebrand_promotion)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 30 days, has this happened just once or twice, a few times, or quite regularly? (tobacco_pricepromotions_30days_boughtalternatebrand_promotion_frequency)</questionText>
+        <instruction>
+         <text>[tobacco_pricepromotions_30days_buyspecialoffer] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Once or twice</meaningText>
+          <description>Once or twice</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>A few times</meaningText>
+          <description>A few times</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Quite regularly</meaningText>
+          <description>Quite regularly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 30 days, have you ever bought a brand of tobacco product because you noticed a promotion for it? ASK: All respondents (tobacco_pricepromotions_30days_boughtbecauseof_promotion)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 6 months, have you seen a tobacco sweepstakes ad? ASK: All respondents (sweeps_ad_740401)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 6 months, have you participated in a tobacco sponsored sweepstakes? ASK: All respondents (tobacco_pricepromotions_6months_seentobacco_sweepstakesad)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 30 days, have you bought a brand of tobacco product other than your usual brand because of a promotion? ASK: Current tobacco users who have a regular brand (qr_740401)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Have you ever used a smart phone to scan a QR code for a tobacco product or to enter a sweepstakes or drawing from a tobacco company? (tobacco_pricepromotions_everused_qrcode_sweepstakes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 30 days, did you use a coupon when buying cigarettes? ASK: Current users (tobacco_pricepromotions_30days_coupon_whenbuying_cigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (END QUESTIONNAIRE)</meaningText>
+          <description>No (END QUESTIONNAIRE)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>I did not buy cigarettes in the past 30 days (END QUESTIONNAIRE)</meaningText>
+          <description>I did not buy cigarettes in the past 30 days (END QUESTIONNAIRE)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>DON'T KNOW  (END QUESTIONNAIRE)</meaningText>
+          <description>DON'T KNOW  (END QUESTIONNAIRE)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>REFUSED (END QUESTIONNAIRE)</meaningText>
+          <description>REFUSED (END QUESTIONNAIRE)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How many times in the past 30 days have you used a coupon to buy cigarettes? (tobacco_pricepromotions_howmanytimes_30days_usedcouponcigarettes_number)</questionText>
+        <instruction>
+         <text>datatype=number;[tobacco_pricepromotions_30days_coupon_whenbuying_cigarettes] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740401</protocolID>
+     <longName>Self-reported Exposure to and Use of Price Promotions for Tobacco Products</longName>
+     <context>PhenX</context>
+     <shortName>PX740401</shortName>
+     <preferredDefinition>This protocol includes 14 questions taken from a combination of the Wave 1 Adult and Youth Population Assessment of Tobacco and Health (PATH) Survey instruments. Collectively, the questions are used to measure consumer exposure to tobacco-product price promotions, including (but not limited to) lower price paid or free tobacco products, discounted prices when buying multiple tobacco product units, and free or discounted tobacco product with purchase of tobacco products.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:48</dateCreated>
+    <longName>PhenX PX740501 - Selfreported Exposure To Tobacco Advertising At Point O</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol uses a combination of questions from the Wave 1 Adult and Wave 2 Youth Population Assessment of Tobacco and Health (PATH) Survey instruments. Collectively, the questions are used to measure consumer exposure to tobacco-product advertisements, which have been proven to increase the appeal of and demand for tobacco products.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>Self-reported Exposure to Tobacco Advertising at Point of Sale</longName>
+      <preferredDefinition>Self-reported Exposure to Tobacco Advertising at Point of Sale</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 30 days, how often did you visit a convenience store, small market, or liquor store? ASK: All respondents. (tobaccoadvertising_pos_30days_storevisit_frequency)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never (End Questionnaire)</meaningText>
+          <description>Never (End Questionnaire)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Once a month</meaningText>
+          <description>Once a month</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>2-3 times per month</meaningText>
+          <description>2-3 times per month</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Once a week</meaningText>
+          <description>Once a week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>2-3 times per week</meaningText>
+          <description>2-3 times per week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Almost every day</meaningText>
+          <description>Almost every day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 30 days, when you visited convenience stores, small markets, or liquor stores, how often did you see ads for ecigarettes? (tobaccoadvertising_pos_30days_storevisit_seeecigarettes)</questionText>
+        <instruction>
+         <text>[tobaccoadvertising_pos_30days_storevisit_frequency] = '2' or [tobaccoadvertising_pos_30days_storevisit_frequency] = '3' or [tobaccoadvertising_pos_30days_storevisit_frequency] = '4' or [tobaccoadvertising_pos_30days_storevisit_frequency] = '5..TRUNCATED</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Rarely</meaningText>
+          <description>Rarely</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 30 days, when you visited convenience stores, small markets, or liquor stores, how often did you see ads for tobacco products? (tobaccoadvertising_pos_30days_storevisit_seeadstobacco)</questionText>
+        <instruction>
+         <text>[tobaccoadvertising_pos_30days_storevisit_frequency] = '2' or [tobaccoadvertising_pos_30days_storevisit_frequency] = '3' or [tobaccoadvertising_pos_30days_storevisit_frequency] = '4' or [tobaccoadvertising_pos_30days_storevisit_frequency] = '5..TRUNCATED</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Rarely</meaningText>
+          <description>Rarely</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>The next questions are about things you may have seen inside or outside shops or stores where people can buy tobacco products. In the past 30 days, have you seen cigarette or other tobacco packages being displayed, including on  shelves or on the counter? ASK: All respondents (tobaccoadvertising_pos_30days_tobaccopackages_displayed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Since you quit using tobacco, has there been a time when seeing a tobacco product display or other signs that tobacco is sold there, has given you an urge to buy tobacco? ASK: Former tobacco users who are not experimental current users of tobacco (tobaccoadvertising_pos_sincequitting_seeproducts_urgetobuy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740501</protocolID>
+     <longName>Self-reported Exposure to Tobacco Advertising at Point of Sale</longName>
+     <context>PhenX</context>
+     <shortName>PX740501</shortName>
+     <preferredDefinition>This protocol uses a combination of questions from the Wave 1 Adult and Wave 2 Youth Population Assessment of Tobacco and Health (PATH) Survey instruments. Collectively, the questions are used to measure consumer exposure to tobacco-product advertisements, which have been proven to increase the appeal of and demand for tobacco products.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:48</dateCreated>
+    <longName>PhenX PX740601 - Selfreported Exposure To Tobacco Product Advertisements</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol uses a combination of questions from the 2011 International Tobacco Control (ITC) 4-Country Survey and the Population Assessment of Tobacco and Health (PATH) Study instruments. Collectively, the questions are used to assess tobacco product advertising and marketing exposure, in adult and youth populations, through traditional channels, such as magazines, television, and radio.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>Self-reported Exposure to Tobacco Product Advertisements</longName>
+      <preferredDefinition>Self-reported Exposure to Tobacco Product Advertisements</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Now I want to ask you about tobacco advertising. In the last 6 months, have you noticed cigarettes or tobacco products being advertised on posters or billboards? (tobaccoexposure_advertisements_posters_billboards)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>8</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Now I want to ask you about tobacco advertising. In the last 6 months, have you noticed cigarettes or tobacco products being advertised in newspapers or magazines? (tobaccoexposure_advertisements_newspapers_magazines)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>8</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Now I want to ask you about tobacco advertising. In the last 6 months, have you noticed cigarettes or tobacco products being advertised on radio? (tobaccoexposure_advertisements_radio)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>8</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>The following questions ask about tobacco advertising that you may have seen. (info_740601)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>What is the brand of your favorite tobacco advertisement? (tobaccoexposure_advertisements_brand_advertisement)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Brand is not listed</meaningText>
+          <description>Brand is not listed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>I do not have a favorite advertisement</meaningText>
+          <description>I do not have a favorite advertisement</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>DISPLAY 20 RANDOMLY SELECTED TOBACCO ADS HERE, ONE AT A TIME AND ASK THE QUESTIONS FOR EVERY AD (disp_ads_740601)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>1</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 1</longName>
+      <preferredDefinition>ADVERTISEMENT 1</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_2)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_1] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>2</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 2</longName>
+      <preferredDefinition>ADVERTISEMENT 2</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you. (tobaccoexposure_advertisements_12months_likethisad_1)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_2] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>3</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 3</longName>
+      <preferredDefinition>ADVERTISEMENT 3</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_3)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_3] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>4</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 4</longName>
+      <preferredDefinition>ADVERTISEMENT 4</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study (tobaccoexposure_advertisements_12months_seenthisad_4)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_4)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_4] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>5</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 5</longName>
+      <preferredDefinition>ADVERTISEMENT 5</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_5)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_5)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_5] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>6</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 6</longName>
+      <preferredDefinition>ADVERTISEMENT 6</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_6)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_6)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_6] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>7</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 7</longName>
+      <preferredDefinition>ADVERTISEMENT 7</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study (tobaccoexposure_advertisements_12months_seenthisad_7)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_7)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_7] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>8</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 8</longName>
+      <preferredDefinition>ADVERTISEMENT 8</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_8)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_8)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_8] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>9</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 9</longName>
+      <preferredDefinition>ADVERTISEMENT 9</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_9)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_9)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_9] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>10</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 10</longName>
+      <preferredDefinition>ADVERTISEMENT 10</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_10)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_10)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_10] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>11</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 11</longName>
+      <preferredDefinition>ADVERTISEMENT 11</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study (tobaccoexposure_advertisements_12months_seenthisad_11)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_11)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_11] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>12</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 12</longName>
+      <preferredDefinition>ADVERTISEMENT 12</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_12)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_12)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_12] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>13</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 13</longName>
+      <preferredDefinition>ADVERTISEMENT 13</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_13)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_13)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_13] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>14</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 14</longName>
+      <preferredDefinition>ADVERTISEMENT 14</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_14)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_14)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_14] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>15</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 15</longName>
+      <preferredDefinition>ADVERTISEMENT 15</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study?    (ADVERTISEMENT 15) (tobaccoexposure_advertisements_12months_seenthisad_15)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_15)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_15] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>16</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 16</longName>
+      <preferredDefinition>ADVERTISEMENT 16</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_16)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_16)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_16] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>17</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 17</longName>
+      <preferredDefinition>ADVERTISEMENT 17</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_17)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_17)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_17] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>18</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 18</longName>
+      <preferredDefinition>ADVERTISEMENT 18</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_18)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_18)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_18] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>19</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 19</longName>
+      <preferredDefinition>ADVERTISEMENT 19</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_19)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_19)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_19] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>20</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>ADVERTISEMENT 20</longName>
+      <preferredDefinition>ADVERTISEMENT 20</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>In the past 12 months, have you seen this advertisement before this study? (tobaccoexposure_advertisements_12months_seenthisad_20)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>No (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Don't know (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (GO TO NEXT AD; IF LAST AD, END)</meaningText>
+          <description>Refused (GO TO NEXT AD; IF LAST AD, END)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you like this advertisement? Do you... (tobaccoexposure_advertisements_12months_likethisad_20)</questionText>
+        <instruction>
+         <text>[tobaccoexposure_advertisements_12months_seenthisad_20] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Like this ad</meaningText>
+          <description>Like this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Have no opinion about this ad</meaningText>
+          <description>Have no opinion about this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Dislike this ad</meaningText>
+          <description>Dislike this ad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740601</protocolID>
+     <longName>Self-reported Exposure to Tobacco Product Advertisements</longName>
+     <context>PhenX</context>
+     <shortName>PX740601</shortName>
+     <preferredDefinition>This protocol uses a combination of questions from the 2011 International Tobacco Control (ITC) 4-Country Survey and the Population Assessment of Tobacco and Health (PATH) Study instruments. Collectively, the questions are used to assess tobacco product advertising and marketing exposure, in adult and youth populations, through traditional channels, such as magazines, television, and radio.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:48</dateCreated>
+    <longName>PhenX PX740701 - Selfreported Exposure To Tobacco Product Sponsorships</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>These questions from the International Tobacco Control (ITC) 4-Country Survey are directly related to exposure to tobacco product sponsorships.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>Self-reported Exposure to Tobacco Product Sponsorships</longName>
+      <preferredDefinition>Self-reported Exposure to Tobacco Product Sponsorships</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Thinking again about the last 6 months have you seen or heard about any sport or sporting event that is sponsored by or connected with BRANDS of cigarettes? (tobaccoexposure_6months_sporteventsponsored_cigarettebrands)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>8</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Thinking again about the last 6 months have you seen or heard about any Sport or sporting event that is sponsored by or connected with tobacco COMPANIES? (tobaccoexposure_6months_sporteventsponsored_cigarettecompanies)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>8</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Thinking again about the last 6 months have you seen or heard about any Music, theater, art, or fashion events that are sponsored by or connected with BRANDS of cigarettes? (tobaccoexposure_6months_otherevents_cigarettebrands)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>8</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740701</protocolID>
+     <longName>Self-reported Exposure to Tobacco Product Sponsorships</longName>
+     <context>PhenX</context>
+     <shortName>PX740701</shortName>
+     <preferredDefinition>These questions from the International Tobacco Control (ITC) 4-Country Survey are directly related to exposure to tobacco product sponsorships.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:48</dateCreated>
+    <longName>PhenX PX740801 - Selfreported Tobacco Product Price Paid Cigarettes</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the price paid for cigarettes.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>ASK Current users and 12month former users . For current smokers, display "buy" and "do" For 12month former smokers, display "bought and "did."</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>Self-reported Tobacco Product Price Paid - Cigarettes</longName>
+      <preferredDefinition>Self-reported Tobacco Product Price Paid - Cigarettes</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>When you [buy/bought] cigarettes for yourself, [do/did] you usually buy manufactured cigarettes or a pouch of tobacco to rollyourown cigarettes? Choose all that apply.ASK: Current users and former users 12 month (tobaccoprice_cigarettes_usuallybuy_manufacturedrollown)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Manufactured cigarettes</meaningText>
+          <description>Manufactured cigarettes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Roll-your-own tobacco (End Questions)</meaningText>
+          <description>Roll-your-own tobacco (End Questions)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Do you usually buy cigarettes by the carton, pack or as single cigarettes? (tobaccoproductprice_cigarettes_usuallybuy_cartonpacksingle)</questionText>
+        <instruction>
+         <text>[tobaccoprice_cigarettes_usuallybuy_manufacturedrollown(1)] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Carton</meaningText>
+          <description>Carton</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Pack</meaningText>
+          <description>Pack</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Single Cigarettes</meaningText>
+          <description>Single Cigarettes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How many packs of cigarettes are in the carton you usually buy? (tobaccoproductprice_cigarettes_howmany_packscarton)</questionText>
+        <instruction>
+         <text>[tobaccoproductprice_cigarettes_usuallybuy_cartonpacksingle] = '1' and [tobaccoprice_cigarettes_usuallybuy_manufacturedrollown(1)] = '1'; UOM=dollars</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How many packs of cigarettes are in the carton you usually buy? (tobaccoproductprice_cigarettes_howmany_packscarton_encoded)</questionText>
+        <instruction>
+         <text>[tobaccoproductprice_cigarettes_usuallybuy_cartonpacksingle] = '1' and [tobaccoprice_cigarettes_usuallybuy_manufacturedrollown(1)] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you usually pay for a carton of cigarettes? (tobaccoproductprice_cigarettes_howmuch_carton)</questionText>
+        <instruction>
+         <text>[tobaccoproductprice_cigarettes_usuallybuy_cartonpacksingle] = '1' and [tobaccoprice_cigarettes_usuallybuy_manufacturedrollown(1)] = '1'; UOM=dollars</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you usually pay for a carton of cigarettes? (tobaccoproductprice_cigarettes_howmuch_carton_encoded)</questionText>
+        <instruction>
+         <text>[tobaccoproductprice_cigarettes_usuallybuy_cartonpacksingle] = '1' and [tobaccoprice_cigarettes_usuallybuy_manufacturedrollown(1)] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you usually pay for a pack of cigarettes? (tobaccoproductprice_cigarettes_howmuch_pack)</questionText>
+        <instruction>
+         <text>[tobaccoproductprice_cigarettes_usuallybuy_cartonpacksingle] = '2' and [tobaccoprice_cigarettes_usuallybuy_manufacturedrollown(1)] = '1'; UOM=dollars</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you usually pay for a pack of cigarettes? (tobaccoproductprice_cigarettes_howmuch_pack_encoded)</questionText>
+        <instruction>
+         <text>[tobaccoproductprice_cigarettes_usuallybuy_cartonpacksingle] = '2' and [tobaccoprice_cigarettes_usuallybuy_manufacturedrollown(1)] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you usually pay for a single cigarette? (tobaccoproductprice_cigarettes_howmuch_single)</questionText>
+        <instruction>
+         <text>[tobaccoproductprice_cigarettes_usuallybuy_cartonpacksingle] = '3' and [tobaccoprice_cigarettes_usuallybuy_manufacturedrollown(1)] = '1'; UOM=dollars</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you usually pay for a single cigarette? (tobaccoproductprice_cigarettes_howmuch_single_encoded)</questionText>
+        <instruction>
+         <text>[tobaccoproductprice_cigarettes_usuallybuy_cartonpacksingle] = '3' and [tobaccoprice_cigarettes_usuallybuy_manufacturedrollown(1)] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740801</protocolID>
+     <longName>Self-reported Tobacco Product Price Paid - Cigarettes</longName>
+     <context>PhenX</context>
+     <shortName>PX740801</shortName>
+     <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the price paid for cigarettes.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:48</dateCreated>
+    <longName>PhenX PX740802 - Selfreported Tobacco Product Price Paid Cigars</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the price paid for cigars.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>ASK Current users and bluntonly cigar smokers. If BLUNT_ONLY_GRILLO = 1, display "cigarillos for blunts" and "cigarillos" in question and option 2. If BLUNT_ONLY_GFC = 1, display "filtered cigars for blunts" and "filtered cigars" in question a..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>Self-reported Tobacco Product Price Paid - Cigars</longName>
+      <preferredDefinition>Self-reported Tobacco Product Price Paid - Cigars</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>1.Do you usually buy [[CIGARFILL]s/cigarillos for blunts/filtered cigars for blunts] by the box or as single [[CIGARFILL]s/cigarillos/filtered cigars]? (tobaccoprice_cigar_usuallybuy_boxsingle)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Box (GO TO Q2)</meaningText>
+          <description>Box (GO TO Q2)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Single [[CIGARFILL]s/cigarillos/filtered cigars] (GO TO Q4)</meaningText>
+          <description>Single [[CIGARFILL]s/cigarillos/filtered cigars] (GO TO Q4)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't know [END QUESTIONS]</meaningText>
+          <description>Don't know [END QUESTIONS]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Refused [END QUESTIONS]</meaningText>
+          <description>Refused [END QUESTIONS]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>2. How many [[CIGARFILL]s/cigarillos/filtered cigars] come in the box that you usually buy [for blunts]? (tobaccoprice_cigar_howmany_cigars_box)</questionText>
+        <instruction>
+         <text>UOM=dollars</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>2a.How many [[CIGARFILL]s/cigarillos/filtered cigars] come in the box that you usually buy [for blunts]? (tobaccoprice_cigar_howmany_cigars_boxencoded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>3.How much do you usually pay for a box of [[CIGARFILL]s/cigarillos for blunts/filtered cigars for blunts]? (tobaccoprice_cigar_how_much_box)</questionText>
+        <instruction>
+         <text>UOM=dollars</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>3a.How much do you usually pay for a box of [[CIGARFILL]s/cigarillos for blunts/filtered cigars for blunts]? (tobaccoprice_cigar_how_much_boxencoded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>4.How much do you usually pay for a single [[CIGARFILL]/cigarillo for a blunt/filtered cigar for a blunt]? (tobaccoprice_cigar_how_much_single)</questionText>
+        <instruction>
+         <text>UOM=dollars</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>4a. How much do you usually pay for a single [[CIGARFILL]/cigarillo for a blunt/filtered cigar for a blunt]? (tobaccoprice_cigar_how_much_singleencoded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740802</protocolID>
+     <longName>Self-reported Tobacco Product Price Paid - Cigars</longName>
+     <context>PhenX</context>
+     <shortName>PX740802</shortName>
+     <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the price paid for cigars.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:48</dateCreated>
+    <longName>PhenX PX740803 - Selfreported Tobacco Product Price Paid Ecigarettes</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the price paid for e-cigarettes.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>Self-reported Tobacco Product Price Paid - E-Cigarettes</longName>
+      <preferredDefinition>Self-reported Tobacco Product Price Paid - E-Cigarettes</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Do you own an ecigarette? (tobaccoprice_ecigarette_own)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>About how much did you pay for your ecigarette? Do not include the cost of additional cartridges or accessories unless they were included in a starter kit. (tobaccoprice_ecigarette_howmuchpaid)</questionText>
+        <instruction>
+         <text>[tobaccoprice_ecigarette_own] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Less than $10</meaningText>
+          <description>Less than $10</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>$10 to $20</meaningText>
+          <description>$10 to $20</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>$21 to $100</meaningText>
+          <description>$21 to $100</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>More than $100</meaningText>
+          <description>More than $100</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740803</protocolID>
+     <longName>Self-reported Tobacco Product Price Paid - E-Cigarettes</longName>
+     <context>PhenX</context>
+     <shortName>PX740803</shortName>
+     <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the price paid for e-cigarettes.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:48</dateCreated>
+    <longName>PhenX PX740804 - Selfreported Tobacco Product Price Paid Smokeless Tob</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the price paid for smokeless tobacco such as snus pouches, loose snus, moist snuff, dip, spit, and chewing tobacco. Common brands include Redman®, Levi Garrett®, Beechnut®, Skoal®, Grizzly®, Nordic Ice®, and Copenhagen®.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>Self-reported Tobacco Product Price Paid - Smokeless Tobacco</longName>
+      <preferredDefinition>Self-reported Tobacco Product Price Paid - Smokeless Tobacco</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you usually pay for a container of [SMKLSSFILL] = smokeless tobacco snus? (tobaccoprice_smokeless_tobacco_howmuchpaid)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=dollars</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How much do you usually pay for a container of [SMKLSSFILL] = smokeless tobacco snus? (tobaccoprice_smokeless_tobacco_howmuchpaid_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How many pouches are in the container of snus that you usually buy? (tobaccoprice_smokeless_tobacco_howmanypouch)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=dollars</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How many pouches are in the container of snus that you usually buy? (tobaccoprice_smokeless_tobacco_howmanypouch_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740804</protocolID>
+     <longName>Self-reported Tobacco Product Price Paid - Smokeless Tobacco</longName>
+     <context>PhenX</context>
+     <shortName>PX740804</shortName>
+     <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the price paid for smokeless tobacco such as snus pouches, loose snus, moist snuff, dip, spit, and chewing tobacco. Common brands include Redman&lt;sup&gt;®&lt;/sup&gt;, Levi Garrett&lt;sup&gt;®&lt;/sup&gt;, Beechnut&lt;sup&gt;®&lt;/sup&gt;, Skoal&lt;sup&gt;®&lt;/sup&gt;, Grizzly®, Nordic Ice&lt;sup&gt;®&lt;/sup&gt;, and Copenhagen&lt;sup&gt;®&lt;/sup&gt;.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:48</dateCreated>
+    <longName>PhenX PX740901 - Selfreported Tobacco Product Purchase Location Cigare</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the purchase location of cigarettes.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>ASK Current users and 12month former users.Display instruction for question and response option 4 fills: for current smokers, display "do." For 12month former smokers, display "did." For current smokers or 12month former smokers who smoke manu..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>Self-reported Tobacco Product Purchase Location - Cigarettes</longName>
+      <preferredDefinition>Self-reported Tobacco Product Purchase Location - Cigarettes</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How [do/did] you usually buy [cigarettes/a pouch of rollyourown cigarette tobacco] for yourself? Is it... (selfreported_methodof_purchase_cigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In person</meaningText>
+          <description>In person</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>From the internet</meaningText>
+          <description>From the internet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>By telephone</meaningText>
+          <description>By telephone</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I [do/did] not buy my own [cigarettes/cigarette tobacco]</meaningText>
+          <description>I [do/did] not buy my own [cigarettes/cigarette tobacco]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>[Do/Did] you usually buy [cigarettes/rollyourown cigarette tobacco]...? (selfreported_locationof_purchase_cigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In your own state</meaningText>
+          <description>In your own state</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>In another state</meaningText>
+          <description>In another state</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Outside the US</meaningText>
+          <description>Outside the US</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Where [do/did] you buy your [cigarettes/rollyourown cigarette tobacco] most of the time? (selfreported_locationof_vendor_cigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>A convenience store or gas station</meaningText>
+          <description>A convenience store or gas station</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>A supermarket, grocery store, or drug store</meaningText>
+          <description>A supermarket, grocery store, or drug store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A warehouse club, such as Sam's or Costco</meaningText>
+          <description>A warehouse club, such as Sam's or Costco</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>A smoke shop, tobacco specialty store, or tobacco outlet store</meaningText>
+          <description>A smoke shop, tobacco specialty store, or tobacco outlet store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A duty-free shop or military commisionary</meaningText>
+          <description>A duty-free shop or military commisionary</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>A bar, pub, restaurant, or casino</meaningText>
+          <description>A bar, pub, restaurant, or casino</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>A friend or relative</meaningText>
+          <description>A friend or relative</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>A swap meet or flea market</meaningText>
+          <description>A swap meet or flea market</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>A store on an Indian reservation</meaningText>
+          <description>A store on an Indian reservation</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>A liquor store</meaningText>
+          <description>A liquor store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Or somewhere else; SPECIFY below</meaningText>
+          <description>Or somewhere else; SPECIFY below</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>12</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>13</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Where [do/did] you buy your [cigarettes/rollyourown cigarette tobacco] most of the time? (selfreported_locationof_vendor_cigarettes_othervendor)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740901</protocolID>
+     <longName>Self-reported Tobacco Product Purchase Location - Cigarettes</longName>
+     <context>PhenX</context>
+     <shortName>PX740901</shortName>
+     <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the purchase location of cigarettes.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:48</dateCreated>
+    <longName>PhenX PX740902 - Selfreported Tobacco Product Purchase Location Cigars</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the purchase location of cigars.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:48</dateCreated>
+      <longName>Self-reported Tobacco Product Purchase Location - Cigars</longName>
+      <preferredDefinition>Self-reported Tobacco Product Purchase Location - Cigars</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>How [do/did] you usually buy [[CIGARFILL]s/ cigarillos/ filtered cigars] for yourself [when you smoke blunts]? Is it... (selfreported_methodof_purchase_cigarillos)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In person such as at a store or cigar bar</meaningText>
+          <description>In person such as at a store or cigar bar</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>From the internet</meaningText>
+          <description>From the internet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>By telephone</meaningText>
+          <description>By telephone</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I (do/did) not buy my own [CIGARFILL]s</meaningText>
+          <description>I (do/did) not buy my own [CIGARFILL]s</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>[Do/Did] you usually buy [[CIGARFILL]s/cigarillos for blunts/filtered cigars for blunts]...? (selfreported_locationof_purchase_cigarillos)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In your own state</meaningText>
+          <description>In your own state</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>In another state</meaningText>
+          <description>In another state</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Outside the US</meaningText>
+          <description>Outside the US</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Where [do/did] you buy your [[CIGARFILL]s/cigarillos for blunts/filtered cigars for blunts] most of the time? (selfreported_locationof_vendor_cigarillos)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>A convenience store or gas station</meaningText>
+          <description>A convenience store or gas station</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>A supermarket, grocery store, or drug store</meaningText>
+          <description>A supermarket, grocery store, or drug store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A warehouse club, such as Sam's or Costco</meaningText>
+          <description>A warehouse club, such as Sam's or Costco</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>A smoke shop, tobacco specialty store, or tobacco outlet store</meaningText>
+          <description>A smoke shop, tobacco specialty store, or tobacco outlet store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A duty-free shop or military commisionary</meaningText>
+          <description>A duty-free shop or military commisionary</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>A bar, pub, restaurant, or casino</meaningText>
+          <description>A bar, pub, restaurant, or casino</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>A friend or relative</meaningText>
+          <description>A friend or relative</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>A swap meet or flea market</meaningText>
+          <description>A swap meet or flea market</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>A store on an Indian reservation</meaningText>
+          <description>A store on an Indian reservation</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>A liquor store</meaningText>
+          <description>A liquor store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Or somewhere else; SPECIFY below</meaningText>
+          <description>Or somewhere else; SPECIFY below</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>12</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>13</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:41:48</dateCreated>
+        <questionText>Where [do/did] you buy your [[CIGARFILL]s/cigarillos for blunts/filtered cigars for blunts] most of the time? (selfreported_locationof_vendor_cigarillos_othervendor)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740902</protocolID>
+     <longName>Self-reported Tobacco Product Purchase Location - Cigars</longName>
+     <context>PhenX</context>
+     <shortName>PX740902</shortName>
+     <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the purchase location of cigars.</preferredDefinition>
+    </protocol>
+   </form>
+   </forms>

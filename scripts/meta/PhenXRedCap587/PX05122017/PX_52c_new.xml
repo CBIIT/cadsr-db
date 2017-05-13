@@ -1,0 +1,3120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 52c</collectionName>
+  <collectionDescription>Load PhenX PX741101,PX741301   
+  </collectionDescription>   
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:42:24</dateCreated>
+    <longName>PhenX PX741401 - Use Of Tobacco Products</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument and the PATH Wave 1 Individual Screener. These specific questions are used to measure a respondent's use and regularity of use of the following tobacco products: cigarettes, e-cigarettes, cigars, pipe tobacco, hookah and shisha tobacco, smokeless tobacco, and dissolvable tobacco. An analysis of the results allow respondents to be categorized as: ever user, current user, everyday user, some day user, 30-day user, experimental current user, experimental former user, former user, former user 12 month, former user 12 month plus.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Cigarettes</longName>
+      <preferredDefinition>Cigarettes</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>1. Have you ever smoked a cigarette, even one or two puffs? ASK: All respondents (useof_tobacco_history)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q6]</meaningText>
+          <description>DON'T KNOW [GO TO Q6]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q6]</meaningText>
+          <description>REFUSED [GO TO Q6]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>2. Do you now smoke cigarettes (useof_tobacco_current_use)</questionText>
+        <instruction>
+         <text>[useof_tobacco_history]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Some days</meaningText>
+          <description>Some days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Not at all [GO TO Q3]</meaningText>
+          <description>Not at all [GO TO Q3]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q3]</meaningText>
+          <description>DON'T KNOW [GO TO Q3]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q3]</meaningText>
+          <description>REFUSED [GO TO Q3]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>3. In the past 30 days, have you smoked a cigarette, even one or two puffs? (useof_tobacco_history_thirtydays)</questionText>
+        <instruction>
+         <text>[useof_tobacco_current_use]=3</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>4. How many cigarettes have you smoked in your entire life? A pack usually has 20 cigarettes in it. (useof_tobacco_total_cigarettes)</questionText>
+        <instruction>
+         <text>[useof_tobacco_history]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1 or more puffs but never a whole cigarette</meaningText>
+          <description>1 or more puffs but never a whole cigarette</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1 to 10 cigarettes about 1/2 pack total</meaningText>
+          <description>1 to 10 cigarettes about 1/2 pack total</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>11 to 20 cigarettes about 1/2 to 1 pack</meaningText>
+          <description>11 to 20 cigarettes about 1/2 to 1 pack</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>21 to 50 cigarettes more than 1 pack but less than 3 packs</meaningText>
+          <description>21 to 50 cigarettes more than 1 pack but less than 3 packs</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>51 to 99 more than 2.5 packs but less than 5 packs</meaningText>
+          <description>51 to 99 more than 2.5 packs but less than 5 packs</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>100 or more cigarettes 5 packs or more</meaningText>
+          <description>100 or more cigarettes 5 packs or more</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>5. About how many DAYS has it been since you completely quit smoking cigarettes? (useof_tobacco_quitlength_days)</questionText>
+        <instruction>
+         <text>datatype=number;([useof_tobacco_history]=1 AND [useof_tobacco_total_cigarettes]=5 AND [useof_tobacco_current_use]=3) OR ([useof_tobacco_history]=1 AND ([useof_tobacco_total_cigarettes]=1 OR [useof_tobacco_total_cigarettes]=2 OR [useof_tobacco_total_cigarettes..TRUNCATED</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>1</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Electronic Cigarettes (E-Cigarettes)</longName>
+      <preferredDefinition>Electronic Cigarettes (E-Cigarettes)</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>The next questions are about electronic cigarettes, often called ecigarettes. Ecigarettes look like regular cigarettes, but are batterypowered and produce vapor instead of smoke. There are many types of ecigarettes. Some common brands include NJOY®, Blu™, and Smoking Everywhere. (inst01_741401)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>SHOW GENERIC IMAGE OF ECIGARETTES (ecigarett)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>About how many MONTHS has it been since you completely quit smoking cigarettes? (useof_tobacco_quitlength_months)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>About how many YEARS has it been since you completely quit smoking cigarettes? (useof_tobacco_quitlength_years)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>About how long has it been since you completely quit smoking cigarettes? (useof_tobacco_quitlength_coded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Electronic Cigarettes (ECigarettes).The next questions are about electronic cigarettes, often called ecigarettes. Ecigarettes look like regular cigarettes, but are batterypowered and produce vapor instead of smoke. There are many types of ecigarettes. Some common brands include NJOY®, Blu™, and Smoking Everywhere. (ecig_741401)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>6. Have you ever seen or heard of an electronic cigarette or ecigarette before this study? (useof_tobacco_ecigarette_familiarity)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [GO TO Q13]</meaningText>
+          <description>No [GO TO Q13]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q13]</meaningText>
+          <description>DON'T KNOW [GO TO Q13]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q13]</meaningText>
+          <description>REFUSED [GO TO Q13]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>7. Have you ever used an ecigarette, such as NJOY®, Blu™, or Smoking Everywhere, even one or two times? (useof_tobacco_ecigarette_history)</questionText>
+        <instruction>
+         <text>[useof_tobacco_ecigarette_familiarity]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [GO TO Q13]</meaningText>
+          <description>No [GO TO Q13]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q13]</meaningText>
+          <description>DON'T KNOW [GO TO Q13]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q13]</meaningText>
+          <description>REFUSED [GO TO Q13]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>8. Do you now use ecigarettes... (useof_tobacco_ecigarette_use)</questionText>
+        <instruction>
+         <text>[useof_tobacco_ecigarette_history]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Some days</meaningText>
+          <description>Some days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>9. In the past 30 days, have you used an ecigarette, even one or two times? (useof_tobacco_ecigarette_thirtydays)</questionText>
+        <instruction>
+         <text>[useof_tobacco_ecigarette_familiarity]=1 AND [useof_tobacco_ecigarette_use]=3</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>10. How many disposable ecigarettes or ecigarette cartridges have you used in your entire life? (useof_tobacco_ecigarette_total)</questionText>
+        <instruction>
+         <text>[useof_tobacco_ecigarette_history]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1 or more puffs but never a whole one</meaningText>
+          <description>1 or more puffs but never a whole one</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1 to 10</meaningText>
+          <description>1 to 10</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>11 to 20</meaningText>
+          <description>11 to 20</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>21 to 50</meaningText>
+          <description>21 to 50</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>51 to 99</meaningText>
+          <description>51 to 99</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>100 or more</meaningText>
+          <description>100 or more</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>11. About how many DAYS has it been since you last took a puff from an ecigarette? If it was earlier today, enter 1 day (useof_tobacco_ecigarette_quitlengthdays)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_ecigarette_history]=1 AND [useof_tobacco_ecigarette_use]&lt;&gt;1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>11. About how many MONTHS has it been since you last took a puff from an ecigarette? (useof_tobacco_ecigare_month)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_ecigarette_history]=1 AND [useof_tobacco_ecigarette_use]&lt;&gt;1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>11. About how many YEARS has it been since you last took a puff from an ecigarette? (useof_tobacco_ecigarette_quitlengthyears)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_ecigarette_history]=1 AND [useof_tobacco_ecigarette_use]&lt;&gt;1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>11. About how long has it been since you last took a puff from an ecigarette? (useof_tobacco_ecigarette_quitlength_coded)</questionText>
+        <instruction>
+         <text>[useof_tobacco_ecigarette_history]=1 AND [useof_tobacco_ecigarette_use]&lt;&gt;1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>12. Have you completely quit using ecigarettes? (useof_tobacco_ecigarette_quit)</questionText>
+        <instruction>
+         <text>[useof_tobacco_ecigarette_history]=1 AND [useof_tobacco_ecigarette_use]=3</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>2</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Cigars</longName>
+      <preferredDefinition>Cigars</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>The next questions are about traditional cigars, cigarillos, and filtered cigars. These products go by lots of different names, so please use these descriptions and photos to understand what they are. Traditional cigars contain tightly rolled tobacco that is wrapped in a tobacco leaf. Some common brands of cigars include Macanudo®, Romeo y Julieta®, and Arturo Fuente,® but there are many others. Cigarillos and filtered cigars are smaller than traditional cigars. They are usually brown. Some are the same size as cigarettes, and some come with plastic or wood tips. Some common brands are Black and Mild®, Swisher Sweets®, Dutch Masters®, Phillies Blunts®, Prime Time®, and Winchester®. SHOW GENERIC IMAGE OF TRADITIONAL CIGARS, CIGARILLOS, AND FILTERED CIGARS (inst02_741401)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>cigars (cigars)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>13. Have you ever seen or heard of a cigar, cigarillo, or filtered cigar before this study?  ASK: All respondents (useof_tobacco_cigar_familiarity)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [GO TO Q26]</meaningText>
+          <description>No [GO TO Q26]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q26]</meaningText>
+          <description>DON'T KNOW [GO TO Q26]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q26]</meaningText>
+          <description>REFUSED [GO TO Q26]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>SHOW GENERIC IMAGE OF TRADITIONAL CIGARS, CIGARILLOS, AND FILTERED CIGARS (show_trad_cigarrs)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>14. Which type of cigar have you heard of before this study? (useof_tobacco_cigartype_familiarity)</questionText>
+        <instruction>
+         <text>[useof_tobacco_cigar_familiarity]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Traditional cigars like Macanudo®, Romeo y Julieta®, Arturo Fuente®, or others [GO TO Q15]</meaningText>
+          <description>Traditional cigars like Macanudo®, Romeo y Julieta®, Arturo Fuente®, or others [GO TO Q15]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Cigarillos or filtered cigars like Black &amp; Mild®, Swisher Sweets®, Dutch Masters®, Phillies Blunts®, Prime Time®, Winchester®, or others [GO TO Q15]</meaningText>
+          <description>Cigarillos or filtered cigars like Black &amp; Mild®, Swisher Sweets®, Dutch Masters®, Phillies Blunts®, Prime Time®, Winchester®, or others [GO TO Q15]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q26]</meaningText>
+          <description>DON'T KNOW [GO TO Q26]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q26]</meaningText>
+          <description>REFUSED [GO TO Q26]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>cigars traditional (cigars_traditional)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>15. Have you ever smoked a traditional cigar, even one or two puffs? (useof_tobacco_cigar_history)</questionText>
+        <instruction>
+         <text>[useof_tobacco_cigar_familiarity]=1 AND ([useof_tobacco_cigartype_familiarity]=1 OR [useof_tobacco_cigartype_familiarity]=2)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>SHOW GENERIC IMAGE OF TRADITIONAL CIGARS (cigars_generic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>16. Have you ever smoked a cigarillo or filtered cigar, even one or two puffs? (useof_tobacco_cigarillo_history)</questionText>
+        <instruction>
+         <text>[useof_tobacco_cigar_familiarity]=1 AND ([useof_tobacco_cigartype_familiarity]=1 OR [useof_tobacco_cigartype_familiarity]=2)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>17. Sometimes people take tobacco out of a cigar, cigarillo or filtered cigar and replace it with marijuana. This is sometimes called a "blunt." Have you ever smoked part or all of a cigar, cigarillo or filtered cigar with marijuana in it? (useof_tobacco_cigarpaper_marijuana)</questionText>
+        <instruction>
+         <text>[useof_tobacco_cigar_familiarity]=1 AND ([useof_tobacco_cigartype_familiarity]=1 OR [useof_tobacco_cigartype_familiarity]=2) AND ([useof_tobacco_cigarillo_history]=1 OR [useof_tobacco_cigarillo_history]=2)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [GO TO Q20]</meaningText>
+          <description>No [GO TO Q20]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q20]</meaningText>
+          <description>DON'T KNOW [GO TO Q20]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q20]</meaningText>
+          <description>REFUSED [GO TO Q20]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>18. In the past 12 months, have you smoked part or all of a cigar, cigarillo or filtered cigar with marijuana in it? (useof_tobacco_cigarpaper_marijuanayear)</questionText>
+        <instruction>
+         <text>[useof_tobacco_cigarpaper_marijuana]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [GO TO Q20]</meaningText>
+          <description>No [GO TO Q20]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q20]</meaningText>
+          <description>DON'T KNOW [GO TO Q20]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q20]</meaningText>
+          <description>REFUSED [GO TO Q20]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>19. In the past 12 months, when you smoked a cigar, cigarillo or filtered cigar, how often has tobacco been replaced with any marijuana? (useof_tobacco_cigarpaper_replacedyear)</questionText>
+        <instruction>
+         <text>[useof_tobacco_cigarpaper_marijuanayear]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Every time</meaningText>
+          <description>Every time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Most of the time</meaningText>
+          <description>Most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Rarely</meaningText>
+          <description>Rarely</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>cigars tip filter (cigars_tip_filter)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>20. Which of the following kinds of cigarillos or filtered cigars have you smoked [as blunts]? Choose all that apply. The kind... (useof_tobacco_cigarillo_kinds)</questionText>
+        <instruction>
+         <text>[useof_tobacco_cigar_familiarity]=1 AND ([useof_tobacco_cigartype_familiarity]=1 OR [useof_tobacco_cigartype_familiarity]=2)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>With a plastic tip or wooden tip</meaningText>
+          <description>With a plastic tip or wooden tip</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>With a filter like a cigarette filter</meaningText>
+          <description>With a filter like a cigarette filter</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Without a tip or filter</meaningText>
+          <description>Without a tip or filter</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>21. Do you now smoke [[CIGARFILL]s/cigarillos as blunts/filtered cigars as blunts]... (useof_tobacco_cigarillo_blunts)</questionText>
+        <instruction>
+         <text>[useof_tobacco_cigar_familiarity]=1 AND ([useof_tobacco_cigartype_familiarity]=1 OR [useof_tobacco_cigartype_familiarity]=2)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Some days</meaningText>
+          <description>Some days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Not at all [GO TO Q22]</meaningText>
+          <description>Not at all [GO TO Q22]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q22]</meaningText>
+          <description>DON'T KNOW [GO TO Q22]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q22]</meaningText>
+          <description>REFUSED [GO TO Q22]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>22. In the past 30 days, have you smoked a [[CIGARFILL]/ cigarillos as a blunt/ filtered cigar as a blunt], even one or two puffs? (useof_tobacco_cigarillo_bluntsthirty)</questionText>
+        <instruction>
+         <text>[useof_tobacco_cigar_familiarity]=1 AND ([useof_tobacco_cigartype_familiarity]=1 OR [useof_tobacco_cigartype_familiarity]=2)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>23. How many [CIGARFILL]s have you smoked in your entire life? (useof_tobacco_cigar_total)</questionText>
+        <instruction>
+         <text>[useof_tobacco_cigar_familiarity]=1 AND ([useof_tobacco_cigartype_familiarity]=1 OR [useof_tobacco_cigartype_familiarity]=2)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1 or more puffs but never a whole one</meaningText>
+          <description>1 or more puffs but never a whole one</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1 to 10</meaningText>
+          <description>1 to 10</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>11 to 20</meaningText>
+          <description>11 to 20</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>21 to 50</meaningText>
+          <description>21 to 50</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>51 to 99</meaningText>
+          <description>51 to 99</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>100 or more</meaningText>
+          <description>100 or more</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>24. About how many DAYS has it been since you last smoked [CIGARFILL]s? If it was earlier today, enter 1 day (useof_tobacco_cigar_quitlengthdays)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_cigar_familiarity]=1 AND ([useof_tobacco_cigartype_familiarity]=1 OR [useof_tobacco_cigartype_familiarity]=2)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>24. About how many MONTHS has it been since you last smoked [CIGARFILL]s? (useof_tobacco_cigar_quitlengthmonths)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_cigar_familiarity]=1 AND ([useof_tobacco_cigartype_familiarity]=1 OR [useof_tobacco_cigartype_familiarity]=2)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>24. About how many YEARS has it been since you last smoked [CIGARFILL]s? (useof_tobacco_cigar_quitlengthyears)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_cigar_familiarity]=1 AND ([useof_tobacco_cigartype_familiarity]=1 OR [useof_tobacco_cigartype_familiarity]=2)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>24. About how long has it been since you last smoked [CIGARFILL]s? (useof_tobacco_cigar_quitlength_coded)</questionText>
+        <instruction>
+         <text>[useof_tobacco_cigar_familiarity]=1 AND ([useof_tobacco_cigartype_familiarity]=1 OR [useof_tobacco_cigartype_familiarity]=2)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>25. Have you completely quit smoking [CIGARFILL]s? (useof_tobacco_cigar_quit)</questionText>
+        <instruction>
+         <text>[useof_tobacco_cigar_familiarity]=1 AND ([useof_tobacco_cigartype_familiarity]=1 OR [useof_tobacco_cigartype_familiarity]=2)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>3</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Pipe Tobacco</longName>
+      <preferredDefinition>Pipe Tobacco</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>The next questions are about smoking tobacco in pipes. We first ask about smoking tobacco in a regular pipe. There are many different types of regular pipes. They all have a bowl that holds the tobacco and a stem. (descpipe_tob_1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Regular Pipe (pipe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>26. Have you ever seen or heard of a pipe before this study? (useof_tobacco_pipe_familiarity)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [GO TO Q33]</meaningText>
+          <description>No [GO TO Q33]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q33]</meaningText>
+          <description>DON'T KNOW [GO TO Q33]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q33]</meaningText>
+          <description>REFUSED [GO TO Q33]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>27. Have you ever smoked a pipe filled with tobacco, even one or two puffs? (useof_tobacco_pipe_history)</questionText>
+        <instruction>
+         <text>[useof_tobacco_pipe_familiarity]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [GO TO Q33]</meaningText>
+          <description>No [GO TO Q33]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q33]</meaningText>
+          <description>DON'T KNOW [GO TO Q33]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q33]</meaningText>
+          <description>REFUSED [GO TO Q33]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>28. Do you now smoke a pipe filled with tobacco... (useof_tobacco_pipe_currentuse)</questionText>
+        <instruction>
+         <text>[useof_tobacco_pipe_history]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Every day [GO TO Q30]</meaningText>
+          <description>Every day [GO TO Q30]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Some days [GO TO Q30]</meaningText>
+          <description>Some days [GO TO Q30]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Not at all [GO TO Q29]</meaningText>
+          <description>Not at all [GO TO Q29]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q29]</meaningText>
+          <description>DON'T KNOW [GO TO Q29]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q29]</meaningText>
+          <description>REFUSED [GO TO Q29]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>29. In the past 30 days, have you smoked a regular pipe filled with tobacco, even one or two puffs? (useof_tobacco_pipe_thirtydays)</questionText>
+        <instruction>
+         <text>[useof_tobacco_pipe_history]=1 AND [useof_tobacco_pipe_currentuse]=3</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>[SHOW IMAGES OF PIPES AND PIPE TOBACCO  BOTH LOOSE AND IN TINS] (pipe_and_tobacco)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>30. How many bowls filled with pipe tobacco have you smoked in your entire life? (useof_tobacco_pipe_total)</questionText>
+        <instruction>
+         <text>[useof_tobacco_pipe_history]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1 or more puffs but never a whole one</meaningText>
+          <description>1 or more puffs but never a whole one</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1 to 10</meaningText>
+          <description>1 to 10</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>11 to 20</meaningText>
+          <description>11 to 20</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>21 to 50</meaningText>
+          <description>21 to 50</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>51 to 99</meaningText>
+          <description>51 to 99</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>100 or more</meaningText>
+          <description>100 or more</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>31. When did you last smoke a pipe filled with tobacco? (useof_tobacco_pipe_lasttime)</questionText>
+        <instruction>
+         <text>[useof_tobacco_pipe_currentuse]&lt;&gt;3</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In the past hour</meaningText>
+          <description>In the past hour</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Sometime today</meaningText>
+          <description>Sometime today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Yesterday</meaningText>
+          <description>Yesterday</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Day before yesterday</meaningText>
+          <description>Day before yesterday</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Three or more days ago</meaningText>
+          <description>Three or more days ago</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>32. About how many DAYS has it been since you last smoked a pipe filled with tobacco? If it was earlier today, enter 1 day (useof_tobacco_pipe_quitlengthdays)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_pipe_history]=1 AND [useof_tobacco_pipe_currentuse]&lt;&gt;1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>32. About how many MONTHS has it been since you last smoked a pipe filled with tobacco? (useof_tobacco_pipe_quitlengthmonths)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_pipe_familiarity]=1 AND [useof_tobacco_pipe_history]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>32. About how many YEARS has it been since you last smoked a pipe filled with tobacco? (useof_tobacco_pipe_quitlengthyears)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_pipe_familiarity]=1 AND [useof_tobacco_pipe_history]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>32. About how long has it been since you last smoked a pipe filled with tobacco? (useof_tobacco_pipe_quitlength_coded)</questionText>
+        <instruction>
+         <text>[useof_tobacco_pipe_familiarity]=1 AND [useof_tobacco_pipe_history]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>We next ask about smoking tobacco in a hookah, which is a type of water pipe. It is sometimes also called a "narghile" pipe. From now on, we will use "hookah" to refer to a water pipe or narghile pipe that is often used to smoke tobacco. There are many types of hookahs. People often smoke tobacco in hookahs in groups at cafes or in hookah bars. [DISPLAY GENERIC IMAGE OF HOOKAH] (desc003_740401)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>hookah (hookah)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>33. Have you ever seen or heard of a hookah before this study? (useof_tobacco_hookah_familiarity)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [GO TO Q43]</meaningText>
+          <description>No [GO TO Q43]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q43]</meaningText>
+          <description>DON'T KNOW [GO TO Q43]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q43]</meaningText>
+          <description>REFUSED [GO TO Q43]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>34. Have you ever smoked tobacco in a hookah, even one or two puffs? (useof_tobacco_hookah_history)</questionText>
+        <instruction>
+         <text>[useof_tobacco_hookah_familiarity]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [GO TO Q43]</meaningText>
+          <description>No [GO TO Q43]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q43]</meaningText>
+          <description>DON'T KNOW [GO TO Q43]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q43]</meaningText>
+          <description>REFUSED [GO TO Q43]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>35. Do you now smoke hookah... (useof_tobacco_hookah_currentuse)</questionText>
+        <instruction>
+         <text>[useof_tobacco_hookah_history]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Some days</meaningText>
+          <description>Some days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Not at all [GO TO Q43]</meaningText>
+          <description>Not at all [GO TO Q43]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>DON'T KNOW [GO TO Q43]</meaningText>
+          <description>DON'T KNOW [GO TO Q43]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>REFUSED [GO TO Q43]</meaningText>
+          <description>REFUSED [GO TO Q43]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>36. How many times have you smoked hookah in your entire life? Count each sitting or session where you smoked tobacco in a hookah, whether alone or with others. (useof_tobacco_hookah_total)</questionText>
+        <instruction>
+         <text>[useof_tobacco_hookah_history]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1 to 10</meaningText>
+          <description>1 to 10</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>11 to 20</meaningText>
+          <description>11 to 20</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>21 to 50</meaningText>
+          <description>21 to 50</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>41 to 99</meaningText>
+          <description>41 to 99</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>100 or more</meaningText>
+          <description>100 or more</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>37. When did you last smoke hookah? (useof_tobacco_hookah_lasttime)</questionText>
+        <instruction>
+         <text>[useof_tobacco_hookah_currentuse]=1 OR [useof_tobacco_hookah_currentuse]=2</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In the past hour</meaningText>
+          <description>In the past hour</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Sometime today</meaningText>
+          <description>Sometime today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Yesterday</meaningText>
+          <description>Yesterday</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Day before yesterday</meaningText>
+          <description>Day before yesterday</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Three or more days ago</meaningText>
+          <description>Three or more days ago</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>38. About how many DAYS has it been since you last smoked hookah? If it was earlier today, enter 1 day (useof_tobacco_hookah_quitlengthdays)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_hookah_history]=1 AND [useof_tobacco_hookah_currentuse]=2</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>38. About how many MONTHS has it been since you last smoked hookah? (useof_tobacco_hookah_quitlengthmonths)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_hookah_history]=1 AND [useof_tobacco_hookah_currentuse]=2</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>38. About how many YEARS has it been since you last smoked hookah? (useof_tobacco_hookah_quitlengthyears)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_hookah_history]=1 AND [useof_tobacco_hookah_currentuse]=2</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>38. About how long has it been since you last smoked hookah? (useof_tobacco_hookah_quitlength_coded)</questionText>
+        <instruction>
+         <text>[useof_tobacco_hookah_history]=1 AND [useof_tobacco_hookah_currentuse]=2</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>39. Have you smoked hookah at least once in the past 30 days? (useof_tobacco_hookah_thirtydays)</questionText>
+        <instruction>
+         <text>[useof_tobacco_hookah_quitlength_coded]=1 OR [useof_tobacco_hookah_quitlength_coded]=2</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes [GO TO Q42]</meaningText>
+          <description>Yes [GO TO Q42]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>40. Have you smoked hookah at least once in the past three months? (useof_tobacco_hookah_threemonths)</questionText>
+        <instruction>
+         <text>([useof_tobacco_hookah_quitlength_coded]=1 OR [useof_tobacco_hookah_quitlength_coded]=2) AND ([useof_tobacco_hookah_thirtydays]&lt;&gt;1)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes [GO TO Q42]</meaningText>
+          <description>Yes [GO TO Q42]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>41. Have you smoked hookah at least once in the past twelve months? (useof_tobacco_hookah_twelvemonths)</questionText>
+        <instruction>
+         <text>([useof_tobacco_hookah_quitlength_coded]=1 OR [useof_tobacco_hookah_quitlength_coded]=2) AND ([useof_tobacco_hookah_thirtydays]&lt;&gt;1) AND ([useof_tobacco_hookah_twelvemonths]&lt;&gt;1)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>42. Have you completely quit smoking hookah? (useof_tobacco_hookah_quit)</questionText>
+        <instruction>
+         <text>([useof_tobacco_hookah_twelvemonths]&lt;&gt;1) OR ([useof_tobacco_hookah_quitlengthdays]&gt;90) OR ([useof_tobacco_hookah_quitlengthmonths]&gt;3)</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>4</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Smokeless Tobacco</longName>
+      <preferredDefinition>Smokeless Tobacco</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>The next questions ask about smokeless tobacco which you put in your mouth. Frequently you chew, suck or spit while using smokeless tobacco, although there is no need to do so for some types. Snus, for instance, is a type of smokeless tobacco that comes in a small pouch that you put inside your lip. There are many kinds of smokeless tobacco, such as snus pouches, loose snus, moist snuff, dip, spit, and chewing tobacco. Common brands include Redman®, Levi Garrett®, Beechnut®, Skoal®, Grizzly®, Nordic Ice®, and Copenhagen®. [SHOW GENERIC IMAGES OF SMOKELESS TOBACCO] (desc05_741401)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>smokeless (smokeless)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>43. Have you ever seen or heard of smokeless tobacco, such as snus pouches, loose snus, moist snuff, dip, spit, or chewing tobacco, before this study? (useof_tobacco_smokeless_familiarity)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [GO TO Q51]</meaningText>
+          <description>No [GO TO Q51]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q51]</meaningText>
+          <description>DON'T KNOW [GO TO Q51]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q51]</meaningText>
+          <description>REFUSED [GO TO Q51]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>44. Have you ever used any of the following smokeless tobacco products, even one or two times? Choose all that apply. (useof_tobacco_smokeless_type)</questionText>
+        <instruction>
+         <text>[useof_tobacco_smokeless_familiarity]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Snus pouches</meaningText>
+          <description>Snus pouches</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Loose snus, moist snuff, dip, spit, or chewing tobacco</meaningText>
+          <description>Loose snus, moist snuff, dip, spit, or chewing tobacco</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>I have never used a smokeless tobacco product [GO TO Q51]</meaningText>
+          <description>I have never used a smokeless tobacco product [GO TO Q51]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q51]</meaningText>
+          <description>DON'T KNOW [GO TO Q51]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q51]</meaningText>
+          <description>REFUSED [GO TO Q51]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>45. Do you now use [SMKLSSFILL]... (useof_tobacco_smokeless_currentuse)</questionText>
+        <instruction>
+         <text>[useof_tobacco_smokeless_type]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Some days</meaningText>
+          <description>Some days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Not at all [GO TO Q46]</meaningText>
+          <description>Not at all [GO TO Q46]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q46]</meaningText>
+          <description>DON'T KNOW [GO TO Q46]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q46]</meaningText>
+          <description>REFUSED [GO TO Q46]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>46.  In the past 30 days have you used [SMKLSSFILL], even one or two times? (useof_tobacco_smokeless_thirtydays)</questionText>
+        <instruction>
+         <text>[useof_tobacco_smokeless_type]=1 AND  [useof_tobacco_smokeless_currentuse]=3</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>47. How many [times/ snus pouches] have you used [smokeless tobacco] in your entire life? (useof_tobacco_smokeless_total)</questionText>
+        <instruction>
+         <text>[useof_tobacco_smokeless_currentuse]=1 OR [useof_tobacco_smokeless_currentuse]=2</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1 to 10</meaningText>
+          <description>1 to 10</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>11 to 20</meaningText>
+          <description>11 to 20</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>21 to 50</meaningText>
+          <description>21 to 50</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>41 to 99</meaningText>
+          <description>41 to 99</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>100 or more</meaningText>
+          <description>100 or more</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>48. When did you last use [SMKLSSFILL]? (useof_tobacco_smokeless_lasttime)</questionText>
+        <instruction>
+         <text>[useof_tobacco_smokeless_currentuse]&lt;&gt;3</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In the past hour</meaningText>
+          <description>In the past hour</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Sometime today</meaningText>
+          <description>Sometime today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Yesterday</meaningText>
+          <description>Yesterday</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Day before yesterday</meaningText>
+          <description>Day before yesterday</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Three or more days ago</meaningText>
+          <description>Three or more days ago</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>49. About how many DAYS has it been since you last used [SMKLSSFILL]? If it was earlier today, enter 1 day (useof_tobacco_smokeless_quitlengthdays)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_smokeless_currentuse]&lt;&gt;1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>49. About how many MONTHS has it been since you last used [SMKLSSFILL]? (useof_tobacco_smokeless_quitlengthmonths)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_smokeless_currentuse]&lt;&gt;1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>49. About how many YEARS has it been since you last used [SMKLSSFILL]? (useof_tobacco_smokeless_quitlengthyears)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_smokeless_currentuse]&lt;&gt;1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>49. About how long has it been since you last used [SMKLSSFILL]? (useof_tobacco_smokeless_quitlength_coded)</questionText>
+        <instruction>
+         <text>[useof_tobacco_smokeless_currentuse]&lt;&gt;1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>50. Have you completely quit using [SMKLSSFILL]? (useof_tobacco_smokeless_quit)</questionText>
+        <instruction>
+         <text>[useof_tobacco_smokeless_currentuse]=3</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>5</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Dissolvable Tobacco</longName>
+      <preferredDefinition>Dissolvable Tobacco</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>The next questions ask about another type of tobacco called dissolvable tobacco. You don't smoke dissolvable tobacco productsthey are made of finely ground flavored tobacco that dissolves in your mouth. Dissolvable tobacco products come in a variety of shapes, including small round pellets, thin sticks and flat strips. Some common brands are Ariva®, Stonewall™, and Camel Orbs, Sticks, or Strips. [SHOW GENERIC IMAGES OF DISSOLVABLES] (desc003_0741401)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>dissolvable (dissolvable)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>51. Have you ever seen or heard of dissolvable tobacco before this study? (useof_tobacco_dissolvable_familiarity)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [END QUESTIONS]</meaningText>
+          <description>No [END QUESTIONS]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW [END QUESTIONS]</meaningText>
+          <description>DON'T KNOW [END QUESTIONS]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED [END QUESTIONS]</meaningText>
+          <description>REFUSED [END QUESTIONS]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>52. Have you ever used dissolvable tobacco products, such as Ariva®, Stonewall™, or Camel Orbs, Sticks, or Strips, even one or two times? (useof_tobacco_dissolvable_type)</questionText>
+        <instruction>
+         <text>[useof_tobacco_dissolvable_familiarity]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No [END QUESTIONS]</meaningText>
+          <description>No [END QUESTIONS]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [END QUESTIONS]</meaningText>
+          <description>DON'T KNOW [END QUESTIONS]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [END QUESTIONS]</meaningText>
+          <description>REFUSED [END QUESTIONS]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>53. Do you now use dissolvable tobacco... (useof_tobacco_dissolvable_currentuse)</questionText>
+        <instruction>
+         <text>[useof_tobacco_dissolvable_type]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Some days</meaningText>
+          <description>Some days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Not at all [GO TO Q54]</meaningText>
+          <description>Not at all [GO TO Q54]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW [GO TO Q54]</meaningText>
+          <description>DON'T KNOW [GO TO Q54]</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED [GO TO Q54]</meaningText>
+          <description>REFUSED [GO TO Q54]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>54. In the past 30 days, have you used dissolvable tobacco, even one or two times? (useof_tobacco_dissolvable_thirtydays)</questionText>
+        <instruction>
+         <text>[useof_tobacco_dissolvable_currentuse]&lt;&gt;1 AND [useof_tobacco_dissolvable_currentuse]&lt;&gt;2</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>55. When did you last use dissolvable tobacco? (useof_tobacco_dissolvable_lasttime)</questionText>
+        <instruction>
+         <text>[useof_tobacco_dissolvable_currentuse]&lt;&gt;3</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In the past hour</meaningText>
+          <description>In the past hour</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Sometime today</meaningText>
+          <description>Sometime today</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Yesterday</meaningText>
+          <description>Yesterday</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Day before yesterday</meaningText>
+          <description>Day before yesterday</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Three or more days ago</meaningText>
+          <description>Three or more days ago</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>56. How many pieces of dissolvable tobacco have you used in your entire life? (useof_tobacco_dissolvable_total)</questionText>
+        <instruction>
+         <text>[useof_tobacco_dissolvable_type]=1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1 to 10</meaningText>
+          <description>1 to 10</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>11 to 20</meaningText>
+          <description>11 to 20</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>21 to 50</meaningText>
+          <description>21 to 50</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>41 to 99</meaningText>
+          <description>41 to 99</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>100 or more</meaningText>
+          <description>100 or more</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>57. About how many DAYS has it been since you last used dissolvable tobacco? If it was earlier today, enter 1 day (useof_tobacco_dissolvable_quitlengthdays)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_dissolvable_type]=1 AND [useof_tobacco_dissolvable_currentuse]&lt;&gt;1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>57. About how many MONTHS has it been since you last used dissolvable tobacco? (useof_tobacco_dissolvable_quitlengthmonths)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_dissolvable_type]=1 AND [useof_tobacco_dissolvable_currentuse]&lt;&gt;1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>57. About how many YEARS has it been since you last used dissolvable tobacco? (useof_tobacco_dissolvable_quitlengthyears)</questionText>
+        <instruction>
+         <text>datatype=number;[useof_tobacco_dissolvable_type]=1 AND [useof_tobacco_dissolvable_currentuse]&lt;&gt;1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>57. About how long has it been since you last used dissolvable tobacco? (useof_tobacco_dissolvable_quitlength_coded)</questionText>
+        <instruction>
+         <text>[useof_tobacco_dissolvable_type]=1 AND [useof_tobacco_dissolvable_currentuse]&lt;&gt;1</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>58. Have you completely quit using dissolvable tobacco? (quit_741401)</questionText>
+        <instruction>
+         <text>[useof_tobacco_dissolvable_type]=1 AND [useof_tobacco_dissolvable_currentuse]=3</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX741401</protocolID>
+     <longName>Use of Tobacco Products</longName>
+     <context>PhenX</context>
+     <shortName>PX741401</shortName>
+     <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument and the PATH Wave 1 Individual Screener. These specific questions are used to measure a respondent's use and regularity of use of the following tobacco products: cigarettes, e-cigarettes, cigars, pipe tobacco, hookah and shisha tobacco, smokeless tobacco, and dissolvable tobacco. An analysis of the results allow respondents to be categorized as: ever user, current user, everyday user, some day user, 30-day user, experimental current user, experimental former user, former user, former user 12 month, former user 12 month plus.</preferredDefinition>
+    </protocol>
+   </form>
+      <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:42:24</dateCreated>
+    <longName>PhenX PX741301 - Use Of A Regular Brand Of Tobacco</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to determine if a respondent has a regular tobacco brand for the following tobacco products: Cigarettes, e-cigarettes, cigars, pipe tobacco, hookah and shisha tobacco, smokeless tobacco, and dissolvable tobacco.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Use of a Regular Brand of Tobacco</longName>
+      <preferredDefinition>Use of a Regular Brand of Tobacco</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>[Do/Did] you have a regular brand of [cigarettes/rollyourown cigarette tobacco] that you usually [smoke/smoked]? (useof_regularbrand_tobacco_cigarette)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>[Do/Did] you have a regular brand of ecigarettes that you usually [use/used]? (useof_regularbrand_tobacco_ecigarette)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>[Do/Did] you have a regular brand of [[CIGARFILL]s/cigarillo/filtered cigar] that you usually [smoke/smoked/use for blunts]? (useof_regularbrand_tobacco_cigar)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>[Do/Did] you have a regular brand of pipe tobacco that you usually [smoke/smoked]? (useof_regularbrand_tobacco_pipetobacco)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>[Do/Did] you have a regular brand of shisha or hookah tobacco that you usually [smoke/smoked]? (useof_regularbrand_tobacco_hookah)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>[Do/Did] you have a regular brand of [SMKLSSFILL] that you usually [use/used]? (useof_regularbrand_tobacco_smokeless)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>[Do/Did] you have a regular brand of dissolvable tobacco that you usually [use/used]? (useof_regularbrand_tobacco_dissolvable)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX741301</protocolID>
+     <longName>Use of a Regular Brand of Tobacco</longName>
+     <context>PhenX</context>
+     <shortName>PX741301</shortName>
+     <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to determine if a respondent has a regular tobacco brand for the following tobacco products: Cigarettes, e‑cigarettes, cigars, pipe tobacco, hookah and shisha tobacco, smokeless tobacco, and dissolvable tobacco.</preferredDefinition>
+    </protocol>
+   </form>
+   </forms>

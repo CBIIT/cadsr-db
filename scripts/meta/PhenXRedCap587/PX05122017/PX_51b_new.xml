@@ -1,0 +1,1612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 51b</collectionName>
+  <collectionDescription>Load PhenX PX730702,PX730703,PX730301,PX740101
+    </collectionDescription>
+	    <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:40:45</dateCreated>
+    <longName>PhenX PX740101 - Exposure To Tobacco Marketing Through Internet And Social Media Use</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Items that assess exposure to tobacco marketing on the Internet and in social media were chosen from the 2012 National Youth Tobacco Survey (NYTS) and the 2013 Population Assessment of Tobacco and Health (PATH) Wave 1 Youth Module. Specifically, questions related to the opportunities for exposure and frequency of exposure to tobacco marketing on the Internet and in social media and to tobacco-related content.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:40:45</dateCreated>
+      <longName>Exposure to Tobacco Marketing through Internet and Social Media Use</longName>
+      <preferredDefinition>Exposure to Tobacco Marketing through Internet and Social Media Use</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>1. When you are using the Internet, how often do you see any ads or promotions for cigarettes or other tobacco products? (tobacco_marketing_ads_interent_howoften)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>A</value>
+          <meaningText>I do not use the Internet (Go to Q7)</meaningText>
+          <description>I do not use the Internet (Go to Q7)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>B</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>C</value>
+          <meaningText>Rarely</meaningText>
+          <description>Rarely</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>D</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>E</value>
+          <meaningText>Most of the time</meaningText>
+          <description>Most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>F</value>
+          <meaningText>Always</meaningText>
+          <description>Always</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>2. Overall, how often do you use the Internet? (tobacco_marketing_internet_use_howoften)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Several times a day</meaningText>
+          <description>Several times a day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>About once a day</meaningText>
+          <description>About once a day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3-5 days a week</meaningText>
+          <description>3-5 days a week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>1-2 days a week</meaningText>
+          <description>1-2 days a week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Every few weeks</meaningText>
+          <description>Every few weeks</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Less often</meaningText>
+          <description>Less often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Don't have regular internet access</meaningText>
+          <description>Don't have regular internet access</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>3. Do you have a Facebook, Google Plus, MySpace, Twitter, or other social networking account? (tobacco_marketing_have_socialnetworking_account)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (End Questionnaire)</meaningText>
+          <description>No (End Questionnaire)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know go to Q6</meaningText>
+          <description>Don't know go to Q6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused go to Q6</meaningText>
+          <description>Refused go to Q6</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>4.  How often do you visit your Facebook, Google Plus, MySpace, Twitter, or other social networking account? (tobacco_marketing_social_networking_howoften)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Several times a day</meaningText>
+          <description>Several times a day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Daily</meaningText>
+          <description>Daily</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Weekly</meaningText>
+          <description>Weekly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Monthly or less</meaningText>
+          <description>Monthly or less</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>5.  Has anyone discussed tobacco products on your Facebook, Google Plus, MySpace, Twitter, or other social networking account? (tobacco_marketing_discussedtobacco_socialnetworking)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (End Questionnaire)</meaningText>
+          <description>No (End Questionnaire)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>6.  In the past 6 months, have you ever signed up for email alerts about tobacco products, read articles online about tobacco products, or watched a video online about tobacco products? (tobacco_marketing_6months_emailarticlesvideosonline_tobaccoproducts)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (End Questionnaire)</meaningText>
+          <description>No (End Questionnaire)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>7.  During the past 30 days, did a tobacco company send you information (other than coupons) through ... (CHOOSE ALL THAT APPLY) (tobacco_marketing_30days_tobaccocompany_sendinformation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>A</value>
+          <meaningText>The mail</meaningText>
+          <description>The mail</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>B</value>
+          <meaningText>E-mail</meaningText>
+          <description>E-mail</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>C</value>
+          <meaningText>A text message</meaningText>
+          <description>A text message</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>D</value>
+          <meaningText>Some other way</meaningText>
+          <description>Some other way</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>E</value>
+          <meaningText>I did not receive any information from a tobacco company</meaningText>
+          <description>I did not receive any information from a tobacco company</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>8.  In the past 6 months, did a tobacco company send you any information other than coupons? (tobacco_marketing_6months_tobaccocompany_sendinformation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No (End Questionnaire)</meaningText>
+          <description>No (End Questionnaire)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't Know (End Questionnaire)</meaningText>
+          <description>Don't Know (End Questionnaire)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused (End Questionnaire)</meaningText>
+          <description>Refused (End Questionnaire)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>9.  How did a tobacco company send you any information other than coupons? Choose all that apply. (tobacco_marketing_tobaccocompany_howinforeceived)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>The mail</meaningText>
+          <description>The mail</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Email</meaningText>
+          <description>Email</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>The Internet</meaningText>
+          <description>The Internet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Social Networks (such as Facebook and Twitter)</meaningText>
+          <description>Social Networks (such as Facebook and Twitter)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A text message</meaningText>
+          <description>A text message</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Some other way: Specify below</meaningText>
+          <description>Some other way: Specify below</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>How did a tobacco company send you any information other than coupons? (tobacco_marketing_tobaccocompany_howinforeceived_otherway)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740101</protocolID>
+     <longName>Exposure to Tobacco Marketing through Internet and Social Media Use</longName>
+     <context>PhenX</context>
+     <shortName>PX740101</shortName>
+     <preferredDefinition>Items that assess exposure to tobacco marketing on the Internet and in social media were chosen from the 2012 National Youth Tobacco Survey (NYTS) and the 2013 Population Assessment of Tobacco and Health (PATH) Wave 1 Youth Module. Specifically, questions related to the opportunities for exposure and frequency of exposure to tobacco marketing on the Internet and in social media and to tobacco-related content.</preferredDefinition>
+    </protocol>
+   </form>  
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:40:45</dateCreated>
+    <longName>PhenX PX730702 - Tobacco Brand And Variety Cigarettes</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Seven questions used to determine the type of cigarette brand that is most often used by the respondent in the past 30 days.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:40:45</dateCreated>
+      <longName>Tobacco Brand and Variety - Cigarettes</longName>
+      <preferredDefinition>Tobacco Brand and Variety - Cigarettes</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>The next questions are about the brand of cigarettes you smoke  the brand is the name that is on the pack. During the past 30 days, what brand of cigarettes did you smoke most often? (brand_cigarettes_30days_mostoften)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>American Spirit</meaningText>
+          <description>American Spirit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Basic</meaningText>
+          <description>Basic</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Benson &amp; Hedges</meaningText>
+          <description>Benson &amp; Hedges</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Camel</meaningText>
+          <description>Camel</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Capri</meaningText>
+          <description>Capri</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Carlton</meaningText>
+          <description>Carlton</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Doral</meaningText>
+          <description>Doral</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>GPC</meaningText>
+          <description>GPC</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>Kent</meaningText>
+          <description>Kent</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>Kool</meaningText>
+          <description>Kool</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Liggett Select</meaningText>
+          <description>Liggett Select</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>12</value>
+          <meaningText>Marlboro</meaningText>
+          <description>Marlboro</description>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>13</value>
+          <meaningText>Merit</meaningText>
+          <description>Merit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>13</displayOrder>
+          <value>14</value>
+          <meaningText>Misty</meaningText>
+          <description>Misty</description>
+         </validValue>
+         <validValue>
+          <displayOrder>14</displayOrder>
+          <value>15</value>
+          <meaningText>Monarch</meaningText>
+          <description>Monarch</description>
+         </validValue>
+         <validValue>
+          <displayOrder>15</displayOrder>
+          <value>16</value>
+          <meaningText>More</meaningText>
+          <description>More</description>
+         </validValue>
+         <validValue>
+          <displayOrder>16</displayOrder>
+          <value>17</value>
+          <meaningText>Newport</meaningText>
+          <description>Newport</description>
+         </validValue>
+         <validValue>
+          <displayOrder>17</displayOrder>
+          <value>18</value>
+          <meaningText>Pall Mall</meaningText>
+          <description>Pall Mall</description>
+         </validValue>
+         <validValue>
+          <displayOrder>18</displayOrder>
+          <value>19</value>
+          <meaningText>Parliament</meaningText>
+          <description>Parliament</description>
+         </validValue>
+         <validValue>
+          <displayOrder>19</displayOrder>
+          <value>20</value>
+          <meaningText>Salem</meaningText>
+          <description>Salem</description>
+         </validValue>
+         <validValue>
+          <displayOrder>20</displayOrder>
+          <value>21</value>
+          <meaningText>USA Gold</meaningText>
+          <description>USA Gold</description>
+         </validValue>
+         <validValue>
+          <displayOrder>21</displayOrder>
+          <value>22</value>
+          <meaningText>Vantage</meaningText>
+          <description>Vantage</description>
+         </validValue>
+         <validValue>
+          <displayOrder>22</displayOrder>
+          <value>23</value>
+          <meaningText>Viceroy</meaningText>
+          <description>Viceroy</description>
+         </validValue>
+         <validValue>
+          <displayOrder>23</displayOrder>
+          <value>24</value>
+          <meaningText>Virginia Slims</meaningText>
+          <description>Virginia Slims</description>
+         </validValue>
+         <validValue>
+          <displayOrder>24</displayOrder>
+          <value>25</value>
+          <meaningText>Winston</meaningText>
+          <description>Winston</description>
+         </validValue>
+         <validValue>
+          <displayOrder>25</displayOrder>
+          <value>26</value>
+          <meaningText>A brand Not on this list</meaningText>
+          <description>A brand Not on this list</description>
+         </validValue>
+         <validValue>
+          <displayOrder>26</displayOrder>
+          <value>UNDEFINED_CODE_26</value>
+          <meaningText>Don't know/Refused</meaningText>
+          <description>Don't know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Please think again about the brand of cigarettes you smoke. During the past 30 days, what brand of cigarettes did you smoke most often? (thinkagain_brand_cigarettes_30days_mostoften)</questionText>
+        <instruction>
+         <text>[brand_cigarettes_30days_mostoften] = '26'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Alpine</meaningText>
+          <description>Alpine</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Barclay</meaningText>
+          <description>Barclay</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Belair</meaningText>
+          <description>Belair</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Best Value</meaningText>
+          <description>Best Value</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Bristol</meaningText>
+          <description>Bristol</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Bugler (roll-your-own) 7</meaningText>
+          <description>Bugler (roll-your-own) 7</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>8</value>
+          <meaningText>Century</meaningText>
+          <description>Century</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>9</value>
+          <meaningText>Chesterfield</meaningText>
+          <description>Chesterfield</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>10</value>
+          <meaningText>Eve</meaningText>
+          <description>Eve</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>11</value>
+          <meaningText>Harley Davidson</meaningText>
+          <description>Harley Davidson</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>12</value>
+          <meaningText>Lark</meaningText>
+          <description>Lark</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>13</value>
+          <meaningText>L&amp;M</meaningText>
+          <description>L&amp;M</description>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>14</value>
+          <meaningText>Lucky Strike</meaningText>
+          <description>Lucky Strike</description>
+         </validValue>
+         <validValue>
+          <displayOrder>13</displayOrder>
+          <value>15</value>
+          <meaningText>Magna</meaningText>
+          <description>Magna</description>
+         </validValue>
+         <validValue>
+          <displayOrder>14</displayOrder>
+          <value>16</value>
+          <meaningText>Maverick</meaningText>
+          <description>Maverick</description>
+         </validValue>
+         <validValue>
+          <displayOrder>15</displayOrder>
+          <value>17</value>
+          <meaningText>Max</meaningText>
+          <description>Max</description>
+         </validValue>
+         <validValue>
+          <displayOrder>16</displayOrder>
+          <value>18</value>
+          <meaningText>Montclair</meaningText>
+          <description>Montclair</description>
+         </validValue>
+         <validValue>
+          <displayOrder>17</displayOrder>
+          <value>19</value>
+          <meaningText>Now</meaningText>
+          <description>Now</description>
+         </validValue>
+         <validValue>
+          <displayOrder>18</displayOrder>
+          <value>20</value>
+          <meaningText>Old Gold</meaningText>
+          <description>Old Gold</description>
+         </validValue>
+         <validValue>
+          <displayOrder>19</displayOrder>
+          <value>21</value>
+          <meaningText>Players</meaningText>
+          <description>Players</description>
+         </validValue>
+         <validValue>
+          <displayOrder>20</displayOrder>
+          <value>22</value>
+          <meaningText>Private Label</meaningText>
+          <description>Private Label</description>
+         </validValue>
+         <validValue>
+          <displayOrder>21</displayOrder>
+          <value>23</value>
+          <meaningText>Pyramid</meaningText>
+          <description>Pyramid</description>
+         </validValue>
+         <validValue>
+          <displayOrder>22</displayOrder>
+          <value>24</value>
+          <meaningText>Raleigh</meaningText>
+          <description>Raleigh</description>
+         </validValue>
+         <validValue>
+          <displayOrder>23</displayOrder>
+          <value>25</value>
+          <meaningText>Richland</meaningText>
+          <description>Richland</description>
+         </validValue>
+         <validValue>
+          <displayOrder>24</displayOrder>
+          <value>26</value>
+          <meaningText>Saratoga</meaningText>
+          <description>Saratoga</description>
+         </validValue>
+         <validValue>
+          <displayOrder>25</displayOrder>
+          <value>27</value>
+          <meaningText>Satin</meaningText>
+          <description>Satin</description>
+         </validValue>
+         <validValue>
+          <displayOrder>26</displayOrder>
+          <value>28</value>
+          <meaningText>State Express</meaningText>
+          <description>State Express</description>
+         </validValue>
+         <validValue>
+          <displayOrder>27</displayOrder>
+          <value>29</value>
+          <meaningText>Sterling</meaningText>
+          <description>Sterling</description>
+         </validValue>
+         <validValue>
+          <displayOrder>28</displayOrder>
+          <value>30</value>
+          <meaningText>Tareyton</meaningText>
+          <description>Tareyton</description>
+         </validValue>
+         <validValue>
+          <displayOrder>29</displayOrder>
+          <value>31</value>
+          <meaningText>Top (roll-your-own)</meaningText>
+          <description>Top (roll-your-own)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>30</displayOrder>
+          <value>32</value>
+          <meaningText>True</meaningText>
+          <description>True</description>
+         </validValue>
+         <validValue>
+          <displayOrder>31</displayOrder>
+          <value>33</value>
+          <meaningText>A brand not on this list</meaningText>
+          <description>A brand not on this list</description>
+         </validValue>
+         <validValue>
+          <displayOrder>32</displayOrder>
+          <value>34</value>
+          <meaningText>Don't know/refused</meaningText>
+          <description>Don't know/refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Please type in the name of the brand of cigarettes you smoked most often during the past 30 days. If you're not sure how to spell the brand, just make your best guess. (mostoften_brand_thirtydays)</questionText>
+        <instruction>
+         <text>[thinkagain_brand_cigarettes_30days_mostoften] = '33'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Were the cigarettes you smoked during the past 30 days menthol? (mostoften_type_thirtydays_menthol_encoded)</questionText>
+        <instruction>
+         <text>[mostoften_brand_thirtydays] = ''</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Don't know/refused</meaningText>
+          <description>Don't know/refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>What length were the [INSERT BRAND NAME HERE FROM Q1] cigarettes you smoked most often during the past 30 days? Were they shorts, regulars (also known as kingsized), or 100s? (mostoften_thirtydays_length)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Shorts</meaningText>
+          <description>Shorts</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Regulars or king-sized</meaningText>
+          <description>Regulars or king-sized</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>100s</meaningText>
+          <description>100s</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>During the past 30 days, that is, since [DATEFILL], have you smoked part or all of a rollyourown tobacco cigarette? (thirtydays_smoke_rollyourown_cigarette_encoded)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Don't know/refused</meaningText>
+          <description>Don't know/refused</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX730702</protocolID>
+     <longName>Tobacco Brand and Variety - Cigarettes</longName>
+     <context>PhenX</context>
+     <shortName>PX730702</shortName>
+     <preferredDefinition>Seven questions used to determine the type of cigarette brand that is most often used by the respondent in the past 30 days.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:40:45</dateCreated>
+    <longName>PhenX PX730703 - Tobacco Brand And Variety Smokeless Tobacco</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Questions to discern the smokeless tobacco brands or varieties used and purchased by respondents within a 12-month period.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:40:45</dateCreated>
+      <longName>Tobacco Brand and Variety - Smokeless Tobacco</longName>
+      <preferredDefinition>Tobacco Brand and Variety - Smokeless Tobacco</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>1. Have you ever used any of the following smokeless tobacco products, even one or two times? Choose all that apply. (everused_smokeless_tobaccoproducts_chooseall)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Snus pouches</meaningText>
+          <description>Snus pouches</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Loose snus, moist snuff, dip, spit, or chewing tobacco</meaningText>
+          <description>Loose snus, moist snuff, dip, spit, or chewing tobacco</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>I have never used a smokeless tobacco product</meaningText>
+          <description>I have never used a smokeless tobacco product</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>2. Do you now use snus pouches, loose snus, moist snuff, dip, spit, or chewing tobacco? (now_use_snusdipspitchewing_tobacco)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Some days</meaningText>
+          <description>Some days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>3.  [Do/ Did] you have a regular brand of smokeless tobacco, such as loose snus, moist snuff, dip, spit, and chewing tobacco that you usually [use/ used]? (regularbrand_smokelesstobacco_usually_used)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>ASK: Current users and 12 month former users . PROGRAM: For current users ask "Do" and "use" for 12month former users ask "Did" and "used" (users_730703)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>4.  What brand of smokeless tobacco, such as loose snus, moist snuff, dip, spit, and chewing tobacco [do I/ did] you [usually/ last] use? Please select it from the choices below. (brand_smokelesstobacco_used)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Redman</meaningText>
+          <description>Redman</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Levi Garrett</meaningText>
+          <description>Levi Garrett</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Beechnut</meaningText>
+          <description>Beechnut</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Skoal</meaningText>
+          <description>Skoal</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Grizzly and Copenhagen</meaningText>
+          <description>Grizzly and Copenhagen</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Something else</meaningText>
+          <description>Something else</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>5.  You selected [Response to Q4] as your brand. What kind of [smokeless tobacco brand] [do I/ did] you [usually I last] use? Please select it from the choices below. (selected_brand_whatkind_lastused)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Redman</meaningText>
+          <description>Redman</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Levi Garrett</meaningText>
+          <description>Levi Garrett</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Beechnut</meaningText>
+          <description>Beechnut</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Skoal</meaningText>
+          <description>Skoal</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Grizzly and Copenhagen</meaningText>
+          <description>Grizzly and Copenhagen</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Something else</meaningText>
+          <description>Something else</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>6.  You said that your brand was not indicated above. What is it? (brand_smokelesstobacco_not_indicated_whatisit)</questionText>
+        <instruction>
+         <text>[brand_smokelesstobacco_used] = 'UNDEFINED_CODE_5'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>7. You said that the type of [BRANDFILL]s that you [use/used] is not listed. What type is it? (brand_smokelesstobacco_notpictured_whatisit)</questionText>
+        <instruction>
+         <text>[selected_brand_whatkind_lastused] = 'UNDEFINED_CODE_5'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>8.  [Is/was] [your regular brand/ the last brand] you [use/ used] flavored to taste like menthol, mint, clove, spice, candy, fruit, chocolate, alcohol (such as wine or cognac), or other sweets? (brand_smokelesstobacco_flavored_sweet)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>9.  About how long (did you use/have you been using) your regular brand of smokeless tobacco, such as loose, snus, moist snuff, dip, spit, and chewing tobacco? Please enter the number and indicate whether it is years, months, or days. (smokelesstobacco_howlong_using_days)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>10. You said earlier that you used smokeless tobacco [TIME OF LAST USE]. Think about the very last time you used it. Was the brand [NEQBRAND]? (smokelesstobacco_used_lasttime_whatbrand)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>11.  You said earlier that you last used snus [TIME OF LAST USE]. Think about the very last pouch you used. Was the brand Camel snus, General snus, Marlboro snus, or Nordic Ice? (smokelesstobacco_snus_brand)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>_8</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX730703</protocolID>
+     <longName>Tobacco Brand and Variety - Smokeless Tobacco</longName>
+     <context>PhenX</context>
+     <shortName>PX730703</shortName>
+     <preferredDefinition>Questions to discern the smokeless tobacco brands or varieties used and purchased by respondents within a 12-month period.</preferredDefinition>
+    </protocol>
+   </form>  
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:40:45</dateCreated>
+    <longName>PhenX PX730301 - Nicotine Content</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This is a lab-based protocol that allows quantification of nicotine in tobacco filler of smoked, smokeless tobacco products, or e-liquid using solvent extraction coupled with gas chromatography with selected ion monitoring mass spectrometry. A gas chromatography mass spectrometry system is used to quantify the amount of nicotine.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:40:45</dateCreated>
+      <longName>Solutions</longName>
+      <preferredDefinition>Solutions</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>1. Preparation of Methyl Tertiary Butyl Ether (MTBE) extraction solution (containing quinoline)a. Determine the desired number of 4 L bottles of MTBE needed, based on the expected use of the method. b. In a small amber bottle, weigh 500 mg ± 10 mg of quinoline for every 4 L bottle of MTBE to be used.c. If a single 4 L MTBE bottle is needed, remove approximately 100 ml of MTBE from the bottle, add the quinoline directly to the 4 L bottle, rinse the amber bottle with the 100 ml of MTBE, and pour the rinse back into the 4 L bottle. Shake the bottle to mix well.d. For more than one bottle of MTBE, remove approximately 100 ml of MTBE, pour the number of desired bottles into a 12 L carboy, and then add the quinolone. Rinse the amber bottle as above, and pour the rinse back into the carboy. Shake the carboy to mix well. e. Assign a solution ID "MTBE-mmddyy-#," where mmddyy is the date prepared and # is a sequential number for lots made on the same day.f. Record the solution ID, component information, weight of the quinoline, and the analyst initials on TL-METHOD.035.F01, MBTE Solution Preparation Log.2. Preparation of 2N NaOH a. 2N NaOH is typically stored in its original container with a bottle top dispenser attached.  b. If a secondary container is necessary for the bottle top dispenser, assign a refill ID "NaOH-mmddyy-#," where mmddyy is the date prepared and # is a sequential number for multiple refills on the same day.c. When refilling the secondary container, record the NaOH lot# and date received, the manufacturer's expiration date, the expiration date for the refill, and the analyst initials on TL-METHOD.035.F02, Ancillary Solution Preparation Log.3. Preparation of 50% Methanola. 50% methanol is stored in a bottle with sealed lid. The solution is prepared by adding equal volumes of methanol and water to the bottle. Volumes may be measured with a graduated cylinder.b. Assign a refill ID "Me50-mmddyy-#," where mmddyy is the date prepared a..TRUNCATED(inst1_730301)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>1</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:40:45</dateCreated>
+      <longName>Standards</longName>
+      <preferredDefinition>Standards</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>1. Nicotine analytical standardsa. Nicotine stock solution (0.16 mg/ml) i.Add 8.20 g ± 0.20 g of nicotine to 50 ml of isopropanol.  ii. Assign a solution ID "NICmmddyy#," where mmddyy is the date prepared and # is a sequential number for lots made on the same day. iii.Record the solution ID, component information, weight of nicotine, prepared solution expiration date, and the analyst initials on TLMETHOD.035.F02, Nicotine Stock Preparation Log.  iv. Store the stock solution in amber glassware in an ultralow freezer (target 70°C, or at least ? 20°C).b. Nicotine calibration standards i. Select the desired volume of standard to be prepared based on the expected use. (inst2_730301)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>table1 730301 (table1_730301)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>ii. Add the appropriate volume of the nicotine stock solution detailed in the table below, and mix well. (inst8_730301)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>table2 730301 (table2_730301)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Record the use of purchased standards by selecting the check box on TLMETHOD.035.F05, Nicotine Run Sheet. Enter the earliest expiration date of the standards used. Record the individual standard ID's in the spaces provided under "Samples." Purchased standards can be stored at ambient temperatures in manufacturersealed ampoules for up to 3 years. (table4_730301)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>2</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:40:45</dateCreated>
+      <longName>Method</longName>
+      <preferredDefinition>Method</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>1. pH measurement for free nicotine calculationa. Calibrate the pH meter using buffers 4.01 and 7.00 according to TL-EQUIP.075, pH Meter Monograph, or TL-EQUIP.200, Sirius Vinotrate Monograph  b. The Sirius Vinotrate uses a standing wash solution. Use the 50% methanol/water solution for this wash.c. Verify the calibration by measuring the buffer solutions at pH 4.01, 7.00, and 10.01. If the buffer pH measurements are not within ± 0.05, recalibrate the meter. If the meter fails more than twice, change the buffer and clean the electrode, if necessary, prior to re-calibrating. If the pH values continue to fall outside the range, replace the electrode. If poor system performance continues, remove the instrument from service according TL-EQUIP.010, Equipment, and contact the instrument vendor. Initiate corrective action, if needed, according toTL-ADMIN.050, Nonconformances and Corrective Action. d. At the conclusion of each run, analyze a check sample using pH buffer 4.01. The pH must be within the acceptable range of 4.01 ± 0.05 for the run to be accepted.i. If the check sample fails criteria, determine if the pH measuring device is functioning properly. If it is not, remove the instrument from service as described above.ii. If the pH measuring device is functioning properly, samples may be reanalyzed one time.iii. If the check samples on re-analysis, initiate corrective action according to the TL-ADMIN.050, Nonconformances and Corrective Action.e. Determine the appropriate volume for the pH measurement device used. For the Sirius Vinotrate, 10 ml deionized/distilled water should be used with the appropriate autosampler vial. For the Pinnacle Series pH meter, 20 ml deionized/distilled water should be used with a 40 ml sample vial.f. Weigh 1.00 ± 0.01 g of tobacco product for every 10 ml of deionized/distilled water used. Record the weight on TL-METHOD.035.F04, pH for Nicotine. g. For cigarette filler tobaccoi. Cap the sample vial, place it on..TRUNCATED(inst6_730301)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>3</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:40:45</dateCreated>
+      <longName>Estimate of measurement uncertainty</longName>
+      <preferredDefinition>Estimate of measurement uncertainty</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>Estimates of measurement uncertainty are calculated according to TLQC.020, Measurement Uncertainty, based on QC sample data analyzed according to TLQC.015, Control Charting and Trend Analysis. (table3_730301)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>pH measurement for free nicotine (ph_free_nicotine)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>pH measurement for cigarette filler tobacco (ph_cigarette_filler_tobacco)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>pH measurement for smokeless tobacco (ph_smokeless_tobacco)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>nicotine content for free nicotine (nicotinecontent_free_nicotine)</questionText>
+        <instruction>
+         <text>UOM=mg/g</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>nicotine content for cigarette filler tobacco (nicotinecontent_cigarette_filler_tobacco)</questionText>
+        <instruction>
+         <text>UOM=mg/g</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:40:45</dateCreated>
+        <questionText>nicotine content for smokeless tobacco (nicotinecontent_smokeless_tobacco)</questionText>
+        <instruction>
+         <text>UOM=mg/g</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX730301</protocolID>
+     <longName>Nicotine Content</longName>
+     <context>PhenX</context>
+     <shortName>PX730301</shortName>
+     <preferredDefinition>This is a lab-based protocol that allows quantification of nicotine in tobacco filler of smoked, smokeless tobacco products, or e-liquid using solvent extraction coupled with gas chromatography with selected ion monitoring mass spectrometry. A gas chromatography mass spectrometry system is used to quantify the amount of nicotine.</preferredDefinition>
+    </protocol>
+   </form>    
+   </forms>

@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 55c</collectionName>
+  <collectionDescription>Load PhenX PX810601,PX810801,PX810901</collectionDescription>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:42:09</dateCreated>
+    <longName>PhenX PX810901 - Bilirubin Level</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol provides instructions for drawing, processing, and storing blood according to the National Health and Nutrition Examination Survey (NHANES) methods. Because there are many comparable assays for measuring total bilirubin, the protocol also provides basic guidelines to aid comparability among different studies.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>The following is a summary version of the full National Health and Nutrition Examination Survey 20112012 protocol.Exclusion Criteria:Persons will be excluded from this component if they: Report that they have hemophilia or  Report that they ha..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:09</dateCreated>
+      <longName>Bilirubin Level</longName>
+      <preferredDefinition>Bilirubin Level</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Do you have hemophilia? (billirubin_hemophilia)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes - (Then exclude from blood draw)</meaningText>
+          <description>Yes - (Then exclude from blood draw)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>If the SP answers "Yes," the SP is excluded from the blood draw. If SP answers "No" or "Don't Know," blood is drawn from the SP (hemo_810901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Have you received cancer chemotherapy in the past four weeks or do you anticipate such therapy in the next four weeks? (billirubin_chemotheraphy_4weeks)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes - (Then exclude from blood draw)</meaningText>
+          <description>Yes - (Then exclude from blood draw)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>If the SP answers "Yes," the SP is excluded from the blood draw. If SP answers "No" or "Don't Know," blood is drawn from the SP (chemo_810901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Age (billirubin_age)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=days</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Record the results of the blood draw. (billirubin_blood_draw_results)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Record reasons for a tube not being drawn according to the protocol. (billirubin_blood_draw_tube_deviation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Coefficients of variation of the total billirubin assay. (billirubin_coefficientsvariation_totalbillirubin_assay)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=mg/mL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Make of the equipment used to perform the total billirubin assay. (billirubin_equipment_make)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Manufacturer of the equipment used to perform the total billirubin assay. (billirubin_equipment_manufacturer)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>If serum is hemolyzed, turbid, lipemic, or iteric, then describe. (billirubin_serum_description)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>hemolyzed</meaningText>
+          <description>hemolyzed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>turbid</meaningText>
+          <description>turbid</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>lipemic</meaningText>
+          <description>lipemic</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>icteric</meaningText>
+          <description>icteric</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Determine if the serum is hemolyzed, turbid, lipemic, or icteric. (billirubin_serum_determination)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Repeatability of the total billirubin assay. (billirubin_total_billirubin_assay_repeatability)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Total billirubin concentration (billirubin_total_billirubin_concentration)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=mg/mL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Record any comments about the venipuncture. (billirubin_venipuncture_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Venipuncture Procedures: Editor's Note: Please review chapter 4 of the Laboratory Procedures Manual from the 20112012 National Health and Nutrition Examination Survey (NHANES) for a full description of phlebotomy procedures. This manual is posted here, and is also available at the NHANES website: 20112012 NHANES Laboratory Procedures ManualVenipuncture should generally be performed using the median cubital, cephalic, or basilic veins in the left arm unless this arm is unsuitable. If the veins in the left arm are unsuitable, look for suitable veins on the right arm. If the veins in the antecubital space on both arms are not suitable, then look for veins in the forearm or dorsal side of the hand on the left arm/hand and then the right arm/hand. Recording the Results of the Venipuncture Procedure: Immediately after completing the venipuncture, record the results of the blood draw, the reasons for a tube not being drawn according to the protocol, and any comments about the venipuncture. (venipuncture_810901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Please review chapter 8 of the Laboratory Procedures Manual from the National Health and Nutrition Examination Survey 20112012 for a full description of blood processing procedures: 20112012 NHANES Laboratory Procedures Manual.Allow the blood to clot by setting aside for 30 to 45 minutes at room temperature. Do not clot for more than an hour. Centrifuge the tube at room temperature to separate the serum and aliquot into an appropriate storage tube. Determine if the serum is hemolyzed, turbid, lipemic, or icteric. If so, enter a comment to describe the serum. There are many methods and recommended blood volumes for neonatal and pediatric bilirubin measurements. Neonatal blood collection  volumes may change depending on the laboratory but volumes as low as 0.1mL in a green or red top tube have been used. Pediatric blood collection  volumes may change depending on the laboratory but volumes as low as 0.5mL in a green or red top tube have been used. (processing_810901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Laboratory Assay for Total Bilirubin: The Sickle Cell Disease Cardiovascular, Pulmonary, and Renal Working Group notes that there are a number of different assays and instruments that are appropriate to measure the concentration of total bilirubin. Once an assay is chosen for a particular study, the Working Group recommends that no changes in the protocol be made over the course of the study. To aid comparability, the Working Group recommends that the investigator record the make and manufacturer of equipment used and the repeatability and coefficients of variation for the assay (lab_assay_810901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Reference Ranges for Total Bilirubin:   Neonatal Age of Participant (days)  mg/dL 01  2.06.0 12  6.010.0 35  4.08.0 greater than 5 0.21.3 (ranges_810901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX810901</protocolID>
+     <longName>Bilirubin Level</longName>
+     <context>PhenX</context>
+     <shortName>PX810901</shortName>
+     <preferredDefinition>This protocol provides instructions for drawing, processing, and storing blood according to the National Health and Nutrition Examination Survey (NHANES) methods. Because there are many comparable assays for measuring total bilirubin, the protocol also provides basic guidelines to aid comparability among different studies.</preferredDefinition>
+    </protocol>
+   </form> 
+      <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:42:09</dateCreated>
+    <longName>PhenX PX810801 - Haptoglobin Level</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol provides instructions for drawing, processing, and storing blood according to the National Health and Nutrition Examination Survey (NHANES) methods. Because there are many comparable assays for measuring haptoglobin, the protocol also provides basic guidelines to aid comparability among different studies.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>The following is a summary version of the full National Health and Nutrition Examination Survey 20112012 protocol.Exclusion Criteria:Persons will be excluded from this component if they: Report that they have hemophilia or  Report that they ha..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:09</dateCreated>
+      <longName>Haptoglobin Level</longName>
+      <preferredDefinition>Haptoglobin Level</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Do you have hemophilia? (haptoglobin_hemophilia)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes - (Then exclude from blood draw)</meaningText>
+          <description>Yes - (Then exclude from blood draw)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>If the SP answers "Yes," the SP is excluded from the blood draw. If SP answers "No" or "Don't Know," blood is drawn from the SP. (hemo_blooddraw_810801)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Have you received cancer chemotherapy in the past four weeks or do you anticipate such therapy in the next four weeks? (haptoglobin_chemotheraphy_4weeks)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes - (Then exclude from blood draw)</meaningText>
+          <description>Yes - (Then exclude from blood draw)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>If the SP answers "Yes," the SP is excluded from the blood draw. If SP answers "No" or "Don't Know," blood is drawn from the SP (chemo_blooddraw_810801)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Haptoglobin level (haptoglobin_amount)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=mg/dL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Repeatability of the haptoglobin assay. (haptoglobin_assay_repeatability)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Record the results of the blood draw. (haptoglobin_blood_draw_results)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Record reasons for a tube not being drawn according to the protocol. (haptoglobin_blood_drawtube_deviation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Coefficients of variation of the haptoglobin assay. (haptoglobin_coefficients_variation_assay)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=mg/dL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Make of the equipment used to perform the haptoglobin assay. (haptoglobin_equipment_make)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Manufacturer of the equipment used to perform the haptoglobin assay. (haptoglobin_equipment_manufacturer)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>If serum is hemolyzed, turbid, lipemic, or iteric, then describe. (haptoglobin_serum_description)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>hemolyzed</meaningText>
+          <description>hemolyzed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>turbid</meaningText>
+          <description>turbid</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>lipemic</meaningText>
+          <description>lipemic</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>icteric</meaningText>
+          <description>icteric</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Determine if the serum is hemolyzed, turbid, lipemic, or icteric. (haptoglobin_serum_determination)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Record any comments about the venipuncture. (haptoglobin_venipuncture_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Venipuncture Procedures: Editor's Note: Please review chapter 4 of the Laboratory Procedures Manual from the 20112012 National Health and Nutrition Examination Survey (NHANES) for a full description of phlebotomy procedures. This manual is posted here, and is also available at the NHANES website: 20112012 NHANES Laboratory Procedures ManualVenipuncture should generally be performed using the median cubital, cephalic, or basilic veins in the left arm unless this arm is unsuitable. If the veins in the left arm are unsuitable, look for suitable veins on the right arm. If the veins in the antecubital space on both arms are not suitable, then look for veins in the forearm or dorsal side of the hand on the left arm/hand and then the right arm/hand. Recording the Results of the Venipuncture Procedure: Immediately after completing the venipuncture, record the results of the blood draw, the reasons for a tube not being drawn according to the protocol, and any comments about the venipuncture. (venipuncture_810801)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>processing 810801 (processing_810801)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Laboratory Assay for Haptoglobin: The Sickle Cell Disease Cardiovascular, Pulmonary, and Renal Working Group notes that there are a number of different assays and instruments that are appropriate to measure the concentration of haptoglobin. Once an assay is chosen for a particular study, the Working Group recommends that no changes in the protocol be made over the course of the study. To aid comparability, the Working Group recommends that the investigator record the make and manufacturer of equipment used and the repeatability and coefficients of variation for the assay. (lab_assay_810801)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Reference Ranges for Haptoglobin: In normal individuals, haptoglobin levels range between 45 and 165 milligrams per deciliter of blood (mg/dL). Levels lower than 45 mg/dL can indicate increased rate of red blood cell death. (ranges_810801)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX810801</protocolID>
+     <longName>Haptoglobin Level</longName>
+     <context>PhenX</context>
+     <shortName>PX810801</shortName>
+     <preferredDefinition>This protocol provides instructions for drawing, processing, and storing blood according to the National Health and Nutrition Examination Survey (NHANES) methods. Because there are many comparable assays for measuring haptoglobin, the protocol also provides basic guidelines to aid comparability among different studies.</preferredDefinition>
+    </protocol>
+   </form>
+    <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:42:09</dateCreated>
+    <longName>PhenX PX810601 - Reticulocyte Count</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol provides instructions for drawing, processing and storing blood according to the National Health and Nutrition Examination Survey (NHANES) methods. Because there are many comparable assays and instruments for measuring reticulocyte count, the protocol also provides basic guidelines to aid comparability among different studies.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>The following is a summary version of the full National Health and Nutrition Examination Survey 20112012 protocol. Exclusion CriteriaPersons will be excluded from this component if they: Report that they have hemophilia or Report that they hav..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:09</dateCreated>
+      <longName>Reticulocyte Count</longName>
+      <preferredDefinition>Reticulocyte Count</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Do you have hemophilia? (reticulocyte_hemophilia)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes - (Then exclude from blood draw)</meaningText>
+          <description>Yes - (Then exclude from blood draw)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>If the SP answers "Yes," the SP is excluded from the blood draw. If SP answers "No" or "Don't Know," blood is drawn from the SP (hemo_blooddraw_810601)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Have you received cancer chemotherapy in the past four weeks or do you anticipate such therapy in the next four week? (reticulocyte_chemo)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes - (Then exclude from blood draw)</meaningText>
+          <description>Yes - (Then exclude from blood draw)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>If the SP answers "Yes," the SP is excluded from the blood draw. If SP answers "No" or "Don't Know," blood is drawn from the SP, (chemo_blooddraw_810601)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Age (reticulocyte_age)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=years</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Number of reticulocytes (reticulocyte_amount)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=thousands/µL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Repeatability of the reticulocyte count assay. (reticulocyte_assay_repeatability)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Record the results of the blood draw. (reticulocyte_blood_draw_results)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Record reasons for a tube not being drawn according to the protocol. (reticulocyte_blood_draw_tube_deviation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Have you received cancer chemotherapy in the past four weeks or do you anticipate such therapy in the next four weeks? (reticulocyte_chemotheraphy_4weeks)</questionText>
+        <instruction>
+         <text>minLength=1;maxLength=9</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Coefficients of variation of the reticulocyte count assay. (reticulocyte_coefficients_variation_assay)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=thousands/µL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Make of the equipment used to perform the reticulocyte count assay. (reticulocyte_equipment_make)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Manufacturer of the equipment used to perform the reticulocyte count assay. (reticulocyte_equipment_manufacturer)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Record any comments about the venipuncture. (reticulocyte_venipuncture_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Venipuncture Procedures: Editor's Note: Please review chapter 4 of the Laboratory Procedures Manual from the 20112012 National Health and Nutrition Examination Survey (NHANES) for a full description of phlebotomy procedures. This manual is posted here, and is also available at the NHANES website: 20112012 NHANES Laboratory Procedures ManualVenipuncture should generally be performed using the median cubital, cephalic, or basilic veins in the left arm unless this arm is unsuitable. If the veins in the left arm are unsuitable, look for suitable veins on the right arm. If the veins in the antecubital space on both arms are not suitable, then look for veins in the forearm or dorsal side of the hand on the left arm/hand and then the right arm/hand. Recording the Results of the Venipuncture Procedure: Immediately after completing the venipuncture, record the results of the blood draw, the reasons for a tube not being drawn according to the protocol, and any comments about the venipuncture. (venipuncture_810601)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Blood Processing: Please review chapter 8 of the Laboratory Procedures Manual from the National Health and Nutrition Examination Survey 20112012 for a full description of blood processing procedures: 20112012 NHANES Laboratory Procedures Manual (http://www.cdc.gov/nchs/data/nhanes/nhanes_11_12/201112_Laboratory_Procedures_Manual.pdf). Fill a 3 or 4 ml K3 EDTA tube with blood. (processing_810601)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Laboratory Assay for Reticulocyte Count: The Sickle Cell Disease Cardiovascular, Pulmonary, and Renal Working Group notes that there are a number of different assays and instruments that are appropriate to measure the reticulocyte count from serum. Once an assay is chosen for a particular study, the Working Group recommends that no changes in the protocol be made over the course of the study. To aid comparability, the Working Group recommends that the investigator record the make and manufacturer of equipment used and the repeatability and coefficients of variation for the assay. (lab_assay_810601)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-10T17:42:09</dateCreated>
+        <questionText>Reference Ranges for Reticulocyte Count: Children: 3  6%Adults: 0.5  1.5%Percentage of reticulocytes and absolute reticulocyte counts (ARC) are given by the following formulas:Reticulocyte Percentage = [Number of Reticulocytes (thousands/µL) x RBC count (millions/µL)] X 100Absolute reticulocyte count (thousands/µL) = reticulocyte % x RBC count (millions/µL) x 10 (ranges_810601)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX810601</protocolID>
+     <longName>Reticulocyte Count</longName>
+     <context>PhenX</context>
+     <shortName>PX810601</shortName>
+     <preferredDefinition>This protocol provides instructions for drawing, processing and storing blood according to the National Health and Nutrition Examination Survey (NHANES) methods. Because there are many comparable assays and instruments for measuring reticulocyte count, the protocol also provides basic guidelines to aid comparability among different studies.</preferredDefinition>
+    </protocol>
+   </form>   
+   </forms>

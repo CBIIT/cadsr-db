@@ -1,0 +1,2761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 49b</collectionName>
+  <collectionDescription>Load PhenX PX710501,PX710502,PX710601,PX710701,PX710801</collectionDescription>
+       <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:33</dateCreated>
+    <longName>PhenX PX710501 - Motivation To Quit Single Item</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol is a single item measuring motivation to quit smoking among those who want to quit smoking.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:33</dateCreated>
+      <longName>Motivation to Quit - Single Item</longName>
+      <preferredDefinition>Motivation to Quit - Single Item</preferredDefinition>
+         <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>How motivated are you to quit smoking on a scale where 1 = not at all motivated" and 10 = "extremely motivated."" (motivation_quit_smoking)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_1</value>
+          <meaningText>1 - not at all motivated</meaningText>
+          <description>1 - not at all motivated</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_2</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_4</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_6</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_7</value>
+          <meaningText>7</meaningText>
+          <description>7</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_8</value>
+          <meaningText>8</meaningText>
+          <description>8</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>UNDEFINED_9</value>
+          <meaningText>9</meaningText>
+          <description>9</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>UNDEFINED_10</value>
+          <meaningText>10 - extremely motivated</meaningText>
+          <description>10 - extremely motivated</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX710501</protocolID>
+     <longName>Motivation to Quit - Single Item</longName>
+     <context>PhenX</context>
+     <shortName>PX710501</shortName>
+     <preferredDefinition>This protocol is a single item measuring motivation to quit smoking among those who want to quit smoking.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:33</dateCreated>
+    <longName>PhenX PX710502 - Motivation To Quit Multiple Item</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Reasons for Quitting (RFQ) Questionnaire is a 20-item protocol developed to assess specific motivations for smoking cessation. The RFQ is based on an intrinsic-extrinsic model of motivation for smoking cessation with 10 intrinsic items (health concerns, self-control) and 10 extrinsic items (immediate reinforcement, social pressure).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>SelfAdministered:  What are your reasons for wanting to quit smoking at this time? Below is a list of reasons that smokers may have for quitting. Read each reason and decide how much it applies to you right now. Then choose ONE answer for each..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:33</dateCreated>
+      <longName>Motivation to Quit - Multiple Item</longName>
+      <preferredDefinition>Motivation to Quit - Multiple Item</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>Telephone Administered. Past smokers: This section is about reasons for quitting smoking. I am going to read you a list of twenty reasons that smokers may have for quitting. Please listen to each one and decide how true it was for you at the time you decided to quit. Then tell me if it was not at all true, a little true, moderately true, quite true, or extremely true when you decided to quit smoking. Current smokers who desire to quit: This section is about reasons for quitting smoking. I am going to read you a list of twenty reasons that smokers may have for quitting. Listen to each one and decide whether it is not at all true, a little true, moderately true, quite true, or extremely true for you right now. Current smokers who do not wish to quit: This section is about reasons for quitting smoking. Even though you don't want to quit smoking now, we are interested in finding out the various reasons why people may decide to quit. I'm going to read you a list of twenty reasons that smokers may have for quitting. Listen to each one and decide whether it would be: not at all true, a little true, quite true, or extremely true for you if you were to decide to quit. (telephone_admin_710502)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>1. I WANT TO QUIT SMOKING:  Because I am concerned that I will suffer from a serious illness if I don't quit smoking (quit_smoking_concerend_illness)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>2. I WANT TO QUIT SMOKING:  To show myself that I can quit smoking if I really want to (quit_smoking_show_myself)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>3. I WANT TO QUIT SMOKING:  So that my hair and clothes won't smell (quit_smoking_wont_smell)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>4. I WANT TO QUIT SMOKING:  Because my spouse, children, or other person I am close to will stop nagging me if I quit (quit_smoking_family_nagging)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>5. I WANT TO QUIT SMOKING:  Because I have noticed physical symptoms that smoking is hurting my health (quit_smoking_physical_symptoms)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>6. I WANT TO QUIT SMOKING:  Because I will like myself better if I quit smoking (quit_smoking_like_myself_better)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>7. I WANT TO QUIT SMOKING:  So that I will save money on smokingrelated costs such as dry cleaning (quit_smoking_save_money)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>8. I WANT TO QUIT SMOKING:  Because someone has given me an ultimatum (made a threat) to quit (quit_smoking_ultimatum)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>9. I WANT TO QUIT SMOKING:  Because I can graphically picture the effects that smoking has on my body (quit_smoking_effect_body)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>10. I WANT TO QUIT SMOKING:  So that I can feel in control of my life (quit_smoking_feel_control)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>11. I WANT TO QUIT SMOKING:  Because I won't burn holes in clothing or furniture (quit_smoking_wont_burn_holes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>12. I WANT TO QUIT SMOKING:  Because I will receive a special gift if I quit (quit_smoking_receive_gift)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>13. I WANT TO QUIT SMOKING:  Because I have known other people who have died from serious illnesses that were caused by smoking (quit_smoking_know_died)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>14. I WANT TO QUIT SMOKING:  Because quitting smoking will prove that I can accomplish other things that are important to me (quit_smoking_prove_accomplishment)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>15. I WANT TO QUIT SMOKING:  Because I want to save money that I spend on cigarettes (quit_smoking_save_money_cigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>16. I WANT TO QUIT SMOKING:  Because people I am close to will be upset with me if I don't quit (quit_smoking_people_close_upset)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>17. I WANT TO QUIT SMOKING:  Because I am concerned that smoking will shorten my life (quit_smoking_concerned_shorten_life)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>18. I WANT TO QUIT SMOKING:  To prove to myself that I am not addicted to cigarettes (quit_smoking_prove_not_addicted)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>19. I WANT TO QUIT SMOKING:  So that I won't have to clean my house or car as often (quit_smoking_not_clean)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>20. I WANT TO QUIT SMOKING:  Because I will receive a financial reward for quitting (money from a friend or family member, bonus from work, etc.) (quit_smoking_financial_reward)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 Not at all true</meaningText>
+          <description>0 Not at all true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 A little true</meaningText>
+          <description>1 A little true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 Moderately true</meaningText>
+          <description>2 Moderately true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 Quite true</meaningText>
+          <description>3 Quite true</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 Extremely true</meaningText>
+          <description>4 Extremely true</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>SCORING: Dimension ItemsIntrinsic, Health Concerns 1, 5, 9, 13, 17Intrinsic, SelfControl 2, 6, 10, 14, 18Extrinsic, Immediate Reinforcement 3, 7, 11, 15, 19Extrinsic, Social Pressure 4, 8, 12, 16, 20COMPUTATION: We score the scaled as average ratings across the relevant subdimension items. Items with missing ratings can be excluded from the denominator. For example, the health concerns score = Sum of items (1 + 5 + 9 + 13 + 17)/5If item #9 is missing data, the calculation would be the sum of items (1 + 5 + 13 + 17)/4Level of intrinsic relative to extrinsic motivation is calculated as a difference score with the extrinsic scale score subtracted from the intrinsic score. (scoring_710502)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX710502</protocolID>
+     <longName>Motivation to Quit - Multiple Item</longName>
+     <context>PhenX</context>
+     <shortName>PX710502</shortName>
+     <preferredDefinition>The Reasons for Quitting (RFQ) Questionnaire is a 20-item protocol developed to assess specific motivations for smoking cessation. The RFQ is based on an intrinsic-extrinsic model of motivation for smoking cessation with 10 intrinsic items (health concerns, self-control) and 10 extrinsic items (immediate reinforcement, social pressure).</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:33</dateCreated>
+    <longName>PhenX PX710601 - Hedonic Tone Or Response To Pleasurable Situations</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Snaith-Hamilton Pleasure Scale (SHAPS) is a self-administered, paper-and-pencil questionnaire with 14 items assessing four domains of pleasure response/hedonic experience: interest/pastimes, social interaction, sensory experience, and food/drink.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>This questionnaire is designed to measure your ability to experience pleasure in the last few days. It is important to read each statement very carefully. Choose one of the boxes to indicate how much you agree or disagree with each statement.</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:33</dateCreated>
+      <longName>Hedonic Tone or Response to Pleasurable Situations</longName>
+      <preferredDefinition>Hedonic Tone or Response to Pleasurable Situations</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>I would enjoy my favourite television or radio programme: (pleasure_television_radio)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>I would enjoy being with my family or close friends: (pleasure_family_friends)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>I would find pleasure in my hobbies and pastimes: (pleasure_hobbies_pastimes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>I would be able to enjoy my favourite meal: (pleasure_enjoy_favourite_meal)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>I would enjoy a warm bath or refreshing shower: (pleasure_bath_shower)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>I would find pleasure in the scent of flowers or the smell of a fresh sea breeze or freshly baked bread: (pleasure_scent)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>I would enjoy seeing other people's smiling faces: (pleasure_smiling_faces)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>I would enjoy looking smart when I have made an effort with my appearance: (pleasure_looking_smart_appearance)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>I would enjoy reading a book, magazine or newspaper: (pleasure_reading)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>I would enjoy a cup of tea or coffee or my favourite drink: (pleasure_tea_coffee_drink)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>I would find pleasure in small things, e.g., bright sunny day, a telephone call from a friend: (pleasure_small_things)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>I would be able to enjoy a beautiful landscape or view: (pleasure_landscape_view)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>I would get pleasure from helping others: (pleasure_helping_others)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>I would feel pleasure when I receive praise from other people: (pleasure_receive_praise)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>Either of the Disagree responses receives a score of 1 and either of the Agree responses receives a score of 0. The SHAPS is scored as the sum of the 14 items so that total scores ranged from 0 to 14. A higher total SHAPS score indicated higher levels of anhedonia. A cutoff score of 2 provides the best discrimination between 'normal' and 'abnormal' level of hedonic tone. (scoring_710601)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX710601</protocolID>
+     <longName>Hedonic Tone or Response to Pleasurable Situations</longName>
+     <context>PhenX</context>
+     <shortName>PX710601</shortName>
+     <preferredDefinition>The Snaith-Hamilton Pleasure Scale (SHAPS) is a self-administered, paper-and-pencil questionnaire with 14 items assessing four domains of pleasure response/hedonic experience: interest/pastimes, social interaction, sensory experience, and food/drink.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:33</dateCreated>
+    <longName>PhenX PX710701 - Distress Tolerance</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Computerized Mirror Tracing Persistence Task (MTPT-C) is an automated version of the original Mirror Tracing Persistence Task (Quinn et al., 1996), which requires the construction of a mirror box and multiple copies of polygons to be traced. The MTPT-C simplifies the administration and scoring of this task. In this task, participants are required to trace a red dot along the lines of a geometric shape (e.g., star) using the computer's mouse. However, the mouse moves the red dot in the reverse direction. Each time the participant moves the mouse out of the lines or hesitates for more than 2 seconds, a buzzer sounds, and the dot moves back to the beginning. Three progressively more difficult shapes are used. The first two rounds last 1 minute each, while the third round of the MTPT-C can last up to 7 minutes. Participants may terminate the task at any point during the third round by pressing on the space bar. Distress tolerance is measured by the latency in seconds to task termination. Additionally, the number of errors per second (i.e., number of times the participant has to return to the starting position during the task, divided by the task time) is recorded to control for effects of skill on persistence.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>User can download the program for this task at:"http://caperlab.net/taskdownloads/" caperlab.net/taskdownloads</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:33</dateCreated>
+      <longName>Distress Tolerance</longName>
+      <preferredDefinition>Distress Tolerance</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>What is the ID number of the session? (mirror_tracing_session_id)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>What date did the session take place? (mirror_tracing_session_date)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>What time did the session take place? (mirror_tracing_session_time)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>What is the subject's ID number? (mirror_tracing_subject_id)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(Before the test) To what extent do you feel excited? (mirror_tracing_pre_excited)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(Before the test) To what extent do you feel mad? (mirror_tracing_pre_mad)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(Before the test) To what extent do you feel interested? (mirror_tracing_pre_interested)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(Before the test) To what extent do you feel frustrated? (mirror_tracing_pre_frustrated)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(Before the test) To what extent do you feel happy? (mirror_tracing_pre_happy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(Before the test) To what extent do you feel upset? (mirror_tracing_pre_upset)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(Before the test) To what extent do you feel energetic? (mirror_tracing_pre_energetic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(Before the test) To what extent do you feel embarrassed? (mirror_tracing_pre_embarrassed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(Before the test) To what extent do you feel proud? (mirror_tracing_pre_proud)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(Before the test) To what extent do you feel nervous? (mirror_tracing_pre_nervous)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In easy mode, what is the total number of errors (off line + too slow) committed by the subject? (mirror_tracing_easy_total_error)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In easy mode, what is the number of times the subject traced outside the line? (mirror_tracing_easy_offline_error)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In easy mode, what is the number of times it took the subject too long to trace the pattern? (mirror_tracing_easy_tooslow_error)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In easy mode, what is the length in seconds it took the subject to complete the task? (mirror_tracing_easy_total_time)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0; UOM=seconds</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In easy mode, what is the total distance in cm of tracing? (mirror_tracing_easy_total_distance)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In easy mode, what is the median distance in cm of tracing? (mirror_tracing_easy_median_distance)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In easy mode, what is the maximum percentage (out of 100) of tracing around the entire star? (mirror_tracing_easy_maximum_percentage)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=100; UOM=percent</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In easy mode, what is the average width in cm of the line of the pattern (based on initial titration step)? (mirror_tracing_easy_average_width)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In medium mode, what is the total number of errors (off line + too slow) committed by the subject? (mirror_tracing_medium_total_error)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In medium mode, what is the number of times the subject traced outside the line? (mirror_tracing_medium_offline_error)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In medium mode, what is the number of times it took the subject too long to trace the pattern? (mirror_tracing_medium_tooslow_error)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In medium mode, what is the length in seconds it took the subject to complete the task? (mirror_tracing_medium_total_time)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0; UOM=seconds</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In medium mode, what is the total distance in cm of tracing? (mirror_tracing_medium_total_distance)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In medium mode, what is the median distance in cm of tracing? (mirror_tracing_medium_median_distance)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In medium mode, what is the maximum percentage (out of 100) of tracing around the entire star? (mirror_tracing_medium_maximum_percentage)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=100; UOM=percent</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In medium mode, what is the average width in cm of the line of the pattern (based on initial titration step)? (mirror_tracing_medium_average_width)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In hard mode, what is the total number of errors (off line + too slow) committed by the subject? (mirror_tracing_hard_total_error)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In hard mode, what is the number of times the subject traced outside the line? (mirror_tracing_hard_offline_error)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In hard mode, what is the number of times it took the subject too long to trace the pattern? (mirror_tracing_hard_tooslow_error)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In hard mode, what is the length in seconds it took the subject to complete the task? (mirror_tracing_hard_total_time)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0; UOM=seconds</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In hard mode, what is the total distance in cm of tracing? (mirror_tracing_hard_total_distance)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In hard mode, what is the median distance in cm of tracing? (mirror_tracing_hard_median_distance)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In hard mode, what is the maximum percentage (out of 100) of tracing around the entire star? (mirror_tracing_hard_maximum_percentage)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=100; UOM=percent</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In hard mode, what is the average width in cm of the line of the pattern (based on initial titration step)? (mirror_tracing_hard_average_width)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(After the test) To what extent do you feel excited? (mirror_tracing_post_excited)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(After the test) To what extent do you feel mad? (mirror_tracing_post_mad)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(After the test) To what extent do you feel interested? (mirror_tracing_post_interested)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(After the test) To what extent do you feel frustrated? (mirror_tracing_post_frustrated)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(After the test) To what extent do you feel happy? (mirror_tracing_post_happy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(After the test) To what extent do you feel upset? (mirror_tracing_post_upset)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(After the test) To what extent do you feel energetic? (mirror_tracing_post_energetic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>46</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(After the test) To what extent do you feel embarrassed? (mirror_tracing_post_embarrassed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>47</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(After the test) To what extent do you feel proud? (mirror_tracing_post_proud)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>48</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>(After the test) To what extent do you feel nervous? (mirror_tracing_post_nervous)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>49</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In quit mode, what is the total number of errors (off line + too slow) committed by the subject? (mirror_tracing_quit_total_error)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>50</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In quit mode, what is the number of times the subject traced outside the line? (mirror_tracing_quit_offline_error)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>51</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In quit mode, what is the number of times it took the subject too long to trace the pattern? (mirror_tracing_quit_tooslow_error)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>52</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In quit mode, what is the length in seconds it took the subject to complete the task? (mirror_tracing_quit_total_time)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=0; UOM=seconds</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>53</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In quit mode, what is the total distance in cm of tracing? (mirror_tracing_quit_total_distance)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>54</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In quit mode, what is the median distance in cm of tracing? (mirror_tracing_quit_median_distance)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>55</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In quit mode, what is the maximum percentage (out of 100) of tracing around the entire star? (mirror_tracing_quit_maximum_percentage)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=100; UOM=percent</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>56</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>In quit mode, what is the average width in cm of the line of the pattern (based on initial titration step)? (mirror_tracing_quit_average_width)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX710701</protocolID>
+     <longName>Distress Tolerance</longName>
+     <context>PhenX</context>
+     <shortName>PX710701</shortName>
+     <preferredDefinition>The Computerized Mirror Tracing Persistence Task (MTPT-C) is an automated version of the original Mirror Tracing Persistence Task (Quinn et al., 1996), which requires the construction of a mirror box and multiple copies of polygons to be traced. The MTPT-C simplifies the administration and scoring of this task. In this task, participants are required to trace a red dot along the lines of a geometric shape (e.g., star) using the computer's mouse. However, the mouse moves the red dot in the reverse direction. Each time the participant moves the mouse out of the lines or hesitates for more than 2 seconds, a buzzer sounds, and the dot moves back to the beginning. Three progressively more difficult shapes are used. The first two rounds last 1 minute each, while the third round of the MTPT-C can last up to 7 minutes. Participants may terminate the task at any point during the third round by pressing on the space bar. Distress tolerance is measured by the latency in seconds to task termination. Additionally, the number of errors per second (i.e., number of times the participant has to return to the starting position during the task, divided by the task time) is recorded to control for effects of skill on persistence.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:33</dateCreated>
+    <longName>PhenX PX710801 - Multigroup Ethnic Identity</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Phinney Scale is a 12-item multiethnic identity measure used among adolescents and young adults.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>In this country, people come from a lot of different cultures, and there are many different words to describe the different backgrounds or ethnic groups that people come from. Some examples of the names of ethnic groups are Hispanic, Black, As..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:33</dateCreated>
+      <longName>Multigroup Ethnic Identity</longName>
+      <preferredDefinition>Multigroup Ethnic Identity</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>Please answer: In terms of ethnic group, I consider myself to be: (ethnicity_710801)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>1. I have spent time trying to find out more about my ethnic group, such asIts history, traditions, and customs. (ethnic_identity_find_out)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Strongly disagree</meaningText>
+          <description>1 Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Disagree</meaningText>
+          <description>2 Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Agree</meaningText>
+          <description>3 Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Strongly agree</meaningText>
+          <description>4 Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>2. I am active in organizations or social groups that include mostly members of my own ethnic group. (ethnic_identity_active_ethnic_group)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Strongly disagree</meaningText>
+          <description>1 Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Disagree</meaningText>
+          <description>2 Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Agree</meaningText>
+          <description>3 Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Strongly agree</meaningText>
+          <description>4 Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>3. I have a clear sense of my ethnic background and what it means for me. (ethnic_identity_clear_sense)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Strongly disagree</meaningText>
+          <description>1 Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Disagree</meaningText>
+          <description>2 Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Agree</meaningText>
+          <description>3 Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Strongly agree</meaningText>
+          <description>4 Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>4. I think a lot about how my life will be affected by my ethnic group membership. (ethnic_identity_affect_life)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Strongly disagree</meaningText>
+          <description>1 Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Disagree</meaningText>
+          <description>2 Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Agree</meaningText>
+          <description>3 Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Strongly agree</meaningText>
+          <description>4 Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>5. I am happy that I am a member of the group I belong to. (ethnic_identity_happy_member)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Strongly disagree</meaningText>
+          <description>1 Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Disagree</meaningText>
+          <description>2 Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Agree</meaningText>
+          <description>3 Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Strongly agree</meaningText>
+          <description>4 Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>6. I have a strong sense of belonging to my own ethnic group. (ethnic_identity_sense_belonging)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Strongly disagree</meaningText>
+          <description>1 Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Disagree</meaningText>
+          <description>2 Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Agree</meaningText>
+          <description>3 Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Strongly agree</meaningText>
+          <description>4 Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>7. I understand pretty well what my ethnic group membership means to me. (ethnic_identity_understand_membership)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Strongly disagree</meaningText>
+          <description>1 Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Disagree</meaningText>
+          <description>2 Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Agree</meaningText>
+          <description>3 Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Strongly agree</meaningText>
+          <description>4 Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>8. To learn more about my ethnic background, I have often talked to other people about my ethnic group. (ethnic_identity_learn_talkabout)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Strongly disagree</meaningText>
+          <description>1 Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Disagree</meaningText>
+          <description>2 Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Agree</meaningText>
+          <description>3 Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Strongly agree</meaningText>
+          <description>4 Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>9. I have a lot of pride in my ethnic group and its accomplishments. (ethnic_identity_pride_accomplishment)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Strongly disagree</meaningText>
+          <description>1 Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Disagree</meaningText>
+          <description>2 Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Agree</meaningText>
+          <description>3 Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Strongly agree</meaningText>
+          <description>4 Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>10. I participate in cultural practices of my own group, such as special food, music, or customs. (ethnic_identity_participate_clultural)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Strongly disagree</meaningText>
+          <description>1 Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Disagree</meaningText>
+          <description>2 Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Agree</meaningText>
+          <description>3 Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Strongly agree</meaningText>
+          <description>4 Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>11. I feel a strong attachment towards my own ethnic group. (ethnic_identity_strong_attachment)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Strongly disagree</meaningText>
+          <description>1 Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Disagree</meaningText>
+          <description>2 Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Agree</meaningText>
+          <description>3 Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Strongly agree</meaningText>
+          <description>4 Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>12. I feel good about my cultural or ethnic background. (ethnic_identity_feel_good_about)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Strongly disagree</meaningText>
+          <description>1 Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Disagree</meaningText>
+          <description>2 Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Agree</meaningText>
+          <description>3 Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Strongly agree</meaningText>
+          <description>4 Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:08:33</dateCreated>
+        <questionText>Procedures and scoring:  The affirmation/belonging subscale includes items 3, 5, 6, 7, 9, 11, and 12. The exploration subscaleIncludesItems 1, 2, 4, 8, and 10. (Item 3 loads on both subscales.)  Scores range from 14. (scoring_710801)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>1 Strongly disagree</meaningText>
+          <description>1 Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2 Disagree</meaningText>
+          <description>2 Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3 Agree</meaningText>
+          <description>3 Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4 Strongly agree</meaningText>
+          <description>4 Strongly agree</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX710801</protocolID>
+     <longName>Multigroup Ethnic Identity</longName>
+     <context>PhenX</context>
+     <shortName>PX710801</shortName>
+     <preferredDefinition>The Phinney Scale is a 12-item multiethnic identity measure used among adolescents and young adults.</preferredDefinition>
+    </protocol>
+   </form>  
+   </forms>
