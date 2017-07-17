@@ -1,4 +1,4 @@
-CREATE OR REPLACE procedure SBR.MDSR_CLEAR_DUP_VM_STEP2
+CREATE OR REPLACE procedure SBR.MDSR_CLEAR_DUP_VM_CONDR_STEP2
 as
 
 
@@ -12,8 +12,6 @@ where  FIN_VM=vm_id
 AND VM.VM_IDSEQ=DS.AC_IDSEQ
 and DS.NAME not like'%of the retired VM%'
 and CONDR_IDSEQ='F37D0428-BBB6-6787-E034-0003BA3F9857';
-
-
 
 
 
@@ -93,20 +91,16 @@ VALUES (d_desig_id,n.CS_CSI_IDSEQ, i.DESIG_IDSEQ ,n.ATL_NAME, sysdate, 'SBR');
 end if;
  commit;
 EXCEPTION
-    WHEN others THEN
-     -- DBMS_OUTPUT.PUT_LINE("No matching result. Please try again.");
-     V_error := substr(SQLERRM,1,200);
-     
+    WHEN others THEN    
+     V_error := substr(SQLERRM,1,200);     
       insert into SBR.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'sbrext.ac_att_cscsi_ext','C3 LOOP','',V_VM_REC,V_error,sysdate );
   commit;
   end;
 end loop;
   end;
 EXCEPTION
-    WHEN others THEN
-     -- DBMS_OUTPUT.PUT_LINE("No matching result. Please try again.");
-     V_error := substr(SQLERRM,1,200);
-     
+    WHEN others THEN    
+     V_error := substr(SQLERRM,1,200);     
       insert into SBR.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.DEFINITIONS','C1 LOOP','',V_VM_REC,V_error,sysdate );
   commit;
 end;
@@ -160,9 +154,7 @@ end if;
  commit;
 EXCEPTION
     WHEN others THEN
-     -- DBMS_OUTPUT.PUT_LINE("No matching result. Please try again.");
-     V_error := substr(SQLERRM,1,200);
-     
+         V_error := substr(SQLERRM,1,200);     
       insert into SBR.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'sbrext.ac_att_cscsi_ext','C3 LOOP','',V_VM_REC,V_error,sysdate );
   commit;
   end;
@@ -173,8 +165,7 @@ end loop;
 EXCEPTION
     WHEN others THEN
      -- DBMS_OUTPUT.PUT_LINE("No matching result. Please try again.");
-     V_error := substr(SQLERRM,1,200);
-     
+     V_error := substr(SQLERRM,1,200);     
       insert into SBR.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.DEFINITIONS','C1 LOOP','',V_VM_REC,V_error,sysdate );
   commit;
 end;

@@ -1,18 +1,11 @@
-CREATE OR REPLACE procedure SBR.MDSR_CRETE_DUP_VM_DES_DEF
+CREATE OR REPLACE procedure SBREXT.MDSR_CRETE_DUP_VM_DES_DEF
 as
-
-
-/*cursor C1 is select FIN_VM,FIN_IDSEQ,version,VM_ID,long_name,PREFERRED_DEFINITION,VM.VM_IDSEQ, CONTE_IDSEQ
-from SBR.VALUE_MEANINGS VM,
-MDSR_VM_DUP_REF REF
-where   VM.VM_IDSEQ=REF.VM_IDSEQ
-and CONDR_IDSEQ='F37D0428-BBB6-6787-E034-0003BA3F9857';*/
 
 cursor C1 is select FIN_VM,FIN_IDSEQ,REF.VM_ID,REF.VM_IDSEQ,VM.CONTE_IDSEQ,REF.long_name,REF.PREFERRED_DEFINITION,VM.version
 from SBR.VALUE_MEANINGS VM,
-MDSR_VM_DUP_REF REF
+SBREXT.MDSR_VM_DUP_REF REF
 where   VM.VM_IDSEQ=REF.VM_IDSEQ
-and  (REF.DES IS NULL or  REF.DEFN IS NULL or  REF.DES_CL IS NULL or  REF.DEFN_CL IS NULL or REF.PROC IS NULL);
+AND PROC is null;
 
 VM_REC SBR.VALUE_MEANINGS%ROWTYPE;
 F_VM_IDSEQ SBR.VALUE_MEANINGS.VM_IDSEQ%TYPE;
@@ -54,10 +47,8 @@ end if;
 --4. Create list of DESIGNATIONS for FINAL VM for each DESIGNATIONS assosiated with retired VM
 
 
-
 DECLARE
- CURSOR C_DES  IS  
- --select* into D_REC from SBR.DESIGNATIONS where AC_IDSEQ =i.VM_IDSEQ;
+ CURSOR C_DES  IS   
 select MAX_RN, RWN,DESIG_IDSEQ,CONTE_IDSEQ,NAME,DETL_NAME,LAE_NAME,date_created from
 (select max(rownum) over (partition by CONTE_IDSEQ,trim(upper(NAME)),trim(upper(DETL_NAME)),trim(upper(LAE_NAME)) 
 order by trim(upper(NAME)),trim(upper(DETL_NAME)),trim(upper(LAE_NAME)),CONTE_IDSEQ ) as MAX_RN,
@@ -83,14 +74,12 @@ END IF;
  
 EXCEPTION
     WHEN others THEN
-     -- DBMS_OUTPUT.PUT_LINE("No matching result. Please try again.");
      V_error := substr(SQLERRM,1,200);
-       insert into SBR.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.DESIGNATIONS','INNER LOOP',i.FIN_IDSEQ,'NA',V_error,sysdate );
+       insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.DESIGNATIONS','INNER LOOP',i.FIN_IDSEQ,'NA',V_error,sysdate );
   commit;
   end; 
  end loop;
- END;
- 
+ END; 
  
  
  DECLARE
@@ -121,22 +110,19 @@ END IF;
  commit;
 EXCEPTION
     WHEN others THEN
-     -- DBMS_OUTPUT.PUT_LINE("No matching result. Please try again.");
      V_error := substr(SQLERRM,1,200);  
-      insert into SBR.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.DEFINITIONS','INNER LOOP',i.FIN_IDSEQ,'NA',V_error,sysdate );
+      insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.DEFINITIONS','INNER LOOP',i.FIN_IDSEQ,'NA',V_error,sysdate );
   commit;
   end; 
  end loop;
  END;
 
-
 commit;
 EXCEPTION
     WHEN others THEN
-     -- DBMS_OUTPUT.PUT_LINE("No matching result. Please try again.");
-     V_error := substr(SQLERRM,1,200);
-     
-      insert into SBR.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.DEFINITIONS','INNER LOOP',F_VM_IDSEQ,'NA',V_error,sysdate );
+    
+     V_error := substr(SQLERRM,1,200);     
+      insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.DEFINITIONS','INNER LOOP',F_VM_IDSEQ,'NA',V_error,sysdate );
   commit;
   end;
   end loop;

@@ -1,6 +1,6 @@
-CREATE OR REPLACE procedure SBR.MDSR_INSERT_VM_DUP_REF
+CREATE OR REPLACE procedure SBREXT.MDSR_INSERT_VM_DUP_REF
 as
-cursor C1 is select distinct FIN_VM,FIN_IDSEQ from SBR.MDSR_VM_DUP_REF;
+cursor C1 is select distinct FIN_VM,FIN_IDSEQ from SBREXT.MDSR_VM_DUP_REF;
 
 
 VM_REC SBR.VALUE_MEANINGS%ROWTYPE;
@@ -18,28 +18,30 @@ a.vm_id RETIRED VM public ID
 **/
 
 begin
-select count(*) into V_cnt1 from MDSR_VM_DUP_REF where CONDR_IDSEQ is not null;
+select count(*) into V_cnt1 from SBREXT.MDSR_VM_DUP_REF where CONCEPTS_NAME is not null;
 if V_cnt0=0 then
 V_run:=1;
 else
-select max(RUN_NUMBER)+1 into V_cnt0 from MDSR_VM_DUP_REF where CONDR_IDSEQ is not null;
+select max(RUN_NUMBER)+1 into V_cnt0 from SBREXT.MDSR_VM_DUP_REF where CONCEPTS_NAME is not null;
 end if; 
-INSERT INTO SBR.MDSR_VM_DUP_REF
-(FIN_VM,FIN_IDSEQ ,VM_ID,VM_IDSEQ,CONDR_IDSEQ,LONG_NAME,PREFERRED_DEFINITION,DATE_CREATED,  RUN_NUMBER )
+INSERT INTO SBREXT.MDSR_VM_DUP_REF
+(FIN_VM,FIN_IDSEQ ,VM_ID,VM_IDSEQ,CONCEPTS_NAME,LONG_NAME,PREFERRED_DEFINITION,DATE_CREATED,  RUN_NUMBER )
 select  
-a.FIN_VM,b.VM_IDSEQ,a.vm_id,a.VM_IDSEQ,a.CONDR_IDSEQ,NULL,NULL,SYSDATE, V_cnt0
+a.FIN_VM,b.VM_IDSEQ,a.vm_id,a.VM_IDSEQ,a.CONCEPTS_NAME,NULL,NULL,SYSDATE, V_cnt0
 from
-(select  FIN_VM,vm_id,VM_IDSEQ,CONDR_IDSEQ
+(select  FIN_VM,vm_id,VM_IDSEQ,CONCEPTS_NAME
 from (
-select max(VM_ID) over (partition by CONDR_IDSEQ order by CONDR_IDSEQ ) as FIN_VM,VM_ID,VM_IDSEQ,CONDR_IDSEQ
+select max(VM_ID) over  (partition by NAME order by NAME ) as FIN_VM,VM_ID,VM_IDSEQ,CN.NAME CONCEPTS_NAME
 from 
-SBR.VALUE_MEANINGS 
-where   UPPER(ASL_NAME) not like '%RETIRED%'
+SBR.VALUE_MEANINGS VM,
+CON_DERIVATION_RULES_EXT CN
+where   VM.CONDR_IDSEQ=CN.CONDR_IDSEQ
+AND UPPER(ASL_NAME) not like '%RETIRED%'
 --and CONDR_IDSEQ='F37D0428-BBB6-6787-E034-0003BA3F9857'
-and CONDR_IDSEQ is not NULL)
+and vm.CONDR_IDSEQ is not NULL)
 where FIN_VM<>VM_ID 
 MINUS
-select  FIN_VM,vm_id,VM_IDSEQ,CONDR_IDSEQ from MDSR_VM_DUP_REF where CONDR_IDSEQ is not null)a,
+select  FIN_VM,vm_id,VM_IDSEQ,CONCEPTS_NAME from SBREXT.MDSR_VM_DUP_REF where CONCEPTS_NAME is not null)a,
 SBR.VALUE_MEANINGS b
 where a.FIN_VM=b.VM_ID;
 
@@ -48,7 +50,7 @@ EXCEPTION
 
     WHEN others THEN
      V_error := substr(SQLERRM,1,200);     
-      insert into SBR.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.MDSR_VM_DUP_REF','NA','NA','NA',V_error,sysdate );
+      insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.MDSR_VM_DUP_REF','NA','NA','NA',V_error,sysdate );
   commit;
 end;
 
@@ -57,14 +59,14 @@ insert into MDSR_VM_DUP_REF Records for VM with CONDR_IDSEQ is null
 a.FIN_VM FINAL VN public ID
 a.vm_id RETIRED VM public ID**/
 begin
-select count(*) into V_cnt1 from MDSR_VM_DUP_REF where CONDR_IDSEQ is null;
+select count(*) into V_cnt1 from SBREXT.MDSR_VM_DUP_REF where CONCEPTS_NAME is null;
 if V_cnt1=0 then
 V_run:=1;
 else
-select max(RUN_NUMBER)+1 into V_cnt1 from MDSR_VM_DUP_REF where CONDR_IDSEQ is null;
+select max(RUN_NUMBER)+1 into V_cnt1 from SBREXT.MDSR_VM_DUP_REF where CONCEPTS_NAME is null;
 end if;
-INSERT INTO SBR.MDSR_VM_DUP_REF
-(FIN_VM,FIN_IDSEQ ,VM_ID,VM_IDSEQ,CONDR_IDSEQ,LONG_NAME,PREFERRED_DEFINITION,DATE_CREATED,  RUN_NUMBER )
+INSERT INTO SBREXT.MDSR_VM_DUP_REF
+(FIN_VM,FIN_IDSEQ ,VM_ID,VM_IDSEQ,CONCEPTS_NAME,LONG_NAME,PREFERRED_DEFINITION,DATE_CREATED,  RUN_NUMBER )
 select  
 a.FIN_VM,b.VM_IDSEQ,a.vm_id,a.VM_IDSEQ,NULL,a.LONG_NAME,a.PREFERRED_DEFINITION,SYSDATE, V_cnt1
 from
@@ -80,17 +82,16 @@ where   UPPER(ASL_NAME) not like '%RETIRED%'
 and CONDR_IDSEQ is null)
 where FIN_VM<>VM_ID 
 MINUS
-select  FIN_VM,vm_id,VM_IDSEQ,LONG_NAME,PREFERRED_DEFINITION from MDSR_VM_DUP_REF
-where    CONDR_IDSEQ is null)a,
+select  FIN_VM,vm_id,VM_IDSEQ,LONG_NAME,PREFERRED_DEFINITION from SBREXT.MDSR_VM_DUP_REF
+where  CONCEPTS_NAME is null)a,
 SBR.VALUE_MEANINGS b
 where a.FIN_VM=b.VM_ID;
-
 commit;
-EXCEPTION
 
+EXCEPTION
     WHEN others THEN
      V_error := substr(SQLERRM,1,200);     
-      insert into SBR.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.MDSR_VM_DUP_REF','NA','NA','NA',V_error,sysdate );
+      insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBREXT.MDSR_VM_DUP_REF','NA','NA','NA',V_error,sysdate );
   commit;
 end;
 /*4step UPDATE VM and create Prior Preferred Definition in DEFINITIONS*/
@@ -120,7 +121,7 @@ end if;
 EXCEPTION
     WHEN others THEN
      V_error := substr(SQLERRM,1,200);     
-      insert into SBR.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.DEFINITIONS','C1 LOOP',i.FIN_VM,DEF_REC,V_error,sysdate );
+      insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.DEFINITIONS','C1 LOOP',i.FIN_VM,DEF_REC,V_error,sysdate );
   commit;
   end;
 end loop;
