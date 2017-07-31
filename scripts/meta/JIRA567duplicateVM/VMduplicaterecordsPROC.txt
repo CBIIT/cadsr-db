@@ -50,26 +50,26 @@ The SP SBREXT.MDSR_CREATE_VM_DUP_REF finds 3 group of sets of VM duplicate recor
  
  2.(CURSOR  C2- not final VM and not processed records from duplicate sets).
 
-    1.Update SBR.VALUE_MEANINGS records found matching in SBREXT.MDSR_VM_DUP_REF table:
+     1.Update SBR.VALUE_MEANINGS records found matching in SBREXT.MDSR_VM_DUP_REF table:
                 a. Set "RETIRED ARCHIVED" workflow status.
                 b. add to CHANGE_NOTE 'Use VM public ID: FIN_VM Version 1.0 instead. Modified by caDSR script.'
               
-              2.Designation is created for each Retired VM for final VM as
+     2.Designation is created for each Retired VM for final VM as
               
     3.(CURSOR C_DEF  all DESIGNATIONS for retired VM) 
-               DESIGNATIONS are created  for FINAL VM from existing DESIGNATIONS of retired VM if do not exist yet.
-              select count(*) into V_cnt
-     from SBR.DESIGNATIONS
-     where AC_IDSEQ=i.FIN_IDSEQ and CONTE_IDSEQ=n.conte_idseq and trim(upper(NAME))=trim(upper(n.NAME))
-     and trim(upper(DETL_NAME))=trim(upper(n.DETL_NAME)) and trim(upper(LAE_NAME))=trim(upper(n.LAE_NAME));
+      DESIGNATIONS are created  for FINAL VM from existing DESIGNATIONS of retired VM if do not exist yet.
+      select count(*) into V_cnt
+      from SBR.DESIGNATIONS
+      where AC_IDSEQ=i.FIN_IDSEQ and CONTE_IDSEQ=n.conte_idseq and trim(upper(NAME))=trim(upper(n.NAME))
+      and trim(upper(DETL_NAME))=trim(upper(n.DETL_NAME)) and trim(upper(LAE_NAME))=trim(upper(n.LAE_NAME));
               
-              4.(CURSOR C_DES all DEFINITIONS for retired VM) 
-               DEFINITIONS are created  for FINAL VM from existing DEFINITIONS of retired VM if do not exist yet.
-              select count(*) into V_cnt
-     from SBR.DEFINITIONS
-     where AC_IDSEQ=i.FIN_IDSEQ and CONTE_IDSEQ=n.conte_idseq 
-     and upper(trim(DEFINITION))=upper(trim(n.DEFINITION)) and
-     trim(upper(DEFL_NAME))=trim(upper(n.DEFL_NAME)) and trim(upper(LAE_NAME))=trim(upper(n.LAE_NAME));
+    4.(CURSOR C_DES all DEFINITIONS for retired VM) 
+      DEFINITIONS are created  for FINAL VM from existing DEFINITIONS of retired VM if do not exist yet.
+      select count(*) into V_cnt
+      from SBR.DEFINITIONS
+      where AC_IDSEQ=i.FIN_IDSEQ and CONTE_IDSEQ=n.conte_idseq 
+      and upper(trim(DEFINITION))=upper(trim(n.DEFINITION)) and
+      trim(upper(DEFL_NAME))=trim(upper(n.DEFL_NAME)) and trim(upper(LAE_NAME))=trim(upper(n.LAE_NAME));
               
                
  The SP SBREXT.MDSR_CREATE_DUP_VM_CSI is created for:        
