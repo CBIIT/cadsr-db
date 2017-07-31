@@ -25,60 +25,70 @@ marked by the duplicate VMs cleanup process.
 
 Table SBREXT.MDSR_DUP_VM_ERR is created to store reasons of failures of the process.
 
-The SP SBREXT.MDSR_CREATE_VM_DUP_REF finds 3 goup of sets of VM duplicate records.
+The SP SBREXT.MDSR_CREATE_VM_DUP_REF finds 3 group of sets of VM duplicate records.
 
 1.duplicate VMs without Concepts (CONDR_IDSEQ is NULL).
   The records in these sets are grouped by VM Long_name and PREFERRED_DEFINITION. 
-  After the most current VM (Final VM) found  in the goup,the older records inserted in to SBREXT.MDSR_VM_DUP_REF alohg 
+  After the most current VM (Final VM) found  in the group, the older records inserted in to SBREXT.MDSR_VM_DUP_REF alohg 
   with Final VM Public ID(FIN_VM) and VM_IDSSEQ(FIN_IDSEQ).
 2.duplicate VMs with Concepts but Concepts Name(CONDR_IDSEQ is NOT NULL) not like "integer".
    The records in these sets are grouped by VM CONDR_IDSEQ. 
-  After the most current VM (Final VM) found  in the goup,the older records inserted in to SBREXT.MDSR_VM_DUP_REF
+  After the most current VM (Final VM) found  in the group, the older records inserted in to SBREXT.MDSR_VM_DUP_REF
   with Final VM Public ID and VM_IDSSEQ.
 3.duplicate VMs with Concepts but Concepts Name like "integer".
   The records in these sets are grouped by Concepts Name and Concepts Value. 
-  Concepts Name is taken from SBREXT.CON_DERIVATION_RULES_EXT table and Concepts Value fromSBREXT.COMPONENT_CONCEPTS_EXT table,
-  After the most current VM (Final VM) found  in the goup,the older records inserted in to SBREXT.MDSR_VM_DUP_REF
+  Concepts Name is taken from SBREXT.CON_DERIVATION_RULES_EXT table and Concepts Value from SBREXT.COMPONENT_CONCEPTS_EXT table,
+  After the most current VM (Final VM) found  in the group, the older records inserted in to SBREXT.MDSR_VM_DUP_REF
   with Final VM Public ID and VM_IDSSEQ.
   
   
  The SP SBREXT.MDSR_CRETE_DUP_VM_DES_DEF is created for:
- 
+
  1.(CURSOR  C1 -final VM and not processed records from duplicate sets).
-    a.Set "RELEASED" workflow status for each Final VM.
-    b.Add preferred definition with definition type= “Prior preferred definition” – if not in definitions type list. 
+    a. Set "RELEASED" workflow status for each Final VM.
+    b. Add preferred definition with definition type= “Prior preferred definition” – if not in definitions type list. 
  
  2.(CURSOR  C2- not final VM and not processed records from duplicate sets).
- 
+
     1.Update SBR.VALUE_MEANINGS records found matching in SBREXT.MDSR_VM_DUP_REF table:
-	  a.Set "RETIRED ARCHIVED" workflow status.
-	  b.add to CHANGE_NOTE 'Use VM public ID: FIN_VM Version 1.0 instead. Modified by caDSR script.'
-	
-	2.Designation is created for each Retired VM for final VM as
-	
+                a. Set "RETIRED ARCHIVED" workflow status.
+                b. add to CHANGE_NOTE 'Use VM public ID: FIN_VM Version 1.0 instead. Modified by caDSR script.'
+              
+              2.Designation is created for each Retired VM for final VM as
+              
     3.(CURSOR C_DEF  all DESIGNATIONS for retired VM) 
-	 DESIGNATIONS are created  for FINAL VM from existing DESIGNATIONS of retired VM if do not exist yet.
-	 select count(*) into V_cnt
+               DESIGNATIONS are created  for FINAL VM from existing DESIGNATIONS of retired VM if do not exist yet.
+              select count(*) into V_cnt
      from SBR.DESIGNATIONS
      where AC_IDSEQ=i.FIN_IDSEQ and CONTE_IDSEQ=n.conte_idseq and trim(upper(NAME))=trim(upper(n.NAME))
      and trim(upper(DETL_NAME))=trim(upper(n.DETL_NAME)) and trim(upper(LAE_NAME))=trim(upper(n.LAE_NAME));
-	 
-	4.(CURSOR C_DES all DEFINITIONS for retired VM) 
-	 DEFINITIONS are created  for FINAL VM from existing DEFINITIONS of retired VM if do not exist yet.
-	 select count(*) into V_cnt
+              
+              4.(CURSOR C_DES all DEFINITIONS for retired VM) 
+               DEFINITIONS are created  for FINAL VM from existing DEFINITIONS of retired VM if do not exist yet.
+              select count(*) into V_cnt
      from SBR.DEFINITIONS
      where AC_IDSEQ=i.FIN_IDSEQ and CONTE_IDSEQ=n.conte_idseq 
      and upper(trim(DEFINITION))=upper(trim(n.DEFINITION)) and
      trim(upper(DEFL_NAME))=trim(upper(n.DEFL_NAME)) and trim(upper(LAE_NAME))=trim(upper(n.LAE_NAME));
-	 
-	 
- The SP SBREXT.MDSR_CREATE_DUP_VM_CSI is created for:	 
+              
+               
+ The SP SBREXT.MDSR_CREATE_DUP_VM_CSI is created for:        
  
  1.(CURSOR  C1 -retired VM CLASSIFICATIONS for DESIGNATIONS).
     Create CLASSIFICATIONS of DESIGNATIONS for FINAL VM from retired VM CLASSIFICATIONS of DESIGNATIONS
-	avoiding duplicates in CLASSIFICATIONS set.
+    avoiding duplicates in CLASSIFICATIONS set.
  2.(CURSOR  C2 -retired VM CLASSIFICATIONS for DEFINITIONS).
-    Create CLASSIFICATIONS of DEFINITIONS for FINAL VM from retired VM CLASSIFICATIONS of DEFINITIONS
-	avoiding duplicates in CLASSIFICATIONS set
-	
+   Create CLASSIFICATIONS of DEFINITIONS for FINAL VM from retired VM CLASSIFICATIONS of DEFINITIONS
+    avoiding duplicates in CLASSIFICATIONS set
+              
  The SP SBREXT.MDSR_CHECK_FVM_DES_DEF_CSI is created for:
+   1.To check if all DESIGNATIONS where created for FINAL VM  from retired VM DESIGNATIONS
+   If any missed, the Procedure  set DES column to 'NC' in SBREXT.MDSR_VM_DUP_REF
+   2. To check if all DEFINITIONS where created for FINAL VM  from retired VM DEFINITIONS
+   If any missed, the Procedure set DEFN column to 'NC' in SBREXT.MDSR_VM_DUP_REF
+   3. To check if all CLASSIFICATIONS of DESIGNATIONS where created for FINAL VM  from retired VM CLASSIFICATIONS of DESIGNATIONS
+   If any missed, the Procedure set DES_CL column to 'NC' in SBREXT.MDSR_VM_DUP_REF
+   4. To check if all CLASSIFICATIONS of DEFINITIONS where created for FINAL VM  from retired VM LASSIFICATIONS of DEFINITIONS
+    If any missed, the Procedure set DEFN_CL column to 'NC' in SBREXT.MDSR_VM_DUP_REF
+   5.When all of 4 columns are NULL then column  PROC='P' .Which means the retired VM record and associated records in SBR.DESIGNATIONS,
+   SBR.DEFINITIONS,SBREXT.AC_ATT_CSCSI_EXT tables were added to FINAL VM if not existed.
