@@ -31,7 +31,7 @@ The SP SBREXT.MDSR_CREATE_VM_DUP_REF finds 3 group of sets of VM duplicate recor
   The records in these sets are grouped by VM Long_name and PREFERRED_DEFINITION. 
   After the most current VM (Final VM) found  in the group, the older records inserted in to SBREXT.MDSR_VM_DUP_REF alohg 
   with Final VM Public ID(FIN_VM) and VM_IDSSEQ(FIN_IDSEQ).
-2.duplicate VMs with Concepts but Concepts Name(CONDR_IDSEQ is NOT NULL) not like "integer".
+2.duplicate VMs with Concepts(CONDR_IDSEQ is NOT NULL) but Concepts Name not like "integer".
    The records in these sets are grouped by VM CONDR_IDSEQ. 
   After the most current VM (Final VM) found  in the group, the older records inserted in to SBREXT.MDSR_VM_DUP_REF
   with Final VM Public ID and VM_IDSSEQ.
