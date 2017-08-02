@@ -56,7 +56,7 @@ IF V_cnt>1 then
 UPDATE MDSR_VM_DUP_REF set DES='NC'
 where VM_IDSEQ=VM_IDSEQ;
 v_errm:='To many DES of  '||i.FIN_VM||' for VM:'||i.VM_IDSEQ||'and DES:'||i.DESIG_IDSEQ;
-insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.DESIGNATIONS','C1','',i.FIN_IDSEQ,v_errm,sysdate );
+insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_CREATE_DUP_VM_CSI', 'SBR.DESIGNATIONS','C1',i.VM_IDSEQ,i.VM_ID,v_errm,sysdate );
 
 ELSIF V_cnt=1 then
 select * into DES_REC
@@ -89,7 +89,7 @@ EXCEPTION
     WHEN others THEN
      V_error := substr(SQLERRM,1,200);
      
-      insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'sbrext.ac_att_cscsi_ext','C3 LOOP','',V_VM_REC,V_error,sysdate );
+      insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_CREATE_DUP_VM_CSI', 'sbrext.ac_att_cscsi_ext','C3 LOOP','',V_VM_REC,V_error,sysdate );
   commit;
   end;
 end loop;
@@ -108,7 +108,7 @@ IF  V_cnt>1 then
 UPDATE MDSR_VM_DUP_REF set DEFN='NC'
 where VM_IDSEQ=j.VM_IDSEQ;
 v_errm:='To many DES of  '||j.FIN_VM||' for VM:'||j.VM_IDSEQ||'and DES:'||j.DEFIN_IDSEQ;
-insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBR.DESIGNATIONS','C1','',j.FIN_IDSEQ,v_errm,sysdate );
+insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_CREATE_DUP_VM_CSI', 'SBR.DESIGNATIONS','C1',j.VM_IDSEQ,j.VM_ID,v_errm,sysdate );
 
 ELSIF V_cnt=1 then
 select * into DEF_REC
@@ -141,7 +141,7 @@ end if;
 EXCEPTION
     WHEN others THEN
      V_error := substr(SQLERRM,1,200);     
-      insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'sbrext.ac_att_cscsi_ext','C2 LOOP','',V_VM_REC,V_error,sysdate );
+      insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_CREATE_DUP_VM_CSI', 'sbrext.ac_att_cscsi_ext','C2 LOOP','',V_VM_REC,V_error,sysdate );
   commit;
   end;
   
