@@ -17,17 +17,21 @@ SBREXT.MDSR_CREATE_DUP_VM_DES_DEF
 SBREXT.MDSR_CREATE_DUP_VM_CSI
 SBREXT.MDSR_CHECK_FVM_DES_DEF_CSI
 
-IN SBR.VALUE_MEANINGS:
+CHANGES made by the process IN SBR.VALUE_MEANINGS:
 UPDATE to "RELEASED" workflow status for each Final VM.
 UPDATE to "RETIRED ARCHIVED" workflow status duplicate VM record and add to CHANGE_NOTE 'Use VM public ID: FIN_VM Version 1.0 instead. Modified by caDSR script.
 
-SBR.DEFINITIONS
+CHANGES made by the process INSBR.DEFINITIONS
 Add preferred definition record with definition type= “Prior preferred definition” – if not in definitions type list.
 DEFINITIONS are created  for FINAL VM from existing DEFINITIONS of retired VM if do not exist yet.
 
-SBR.DESIGNATIONS
-Designation is created for each Retired VM for final VM. 
-DESIGNATIONS are created  for FINAL VM from existing DESIGNATIONS of retired VM if do not exist yet.
+CHANGES made by the process INSBR.DESIGNATIONS
+DESIGNATION is created for each Retired VM. 
+DESIGNATIONS are created for FINAL VM from existing DESIGNATIONS of retired VM if do not exist yet.
+
+CHANGES made by the process IN SBREXT.AC_ATT_CSCSI_EXT
+CLASSIFICATIONS of DESIGNATIONS are created for FINAL VM  from retired VM CLASSIFICATIONS of DESIGNATIONS
+CLASSIFICATIONS of DEFINITIONS where created for FINAL VM  from retired VM CLASSIFICATIONS of DEFINITIONS
 
 Procedures DESCRIPTION 
 
@@ -136,7 +140,7 @@ The SP SBREXT.MDSR_CREATE_VM_DUP_REF finds 3 group of sets of VM duplicate recor
    If any missed, the Procedure set DEFN column to 'NC' in SBREXT.MDSR_VM_DUP_REF
    3. To check if all CLASSIFICATIONS of DESIGNATIONS where created for FINAL VM  from retired VM CLASSIFICATIONS of DESIGNATIONS
    If any missed, the Procedure set DES_CL column to 'NC' in SBREXT.MDSR_VM_DUP_REF
-   4. To check if all CLASSIFICATIONS of DEFINITIONS where created for FINAL VM  from retired VM LASSIFICATIONS of DEFINITIONS
+   4. To check if all CLASSIFICATIONS of DEFINITIONS where created for FINAL VM  from retired VM CLASSIFICATIONS of DEFINITIONS
     If any missed, the Procedure set DEFN_CL column to 'NC' in SBREXT.MDSR_VM_DUP_REF
    5.When all of 4 columns are NULL then column  PROC='P' .Which means the retired VM record and associated records in SBR.DESIGNATIONS,
    SBR.DEFINITIONS,SBREXT.AC_ATT_CSCSI_EXT tables were added to FINAL VM if not existed.

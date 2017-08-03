@@ -367,7 +367,7 @@ commit;
  end if;
  
  IF V_cntds=0 and V_cntdf=0 and V_cntdscl=0 and V_cntdfcl=0 THEN
- UPDATE  SBREXT.MDSR_VM_DUP_REF set PROC='P'
+ UPDATE  SBREXT.MDSR_VM_DUP_REF set PROC='P',DES=NULL,DEFN=NULL,DES_CL=NULL,DEFN_CL=NULL
 where VM_IDSEQ=i.VM_IDSEQ;
 commit;
  END IF;
