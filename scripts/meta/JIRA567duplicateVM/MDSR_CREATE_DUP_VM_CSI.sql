@@ -31,7 +31,6 @@ order by FIN_VM desc,VM.vm_id desc;
 VM_REC SBR.VALUE_MEANINGS%ROWTYPE;
 F_VM_IDSEQ SBR.VALUE_MEANINGS.VM_IDSEQ%TYPE;
 V_VERS SBR.VALUE_MEANINGS.version%TYPE;
-t_desig_id SBR.designations.desig_idseq%TYPE;
 d_desig_id SBR.designations.desig_idseq%TYPE;
 V_errm varchar2(2000);
 V_VM_REC varchar2(2000);

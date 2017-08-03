@@ -1,4 +1,6 @@
-The duplicate VMs cleanup process involves insert/modification records in 4 tables:
+
+The duplicate VMs cleanup process 
+involves insert/modification records in 4 tables:
 
 SBR.VALUE_MEANINGS
 SBR.DESIGNATIONS
@@ -44,15 +46,15 @@ The SP SBREXT.MDSR_CREATE_VM_DUP_REF finds 3 group of sets of VM duplicate recor
 
 1.duplicate VMs without Concepts (CONDR_IDSEQ is NULL).
   The records in these sets are grouped by VM Long_name and PREFERRED_DEFINITION. 
-  After the most current VM (Final VM) found  in the group, the older records inserted in to SBREXT.MDSR_VM_DUP_REF alohg 
+  After the most current VM (Final VM) found  in the group, the older records inserted in to SBREXT.MDSR_VM_DUP_REF along 
   with Final VM Public ID(FIN_VM) and VM_IDSSEQ(FIN_IDSEQ).
   
-  To avoid insert duplicate records into SBREXT.MDSR_DUP_VM_ERR we deliting from found duplecate set of records (A) 
-  aleary existed records in SBREXT.MDSR_DUP_VM_ERR(B) 
+  To avoid insert duplicate records into SBREXT.MDSR_DUP_VM_ERR we delete from found duplicate set of records (A) 
+  already existed records in SBREXT.MDSR_DUP_VM_ERR(B) 
   
  Query A. 
-   retives only records which will be set to retiered with final VM record ID.
- 
+   retrieves only records which will be set to retired with final VM record ID.
+
    select  FIN_VM,vm_id,VM_IDSEQ,CONDR_IDSEQ,CONCEPTS_NAME
    from (
    select max(VM_ID) over  (partition by VM.CONDR_IDSEQ order by VM.CONDR_IDSEQ ) as FIN_VM,VM_ID,VM_IDSEQ,VM.CONDR_IDSEQ,CN.NAME CONCEPTS_NAME
@@ -96,7 +98,7 @@ The SP SBREXT.MDSR_CREATE_VM_DUP_REF finds 3 group of sets of VM duplicate recor
   
  The SP SBREXT.MDSR_CREATE_DUP_VM_DES_DEF is created for:
 
- 1.(CURSOR  C1 -final VM and not processed records from duplicate sets).
+1.(CURSOR  C1 -final VM and not processed records from duplicate sets).
     a. Set "RELEASED" workflow status for each Final VM.
     b. Add preferred definition with definition type= “Prior preferred definition” – if not in definitions type list. 
  
@@ -129,7 +131,7 @@ The SP SBREXT.MDSR_CREATE_VM_DUP_REF finds 3 group of sets of VM duplicate recor
  1.(CURSOR  C1 -retired VM CLASSIFICATIONS for DESIGNATIONS).
     Create CLASSIFICATIONS of DESIGNATIONS for FINAL VM from retired VM CLASSIFICATIONS of DESIGNATIONS
     avoiding duplicates in CLASSIFICATIONS set.
- 2.(CURSOR  C2 -retired VM CLASSIFICATIONS for DEFINITIONS).
+2.(CURSOR  C2 -retired VM CLASSIFICATIONS for DEFINITIONS).
    Create CLASSIFICATIONS of DEFINITIONS for FINAL VM from retired VM CLASSIFICATIONS of DEFINITIONS
     avoiding duplicates in CLASSIFICATIONS set
               

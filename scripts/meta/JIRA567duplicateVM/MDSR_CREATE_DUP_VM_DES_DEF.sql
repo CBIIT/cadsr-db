@@ -13,7 +13,6 @@ AND PROC is null;
 VM_REC SBR.VALUE_MEANINGS%ROWTYPE;
 F_VM_IDSEQ SBR.VALUE_MEANINGS.VM_IDSEQ%TYPE;
 V_VERS SBR.VALUE_MEANINGS.version%TYPE;
-t_desig_id SBR.designations.desig_idseq%TYPE;
 d_desig_id SBR.designations.desig_idseq%TYPE;
 DEF_REC VARCHAR(2000);
 d_def_id SBR.designations.desig_idseq%TYPE;
@@ -78,7 +77,7 @@ where AC_IDSEQ=i.FIN_IDSEQ and CONTE_IDSEQ=i.conte_idseq and NAME=i.vm_id||'V'||
 select sbr.admincomponent_crud.cmr_guid into d_desig_id from dual;
  Insert into SBR.DESIGNATIONS 
  (DESIG_IDSEQ, AC_IDSEQ, CONTE_IDSEQ, NAME,DETL_NAME,LAE_NAME, DATE_CREATED, CREATED_BY)
- VALUES (t_desig_id, i.FIN_IDSEQ, i.conte_idseq,i.vm_id||'V'||'1.0 of the retired VM','Duplicate VM','ENGLISH', sysdate, 'SBR');
+ VALUES (d_desig_id, i.FIN_IDSEQ, i.conte_idseq,i.vm_id||'V'||'1.0 of the retired VM','Duplicate VM','ENGLISH', sysdate, 'SBR');
 end if;
 
 --3. Create list of DESIGNATIONS for FINAL VM for each DESIGNATIONS assosiated with retired VM
