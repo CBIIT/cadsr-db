@@ -235,4 +235,9 @@ REP_CONCEPTS, DEC_WK_FLOW_STATUS, DEC_REG_STATUS, VD_WK_FLOW_STATUS, VD_REG_STAT
             AND dec.prop_idseq = prop.prop_idseq(+)
             AND prop.conte_idseq = prop_conte.conte_idseq(+)
             AND vd.rep_idseq = rep.rep_idseq(+)
-            AND rep.conte_idseq = rep_conte.conte_idseq(+);
+            AND rep.conte_idseq = rep_conte.conte_idseq(+)
+/
+GRANT SELECT ON SBREXT.DE_CDE_EXCEL_GEN_VIEW_5_3 TO CDEBROWSER;
+GRANT SELECT ON SBREXT.DE_CDE_EXCEL_GEN_VIEW_5_3 TO READONLY;
+GRANT DELETE, INSERT, SELECT, UPDATE ON SBREXT.DE_CDE_EXCEL_GEN_VIEW_5_3 TO DER_USER;
+CREATE OR REPLACE PUBLIC SYNONYM DE_CDE_EXCEL_GEN_VIEW_5_3 FOR SBREXT.DE_CDE_EXCEL_GEN_VIEW_5_3;
