@@ -1,0 +1,50 @@
+Please create Oracle Wallet on the database server.
+Follow the steps below: 
+v_wallet_path - directory where wallet will be located.
+v_user_cert_temp directory where Identity Certificate(ncinihgov.cer) will be stored.
+
+1.create wallet pass 
+
+mkdir v_wallet_path \wallet 
+
+2. create Oracle wallet
+orapki wallet create -wallet c:\oracle\wallet -pwd v_wallet_password -auto_login
+
+
+3.Add certificate
+
+orapki wallet add -wallet c:\oracle\wallet -trusted_cert -cert v_user_cert_temp \ ncinihgov.cer -pwd v_wallet_password
+
+4.Execute SP:
+
+utl_http.set_wallet(v_wallet_path, v_wallet_password);
+
+
+begin
+  dbms_network_acl_admin.create_acl(
+    acl         => '/sys/acls/HTTP_ACL_DSRDEV.xml',
+    description => 'HTTP Access',
+    principal   => 'SBREXT',
+    is_grant    => TRUE,
+    privilege   => 'connect',
+    start_date  => null,
+    end_date    => null
+  );
+ 
+  dbms_network_acl_admin.add_privilege(
+    acl        => '/sys/acls/HTTP_ACL_DSRDEV.xml',
+    principal  => 'SBREXT',
+    is_grant   => TRUE,
+    privilege  => 'resolve',
+    start_date => null,
+    end_date   => null
+  );
+ 
+  dbms_network_acl_admin.assign_acl (
+    acl        => '/sys/acls/HTTP_ACL_DSRDEV.xml ',
+    host       => 'lexevscts2.nc.nih.gov',
+    lower_port => 80,
+    upper_port => 443
+  );
+  commit;
+end;
