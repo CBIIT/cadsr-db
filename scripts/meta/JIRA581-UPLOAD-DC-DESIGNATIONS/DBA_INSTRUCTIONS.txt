@@ -1,10 +1,10 @@
-DBA steps in SBR:
-1.Run the script in attached file DELETE_TEMP_DESIGNATIONS.sql 
+DBA steps in SBREXT:
+1.Run the attached script CREATE_TEMP_DESIG_OBJECTS.sql in SBREXT
 2.Open the attached control file DBA_DESIGNATIONS_UPLOAD.CTL.
-3.Replace  DBA_PATH to the location path where you will place the attached Designations.csv file.
+3.Replace  DBA_PATH to the location path where you will place the attached Designations_NAACCR.csv file.
 4.Load data via SQL LOADER using control file DBA_DESIGNATIONS_UPLOAD.CTL.
-5.Run the script SBR.MDSR_INS_DE_DESIGNATIONS.sql(the file is attached)
+5.Run the attached script CEATE_DESIGNATIONS.sql in SBREXT
 6. Send us 2 files:     
-  cadsrmeta-581t.log    
-  cadsrmeta-581p.log
+  cadsrmeta-581a.log 
+  cadsrmeta-581c.log
 
