@@ -1,15 +1,11 @@
-
-
-SELECT DISTINCT VM.CONDR_IDSEQ, NAME CONCEPT_CODE
-
---SELECT DISTINCT VM.CONDR_IDSEQ, vm.vm_id,NAME CONCEPT_CODE,trim(UPPER(CONCEPT_NAME))CONCEPT_NAME,trim(UPPER(LONG_NAME)) VM_NAME,trim(UPPER(vm.DESCRIPTION)) VM_DESCRIPTION
+SELECT DISTINCT NAME,trim(UPPER(CONCEPT_NAME))CONCEPT_NAME
 FROM  SBR.VALUE_MEANINGS VM,
 (SELECT M.CONDR_IDSEQ,name, LISTAGG(M.LONG_NAME,' ') WITHIN GROUP (ORDER BY M.ELM_ORDER) as CONCEPT_NAME
 FROM  (select CONDR_IDSEQ,name,spl.preferred_name,ELM_ORDER,LONG_NAME
 from
 (select distinct
  CONDR_IDSEQ,name,
- trim(regexp_substr(replace(replace(name,'Rh Negative Blood Group','C76252'),'Rh Positive Blood Group','C76251'), '[^:]+', 1, levels.column_value)) as preferred_name,levels.column_value ELM_ORDER
+ trim(regexp_substr(name, '[^:]+', 1, levels.column_value)) as preferred_name,levels.column_value ELM_ORDER
 from 
  (select *from SBREXT.CON_DERIVATION_RULES_EXT 
  
@@ -28,6 +24,20 @@ AND  VW.CONDR_IDSEQ=DR.CONDR_IDSEQ
 and UPPER(ASL_NAME) not like '%RETIRED%'
 and trim(UPPER(VM.LONG_NAME))<>trim(UPPER(CONCEPT_NAME))
 and instr(NAME,'C45255')=0
-order by name--,CONCEPT_NAME,VM_NAME desc;
 
--- select* from SBREXT.CONCEPTS_EXT where preferred_name='C12844'
+minus
+SELECT distinct dr.NAME NAME,trim(UPPER(C.LONG_NAME)) CONCEPT_NAME
+FROM  SBR.VALUE_MEANINGS VM,
+SBREXT.CON_DERIVATION_RULES_EXT DR,
+ sbrext.concepts_ext  c ,
+ (select count(*),CONDR_IDSEQ from SBR.VALUE_MEANINGS VM 
+ where  UPPER(ASL_NAME) not like '%RETIRED%' and CONDR_IDSEQ is not null
+ having count(*)>1GROUP BY CONDR_IDSEQ )VW
+ 
+where    VW.CONDR_IDSEQ=VM.CONDR_IDSEQ
+AND  VM.CONDR_IDSEQ=DR.CONDR_IDSEQ
+AND DR.name=c.preferred_name
+AND instr(dr.name,':')=0
+and UPPER(VM.ASL_NAME) not like '%RETIRED%'
+and trim(UPPER(VM.LONG_NAME))<>trim(UPPER(C.LONG_NAME))
+order by NAME,CONCEPT_NAME;
