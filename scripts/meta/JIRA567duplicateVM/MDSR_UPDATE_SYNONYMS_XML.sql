@@ -20,14 +20,18 @@ commit;
 trim(replace(replace(regexp_replace(replace(replace(replace(substr(long_name,start_SYN,END_SYN-START_SYN),'- '),
 '</designation>'),'<core:language>en</core:language>'),  '(['||chr(10)||chr(11)||chr(13)||']+)'),'>  ','>'),' <','<')) 
 where TRIM_NAME is null;*/
-
 UPDATE SBREXT.MDSR_SYNONYMS_XML 
+set TRIM_NAME=trim(regexp_replace(regexp_replace(replace(replace(replace(replace(substr(long_name,start_SYN,END_SYN-START_SYN),'- '),
+'</designation>'),'<core:language>en</core:language>'),'designation designationRole="ALTERNATIVE" assertedInCodeSystemVersion='  ), 
+'(['||chr(10)||chr(11)||chr(13)||']+)'),'( ){2,}', ' '));
+
+/*UPDATE SBREXT.MDSR_SYNONYMS_XML 
 set TRIM_NAME=trim(replace(replace(regexp_replace(replace(replace(replace(replace(substr(long_name,start_SYN,END_SYN-START_SYN),'- '),
 '</designation>'),'<core:language>en</core:language>'),'designation designationRole="ALTERNATIVE" assertedInCodeSystemVersion='  ), 
 '(['||chr(10)||chr(11)||chr(13)||']+)'),'>  ','>'),' <','<')) ;
 
 UPDATE SBREXT.MDSR_SYNONYMS_XML 
-set TRIM_NAME=trim(replace(replace(TRIM_NAME,'>  ','>'),' <','<')) ;
+set TRIM_NAME=trim(replace(replace(TRIM_NAME,'>  ','>'),' <','<')) ;*/
 
 commit;
 
@@ -37,7 +41,5 @@ EXCEPTION
      V_error := substr(SQLERRM,1,200);     
       insert into SBREXT.MDSR_DUP_VM_ERR VALUES('MDSR_DUP_VM_ERR', 'SBREXT.MDSR_UPDATE_SYNONYMS_XML','SBREXT.MDSR_SYNONYMS_XML','NA','NA',V_error,sysdate );
   commit;
-end;
-  
 end;
 /
