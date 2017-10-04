@@ -15,20 +15,20 @@ V_concept VARCHAR2 (255);
 
 
 ******************************************************************************/
-cursor C1 is select distinct CODE  from SBREXT.MDSR_SYNONYMS_XML ;
+cursor C1 is select distinct CODE,CONCEPT_NAME  from SBREXT.MDSR_SYNONYMS_XML where RESP_STATUS=200;
 BEGIN
 
 
 for i in C1 loop
 BEGIN
-SELECT COUNT(*) INTO  V_cnt from SBREXT.CONCEPTS_EXT where trim(preferred_name)=trim(i.CODE);
+/*SELECT COUNT(*) INTO  V_cnt from SBREXT.CONCEPTS_EXT where trim(preferred_name)=trim(i.CODE);
 if V_cnt>1 then
 select trim(upper(long_name)) into V_concept from SBREXT.CONCEPTS_EXT where trim(preferred_name)=trim(i.CODE)
 and DATE_MODIFIED =(select max(DATE_MODIFIED)from SBREXT.CONCEPTS_EXT where trim(preferred_name)=trim(i.CODE));
 ELSE
 select trim(upper(long_name)) into V_concept from SBREXT.CONCEPTS_EXT where trim(preferred_name)=trim(i.CODE);
 END IF;
---/*
+--*/
 insert into  SBREXT.MDSR_CONCEPTS_SYNONYMS
 (
            CODE ,
@@ -37,7 +37,7 @@ insert into  SBREXT.MDSR_CONCEPTS_SYNONYMS
 )
 
 select     i.code ,
-           V_concept,
+           i.CONCEPT_NAME,
            trim(el_NAME)
  
 from (select el_NAME from (

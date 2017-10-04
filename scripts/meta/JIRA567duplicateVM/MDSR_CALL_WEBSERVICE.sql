@@ -6,11 +6,11 @@ CREATE OR REPLACE procedure SBREXT.MDSR_call_webservice as
   errm varchar2(200);
   CURSOR C is 
   
-    select distinct preferred_name NAME,trim(UPPER(C.LONG_NAME)) CONCEPT_NAME
+  /* */  select distinct preferred_name NAME,trim(UPPER(C.LONG_NAME)) CONCEPT_NAME
     FROM SBREXT.MDSR_CONDR_ID_CONCEPT_EXT x,
     sbrext.concepts_ext  c
     where  trim(CONCEPT_CODE)=trim(c.preferred_name)
-    minus      
+    union     
     SELECT distinct dr.NAME NAME,trim(UPPER(C.LONG_NAME)) CONCEPT_NAME
     FROM  SBR.VALUE_MEANINGS VM,
     SBREXT.CON_DERIVATION_RULES_EXT DR,
@@ -27,7 +27,7 @@ CREATE OR REPLACE procedure SBREXT.MDSR_call_webservice as
     and trim(UPPER(VM.LONG_NAME))<>trim(UPPER(C.LONG_NAME)) ;
  
 begin
-  UTL_HTTP.SET_WALLET('file:/data10/oradata/DSRDEV/WALLET2', 'h2vVrSde6y');
+  --UTL_HTTP.SET_WALLET('file:/data10/oradata/DSRDEV/WALLET2', 'h2vVrSde6y');
 for i in C loop
     begin
   t_code:=i.NAME;

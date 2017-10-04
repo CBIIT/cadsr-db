@@ -2,17 +2,18 @@ exec SBREXT.MDSR_call_webservice;
 
 exec  UTL_HTTP.SET_WALLET('file:/data10/oradata/DSRDEV/WALLET2', 'h2vVrSde6y');
 
-select * from MDSR_SYNONYMS_XML where (end_SYN-start_SYN)>4000;
+select * from MDSR_SYNONYMS_XML where RESP_STATUS<>200
+--(end_SYN-start_SYN)>4000;
 exec SBREXT.MDSR_UPDATE_SYNONYMS_XML;
 
-select*from MDSR_SYNONYMS_XML where code='XC48789' 
-create table  MDSR_SYNONYMS_XML_BKUP as select * from MDSR_SYNONYMS_XML;
+select*from MDSR_SYNONYMS_XML where concept_name is null ;
+create table  MDSR_SYNONYMS_XML_1002 as select * from MDSR_SYNONYMS_XML;
 
 select * from MDSR_SYNONYMS_XML_BKUP;
 --delete from  MDSR_SYNONYMS_XML;
-select* from SBREXT.MDSR_DUP_VM_ERR where date_created >sysdate-1;
+select* from SBREXT.MDSR_DUP_VM_ERR where date_created >sysdate-0.5;
 
-select count(*) from MDSR_SYNONYMS_XML;
+select count(*) from MDSR_SYNONYMS_XML where RESP_STATUS=200;
 
 
 SELECT distinct NAME,trim(UPPER(C.LONG_NAME)) CONCEPT_NAME
