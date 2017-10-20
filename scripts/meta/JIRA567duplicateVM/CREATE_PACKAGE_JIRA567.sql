@@ -4,6 +4,7 @@ CREATE OR REPLACE PACKAGE SBREXT.MDSR_CLEAN_VM_DUPLICATES AS
     FUNCTION MDSR_GET_CONCEPT_SYNONYM(p_code IN VARCHAR2 ,p_NAME IN VARCHAR2)
     RETURN NUMBER;   
     PROCEDURE MDSR_CALL_NCI_WEBSERVICE; 
+	PROCEDURE MDSR_UPDATE_SYNONYMS_XML;
     PROCEDURE MDSR_INSERT_CONCEPT_SYN; 
     PROCEDURE MDSR_INSERT_VM_FINAL_DUP_REF; 
     PROCEDURE MDSR_CREATE_DUP_VM_DES_DEF;    
@@ -99,6 +100,46 @@ for i in C loop
    END LOOP;
 
 end MDSR_CALL_NCI_WEBSERVICE;
+
+
+PROCEDURE MDSR_UPDATE_SYNONYMS_XML IS
+  
+ V_error VARCHAR2 (2000);
+ CURSOR C is select*from SBREXT.MDSR_SYNONYMS_XML 
+ where RESP_STATUS=200 and 
+  TRIM_NAME is null;
+ 
+begin
+ for i in C loop
+    begin 
+UPDATE SBREXT.MDSR_SYNONYMS_XML set CODE=
+trim(regexp_replace(replace(replace(replace(substr(long_name,instr(long_name,'<entityID>')+ LENGTH('<entityID>'),
+instr(long_name,'</entityID>')-(instr(long_name,'<entityID>')+ LENGTH('<entityID>'))),'<core:namespace>NCI_Thesaurus</core:namespace>',''),'<core:name>',''),'</core:name>','')
+,  '(['||chr(10)||chr(11)||chr(13)||']+)')) where CODE =i.code;
+commit;
+
+UPDATE SBREXT.MDSR_SYNONYMS_XML set 
+START_SYN=instr(long_name,'<designation designationRole="ALTERNATIVE"',1,1)+ LENGTH('<designation designationRole="ALTERNATIVE">'),
+END_SYN =instr(long_name,'<definition definitionRole',1,1) where CODE =i.code;
+commit;
+
+UPDATE SBREXT.MDSR_SYNONYMS_XML 
+set TRIM_NAME=trim(regexp_replace(regexp_replace(replace(replace(replace(replace(replace(replace(substr(long_name,start_SYN,END_SYN-START_SYN),'- '),
+'</designation>'),'<core:language>en</core:language>'),'designation designationRole="ALTERNATIVE" assertedInCodeSystemVersion='  ),
+ '<"NCI">' ),'<"DTP">' ),
+'(['||chr(10)||chr(11)||chr(13)||']+)'),'( ){2,}', ' '))
+where CODE =i.code;
+commit;
+
+EXCEPTION
+
+    WHEN others THEN
+     V_error := substr(SQLERRM,1,200);     
+      insert into SBREXT.MDSR_VM_DUP_ERR VALUES('SBREXT.MDSR_VM_DUP_ERR', 'SBREXT.MDSR_UPDATE_SYNONYMS_XML','SBREXT.MDSR_SYNONYMS_XML',i.code,i.CONCEPT_NAME,V_error,sysdate );
+  commit;
+  END;
+  end loop;
+end MDSR_UPDATE_SYNONYMS_XML;
 
 PROCEDURE MDSR_INSERT_CONCEPT_SYN IS
 V_concept VARCHAR2 (255);
@@ -608,7 +649,7 @@ select  max(VM_ID) over  (partition by CONDR_IDSEQ order by CONDR_IDSEQ ) as FIN
  SBR.VALUE_MEANINGS VM,
   SBREXT.CONCEPTS_EXT C,
  (select a.CONDR_IDSEQ,a.NAME from
- (select count(*),VM.CONDR_IDSEQ,NAME from SBR.VALUE_MEANINGS VM ,
+ (select count(*),VM.CONDR_IDSEQ,replace(NAME,'Rh Positive Blood Group','C76251') NAME from SBR.VALUE_MEANINGS VM ,
  SBREXT.CON_DERIVATION_RULES_EXT  X
  where  X.CONDR_IDSEQ=VM.CONDR_IDSEQ
  AND  instr(NAME,':')=0
