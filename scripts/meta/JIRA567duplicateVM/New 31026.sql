@@ -1,0 +1,94 @@
+select* from 
+(select NRF.CONDR_IDSEQ,NRF.NAME CONCEPTS_CODE,VM_ID,trim(UPPER(C.LONG_NAME)) CONCEPTS_NAME,trim(UPPER(VM.LONG_NAME)) VM_NAME from
+ SBR.VALUE_MEANINGS VM,
+  SBREXT.CONCEPTS_EXT C,
+ (select a.CONDR_IDSEQ,a.NAME from
+ (select count(*),VM.CONDR_IDSEQ,replace(NAME,'Rh Positive Blood Group','C76251') NAME from SBR.VALUE_MEANINGS VM ,
+ SBREXT.CON_DERIVATION_RULES_EXT  X
+ where  X.CONDR_IDSEQ=VM.CONDR_IDSEQ
+ AND  instr(NAME,':')=0
+ and (ASL_NAME) not like '%RETIRED%'
+ and instr(name,'C45255')=0
+ having count(*)>1GROUP BY VM.CONDR_IDSEQ,NAME )a
+) NRF
+ where  NRF.CONDR_IDSEQ=VM.CONDR_IDSEQ
+ AND NRF.NAME=C.PREFERRED_NAME
+ AND VM.ASL_NAME not like '%RETIRED%'
+--  AND trim(UPPER(VM.LONG_NAME))<>trim(UPPER(C.LONG_NAME))
+ --AND MDSR_CLEAN_VM_DUPLICATES.MDSR_GET_CONCEPT_SYNONYM(NRF.NAME,trim(UPPER(vm.LONG_NAME)))=0
+minus
+ select CONDR_IDSEQ, CONCEPTS_CODE,VM_ID, trim(UPPER(CONCEPTS_NAME)),trim(UPPER(LONG_NAME))  
+ FROM SBREXT.MDSR_VM_DUP_REF RF
+ where   instr(CONCEPTS_CODE,':')=0
+ and instr(CONCEPTS_CODE,'C45255')=0)
+ 
+ order by CONCEPTS_NAME,CONCEPTS_CODE, CONDR_IDSEQ;
+ 
+ 
+ C103847
+ 
+ exec SBREXT.MDSR_INSERT_VM_FINAL_DUP_REF;
+ 
+ 
+ VM_ID='2575507'
+ 
+ 
+ --select distinct VM_ID from (
+ 
+ INSERT INTO SBREXT.MDSR_VM_DUP_REF
+(FIN_VM,FIN_IDSEQ ,VM_ID,VM_IDSEQ,CONCEPTS_CODE,CONCEPTS_NAME,LONG_NAME,CONDR_IDSEQ, PREFERRED_DEFINITION,CONCEPT_SYNONYM,DATE_INSERTED)
+select distinct FIN_VM,FIN_IDSEQ ,VM_ID,VM_IDSEQ,CONCEPTS_CODE,CONCEPTS_NAME,LONG_NAME,CONDR_IDSEQ,PREFERRED_DEFINITION,'CONCEPT',SYSDATE
+from
+(
+   select distinct Rf.FIN_VM,Rf.FIN_IDSEQ ,vm.VM_ID,vm.VM_IDSEQ,CONCEPTS_CODE,CONCEPTS_NAME,vm.LONG_NAME,rf.CONDR_IDSEQ ,
+  UPPER(trim(vm.PREFERRED_DEFINITION)) PREFERRED_DEFINITION
+ FROM SBREXT.MDSR_VM_DUP_REF RF ,SBR.VALUE_MEANINGS VM
+ where Vm.CONDR_IDSEQ=RF.CONDR_IDSEQ
+ AND UPPER(VM.ASL_NAME) not like '%RETIRED%'
+ AND Rf.FIN_IDSEQ<>vm.VM_IDSEQ
+ and vm.VM_ID in('2575507','3912401')
+ AND PROCESSED ='FINAL'
+ AND  instr(CONCEPTS_CODE,':')=0
+ and instr(CONCEPTS_CODE,'C45255')=0
+ and (TRIM(upper(CONCEPTS_NAME))=trim(upper(vm.LONG_NAME)) 
+ or trim(UPPER(VM.LONG_NAME))=trim(UPPER(CONCEPTS_NAME))||'S'
+ or MDSR_CLEAN_VM_DUPLICATES.MDSR_GET_CONCEPT_SYNONYM(CONCEPTS_CODE,vm.LONG_NAME)=1
+ or  (replace(replace(replace(replace(replace(TRIM(upper(CONCEPTS_NAME)),'-',' '),'_',' '),',',' '),';',' '),':',' ')=
+ replace(replace(replace(replace(replace(replace(trim(upper(vm.LONG_NAME)),'&#8236;'),'-',' '),'_',' '),',',' '),';',' '),':',' ') )
+ or trim(UPPER(replace(replace(VM.LONG_NAME,CONCEPTS_CODE,''),':','')))=trim(UPPER(CONCEPTS_NAME))) 
+
+and vm.VM_ID in('2575507','3912401'))
+ 
+ order by CONCEPTS_NAME,FIN_VM,VM_ID desc;
+ 
+ 
+ 
+ 
+ select distinct Rf.FIN_VM,Rf.FIN_IDSEQ ,vm.VM_ID,vm.VM_IDSEQ,CONCEPTS_CODE,CONCEPTS_NAME,vm.LONG_NAME,rf.CONDR_IDSEQ ,
+UPPER(trim(vm.PREFERRED_DEFINITION))PREFERRED_DEFINITION
+ FROM SBREXT.MDSR_VM_DUP_REF RF ,SBR.VALUE_MEANINGS VM
+ where Vm.CONDR_IDSEQ=RF.CONDR_IDSEQ
+ AND UPPER(VM.ASL_NAME) not like '%RETIRED%'
+ AND Rf.FIN_IDSEQ<>vm.VM_IDSEQ
+ AND PROCESSED ='FINAL'
+ and vm.VM_ID in('2575507','3912401')
+ AND PROCESSED ='FINAL'
+ AND  instr(CONCEPTS_CODE,':')=0
+ and instr(CONCEPTS_CODE,'C45255')=0
+ and (TRIM(upper(CONCEPTS_NAME))=trim(upper(vm.LONG_NAME)) 
+ or trim(UPPER(VM.LONG_NAME))=trim(UPPER(CONCEPTS_NAME))||'S'
+ or MDSR_CLEAN_VM_DUPLICATES.MDSR_GET_CONCEPT_SYNONYM(CONCEPTS_CODE,vm.LONG_NAME)=1
+ or  (replace(replace(replace(replace(replace(TRIM(upper(CONCEPTS_NAME)),'-',' '),'_',' '),',',' '),';',' '),':',' ')=
+ replace(replace(replace(replace(replace(replace(trim(upper(vm.LONG_NAME)),'&#8236;'),'-',' '),'_',' '),',',' '),';',' '),':',' ') )
+ or trim(UPPER(replace(replace(VM.LONG_NAME,CONCEPTS_CODE,''),':','')))=trim(UPPER(CONCEPTS_NAME))) 
+ 
+ minus 
+ select VM_ID from  SBREXT.MDSR_VM_DUP_REF
+
+
+
+select*from  SBREXT.MDSR_VM_DUP_REF where VM_ID in('2575507','3912401')
+
+select*from SBREXT.MDSR_VM_DUP_ERR ;
+ exec SBREXT.MDSR_INSERT_VM_FINAL_DUP_REF;
+ 
