@@ -1,0 +1,227 @@
+
+The duplicate VMs cleanup process 
+involves insert/modification records in existing 4 tables:
+
+SBR.VALUE_MEANINGS
+SBR.DESIGNATIONS
+SBR.DEFINITIONS
+SBREXT.AC_ATT_CSCSI_EXT
+
+For the duplicate VMs cleanup process  were created
+
+4 tables in SBREXT schema 
+SBREXT.MDSR_VM_DUP_REF --to keep truck of final and dup records
+SBREXT.MDSR_DUP_VM_ERR  --to keep truck of errors
+SBREXT.MDSR_SYNONYMS_XML --to load webservise XML respond
+SBREXT.MDSR_CONCEPTS_SYNONYMS  --to load concept names and synonyms
+
+6 Stored Procedures and 1 function in SBREXT schema 
+SBREXT.MDSR_CREATE_VM_DUP_REF
+SBREXT.MDSR_CREATE_DUP_VM_DES_DEF
+SBREXT.MDSR_CREATE_DUP_VM_CSI
+SBREXT.MDSR_CHECK_FVM_DES_DEF_CSI
+
+CHANGES made by the process IN SBR.VALUE_MEANINGS:
+UPDATE to "RELEASED" workflow status for each Final VM.
+UPDATE to "RETIRED ARCHIVED" workflow status duplicate VM record and add to CHANGE_NOTE 'Use VM public ID: FIN_VM Version 1.0 instead. Modified by caDSR script.
+
+CHANGES made by the process INSBR.DEFINITIONS
+Add preferred definition record with definition type= “Prior preferred definition” – if not in definitions type list.
+DEFINITIONS are created  for FINAL VM from existing DEFINITIONS of retired VM if do not exist yet.
+
+CHANGES made by the process INSBR.DESIGNATIONS
+DESIGNATION is created for each Retired VM. 
+DESIGNATIONS are created for FINAL VM from existing DESIGNATIONS of retired VM if do not exist yet.
+
+CHANGES made by the process IN SBREXT.AC_ATT_CSCSI_EXT
+CLASSIFICATIONS of DESIGNATIONS are created for FINAL VM  from retired VM CLASSIFICATIONS of DESIGNATIONS
+CLASSIFICATIONS of DEFINITIONS where created for FINAL VM  from retired VM CLASSIFICATIONS of DEFINITIONS
+
+Procedures DESCRIPTION 
+
+Table SBREXT.MDSR_VM_DUP_REF is created as  across reference table between final and retired SBR.VALUE_MEANINGS duplicate records
+marked by the duplicate VMs cleanup process.
+
+Table SBREXT.MDSR_DUP_VM_ERR is created to store reasons of failures of the process.
+
+First step of SP SBREXT.MDSR_INSERT_VM_FINAL_DUP_RE
+
+The SP SBREXT.MDSR_INSERT_VM_FINAL_DUP_REF finds 3 meijer group of VM duplicate records
+
+
+1.duplicate VMs with Concepts(CONDR_IDSEQ is NOT NULL) but Concepts Name not like "integer".
+   The records in these sets are grouped by VM CONDR_IDSEQ and VM Long_NAME=CONCEPT_NAME or it's SYNONYM.
+   This group has 3 subgroups:
+     1. When find VM with long name =Concept name in duplicate set.
+     2 When not find VM with long name =Concept name in duplicate set, but find VM long name = Synonym name 
+     3.When not find VM with long name =Concept name or VM long name = Synonym name in duplicate set.
+ 1.First insert FINAL-VM records  where VM Long_NAME=CONCEPT_NAME :
+ 
+INSERT INTO SBREXT.MDSR_VM_DUP_REF
+(FIN_VM,FIN_IDSEQ ,VM_ID,VM_IDSEQ,CONCEPTS_CODE,CONCEPTS_NAME,LONG_NAME,CONDR_IDSEQ, PROC )
+ select   FIN_VM ,VM_IDSEQ FIN_IDSEQ,VM_ID,VM_IDSEQ,name CONCEPTS_CODE,CONCEPT_NAME,VM_NAME,CONDR_IDSEQ,'FINAL' from
+(
+select  max(VM_ID) over  (partition by CONDR_IDSEQ order by CONDR_IDSEQ ) as FIN_VM 
+,VM_ID,VM_NAME,CONCEPT_NAME,CONDR_IDSEQ,VM_IDSEQ ,name from
+(
+select VM_ID,VM_IDSEQ,VM.LONG_NAME VM_NAME,CN.LONG_NAME CONCEPT_NAME,VM.CONDR_IDSEQ,name
+from SBR.VALUE_MEANINGS VM,
+SBREXT.CON_DERIVATION_RULES_EXT DER,
+SBREXT.CONCEPTS_EXT CN,
+(
+ select COUNT(*),CONDR_IDSEQ from SBR.VALUE_MEANINGS VM
+ where   UPPER(ASL_NAME) not like '%RETIRED%' AND CONDR_IDSEQ is not null
+ GROUP BY CONDR_IDSEQ HAVING COUNT(*)>1
+ )DUP
+ where   VM.CONDR_IDSEQ=DER.CONDR_IDSEQ
+ AND VM.CONDR_IDSEQ=DUP.CONDR_IDSEQ
+ and DER.NAME=CN.PREFERRED_NAME
+ AND UPPER(VM.ASL_NAME) not like '%RETIRED%'
+ AND TRIM(UPPER(VM.LONG_NAME)) =TRIM(UPPER(CN.LONG_NAME))
+ AND instr(DER.NAME,'C45255')=0
+ ))
+ where FIN_VM=VM_ID
+ UNION
+  select   FIN_VM ,VM_IDSEQ FIN_IDSEQ,VM_ID,VM_IDSEQ,name CONCEPTS_CODE,CONCEPT_NAME,VM_NAME,CONDR_IDSEQ,'FINAL' from
+(
+select  max(VM_ID) over  (partition by CONDR_IDSEQ order by CONDR_IDSEQ ) as FIN_VM 
+,VM_ID,VM_NAME,CONCEPT_NAME,name,CONDR_IDSEQ,VM_IDSEQ from
+(
+ SELECT VM_ID,VM_IDSEQ,name,trim(UPPER(CONCEPT_NAME))CONCEPT_NAME,trim(UPPER(LONG_NAME)) VM_NAME,VM.CONDR_IDSEQ,trim(UPPER(vm.DESCRIPTION)) VM_DESCRIPTION
+FROM  SBR.VALUE_MEANINGS VM,
+(SELECT M.CONDR_IDSEQ,name, LISTAGG(M.LONG_NAME,' ') WITHIN GROUP (ORDER BY M.ELM_ORDER) as CONCEPT_NAME
+FROM  (select CONDR_IDSEQ,name,spl.preferred_name,ELM_ORDER,LONG_NAME
+from
+(select distinct
+ CONDR_IDSEQ,name,
+ trim(regexp_substr(name, '[^:]+', 1, levels.column_value)) as preferred_name,levels.column_value ELM_ORDER
+from 
+ (select *from SBREXT.CON_DERIVATION_RULES_EXT 
+ 
+ where  instr(name,':')>0) t,
+ table(cast(multiset(select level from dual connect by level <= length (regexp_replace(t.name, '[^:]+')) + 1) as sys.OdciNumberList))
+  levels) spl,
+  sbrext.concepts_ext  c
+  where spl.preferred_name=c.preferred_name) M
+GROUP BY name,M.CONDR_IDSEQ)VW,
+ (select count(*),CONDR_IDSEQ from SBR.VALUE_MEANINGS VM 
+ where  UPPER(ASL_NAME) not like '%RETIRED%'
+ having count(*)>1GROUP BY CONDR_IDSEQ )DR
+
+where    VW.CONDR_IDSEQ=VM.CONDR_IDSEQ
+AND  VW.CONDR_IDSEQ=DR.CONDR_IDSEQ
+and UPPER(ASL_NAME) not like '%RETIRED%'
+and trim(UPPER(VM.LONG_NAME))=trim(UPPER(CONCEPT_NAME))
+and instr(NAME,'C45255')=0
+ ))
+ where FIN_VM=VM_ID
+ 
+ ORDER BY 4,2 desc ;
+ 
+ 2.Provide the cient with the List of FINAL and DUP VM with multiple concepts where duplicate VM LONG_NAME<>CONCEPT_NAME.
+   then load them to SBREXT.MDSR_VM_DUP_REF as duplicates.
+ 3.FIND set of DUP VM where no one VM name =CONCEPT_NAME  (per VW.CONDR_IDSEQ)
+ 
+   After the most current VM (Final VM) found ,they are inserted  to  in the group, the older records inserted in to SBREXT.MDSR_VM_DUP_REF
+   with Final VM Public ID and VM_IDSSEQ.
+
+
+2.duplicate VMs without Concepts (CONDR_IDSEQ is NULL).
+  The records in these sets are grouped by VM Long_name and PREFERRED_DEFINITION. 
+  After the most current VM (Final VM) found  in the group, the older records inserted in to SBREXT.MDSR_VM_DUP_REF along 
+  with Final VM Public ID(FIN_VM) and VM_IDSSEQ(FIN_IDSEQ).
+  
+  To avoid insert duplicate records into SBREXT.MDSR_DUP_VM_ERR we delete from found duplicate set of records (A) 
+  already existed records in SBREXT.MDSR_DUP_VM_ERR(B) 
+  
+ Query A. 
+   retrieves only records which will be set to retired with final VM record ID.
+
+   select  FIN_VM,vm_id,VM_IDSEQ,CONDR_IDSEQ,CONCEPTS_NAME
+   from (
+   select max(VM_ID) over  (partition by VM.CONDR_IDSEQ order by VM.CONDR_IDSEQ ) as FIN_VM,VM_ID,VM_IDSEQ,VM.CONDR_IDSEQ,CN.NAME CONCEPTS_NAME
+   from 
+   SBR.VALUE_MEANINGS VM,
+   CON_DERIVATION_RULES_EXT CN
+   where   VM.CONDR_IDSEQ=CN.CONDR_IDSEQ
+   AND UPPER(ASL_NAME) not like '%RETIRED%'
+   AND instr(CN.NAME,'C45255')=0)
+   where FIN_VM<>VM_ID 
+   
+  Query B.
+   select  FIN_VM,vm_id,VM_IDSEQ,R.CONDR_IDSEQ,CONCEPTS_NAME 
+   from SBREXT.MDSR_VM_DUP_REF R,
+   SBREXT.CON_DERIVATION_RULES_EXT CN
+   where R.CONDR_IDSEQ=CN.CONDR_IDSEQ
+   AND instr(CN.NAME,'C45255')=0
+  
+  (A MINUS B) will return duplicate VM records wich are not in SBREXT.MDSR_VM_DUP_REF yet.
+  
+
+  
+3.duplicate VMs with Concepts but Concepts Name like "integer".
+  The records in these sets are grouped by Concepts Name and Concepts Value. 
+  Concepts Name is taken from SBREXT.CON_DERIVATION_RULES_EXT table and Concepts Value from SBREXT.COMPONENT_CONCEPTS_EXT table,
+  After the most current VM (Final VM) found  in the group, the older records inserted in to SBREXT.MDSR_VM_DUP_REF
+  with Final VM Public ID and VM_IDSSEQ.
+  
+  Table SBREXT.COMPONENT_CONCEPTS_EXT might have many Concepts Value for one record in SBREXT.CON_DERIVATION_RULES_EXT.
+  In order to group records based on Concepts Name and Concepts Value we use aggregated value and instead of table SBREXT.COMPONENT_CONCEPTS
+  ,we are using following qoery.
+  
+  (SELECT CONDR_IDSEQ, LISTAGG(CONCEPT_VALUE,',') WITHIN GROUP (ORDER BY CONCEPT_VALUE) as CONCEPT_VALUE_AG
+  FROM  SBREXT.COMPONENT_CONCEPTS_EXT
+  where CONCEPT_VALUE is not null
+  GROUP BY CONDR_IDSEQ)CC
+  
+  
+ The SP SBREXT.MDSR_CREATE_DUP_VM_DES_DEF is created for:
+
+1.(CURSOR  C1 -final VM and not processed records from duplicate sets).
+    a. Set "RELEASED" workflow status for each Final VM.
+    b. Add preferred definition with definition type= “Prior preferred definition” – if not in definitions type list. 
+ 
+ 2.(CURSOR  C2- not final VM and not processed records from duplicate sets).
+
+     1.Update SBR.VALUE_MEANINGS records found matching in SBREXT.MDSR_VM_DUP_REF table:
+                a. Set "RETIRED ARCHIVED" workflow status.
+                b. add to CHANGE_NOTE 'Use VM public ID: FIN_VM Version 1.0 instead. Modified by caDSR script.'
+              
+     2.Designation is created for each Retired VM for final VM as
+              
+    3.(CURSOR C_DEF  all DESIGNATIONS for retired VM) 
+      DESIGNATIONS are created  for FINAL VM from existing DESIGNATIONS of retired VM if do not exist yet.
+      select count(*) into V_cnt
+      from SBR.DESIGNATIONS
+      where AC_IDSEQ=i.FIN_IDSEQ and CONTE_IDSEQ=n.conte_idseq and trim(upper(NAME))=trim(upper(n.NAME))
+      and trim(upper(DETL_NAME))=trim(upper(n.DETL_NAME)) and trim(upper(LAE_NAME))=trim(upper(n.LAE_NAME));
+              
+    4.(CURSOR C_DES all DEFINITIONS for retired VM) 
+      DEFINITIONS are created  for FINAL VM from existing DEFINITIONS of retired VM if do not exist yet.
+      select count(*) into V_cnt
+      from SBR.DEFINITIONS
+      where AC_IDSEQ=i.FIN_IDSEQ and CONTE_IDSEQ=n.conte_idseq 
+      and upper(trim(DEFINITION))=upper(trim(n.DEFINITION)) and
+      trim(upper(DEFL_NAME))=trim(upper(n.DEFL_NAME)) and trim(upper(LAE_NAME))=trim(upper(n.LAE_NAME));
+              
+               
+ The SP SBREXT.MDSR_CREATE_DUP_VM_CSI is created for:        
+ 
+ 1.(CURSOR  C1 -retired VM CLASSIFICATIONS for DESIGNATIONS).
+    Create CLASSIFICATIONS of DESIGNATIONS for FINAL VM from retired VM CLASSIFICATIONS of DESIGNATIONS
+    avoiding duplicates in CLASSIFICATIONS set.
+2.(CURSOR  C2 -retired VM CLASSIFICATIONS for DEFINITIONS).
+   Create CLASSIFICATIONS of DEFINITIONS for FINAL VM from retired VM CLASSIFICATIONS of DEFINITIONS
+    avoiding duplicates in CLASSIFICATIONS set
+              
+ The SP SBREXT.MDSR_CHECK_FVM_DES_DEF_CSI is created for:
+   1.To check if all DESIGNATIONS where created for FINAL VM  from retired VM DESIGNATIONS
+   If any missed, the Procedure  set DES column to 'NC' in SBREXT.MDSR_VM_DUP_REF
+   2. To check if all DEFINITIONS where created for FINAL VM  from retired VM DEFINITIONS
+   If any missed, the Procedure set DEFN column to 'NC' in SBREXT.MDSR_VM_DUP_REF
+   3. To check if all CLASSIFICATIONS of DESIGNATIONS where created for FINAL VM  from retired VM CLASSIFICATIONS of DESIGNATIONS
+   If any missed, the Procedure set DES_CL column to 'NC' in SBREXT.MDSR_VM_DUP_REF
+   4. To check if all CLASSIFICATIONS of DEFINITIONS where created for FINAL VM  from retired VM CLASSIFICATIONS of DEFINITIONS
+    If any missed, the Procedure set DEFN_CL column to 'NC' in SBREXT.MDSR_VM_DUP_REF
+   5.When all of 4 columns are NULL then column  PROC='P' .Which means the retired VM record and associated records in SBR.DESIGNATIONS,
+   SBR.DEFINITIONS,SBREXT.AC_ATT_CSCSI_EXT tables were added to FINAL VM if not existed.
