@@ -20,8 +20,8 @@ Package MDSR_CLEAN_VM_DUPLICATES of 8 Stored Procedures and 1 function in SBREXT
     PROCEDURE MDSR_CALL_NCI_WEBSERVICE;
     PROCEDURE MDSR_UPDATE_SYNONYMS_XML;
     PROCEDURE MDSR_INSERT_CONCEPT_SYN;
-    PROCEDURE MDSR_INSERT_VM_FINAL_DUP_TEMP
-    PROCEDURE MDSR_INSERT_VM_FINAL_DUP_REF;
+    PROCEDURE MDSR_INSERT_VM_FINAL_DUP_REF1;
+    PROCEDURE MDSR_INSERT_VM_FINAL_DUP_REF2;
     PROCEDURE MDSR_CREATE_DUP_VM_DES_DEF;
     PROCEDURE MDSR_CREATE_DUP_VM_CSI;
     PROCEDURE MDSR_CHECK_FVM_DES_DEF_CSI;
@@ -52,8 +52,83 @@ Following procedures were developed load concept’s synonyms NCI thesaurus to D
     (1) PROCEDURE MDSR_CALL_NCI_WEBSERVICE;
     (2) PROCEDURE MDSR_UPDATE_SYNONYMS_XML;
     (3) PROCEDURE MDSR_INSERT_CONCEPT_SYN;
+	
+	
+There are 3 essential group of VM duplicate records and Current Algorithm of identifying Final and duplicate VMs: 
+A. duplicate VMs with Concepts (CONDR_IDSEQ is NOT NULL) but Concepts Name not like "integer".
+B. duplicate VMs without Concepts (CONDR_IDSEQ is NULL).
+C. duplicate VMs with Concepts but Concepts Name like "integer".
 
-    (4) MDSR_INSERT_VM_FINAL_DUP_TEMP-PROCEDURE DESCRIPTION
+The SP MDSR_INSERT_VM_FINAL_DUP_REF2 identifyes Final and Retired records for the Group B and C; 
+Procedures DESCRIPTION 
+Group B:
+duplicate VMs without Concepts (CONDR_IDSEQ is NULL).
+  The records in these sets are grouped by VM Long_name and PREFERRED_DEFINITION. 
+  After the most current VM (Final VM) found  in the group, the older records inserted 
+  in to SBREXT.MDSR_VM_DUP_REF along with Final VM Public ID(FIN_VM) and VM_IDSSEQ(FIN_IDSEQ).
+  
+  To avoid insert duplicate records into SBREXT.MDSR_DUP_VM_ERR 
+  we delete from found duplicate set of records (A) 
+  already existed records in SBREXT.MDSR_DUP_VM_ERR(B)  To avoid insert duplicate records into SBREXT.MDSR_DUP_VM_ERR 
+  we delete from found duplicate set of records (A) 
+  already existed records in SBREXT.MDSR_DUP_VM_ERR(B)  
+ Query A. 
+   retrieves only records which will be set to retired with final VM record ID.
+
+   select  FIN_VM,vm_id,VM_IDSEQ,CONDR_IDSEQ,CONCEPTS_NAME
+   from (
+   select max(VM_ID) over  (partition by VM.CONDR_IDSEQ order by VM.CONDR_IDSEQ ) as FIN_VM,VM_ID,VM_IDSEQ,VM.CONDR_IDSEQ,CN.NAME CONCEPTS_NAME
+   from 
+   SBR.VALUE_MEANINGS VM,
+   CON_DERIVATION_RULES_EXT CN
+   where   VM.CONDR_IDSEQ=CN.CONDR_IDSEQ
+   AND UPPER(ASL_NAME) not like '%RETIRED%'
+   AND instr(CN.NAME,'C45255')=0)
+   where FIN_VM<>VM_ID 
+   
+  Query B.
+   select  FIN_VM,vm_id,VM_IDSEQ,R.CONDR_IDSEQ,CONCEPTS_NAME 
+   from SBREXT.MDSR_VM_DUP_REF R,
+   SBREXT.CON_DERIVATION_RULES_EXT CN
+   where R.CONDR_IDSEQ=CN.CONDR_IDSEQ
+   AND instr(CN.NAME,'C45255')=0
+  
+  (A MINUS B) will return duplicate VM records wich are not in SBREXT.MDSR_VM_DUP_REF yet.
+
+  Group B:
+  Duplicate VMs with Concepts but Concepts Name like "integer".
+  The records in these sets are grouped by Concepts Name and Concepts Value. 
+  Concepts Name is taken from SBREXT.CON_DERIVATION_RULES_EXT table and Concepts Value from SBREXT.COMPONENT_CONCEPTS_EXT table,
+  After the most current VM (Final VM) found  in the group, the older records inserted in to SBREXT.MDSR_VM_DUP_REF
+  with Final VM Public ID and VM_IDSSEQ.
+  
+  Table SBREXT.COMPONENT_CONCEPTS_EXT might have many Concepts Value for one record in SBREXT.CON_DERIVATION_RULES_EXT.
+  In order to group records based on Concepts Name and Concepts Value we use aggregated value and instead of table SBREXT.COMPONENT_CONCEPTS
+  ,we are using following qoery.
+  
+  (SELECT CONDR_IDSEQ, LISTAGG(CONCEPT_VALUE,',') WITHIN GROUP (ORDER BY CONCEPT_VALUE) as CONCEPT_VALUE_AG
+  FROM  SBREXT.COMPONENT_CONCEPTS_EXT
+  where CONCEPT_VALUE is not null
+  GROUP BY CONDR_IDSEQ)CC
+
+The SP MDSR_INSERT_VM_FINAL_DUP_REF1 identifyes Final and Retired records for the Group A.
+Procedures DESCRIPTION 
+Group A.
+There are 3 subgroup of duplicate sets of not RETIRED VMs in group A:
+1. When find VM with long name =Concept name in duplicate set.
+2. When not find VM with long name =Concept name in duplicate set, 
+   but find VM long name = Synonym name 
+3.When not find VM with long name =Concept name or VM long name = Synonym name in duplicate set.
+Final VM was identified from the set of VM with the same Concept Derivation Rule ID (CDRI):
+1.When Final VM long name =Concept name and is most current VM .
+Duplicate VMs for this CDRI can have Long name =Concept name or Synonym
+2.When Final VM long name = Synonym name and is most current VM (No VM long name =Concept name in find duplicate set of VMs).
+Duplicate VMs for this CDRI can have Long name = Final VM long name or other Synonym
+3.When No VM long name =Concept or other Synonym name in find duplicate set of VMs( per Concept Derivation Rule ID)
+Final VM is most current VM per Concept Derivation Rule ID.
+Duplicate VMs for this CDRI have same Long name as Final VM.
+
+ 
 	
 SPEP 1A
 First insert into MDSR_VM_DUP_REF FINAL VM Records with CONDR_IDSEQ is not null
@@ -185,96 +260,35 @@ Green part concatenates Concept Names in to string for given CONDR_IDSEQ.
 insert into MDSR_VM_DUP_REF DUPLICATE Retired VM Records for each FINAL VM found in step 1A
 when long name of Retired VM can be = CONCEPT_NAME  or SYNONYM  (MDSR_CLEAN_VM_DUPLICATES.MDSR_GET_CONCEPT_SYNONYM(CONCEPTS_CODE,vm.LONG_NAME)=1)
 
-
- 2.Provide the client with the List of FINAL and DUP VM with multiple concepts where duplicate VM LONG_NAME<>CONCEPT_NAME.
-   then load them to SBREXT.MDSR_VM_DUP_REF as duplicates.
- 3.FIND set of DUP VM where no one VM name =CONCEPT_NAME  (per VW.CONDR_IDSEQ)
-   After the most current VM (Final VM) found ,they are inserted  to  in the group, the older records inserted in to SBREXT.MDSR_VM_DUP_REF
-   with Final VM Public ID and VM_IDSSEQ
 	
-	
-(5)MDSR_INSERT_VM_FINAL_DUP_REF Procedures DESCRIPTION 
-There are 3 essential group of VM duplicate records and Current Algorithm of identifying Final and duplicate VMs: 
-A. duplicate VMs with Concepts (CONDR_IDSEQ is NOT NULL) but Concepts Name not like "integer".
-B. duplicate VMs without Concepts (CONDR_IDSEQ is NULL).
-C. duplicate VMs with Concepts but Concepts Name like "integer".
-
-Group A.
-There are 3 subgroup of duplicate sets of not RETIRED VMs in group A:
-1. When find VM with long name =Concept name in duplicate set.
-2. When not find VM with long name =Concept name in duplicate set, 
-   but find VM long name = Synonym name 
-3.When not find VM with long name =Concept name or VM long name = Synonym name in duplicate set.
-Final VM was identified from the set of VM with the same Concept Derivation Rule ID (CDRI):
-1.When Final VM long name =Concept name and is most current VM .
-Duplicate VMs for this CDRI can have Long name =Concept name or Synonym
-2.When Final VM long name = Synonym name and is most current VM (No VM long name =Concept name in find duplicate set of VMs).
-Duplicate VMs for this CDRI can have Long name = Final VM long name or other Synonym
-3.When No VM long name =Concept or other Synonym name in find duplicate set of VMs( per Concept Derivation Rule ID)
-Final VM is most current VM per Concept Derivation Rule ID.
-Duplicate VMs for this CDRI have same Long name as Final VM.
-
-
-SPEP 1A and SPEP 1B same as in MDSR_INSERT_VM_FINAL_DUP_TEMP
 
 STEP 2A 
-insert Final VM records with matching synonyms for single concepts
+insert Final VM records with matching synonyms for single concepts into SBREXT.MDSR_VM_DUP_REF
+STEP 2B
+ Insert Duplicate VM records for VM with matching synonyms for single concepts SBREXT.MDSR_VM_DUP_REF
+ 
+STEP 3A 
+insert Final VM records with matching synonyms for multiple concepts into SBREXT.MDSR_VM_DUP_REF
+STEP 3B
+ Insert Duplicate VM records for VM with matching synonyms for multiple concepts SBREXT.MDSR_VM_DUP_REF
+ 
+STEP 4A 
+insert Final VM records with no match to concepts/synonyms for multiple concepts into SBREXT.MDSR_VM_DUP_REF
+STEP 4B
+ Insert Duplicate VM records for VM with no match to concepts/synonyms for multiple concepts SBREXT.MDSR_VM_DUP_REF
+ 
+STEP 5A 
+insert Final VM records with no match to concepts/synonyms for single concepts into SBREXT.MDSR_VM_DUP_REF
+STEP 5B
+ Insert Duplicate VM records for VM with no match to concepts/synonyms for single concepts SBREXT.MDSR_VM_DUP_REF
 
 
-3.FIND set of DUP VM where no one VM name =CONCEPT_NAME  (per VW.CONDR_IDSEQ)
 
-   After the most current VM (Final VM) found ,they are inserted  to  in the group, the older records inserted in to SBREXT.MDSR_VM_DUP_REF
-   with Final VM Public ID and VM_IDSSEQ.
-
-Group B.
-duplicate VMs without Concepts (CONDR_IDSEQ is NULL).
-  The records in these sets are grouped by VM Long_name and PREFERRED_DEFINITION. 
-  After the most current VM (Final VM) found  in the group, the older records inserted 
-  in to SBREXT.MDSR_VM_DUP_REF along with Final VM Public ID(FIN_VM) and VM_IDSSEQ(FIN_IDSEQ).
-  
-  To avoid insert duplicate records into SBREXT.MDSR_DUP_VM_ERR 
-  we delete from found duplicate set of records (A) 
-  already existed records in SBREXT.MDSR_DUP_VM_ERR(B)  To avoid insert duplicate records into SBREXT.MDSR_DUP_VM_ERR 
-  we delete from found duplicate set of records (A) 
-  already existed records in SBREXT.MDSR_DUP_VM_ERR(B)  
- Query A. 
-   retrieves only records which will be set to retired with final VM record ID.
-
-   select  FIN_VM,vm_id,VM_IDSEQ,CONDR_IDSEQ,CONCEPTS_NAME
-   from (
-   select max(VM_ID) over  (partition by VM.CONDR_IDSEQ order by VM.CONDR_IDSEQ ) as FIN_VM,VM_ID,VM_IDSEQ,VM.CONDR_IDSEQ,CN.NAME CONCEPTS_NAME
-   from 
-   SBR.VALUE_MEANINGS VM,
-   CON_DERIVATION_RULES_EXT CN
-   where   VM.CONDR_IDSEQ=CN.CONDR_IDSEQ
-   AND UPPER(ASL_NAME) not like '%RETIRED%'
-   AND instr(CN.NAME,'C45255')=0)
-   where FIN_VM<>VM_ID 
-   
-  Query B.
-   select  FIN_VM,vm_id,VM_IDSEQ,R.CONDR_IDSEQ,CONCEPTS_NAME 
-   from SBREXT.MDSR_VM_DUP_REF R,
-   SBREXT.CON_DERIVATION_RULES_EXT CN
-   where R.CONDR_IDSEQ=CN.CONDR_IDSEQ
-   AND instr(CN.NAME,'C45255')=0
-  
-  (A MINUS B) will return duplicate VM records wich are not in SBREXT.MDSR_VM_DUP_REF yet.
-
-  
-3.duplicate VMs with Concepts but Concepts Name like "integer".
-  The records in these sets are grouped by Concepts Name and Concepts Value. 
-  Concepts Name is taken from SBREXT.CON_DERIVATION_RULES_EXT table and Concepts Value from SBREXT.COMPONENT_CONCEPTS_EXT table,
-  After the most current VM (Final VM) found  in the group, the older records inserted in to SBREXT.MDSR_VM_DUP_REF
-  with Final VM Public ID and VM_IDSSEQ.
-  
-  Table SBREXT.COMPONENT_CONCEPTS_EXT might have many Concepts Value for one record in SBREXT.CON_DERIVATION_RULES_EXT.
-  In order to group records based on Concepts Name and Concepts Value we use aggregated value and instead of table SBREXT.COMPONENT_CONCEPTS
-  ,we are using following qoery.
-  
-  (SELECT CONDR_IDSEQ, LISTAGG(CONCEPT_VALUE,',') WITHIN GROUP (ORDER BY CONCEPT_VALUE) as CONCEPT_VALUE_AG
-  FROM  SBREXT.COMPONENT_CONCEPTS_EXT
-  where CONCEPT_VALUE is not null
-  GROUP BY CONDR_IDSEQ)CC
+*****************
+After Run .Provide the client with the List of FINAL and DUP VM with multiple concepts where duplicate VM LONG_NAME<>CONCEPT_NAME.
+   then load them to SBREXT.MDSR_VM_DUP_REF as duplicates.
+ 
+**********
   
   
  The SP SBREXT.MDSR_CREATE_DUP_VM_DES_DEF is created for:
