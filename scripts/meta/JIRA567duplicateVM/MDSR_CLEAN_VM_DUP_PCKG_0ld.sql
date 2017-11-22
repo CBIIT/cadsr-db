@@ -7,14 +7,14 @@ CREATE OR REPLACE PACKAGE        MDSR_CLEAN_VM_DUPLICATES AS
 	PROCEDURE MDSR_UPDATE_SYNONYMS_XML;
     PROCEDURE MDSR_INSERT_CONCEPT_SYN;
     PROCEDURE MDSR_INSERT_VM_FINAL_DUP_REF1;
-    PROCEDURE MDSR_INSERT_VM_FINAL_DUP_REF2;
+	PROCEDURE MDSR_INSERT_VM_FINAL_DUP_REF2;
     PROCEDURE MDSR_CREATE_DUP_VM_DES_DEF;
     PROCEDURE MDSR_CREATE_DUP_VM_CSI;
     PROCEDURE MDSR_CHECK_FVM_DES_DEF_CSI;
     PROCEDURE MDSR_VM_DUP_ROLLBACK;
 END MDSR_CLEAN_VM_DUPLICATES;
 /
-CREATE OR REPLACE PACKAGE BODY        MDSR_CLEAN_VM_DUPLICATES AS
+CREATE OR REPLACE PACKAGE BODY SBREXT.MDSR_CLEAN_VM_DUPLICATES AS
 
  Function MDSR_GET_CONCEPT_SYNONYM( p_code IN varchar2 ,p_NAME IN varchar2)
    RETURN NUMBER
@@ -241,7 +241,7 @@ EXCEPTION
   commit;
 end MDSR_INSERT_CONCEPT_SYN;
 
-procedure MDSR_INSERT_VM_FINAL_DUP_REF1
+procedure MDSR_INSERT_VM_FINAL_DUP_REF
 as
 
 V_error VARCHAR(300);
@@ -251,20 +251,16 @@ v_cnt2 number;
 V_run number;
 
 begin
---select*from SBREXT.MDSR_VM_DUP_REF where FIN_IDSEQ =VM_IDSEQ OR PROCESSED IS NULL;
-delete from  SBREXT.MDSR_VM_DUP_REF 
-where  instr(CONCEPTS_CODE,'C45255')=0
-AND CONDR_IDSEQ is null
-AND (FIN_IDSEQ =VM_IDSEQ OR PROCESSED IS NULL);
+
+delete from  SBREXT.MDSR_VM_DUP_REF where FIN_IDSEQ =VM_IDSEQ OR PROCESSED IS NULL;
 commit;
 
 begin
 
 /**STEP 1A
-******************
 insert into MDSR_VM_DUP_REF  FINAL VM Records with CONDR_IDSEQ is not null
 and Concepts Name not like "integer" and Concepts Name=VM.LONG_NAME
-************/
+**/
 INSERT INTO SBREXT.MDSR_VM_DUP_REF
 (FIN_VM,FIN_IDSEQ ,VM_ID,VM_IDSEQ,CONCEPTS_CODE,CONCEPTS_NAME,LONG_NAME,CONDR_IDSEQ, PROCESSED,CONCEPT_SYNONYM ,DATE_INSERTED,PREFERRED_DEFINITION)
  select  distinct FIN_VM ,VM_IDSEQ FIN_IDSEQ,VM_ID,VM_IDSEQ,name CONCEPTS_CODE,CONCEPT_NAME,VM_NAME,CONDR_IDSEQ,'FINAL','CONCEPT',SYSDATE,PREFERRED_DEFINITION
@@ -292,8 +288,7 @@ SBREXT.CONCEPTS_EXT CN,
  ))
  where FIN_VM=VM_ID
  UNION
-  select   FIN_VM ,VM_IDSEQ FIN_IDSEQ,VM_ID,VM_IDSEQ,name CONCEPTS_CODE,CONCEPT_NAME,VM_NAME,CONDR_IDSEQ,'FINAL','CONCEPT',SYSDATE,PREFERRED_DEFINITION 
-  from
+  select   FIN_VM ,VM_IDSEQ FIN_IDSEQ,VM_ID,VM_IDSEQ,name CONCEPTS_CODE,CONCEPT_NAME,VM_NAME,CONDR_IDSEQ,'FINAL','CONCEPT',SYSDATE,PREFERRED_DEFINITION from
 (
 select  max(VM_ID) over  (partition by CONDR_IDSEQ order by CONDR_IDSEQ ) as FIN_VM
 ,VM_ID,VM_NAME,CONCEPT_NAME,name,CONDR_IDSEQ,VM_IDSEQ ,PREFERRED_DEFINITION from
@@ -342,7 +337,19 @@ a.FIN_VM FINAL VN public ID
 a.vm_id RETIRED VM public ID**/
 begin
 
+select count(*) into V_cnt0 from SBREXT.MDSR_VM_DUP_REF  R
+,SBREXT.CON_DERIVATION_RULES_EXT CN
+where R.CONDR_IDSEQ=CN.CONDR_IDSEQ
+AND instr(CN.NAME,'C45255')=0;
 
+if V_cnt0=0 then
+V_run:=1;
+else
+select max(RUN_NUMBER)+1 into V_run from SBREXT.MDSR_VM_DUP_REF  R
+,SBREXT.CON_DERIVATION_RULES_EXT CN
+where R.CONDR_IDSEQ=CN.CONDR_IDSEQ
+AND instr(CN.NAME,'C45255')=0;
+end if;
 
 INSERT INTO SBREXT.MDSR_VM_DUP_REF
 (FIN_VM,FIN_IDSEQ ,VM_ID,VM_IDSEQ,CONCEPTS_CODE,CONCEPTS_NAME,LONG_NAME,CONDR_IDSEQ, PREFERRED_DEFINITION,CONCEPT_SYNONYM,DATE_INSERTED)
@@ -394,6 +401,7 @@ EXCEPTION
       insert into SBREXT.MDSR_VM_DUP_ERR VALUES('MDSR_INSERT_VM_FINAL_DUP_REF', 'SBR.MDSR_VM_DUP_REF','STEP 1B','NA','NA',V_error,sysdate );
   commit;
 end;
+
 /*********
 **************
 Step 2A Final VM records with  matching synonyms for single concepts
@@ -474,7 +482,7 @@ EXCEPTION
   commit;
 end;
 
-/******Step 3A****
+/******Step4A****
  ----Final VM records with match to synonyms for multiple concepts
  *****/
 BEGIN
@@ -762,24 +770,10 @@ EXCEPTION
 end;
 
 
-end MDSR_INSERT_VM_FINAL_DUP_REF1;
-
-procedure MDSR_INSERT_VM_FINAL_DUP_REF2
-as
-V_error VARCHAR(300);
-v_cnt0 number;
-v_cnt1 number;
-v_cnt2 number;
-V_run number;
-
-begin
+/*******************************/
 
 
-delete from  SBREXT.MDSR_VM_DUP_REF where (FIN_IDSEQ =VM_IDSEQ OR PROCESSED IS NULL)
-AND( instr(CONCEPTS_CODE,'C45255')>0 OR CONDR_IDSEQ is null);
-commit;
-
-/** STEP 1
+/** STEP 6
 insert into MDSR_VM_DUP_REF Records for VM with CONDR_IDSEQ is null
 a.FIN_VM FINAL VN public ID
 a.vm_id RETIRED VM public ID**/
@@ -816,11 +810,11 @@ commit;
 EXCEPTION
     WHEN others THEN
      V_error := substr(SQLERRM,1,200);
-      insert into SBREXT.MDSR_VM_DUP_ERR VALUES('MDSR_INSERT_VM_FINAL_DUP_REF2', 'SBREXT.MDSR_VM_DUP_REF','STEP 1','NA','NA',V_error,sysdate );
+      insert into SBREXT.MDSR_VM_DUP_ERR VALUES('MDSR_INSERT_VM_FINAL_DUP_REF', 'SBREXT.MDSR_VM_DUP_REF','STEP 6','NA','NA',V_error,sysdate );
   commit;
 end;
 
-/********* STEP 2 *******************/
+/********* STEP 7 *******************/
 /**Insert of duplicate VMs with Concepts(CONDR_IDSEQ is NOT NULL) and  Concepts Name like "integer".**/
 begin
 
@@ -876,11 +870,14 @@ EXCEPTION
 
     WHEN others THEN
      V_error := substr(SQLERRM,1,200);
-      insert into SBREXT.MDSR_VM_DUP_ERR VALUES('MDSR_INSERT_VM_FINAL_DUP_REF2', 'SBR.MDSR_VM_DUP_REF','STEP 2','NA','NA',V_error,sysdate );
+      insert into SBREXT.MDSR_VM_DUP_ERR VALUES('MDSR_INSERT_VM_FINAL_DUP_REF', 'SBR.MDSR_VM_DUP_REF','STEP 7','NA','NA',V_error,sysdate );
   commit;
 end;
 
-end MDSR_INSERT_VM_FINAL_DUP_REF2;
+end MDSR_INSERT_VM_FINAL_DUP_REF;
+
+
+
 
 
 procedure MDSR_CREATE_DUP_VM_DES_DEF
@@ -1314,8 +1311,8 @@ end loop;
 end;
 commit;
  end if;
-
-
+ 
+ 
 /***************find all DEFINITIONS for record  i.VM_IDSEQ in cursor C1,
 all DEFINITIONS for final VM and see if not all DEFINITIONS were created for final VM.
 When all DEFINITIONS are created ,V_cntds will be 0
@@ -1369,7 +1366,7 @@ AND VM.VM_IDSEQ=i.VM_IDSEQ
 MINUS
 select VM.VM_ID,VM.VM_IDSEQ,DF.CONTE_IDSEQ, trim(upper(DF.DEFINITION)) DEFINITION,
 trim(upper(DF.DEFL_NAME)) DEFL_NAME,trim(upper(DF.LAE_NAME)) LAE_NAME
-From
+From 
  SBR.VALUE_MEANINGS VM,
  SBR.DEFINITIONS DF
 where   VM.VM_IDSEQ=DF.AC_IDSEQ
@@ -1419,7 +1416,7 @@ AND AC.att_idseq = DS.desig_idseq
 MINUS
 select VM_ID FIN_VM,VM.VM_IDSEQ FIN_IDSEQ, DS.CONTE_IDSEQ, trim(upper(DS.NAME)) NAME, trim(upper(DS.DETL_NAME)) DETL_NAME,
 trim(upper(DS.LAE_NAME)) LAE_NAME,AC.CS_CSI_IDSEQ,AC.ATL_NAME
-from
+from 
  SBR.VALUE_MEANINGS VM,
  SBR.DESIGNATIONS DS,
  sbrext.ac_att_cscsi_ext AC
@@ -1431,7 +1428,7 @@ AND AC.att_idseq = DS.desig_idseq) MS
 IF V_cntdscl=0 then
 UPDATE  SBREXT.MDSR_VM_DUP_REF set DES_CL=NULL
 where VM_IDSEQ=i.VM_IDSEQ;
-ELSE
+ELSE 
 --found missing CL/DES
 UPDATE  SBREXT.MDSR_VM_DUP_REF set DES_CL='NC'
 where VM_IDSEQ=i.VM_IDSEQ;
@@ -1512,7 +1509,7 @@ AND AC.att_idseq = DF.DEFIN_IDSEQ
 MINUS
 select VM.VM_ID,VM.VM_IDSEQ,DF.CONTE_IDSEQ, trim(upper(DF.DEFINITION)) DEFINITION,
 trim(upper(DF.DEFL_NAME)) DEFL_NAME,trim(upper(DF.LAE_NAME)) LAE_NAME,AC.CS_CSI_IDSEQ,AC.ATL_NAME
-From
+From 
  SBR.VALUE_MEANINGS VM,
  SBR.DEFINITIONS DF,
  sbrext.ac_att_cscsi_ext AC
@@ -1548,7 +1545,7 @@ AND AC.att_idseq = DF.DEFIN_IDSEQ
 MINUS
 select VM.VM_ID,VM.VM_IDSEQ,DF.CONTE_IDSEQ, trim(upper(DF.DEFINITION)) DEFINITION,
 trim(upper(DF.DEFL_NAME)) DEFL_NAME,trim(upper(DF.LAE_NAME)) LAE_NAME,AC.CS_CSI_IDSEQ,AC.ATL_NAME
-From
+From 
  SBR.VALUE_MEANINGS VM,
  SBR.DEFINITIONS DF,
  sbrext.ac_att_cscsi_ext AC
