@@ -1,0 +1,14 @@
+Current Algorithm of identifying Final and duplicate VMs(for not integers CDR):
+ There are 3 group of duplicate sets of not RETIRED VMs:
+ 1. When find VM with long name =Concept name in duplicate set.
+ 2. When not find VM with long name =Concept name in duplicate set, but find VM long name = Synonym name 
+ 3. When not find VM with long name =Concept name or VM long name = Synonym name in duplicate set.
+
+ Final VM was id entified from the set of VM with the same Concept Derivation Rule ID (CDRI):
+ 1.When Final VM long name =Concept name and is most current VM .
+ Duplicate VMs for this CDRI can have Long name =Concept name or Synonym
+ 2.When Final VM long name = Synonym name and is most current VM (No VM long name =Concept name in find duplicate set of VMs).
+ Duplicate VMs for this CDRI can have Long name = Final VM long name or other Synonym
+ 3.When No VM long name =Concept or other Synonym name in find duplicate set of VMs( per Concept Derivation Rule ID)
+ Final VM is most current VM per Concept Derivation Rule ID.
+ Duplicate VMs for this CDRI have same Long name as Final VM.
