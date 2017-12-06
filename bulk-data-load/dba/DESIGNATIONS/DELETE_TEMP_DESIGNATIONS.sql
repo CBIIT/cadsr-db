@@ -1,8 +1,7 @@
 set serveroutput on size 1000000
-SPOOL cadsrmeta-637d.log
+SPOOL cadsrmeta-686a.log
 
-delete from SBR.META_UPLOAD_CONTACT;
-delete from SBR.META_UPLOAD_ERROR_LOG;
+delete from SBREXT.MDSR_DESIGNATIONS_UPLOAD;
 commit;
 
 SPOOL OFF
