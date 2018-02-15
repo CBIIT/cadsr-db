@@ -72,24 +72,13 @@ errmsg :='';
 
             end if;
 
-             dbms_output.put_line(i.LONG_NAME||'i.LONG_NAME');
-
-        
-         IF  i.EVS_SOURCE is null or i.ORIGIN is null or i.SOURCE_DEFINITION is null
-            THEN
-            i.EVS_SOURCE :=NVL(i.EVS_SOURCE,'NCI_CONCEPT_CODE');
-            i.ORIGIN :=NVL(i.ORIGIN,'NCI Thesuarus');
-            i.SOURCE_DEFINITION := NVL(i.SOURCE_DEFINITION,'NCI');
-            end if;
-            
-
-
+       
             SELECT count(*) into v_source
             FROM SBREXT.CONCEPT_SOURCES_LOV_EXT
             WHERE   trim(CONCEPT_SOURCE) = trim(i.EVS_SOURCE)
             and i.EVS_SOURCE is not null;
 
-             IF v_source < 1 and i.EVS_SOURCE is not null THEN
+          IF v_source < 1 and i.EVS_SOURCE is not null THEN
             errmsg :=errmsg||'Invalid SOURCE '||i.EVS_SOURCE||'; ';
             end if;
             IF length(trim(i.PREFERRED_NAME))>30 then
@@ -118,11 +107,14 @@ errmsg :='';
          
 
             IF length(trim(errmsg))>1 then
-              dbms_output.put_line('errmsg2 - ');
+            errmsg := substr(errmsg,1,1999);
+             -- dbms_output.put_line('errmsg2 - ');
             insert into MDSR_CONCEPTS_EXT_ERROR_LOG VALUES (errmsg,sysdate,i.PREFERRED_NAME,i.LONG_NAME ,i.PREFERRED_DEFINITION,i.EVS_SOURCE,i.ORIGIN,i.SOURCE_DEFINITION,i.CHANGE_NOTE,'UPLOAD_VALIDATE_CONCEPTS');
             commit;
             ELSE
-               dbms_output.put_line('errmsg2 - ');
+                  dbms_output.put_line(i.LONG_NAME||'i.LONG_NAME');
+         
+
               select cde_id_seq.nextval into v_con_id      from dual;
 
               select admincomponent_crud.cmr_guid into v_con_idseq from dual;
@@ -156,19 +148,19 @@ errmsg :='';
                    1,                             --  VERSION             NOT NULL,
                    'RELEASED',                    -- ASL_NAME             NOT NULL,
                    'Yes',                         --LATEST_VERSION_IND
-                    i.SOURCE_DEFINITION  ,  --DEFINITION_SOURCE
+                   NVL(i.SOURCE_DEFINITION,'NCI')  ,  --DEFINITION_SOURCE
                    sysdate,                       --DATE_CREATED
-                    i.ORIGIN ,         --ORIGIN
+                   NVL(i.ORIGIN,'NCI Thesuarus') ,         --ORIGIN
                    'SBREXT',                      -- CREATED_BY
                    v_CON_ID,                      --CON_ID NOT NULL,
-                   i.EVS_SOURCE,
+                   NVL(i.EVS_SOURCE,'NCI_CONCEPT_CODE'),
                    i.CHANGE_NOTE );                --EVS_SOURCE
     commit;
             END IF;
 
   EXCEPTION
     WHEN OTHERS THEN
-       errmsg := substr(SQLERRM,1,2000);
+        errmsg := substr(SQLERRM,1,2000);
         dbms_output.put_line('errmsg3 - '||errmsg);
                   insert into MDSR_CONCEPTS_EXT_ERROR_LOG VALUES (errmsg,sysdate,i.PREFERRED_NAME,i.LONG_NAME ,i.PREFERRED_DEFINITION,
 				  i.EVS_SOURCE, i.ORIGIN, i.SOURCE_DEFINITION,i.CHANGE_NOTE,'UPLOAD_VALIDATE_CONCEPTS');
@@ -182,20 +174,24 @@ END ;
 CREATE OR REPLACE PROCEDURE SBREXT.MDSR_UPLOAD_UPDATE_CONCEPTS AS
 
 cursor c_load is
-    select PREFERRED_NAME ,  LONG_NAME ,  PREFERRED_DEFINITION,EVS_SOURCE, ORIGIN, SOURCE_DEFINITION, CHANGE_NOTE
+    select A.PREFERRED_NAME PREFERRED_NAME,  A.LONG_NAME LONG_NAME,  A.PREFERRED_DEFINITION PREFERRED_DEFINITION,A.EVS_SOURCE, A.ORIGIN, A.SOURCE_DEFINITION, A.CHANGE_NOTE,
+    C.EVS_SOURCE C_EVS_SOURCE, C.ORIGIN C_ORIGIN, C.DEFINITION_SOURCE C_SOURCE_DEFINITION
     from
     (select count(*) cnt,trim(PREFERRED_NAME) PREFERRED_NAME,  trim(LONG_NAME) LONG_NAME,
     trim(PREFERRED_DEFINITION)PREFERRED_DEFINITION,trim(EVS_SOURCE) EVS_SOURCE,
     trim(ORIGIN) ORIGIN, trim(SOURCE_DEFINITION) SOURCE_DEFINITION, CHANGE_NOTE from SBREXT."MDSR_CONCEPTS_EXT_TEMP"
     where PREFERRED_NAME is not null
     --where PREFERRED_NAME='C131048'
-    group BY PREFERRED_NAME ,  LONG_NAME ,  PREFERRED_DEFINITION,EVS_SOURCE, ORIGIN, SOURCE_DEFINITION, CHANGE_NOTE)
-    ORDER BY LONG_NAME;
+    group BY PREFERRED_NAME ,  LONG_NAME ,  PREFERRED_DEFINITION,EVS_SOURCE, ORIGIN, SOURCE_DEFINITION, CHANGE_NOTE)A,
+    SBREXT.CONCEPTS_EXT C
+    where A.PREFERRED_NAME=C.PREFERRED_NAME
+    ORDER BY A.LONG_NAME;
 
-errmsg VARCHAR2(2000):='';
-v_pname  VARCHAR2(100) ;
-v_lname  VARCHAR2(500) ;
-v_desc  VARCHAR2(3000) ;
+errmsg  MDSR_CONCEPTS_EXT_ERROR_LOG.ERROR_MSG%TYPE := '';
+v_EVS_SOURCE  SBREXT.CONCEPTS_EXT.EVS_SOURCE%TYPE;
+v_ORIGIN  SBREXT.CONCEPTS_EXT.ORIGIN%TYPE;
+v_SOURCE_DEF  SBREXT.CONCEPTS_EXT.DEFINITION_SOURCE%TYPE;
+V_CHANGE_NOTE SBREXT.CONCEPTS_EXT.CHANGE_NOTE%TYPE;
 v_cnt number;
 v_source number;
 v_conte_idseq  VARCHAR2(50) ;
@@ -215,16 +211,8 @@ errmsg :='';
 
             end if;
 
-             dbms_output.put_line(i.LONG_NAME||'i.LONG_NAME');
-
-         IF  i.EVS_SOURCE is null or i.ORIGIN is null or i.SOURCE_DEFINITION is null
-            THEN
-            i.EVS_SOURCE :=NVL(i.EVS_SOURCE,'NCI_CONCEPT_CODE');
-            i.ORIGIN :=NVL(i.ORIGIN,'NCI Thesuarus');
-            i.SOURCE_DEFINITION := NVL(i.SOURCE_DEFINITION,'NCI');
-            end if;
-
-
+         --    dbms_output.put_line(i.LONG_NAME||'i.LONG_NAME');
+        
             SELECT count(*) into v_source
             FROM SBREXT.CONCEPT_SOURCES_LOV_EXT
             WHERE   trim(CONCEPT_SOURCE) = trim(i.EVS_SOURCE)
@@ -234,34 +222,44 @@ errmsg :='';
             errmsg :=errmsg||'Invalid SOURCE '||i.EVS_SOURCE||'; ';
             end if;
 
-           --dbms_output.put_line(i.EVS_SOURCE||'');
+            IF length(trim(i.PREFERRED_NAME))>30 then
+                errmsg :=errmsg||'PREFERRED_NAME is '||length(trim(i.PREFERRED_NAME))||' Characters. It must not exceed 30; ';
+            END IF;
+            
+            IF length(trim(i.LONG_NAME))>255 then                
+                errmsg :=errmsg||'LONG_NAME is '||length(trim(i.LONG_NAME))||' Characters. It must not exceed 255; ';             
+            END IF;
+
+
+            IF length(trim(i.PREFERRED_DEFINITION))>2000 then
+                  errmsg :=errmsg||'PREFERRED_DEFINITION is '||length(trim(i.PREFERRED_DEFINITION))||' Characters. It must not exceed 2000; ';            
+            END IF;
+            
+             IF length(trim(i.PREFERRED_DEFINITION))>2000 then
+                  errmsg :=errmsg||'PREFERRED_DEFINITION is '||length(trim(i.PREFERRED_DEFINITION))||' Characters. It must not exceed 2000; ';            
+            END IF;
 
            
 
             IF length(trim(errmsg))>1 then
             -- dbms_output.put_line('errmsg2 - '||errmsg);
+            errmsg := substr(errmsg,1,1999);
             insert into MDSR_CONCEPTS_EXT_ERROR_LOG VALUES (errmsg,sysdate,i.PREFERRED_NAME,i.LONG_NAME ,i.PREFERRED_DEFINITION,
                   i.EVS_SOURCE, i.ORIGIN, i.SOURCE_DEFINITION,i.CHANGE_NOTE,'UPLOAD_VALIDATE_CONCEPTS');
            ELSE
            
-                       SELECT count(*) into v_cnt
-            FROM CONCEPTS_EXT
-            WHERE   trim(PREFERRED_NAME) = trim(i.PREFERRED_NAME)       ;
-
-           
-            IF v_cnt > 0 THEN
             UPDATE SBREXT.CONCEPTS_EXT set LONG_NAME=i.LONG_NAME ,
             PREFERRED_DEFINITION=i.PREFERRED_DEFINITION,
-            EVS_SOURCE=i.EVS_SOURCE,ORIGIN=i.ORIGIN,
-            DEFINITION_SOURCE=i.SOURCE_DEFINITION,
-            CHANGE_NOTE=i.CHANGE_NOTE,
+            EVS_SOURCE=NVL(i.EVS_SOURCE,i.C_EVS_SOURCE),
+            ORIGIN=NVL(i.ORIGIN,i.C_ORIGIN),
+            DEFINITION_SOURCE=NVL(i.SOURCE_DEFINITION,i.C_SOURCE_DEFINITION),
+            CHANGE_NOTE=NVL(i.CHANGE_NOTE,'Uploaded by Concept Loader'),
             MODIFIED_BY='SBREXT',
             DATE_MODIFIED=SYSDATE
-            WHERE   trim(PREFERRED_NAME) = trim(i.PREFERRED_NAME)
-            and version=1 and CONTE_IDSEQ=v_CONTE_IDSEQ;
+            WHERE   trim(PREFERRED_NAME) = trim(i.PREFERRED_NAME);
+            
             commit;
        
-            END IF;
       end if;
   EXCEPTION
     WHEN OTHERS THEN
@@ -269,6 +267,7 @@ errmsg :='';
         dbms_output.put_line('errmsg3 - '||errmsg);
                   insert into MDSR_CONCEPTS_EXT_ERROR_LOG VALUES (errmsg,sysdate,i.PREFERRED_NAME,i.LONG_NAME ,i.PREFERRED_DEFINITION,
                   i.EVS_SOURCE, i.ORIGIN, i.SOURCE_DEFINITION,i.CHANGE_NOTE,'MDSR_UPLOAD_UPDATE_CONCEPTS');
+                  commit;
  end;
   end loop;
 
