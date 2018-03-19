@@ -1,0 +1,197 @@
+CREATE OR REPLACE TYPE                    MDSR_FB_FORM_XML_T    as object(    
+"context"                                    VARCHAR2(40)
+,"createdBy"                                      VARCHAR2(100)
+,"dateCreated"                         VARCHAR2(30)
+,"dateModified"    VARCHAR2(30)
+,"modifiedBy"   VARCHAR2(100)
+,"longName"  VARCHAR2(255)   
+,"changeNote"                              VARCHAR2(2000)
+,"preferredDefinition"                      VARCHAR2(2000)
+,"cadsrRAI"             VARCHAR2(40)
+,"publicid"  NUMBER
+,"version"  NUMBER
+,"workflowStatusName" VARCHAR2(40)
+,"categoryName" VARCHAR2(255) 
+,"type"              VARCHAR2(5) 
+,"headerInstruction_xx"     SBREXT.REDCAP_HINSTRUCTIONS_T              
+
+,"module_XX" SBREXT.MDSR_FB_MODULE_XML_LIST_T
+,"footerInstruction_XX"  SBREXT.REDCAP_HINSTRUCTIONS_T
+)
+
+drop type MDSR_FB_FORM_XML_T
+/
+CREATE OR REPLACE TYPE          "MDSR_FB_VD_XML_LIST_T5"         as table of MDSR_FB_VD_XML_T5;
+CREATE OR REPLACE TYPE          "MDSR_FB_VD_XML_T5"                                          AS OBJECT
+(   
+  "longName"      varchar2(255),
+  "publicId"         number,
+  "version"                number (4,2),
+  "type"        varchar2 (50),
+  "workflowStatus"         varchar2 (20), 
+  "Datatype"               varchar2 (20),   
+  "MaximumLength"          number (8),
+  "MinimumLength"          number (8),
+  "PermissibleValue"    MDSR_FB_PV_XML_LIST_T5
+);
+
+CREATE OR REPLACE TYPE          "MDSR_FB_VM_XML_T5"          as object(
+"publicID"          number,
+"version"             number (4,2),
+"longname"        varchar2 (300) ,
+"designation"    MDSR_FB_DESIGN_XML_LIST_T,
+"preferredDefinition"  VARCHAR2(2000));
+/
+
+CREATE OR REPLACE TYPE   MDSR_FB_PV_XML_LIST_T5         as table of   MDSR_FB_PV_XML_T5;
+CREATE OR REPLACE TYPE          "MDSR_FB_PV_XML_T5"          as object(
+ 
+ "value"       varchar2 (300) ,
+"valueMeaning"    MDSR_FB_VM_XML_T5);
+/
+
+CREATE OR REPLACE TYPE          "MDSR_FB_VM_XML_T5"          as object(
+ 
+"publicID"          number,
+"version"             number (4,2),
+"longname"        varchar2 (300) ,
+"preferredDefinition"  VARCHAR2(2000));
+/
+CREATE OR REPLACE TYPE          "MDSR_FB_QUESTION_XML_LIST_T5"         as table of MDSR_FB_QUESTION_XML_T5;
+CREATE OR REPLACE TYPE        MDSR_FB_QUESTION_XML_T5  as object(
+"publicID"        NUMBER,
+"version"          VARCHAR2(8),
+"isDerived"       VARCHAR2(8),
+"displayOrder"     NUMBER,
+"dateCreated"      VARCHAR2(30),
+"dateModified"     VARCHAR2(30),
+"questionText"     VARCHAR2(4000),
+"instruction"      REDCAP_INSTRUCTIONS_T,
+"isEditable"       VARCHAR2(8),
+"isMandatory"      VARCHAR2(8),
+"multiValue"       VARCHAR2(8),
+"long_name"        VARCHAR2(255),          
+"shortname"         VARCHAR2(50),
+"de_publicID"        NUMBER,
+"de_version"          VARCHAR2(8),
+"workflowStatusName"  VARCHAR2(30),
+"context"            VARCHAR2(30),
+"preferredDefinition" VARCHAR2(4000),
+"VALUE_DOMAIN_xx"       MDSR_FB_VD_XML_LIST_T5,
+"referenceDocument_xx"          MDSR_FB_RD_XML_LIST_T4,
+"validValues_xx"        MDSR_FB_VV_XML_LIST_T)
+/
+
+CREATE OR REPLACE TYPE          "MDSR_FB_QUESTION_XML_LIST_T5"         as table of MDSR_FB_QUESTION_XML_T_5;
+CREATE OR REPLACE TYPE        MDSR_FB_MODULE_XML_T    as object(
+"displayOrder"                                     NUMBER
+,"maximumModuleRepeat"                              NUMBER
+,"longName"   VARCHAR2(255) 
+,"instruction"      REDCAP_INSTRUCTIONS_T
+, "preferredDefinition" VARCHAR2(2000)
+,"publicid"  NUMBER
+,"version"  NUMBER
+
+,"usageCategory"  MDSR_FB_UseCat_XML
+,"questions_xx"   MDSR_FB_QUESTION_XML_LIST_T5
+)
+/
+CREATE OR REPLACE TYPE          "MDSR_FB_MODULE_XML_LIST_T"         as table of MDSR_FB_MODULE_XML_T;
+drop type MDSR_FB_MODULE_XML_LIST_T
+
+drop type MDSR_FB_MODULE_XML_LIST_T5;
+drop type MDSR_FB_MODULE_XML_T5;
+drop type MDSR_FB_QUESTION_XML_LIST_T5;
+drop type MDSR_FB_QUESTION_XML_T_5;
+
+drop type MDSR_FB_VD_XML_LIST_T5 ;        
+drop type   MDSR_FB_VD_XML_T5;
+drop type MDSR_FB_PV_XML_LIST_T5    ;     
+drop type   MDSR_FB_PV_XML_T5;
+--drop type MDSR_FB_VM_XML_LIST_T5    ;     
+drop type   MDSR_FB_VM_XML_T5;
+
+CREATE OR REPLACE TYPE          "MDSR_FB_DESIGN_XML_T"          as object(
+"createdBy"                                      VARCHAR2(100)
+,"dateCreated"                         VARCHAR2(30)
+,"languageName"                                           VARCHAR2(30) 
+,"name"                                               VARCHAR2(2000)
+,"type"                                      VARCHAR2(20)--"DETL_NAME"
+,"context"                                     VARCHAR2(30) 
+  ,"classification_xx"  "MDSR_FB_FORM_CL_XML_LIST_T" );
+/
+CREATE OR REPLACE TYPE         MDSR_FB_DESIGN_XML_LIST_T         as table of MDSR_FB_DESIGN_XML_T;
+CREATE OR REPLACE TYPE          "MDSR_FB_DEFIN_XML_T"          as object(
+"createdBy"                                      VARCHAR2(100)
+,"dateCreated"                         VARCHAR2(30)
+,"languageName"                                           VARCHAR2(30) 
+,"text"                                               VARCHAR2(2000)
+,"type"                                      VARCHAR2(20)--"DETL_NAME"
+  ,"classification_xx"  "MDSR_FB_FORM_CL_XML_LIST_T" );
+
+CREATE OR REPLACE TYPE         MDSR_FB_DEFIN_XML_LIST_T         as table of MDSR_FB_DEFIN_XML_T;
+DATE_CREATED,CREATED_BY,DEFINITION,LAE_NAME,DEFL_NAME
+
+CREATE OR REPLACE TYPE          "MDSR_FB_VM_XML_T"          as object(
+"publicID"          number,
+"version"             number (4,2),
+"longname"        varchar2 (300) ,
+"designation_xx"    MDSR_FB_DESIGN_XML_LIST_T,
+"definition_xx"   MDSR_FB_DEFIN_XML_LIST_T,
+"preferredDefinition"  VARCHAR2(2000));
+
+CREATE OR REPLACE TYPE         MDSR_FB_VM_XML_LIST_T         as table of MDSR_FB_VM_XML_T;
+ "value"       varchar2 (300) ,
+"valueMeaning"    MDSR_FB_VM_XML_T);
+/
+CREATE OR REPLACE TYPE          "MDSR_FB_PV_XML_T"          as object(
+ 
+ "value"       varchar2 (300) ,
+"valueMeaning"    MDSR_FB_VM_XML_T);
+/
+CREATE OR REPLACE TYPE        MDSR_FB_PV_XML_LIST_T          as table of MDSR_FB_PV_XML_T;
+ 
+
+CREATE OR REPLACE TYPE          "MDSR_FB_VD_XML_T"                                          AS OBJECT
+(   
+  "longName"      varchar2(255),
+  "publicId"         number,
+  "version"                number (4,2),
+  "type"        varchar2 (50),
+  "workflowStatus"         varchar2 (20), 
+  "Datatype"               varchar2 (20),   
+  "MaximumLength"          number (8),
+  "MinimumLength"          number (8),
+  "PermissibleValue"    MDSR_FB_PV_XML_LIST_T
+);
+/
+CREATE OR REPLACE TYPE        MDSR_FB_VD_XML_LIST_T          as table of MDSR_FB_VD_XML_T;
+
+
+CREATE OR REPLACE TYPE        MDSR_FB_QUESTION_XML_T   as object(
+"publicID"        NUMBER,
+"version"          VARCHAR2(8),
+"isDerived"       VARCHAR2(8),
+"displayOrder"     NUMBER,
+"dateCreated"      VARCHAR2(30),
+"dateModified"     VARCHAR2(30),
+"questionText"     VARCHAR2(4000),
+"instruction"      REDCAP_INSTRUCTIONS_T,
+"isEditable"       VARCHAR2(8),
+"isMandatory"      VARCHAR2(8),
+"multiValue"       VARCHAR2(8),
+"long_name"        VARCHAR2(255),          
+"shortname"         VARCHAR2(50),
+"de_publicID"        NUMBER,
+"de_version"          VARCHAR2(8),
+"workflowStatusName"  VARCHAR2(30),
+"context"            VARCHAR2(30),
+"preferredDefinition" VARCHAR2(4000),
+"VALUE_DOMAIN_xx"       MDSR_FB_VD_XML_LIST_T,
+"referenceDocument_xx"          MDSR_FB_RD_XML_LIST_T4,
+"validValues_xx"        MDSR_FB_VV_XML_LIST_T)
+
+
+/
+CREATE OR REPLACE TYPE        MDSR_FB_QUESTION_XML_LIST_T          as table of MDSR_FB_QUESTION_XML_T;
+MDSR_FB_QUESTION
