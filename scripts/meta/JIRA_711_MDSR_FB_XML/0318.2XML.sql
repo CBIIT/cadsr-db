@@ -5,12 +5,12 @@ cast(multiset( select
 MM.DISPLAY_ORDER,
 NVL(mm.REPEAT_NO,0),
 MM.long_name,
-REDCAP_INSTRUCTIONS_T(substr(Mod_instruction,1,200)),
+REDCAP_INSTRUCTIONS_T(Mod_instruction),
 MM.preferred_Definition,
 mm.mod_id,
 mm.version,
 MDSR_FB_usageCat_XML(usageType ,
-substr(Mod_instruction,1,200)),
+Mod_instruction),
 cast(multiset( select
 QQ.QUES_id,
 QQ.QUES_version,
@@ -73,14 +73,24 @@ qq.D_PREFERRED_DEFINITION,
           where c2.CONTE_IDSEQ=rd.CONTE_IDSEQ
           and rd.ac_idseq=qq.de_idseq )as MDSR_FB_RD_XML_LIST_T4)--3506034;
   ,
-      CAST (    MULTISET (                                     SELECT TRIM (DISPLAY_ORDER),
-                                                                      TRIM (long_name),
+      CAST (
+                                                          MULTISET (
+                                                               SELECT TRIM (DISPLAY_ORDER),
+                                                                      TRIM (VALUE),
                                                                       TRIM (MEANING_TEXT),
                                                                       TRIM (DESCRIPTION_TEXT),
-                                                                      MDSR_FB_VV_VM_XML_T(vm_id,
-                                                                      vm_version)
-                                                                 FROM  SBREXT.MDSR_FB_VALID_VALUE_MVW MVV
-                                                                 where   MVV.QUEST_IDseq  = qq.mod_idseq                                            
+                                                                      MDSR_FB_VV_VM_XML_T(vvm.vm_id,
+                                                                      vvm.version)
+                                                                 FROM  QUEST_CONTENTS_EXT QV,
+                                                                 VALID_VALUES_ATT_EXT  VV , 
+                                                             SBR.VALUE_MEANINGS vvm,
+                                                                SBR.PERMISSIBLE_VALUES vpv,
+                                                             VD_PVS vvp
+                                                               where VV.QC_IDSEQ=QV.QC_IDSEQ
+                                                               and P_QST_IDSEQ=qq.ques_idseq--'C0008243-FD07-E8E1-E040-BB89AD437A55'
+                                                        and vpv.pv_idseq=vvp.pv_idseq--vm_id='3197154'
+                                                        and vvm.vm_idseq=vpv.VM_idseq
+                                                        and qv.VP_IDSEQ=vvp.VP_IDSEQ --and qv.VP_IDSEQ='871A0137-4215-F855-E040-BB89AD436829'
                                                         order by DISPLAY_ORDER)as MDSR_FB_VV_XML_LIST_T)
                                                         from SBREXT.MDSR_FB_QUESTION_MVW QQ
                                                         where  qq.mod_idseq=mm.MOD_IDSEQ
@@ -105,15 +115,20 @@ qq.D_PREFERRED_DEFINITION,
                                         protocol_qc_ext pq
                                         WHERE mf.qc_IDSEQ = pq.qc_idseq(+)
                                         AND pq.proto_idseq = pe.PROTO_IDSEQ(+))as MDSR_FB_PROTOCOL_XML_LIST_T ) ,
-                                cast(multiset(     SELECT  class_long_name, CS_ID,class_version,
-                                    preferred_definition,
-                                    MDSR_FB_FORM_CLI_XML_T( clitem_long_name,
-                                    CSI_ID,
-                                    clitem_version  ,
+                                cast(multiset(     SELECT  cs.long_name, cs.CS_ID,cs.version,
+                                    cs.preferred_definition,
+                                    MDSR_FB_FORM_CLI_XML_T( i.long_name,
+                                    i.CSI_ID,
+                                    i.version  ,
                                     CSITL_NAME  )             
-                                    FROM MDSR_FB_classification CL
-                           WHERE  mf.qc_IDSEQ = CL.AC_IDSEQ(+)  
-                                order by CS_ID
+                                    FROM cs_csi cscsi,                                    
+                                    classification_schemes cs,
+                                    ac_csi accsi,
+                                    CS_ITEMS i
+                           WHERE  mf.qc_IDSEQ = accsi.AC_IDSEQ(+)         
+                            AND cs.CS_IDSEQ = cscsi.CS_IDSEQ
+                            AND accsi.CS_CSI_IDSEQ = cscsi.CS_CSI_IDSEQ        
+                            AND i.CSI_IDSEQ = cscsi.CSI_IDSEQ order by cs.CS_ID
                             )as NDSR_FB_FORM_CL_XML_LIST_T )
                             from  QUEST_CONTENTS_EXT mf ,
                              SBR.contexts cf ,        
@@ -124,39 +139,6 @@ qq.D_PREFERRED_DEFINITION,
                           AND cf.CONTE_IDSEQ=mf.CONTE_IDSEQ
                           and fi.DN_CRF_IDSEQ(+) =mf.qc_idseq   
                            and ffi.DN_CRF_IDSEQ(+) =mf.qc_idseq                       
-                          and (MF.QTL_NAME = 'CRF' OR MF.QTL_NAME = 'TEMPLATE')
-                          --and mf.qc_id in (5590324,2263415,3443682,3691952,5791100,4964471,2019334,2019339,2019340,2019343,2019346)
-
-
-
-                          
-                          
-                          
-                          
-                 /*         SELECT TRIM (DISPLAY_ORDER),
-                                                                      TRIM (VALUE),
-                                                                      TRIM (MEANING_TEXT),
-                                                                      TRIM (DESCRIPTION_TEXT),
-                                                                      MDSR_FB_VV_VM_XML_T(vvm.vm_id,
-                                                                      vvm.version)
-                                     
-                                     
-                                     
-                                     
-                                     select vv.*                            FROM  QUEST_CONTENTS_EXT QQ,
-                                                                 VALID_VALUES_ATT_EXT  VV where
-                                                        VV.QC_IDSEQ=QQ.QC_IDSEQ
-                                                        --       and P_QST_IDSEQ=qq.qc_idseq
-                                                               
-                                                              and  qq.qc_id=2488546   2488571
-                                                              
-                                                              
-                                                              select vv.*,QQ.*  FROM  QUEST_CONTENTS_EXT QQ,
-                                                                 VALID_VALUES_ATT_EXT vv
-                                                              where -- qc_id=2488571--2488546  --P_QST_IDSEQ=''
-                                                              --and qcl
-                                                              --or 
-                                                              VV.QC_IDSEQ=QQ.QC_IDSEQ
-                                                              and P_QST_IDSEQ='16D38CAF-97C5-08C8-E044-0003BA3F9857'
-                                                              and QTL_NAME='VALID_VALUE'*/
-                                                              
+                          and (MF.QTL_NAME = 'CRF'OR MF.QTL_NAME = 'TEMPLATE')
+                          and mf.qc_id in (5590324,2263415,3443682,3691952,5791100,4964471)--,2019334
+      
