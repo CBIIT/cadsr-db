@@ -1,0 +1,3900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>XML-4964471</collectionName>
+  <collectionDescription>Load XML</collectionDescription> 
+ <form>
+  <context>NCI Standards</context>
+  <createdBy>HARTLEYG</createdBy>
+  <dateCreated>2015-08-13T19:10:50</dateCreated>
+  <dateModified>2017-04-20T16:02:47</dateModified>
+  <modifiedBy>COOPERM</modifiedBy>
+  <longName>Brief Pain Inventory-BPI</longName>
+  <preferredDefinition>Brief Pain Inventory (Short Form)</preferredDefinition>
+  <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+  <publicID>4964471</publicID>
+  <version>1</version>
+  <workflowStatusName>RELEASED</workflowStatusName>
+  <categoryName>Quality of Life</categoryName>
+  <type>CRF</type>
+  <headerInstruction>
+   <text>For patients with pain from chronic diseases or conditions such as cancer, osteoarthritis and low back pain, or with pain from acute conditions such as postoperative pain</text>
+  </headerInstruction>
+     <module>
+    <displayOrder>0</displayOrder>
+    <maximumModuleRepeat>0</maximumModuleRepeat>
+    <longName>Question 1-9(A-G)</longName>
+        <preferredDefinition>1.</preferredDefinition>
+    <publicID>4964473</publicID>
+    <version>1</version>
+    <usageCategory>
+     <usageType>None</usageType>
+    </usageCategory>
+         <question>
+      <publicID>4964487</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>0</displayOrder>
+      <dateCreated>2015-08-13T19:10:51</dateCreated>
+      <dateModified>2015-08-13T19:10:51</dateModified>
+      <questionText>Throughout our lives, most of us have had pain from time to time (such as minor headaches, sprains and toothaches). Have you had pain other than these everyday kinds of pain today?</questionText>
+      <instruction>
+       <text>General Question #1 of 9</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 1 Have Pain Other Than Everyday Kind of Pain Indicator</longName>
+       <shortName>BPI_SF_HAVE_PAIN_IND</shortName>
+       <publicID>3966605</publicID>
+       <version>2</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation of whether or not pain, other than everyday kinds of pain such as minor headaches, sprains, and toothaches, is being experienced today, using a yes or no response.</preferredDefinition>
+              <valueDomain>
+        <longName>Yes No Indicator</longName>
+        <shortName>YES_NO_IND</shortName>
+        <publicID>3506068</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>NCI Standards</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>CHARACTER</datatypeName>
+        <maximumLengthNumber>3</maximumLengthNumber>
+        <minimumLengthNumber>2</minimumLengthNumber>
+                        <permissibleValue>
+          <value>No</value>
+          <valueMeaning>
+           <publicID>3197154</publicID>
+           <version>1</version>
+           <longName>No</longName>
+                       <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA32-8</name>
+             <type>LOINC_CODE</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>No</name>
+             <type>LOINC_NAME</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>COOPERM</createdBy>
+             <dateCreated>2017-03-30T20:04:49</dateCreated>
+             <languageName>Spanish</languageName>
+             <name>No</name>
+             <type>VM Alt Name</type>
+             <context>NCI Standards</context>
+                         </designation>
+            <designation>
+             <createdBy>TSESU</createdBy>
+             <dateCreated>2017-10-04T12:02:06</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>2</name>
+             <type>VM Alt Name</type>
+             <context>ABTC</context>
+                         </designation>
+            <designation>
+             <createdBy>MAESKEB</createdBy>
+             <dateCreated>2017-08-25T10:11:45</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>N</name>
+             <type>VM Alt Name</type>
+             <context>Theradex</context>
+                         </designation>
+                                 <preferredDefinition>The non-affirmative response to a question.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2011-03-16T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>Yes</value>
+          <valueMeaning>
+           <publicID>3197153</publicID>
+           <version>1</version>
+           <longName>Yes</longName>
+                       <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA33-6</name>
+             <type>LOINC_CODE</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Yes</name>
+             <type>LOINC_NAME</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>COOPERM</createdBy>
+             <dateCreated>2017-03-30T20:04:49</dateCreated>
+             <languageName>Spanish</languageName>
+             <name>Sí</name>
+             <type>VM Alt Name</type>
+             <context>NCI Standards</context>
+                         </designation>
+            <designation>
+             <createdBy>MAESKEB</createdBy>
+             <dateCreated>2017-08-25T10:11:45</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Y</name>
+             <type>VM Alt Name</type>
+             <context>Theradex</context>
+                         </designation>
+            <designation>
+             <createdBy>TSESU</createdBy>
+             <dateCreated>2017-10-04T11:56:09</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>1</name>
+             <type>VM Alt Name</type>
+             <context>ABTC</context>
+                         </designation>
+                                 <preferredDefinition>The affirmative response to a question.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2011-06-23T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>Throughout our lives, most of us have had pain from time to time (such as minor headaches, sprains and toothaches). Have you had pain other than these everyday kinds of pain today? (1)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/BPI_UserGuide.pdf</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Throughout our lives, most of</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>Throughout our lives, most of us have had pain from time to time (such as minor headaches, sprains and toothaches). Have you had pain other than these everyday kinds of pain today?</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Question Instruction</name>
+         <type>NOTE</type>
+         <context>NCIP</context>
+         <doctext>Throughout our lives, most of us have had pain from time to time (such as minor headaches, sprains and toothaches).</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=3966605&amp;version=2</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>No</value>
+        <meaningText>No</meaningText>
+        <description>The non-affirmative response to a question.</description>
+                <valueMeaning>
+         <publicID>3197154</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>Yes</value>
+        <meaningText>Yes</meaningText>
+        <description>The affirmative response to a question.</description>
+                <valueMeaning>
+         <publicID>3197153</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>4964491</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>1</displayOrder>
+      <dateCreated>2015-08-13T19:10:51</dateCreated>
+      <dateModified>2015-08-13T19:10:51</dateModified>
+      <questionText>On the diagram, shade in the areas where you feel pain. Put an X on the area that hurts the most.</questionText>
+      <instruction>
+       <text>General Question #2 of 9</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 2 Feel Pain Diagram Area Shading and Hurts Most Mark Text</longName>
+       <shortName>BPI_SF_DIAGRAM_TXT</shortName>
+       <publicID>4683031</publicID>
+       <version>1</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation of where pain is felt, using a diagram of the body to mark the area that hurts the most.</preferredDefinition>
+              <valueDomain>
+        <longName>Descriptive Text</longName>
+        <shortName>DESCR_TXT</shortName>
+        <publicID>2181231</publicID>
+        <version>1</version>
+        <type>NonEnumerated</type>
+        <context>DCP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>ALPHANUMERIC</datatypeName>
+        <maximumLengthNumber>200</maximumLengthNumber>
+        <minimumLengthNumber>1</minimumLengthNumber>
+                              </valueDomain>
+                      <referenceDocument>
+         <name>On the diagram, shade in the</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>On the diagram, shade in the areas where you feel pain. Put an X on the area that hurts the most.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>On the diagram, shade in the areas where you feel pain. Put an X on the area that hurts the most. (2)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/brief-pain-inventory-users-guide.html</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=4683031&amp;version=1</cdeBrowserLink>
+      </dataElement>
+           </question>
+     <question>
+      <publicID>4964493</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>2</displayOrder>
+      <dateCreated>2015-08-13T19:10:51</dateCreated>
+      <dateModified>2015-08-13T19:10:51</dateModified>
+      <questionText>Please rate your pain by circling the one number that best describes your pain at its WORST in the last 24 hours.</questionText>
+      <instruction>
+       <text>General Question #3 of 9</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 3 Last 24 Hours Pain at its Worst Score 11 Point Likert Scale</longName>
+       <shortName>BPI_SF_WORST_PAIN_SC</shortName>
+       <publicID>4683032</publicID>
+       <version>1</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation rating pain at its worst in the last 24 hours, using a 11 point Likert scale.</preferredDefinition>
+              <valueDomain>
+        <longName>BPI Pain Rating Score 11 Point Likert Scale</longName>
+        <shortName>4682112v1.0</shortName>
+        <publicID>4682112</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>DCP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>NUMBER</datatypeName>
+        <decimalPlace>0</decimalPlace>
+        <highValueNumber>10</highValueNumber>
+        <lowValueNumber>0</lowValueNumber>
+        <maximumLengthNumber>2</maximumLengthNumber>
+        <minimumLengthNumber>1</minimumLengthNumber>
+                        <permissibleValue>
+          <value>10</value>
+          <valueMeaning>
+           <publicID>4682113</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 10</longName>
+                                 <preferredDefinition>A subjective score of 10 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>9</value>
+          <valueMeaning>
+           <publicID>4682114</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 9</longName>
+                                 <preferredDefinition>A subjective score of 9 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>8</value>
+          <valueMeaning>
+           <publicID>4682115</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 8</longName>
+                                 <preferredDefinition>A subjective score of 8 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>7</value>
+          <valueMeaning>
+           <publicID>4682116</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 7</longName>
+                                 <preferredDefinition>A subjective score of 7 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>6</value>
+          <valueMeaning>
+           <publicID>4682117</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 6</longName>
+                                 <preferredDefinition>A subjective score of 6 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>5</value>
+          <valueMeaning>
+           <publicID>4682118</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 5</longName>
+                                 <preferredDefinition>A subjective score of 5 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>4</value>
+          <valueMeaning>
+           <publicID>4682119</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 4</longName>
+                                 <preferredDefinition>A subjective score of 4 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>3</value>
+          <valueMeaning>
+           <publicID>4682120</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 3</longName>
+                                 <preferredDefinition>A subjective score of 3 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>2</value>
+          <valueMeaning>
+           <publicID>4682121</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 2</longName>
+                                 <preferredDefinition>A subjective score of 2 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>1</value>
+          <valueMeaning>
+           <publicID>4682122</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 1</longName>
+                                 <preferredDefinition>A subjective score of 1 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>0</value>
+          <valueMeaning>
+           <publicID>4682123</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 0</longName>
+                                 <preferredDefinition>A subjective score of 0 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Please rate your pain by circ</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>Please rate your pain by circling the one number that best describes your pain at its WORST in the last 24 hours.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/brief-pain-inventory-users-guide.html</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>Please rate your pain by circling the one number that best describes your pain at its WORST in the last 24 hours. (3)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=4683032&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>0</value>
+        <meaningText>Pain Rating Score 0</meaningText>
+        <description>A subjective score of 0 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682123</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>1</value>
+        <meaningText>Pain Rating Score 1</meaningText>
+        <description>A subjective score of 1 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682122</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>10</displayOrder>
+        <value>9</value>
+        <meaningText>Pain Rating Score 9</meaningText>
+        <description>A subjective score of 9 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682114</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>10</value>
+        <meaningText>Pain Rating Score 10</meaningText>
+        <description>A subjective score of 10 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682113</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>2</value>
+        <meaningText>Pain Rating Score 2</meaningText>
+        <description>A subjective score of 2 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682121</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>4</displayOrder>
+        <value>3</value>
+        <meaningText>Pain Rating Score 3</meaningText>
+        <description>A subjective score of 3 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682120</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>5</displayOrder>
+        <value>4</value>
+        <meaningText>Pain Rating Score 4</meaningText>
+        <description>A subjective score of 4 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682119</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>6</displayOrder>
+        <value>5</value>
+        <meaningText>Pain Rating Score 5</meaningText>
+        <description>A subjective score of 5 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682118</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>7</displayOrder>
+        <value>6</value>
+        <meaningText>Pain Rating Score 6</meaningText>
+        <description>A subjective score of 6 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682117</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>8</displayOrder>
+        <value>7</value>
+        <meaningText>Pain Rating Score 7</meaningText>
+        <description>A subjective score of 7 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682116</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>9</displayOrder>
+        <value>8</value>
+        <meaningText>Pain Rating Score 8</meaningText>
+        <description>A subjective score of 8 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682115</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>4964506</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>3</displayOrder>
+      <dateCreated>2015-08-13T19:10:51</dateCreated>
+      <dateModified>2015-08-13T19:10:51</dateModified>
+      <questionText>Please rate your pain by circling the one number that best describes your pain at its LEAST in the last 24 hours.</questionText>
+      <instruction>
+       <text>General Question #4 of 9</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 4 Last 24 Hours Pain at its Least Score 11 Point Likert Scale</longName>
+       <shortName>BPI_SF_LEAST_PAIN_SC</shortName>
+       <publicID>4683033</publicID>
+       <version>1</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation rating pain at its least in the last 24 hours, using a 11 point Likert scale.</preferredDefinition>
+              <valueDomain>
+        <longName>BPI Pain Rating Score 11 Point Likert Scale</longName>
+        <shortName>4682112v1.0</shortName>
+        <publicID>4682112</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>DCP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>NUMBER</datatypeName>
+        <decimalPlace>0</decimalPlace>
+        <highValueNumber>10</highValueNumber>
+        <lowValueNumber>0</lowValueNumber>
+        <maximumLengthNumber>2</maximumLengthNumber>
+        <minimumLengthNumber>1</minimumLengthNumber>
+                        <permissibleValue>
+          <value>10</value>
+          <valueMeaning>
+           <publicID>4682113</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 10</longName>
+                                 <preferredDefinition>A subjective score of 10 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>9</value>
+          <valueMeaning>
+           <publicID>4682114</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 9</longName>
+                                 <preferredDefinition>A subjective score of 9 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>8</value>
+          <valueMeaning>
+           <publicID>4682115</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 8</longName>
+                                 <preferredDefinition>A subjective score of 8 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>7</value>
+          <valueMeaning>
+           <publicID>4682116</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 7</longName>
+                                 <preferredDefinition>A subjective score of 7 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>6</value>
+          <valueMeaning>
+           <publicID>4682117</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 6</longName>
+                                 <preferredDefinition>A subjective score of 6 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>5</value>
+          <valueMeaning>
+           <publicID>4682118</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 5</longName>
+                                 <preferredDefinition>A subjective score of 5 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>4</value>
+          <valueMeaning>
+           <publicID>4682119</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 4</longName>
+                                 <preferredDefinition>A subjective score of 4 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>3</value>
+          <valueMeaning>
+           <publicID>4682120</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 3</longName>
+                                 <preferredDefinition>A subjective score of 3 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>2</value>
+          <valueMeaning>
+           <publicID>4682121</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 2</longName>
+                                 <preferredDefinition>A subjective score of 2 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>1</value>
+          <valueMeaning>
+           <publicID>4682122</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 1</longName>
+                                 <preferredDefinition>A subjective score of 1 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>0</value>
+          <valueMeaning>
+           <publicID>4682123</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 0</longName>
+                                 <preferredDefinition>A subjective score of 0 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Please rate your pain by circ</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>Please rate your pain by circling the one number that best describes your pain at its LEAST in the last 24 hours.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/brief-pain-inventory-users-guide.html</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>Please rate your pain by circling the one number that best describes your pain at its LEAST in the last 24 hours. (4)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=4683033&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>0</value>
+        <meaningText>Pain Rating Score 0</meaningText>
+        <description>A subjective score of 0 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682123</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>1</value>
+        <meaningText>Pain Rating Score 1</meaningText>
+        <description>A subjective score of 1 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682122</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>10</displayOrder>
+        <value>9</value>
+        <meaningText>Pain Rating Score 9</meaningText>
+        <description>A subjective score of 9 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682114</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>10</value>
+        <meaningText>Pain Rating Score 10</meaningText>
+        <description>A subjective score of 10 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682113</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>2</value>
+        <meaningText>Pain Rating Score 2</meaningText>
+        <description>A subjective score of 2 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682121</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>4</displayOrder>
+        <value>3</value>
+        <meaningText>Pain Rating Score 3</meaningText>
+        <description>A subjective score of 3 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682120</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>5</displayOrder>
+        <value>4</value>
+        <meaningText>Pain Rating Score 4</meaningText>
+        <description>A subjective score of 4 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682119</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>6</displayOrder>
+        <value>5</value>
+        <meaningText>Pain Rating Score 5</meaningText>
+        <description>A subjective score of 5 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682118</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>7</displayOrder>
+        <value>6</value>
+        <meaningText>Pain Rating Score 6</meaningText>
+        <description>A subjective score of 6 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682117</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>8</displayOrder>
+        <value>7</value>
+        <meaningText>Pain Rating Score 7</meaningText>
+        <description>A subjective score of 7 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682116</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>9</displayOrder>
+        <value>8</value>
+        <meaningText>Pain Rating Score 8</meaningText>
+        <description>A subjective score of 8 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682115</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>4964519</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>4</displayOrder>
+      <dateCreated>2015-08-13T19:10:51</dateCreated>
+      <dateModified>2015-08-13T19:10:51</dateModified>
+      <questionText>Please rate your pain by circling the one number that best describes your pain on the AVERAGE.</questionText>
+      <instruction>
+       <text>General Question #5 of 9</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 5 Last 24 Hours Pain on the Average Score 11 Point Likert Scale</longName>
+       <shortName>BPI_SF_AVG_PAIN_SC</shortName>
+       <publicID>4683076</publicID>
+       <version>1</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation rating average pain in the last 24 hours, using a 11 point Likert scale.</preferredDefinition>
+              <valueDomain>
+        <longName>BPI Pain Rating Score 11 Point Likert Scale</longName>
+        <shortName>4682112v1.0</shortName>
+        <publicID>4682112</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>DCP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>NUMBER</datatypeName>
+        <decimalPlace>0</decimalPlace>
+        <highValueNumber>10</highValueNumber>
+        <lowValueNumber>0</lowValueNumber>
+        <maximumLengthNumber>2</maximumLengthNumber>
+        <minimumLengthNumber>1</minimumLengthNumber>
+                        <permissibleValue>
+          <value>10</value>
+          <valueMeaning>
+           <publicID>4682113</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 10</longName>
+                                 <preferredDefinition>A subjective score of 10 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>9</value>
+          <valueMeaning>
+           <publicID>4682114</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 9</longName>
+                                 <preferredDefinition>A subjective score of 9 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>8</value>
+          <valueMeaning>
+           <publicID>4682115</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 8</longName>
+                                 <preferredDefinition>A subjective score of 8 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>7</value>
+          <valueMeaning>
+           <publicID>4682116</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 7</longName>
+                                 <preferredDefinition>A subjective score of 7 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>6</value>
+          <valueMeaning>
+           <publicID>4682117</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 6</longName>
+                                 <preferredDefinition>A subjective score of 6 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>5</value>
+          <valueMeaning>
+           <publicID>4682118</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 5</longName>
+                                 <preferredDefinition>A subjective score of 5 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>4</value>
+          <valueMeaning>
+           <publicID>4682119</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 4</longName>
+                                 <preferredDefinition>A subjective score of 4 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>3</value>
+          <valueMeaning>
+           <publicID>4682120</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 3</longName>
+                                 <preferredDefinition>A subjective score of 3 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>2</value>
+          <valueMeaning>
+           <publicID>4682121</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 2</longName>
+                                 <preferredDefinition>A subjective score of 2 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>1</value>
+          <valueMeaning>
+           <publicID>4682122</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 1</longName>
+                                 <preferredDefinition>A subjective score of 1 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>0</value>
+          <valueMeaning>
+           <publicID>4682123</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 0</longName>
+                                 <preferredDefinition>A subjective score of 0 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Please rate your pain by circ</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>Please rate your pain by circling the one number that best describes your pain on the AVERAGE.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/brief-pain-inventory-users-guide.html</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>Please rate your pain by circling the one number that best describes your pain on the AVERAGE. (5)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=4683076&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>0</value>
+        <meaningText>Pain Rating Score 0</meaningText>
+        <description>A subjective score of 0 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682123</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>1</value>
+        <meaningText>Pain Rating Score 1</meaningText>
+        <description>A subjective score of 1 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682122</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>10</displayOrder>
+        <value>9</value>
+        <meaningText>Pain Rating Score 9</meaningText>
+        <description>A subjective score of 9 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682114</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>10</value>
+        <meaningText>Pain Rating Score 10</meaningText>
+        <description>A subjective score of 10 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682113</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>2</value>
+        <meaningText>Pain Rating Score 2</meaningText>
+        <description>A subjective score of 2 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682121</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>4</displayOrder>
+        <value>3</value>
+        <meaningText>Pain Rating Score 3</meaningText>
+        <description>A subjective score of 3 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682120</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>5</displayOrder>
+        <value>4</value>
+        <meaningText>Pain Rating Score 4</meaningText>
+        <description>A subjective score of 4 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682119</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>6</displayOrder>
+        <value>5</value>
+        <meaningText>Pain Rating Score 5</meaningText>
+        <description>A subjective score of 5 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682118</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>7</displayOrder>
+        <value>6</value>
+        <meaningText>Pain Rating Score 6</meaningText>
+        <description>A subjective score of 6 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682117</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>8</displayOrder>
+        <value>7</value>
+        <meaningText>Pain Rating Score 7</meaningText>
+        <description>A subjective score of 7 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682116</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>9</displayOrder>
+        <value>8</value>
+        <meaningText>Pain Rating Score 8</meaningText>
+        <description>A subjective score of 8 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682115</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>4964532</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>5</displayOrder>
+      <dateCreated>2015-08-13T19:10:51</dateCreated>
+      <dateModified>2015-08-13T19:10:51</dateModified>
+      <questionText>Please rate your pain by circling the one number that best describes how much pain you have RIGHT NOW.</questionText>
+      <instruction>
+       <text>General Question #6 of 9</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 6 Have Pain Right Now Score 11 Point Likert Scale</longName>
+       <shortName>BPI_SF_CURNT_PAIN_SC</shortName>
+       <publicID>4683077</publicID>
+       <version>1</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation rating current pain, using a 11 point Likert scale.</preferredDefinition>
+              <valueDomain>
+        <longName>BPI Pain Rating Score 11 Point Likert Scale</longName>
+        <shortName>4682112v1.0</shortName>
+        <publicID>4682112</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>DCP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>NUMBER</datatypeName>
+        <decimalPlace>0</decimalPlace>
+        <highValueNumber>10</highValueNumber>
+        <lowValueNumber>0</lowValueNumber>
+        <maximumLengthNumber>2</maximumLengthNumber>
+        <minimumLengthNumber>1</minimumLengthNumber>
+                        <permissibleValue>
+          <value>10</value>
+          <valueMeaning>
+           <publicID>4682113</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 10</longName>
+                                 <preferredDefinition>A subjective score of 10 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>9</value>
+          <valueMeaning>
+           <publicID>4682114</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 9</longName>
+                                 <preferredDefinition>A subjective score of 9 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>8</value>
+          <valueMeaning>
+           <publicID>4682115</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 8</longName>
+                                 <preferredDefinition>A subjective score of 8 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>7</value>
+          <valueMeaning>
+           <publicID>4682116</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 7</longName>
+                                 <preferredDefinition>A subjective score of 7 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>6</value>
+          <valueMeaning>
+           <publicID>4682117</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 6</longName>
+                                 <preferredDefinition>A subjective score of 6 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>5</value>
+          <valueMeaning>
+           <publicID>4682118</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 5</longName>
+                                 <preferredDefinition>A subjective score of 5 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>4</value>
+          <valueMeaning>
+           <publicID>4682119</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 4</longName>
+                                 <preferredDefinition>A subjective score of 4 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>3</value>
+          <valueMeaning>
+           <publicID>4682120</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 3</longName>
+                                 <preferredDefinition>A subjective score of 3 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>2</value>
+          <valueMeaning>
+           <publicID>4682121</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 2</longName>
+                                 <preferredDefinition>A subjective score of 2 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>1</value>
+          <valueMeaning>
+           <publicID>4682122</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 1</longName>
+                                 <preferredDefinition>A subjective score of 1 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>0</value>
+          <valueMeaning>
+           <publicID>4682123</publicID>
+           <version>1</version>
+           <longName>Pain Rating Score 0</longName>
+                                 <preferredDefinition>A subjective score of 0 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Please rate your pain by circ</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>Please rate your pain by circling the one number that best describes how much pain you have RIGHT NOW.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/brief-pain-inventory-users-guide.html</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>Please rate your pain by circling the one number that best describes how much pain you have RIGHT NOW. (6)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=4683077&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>0</value>
+        <meaningText>Pain Rating Score 0</meaningText>
+        <description>A subjective score of 0 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682123</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>1</value>
+        <meaningText>Pain Rating Score 1</meaningText>
+        <description>A subjective score of 1 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682122</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>10</displayOrder>
+        <value>9</value>
+        <meaningText>Pain Rating Score 9</meaningText>
+        <description>A subjective score of 9 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682114</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>10</value>
+        <meaningText>Pain Rating Score 10</meaningText>
+        <description>A subjective score of 10 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682113</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>2</value>
+        <meaningText>Pain Rating Score 2</meaningText>
+        <description>A subjective score of 2 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682121</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>4</displayOrder>
+        <value>3</value>
+        <meaningText>Pain Rating Score 3</meaningText>
+        <description>A subjective score of 3 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682120</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>5</displayOrder>
+        <value>4</value>
+        <meaningText>Pain Rating Score 4</meaningText>
+        <description>A subjective score of 4 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682119</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>6</displayOrder>
+        <value>5</value>
+        <meaningText>Pain Rating Score 5</meaningText>
+        <description>A subjective score of 5 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682118</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>7</displayOrder>
+        <value>6</value>
+        <meaningText>Pain Rating Score 6</meaningText>
+        <description>A subjective score of 6 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682117</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>8</displayOrder>
+        <value>7</value>
+        <meaningText>Pain Rating Score 7</meaningText>
+        <description>A subjective score of 7 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682116</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>9</displayOrder>
+        <value>8</value>
+        <meaningText>Pain Rating Score 8</meaningText>
+        <description>A subjective score of 8 on a scale that ranges from 0: No Pain to 10: Pain As Bad As You Can Imagine.</description>
+                <valueMeaning>
+         <publicID>4682115</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>4964545</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>6</displayOrder>
+      <dateCreated>2015-08-13T19:10:51</dateCreated>
+      <dateModified>2015-08-13T19:10:51</dateModified>
+      <questionText>What treatments or medications are you receiving for your pain?</questionText>
+      <instruction>
+       <text>General Question #7 of 9</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 7 Treatment or Medication Receiving for Pain Descriptive Text</longName>
+       <shortName>BPI_SF_TREAT_MED_TXT</shortName>
+       <publicID>3966661</publicID>
+       <version>2</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation that describes treatment or medication name currently being received for pain.</preferredDefinition>
+              <valueDomain>
+        <longName>Descriptive Text</longName>
+        <shortName>DESCR_TXT</shortName>
+        <publicID>2181231</publicID>
+        <version>1</version>
+        <type>NonEnumerated</type>
+        <context>DCP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>ALPHANUMERIC</datatypeName>
+        <maximumLengthNumber>200</maximumLengthNumber>
+        <minimumLengthNumber>1</minimumLengthNumber>
+                              </valueDomain>
+                      <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/BPI_UserGuide.pdf</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>What treatments or medications are you receiving for your pain? (7)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>What treatments or medication</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>What treatments or medications are you receiving for your pain?</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=3966661&amp;version=2</cdeBrowserLink>
+      </dataElement>
+           </question>
+     <question>
+      <publicID>4964474</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>7</displayOrder>
+      <dateCreated>2015-08-13T19:10:50</dateCreated>
+      <dateModified>2015-08-13T19:10:50</dateModified>
+      <questionText>In the last 24 hours, how much relief have pain treatments or medications provided? Please circle the one percentage that shows how much RELIEF you have received.</questionText>
+      <instruction>
+       <text>General Question #8 of 9</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 8 Last 24 Hours How Much Relief Received from Treatment or Medication Score 11 Point Percent Likert Scale</longName>
+       <shortName>BPI_SF_RELIEF_SC</shortName>
+       <publicID>4683078</publicID>
+       <version>1</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation of how much relief pain treatment or medication has provided in the last 24 hours, using a 11 point Likert scale.</preferredDefinition>
+              <valueDomain>
+        <longName>BPI Percentage Relief From Pain Treatment or Medication Score 11 Point Likert Scale</longName>
+        <shortName>4682252v1.0</shortName>
+        <publicID>4682252</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>DCP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>NUMBER</datatypeName>
+        <decimalPlace>0</decimalPlace>
+        <highValueNumber>10</highValueNumber>
+        <lowValueNumber>0</lowValueNumber>
+        <maximumLengthNumber>2</maximumLengthNumber>
+        <minimumLengthNumber>1</minimumLengthNumber>
+        <UOMName>%</UOMName>
+                        <permissibleValue>
+          <value>0</value>
+          <valueMeaning>
+           <publicID>4682253</publicID>
+           <version>1</version>
+           <longName>Percentage Relief From Pain Treatment or Medication Score 0</longName>
+                                 <preferredDefinition>A subjective score of 0% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2016-08-18T15:05:40</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>10</value>
+          <valueMeaning>
+           <publicID>4682254</publicID>
+           <version>1</version>
+           <longName>Percentage Relief From Pain Treatment or Medication Score 10</longName>
+                                 <preferredDefinition>A subjective score of 0% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2016-08-18T15:05:41</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>100</value>
+          <valueMeaning>
+           <publicID>4682255</publicID>
+           <version>1</version>
+           <longName>Percentage Relief From Pain Treatment or Medication Score 100</longName>
+                                 <preferredDefinition>A subjective score of 100% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2016-08-18T15:05:41</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>20</value>
+          <valueMeaning>
+           <publicID>4682256</publicID>
+           <version>1</version>
+           <longName>Percentage Relief From Pain Treatment or Medication Score 20</longName>
+                                 <preferredDefinition>A subjective score of 20% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2016-08-18T15:05:41</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>30</value>
+          <valueMeaning>
+           <publicID>4682257</publicID>
+           <version>1</version>
+           <longName>Percentage Relief From Pain Treatment or Medication Score 30</longName>
+                                 <preferredDefinition>A subjective score of 30% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2016-08-18T15:05:41</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>40</value>
+          <valueMeaning>
+           <publicID>4682258</publicID>
+           <version>1</version>
+           <longName>Percentage Relief From Pain Treatment or Medication Score 40</longName>
+                                 <preferredDefinition>A subjective score of 40% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2016-08-18T15:05:41</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>50</value>
+          <valueMeaning>
+           <publicID>4682259</publicID>
+           <version>1</version>
+           <longName>Percentage Relief From Pain Treatment or Medication Score 50</longName>
+                                 <preferredDefinition>A subjective score of 50% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2016-08-18T15:05:41</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>60</value>
+          <valueMeaning>
+           <publicID>4682260</publicID>
+           <version>1</version>
+           <longName>Percentage Relief From Pain Treatment or Medication Score 60</longName>
+                                 <preferredDefinition>A subjective score of 60% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2016-08-18T15:05:41</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>70</value>
+          <valueMeaning>
+           <publicID>4682261</publicID>
+           <version>1</version>
+           <longName>Percentage Relief From Pain Treatment or Medication Score 70</longName>
+                                 <preferredDefinition>A subjective score of 70% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2016-08-18T15:05:41</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>80</value>
+          <valueMeaning>
+           <publicID>4682262</publicID>
+           <version>1</version>
+           <longName>Percentage Relief From Pain Treatment or Medication Score 80</longName>
+                                 <preferredDefinition>A subjective score of 80% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2016-08-18T15:05:41</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>90</value>
+          <valueMeaning>
+           <publicID>4682263</publicID>
+           <version>1</version>
+           <longName>Percentage Relief From Pain Treatment or Medication Score 90</longName>
+                                 <preferredDefinition>A subjective score of 90% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2016-08-18T15:05:41</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>In the last 24 hours, how muc</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>In the last 24 hours, how much relief have pain treatments or medications provided? Please circle the one percentage that shows how much RELIEF you have received.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/brief-pain-inventory-users-guide.html</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>In the last 24 hours, how much relief have pain treatments or medications provided? Please circle the one percentage that shows how much RELIEF you have received. (8)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=4683078&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>0%</value>
+        <meaningText>Percentage Relief From Pain Treatment or Medication Score 0</meaningText>
+        <description>A subjective score of 0% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</description>
+                <valueMeaning>
+         <publicID>4682253</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>10%</value>
+        <meaningText>Percentage Relief From Pain Treatment or Medication Score 1</meaningText>
+        <description>A subjective score of 10% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</description>
+                <valueMeaning>
+         <publicID>4682254</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>10</displayOrder>
+        <value>90%</value>
+        <meaningText>Percentage Relief From Pain Treatment or Medication Score 9</meaningText>
+        <description>A subjective score of 90% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</description>
+                <valueMeaning>
+         <publicID>4682263</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>100%</value>
+        <meaningText>Percentage Relief From Pain Treatment or Medication Score 10</meaningText>
+        <description>A subjective score of 100% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</description>
+                <valueMeaning>
+         <publicID>4682255</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>20%</value>
+        <meaningText>Percentage Relief From Pain Treatment or Medication Score 2</meaningText>
+        <description>A subjective score of 20% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</description>
+                <valueMeaning>
+         <publicID>4682256</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>4</displayOrder>
+        <value>30%</value>
+        <meaningText>Percentage Relief From Pain Treatment or Medication Score 3</meaningText>
+        <description>A subjective score of 30% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</description>
+                <valueMeaning>
+         <publicID>4682257</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>5</displayOrder>
+        <value>40%</value>
+        <meaningText>Percentage Relief From Pain Treatment or Medication Score 4</meaningText>
+        <description>A subjective score of 40% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</description>
+                <valueMeaning>
+         <publicID>4682258</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>6</displayOrder>
+        <value>50%</value>
+        <meaningText>Percentage Relief From Pain Treatment or Medication Score 5</meaningText>
+        <description>A subjective score of 50% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</description>
+                <valueMeaning>
+         <publicID>4682259</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>7</displayOrder>
+        <value>60%</value>
+        <meaningText>Percentage Relief From Pain Treatment or Medication Score 6</meaningText>
+        <description>A subjective score of 60% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</description>
+                <valueMeaning>
+         <publicID>4682260</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>8</displayOrder>
+        <value>70%</value>
+        <meaningText>Percentage Relief From Pain Treatment or Medication Score 7</meaningText>
+        <description>A subjective score of 70% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</description>
+                <valueMeaning>
+         <publicID>4682261</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>9</displayOrder>
+        <value>80%</value>
+        <meaningText>Percentage Relief From Pain Treatment or Medication Score 8</meaningText>
+        <description>A subjective score of 80% on a scale that ranges from 0%: No Relief to 100%: Complete Relief.</description>
+                <valueMeaning>
+         <publicID>4682262</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>4964586</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>8</displayOrder>
+      <dateCreated>2015-08-13T19:10:51</dateCreated>
+      <dateModified>2015-08-13T19:10:51</dateModified>
+      <questionText>General Activity</questionText>
+      <instruction>
+       <text>General Question #9A of 9
+Circle the one number that describes how, during the past 24 hours, pain has interefered with your:</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 9A Last 24 Hours Pain Interfered with General Activity Score 11 Point Likert Scale</longName>
+       <shortName>BPI_SF_GEN_ACTIV_SC</shortName>
+       <publicID>4683079</publicID>
+       <version>1</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation of how much pain has interfered with general activity in the last 24 hours, using a 11 point Likert scale.</preferredDefinition>
+              <valueDomain>
+        <longName>BPI Pain Interference Score 11 Point Likert Scale</longName>
+        <shortName>4682272v1.0</shortName>
+        <publicID>4682272</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>DCP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>NUMBER</datatypeName>
+        <decimalPlace>0</decimalPlace>
+        <highValueNumber>10</highValueNumber>
+        <lowValueNumber>0</lowValueNumber>
+        <maximumLengthNumber>2</maximumLengthNumber>
+        <minimumLengthNumber>1</minimumLengthNumber>
+                        <permissibleValue>
+          <value>0</value>
+          <valueMeaning>
+           <publicID>4682273</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 0</longName>
+                                 <preferredDefinition>A subjective score of 0 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>1</value>
+          <valueMeaning>
+           <publicID>4682274</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 1</longName>
+                                 <preferredDefinition>Pain Interference Score 1</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>10</value>
+          <valueMeaning>
+           <publicID>4682275</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 10</longName>
+                                 <preferredDefinition>A subjective score of 10 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>2</value>
+          <valueMeaning>
+           <publicID>4682276</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 2</longName>
+                                 <preferredDefinition>A subjective score of 2 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>3</value>
+          <valueMeaning>
+           <publicID>4682277</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 3</longName>
+                                 <preferredDefinition>A subjective score of 3 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>4</value>
+          <valueMeaning>
+           <publicID>4682278</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 4</longName>
+                                 <preferredDefinition>A subjective score of 4 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>5</value>
+          <valueMeaning>
+           <publicID>4682279</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 5</longName>
+                                 <preferredDefinition>A subjective score of 5 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>6</value>
+          <valueMeaning>
+           <publicID>4682280</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 6</longName>
+                                 <preferredDefinition>A subjective score of 6 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>7</value>
+          <valueMeaning>
+           <publicID>4682281</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 7</longName>
+                                 <preferredDefinition>A subjective score of 7 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>8</value>
+          <valueMeaning>
+           <publicID>4682282</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 8</longName>
+                                 <preferredDefinition>A subjective score of 8 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>9</value>
+          <valueMeaning>
+           <publicID>4682283</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 9</longName>
+                                 <preferredDefinition>A subjective score of 9 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>General Activity</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>General Activity</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/brief-pain-inventory-users-guide.html</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>General Activity (9A)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=4683079&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>0</value>
+        <meaningText>Pain Interference Score 0</meaningText>
+        <description>A subjective score of 0 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682273</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>1</value>
+        <meaningText>Pain Interference Score 1</meaningText>
+        <description>Pain Interference Score 1</description>
+                <valueMeaning>
+         <publicID>4682274</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>10</displayOrder>
+        <value>9</value>
+        <meaningText>Pain Interference Score 9</meaningText>
+        <description>A subjective score of 9 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682283</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>10</value>
+        <meaningText>Pain Interference Score 10</meaningText>
+        <description>A subjective score of 10 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682275</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>2</value>
+        <meaningText>Pain Interference Score 2</meaningText>
+        <description>A subjective score of 2 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682276</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>4</displayOrder>
+        <value>3</value>
+        <meaningText>Pain Interference Score 3</meaningText>
+        <description>A subjective score of 3 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682277</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>5</displayOrder>
+        <value>4</value>
+        <meaningText>Pain Interference Score 4</meaningText>
+        <description>A subjective score of 4 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682278</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>6</displayOrder>
+        <value>5</value>
+        <meaningText>Pain Interference Score 5</meaningText>
+        <description>A subjective score of 5 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682279</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>7</displayOrder>
+        <value>6</value>
+        <meaningText>Pain Interference Score 6</meaningText>
+        <description>A subjective score of 6 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682280</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>8</displayOrder>
+        <value>7</value>
+        <meaningText>Pain Interference Score 7</meaningText>
+        <description>A subjective score of 7 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682281</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>9</displayOrder>
+        <value>8</value>
+        <meaningText>Pain Interference Score 8</meaningText>
+        <description>A subjective score of 8 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682282</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>4964599</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>9</displayOrder>
+      <dateCreated>2015-08-13T19:10:51</dateCreated>
+      <dateModified>2015-08-13T19:10:51</dateModified>
+      <questionText>Mood</questionText>
+      <instruction>
+       <text>General Question #9B of 9
+Circle the one number that describes how, during the past 24 hours, pain has interefered with your:</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 9B Pain Interfered with Mood Score 11 Point Likert Scale</longName>
+       <shortName>BPI_SF_MOOD_SC</shortName>
+       <publicID>4683695</publicID>
+       <version>1</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation of how much pain has interfered with mood in the last 24 hours, using a 11 point Likert scale.</preferredDefinition>
+              <valueDomain>
+        <longName>BPI Pain Interference Score 11 Point Likert Scale</longName>
+        <shortName>4682272v1.0</shortName>
+        <publicID>4682272</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>DCP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>NUMBER</datatypeName>
+        <decimalPlace>0</decimalPlace>
+        <highValueNumber>10</highValueNumber>
+        <lowValueNumber>0</lowValueNumber>
+        <maximumLengthNumber>2</maximumLengthNumber>
+        <minimumLengthNumber>1</minimumLengthNumber>
+                        <permissibleValue>
+          <value>0</value>
+          <valueMeaning>
+           <publicID>4682273</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 0</longName>
+                                 <preferredDefinition>A subjective score of 0 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>1</value>
+          <valueMeaning>
+           <publicID>4682274</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 1</longName>
+                                 <preferredDefinition>Pain Interference Score 1</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>10</value>
+          <valueMeaning>
+           <publicID>4682275</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 10</longName>
+                                 <preferredDefinition>A subjective score of 10 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>2</value>
+          <valueMeaning>
+           <publicID>4682276</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 2</longName>
+                                 <preferredDefinition>A subjective score of 2 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>3</value>
+          <valueMeaning>
+           <publicID>4682277</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 3</longName>
+                                 <preferredDefinition>A subjective score of 3 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>4</value>
+          <valueMeaning>
+           <publicID>4682278</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 4</longName>
+                                 <preferredDefinition>A subjective score of 4 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>5</value>
+          <valueMeaning>
+           <publicID>4682279</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 5</longName>
+                                 <preferredDefinition>A subjective score of 5 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>6</value>
+          <valueMeaning>
+           <publicID>4682280</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 6</longName>
+                                 <preferredDefinition>A subjective score of 6 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>7</value>
+          <valueMeaning>
+           <publicID>4682281</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 7</longName>
+                                 <preferredDefinition>A subjective score of 7 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>8</value>
+          <valueMeaning>
+           <publicID>4682282</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 8</longName>
+                                 <preferredDefinition>A subjective score of 8 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>9</value>
+          <valueMeaning>
+           <publicID>4682283</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 9</longName>
+                                 <preferredDefinition>A subjective score of 9 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Mood</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>Mood</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>Mood (9B)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/brief-pain-inventory-users-guide.html</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=4683695&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>0</value>
+        <meaningText>Pain Interference Score 0</meaningText>
+        <description>A subjective score of 0 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682273</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>1</value>
+        <meaningText>Pain Interference Score 1</meaningText>
+        <description>Pain Interference Score 1</description>
+                <valueMeaning>
+         <publicID>4682274</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>10</displayOrder>
+        <value>9</value>
+        <meaningText>Pain Interference Score 9</meaningText>
+        <description>A subjective score of 9 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682283</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>10</value>
+        <meaningText>Pain Interference Score 10</meaningText>
+        <description>A subjective score of 10 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682275</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>2</value>
+        <meaningText>Pain Interference Score 2</meaningText>
+        <description>A subjective score of 2 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682276</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>4</displayOrder>
+        <value>3</value>
+        <meaningText>Pain Interference Score 3</meaningText>
+        <description>A subjective score of 3 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682277</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>5</displayOrder>
+        <value>4</value>
+        <meaningText>Pain Interference Score 4</meaningText>
+        <description>A subjective score of 4 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682278</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>6</displayOrder>
+        <value>5</value>
+        <meaningText>Pain Interference Score 5</meaningText>
+        <description>A subjective score of 5 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682279</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>7</displayOrder>
+        <value>6</value>
+        <meaningText>Pain Interference Score 6</meaningText>
+        <description>A subjective score of 6 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682280</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>8</displayOrder>
+        <value>7</value>
+        <meaningText>Pain Interference Score 7</meaningText>
+        <description>A subjective score of 7 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682281</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>9</displayOrder>
+        <value>8</value>
+        <meaningText>Pain Interference Score 8</meaningText>
+        <description>A subjective score of 8 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682282</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>4964612</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>10</displayOrder>
+      <dateCreated>2015-08-13T19:10:51</dateCreated>
+      <dateModified>2015-08-13T19:10:51</dateModified>
+      <questionText>Walking Ability</questionText>
+      <instruction>
+       <text>General Question #9C of 9
+Circle the one number that describes how, during the past 24 hours, pain has interefered with your:</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 9C Last 24 Hours Pain Interfered with Walking Ability Score 11 Point Likert Scale</longName>
+       <shortName>BPI_SF_WALK_SC</shortName>
+       <publicID>4683787</publicID>
+       <version>1</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation of how much pain has interfered with walking ability in the last 24 hours, using a 11 point Likert scale.</preferredDefinition>
+              <valueDomain>
+        <longName>BPI Pain Interference Score 11 Point Likert Scale</longName>
+        <shortName>4682272v1.0</shortName>
+        <publicID>4682272</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>DCP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>NUMBER</datatypeName>
+        <decimalPlace>0</decimalPlace>
+        <highValueNumber>10</highValueNumber>
+        <lowValueNumber>0</lowValueNumber>
+        <maximumLengthNumber>2</maximumLengthNumber>
+        <minimumLengthNumber>1</minimumLengthNumber>
+                        <permissibleValue>
+          <value>0</value>
+          <valueMeaning>
+           <publicID>4682273</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 0</longName>
+                                 <preferredDefinition>A subjective score of 0 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>1</value>
+          <valueMeaning>
+           <publicID>4682274</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 1</longName>
+                                 <preferredDefinition>Pain Interference Score 1</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>10</value>
+          <valueMeaning>
+           <publicID>4682275</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 10</longName>
+                                 <preferredDefinition>A subjective score of 10 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>2</value>
+          <valueMeaning>
+           <publicID>4682276</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 2</longName>
+                                 <preferredDefinition>A subjective score of 2 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>3</value>
+          <valueMeaning>
+           <publicID>4682277</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 3</longName>
+                                 <preferredDefinition>A subjective score of 3 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>4</value>
+          <valueMeaning>
+           <publicID>4682278</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 4</longName>
+                                 <preferredDefinition>A subjective score of 4 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>5</value>
+          <valueMeaning>
+           <publicID>4682279</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 5</longName>
+                                 <preferredDefinition>A subjective score of 5 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>6</value>
+          <valueMeaning>
+           <publicID>4682280</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 6</longName>
+                                 <preferredDefinition>A subjective score of 6 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>7</value>
+          <valueMeaning>
+           <publicID>4682281</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 7</longName>
+                                 <preferredDefinition>A subjective score of 7 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>8</value>
+          <valueMeaning>
+           <publicID>4682282</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 8</longName>
+                                 <preferredDefinition>A subjective score of 8 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>9</value>
+          <valueMeaning>
+           <publicID>4682283</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 9</longName>
+                                 <preferredDefinition>A subjective score of 9 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Walking Ability</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>Walking Ability</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>Walking Ability (9C)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/brief-pain-inventory-users-guide.html</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=4683787&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>0</value>
+        <meaningText>Pain Interference Score 0</meaningText>
+        <description>A subjective score of 0 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682273</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>1</value>
+        <meaningText>Pain Interference Score 1</meaningText>
+        <description>Pain Interference Score 1</description>
+                <valueMeaning>
+         <publicID>4682274</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>10</displayOrder>
+        <value>9</value>
+        <meaningText>Pain Interference Score 9</meaningText>
+        <description>A subjective score of 9 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682283</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>10</value>
+        <meaningText>Pain Interference Score 10</meaningText>
+        <description>A subjective score of 10 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682275</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>2</value>
+        <meaningText>Pain Interference Score 2</meaningText>
+        <description>A subjective score of 2 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682276</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>4</displayOrder>
+        <value>3</value>
+        <meaningText>Pain Interference Score 3</meaningText>
+        <description>A subjective score of 3 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682277</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>5</displayOrder>
+        <value>4</value>
+        <meaningText>Pain Interference Score 4</meaningText>
+        <description>A subjective score of 4 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682278</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>6</displayOrder>
+        <value>5</value>
+        <meaningText>Pain Interference Score 5</meaningText>
+        <description>A subjective score of 5 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682279</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>7</displayOrder>
+        <value>6</value>
+        <meaningText>Pain Interference Score 6</meaningText>
+        <description>A subjective score of 6 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682280</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>8</displayOrder>
+        <value>7</value>
+        <meaningText>Pain Interference Score 7</meaningText>
+        <description>A subjective score of 7 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682281</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>9</displayOrder>
+        <value>8</value>
+        <meaningText>Pain Interference Score 8</meaningText>
+        <description>A subjective score of 8 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682282</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>4964625</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>11</displayOrder>
+      <dateCreated>2015-08-13T19:10:52</dateCreated>
+      <dateModified>2015-08-13T19:10:52</dateModified>
+      <questionText>Normal work (includes both work outside the home and housework)</questionText>
+      <instruction>
+       <text>General Question #9D of 9
+Circle the one number that describes how, during the past 24 hours, pain has interefered with your:</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 9D Last 24 Hours Pain Interfered with Work Score 11 Point Likert Scale</longName>
+       <shortName>BPI_SF_NORM_WORK_SC</shortName>
+       <publicID>4683788</publicID>
+       <version>1</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation of how much pain has interfered with normal work (including both work outside the home and housework) in the last 24 hours, using a 11 point Likert scale.</preferredDefinition>
+              <valueDomain>
+        <longName>BPI Pain Interference Score 11 Point Likert Scale</longName>
+        <shortName>4682272v1.0</shortName>
+        <publicID>4682272</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>DCP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>NUMBER</datatypeName>
+        <decimalPlace>0</decimalPlace>
+        <highValueNumber>10</highValueNumber>
+        <lowValueNumber>0</lowValueNumber>
+        <maximumLengthNumber>2</maximumLengthNumber>
+        <minimumLengthNumber>1</minimumLengthNumber>
+                        <permissibleValue>
+          <value>0</value>
+          <valueMeaning>
+           <publicID>4682273</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 0</longName>
+                                 <preferredDefinition>A subjective score of 0 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>1</value>
+          <valueMeaning>
+           <publicID>4682274</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 1</longName>
+                                 <preferredDefinition>Pain Interference Score 1</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>10</value>
+          <valueMeaning>
+           <publicID>4682275</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 10</longName>
+                                 <preferredDefinition>A subjective score of 10 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>2</value>
+          <valueMeaning>
+           <publicID>4682276</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 2</longName>
+                                 <preferredDefinition>A subjective score of 2 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>3</value>
+          <valueMeaning>
+           <publicID>4682277</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 3</longName>
+                                 <preferredDefinition>A subjective score of 3 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>4</value>
+          <valueMeaning>
+           <publicID>4682278</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 4</longName>
+                                 <preferredDefinition>A subjective score of 4 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>5</value>
+          <valueMeaning>
+           <publicID>4682279</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 5</longName>
+                                 <preferredDefinition>A subjective score of 5 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>6</value>
+          <valueMeaning>
+           <publicID>4682280</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 6</longName>
+                                 <preferredDefinition>A subjective score of 6 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>7</value>
+          <valueMeaning>
+           <publicID>4682281</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 7</longName>
+                                 <preferredDefinition>A subjective score of 7 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>8</value>
+          <valueMeaning>
+           <publicID>4682282</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 8</longName>
+                                 <preferredDefinition>A subjective score of 8 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>9</value>
+          <valueMeaning>
+           <publicID>4682283</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 9</longName>
+                                 <preferredDefinition>A subjective score of 9 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Normal work (includes both wo</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>Normal work (includes both work outside the home and housework)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>Normal work (includes both work outside the home and housework) (9D)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/brief-pain-inventory-users-guide.html</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=4683788&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>0</value>
+        <meaningText>Pain Interference Score 0</meaningText>
+        <description>A subjective score of 0 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682273</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>1</value>
+        <meaningText>Pain Interference Score 1</meaningText>
+        <description>Pain Interference Score 1</description>
+                <valueMeaning>
+         <publicID>4682274</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>10</displayOrder>
+        <value>9</value>
+        <meaningText>Pain Interference Score 9</meaningText>
+        <description>A subjective score of 9 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682283</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>10</value>
+        <meaningText>Pain Interference Score 10</meaningText>
+        <description>A subjective score of 10 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682275</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>2</value>
+        <meaningText>Pain Interference Score 2</meaningText>
+        <description>A subjective score of 2 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682276</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>4</displayOrder>
+        <value>3</value>
+        <meaningText>Pain Interference Score 3</meaningText>
+        <description>A subjective score of 3 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682277</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>5</displayOrder>
+        <value>4</value>
+        <meaningText>Pain Interference Score 4</meaningText>
+        <description>A subjective score of 4 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682278</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>6</displayOrder>
+        <value>5</value>
+        <meaningText>Pain Interference Score 5</meaningText>
+        <description>A subjective score of 5 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682279</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>7</displayOrder>
+        <value>6</value>
+        <meaningText>Pain Interference Score 6</meaningText>
+        <description>A subjective score of 6 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682280</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>8</displayOrder>
+        <value>7</value>
+        <meaningText>Pain Interference Score 7</meaningText>
+        <description>A subjective score of 7 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682281</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>9</displayOrder>
+        <value>8</value>
+        <meaningText>Pain Interference Score 8</meaningText>
+        <description>A subjective score of 8 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682282</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>4964547</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>12</displayOrder>
+      <dateCreated>2015-08-13T19:10:51</dateCreated>
+      <dateModified>2015-08-13T19:10:51</dateModified>
+      <questionText>Relations with other people</questionText>
+      <instruction>
+       <text>General Question #9E of 9
+Circle the one number that describes how, during the past 24 hours, pain has interefered with your:</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 9E Last 24 Hours Pain Interfered with Relations with Other People Score 11 Point Likert Scale</longName>
+       <shortName>BPI_SF_RELATIONS_SC</shortName>
+       <publicID>4683789</publicID>
+       <version>1</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation of how much pain has interfered with relations with other people in the last 24 hours, using a 11 point Likert scale.</preferredDefinition>
+              <valueDomain>
+        <longName>BPI Pain Interference Score 11 Point Likert Scale</longName>
+        <shortName>4682272v1.0</shortName>
+        <publicID>4682272</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>DCP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>NUMBER</datatypeName>
+        <decimalPlace>0</decimalPlace>
+        <highValueNumber>10</highValueNumber>
+        <lowValueNumber>0</lowValueNumber>
+        <maximumLengthNumber>2</maximumLengthNumber>
+        <minimumLengthNumber>1</minimumLengthNumber>
+                        <permissibleValue>
+          <value>0</value>
+          <valueMeaning>
+           <publicID>4682273</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 0</longName>
+                                 <preferredDefinition>A subjective score of 0 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>1</value>
+          <valueMeaning>
+           <publicID>4682274</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 1</longName>
+                                 <preferredDefinition>Pain Interference Score 1</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>10</value>
+          <valueMeaning>
+           <publicID>4682275</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 10</longName>
+                                 <preferredDefinition>A subjective score of 10 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>2</value>
+          <valueMeaning>
+           <publicID>4682276</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 2</longName>
+                                 <preferredDefinition>A subjective score of 2 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>3</value>
+          <valueMeaning>
+           <publicID>4682277</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 3</longName>
+                                 <preferredDefinition>A subjective score of 3 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>4</value>
+          <valueMeaning>
+           <publicID>4682278</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 4</longName>
+                                 <preferredDefinition>A subjective score of 4 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>5</value>
+          <valueMeaning>
+           <publicID>4682279</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 5</longName>
+                                 <preferredDefinition>A subjective score of 5 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>6</value>
+          <valueMeaning>
+           <publicID>4682280</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 6</longName>
+                                 <preferredDefinition>A subjective score of 6 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>7</value>
+          <valueMeaning>
+           <publicID>4682281</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 7</longName>
+                                 <preferredDefinition>A subjective score of 7 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>8</value>
+          <valueMeaning>
+           <publicID>4682282</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 8</longName>
+                                 <preferredDefinition>A subjective score of 8 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>9</value>
+          <valueMeaning>
+           <publicID>4682283</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 9</longName>
+                                 <preferredDefinition>A subjective score of 9 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Relations with other people</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>Relations with other people</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/brief-pain-inventory-users-guide.html</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>Relations with other people (9E)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=4683789&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>0</value>
+        <meaningText>Pain Interference Score 0</meaningText>
+        <description>A subjective score of 0 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682273</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>1</value>
+        <meaningText>Pain Interference Score 1</meaningText>
+        <description>Pain Interference Score 1</description>
+                <valueMeaning>
+         <publicID>4682274</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>10</displayOrder>
+        <value>9</value>
+        <meaningText>Pain Interference Score 9</meaningText>
+        <description>A subjective score of 9 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682283</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>10</value>
+        <meaningText>Pain Interference Score 10</meaningText>
+        <description>A subjective score of 10 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682275</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>2</value>
+        <meaningText>Pain Interference Score 2</meaningText>
+        <description>A subjective score of 2 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682276</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>4</displayOrder>
+        <value>3</value>
+        <meaningText>Pain Interference Score 3</meaningText>
+        <description>A subjective score of 3 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682277</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>5</displayOrder>
+        <value>4</value>
+        <meaningText>Pain Interference Score 4</meaningText>
+        <description>A subjective score of 4 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682278</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>6</displayOrder>
+        <value>5</value>
+        <meaningText>Pain Interference Score 5</meaningText>
+        <description>A subjective score of 5 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682279</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>7</displayOrder>
+        <value>6</value>
+        <meaningText>Pain Interference Score 6</meaningText>
+        <description>A subjective score of 6 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682280</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>8</displayOrder>
+        <value>7</value>
+        <meaningText>Pain Interference Score 7</meaningText>
+        <description>A subjective score of 7 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682281</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>9</displayOrder>
+        <value>8</value>
+        <meaningText>Pain Interference Score 8</meaningText>
+        <description>A subjective score of 8 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682282</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>4964560</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>13</displayOrder>
+      <dateCreated>2015-08-13T19:10:51</dateCreated>
+      <dateModified>2015-08-13T19:10:51</dateModified>
+      <questionText>Sleep</questionText>
+      <instruction>
+       <text>General Question #9F of 9
+Circle the one number that describes how, during the past 24 hours, pain has interefered with your:</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 9F Last 24 Hours Pain Interfered with Sleep Score 11 Point Likert Scale</longName>
+       <shortName>BPI_SF_SLEEP_SC</shortName>
+       <publicID>4683790</publicID>
+       <version>1</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation of how much pain has interfered with sleep in the last 24 hours, using a 11 point Likert scale.</preferredDefinition>
+              <valueDomain>
+        <longName>BPI Pain Interference Score 11 Point Likert Scale</longName>
+        <shortName>4682272v1.0</shortName>
+        <publicID>4682272</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>DCP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>NUMBER</datatypeName>
+        <decimalPlace>0</decimalPlace>
+        <highValueNumber>10</highValueNumber>
+        <lowValueNumber>0</lowValueNumber>
+        <maximumLengthNumber>2</maximumLengthNumber>
+        <minimumLengthNumber>1</minimumLengthNumber>
+                        <permissibleValue>
+          <value>0</value>
+          <valueMeaning>
+           <publicID>4682273</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 0</longName>
+                                 <preferredDefinition>A subjective score of 0 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>1</value>
+          <valueMeaning>
+           <publicID>4682274</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 1</longName>
+                                 <preferredDefinition>Pain Interference Score 1</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>10</value>
+          <valueMeaning>
+           <publicID>4682275</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 10</longName>
+                                 <preferredDefinition>A subjective score of 10 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>2</value>
+          <valueMeaning>
+           <publicID>4682276</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 2</longName>
+                                 <preferredDefinition>A subjective score of 2 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>3</value>
+          <valueMeaning>
+           <publicID>4682277</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 3</longName>
+                                 <preferredDefinition>A subjective score of 3 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>4</value>
+          <valueMeaning>
+           <publicID>4682278</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 4</longName>
+                                 <preferredDefinition>A subjective score of 4 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>5</value>
+          <valueMeaning>
+           <publicID>4682279</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 5</longName>
+                                 <preferredDefinition>A subjective score of 5 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>6</value>
+          <valueMeaning>
+           <publicID>4682280</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 6</longName>
+                                 <preferredDefinition>A subjective score of 6 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>7</value>
+          <valueMeaning>
+           <publicID>4682281</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 7</longName>
+                                 <preferredDefinition>A subjective score of 7 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>8</value>
+          <valueMeaning>
+           <publicID>4682282</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 8</longName>
+                                 <preferredDefinition>A subjective score of 8 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>9</value>
+          <valueMeaning>
+           <publicID>4682283</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 9</longName>
+                                 <preferredDefinition>A subjective score of 9 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Sleep</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>Sleep</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/brief-pain-inventory-users-guide.html</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>Sleep (9F)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=4683790&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>0</value>
+        <meaningText>Pain Interference Score 0</meaningText>
+        <description>A subjective score of 0 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682273</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>1</value>
+        <meaningText>Pain Interference Score 1</meaningText>
+        <description>Pain Interference Score 1</description>
+                <valueMeaning>
+         <publicID>4682274</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>10</displayOrder>
+        <value>9</value>
+        <meaningText>Pain Interference Score 9</meaningText>
+        <description>A subjective score of 9 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682283</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>10</value>
+        <meaningText>Pain Interference Score 10</meaningText>
+        <description>A subjective score of 10 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682275</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>2</value>
+        <meaningText>Pain Interference Score 2</meaningText>
+        <description>A subjective score of 2 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682276</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>4</displayOrder>
+        <value>3</value>
+        <meaningText>Pain Interference Score 3</meaningText>
+        <description>A subjective score of 3 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682277</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>5</displayOrder>
+        <value>4</value>
+        <meaningText>Pain Interference Score 4</meaningText>
+        <description>A subjective score of 4 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682278</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>6</displayOrder>
+        <value>5</value>
+        <meaningText>Pain Interference Score 5</meaningText>
+        <description>A subjective score of 5 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682279</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>7</displayOrder>
+        <value>6</value>
+        <meaningText>Pain Interference Score 6</meaningText>
+        <description>A subjective score of 6 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682280</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>8</displayOrder>
+        <value>7</value>
+        <meaningText>Pain Interference Score 7</meaningText>
+        <description>A subjective score of 7 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682281</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>9</displayOrder>
+        <value>8</value>
+        <meaningText>Pain Interference Score 8</meaningText>
+        <description>A subjective score of 8 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682282</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>4964573</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>14</displayOrder>
+      <dateCreated>2015-08-13T19:10:51</dateCreated>
+      <dateModified>2015-08-13T19:10:51</dateModified>
+      <questionText>Enjoyment of Life</questionText>
+      <instruction>
+       <text>General Question #9G of 9
+Circle the one number that describes how, during the past 24 hours, pain has interefered with your:</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Brief Pain Inventory Short Form Questionnaire 9G Last 24 Hours Pain Interfered with Enjoyment of Life Score 11 Point Likert Scale</longName>
+       <shortName>BPI_SF_ENJOY_LIFE_SC</shortName>
+       <publicID>4683831</publicID>
+       <version>1</version>
+       <context>NCI Standards</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>A person&apos;s stated observation of how much pain has interfered with enjoyment of life in the last 24 hours, using a 11 point Likert scale.</preferredDefinition>
+              <valueDomain>
+        <longName>BPI Pain Interference Score 11 Point Likert Scale</longName>
+        <shortName>4682272v1.0</shortName>
+        <publicID>4682272</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>DCP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>NUMBER</datatypeName>
+        <decimalPlace>0</decimalPlace>
+        <highValueNumber>10</highValueNumber>
+        <lowValueNumber>0</lowValueNumber>
+        <maximumLengthNumber>2</maximumLengthNumber>
+        <minimumLengthNumber>1</minimumLengthNumber>
+                        <permissibleValue>
+          <value>0</value>
+          <valueMeaning>
+           <publicID>4682273</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 0</longName>
+                                 <preferredDefinition>A subjective score of 0 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>1</value>
+          <valueMeaning>
+           <publicID>4682274</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 1</longName>
+                                 <preferredDefinition>Pain Interference Score 1</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>10</value>
+          <valueMeaning>
+           <publicID>4682275</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 10</longName>
+                                 <preferredDefinition>A subjective score of 10 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>2</value>
+          <valueMeaning>
+           <publicID>4682276</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 2</longName>
+                                 <preferredDefinition>A subjective score of 2 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>3</value>
+          <valueMeaning>
+           <publicID>4682277</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 3</longName>
+                                 <preferredDefinition>A subjective score of 3 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>4</value>
+          <valueMeaning>
+           <publicID>4682278</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 4</longName>
+                                 <preferredDefinition>A subjective score of 4 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>5</value>
+          <valueMeaning>
+           <publicID>4682279</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 5</longName>
+                                 <preferredDefinition>A subjective score of 5 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>6</value>
+          <valueMeaning>
+           <publicID>4682280</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 6</longName>
+                                 <preferredDefinition>A subjective score of 6 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>7</value>
+          <valueMeaning>
+           <publicID>4682281</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 7</longName>
+                                 <preferredDefinition>A subjective score of 7 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>8</value>
+          <valueMeaning>
+           <publicID>4682282</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 8</longName>
+                                 <preferredDefinition>A subjective score of 8 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>9</value>
+          <valueMeaning>
+           <publicID>4682283</publicID>
+           <version>1</version>
+           <longName>Pain Interference Score 9</longName>
+                                 <preferredDefinition>A subjective score of 9 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2015-01-26T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Enjoyment of Life</name>
+         <type>Preferred Question Text</type>
+         <context>NCI Standards</context>
+         <doctext>Enjoyment of Life</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI User&apos;s Guide</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>Documentation of the BPI&apos;s development and psychometric properties.</doctext>
+         <languageName>ENGLISH</languageName>
+         <URL>http://www.mdanderson.org/education-and-research/departments-programs-and-labs/departments-and-divisions/symptom-research/symptom-assessment-tools/brief-pain-inventory-users-guide.html</URL>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>REFERENCE</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>BPI SF</name>
+         <type>Measure Sequence Number</type>
+         <context>DCP</context>
+         <doctext>Enjoyment of Life (9G)</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Using PRO/HRQoL Measures</name>
+         <type>Outcome Measure Implementation</type>
+         <context>DCP</context>
+         <doctext>This data element is part of a full set of items that comprise a PRO/HRQoL measure. The full set must be used without any changes to the questions or value set in order to retain the validity and reliability associated with the measure. The URL citation is provided so that caDSR users can obtain materials related to instructions for administering and/or scoring the measure. Changes may not be made to these documents. Where an investigator wants to use single Patient Reported Outcome items that are integrated into a study, DCP review is required prior to inclusion of the item on a case report form.</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=4683831&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>0</value>
+        <meaningText>Pain Interference Score 0</meaningText>
+        <description>A subjective score of 0 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682273</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>1</value>
+        <meaningText>Pain Interference Score 1</meaningText>
+        <description>Pain Interference Score 1</description>
+                <valueMeaning>
+         <publicID>4682274</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>10</displayOrder>
+        <value>9</value>
+        <meaningText>Pain Interference Score 9</meaningText>
+        <description>A subjective score of 9 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682283</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>10</value>
+        <meaningText>Pain Interference Score 10</meaningText>
+        <description>A subjective score of 10 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682275</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>2</value>
+        <meaningText>Pain Interference Score 2</meaningText>
+        <description>A subjective score of 2 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682276</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>4</displayOrder>
+        <value>3</value>
+        <meaningText>Pain Interference Score 3</meaningText>
+        <description>A subjective score of 3 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682277</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>5</displayOrder>
+        <value>4</value>
+        <meaningText>Pain Interference Score 4</meaningText>
+        <description>A subjective score of 4 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682278</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>6</displayOrder>
+        <value>5</value>
+        <meaningText>Pain Interference Score 5</meaningText>
+        <description>A subjective score of 5 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682279</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>7</displayOrder>
+        <value>6</value>
+        <meaningText>Pain Interference Score 6</meaningText>
+        <description>A subjective score of 6 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682280</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>8</displayOrder>
+        <value>7</value>
+        <meaningText>Pain Interference Score 7</meaningText>
+        <description>A subjective score of 7 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682281</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>9</displayOrder>
+        <value>8</value>
+        <meaningText>Pain Interference Score 8</meaningText>
+        <description>A subjective score of 8 on a scale that ranges from 0: Does Not Interfere to 10: Completely Interferes.</description>
+                <valueMeaning>
+         <publicID>4682282</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+       </module>
+       <protocol>
+    <type>Quality of Life trials</type>
+    <protocolID>4719049</protocolID>
+    <longName>NCI Standard PRO-HRQoL Template Forms</longName>
+    <context>NCI Standards</context>
+    <shortName>NCI STANDARD PRO-HRQOL FORMS</shortName>
+    <preferredDefinition>NCI Standard PRO-HRQoL Template Forms</preferredDefinition>
+   </protocol>
+         <classification>
+    <name>RESERVED FOR SENTINEL MONITOR</name>
+    <publicID>2465726</publicID>
+    <version>1</version>
+    <preferredDefinition>RESERVED FOR SENTINEL MONITOR</preferredDefinition>
+    <classificationSchemeItem>
+     <name>Monitor for HARTLEYG</name>
+     <publicID>2960512</publicID>
+     <version>1</version>
+     <type>CATEGORY_TYPE</type>
+     <preferredDefinition>Created by system process</preferredDefinition>
+    </classificationSchemeItem>
+   </classification>
+   </form>
+
+
+    </forms>

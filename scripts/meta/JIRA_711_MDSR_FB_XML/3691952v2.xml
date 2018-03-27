@@ -1,0 +1,1739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>XML-3691952</collectionName>
+  <collectionDescription>Load XML</collectionDescription> 
+ <form>
+  <context>NRG</context>
+  <createdBy>PATELV</createdBy>
+  <dateCreated>2013-03-04T13:41:33</dateCreated>
+  <dateModified>2014-02-27T08:54:52</dateModified>
+  <modifiedBy>PATELV</modifiedBy>
+  <longName>Follow Up Head and Neck</longName>
+  <preferredDefinition>RTOG 1221 F1: Follow-Up Head and Neck Form</preferredDefinition>
+  <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+  <publicID>3691952</publicID>
+  <version>1</version>
+  <workflowStatusName>RELEASED</workflowStatusName>
+  <categoryName>Follow-Up</categoryName>
+  <type>CRF</type>
+  <headerInstruction/>
+     <module>
+    <displayOrder>0</displayOrder>
+    <maximumModuleRepeat>0</maximumModuleRepeat>
+    <longName>Unnamed3</longName>
+        <preferredDefinition>TUMOR MEASUREMENTS AT PRESENTATION</preferredDefinition>
+    <publicID>3691953</publicID>
+    <version>1</version>
+    <usageCategory>
+     <usageType>None</usageType>
+    </usageCategory>
+         <question>
+      <publicID>3691954</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>0</displayOrder>
+      <dateCreated>2013-03-04T13:41:33</dateCreated>
+      <dateModified>2013-03-04T13:41:33</dateModified>
+      <questionText>Does the patient currently require tube feeding</questionText>
+            <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Gavage Current Administration Ind-3</longName>
+       <shortName>GAVAGE_CUR_ADM_IND3</shortName>
+       <publicID>2180019</publicID>
+       <version>1</version>
+       <context>CTEP</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>the yes/no indicator to ask if a patient currently needs to use a feeding tube to meet their nutritional needs.</preferredDefinition>
+              <valueDomain>
+        <longName>Yes No Unknown Indicator</longName>
+        <shortName>YES_NO_UNKNOWN_IND</shortName>
+        <publicID>3506034</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>NCI Standards</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>CHARACTER</datatypeName>
+        <maximumLengthNumber>7</maximumLengthNumber>
+        <minimumLengthNumber>2</minimumLengthNumber>
+                        <permissibleValue>
+          <value>No</value>
+          <valueMeaning>
+           <publicID>3197154</publicID>
+           <version>1</version>
+           <longName>No</longName>
+                       <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA32-8</name>
+             <type>LOINC_CODE</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>No</name>
+             <type>LOINC_NAME</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>COOPERM</createdBy>
+             <dateCreated>2017-03-30T20:04:49</dateCreated>
+             <languageName>Spanish</languageName>
+             <name>No</name>
+             <type>VM Alt Name</type>
+             <context>NCI Standards</context>
+                         </designation>
+            <designation>
+             <createdBy>TSESU</createdBy>
+             <dateCreated>2017-10-04T12:02:06</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>2</name>
+             <type>VM Alt Name</type>
+             <context>ABTC</context>
+                         </designation>
+            <designation>
+             <createdBy>MAESKEB</createdBy>
+             <dateCreated>2017-08-25T10:11:45</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>N</name>
+             <type>VM Alt Name</type>
+             <context>Theradex</context>
+                         </designation>
+                                 <preferredDefinition>The non-affirmative response to a question.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2011-03-16T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>Yes</value>
+          <valueMeaning>
+           <publicID>3197153</publicID>
+           <version>1</version>
+           <longName>Yes</longName>
+                       <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA33-6</name>
+             <type>LOINC_CODE</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Yes</name>
+             <type>LOINC_NAME</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>COOPERM</createdBy>
+             <dateCreated>2017-03-30T20:04:49</dateCreated>
+             <languageName>Spanish</languageName>
+             <name>Sí</name>
+             <type>VM Alt Name</type>
+             <context>NCI Standards</context>
+                         </designation>
+            <designation>
+             <createdBy>MAESKEB</createdBy>
+             <dateCreated>2017-08-25T10:11:45</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Y</name>
+             <type>VM Alt Name</type>
+             <context>Theradex</context>
+                         </designation>
+            <designation>
+             <createdBy>TSESU</createdBy>
+             <dateCreated>2017-10-04T11:56:09</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>1</name>
+             <type>VM Alt Name</type>
+             <context>ABTC</context>
+                         </designation>
+                                 <preferredDefinition>The affirmative response to a question.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2011-06-23T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>Unknown</value>
+          <valueMeaning>
+           <publicID>3241403</publicID>
+           <version>1</version>
+           <longName>Unknown</longName>
+                       <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:30</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA4489-6</name>
+             <type>LOINC_CODE</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Unknown</name>
+             <type>LOINC_NAME</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+                                 <preferredDefinition>Not known, not observed, not recorded, or refused.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2011-09-22T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Does the patient currently re</name>
+         <type>Preferred Question Text</type>
+         <context>CTEP</context>
+         <doctext>Does the patient currently require tube feeding</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>CRF Text</name>
+         <type>Alternate Question Text</type>
+         <context>CTEP</context>
+         <doctext>Were enteral tube feedings used postoperatively</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>ECOG CRF Text 1</name>
+         <type>Alternate Question Text</type>
+         <context>ECOG-ACRIN</context>
+         <doctext>Do you currently have a feeding tube?</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=2180019&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>1</displayOrder>
+        <value>No</value>
+        <meaningText>NO</meaningText>
+        <description>NO</description>
+        <instruction>
+         <text>1</text>
+        </instruction>
+        <valueMeaning>
+         <publicID>2559515</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>Yes</value>
+        <meaningText>YES</meaningText>
+        <description>YES</description>
+        <instruction>
+         <text>2</text>
+        </instruction>
+        <valueMeaning>
+         <publicID>2560453</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>Unknown</value>
+        <meaningText>UNKNOWN</meaningText>
+        <description>Not known, not observed, not recorded, or refused.
+</description>
+        <instruction>
+         <text>9</text>
+        </instruction>
+        <valueMeaning>
+         <publicID>2575365</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>3691961</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>1</displayOrder>
+      <dateCreated>2013-03-04T13:41:33</dateCreated>
+      <dateModified>2013-03-04T13:41:33</dateModified>
+      <questionText>Is patient dependent on tube feeding for greater than 50% of nutritional support</questionText>
+      <instruction>
+       <text>If yes,</text>
+      </instruction>
+      <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Gavage Primary Administration Ind-3</longName>
+       <shortName>GAVAGE_PRIM_ADMIN_IND3</shortName>
+       <publicID>2180020</publicID>
+       <version>1</version>
+       <context>CTEP</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>the yes/no indicator to ask if 50 percent or more of a patient&quot;s nutritional needs are being provided through use of feeding tube.</preferredDefinition>
+              <valueDomain>
+        <longName>Yes No Unknown Indicator</longName>
+        <shortName>YES_NO_UNKNOWN_IND</shortName>
+        <publicID>3506034</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>NCI Standards</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>CHARACTER</datatypeName>
+        <maximumLengthNumber>7</maximumLengthNumber>
+        <minimumLengthNumber>2</minimumLengthNumber>
+                        <permissibleValue>
+          <value>No</value>
+          <valueMeaning>
+           <publicID>3197154</publicID>
+           <version>1</version>
+           <longName>No</longName>
+                       <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA32-8</name>
+             <type>LOINC_CODE</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>No</name>
+             <type>LOINC_NAME</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>COOPERM</createdBy>
+             <dateCreated>2017-03-30T20:04:49</dateCreated>
+             <languageName>Spanish</languageName>
+             <name>No</name>
+             <type>VM Alt Name</type>
+             <context>NCI Standards</context>
+                         </designation>
+            <designation>
+             <createdBy>TSESU</createdBy>
+             <dateCreated>2017-10-04T12:02:06</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>2</name>
+             <type>VM Alt Name</type>
+             <context>ABTC</context>
+                         </designation>
+            <designation>
+             <createdBy>MAESKEB</createdBy>
+             <dateCreated>2017-08-25T10:11:45</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>N</name>
+             <type>VM Alt Name</type>
+             <context>Theradex</context>
+                         </designation>
+                                 <preferredDefinition>The non-affirmative response to a question.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2011-03-16T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>Yes</value>
+          <valueMeaning>
+           <publicID>3197153</publicID>
+           <version>1</version>
+           <longName>Yes</longName>
+                       <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA33-6</name>
+             <type>LOINC_CODE</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Yes</name>
+             <type>LOINC_NAME</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>COOPERM</createdBy>
+             <dateCreated>2017-03-30T20:04:49</dateCreated>
+             <languageName>Spanish</languageName>
+             <name>Sí</name>
+             <type>VM Alt Name</type>
+             <context>NCI Standards</context>
+                         </designation>
+            <designation>
+             <createdBy>MAESKEB</createdBy>
+             <dateCreated>2017-08-25T10:11:45</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Y</name>
+             <type>VM Alt Name</type>
+             <context>Theradex</context>
+                         </designation>
+            <designation>
+             <createdBy>TSESU</createdBy>
+             <dateCreated>2017-10-04T11:56:09</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>1</name>
+             <type>VM Alt Name</type>
+             <context>ABTC</context>
+                         </designation>
+                                 <preferredDefinition>The affirmative response to a question.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2011-06-23T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>Unknown</value>
+          <valueMeaning>
+           <publicID>3241403</publicID>
+           <version>1</version>
+           <longName>Unknown</longName>
+                       <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:30</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA4489-6</name>
+             <type>LOINC_CODE</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Unknown</name>
+             <type>LOINC_NAME</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+                                 <preferredDefinition>Not known, not observed, not recorded, or refused.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2011-09-22T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Is patient dependent on tube</name>
+         <type>Preferred Question Text</type>
+         <context>CTEP</context>
+         <doctext>Is patient dependent on tube feeding for &gt;50% of nutritional support</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>CRF Text1</name>
+         <type>Alternate Question Text</type>
+         <context>CTEP</context>
+         <doctext>Is patient dependent on tube feeding for greater than 50% of nutritional support</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=2180020&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>2</displayOrder>
+        <value>No</value>
+        <meaningText>NO</meaningText>
+        <description>NO</description>
+        <instruction>
+         <text>1</text>
+        </instruction>
+        <valueMeaning>
+         <publicID>2559515</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>Yes</value>
+        <meaningText>YES</meaningText>
+        <description>YES</description>
+        <instruction>
+         <text>2</text>
+        </instruction>
+        <valueMeaning>
+         <publicID>2560453</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>4</displayOrder>
+        <value>Unknown</value>
+        <meaningText>UNKNOWN</meaningText>
+        <description>Not known, not observed, not recorded, or refused.
+</description>
+        <instruction>
+         <text>9</text>
+        </instruction>
+        <valueMeaning>
+         <publicID>2575365</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>3767372</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>2</displayOrder>
+      <dateCreated>2013-05-21T14:25:25</dateCreated>
+      <dateModified>2013-05-21T14:25:25</dateModified>
+      <questionText>Type of feeding tube</questionText>
+            <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Nutritional Support  Feeding Tube Administered  Type</longName>
+       <shortName>Nutr_Feed_Admi_NUT_SUP_FEED_TU</shortName>
+       <publicID>3738691</publicID>
+       <version>1</version>
+       <context>NRG</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>the type of feeding tube inserted in a patient for administration of nutritional support.</preferredDefinition>
+              <valueDomain>
+        <longName>Nutritional Support Feeding Tube Type</longName>
+        <shortName>NUT_SUP_FEED_TUB_TYPE</shortName>
+        <publicID>3738651</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>NRG</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>CHARACTER</datatypeName>
+        <maximumLengthNumber>100</maximumLengthNumber>
+                        <permissibleValue>
+          <value>Nasogastric Tube</value>
+          <valueMeaning>
+           <publicID>3029162</publicID>
+           <version>1</version>
+           <longName>Nasogastric Tube</longName>
+                                  <definition>
+             <createdBy>SHIDED</createdBy>
+             <dateCreated>2013-05-01T14:43:44</dateCreated>
+             <text>Nasogastric Tube</text>
+             <type>Manually-curated</type>
+                          <context>NCIP</context>
+            </definition>
+                      <preferredDefinition>A tube that is inserted through the nose, down the throat and esophagus, and into the stomach. It can be used to give drugs, liquids, and liquid food, or used to remove substances from the stomach. Giving food through a gastric feeding tube is a type of enteral nutrition.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2010-03-24T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>Percutaneous Endoscopic Gastrostomy</value>
+          <valueMeaning>
+           <publicID>3738652</publicID>
+           <version>1</version>
+           <longName>Percutaneous Endoscopic Gastrostomy</longName>
+                                 <preferredDefinition>The placement of a feeding tube through the abdominal wall into the stomach using an endoscope.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2013-05-01T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>Percutaneous Fluoroscopic Gastrostomy</value>
+          <valueMeaning>
+           <publicID>3738653</publicID>
+           <version>1</version>
+           <longName>Percutaneous Fluoroscopic Gastrostomy</longName>
+                                 <preferredDefinition>The placement of a feeding tube through the abdominal wall into the stomach with the assistance of fluoroscopic guidance.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2013-05-01T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>J-tube (Jejunostomy)</value>
+          <valueMeaning>
+           <publicID>3774651</publicID>
+           <version>1</version>
+           <longName>Administration via Jejunostomy</longName>
+                                 <preferredDefinition>Administration of a drug through a surgical opening between the jejunum and the surface of the abdominal wall.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2013-06-04T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>Dobhoff Tube</value>
+          <valueMeaning>
+           <publicID>3774671</publicID>
+           <version>1</version>
+           <longName>Nasoduodenal Tube</longName>
+                                 <preferredDefinition> A small bore flexible feeding tube with a weighted metal tip that is ideally placed in the second or third part of the duodenum. It is used to provide nutritional support to patients who are unable to tolerate oral feeding or who require mechanical ventilation.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2013-06-04T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Type of feeding tube</name>
+         <type>Preferred Question Text</type>
+         <context>CTEP</context>
+         <doctext>Type of feeding tube</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=3738691&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>Nasogastric Tube</value>
+        <meaningText>Nasogastric Tube</meaningText>
+        <description>A tube that is inserted through the nose, down the throat and esophagus, and into the stomach. It can be used to give drugs, liquids, and liquid food, or used to remove substances from the stomach. Giving food through a gastric feeding tube is a type of enteral nutrition.</description>
+                <valueMeaning>
+         <publicID>3029162</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>Percutaneous Endoscopic Gastrostomy</value>
+        <meaningText>Percutaneous Endoscopic Gastrostomy</meaningText>
+        <description>The placement of a feeding tube through the abdominal wall into the stomach using an endoscope.</description>
+                <valueMeaning>
+         <publicID>3738652</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>Percutaneous Fluoroscopic Gastrostomy</value>
+        <meaningText>Percutaneous Fluoroscopic Gastrostomy</meaningText>
+        <description>The placement of a feeding tube through the abdominal wall into the stomach with the assistance of fluoroscopic guidance.</description>
+                <valueMeaning>
+         <publicID>3738653</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>3771173</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>3</displayOrder>
+      <dateCreated>2013-05-23T09:19:17</dateCreated>
+      <dateModified>2013-05-23T09:19:17</dateModified>
+      <questionText>Does the patient currently require use of a tracheostomy</questionText>
+            <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Tracheostomy Current Use Yes No Unknown Indicator</longName>
+       <shortName>Trac_Curr_Use_YNK</shortName>
+       <publicID>3771154</publicID>
+       <version>1</version>
+       <context>NRG</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>the yes/no/unknown indicator related to whether a tracheostomy is currently being used on a patient.</preferredDefinition>
+              <valueDomain>
+        <longName>Yes No Unknown Indicator</longName>
+        <shortName>YES_NO_UNKNOWN_IND</shortName>
+        <publicID>3506034</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>NCI Standards</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>CHARACTER</datatypeName>
+        <maximumLengthNumber>7</maximumLengthNumber>
+        <minimumLengthNumber>2</minimumLengthNumber>
+                        <permissibleValue>
+          <value>No</value>
+          <valueMeaning>
+           <publicID>3197154</publicID>
+           <version>1</version>
+           <longName>No</longName>
+                       <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA32-8</name>
+             <type>LOINC_CODE</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>No</name>
+             <type>LOINC_NAME</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>COOPERM</createdBy>
+             <dateCreated>2017-03-30T20:04:49</dateCreated>
+             <languageName>Spanish</languageName>
+             <name>No</name>
+             <type>VM Alt Name</type>
+             <context>NCI Standards</context>
+                         </designation>
+            <designation>
+             <createdBy>TSESU</createdBy>
+             <dateCreated>2017-10-04T12:02:06</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>2</name>
+             <type>VM Alt Name</type>
+             <context>ABTC</context>
+                         </designation>
+            <designation>
+             <createdBy>MAESKEB</createdBy>
+             <dateCreated>2017-08-25T10:11:45</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>N</name>
+             <type>VM Alt Name</type>
+             <context>Theradex</context>
+                         </designation>
+                                 <preferredDefinition>The non-affirmative response to a question.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2011-03-16T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>Yes</value>
+          <valueMeaning>
+           <publicID>3197153</publicID>
+           <version>1</version>
+           <longName>Yes</longName>
+                       <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA33-6</name>
+             <type>LOINC_CODE</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Yes</name>
+             <type>LOINC_NAME</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>COOPERM</createdBy>
+             <dateCreated>2017-03-30T20:04:49</dateCreated>
+             <languageName>Spanish</languageName>
+             <name>Sí</name>
+             <type>VM Alt Name</type>
+             <context>NCI Standards</context>
+                         </designation>
+            <designation>
+             <createdBy>MAESKEB</createdBy>
+             <dateCreated>2017-08-25T10:11:45</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Y</name>
+             <type>VM Alt Name</type>
+             <context>Theradex</context>
+                         </designation>
+            <designation>
+             <createdBy>TSESU</createdBy>
+             <dateCreated>2017-10-04T11:56:09</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>1</name>
+             <type>VM Alt Name</type>
+             <context>ABTC</context>
+                         </designation>
+                                 <preferredDefinition>The affirmative response to a question.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2011-06-23T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>Unknown</value>
+          <valueMeaning>
+           <publicID>3241403</publicID>
+           <version>1</version>
+           <longName>Unknown</longName>
+                       <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:30</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA4489-6</name>
+             <type>LOINC_CODE</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Unknown</name>
+             <type>LOINC_NAME</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+                                 <preferredDefinition>Not known, not observed, not recorded, or refused.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2011-09-22T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Does the patient currently re</name>
+         <type>Preferred Question Text</type>
+         <context>CTEP</context>
+         <doctext>Does the patient currently require use of a tracheostomy</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>ECOG CRF Text 1</name>
+         <type>Alternate Question Text</type>
+         <context>ECOG-ACRIN</context>
+         <doctext>Do you currently have a tracheotomy tube?</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=3771154&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>No</value>
+        <meaningText>No</meaningText>
+        <description>The non-affirmative response to a question.</description>
+                <valueMeaning>
+         <publicID>3197154</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>Yes</value>
+        <meaningText>Yes</meaningText>
+        <description>The affirmative response to a question or activity.</description>
+                <valueMeaning>
+         <publicID>3197153</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>Unknown</value>
+        <meaningText>Unknown</meaningText>
+        <description>Not known, not observed, not recorded, or refused.</description>
+                <valueMeaning>
+         <publicID>3241403</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+     <question>
+      <publicID>3691969</publicID>
+      <version>1</version>
+      <isDerived>false</isDerived>
+      <displayOrder>4</displayOrder>
+      <dateCreated>2013-03-04T13:41:33</dateCreated>
+      <dateModified>2013-05-23T09:19:17</dateModified>
+      <questionText>Does the patient currently smoke cigarettes</questionText>
+            <isEditable>Yes</isEditable>
+      <isMandatory>No</isMandatory>
+      <multiValue>No</multiValue>
+      <dataElement>
+       <longName>Smoking Current Use Indicator</longName>
+       <shortName>SMKING_CUREN_USE_IND</shortName>
+       <publicID>2438665</publicID>
+       <version>1</version>
+       <context>CTEP</context>
+       <workflowStatusName>RELEASED</workflowStatusName>
+       <preferredDefinition>the indicator of the patient/participant&apos;s current smoking use.</preferredDefinition>
+              <valueDomain>
+        <longName>Smoking Indicator</longName>
+        <shortName>SMOKING_IND</shortName>
+        <publicID>2438664</publicID>
+        <version>1</version>
+        <type>Enumerated</type>
+        <context>CTEP</context>
+        <workflowStatusName>RELEASED</workflowStatusName>
+        <datatypeName>CHARACTER</datatypeName>
+        <maximumLengthNumber>35</maximumLengthNumber>
+                        <permissibleValue>
+          <value>Patient Refused to Answer</value>
+          <valueMeaning>
+           <publicID>2577309</publicID>
+           <version>1</version>
+           <longName>Patient Refused to Answer</longName>
+                                 <preferredDefinition>Patient Refused to Answer</preferredDefinition>
+          </valueMeaning>
+         </permissibleValue>
+         <permissibleValue>
+          <value>No</value>
+          <valueMeaning>
+           <publicID>2559515</publicID>
+           <version>1</version>
+           <longName>No</longName>
+                       <designation>
+             <createdBy>HARTLEYG</createdBy>
+             <dateCreated>2012-03-05T17:58:01</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>No</name>
+             <type>VM Alt Name</type>
+             <context>CTEP</context>
+                           <classification>
+               <name>Children&apos;s Oncology Group (COG)</name>
+               <publicID>2961451</publicID>
+               <version>1</version>
+               <preferredDefinition>Children&apos;s Oncology </preferredDefinition>
+               <classificationSchemeItem>
+                <name>Statistics and Data Center</name>
+                <publicID>2961452</publicID>
+                <version>1</version>
+                <type>GROUP_TYPE</type>
+                <preferredDefinition>Children&apos;s Oncology Group SDC</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+                         </designation>
+            <designation>
+             <createdBy>REEVESD</createdBy>
+             <dateCreated>2012-04-26T14:16:12</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Not a Serious Adverse Event</name>
+             <type>C3D Name</type>
+             <context>CCR</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA32-8</name>
+             <type>LOINC_CODE</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>No</name>
+             <type>LOINC_NAME</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>HARTLEYG</createdBy>
+             <dateCreated>2016-01-05T17:25:28</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Exception</name>
+             <type>VM Alt Name</type>
+             <context>Theradex</context>
+                         </designation>
+            <designation>
+             <createdBy>COOPERM</createdBy>
+             <dateCreated>2017-04-13T08:07:52</dateCreated>
+             <languageName>Spanish</languageName>
+             <name>No</name>
+             <type>VM Alt Name</type>
+             <context>NCIP</context>
+                         </designation>
+            <designation>
+             <createdBy>GARRIDOJ</createdBy>
+             <dateCreated>2017-08-16T09:59:34</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>1 - No</name>
+             <type>VM Alt Name</type>
+             <context>ECOG-ACRIN</context>
+                         </designation>
+                                  <definition>
+             <createdBy>REEVESD</createdBy>
+             <dateCreated>2009-06-08T04:17:58</dateCreated>
+             <dateModified>2012-04-25T15:48:58</dateModified>
+             <modifiedBy>REEVESD</modifiedBy>
+             <languageName>ENGLISH</languageName>
+             <text>No occurrence of a Serious Adverse Event (SAE)</text>
+             <type>Manually-curated</type>
+                           <classification>
+               <name>NMDP: CDEs to review</name>
+               <publicID>2695319</publicID>
+               <version>1</version>
+               <preferredDefinition>NMDP CDEs to be reviewed</preferredDefinition>
+               <classificationSchemeItem>
+                <name>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</name>
+                <publicID>2964895</publicID>
+                <version>1</version>
+                <type>Case Report Form</type>
+               </classificationSchemeItem>
+              </classification>
+                          <context>NCIP</context>
+            </definition>
+                      <preferredDefinition>The non-affirmative response to a question.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2002-08-22T00:00:00</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>Unknown</value>
+          <valueMeaning>
+           <publicID>2575365</publicID>
+           <version>1</version>
+           <longName>Unknown</longName>
+                       <designation>
+             <createdBy>CURTIST</createdBy>
+             <dateCreated>2007-05-29T13:13:48</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Grade/differentiation unknown, not stated, or not applicable</name>
+             <type>NAACCR Alt Name</type>
+             <context>NCIP</context>
+                           <classification>
+               <name>Division of Cancer Control and Population Sciences</name>
+               <publicID>2193114</publicID>
+               <version>1</version>
+               <preferredDefinition>Classification of the Division of Cancer Control and Population Sciences</preferredDefinition>
+               <classificationSchemeItem>
+                <name>CancerID11.1</name>
+                <publicID>3103520</publicID>
+                <version>1</version>
+                <type>GROUP_TYPE</type>
+                <preferredDefinition>Cancer Identification11.1</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>NMDP: CDEs to review</name>
+               <publicID>2695319</publicID>
+               <version>1</version>
+               <preferredDefinition>NMDP CDEs to be reviewed</preferredDefinition>
+               <classificationSchemeItem>
+                <name>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</name>
+                <publicID>2964895</publicID>
+                <version>1</version>
+                <type>Case Report Form</type>
+                <preferredDefinition>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>PICUcoreClinicalData</name>
+               <publicID>3588382</publicID>
+               <version>1</version>
+               <preferredDefinition>Descriptive information about pediatric intensive care unit (PICU) discharges from NICHD Collaborative Pediatric Critical Care Research Network (CPCCRN) Clinical Centers, based primarily on hospital billing databases. The Core Clinical Data Project (CCDP) provides pilot and descriptive data for hypothesis generation, study design, preliminary power analyses, and recruitment projections for CPCCRN studies under development.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>ValueDomains</name>
+                <publicID>2812842</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+                <preferredDefinition>ValueDomains</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+                         </designation>
+            <designation>
+             <createdBy>UMLLOADER_C3PRPRD</createdBy>
+             <dateCreated>2010-07-08T14:47:33</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Unknown</name>
+             <type>UML Value Name</type>
+             <context>NCIP</context>
+                           <classification>
+               <name>C3PR</name>
+               <publicID>2551427</publicID>
+               <version>2.8</version>
+               <preferredDefinition>Version 2.8 The Cancer Central Clinical Participent Registry (C3PR) is a web-based application used to manage participants in cancer clinical trials. Research staff will use C3PR as a participant-centric entry point to clinical trial management systems. C3PR provides a central registry for study participants, and it enables the end-user to access participant-centric information that is stored in multiple clinical trial systems. Participants that can be tracked include patients or potential patients, their guardians, family members, and referring physicians. The system also allows tracking other types of participants such as principal investigators, caregivers, referring physicians, and the users of the system.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>ValueDomains</name>
+                <publicID>2812842</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+                <preferredDefinition>ValueDomains</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>NMDP: CDEs to review</name>
+               <publicID>2695319</publicID>
+               <version>1</version>
+               <preferredDefinition>NMDP CDEs to be reviewed</preferredDefinition>
+               <classificationSchemeItem>
+                <name>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</name>
+                <publicID>2964895</publicID>
+                <version>1</version>
+                <type>Case Report Form</type>
+                <preferredDefinition>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>Grid Enabled Measures</name>
+               <publicID>2983752</publicID>
+               <version>1</version>
+               <preferredDefinition>A resource to allow researchers to access metadata about measures used in cancer research and the population sciences.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>LocalValueDomains</name>
+                <publicID>3024955</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+                <preferredDefinition>No Value Exists.</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>Common Biorepository Model</name>
+               <publicID>3204728</publicID>
+               <version>1</version>
+               <preferredDefinition>A common model to contain summary-level details of biorepository / biobank holdings which can be advertised through the OBBR Specimen Resource Locator</preferredDefinition>
+               <classificationSchemeItem>
+                <name>LocalValueDomains</name>
+                <publicID>3024955</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+                <preferredDefinition>No Value Exists.</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>PICUcoreClinicalData</name>
+               <publicID>3588382</publicID>
+               <version>1</version>
+               <preferredDefinition>Descriptive information about pediatric intensive care unit (PICU) discharges from NICHD Collaborative Pediatric Critical Care Research Network (CPCCRN) Clinical Centers, based primarily on hospital billing databases. The Core Clinical Data Project (CCDP) provides pilot and descriptive data for hypothesis generation, study design, preliminary power analyses, and recruitment projections for CPCCRN studies under development.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>ValueDomains</name>
+                <publicID>2812842</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+                <preferredDefinition>ValueDomains</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+                         </designation>
+            <designation>
+             <createdBy>CURTIST</createdBy>
+             <dateCreated>2010-12-22T12:10:38</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>unknown</name>
+             <type>NAACCR VM Name</type>
+             <context>PS-CC</context>
+                           <classification>
+               <name>Division of Cancer Control and Population Sciences</name>
+               <publicID>2193114</publicID>
+               <version>1</version>
+               <preferredDefinition>Classification of the Division of Cancer Control and Population Sciences</preferredDefinition>
+               <classificationSchemeItem>
+                <name>NAACCR 12.1</name>
+                <publicID>3134707</publicID>
+                <version>1</version>
+                <type>GROUP_TYPE</type>
+                <preferredDefinition>North American Association of Central Cancer Registries</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>NMDP: CDEs to review</name>
+               <publicID>2695319</publicID>
+               <version>1</version>
+               <preferredDefinition>NMDP CDEs to be reviewed</preferredDefinition>
+               <classificationSchemeItem>
+                <name>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</name>
+                <publicID>2964895</publicID>
+                <version>1</version>
+                <type>Case Report Form</type>
+                <preferredDefinition>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>PICUcoreClinicalData</name>
+               <publicID>3588382</publicID>
+               <version>1</version>
+               <preferredDefinition>Descriptive information about pediatric intensive care unit (PICU) discharges from NICHD Collaborative Pediatric Critical Care Research Network (CPCCRN) Clinical Centers, based primarily on hospital billing databases. The Core Clinical Data Project (CCDP) provides pilot and descriptive data for hypothesis generation, study design, preliminary power analyses, and recruitment projections for CPCCRN studies under development.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>ValueDomains</name>
+                <publicID>2812842</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+                <preferredDefinition>ValueDomains</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+                         </designation>
+            <designation>
+             <createdBy>CURTIST</createdBy>
+             <dateCreated>2010-12-22T12:42:41</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>UNK</name>
+             <type>HL7 Code</type>
+             <context>PS-CC</context>
+                           <classification>
+               <name>Division of Cancer Control and Population Sciences</name>
+               <publicID>2193114</publicID>
+               <version>1</version>
+               <preferredDefinition>Classification of the Division of Cancer Control and Population Sciences</preferredDefinition>
+               <classificationSchemeItem>
+                <name>NAACCR 12.1</name>
+                <publicID>3134707</publicID>
+                <version>1</version>
+                <type>GROUP_TYPE</type>
+                <preferredDefinition>North American Association of Central Cancer Registries</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>NMDP: CDEs to review</name>
+               <publicID>2695319</publicID>
+               <version>1</version>
+               <preferredDefinition>NMDP CDEs to be reviewed</preferredDefinition>
+               <classificationSchemeItem>
+                <name>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</name>
+                <publicID>2964895</publicID>
+                <version>1</version>
+                <type>Case Report Form</type>
+                <preferredDefinition>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>PICUcoreClinicalData</name>
+               <publicID>3588382</publicID>
+               <version>1</version>
+               <preferredDefinition>Descriptive information about pediatric intensive care unit (PICU) discharges from NICHD Collaborative Pediatric Critical Care Research Network (CPCCRN) Clinical Centers, based primarily on hospital billing databases. The Core Clinical Data Project (CCDP) provides pilot and descriptive data for hypothesis generation, study design, preliminary power analyses, and recruitment projections for CPCCRN studies under development.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>ValueDomains</name>
+                <publicID>2812842</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+                <preferredDefinition>ValueDomains</preferredDefinition>
+               </classificationSchemeItem>
+              </classification>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2015-10-16T14:09:25</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA4489-6</name>
+             <type>LOINC_CODE</type>
+             <context>NCIP</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:30</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA4489-6</name>
+             <type>LOINC_CODE</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Unknown</name>
+             <type>LOINC_NAME</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-04-04T13:18:57</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Unknown</name>
+             <type>LOINC_NAME</type>
+             <context>NCIP</context>
+                         </designation>
+            <designation>
+             <createdBy>COOPERM</createdBy>
+             <dateCreated>2017-03-29T08:57:16</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Unknown cause of death</name>
+             <type>VM Alt Name</type>
+             <context>NCIP</context>
+                         </designation>
+            <designation>
+             <createdBy>MORENOC</createdBy>
+             <dateCreated>2017-04-21T06:18:54</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>I don&apos;t know</name>
+             <type>VM Alt Name</type>
+             <context>CTEP</context>
+                         </designation>
+                                  <definition>
+             <createdBy>CURTIST</createdBy>
+             <dateCreated>2007-04-30T14:19:12</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <text>Unknown whether Spanish or not
+</text>
+             <type>NAACCR</type>
+                           <classification>
+               <name>Division of Cancer Control and Population Sciences</name>
+               <publicID>2193114</publicID>
+               <version>1</version>
+               <preferredDefinition>Classification of the Division of Cancer Control and Population Sciences</preferredDefinition>
+               <classificationSchemeItem>
+                <name>Demographic11.1</name>
+                <publicID>3242099</publicID>
+                <version>1</version>
+                <type>GROUP_TYPE</type>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>NMDP: CDEs to review</name>
+               <publicID>2695319</publicID>
+               <version>1</version>
+               <preferredDefinition>NMDP CDEs to be reviewed</preferredDefinition>
+               <classificationSchemeItem>
+                <name>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</name>
+                <publicID>2964895</publicID>
+                <version>1</version>
+                <type>Case Report Form</type>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>PICUcoreClinicalData</name>
+               <publicID>3588382</publicID>
+               <version>1</version>
+               <preferredDefinition>Descriptive information about pediatric intensive care unit (PICU) discharges from NICHD Collaborative Pediatric Critical Care Research Network (CPCCRN) Clinical Centers, based primarily on hospital billing databases. The Core Clinical Data Project (CCDP) provides pilot and descriptive data for hypothesis generation, study design, preliminary power analyses, and recruitment projections for CPCCRN studies under development.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>ValueDomains</name>
+                <publicID>2812842</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+               </classificationSchemeItem>
+              </classification>
+                          <context>PS-CC</context>
+            </definition>
+            <definition>
+             <createdBy>CURTIST</createdBy>
+             <dateCreated>2007-07-18T16:11:28</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <text>Patient&apos;s address is unknown</text>
+             <type>NAACCR</type>
+                           <classification>
+               <name>Division of Cancer Control and Population Sciences</name>
+               <publicID>2193114</publicID>
+               <version>1</version>
+               <preferredDefinition>Classification of the Division of Cancer Control and Population Sciences</preferredDefinition>
+               <classificationSchemeItem>
+                <name>Demographic11.1</name>
+                <publicID>3242099</publicID>
+                <version>1</version>
+                <type>GROUP_TYPE</type>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>NMDP: CDEs to review</name>
+               <publicID>2695319</publicID>
+               <version>1</version>
+               <preferredDefinition>NMDP CDEs to be reviewed</preferredDefinition>
+               <classificationSchemeItem>
+                <name>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</name>
+                <publicID>2964895</publicID>
+                <version>1</version>
+                <type>Case Report Form</type>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>PICUcoreClinicalData</name>
+               <publicID>3588382</publicID>
+               <version>1</version>
+               <preferredDefinition>Descriptive information about pediatric intensive care unit (PICU) discharges from NICHD Collaborative Pediatric Critical Care Research Network (CPCCRN) Clinical Centers, based primarily on hospital billing databases. The Core Clinical Data Project (CCDP) provides pilot and descriptive data for hypothesis generation, study design, preliminary power analyses, and recruitment projections for CPCCRN studies under development.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>ValueDomains</name>
+                <publicID>2812842</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+               </classificationSchemeItem>
+              </classification>
+                          <context>PS-CC</context>
+            </definition>
+            <definition>
+             <createdBy>UMLLOADER_GEM</createdBy>
+             <dateCreated>2011-01-27T16:26:05</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <text>A response indicating that the respondent does not know what the correct answer is.</text>
+             <type>UML Value Definition</type>
+                           <classification>
+               <name>NMDP: CDEs to review</name>
+               <publicID>2695319</publicID>
+               <version>1</version>
+               <preferredDefinition>NMDP CDEs to be reviewed</preferredDefinition>
+               <classificationSchemeItem>
+                <name>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</name>
+                <publicID>2964895</publicID>
+                <version>1</version>
+                <type>Case Report Form</type>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>Grid Enabled Measures</name>
+               <publicID>2983752</publicID>
+               <version>1</version>
+               <preferredDefinition>A resource to allow researchers to access metadata about measures used in cancer research and the population sciences.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>LocalValueDomains</name>
+                <publicID>3024955</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>PICUcoreClinicalData</name>
+               <publicID>3588382</publicID>
+               <version>1</version>
+               <preferredDefinition>Descriptive information about pediatric intensive care unit (PICU) discharges from NICHD Collaborative Pediatric Critical Care Research Network (CPCCRN) Clinical Centers, based primarily on hospital billing databases. The Core Clinical Data Project (CCDP) provides pilot and descriptive data for hypothesis generation, study design, preliminary power analyses, and recruitment projections for CPCCRN studies under development.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>ValueDomains</name>
+                <publicID>2812842</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+               </classificationSchemeItem>
+              </classification>
+                          <context>NCIP</context>
+            </definition>
+            <definition>
+             <createdBy>UMLLOADER_C3PRPRD</createdBy>
+             <dateCreated>2010-07-08T14:47:33</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <text>Could not be determined or unsure.</text>
+             <type>UML Value Definition</type>
+                           <classification>
+               <name>C3PR</name>
+               <publicID>2551427</publicID>
+               <version>2.8</version>
+               <preferredDefinition>Version 2.8 The Cancer Central Clinical Participent Registry (C3PR) is a web-based application used to manage participants in cancer clinical trials. Research staff will use C3PR as a participant-centric entry point to clinical trial management systems. C3PR provides a central registry for study participants, and it enables the end-user to access participant-centric information that is stored in multiple clinical trial systems. Participants that can be tracked include patients or potential patients, their guardians, family members, and referring physicians. The system also allows tracking other types of participants such as principal investigators, caregivers, referring physicians, and the users of the system.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>ValueDomains</name>
+                <publicID>2812842</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>NMDP: CDEs to review</name>
+               <publicID>2695319</publicID>
+               <version>1</version>
+               <preferredDefinition>NMDP CDEs to be reviewed</preferredDefinition>
+               <classificationSchemeItem>
+                <name>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</name>
+                <publicID>2964895</publicID>
+                <version>1</version>
+                <type>Case Report Form</type>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>PICUcoreClinicalData</name>
+               <publicID>3588382</publicID>
+               <version>1</version>
+               <preferredDefinition>Descriptive information about pediatric intensive care unit (PICU) discharges from NICHD Collaborative Pediatric Critical Care Research Network (CPCCRN) Clinical Centers, based primarily on hospital billing databases. The Core Clinical Data Project (CCDP) provides pilot and descriptive data for hypothesis generation, study design, preliminary power analyses, and recruitment projections for CPCCRN studies under development.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>ValueDomains</name>
+                <publicID>2812842</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+               </classificationSchemeItem>
+              </classification>
+                          <context>NCIP</context>
+            </definition>
+            <definition>
+             <createdBy>UMLLOADER_C3PRPRD</createdBy>
+             <dateCreated>2010-07-08T14:47:35</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <text>Not known, not observed, not recorded, or refused.</text>
+             <type>UML Value Definition</type>
+                           <classification>
+               <name>C3PR</name>
+               <publicID>2551427</publicID>
+               <version>2.8</version>
+               <preferredDefinition>Version 2.8 The Cancer Central Clinical Participent Registry (C3PR) is a web-based application used to manage participants in cancer clinical trials. Research staff will use C3PR as a participant-centric entry point to clinical trial management systems. C3PR provides a central registry for study participants, and it enables the end-user to access participant-centric information that is stored in multiple clinical trial systems. Participants that can be tracked include patients or potential patients, their guardians, family members, and referring physicians. The system also allows tracking other types of participants such as principal investigators, caregivers, referring physicians, and the users of the system.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>ValueDomains</name>
+                <publicID>2812842</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>NMDP: CDEs to review</name>
+               <publicID>2695319</publicID>
+               <version>1</version>
+               <preferredDefinition>NMDP CDEs to be reviewed</preferredDefinition>
+               <classificationSchemeItem>
+                <name>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</name>
+                <publicID>2964895</publicID>
+                <version>1</version>
+                <type>Case Report Form</type>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>PICUcoreClinicalData</name>
+               <publicID>3588382</publicID>
+               <version>1</version>
+               <preferredDefinition>Descriptive information about pediatric intensive care unit (PICU) discharges from NICHD Collaborative Pediatric Critical Care Research Network (CPCCRN) Clinical Centers, based primarily on hospital billing databases. The Core Clinical Data Project (CCDP) provides pilot and descriptive data for hypothesis generation, study design, preliminary power analyses, and recruitment projections for CPCCRN studies under development.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>ValueDomains</name>
+                <publicID>2812842</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+               </classificationSchemeItem>
+              </classification>
+                          <context>NCIP</context>
+            </definition>
+            <definition>
+             <createdBy>CHILLIJ</createdBy>
+             <dateCreated>2010-07-13T22:01:19</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <text>Not known, not observed, or not recorded.</text>
+             <type>Manually-curated</type>
+                           <classification>
+               <name>Data Standards</name>
+               <publicID>2192345</publicID>
+               <version>1</version>
+               <preferredDefinition>Data standards developed for the NCI community.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>Image Quality CRF</name>
+                <publicID>3079057</publicID>
+                <version>1</version>
+                <type>GROUP_TYPE</type>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>NMDP: CDEs to review</name>
+               <publicID>2695319</publicID>
+               <version>1</version>
+               <preferredDefinition>NMDP CDEs to be reviewed</preferredDefinition>
+               <classificationSchemeItem>
+                <name>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</name>
+                <publicID>2964895</publicID>
+                <version>1</version>
+                <type>Case Report Form</type>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>PICUcoreClinicalData</name>
+               <publicID>3588382</publicID>
+               <version>1</version>
+               <preferredDefinition>Descriptive information about pediatric intensive care unit (PICU) discharges from NICHD Collaborative Pediatric Critical Care Research Network (CPCCRN) Clinical Centers, based primarily on hospital billing databases. The Core Clinical Data Project (CCDP) provides pilot and descriptive data for hypothesis generation, study design, preliminary power analyses, and recruitment projections for CPCCRN studies under development.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>ValueDomains</name>
+                <publicID>2812842</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+               </classificationSchemeItem>
+              </classification>
+                          <context>NCIP</context>
+            </definition>
+            <definition>
+             <createdBy>CURTIST</createdBy>
+             <dateCreated>2010-12-22T12:10:38</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <text>a proper value is applicable but not known.  this event occurred, but the date is unknown (e.g., birth date).</text>
+             <type>NAACCR</type>
+                           <classification>
+               <name>Division of Cancer Control and Population Sciences</name>
+               <publicID>2193114</publicID>
+               <version>1</version>
+               <preferredDefinition>Classification of the Division of Cancer Control and Population Sciences</preferredDefinition>
+               <classificationSchemeItem>
+                <name>NAACCR 12.1</name>
+                <publicID>3134707</publicID>
+                <version>1</version>
+                <type>GROUP_TYPE</type>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>NMDP: CDEs to review</name>
+               <publicID>2695319</publicID>
+               <version>1</version>
+               <preferredDefinition>NMDP CDEs to be reviewed</preferredDefinition>
+               <classificationSchemeItem>
+                <name>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</name>
+                <publicID>2964895</publicID>
+                <version>1</version>
+                <type>Case Report Form</type>
+               </classificationSchemeItem>
+              </classification>
+              <classification>
+               <name>PICUcoreClinicalData</name>
+               <publicID>3588382</publicID>
+               <version>1</version>
+               <preferredDefinition>Descriptive information about pediatric intensive care unit (PICU) discharges from NICHD Collaborative Pediatric Critical Care Research Network (CPCCRN) Clinical Centers, based primarily on hospital billing databases. The Core Clinical Data Project (CCDP) provides pilot and descriptive data for hypothesis generation, study design, preliminary power analyses, and recruitment projections for CPCCRN studies under development.</preferredDefinition>
+               <classificationSchemeItem>
+                <name>ValueDomains</name>
+                <publicID>2812842</publicID>
+                <version>1</version>
+                <type>UML_PACKAGE_NAME</type>
+               </classificationSchemeItem>
+              </classification>
+                          <context>PS-CC</context>
+            </definition>
+                      <preferredDefinition>Not known, not observed, not recorded, or refused.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2002-02-11T15:18:54</beginDate>
+         </permissibleValue>
+         <permissibleValue>
+          <value>Yes</value>
+          <valueMeaning>
+           <publicID>2560453</publicID>
+           <version>1</version>
+           <longName>Yes</longName>
+                       <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>LA33-6</name>
+             <type>LOINC_CODE</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+            <designation>
+             <createdBy>DWARZEL</createdBy>
+             <dateCreated>2016-05-12T14:24:31</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <name>Yes</name>
+             <type>LOINC_NAME</type>
+             <context>ONC SDC Project</context>
+                         </designation>
+                                  <definition>
+             <createdBy>COOPERM</createdBy>
+             <dateCreated>2010-11-18T15:39:31</dateCreated>
+             <dateModified>2011-11-11T16:13:29</dateModified>
+             <modifiedBy>MAESKEB</modifiedBy>
+             <languageName>ENGLISH</languageName>
+             <text>YES</text>
+             <type>Manually-curated</type>
+                           <classification>
+               <name>NMDP: CDEs to review</name>
+               <publicID>2695319</publicID>
+               <version>1</version>
+               <preferredDefinition>NMDP CDEs to be reviewed</preferredDefinition>
+               <classificationSchemeItem>
+                <name>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</name>
+                <publicID>2964895</publicID>
+                <version>1</version>
+                <type>Case Report Form</type>
+               </classificationSchemeItem>
+              </classification>
+                          <context>NCIP</context>
+            </definition>
+            <definition>
+             <createdBy>KUMMEROA</createdBy>
+             <dateCreated>2011-03-14T09:47:25</dateCreated>
+             <languageName>ENGLISH</languageName>
+             <text>The affirmative response to a question.</text>
+             <type>NCI</type>
+                           <classification>
+               <name>NMDP: CDEs to review</name>
+               <publicID>2695319</publicID>
+               <version>1</version>
+               <preferredDefinition>NMDP CDEs to be reviewed</preferredDefinition>
+               <classificationSchemeItem>
+                <name>2029r1: Fanconi Anemia / Constitutional Anemia Pre-HSCT Data</name>
+                <publicID>2964895</publicID>
+                <version>1</version>
+                <type>Case Report Form</type>
+               </classificationSchemeItem>
+              </classification>
+                          <context>NHLBI</context>
+            </definition>
+                      <preferredDefinition>The affirmative response to a question or activity.</preferredDefinition>
+          </valueMeaning>
+          <beginDate>2002-08-22T00:00:00</beginDate>
+         </permissibleValue>
+                       </valueDomain>
+                      <referenceDocument>
+         <name>Does the patient currently sm</name>
+         <type>Preferred Question Text</type>
+         <context>CTEP</context>
+         <doctext>Does the patient currently smoke cigarettes</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>CRF Text</name>
+         <type>Alternate Question Text</type>
+         <context>CTEP</context>
+         <doctext>Does the patient currently smoke</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>DCP Document Text</name>
+         <type>Alternate Question Text</type>
+         <context>DCP</context>
+         <doctext>Is Participant currently smoking cigarettes, cigars, or pipes of have s/he smoked within 3 months of study entry?</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>COG_CRF_TEXT_1</name>
+         <type>Alternate Question Text</type>
+         <context>CTEP</context>
+         <doctext>Does the patient currently smoke tobacco</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>NIDA_CURRENT_SMOKER</name>
+         <type>Alternate Question Text</type>
+         <context>NIDA</context>
+         <doctext>Do you currently smoke cigarettes</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+        <referenceDocument>
+         <name>Do you currently smoke cigarettes?</name>
+         <type>Alternate Question Text</type>
+         <context>iCaRe2</context>
+         <doctext>Do you currently smoke cigarettes?</doctext>
+         <languageName>ENGLISH</languageName>
+                 </referenceDocument>
+              <cdeBrowserLink>https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&amp;FirstTimer=0&amp;PageId=ElementDetailsGroup&amp;publicId=2438665&amp;version=1</cdeBrowserLink>
+      </dataElement>
+             <validValue>
+        <displayOrder>0</displayOrder>
+        <value>No</value>
+        <meaningText>No</meaningText>
+        <description>The non-affirmative response to a question.</description>
+                <valueMeaning>
+         <publicID>2559515</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>1</displayOrder>
+        <value>Yes</value>
+        <meaningText>Yes</meaningText>
+        <description>The affirmative response to a question or activity.</description>
+                <valueMeaning>
+         <publicID>2560453</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>2</displayOrder>
+        <value>Unknown</value>
+        <meaningText>Unknown</meaningText>
+        <description>Not known, not observed, not recorded, or refused.</description>
+                <valueMeaning>
+         <publicID>2575365</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+       <validValue>
+        <displayOrder>3</displayOrder>
+        <value>Patient Refused to Answer</value>
+        <meaningText>Patient Refused to Answer</meaningText>
+        <description>Patient Refused to Answer</description>
+                <valueMeaning>
+         <publicID>2577309</publicID>
+         <version>1</version>
+        </valueMeaning>
+       </validValue>
+           </question>
+       </module>
+       <protocol>
+    <leadOrganization>RTOG</leadOrganization>
+    <phase>II</phase>
+    <type>Treatment trials</type>
+    <protocolID>3645976</protocolID>
+    <longName>RTOG-1221</longName>
+    <context>NRG</context>
+    <shortName>RTOG-1221</shortName>
+    <preferredDefinition>Randomized Phase II Trial of Transoral Endoscopic Head And Neck Surgery followed by Risk-Based IMRT and Weekly Cisplatin versus IMRT and Weekly Cisplatin for HPV Negative Oropharynx Cancer</preferredDefinition>
+   </protocol>
+         <classification>
+    <name>RESERVED FOR SENTINEL MONITOR</name>
+    <publicID>2465726</publicID>
+    <version>1</version>
+    <preferredDefinition>RESERVED FOR SENTINEL MONITOR</preferredDefinition>
+    <classificationSchemeItem>
+     <name>Monitor for PATELV</name>
+     <publicID>5292872</publicID>
+     <version>1</version>
+     <type>CATEGORY_TYPE</type>
+     <preferredDefinition>Created by system process</preferredDefinition>
+    </classificationSchemeItem>
+   </classification>
+   <classification>
+    <name>CRF Disease</name>
+    <publicID>2857165</publicID>
+    <version>2.31</version>
+    <preferredDefinition>this scheme is used to classify by disease case report forms and their associated data elements.  Assignments to this scheme should not be made manually but occur through use of the CRF Loader and the CRT.</preferredDefinition>
+    <classificationSchemeItem>
+     <name>Head and Neck</name>
+     <publicID>2811912</publicID>
+     <version>1</version>
+     <type>DISEASE_TYPE</type>
+     <preferredDefinition>Head and Neck</preferredDefinition>
+    </classificationSchemeItem>
+   </classification>
+   <classification>
+    <name>CRF Trial Type Usage</name>
+    <publicID>2857166</publicID>
+    <version>2.31</version>
+    <preferredDefinition>this scheme is used to classify by trial type usage case report forms and their associated data elements.  Assignments to this scheme should not be made manually but occur through use of the CRF Loader and the CRT.</preferredDefinition>
+    <classificationSchemeItem>
+     <name>Curative Head/Neck</name>
+     <publicID>2811942</publicID>
+     <version>1</version>
+     <type>TRIAL_TYPE_USAGE</type>
+     <preferredDefinition>Curative Head and Neck</preferredDefinition>
+    </classificationSchemeItem>
+   </classification>
+   <classification>
+    <name>Disease Site</name>
+    <publicID>4057943</publicID>
+    <version>1</version>
+    <preferredDefinition>The location of a disease.</preferredDefinition>
+    <classificationSchemeItem>
+     <name>RTOG-1221</name>
+     <publicID>4104935</publicID>
+     <version>1</version>
+     <type>CATEGORY_TYPE</type>
+     <preferredDefinition>RTOG-1221</preferredDefinition>
+    </classificationSchemeItem>
+   </classification>
+   </form>
+
+    </forms>
+
