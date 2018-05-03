@@ -1,0 +1,2546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 37a</collectionName>
+  <collectionDescription>Load PhenX PX510101,PX510501</collectionDescription>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:30:51</dateCreated>
+    <longName>PhenX PX510101 - Family History Of Substance Use Problems Alcohol</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Alcohol Use Disorder and Associated Disabilities Interview Schedule-IV (AUDADIS-IV) is a fully structured diagnostic interview designed to assess alcohol, drug, and mental disorders according to the Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition (DSM-IV), diagnostic criteria in both clinical and general populations. Section 2D of AUDADIS-IV assesses a respondent's family history of drinking problems or alcoholism (generally defined).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Instructions: Now I would like to ask you some questions about whether any of your relatives, regardless of whether or not they are now living, have EVER been alcoholics or problem drinkers. By alcoholic or problem drinker, I mean a person who..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:30:51</dateCreated>
+      <longName>Family History of Substance Use Problems - Alcohol</longName>
+      <preferredDefinition>Family History of Substance Use Problems - Alcohol</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>1. Has/Was your blood or natural father been an alcoholic or problem drinker at ANY time in his life? (father_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>2. Has/Was your blood or natural mother been an alcoholic or problem drinker at ANY time in her life? (mother_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>3a. How many full brothers have you had who lived to be at least 10 years old, including those who are still living? By full brothers, I mean brothers who have the same natural mother AND the same natural father as you do. (number_full_brothers)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>3a. How many full brothers have you had who lived to be at least 10 years old, including those who are still living? By full brothers, I mean brothers who have the same natural mother AND the same natural father as you do. (number_full_brothers2_f45)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>3b. Was your full brother an alcoholic or problem drinker at ANY time in his life? (brother_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_full_brothers] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>3c. How many of your full brothers are now, or were in the past, alcoholics or problem drinkers? (number_brothers_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>datatype=number;[number_full_brothers] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>3c. How many of your full brothers are now, or were in the past, alcoholics or problem drinkers? (number_brothers_alcoh2_8b1)</questionText>
+        <instruction>
+         <text>[number_full_brothers] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>4a. How many full sisters have you had who lived to be at least 10 years old, including those who are still living? By full sisters, I mean sisters who have the same natural mother AND the same natural father as you do. (number_full_sisters)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>4a. How many full sisters have you had who lived to be at least 10 years old, including those who are still living? By full sisters, I mean sisters who have the same natural mother AND the same natural father as you do. (number_full_sisters2_ffe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>4b. Was your full sister an alcoholic or problem drinker at ANY time in her life? (sister_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_full_sisters] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>4c. How many of your full sisters are now, or were in the past, alcoholics or problem drinkers? (number_sisters_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_full_sisters] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>5a. How many natural sons have you had who lived to be at least 10 years old, including those who are still living? By natural, I mean those who you (biologically fathered/gave birth to.) (number_natural_sons)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>5a. How many natural sons have you had who lived to be at least 10 years old, including those who are still living? By natural, I mean those who you (biologically fathered/gave birth to.) (number_natural_sons2_ce8)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>5b. Was your natural son an alcoholic or problem drinker at ANY time in his life? (son_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_sons] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>5c. How many of your natural sons are now, or were in the past, alcoholics or problem drinkers? (number_sons_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_sons] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>5c. How many of your natural sons are now, or were in the past, alcoholics or problem drinkers? (number_sons_alcoholic2_360)</questionText>
+        <instruction>
+         <text>[number_natural_sons] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>6a. How many natural daughters have you had who lived to be at least 10 years old, including those who are still living? By natural, I mean those who you (biologically fathered/gave birth to.) (number_natural_daughters)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>6a. How many natural daughters have you had who lived to be at least 10 years old, including those who are still living? By natural, I mean those who you (biologically fathered/gave birth to.) (number_natural_daught2_fc9)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>6b. Was your natural daughter an alcoholic or problem drinker at ANY time in her life? (daughter_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_daughters] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>6c. How many of your natural daughters are now, or were in the past, alcoholics or problem drinkers? (number_daughters_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_daughters] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>6c. How many of your natural daughters are now, or were in the past, alcoholics or problem drinkers? (number_daughters_alco2_7f8)</questionText>
+        <instruction>
+         <text>[number_natural_daughters] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>7a. How many full brothers did your natural father have who lived to be at least 10 years old, including those who are still alive? By full brothers, I mean those who had the SAME TWO natural or blood parents as your father. (number_natural_paternal_uncles)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>7a. How many full brothers did your natural father have who lived to be at least 10 years old, including those who are still alive? By full brothers, I mean those who had the SAME TWO natural or blood parents as your father. (number_natural_patern2_bcd)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>7b. Was your natural father's full brother an alcoholic or problem drinker at ANY time in his life? (paternal_uncle_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_paternal_uncles] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>7c. How many of your natural father's full brothers are now, or were in the past, alcoholics or problem drinkers? (number_paternal_uncles_alcoholic)</questionText>
+        <instruction>
+         <text>datatype=integer;[number_natural_paternal_uncles] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>7c. How many of your natural father's full brothers are now, or were in the past, alcoholics or problem drinkers? (number_paternal_uncle2_865)</questionText>
+        <instruction>
+         <text>[number_natural_paternal_uncles] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>8a. How many full sisters did your natural father have who lived to be at least 10 years old, including those who are still living? By full sisters, I mean those who had the SAME TWO natural or blood parents as your father. (number_natural_paternal_aunts)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>8a. How many full sisters did your natural father have who lived to be at least 10 years old, including those who are still living? By full sisters, I mean those who had the SAME TWO natural or blood parents as your father. (number_natural_patern2_404)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>8b. Was your natural father's full sister an alcoholic or problem drinker at ANY time in her life? (paternal_aunt_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_paternal_aunts] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>8c. How many of your natural father's full sisters are now, or were in the past, alcoholics or problem drinkers? (number_paternal_aunts_alcoholic)</questionText>
+        <instruction>
+         <text>datatype=integer;[number_natural_paternal_aunts] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>8c. How many of your natural father's full sisters are now, or were in the past, alcoholics or problem drinkers? (number_paternal_aunts2_4cc)</questionText>
+        <instruction>
+         <text>[number_natural_paternal_aunts] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>9a. How many full brothers did your natural mother have who lived to be at least 10 years old, including those who are still living? By full brothers, I mean those who had the SAME TWO natural or blood parents as your mother. (number_natural_maternal_uncles)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>9a. How many full brothers did your natural mother have who lived to be at least 10 years old, including those who are still living? By full brothers, I mean those who had the SAME TWO natural or blood parents as your mother. (number_natural_matern2_7e2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>9b. Was your natural mother's full brother an alcoholic or problem drinker at ANY time in his life? (maternal_uncle_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_maternal_uncles] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>9c. How many of your natural mother's full brothers are now, or were in the past, alcoholics or problem drinkers? (number_maternal_uncles_alcoholic)</questionText>
+        <instruction>
+         <text>datatype=integer;[number_natural_maternal_uncles] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>9c. How many of your natural mother's full brothers are now, or were in the past, alcoholics or problem drinkers? (number_maternal_uncle2_e1e)</questionText>
+        <instruction>
+         <text>[number_natural_maternal_uncles] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>10a. How many full sisters did your natural mother have who lived to be at least 10 years old, including those who are still alive? By full sisters, I mean those who had the SAME TWO natural or blood parents as your mother. (number_natural_maternal_aunts)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>10a. How many full sisters did your natural mother have who lived to be at least 10 years old, including those who are still alive? By full sisters, I mean those who had the SAME TWO natural or blood parents as your mother. (number_natural_matern2_995)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>10b. Was your natural mother's full sister an alcoholic or problem drinker at ANY time in her life? (maternal_aunt_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_maternal_aunts] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>10c. How many of your natural mother's full brothers are now, or were in the past, alcoholics or problem drinkers? (number_maternal_aunts_alcoholic)</questionText>
+        <instruction>
+         <text>datatype=integer;[number_natural_maternal_aunts] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>10c. How many of your natural mother's full brothers are now, or were in the past, alcoholics or problem drinkers? (number_maternal_aunts2_067)</questionText>
+        <instruction>
+         <text>[number_natural_maternal_aunts] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>11. Was your natural grandfather on your father's side an alcoholic or problem drinker at ANY time in his life? By natural grandfather on your father's side, I mean your father's natural or blood father. (paternal_grandfather_alcoholic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>12. Was your natural grandmother on your father's side an alcoholic or problem drinker at ANY time in her life? By natural grandmother on your father's side, I mean your father's natural or blood mother. (paternal_grandmother_alcoholic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>13a. Was your natural grandfather on your mother's side an alcoholic or problem drinker at ANY time in his life? By natural grandfather on your mother's side, I mean your mother's natural or blood father. (maternal_grandfather_alcoholic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>13b. Was your natural grandmother on your mother's side an alcoholic or problem drinker at ANY time in her life? By natural grandmother on your mother's side, I mean your mother's natural or blood mother. (maternal_grandmother_alcoholic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>46</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>14. Were you EVER married to an alcoholic or problem drinker? (married_to_alcoholic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>47</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>15. Is that your current (husband/wife)? (current_spouse_alcoholic)</questionText>
+        <instruction>
+         <text>[married_to_alcoholic] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>48</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>16. Would you say that (he/she) is an alcoholic or problem drinker at this time? (current_spouse_alcoholic_now)</questionText>
+        <instruction>
+         <text>[married_to_alcoholic] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>49</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>17. Did you EVER live with someone as if you were married? (live_with_someone)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>50</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>18. Did you EVER live as if married with someone who was an alcoholic or problem drinker? (live_with_someone_alcoholic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>51</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>19. Is that the person you live with now? (live_with_someone_now_alcoholic)</questionText>
+        <instruction>
+         <text>[live_with_someone_alcoholic] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>52</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>20. Would you say that (he/she) is an alcoholic or problem drinker at this time? (live_with_someone_alcoholic_currently)</questionText>
+        <instruction>
+         <text>[live_with_someone_now_alcoholic] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:30:51</dateCreated>
+      <longName>Family History of Substance Use Problems - Alcohol</longName>
+      <preferredDefinition>Family History of Substance Use Problems - Alcohol</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>1. Has/Was your blood or natural father been an alcoholic or problem drinker at ANY time in his life? (father_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>2. Has/Was your blood or natural mother been an alcoholic or problem drinker at ANY time in her life? (mother_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>3a. How many full brothers have you had who lived to be at least 10 years old, including those who are still living? By full brothers, I mean brothers who have the same natural mother AND the same natural father as you do. (number_full_brothers)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>3a. How many full brothers have you had who lived to be at least 10 years old, including those who are still living? By full brothers, I mean brothers who have the same natural mother AND the same natural father as you do. (number_full_brothers2_f45)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>3b. Was your full brother an alcoholic or problem drinker at ANY time in his life? (brother_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_full_brothers] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>3c. How many of your full brothers are now, or were in the past, alcoholics or problem drinkers? (number_brothers_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>datatype=number;[number_full_brothers] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>3c. How many of your full brothers are now, or were in the past, alcoholics or problem drinkers? (number_brothers_alcoh2_8b1)</questionText>
+        <instruction>
+         <text>[number_full_brothers] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>4a. How many full sisters have you had who lived to be at least 10 years old, including those who are still living? By full sisters, I mean sisters who have the same natural mother AND the same natural father as you do. (number_full_sisters)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>4a. How many full sisters have you had who lived to be at least 10 years old, including those who are still living? By full sisters, I mean sisters who have the same natural mother AND the same natural father as you do. (number_full_sisters2_ffe)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>4b. Was your full sister an alcoholic or problem drinker at ANY time in her life? (sister_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_full_sisters] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>4c. How many of your full sisters are now, or were in the past, alcoholics or problem drinkers? (number_sisters_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_full_sisters] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>5a. How many natural sons have you had who lived to be at least 10 years old, including those who are still living? By natural, I mean those who you (biologically fathered/gave birth to.) (number_natural_sons)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>5a. How many natural sons have you had who lived to be at least 10 years old, including those who are still living? By natural, I mean those who you (biologically fathered/gave birth to.) (number_natural_sons2_ce8)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>5b. Was your natural son an alcoholic or problem drinker at ANY time in his life? (son_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_sons] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>5c. How many of your natural sons are now, or were in the past, alcoholics or problem drinkers? (number_sons_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_sons] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>5c. How many of your natural sons are now, or were in the past, alcoholics or problem drinkers? (number_sons_alcoholic2_360)</questionText>
+        <instruction>
+         <text>[number_natural_sons] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>6a. How many natural daughters have you had who lived to be at least 10 years old, including those who are still living? By natural, I mean those who you (biologically fathered/gave birth to.) (number_natural_daughters)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>6a. How many natural daughters have you had who lived to be at least 10 years old, including those who are still living? By natural, I mean those who you (biologically fathered/gave birth to.) (number_natural_daught2_fc9)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>6b. Was your natural daughter an alcoholic or problem drinker at ANY time in her life? (daughter_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_daughters] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>6c. How many of your natural daughters are now, or were in the past, alcoholics or problem drinkers? (number_daughters_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_daughters] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>6c. How many of your natural daughters are now, or were in the past, alcoholics or problem drinkers? (number_daughters_alco2_7f8)</questionText>
+        <instruction>
+         <text>[number_natural_daughters] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>7a. How many full brothers did your natural father have who lived to be at least 10 years old, including those who are still alive? By full brothers, I mean those who had the SAME TWO natural or blood parents as your father. (number_natural_paternal_uncles)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>7a. How many full brothers did your natural father have who lived to be at least 10 years old, including those who are still alive? By full brothers, I mean those who had the SAME TWO natural or blood parents as your father. (number_natural_patern2_bcd)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>7b. Was your natural father's full brother an alcoholic or problem drinker at ANY time in his life? (paternal_uncle_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_paternal_uncles] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>7c. How many of your natural father's full brothers are now, or were in the past, alcoholics or problem drinkers? (number_paternal_uncles_alcoholic)</questionText>
+        <instruction>
+         <text>datatype=integer;[number_natural_paternal_uncles] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>7c. How many of your natural father's full brothers are now, or were in the past, alcoholics or problem drinkers? (number_paternal_uncle2_865)</questionText>
+        <instruction>
+         <text>[number_natural_paternal_uncles] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>8a. How many full sisters did your natural father have who lived to be at least 10 years old, including those who are still living? By full sisters, I mean those who had the SAME TWO natural or blood parents as your father. (number_natural_paternal_aunts)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>8a. How many full sisters did your natural father have who lived to be at least 10 years old, including those who are still living? By full sisters, I mean those who had the SAME TWO natural or blood parents as your father. (number_natural_patern2_404)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>8b. Was your natural father's full sister an alcoholic or problem drinker at ANY time in her life? (paternal_aunt_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_paternal_aunts] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>8c. How many of your natural father's full sisters are now, or were in the past, alcoholics or problem drinkers? (number_paternal_aunts_alcoholic)</questionText>
+        <instruction>
+         <text>datatype=integer;[number_natural_paternal_aunts] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>8c. How many of your natural father's full sisters are now, or were in the past, alcoholics or problem drinkers? (number_paternal_aunts2_4cc)</questionText>
+        <instruction>
+         <text>[number_natural_paternal_aunts] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>9a. How many full brothers did your natural mother have who lived to be at least 10 years old, including those who are still living? By full brothers, I mean those who had the SAME TWO natural or blood parents as your mother. (number_natural_maternal_uncles)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>9a. How many full brothers did your natural mother have who lived to be at least 10 years old, including those who are still living? By full brothers, I mean those who had the SAME TWO natural or blood parents as your mother. (number_natural_matern2_7e2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>9b. Was your natural mother's full brother an alcoholic or problem drinker at ANY time in his life? (maternal_uncle_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_maternal_uncles] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>9c. How many of your natural mother's full brothers are now, or were in the past, alcoholics or problem drinkers? (number_maternal_uncles_alcoholic)</questionText>
+        <instruction>
+         <text>datatype=integer;[number_natural_maternal_uncles] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>9c. How many of your natural mother's full brothers are now, or were in the past, alcoholics or problem drinkers? (number_maternal_uncle2_e1e)</questionText>
+        <instruction>
+         <text>[number_natural_maternal_uncles] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>10a. How many full sisters did your natural mother have who lived to be at least 10 years old, including those who are still alive? By full sisters, I mean those who had the SAME TWO natural or blood parents as your mother. (number_natural_maternal_aunts)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>10a. How many full sisters did your natural mother have who lived to be at least 10 years old, including those who are still alive? By full sisters, I mean those who had the SAME TWO natural or blood parents as your mother. (number_natural_matern2_995)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>10b. Was your natural mother's full sister an alcoholic or problem drinker at ANY time in her life? (maternal_aunt_alcoholic_problem_drinker)</questionText>
+        <instruction>
+         <text>[number_natural_maternal_aunts] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>10c. How many of your natural mother's full brothers are now, or were in the past, alcoholics or problem drinkers? (number_maternal_aunts_alcoholic)</questionText>
+        <instruction>
+         <text>datatype=integer;[number_natural_maternal_aunts] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>10c. How many of your natural mother's full brothers are now, or were in the past, alcoholics or problem drinkers? (number_maternal_aunts2_067)</questionText>
+        <instruction>
+         <text>[number_natural_maternal_aunts] &gt; 0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>11. Was your natural grandfather on your father's side an alcoholic or problem drinker at ANY time in his life? By natural grandfather on your father's side, I mean your father's natural or blood father. (paternal_grandfather_alcoholic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>12. Was your natural grandmother on your father's side an alcoholic or problem drinker at ANY time in her life? By natural grandmother on your father's side, I mean your father's natural or blood mother. (paternal_grandmother_alcoholic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>13a. Was your natural grandfather on your mother's side an alcoholic or problem drinker at ANY time in his life? By natural grandfather on your mother's side, I mean your mother's natural or blood father. (maternal_grandfather_alcoholic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>13b. Was your natural grandmother on your mother's side an alcoholic or problem drinker at ANY time in her life? By natural grandmother on your mother's side, I mean your mother's natural or blood mother. (maternal_grandmother_alcoholic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>46</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>14. Were you EVER married to an alcoholic or problem drinker? (married_to_alcoholic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>47</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>15. Is that your current (husband/wife)? (current_spouse_alcoholic)</questionText>
+        <instruction>
+         <text>[married_to_alcoholic] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>48</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>16. Would you say that (he/she) is an alcoholic or problem drinker at this time? (current_spouse_alcoholic_now)</questionText>
+        <instruction>
+         <text>[married_to_alcoholic] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>49</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>17. Did you EVER live with someone as if you were married? (live_with_someone)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>50</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>18. Did you EVER live as if married with someone who was an alcoholic or problem drinker? (live_with_someone_alcoholic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>51</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>19. Is that the person you live with now? (live_with_someone_now_alcoholic)</questionText>
+        <instruction>
+         <text>[live_with_someone_alcoholic] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>52</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>20. Would you say that (he/she) is an alcoholic or problem drinker at this time? (live_with_someone_alcoholic_currently)</questionText>
+        <instruction>
+         <text>[live_with_someone_now_alcoholic] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX510101</protocolID>
+     <longName>Family History of Substance Use Problems - Alcohol</longName>
+     <context>PhenX</context>
+     <shortName>PX510101</shortName>
+     <preferredDefinition>The Alcohol Use Disorder and Associated Disabilities Interview Schedule-IV (AUDADIS-IV) is a fully structured diagnostic interview designed to assess alcohol, drug, and mental disorders according to the Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition (DSM-IV), diagnostic criteria in both clinical and general populations. Section 2D of AUDADIS-IV assesses a respondent's family history of drinking problems or alcoholism (generally defined).</preferredDefinition>
+    </protocol>
+   </form>  				
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:30:51</dateCreated>
+    <longName>PhenX PX510501 - Alcohol Breathalyzer</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The purpose of this protocol is to measure the concentration of alcohol (ethanol) in the participant's breath.After 20 minutes of observation, the participant blows steadily into a device called a breathalyzer used to measure the breath alcohol concentration. The result is measured in grams of alcohol per 210 liters of breath, which is used as a proxy for blood alcohol concentration (BAC). A person's BAC is equivalent to the percent by weight of alcohol in a person's blood based upon grams of alcohol per 100 ml of blood.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Follow the breathalyzer manufacturer's instructions. Explain to the participant that you are about to obtain his/her blood alcohol reading with a breathalyzer device. Also explain that you need to observe him/her for 20 minutes before the test..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:30:51</dateCreated>
+      <longName>Alcohol Breathalyzer</longName>
+      <preferredDefinition>Alcohol Breathalyzer</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>Document the time that the observation began. Am/pm (time_observation_began_ampm)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>am</meaningText>
+          <description>am</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>pm</meaningText>
+          <description>pm</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>Document the time that the observation began. time (time_observation_began)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>Document the time that the observation ended. Am/pm (time_observation_ended_ampm)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>am</meaningText>
+          <description>am</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>pm</meaningText>
+          <description>pm</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>Document the time that the observation ended. time (time_observation_ended)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>(Ask participant) Have you belched, burped, regurgitated, or taken a drink of anything in the past 20 minutes? (belched_burped_regurgitated_drank1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes - Observe for another 20 minutes.</meaningText>
+          <description>Yes - Observe for another 20 minutes.</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No - Proceed with breath test.</meaningText>
+          <description>No - Proceed with breath test.</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>(Ask participant) Have you belched, burped, regurgitated, or taken a drink of anything in the past 2 minutes? (belched_burped_regurgitated_drank2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes - Observe for another 20 minutes.</meaningText>
+          <description>Yes - Observe for another 20 minutes.</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No - Proceed with breath test.</meaningText>
+          <description>No - Proceed with breath test.</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>Ask participant to blow steadily into the breathalyzer a second time. Record this result. (breathalyzer_result)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>(Ask participant) Have you belched, burped, regurgitated, or taken a drink of anything in the past 2 minutes? (belched_burped_regurgitated_drank3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes - Observe for another 20 minutes.</meaningText>
+          <description>Yes - Observe for another 20 minutes.</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No - Proceed with breath test.</meaningText>
+          <description>No - Proceed with breath test.</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>Ask participant to blow steadily into the breathalyzer a second time. Record this result. (breathalyzer_result_3)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:30:51</dateCreated>
+        <questionText>Interpretation of Results : A person's blood alcohol concentration (BAC) is related to a number of factors including the quantity of alcohol consumed, rate of consumption, gender, weight, and prior ingestion of food (Hingson et al., 1999 see Figure 1, p. 32). All states in the United States have adopted 0.08% (80 mg/dl) as the legal BAC limit for operating a motor vehicle for drivers aged 21 years or older (Centers for Disease Control and Prevention, 2011). However, drivers younger than 21 are not allowed to operate a motor vehicle with any level of alcohol in their system. The National Highway Traffic Safety Administration (NHTSA) approves "evidential breath testing devices" (EBTs) with reliable results of 0.02% or greater. Although many breathalyzers measure BACs below 0.02% it is considered the lowest positive value. Note: Legal limits do not define a level below which it is safe to operate a vehicle or engage in some other activity. Impairment due to alcohol use can occur at levels well below the legal limit, starting at 0.01% (National Institute on Alcohol Abuse and Alcoholism, 1994), and the level of impairment is positively related to BAC level. The following website link is for a table that generally summarizes these impairments, although the exact clinical presentation is highly varied by individual (Virginia Tech University, 2011): http://www.alcohol.vt.edu/Students/alcoholEffects/index.htm. (interpretation_510501)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX510501</protocolID>
+     <longName>Alcohol Breathalyzer</longName>
+     <context>PhenX</context>
+     <shortName>PX510501</shortName>
+     <preferredDefinition>The purpose of this protocol is to measure the concentration of alcohol (ethanol) in the participant's breath.After 20 minutes of observation, the participant blows steadily into a device called a breathalyzer used to measure the breath alcohol concentration. The result is measured in grams of alcohol per 210 liters of breath, which is used as a proxy for blood alcohol concentration (BAC). A person's BAC is equivalent to the percent by weight of alcohol in a person's blood based upon grams of alcohol per 100 ml of blood.</preferredDefinition>
+    </protocol>
+   </form>   
+   </forms>

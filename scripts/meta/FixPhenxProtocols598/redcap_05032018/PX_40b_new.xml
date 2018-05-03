@@ -1,0 +1,2183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 40b</collectionName>
+  <collectionDescription>Load PhenX PX520104,PX520201,PX520202,PX520301,PX520302</collectionDescription>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:02</dateCreated>
+    <longName>PhenX PX520104 - Acutesubj Resp Tosubst Current Spec Tobacco</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Cigarette Evaluation Questionnaire (CEQ) assesses the degree to which subjects experience the reinforcing effects of smoking. It is a self-administered questionnaire that contains 11 items covering both the reinforcing and the adverse effects of smoking, asking subjects to rate the extent to which recently smoked cigarettes were satisfying, tasted good, made them dizzy, calmed them down, helped them concentrate, made them feel more awake, reduced appetite, made them nauseous, decreased irritability, produced enjoyable sensations in the throat and chest, and immediately reduced craving for cigarettes. The modified Cigarette Evaluation Questionnaire (mCEQ) contains an extra item on enjoying smoking in addition to the 11 original items. The items are rated on a seven-point scale ranging from 1 for "Not at all" to 7 for "Extremely."</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:02</dateCreated>
+      <longName>Acute Subjective Response to Substances - Current - Specific - Tobacco</longName>
+      <preferredDefinition>Acute Subjective Response to Substances - Current - Specific - Tobacco</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>1. Was smoking satisfying? (was_smoking_satisfying)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very little</meaningText>
+          <description>Very little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Quite a lot</meaningText>
+          <description>Quite a lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Extremely</meaningText>
+          <description>Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>2. Did cigarettes taste good? (did_cigarettes_taste_good)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very little</meaningText>
+          <description>Very little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Quite a lot</meaningText>
+          <description>Quite a lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Extremely</meaningText>
+          <description>Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>3. Did you enjoy the sensations in your throat and chest? (enjoy_the_sensations)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very little</meaningText>
+          <description>Very little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Quite a lot</meaningText>
+          <description>Quite a lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Extremely</meaningText>
+          <description>Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>4. Did smoking calm you down? (smoking_calm_you_down)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very little</meaningText>
+          <description>Very little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Quite a lot</meaningText>
+          <description>Quite a lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Extremely</meaningText>
+          <description>Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>5. Did smoking make you feel more awake? (smoking_make_you_more_awake)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very little</meaningText>
+          <description>Very little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Quite a lot</meaningText>
+          <description>Quite a lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Extremely</meaningText>
+          <description>Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>6. Did smoking make you feel less irritable? (make_you_less_irritable)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very little</meaningText>
+          <description>Very little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Quite a lot</meaningText>
+          <description>Quite a lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Extremely</meaningText>
+          <description>Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>7. Did smoking help you concentrate? (smoking_help_you_concentrate)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very little</meaningText>
+          <description>Very little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Quite a lot</meaningText>
+          <description>Quite a lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Extremely</meaningText>
+          <description>Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>8. Did smoking reduce your hunger for food? (reduce_your_hunger)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very little</meaningText>
+          <description>Very little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Quite a lot</meaningText>
+          <description>Quite a lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Extremely</meaningText>
+          <description>Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>9. Did smoking make you dizzy? (smoking_make_you_dizzy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very little</meaningText>
+          <description>Very little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Quite a lot</meaningText>
+          <description>Quite a lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Extremely</meaningText>
+          <description>Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>10. Did smoking make you nauseous? (smoking_make_you_nauseous)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very little</meaningText>
+          <description>Very little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Quite a lot</meaningText>
+          <description>Quite a lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Extremely</meaningText>
+          <description>Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>11. Did smoking immediately relieve your craving for a cigarette? (smoking_relieve_your_craving)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very little</meaningText>
+          <description>Very little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Quite a lot</meaningText>
+          <description>Quite a lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Extremely</meaningText>
+          <description>Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>12. Did you enjoy smoking? (did_you_enjoy_smoking)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very little</meaningText>
+          <description>Very little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Quite a lot</meaningText>
+          <description>Quite a lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Extremely</meaningText>
+          <description>Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>Scoring Procedure and Interpretation  The modified Cigarette Evaluation Questionnaire (mCEQ) uses three multiitem subscales and two single items: "Smoking Satisfaction" (items 1, 2, and 12) "Psychological Reward" (items 4 through 8) "Aversion" (items 9 and 10) "Enjoyment of Respiratory Tract Sensations" (item 3) and "Craving Reduction" (item 11). Scores for each subscale are calculated as the mean of the individual item responses or the single item. Higher scores indicate greater intensity on that scale. *1= not at all *2= very little *3= a little *4= moderately *5= a lot *6= quite a lot *7= extremely (scoring_5201044)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX520104</protocolID>
+     <longName>Acute Subjective Response to Substances - Current - Specific - Tobacco</longName>
+     <context>PhenX</context>
+     <shortName>PX520104</shortName>
+     <preferredDefinition>The Cigarette Evaluation Questionnaire (CEQ) assesses the degree to which subjects experience the reinforcing effects of smoking. It is a self-administered questionnaire that contains 11 items covering both the reinforcing and the adverse effects of smoking, asking subjects to rate the extent to which recently smoked cigarettes were satisfying, tasted good, made them dizzy, calmed them down, helped them concentrate, made them feel more awake, reduced appetite, made them nauseous, decreased irritability, produced enjoyable sensations in the throat and chest, and immediately reduced craving for cigarettes. The modified Cigarette Evaluation Questionnaire (mCEQ) contains an extra item on enjoying smoking in addition to the 11 original items. The items are rated on a seven-point scale ranging from 1 for "Not at all" to 7 for "Extremely."</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:02</dateCreated>
+    <longName>PhenX PX520201 - Acute Subj Responses To Substretrospectivetobacco</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This instrument uses a set of self-administered questions to assess early response to tobacco smoking, and it may also be used for marijuana smoking. Seven items inquire about pleasant and unpleasant experiences and ask respondents if they encountered various effects while smoking a tobacco cigarette for the first time. Pleasurable and unpleasant sensations are rated on a scale ranging from 1 for "none" to 4 for "intense." Pleasurable rush or buzz, relaxation, nausea, cough, and dizziness are checked "yes" or "no," depending on the respondent's experience.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Please rate the extent to which these words describe your feelings the very first time you smoked a cigarette.</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:02</dateCreated>
+      <longName>Acute Subjective Responses to Substances - Retrospective - Tobacco</longName>
+      <preferredDefinition>Acute Subjective Responses to Substances - Retrospective - Tobacco</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>While smoking your very first cigarette, did you have pleasurable sensations? (first_cigarette_pleasurable_sensations)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Intense</meaningText>
+          <description>Intense</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>While smoking your very first cigarette, did you have unpleasant sensations? (first_cigarette_unpleasant_sensations)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Intense</meaningText>
+          <description>Intense</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>Please answer yes or no to the following questions about the very first cigarette you smoked (info_520201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>While smoking your very first cigarette, did you have a pleasurable buzz or rush? (first_cigarette_buzz_or_rush)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>While smoking your very first cigarette, did you feel relaxed? (first_cigarette_feel_relaxed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>While smoking your very first cigarette, did you feel dizzy? (first_cigarette_feel_dizzy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>While smoking your very first cigarette, did you have nausea? (first_cigarette_nausea)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>While smoking your very first cigarette, did you cough? (first_cigarette_cough)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>Were you alone the first time you experimented with cigarettes? (first_cigarette_alone)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX520201</protocolID>
+     <longName>Acute Subjective Responses to Substances - Retrospective - Tobacco</longName>
+     <context>PhenX</context>
+     <shortName>PX520201</shortName>
+     <preferredDefinition>This instrument uses a set of self-administered questions to assess early response to tobacco smoking, and it may also be used for marijuana smoking. Seven items inquire about pleasant and unpleasant experiences and ask respondents if they encountered various effects while smoking a tobacco cigarette for the first time. Pleasurable and unpleasant sensations are rated on a scale ranging from 1 for "none" to 4 for "intense." Pleasurable rush or buzz, relaxation, nausea, cough, and dizziness are checked "yes" or "no," depending on the respondent's experience.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:02</dateCreated>
+    <longName>PhenX PX520202 - Acute Subj Responses To Substretrospectivealcohol</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Self-Rating of the Effects of Alcohol (SRE) is a self-administered questionnaire that asks the respondent to think back about their drinking (approximately his/her first five times of drinking) and to list the number of standard drinks (10–12 g of ethanol) required to experience the effects of alcohol, which include feelings of intoxication, slurred speech, feeling unsteady or developing a stumbling gait, and unwanted falling asleep. Respondents are instructed to list only the alcohol effects they actually experienced during their earliest drinking time frame.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:02</dateCreated>
+      <longName>Acute Subjective Responses to Substances - Retrospective - Alcohol</longName>
+      <preferredDefinition>Acute Subjective Responses to Substances - Retrospective - Alcohol</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>How many drinks did it take for you to begin to feel different? (where you could feel an effect): First 5 times you ever drank (number_drinks_feel_different_first)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>How many drinks did it take for you to begin to feel different? (where you could feel an effect): Recent 3 months drinking once a month (number_drinks_feel_different_recent)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>How many drinks did it take for you to begin to feel different? (where you could feel an effect): Period of heaviest drinking (number_drinks_feel_different_heaviest)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>How many drinks did it take for you to feel a bit dizzy or to begin to slur your speech? First 5 times you ever drank (number_drinks_feel_dizzy_first)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>How many drinks did it take for you to feel a bit dizzy or to begin to slur your speech? Recent 3 months drinking once a month (number_drinks_feel_dizzy_recent)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>How many drinks did it take for you to feel a bit dizzy or to begin to slur your speech? Period of heaviest drinking (number_drinks_feel_dizzy_heaviest)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>How many drinks did it take you to begin stumbling, or walking in an uncoordinated manner? First 5 times you ever drank (number_drinks_stumbling_first)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>How many drinks did it take you to begin stumbling, or walking in an uncoordinated manner? Recent 3 months drinking once a month (number_drinks_stumbling_recent)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>How many drinks did it take you to begin stumbling, or walking in an uncoordinated manner? Period of heaviest drinking (number_drinks_stumbling_heaviest)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>How many drinks did it take you to pass out, or fall asleep when you did not want to? First 5 times you ever drank (number_drinks_pass_out_first)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>How many drinks did it take you to pass out, or fall asleep when you did not want to? Recent 3 months drinking once a month (number_drinks_pass_out_recent)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>How many drinks did it take you to pass out, or fall asleep when you did not want to? Period of heaviest drinking (number_drinks_pass_out_heaviest)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX520202</protocolID>
+     <longName>Acute Subjective Responses to Substances - Retrospective - Alcohol</longName>
+     <context>PhenX</context>
+     <shortName>PX520202</shortName>
+     <preferredDefinition>The Self-Rating of the Effects of Alcohol (SRE) is a self-administered questionnaire that asks the respondent to think back about their drinking (approximately his/her first five times of drinking) and to list the number of standard drinks (10–12 g of ethanol) required to experience the effects of alcohol, which include feelings of intoxication, slurred speech, feeling unsteady or developing a stumbling gait, and unwanted falling asleep. Respondents are instructed to list only the alcohol effects they actually experienced during their earliest drinking time frame.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:02</dateCreated>
+    <longName>PhenX PX520301 - Selfreported Craving Specific Alcohol</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Alcohol Urge Questionnaire (AUQ) consists of eight statements about the respondent's feelings and thoughts about drinking as they are completing the questionnaire (i.e., right now). Drinking refers to various types of alcohol, including beer, wine and liquor. The respondent is asked to respond to each statement about alcohol craving via a 7-item Likert scale ranging from "strongly disagree" to "strongly agree."</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Listed below are questions that ask about your feelings about drinking. The words "drinking" and "have a drink" refer to having a drink containing alcohol such as beer, wine, or liquor. Please indicate how much you agree or disagree with each ..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:02</dateCreated>
+      <longName>Self-reported Craving - Specific - Alcohol</longName>
+      <preferredDefinition>Self-reported Craving - Specific - Alcohol</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>1. All I want to do now is have a drink. (all_want_is_drink)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>2. I do not need to have a drink now. (do_not_need_drink)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>3. It would be difficult to turn down a drink this minute. (difficult_to_turn_downdrink)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>4. Having a drink now would make things seem just perfect. (having_a_drink_perfect)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>5. I want a drink so bad I can almost taste it. (want_drink_almost_taste)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>6. Nothing would be better than having a drink right now. (nothing_better_than_drink)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>7. If I had the chance to have a drink, I don't think I would drink it. (chance_to_drink_would_not)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>8. I crave a drink right now. (crave_a_drink)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>Scoring Procedure and Interpretation  Each item is scored on a 1 to 7 scale (Strongly Disagree = 1 and Strongly Agree = 7). Items 2 and 7 are reverse scored. A total score is computed by averaging the item scores. Higher scores reflect greater craving (scoring_520301)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX520301</protocolID>
+     <longName>Self-reported Craving - Specific - Alcohol</longName>
+     <context>PhenX</context>
+     <shortName>PX520301</shortName>
+     <preferredDefinition>The Alcohol Urge Questionnaire (AUQ) consists of eight statements about the respondent's feelings and thoughts about drinking as they are completing the questionnaire (i.e., right now). Drinking refers to various types of alcohol, including beer, wine and liquor. The respondent is asked to respond to each statement about alcohol craving via a 7-item Likert scale ranging from "strongly disagree" to "strongly agree."</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:02</dateCreated>
+    <longName>PhenX PX520302 - Selfreported Craving Specific Cocaine</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Cocaine Craving Questionnaire–Brief (CCQ–Brief) consists of 10 statements about the respondent's feelings and thoughts about using cocaine as her or she is completing the questionnaire (i.e., right now). This instrument allows investigators to obtain a reflection of the respondent's general cocaine craving.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Indicate how strongly you agree or disagree with each of the following statements by selecting a number between 1 (STRONGLY DISAGREE) and 7 (STRONGLY AGREE). The closer your selection to one end or the other indicates the strength of your agre..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:02</dateCreated>
+      <longName>Self-reported Craving - Specific - Cocaine</longName>
+      <preferredDefinition>Self-reported Craving - Specific - Cocaine</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>1. I want cocaine so bad I can almost taste it. (want_cocaine_almost_taste)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>2. I have an urge for cocaine. (urge_for_cocaine)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>3. I am going to use cocaine as soon as possible. (use_cocaine_soon_as_possible)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>4. I think that I could resist using "coke" now. (could_resist_using_coke)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>5. I crave "coke" right now. (crave_coke)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>6. All I want to use now is cocaine. (want_to_use_cocaine)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>7. I have no desire for cocaine right now. (no_desire_for_cocaine)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>8. Using cocaine now would make things seem just perfect. (cocaine_make_things_perfect)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>9. I will use cocaine as soon as I get the chance. (use_cocaine_soon)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>10. Nothing would be better than using "coke" right now. (nothing_better_than_coke_now)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>STRONGLY DISAGREE</meaningText>
+          <description>STRONGLY DISAGREE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>STRONGLY AGREE</meaningText>
+          <description>STRONGLY AGREE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:08:02</dateCreated>
+        <questionText>Scoring Procedure and Interpretation :Each item is scored on a scale ranging from 1 for "Strongly Disagree" to 7 for "Strongly Agree." The scores from items 13, 5, 6, and 810 are used as the raw scores. Items 4 and 7 should be reversescored (raw score = 8 minus reversekeyed item score) (Heinz et al., 2006). A total score is obtained by averaging all items (Sussner et al., 2006) (scoring_510302)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX520302</protocolID>
+     <longName>Self-reported Craving - Specific - Cocaine</longName>
+     <context>PhenX</context>
+     <shortName>PX520302</shortName>
+     <preferredDefinition>The Cocaine Craving Questionnaire–Brief (CCQ–Brief) consists of 10 statements about the respondent's feelings and thoughts about using cocaine as her or she is completing the questionnaire (i.e., right now). This instrument allows investigators to obtain a reflection of the respondent's general cocaine craving.</preferredDefinition>
+    </protocol>
+   </form>   
+   </forms>

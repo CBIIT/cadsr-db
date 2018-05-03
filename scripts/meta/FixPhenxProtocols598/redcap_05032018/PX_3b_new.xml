@@ -1,0 +1,1290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+ <collectionName>PhenX Protocols - 3b</collectionName>
+ <collectionDescription>Load PhenX PX020802,PX020901,PX021001,PX021101,PX021301,PX020303</collectionDescription>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>PhenX PX020802 - Hip Circumference Hip Circumference</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Measurement of the hip girth at the level of the maximum protrusion of the buttocks.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction>
+ <text>Figure 1.</text>
+ </headerInstruction> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>Hip Circumference Hip Circumference</longName>
+ <instruction/>
+ <preferredDefinition>Hip Circumference Hip Circumference</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>With the subject standing upright with feet together and weight evenly distributed, did the examiner gather the fabric of the subject's pants, holding the sides of the pants snugly, before placing the steel measuring tape around the hips, anchoring the measuring tape at the maximum protuberance of the buttocks? (hip_circumference_tape_measure_placement)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Did the examiner then release the folds of the pants and then adjust the tape so that it is on a horizontal plane and held snugly but not pulled tight? (hip_circumference_tape_measure_adjustment)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>What was the hip measurement? (hip_circumference_measurement_1)</questionText>
+ <instruction>
+ <text>UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>What was the hip measurement? (hip_circumference_measurement_2)</questionText>
+ <instruction>
+ <text>UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>What was the hip measurement? (hip_circumference_measurement_3)</questionText>
+ <instruction>
+ <text>UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX020802</protocolID>
+ <longName>Hip Circumference - Hip Circumference</longName>
+ <context>PhenX</context>
+ <shortName>PX020802</shortName>
+ <preferredDefinition>Measurement of the hip girth at the level of the maximum protrusion of the buttocks.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>PhenX PX020901 - Maximum Adult Height</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Self-reported maximum height</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>Maximum Adult Height</longName>
+ <instruction/>
+ <preferredDefinition>Maximum Adult Height</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>ENTER HEIGHT IN FEET AND INCHES OR METERS AND CENTIMETERS (height_in_feet)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>FEET AND INCHES</meaningText>
+ <description>FEET AND INCHES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>METERS AND CENTIMETERS</meaningText>
+ <description>METERS AND CENTIMETERS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>How tall {are you/is [participant]} without shoes? (current_height_meters)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;maxLength=3;[height_in_feet] = '2'; UOM=meters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>How tall {are you/is [participant]} without shoes? (current_height_centimeters)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;maxLength=99;[height_in_feet] = '2'; UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>How tall {are you/is [participant]} without shoes? (current_height_feet)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=2;maxLength=8;[height_in_feet] = '1'; UOM=Feet</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>How tall {are you/is [participant]} without shoes? (current_height_inches)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;maxLength=11;[height_in_feet] = '1'; UOM=Inches</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>respondent is 50 years and older? (fifty_and_older)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>How tall {were you/was SP} at age 25? [If you don't know {your/his/her} exact height, please make your best guess.] (age25_height_meters)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;maxLength=3;[height_in_feet] = '2' and [fifty_and_older] = '1'; UOM=meters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>How tall {were you/was SP} at age 25? [If you don't know {your/his/her} exact height, please make your best guess.] (age25_height_centimeters)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;maxLength=99;[height_in_feet] = '2' and [fifty_and_older] = '1'; UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>How tall {were you/was SP} at age 25? [If you don't know {your/his/her} exact height, please make your best guess.] (age25_height_feet)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=2;maxLength=8;[height_in_feet] = '1' and [fifty_and_older] = '1'; UOM=Feet</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>How tall {were you/was SP} at age 25? [If you don't know {your/his/her} exact height, please make your best guess.] (age25_height_inches)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;maxLength=11;[height_in_feet] = '1' and [fifty_and_older] = '1'; UOM=Inches</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>When the question is being asked of a proxy respondent, insert the participant's name here (age25_height_proxy_name)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX020901</protocolID>
+ <longName>Maximum Adult Height</longName>
+ <context>PhenX</context>
+ <shortName>PX020901</shortName>
+ <preferredDefinition>Self-reported maximum height</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>PhenX PX021001 - Maximum Adult Weight</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>The protocol contains an interview question asking the study participant to recall his or her maximum adult weight.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>Maximum Adult Weight</longName>
+ <instruction/>
+ <preferredDefinition>Maximum Adult Weight</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>What is the most {you have/[participant] has} ever weighed? ENTER WEIGHT IN POUNDS OR KILOGRAMS (maxium_wt_pound)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Pounds</meaningText>
+ <description>Pounds</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Kilograms</meaningText>
+ <description>Kilograms</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>[IF STUDY PARTICIPANT IS MALE] What is the most {you have/[participant] has} ever weighed? [IF STUDY PARTICIPANT IS FEMALE] What is the most {you have/[participant] has} ever weighed? Do not include any times when {you were/she was} pregnant. (maximum_weight_kgs)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=20;maxLength=1400;[maxium_wt_pound] = '2'; UOM=Kilograms</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>[IF STUDY PARTICIPANT IS MALE] What is the most {you have/[participant] has} ever weighed? [IF STUDY PARTICIPANT IS FEMALE] What is the most {you have/[participant] has} ever weighed? Do not include any times when {you were/she was} pregnant. (maximum_weight_pounds)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=50;maxLength=1200;[maxium_wt_pound] = '1'; UOM=Pounds</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>How old {were you/was [participant]} then? [If you don't know {your/his/her} exact age, please make your best guess.] (maximum_weight_age)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=Year</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>How old {were you/was [participant]} then? [If you don't know {your/his/her} exact age, please make your best guess.] (maximum_weight_age_coded)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>7777</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>9999</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>When the question is being asked of a proxy respondent, insert the participant's name here (maximum_weight_proxy_name)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX021001</protocolID>
+ <longName>Maximum Adult Weight</longName>
+ <context>PhenX</context>
+ <shortName>PX021001</shortName>
+ <preferredDefinition>The protocol contains an interview question asking the study participant to recall his or her maximum adult weight.</preferredDefinition>
+ </protocol>
+ </form>
+  <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>PhenX PX021301 - Pregnancy Weight Gain</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>There are many research contexts in which one could collect this information, and how the information is collected will vary depending on the context. For self-reported total weight gain during pregnancy, the participant is asked to report the total amount of weight gained during her most recent pregnancy. Other data to be collected at the same time are height, duration of the most recent pregnancy, and the date of the delivery.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>Pregnancy Weight Gain</longName>
+ <instruction/>
+ <preferredDefinition>Pregnancy Weight Gain</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Enter weight in pounds or kilograms (weight_in_pounds)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>pounds</meaningText>
+ <description>pounds</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>kilograms</meaningText>
+ <description>kilograms</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>For women who are currently at least 20 weeks pregnant, ask the following questions: Just before you got pregnant with your current pregnancy, how much did you weigh? (twentyweek_weight_before_kgs)</questionText>
+ <instruction>
+ <text>datatype=number;[weight_in_pounds] = '2'; UOM=Kilograms</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>For women who are currently at least 20 weeks pregnant, ask the following questions: Just before you got pregnant with your current pregnancy, how much did you weigh? (twentyweek_weight_before_lbs)</questionText>
+ <instruction>
+ <text>datatype=number;[weight_in_pounds] = '1'; UOM=Pounds</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>For women who are currently at least 20 weeks pregnant, ask the following questions: Just before you got pregnant with your current pregnancy, how much did you weigh? (twentyweek_weight_before_lbs_coded)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>For women who are currently at least 20 weeks pregnant, ask the following questions: How much weight have you gained during this pregnancy? (twentyweek_weight_gained_kgs)</questionText>
+ <instruction>
+ <text>datatype=number;[weight_in_pounds] = '2'; UOM=Kilograms</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>For women who are currently at least 20 weeks pregnant, ask the following questions: How much weight have you gained during this pregnancy? (twentyweek_weight_gained_lbs)</questionText>
+ <instruction>
+ <text>datatype=number;[weight_in_pounds] = '1'; UOM=Pounds</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>For women who are currently at least 20 weeks pregnant, ask the following questions: How much weight have you gained during this pregnancy? (twentyweek_weight_gained_coded)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>I LOST weight during your pregnancy</meaningText>
+ <description>I LOST weight during your pregnancy</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>I don't know</meaningText>
+ <description>I don't know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>For women who are currently at least 20 weeks pregnant, ask the following questions: How many weeks pregnant are you currently? (pregnancy_weeks)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=Weeks</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>For women who are not currently pregnant (but parous), ask the following questions: How much did you weigh before your most recent pregnancy? (parous_weight_before_kgs)</questionText>
+ <instruction>
+ <text>datatype=number;[weight_in_pounds] = '2'; UOM=Kilograms</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>For women who are not currently pregnant (but parous), ask the following questions: How much did you weigh before your most recent pregnancy? (parous_weight_before_lbs)</questionText>
+ <instruction>
+ <text>datatype=number;[weight_in_pounds] = '1'; UOM=Pounds</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>For women who are not currently pregnant (but parous), ask the following questions: How much weight did you gain during your most recent pregnancy? (parous_weight_gained_kgs)</questionText>
+ <instruction>
+ <text>datatype=number;[weight_in_pounds] = '2'; UOM=Kilograms</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>For women who are not currently pregnant (but parous), ask the following questions: How much weight did you gain during your most recent pregnancy? (parous_weight_gained_lbs)</questionText>
+ <instruction>
+ <text>datatype=number;[weight_in_pounds] = '1'; UOM=Pounds</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>For women who are not currently pregnant (but parous), ask the following questions: How much weight did you gain during your most recent pregnancy? (parous_weight_gained_coded)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>I LOST weight during your pregnancy</meaningText>
+ <description>I LOST weight during your pregnancy</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>I don't know</meaningText>
+ <description>I don't know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>For women who are not currently pregnant (but parous), ask the following questions: For your most recent pregnancy, how many weeks along were you when you delivered? (parous_delivery_weeks)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=Weeks</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX021301</protocolID>
+ <longName>Total Pregnancy Weight Gain - Self-Reported Weight Gain</longName>
+ <context>PhenX</context>
+ <shortName>PX021301</shortName>
+ <preferredDefinition>There are many research contexts in which one could collect this information, and how the information is collected will vary depending on the context. For self-reported total weight gain during pregnancy, the participant is asked to report the total amount of weight gained during her most recent pregnancy. Other data to be collected at the same time are height, duration of the most recent pregnancy, and the date of the delivery.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>PhenX PX021101 - Midupper Arm Circumference</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Arm circumference is measured at the midpoint of the distance from the acromion process of the shoulder to the tip of the olecranon process of the elbow.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>Midupper Arm Circumference</longName>
+ <instruction/>
+ <preferredDefinition>Midupper Arm Circumference</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Arm used to measure mid upper arm circumference. (arm_for_measurement)</questionText>
+ <instruction>
+ <text>UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right</meaningText>
+ <description>Right</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left</meaningText>
+ <description>Left</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Mid Upper Arm Circumference image 14 (mid_upper_arm_circumference_exhibit1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Mid Upper Arm Circumference image 5 (mid_upper_arm_circumference_exhibit5)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Distance from the spine extending from acromion process to tip of the olecranon process measured to the nearest 0.1 centimeter. (arm_length_1)</questionText>
+ <instruction>
+ <text>minLength=1;maxLength=100; UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Midpoint of the distance from the spine extending from acromion process to tip of the olecranon process measured to the nearest 0.1 centimeter. (arm_midpoint_1)</questionText>
+ <instruction>
+ <text>minLength=1;maxLength=100; UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Arm circumference measured at the midpoint of the distance from the spine extending from acromion process to tip of the olecranon process measured to the nearest 0.1 centimeter. (mid_upper_arm_circumference_1)</questionText>
+ <instruction>
+ <text>minLength=1;maxLength=100; UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Distance from the spine extending from acromion process to tip of the olecranon process measured to the nearest 0.1 centimeter. (arm_length_2)</questionText>
+ <instruction>
+ <text>minLength=1;maxLength=100; UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Midpoint of the distance from the spine extending from acromion process to tip of the olecranon process measured to the nearest 0.1 centimeter. (arm_midpoint_2)</questionText>
+ <instruction>
+ <text>minLength=1;maxLength=100; UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Arm circumference measured at the midpoint of the distance from the spine extending from acromion process to tip of the olecranon process measured to the nearest 0.1 centimeter. (mid_upper_arm_circumference_2)</questionText>
+ <instruction>
+ <text>minLength=1;maxLength=100; UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Distance from the spine extending from acromion process to tip of the olecranon process measured to the nearest 0.1 centimeter (arm_length_3)</questionText>
+ <instruction>
+ <text>minLength=1;maxLength=100; UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Midpoint of the distance from the spine extending from acromion process to tip of the olecranon process measured to the nearest 0.1 centimeter (arm_midpoint_3)</questionText>
+ <instruction>
+ <text>minLength=1;maxLength=100; UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Arm circumference measured at the midpoint of the distance from the spine extending from acromion process to tip of the olecranon process measured to the nearest 0.1 centimeter (mid_upper_arm_circumference_3)</questionText>
+ <instruction>
+ <text>minLength=1;maxLength=100; UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Average arm circumference measured at the midpoint of the distance from the spine extending from acromion process to tip of the olecranon process recorded to the nearest 0.1 centimeter (mid_upper_arm_circumference_average)</questionText>
+ <instruction>
+ <text>minLength=1;maxLength=100; UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX021101</protocolID>
+ <longName>Mid-Upper Arm Circumference</longName>
+ <context>PhenX</context>
+ <shortName>PX021101</shortName>
+ <preferredDefinition>Arm circumference is measured at the midpoint of the distance from the acromion process of the shoulder to the tip of the olecranon process of the elbow.</preferredDefinition>
+ </protocol>
+ </form>
+  <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <longName>PhenX PX020303 - Body Composition Triceps Skinfold Thickness</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Measurement of the study subject subcutaneous fat mass using calipers to measure skinfold thickness over the triceps muscle. Skinfold thicknesses may also be measured at the number of other sites, including the midaxillary, pectoral, abdominal, anterior thigh, suprapatellar, medical calf, biceps, and forearm sites. If these latter sites are of interest, definitions and protocols are available in manuals that describe anthropometric measurements.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction>
+ <text>Triceps Skinfold: The triceps skinfold is measured at the midpoint of the upper arm. The procedures for making this mark are explained in Upper Arm Length. Follow the procedures after that to perform the triceps skinfold measure.Upper Arm Leng..TRUNCATED</text>
+ </headerInstruction> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <longName>Body Composition Triceps Skinfold Thickness</longName>
+ <instruction/>
+ <preferredDefinition>Body Composition Triceps Skinfold Thickness</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>1. Position the participant: Ask the participant to turn so that you stand behind his or her right side. Have the participant stand upright with weight evenly distributed on both feet, the shoulders relaxed, and the arms hanging loosely at the sides. Flexing or tightening the arm muscles when the measurement is made will yield an inaccurate measurement.2. Grasp the skinfold: Using your thumb and index finger, grasp a fold of skin and subcutaneous adipose tissue approximately 2.0 cm above the midarm circumference mark. If you have difficulty separating the skinfold from the triceps muscle, start at the elbow where the tissue tends to be looser and work your way up to the mark. Ensure that the skinfold consists of a double thickness and sits parallel to the long axis of the arm.3. Position the caliper: Holding the skinfold 2.0 cm above the ircumference mark, place the tips of the caliper jaws over the complete skinfold. Ensure that the mark remains centered between the tips and that the jaws sit perpendicular to the length of the skinfold. Exhibit 5 shows the correct placement of the caliper for this measurement.4. Take the measurement: Continue to hold the skinfold in place and release the caliper handle to exert full tension on the skinfold. Wait 3 seconds for the needle on the caliper dial to settle on an accurate measurement. Read the thickness to the nearest 0.2 mm.5. Record the result. Remove the caliper jaws first and then release the skinfold (desc2_02303)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>Have the study staff undergone any training or retraining in anthropometric data collection? (bodycomposition_tricep_training)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>Will duplicate measurements be taken? (bodycomposition_tricep_duplicate_measurements)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>Is the team adequately staffed so that more than one person is available for proper collection of measurements where required? (bodycomposition_tricep_adequate_training)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>Has the staff been properly trained to acquire an accurate recording of the protocols and measurements units of data collection? (bodycomposition_tricep_quality_training)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>Has the staff been properly trained in the use of and have access to required and properly calibrated equipment? (bodycomposition_tricep_proper_equipment)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>Was the participant instructed to stand upright with weight evenly distributed on both feet, right arm bent 90 degrees at the elbow, and the right palm facing up? (bodycomposition_tricep_subject_instructions1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>After locating the end of the spine of the right scapula by following the scapula out to the arm until it makes a sharp Vturn to the front of the body, using a cosmetic pencil, was a horizontal line made at the uppermost edge of the posterior border of the spine extending from the acromion process (see exhibit 1)? (bodycomposition_tricep_halfway_measurement_marking)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>Holding the zero end of the measuring tape at the horizontal line mark, was a measurement taken by extending the tape down the posterior surface of the arm to the tip of the olecranon process (the bony part of the elbow, exhibit 2)? (bodycomposition_tricep_halfway_measurement_method)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>What was the measurement, to the nearest 0.1 cm? (bodycomposition_tricep_halfway_measurement)</questionText>
+ <instruction>
+ <text>UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>After dividing the taken measurement in half, was a horizontal mark made at the midpoint? (bodycomposition_tricep_halfway_point)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>Was the participant instructed to stand upright with weight evenly distributed on both feet, shoulders relaxed, and arms hanging loosely at the sides? (bodycomposition_tricep_subject_instructions2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>Using the thumb and index finger, was the fold of skin and subcutaneous adipose tissue grasped approximately 2.0 cm above the midarm circumference mark? (bodycomposition_tricep_skinfold_grasp_method)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>While holding the skinfold 2.0 cm above the circumference mark, were the tips of the calipers placed over the complete skinfold? (bodycomposition_tricep_measurement_method1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>While holding the skinfold 2.0 cm above the circumference mark, was the caliper handle released to exert full tension on the skinfold for at least 3 seconds before a measurement was taken? (bodycomposition_tricep_measurement_method2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-23T17:56:54</dateCreated>
+ <questionText>What was the thickness of the skinfold to the nearest 0.2 mm? (bodycomposition_tricep_measurement)</questionText>
+ <instruction>
+ <text>UOM=millimeter</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX020303</protocolID>
+ <longName>Body Composition - Triceps Skinfold Thickness</longName>
+ <context>PhenX</context>
+ <shortName>PX020303</shortName>
+ <preferredDefinition>Measurement of the study subject subcutaneous fat mass using calipers to measure skinfold thickness over the triceps muscle. Skinfold thicknesses may also be measured at the number of other sites, including the midaxillary, pectoral, abdominal, anterior thigh, suprapatellar, medical calf, biceps, and forearm sites. If these latter sites are of interest, definitions and protocols are available in manuals that describe anthropometric measurements.</preferredDefinition>
+ </protocol>
+ </form> 
+ </forms>

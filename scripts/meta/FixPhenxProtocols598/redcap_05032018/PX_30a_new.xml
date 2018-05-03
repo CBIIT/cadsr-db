@@ -1,0 +1,1889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 30a</collectionName>
+  <collectionDescription>Load PhenX PX160401,PX160501,PX160601,PX160701,PX160801,PX160802</collectionDescription>  
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:29:09</dateCreated>
+    <longName>PhenX PX160401 - Assay For Hepatitis B</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol provides instructions for drawing, processing, and storing blood for hepatitis B (HBV) from the National Health and Nutrition Examination Survey (NHANES). As multiple tests must be performed to make the most accurate diagnosis of HBV, the protocol also provides basic guidelines to aid comparability among different studies. Toolkit users are referred to the U.S. Food and Drug Administration's (FDA's) approved laboratory assays.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:09</dateCreated>
+      <longName>Assay for Hepatitis B</longName>
+      <preferredDefinition>Assay for Hepatitis B</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Do you have hemophilia? (exclusion from Phlebotomy) (pxt160401_hemophilia)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Have you received cancer chemotherapy in the past four weeks or do you anticipate such therapy in the next four weeks? (exclusion from Phlebotomy) (pxt160401_chemotherapy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Exclusion Criteria (pxt160401_exclusion_criteria)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Hemophilia</meaningText>
+          <description>Hemophilia</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Received cancer chemotherapy in the last 4 weeks</meaningText>
+          <description>Received cancer chemotherapy in the last 4 weeks</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Venipuncture Procedures   Editor's Note: Please review chapter 4 of the Laboratory Procedures Manual from the NHANES for a full description of phlebotomy procedures: 20072008 NHANES Lab Manual. Venipuncture should generally be performed using the median cubital, cephalic, or basilica veins in the left arm unless this arm is unsuitable. If the veins in the left arm are unsuitable, look for suitable veins on the right arm. If the veins in the antecubital space on both arms are not suitable, then look for veins in the forearm or dorsal side of the hand on the left arm/hand and then right arm/hand. (venip_proc_hep_b)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Was blood drawn? (pxt160401_blood_draw_done)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Was full amount obtained? (pxt160401_blood_draw_sample)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Record any comments about the blood draw, including any reasons for the tube not being drawn according to the protocol. (pxt160401_blood_draw_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Record any comments about the sample during processing. (pxt160401_sample_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Record the type of assay used for hepatitis B testing. (hepatitis_b_assay_type)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Make of the equipment used to perform the hepatitis B assay. (pxt160401_equipment_make)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Manufacturer of the equipment used to perform the hepatitis B assay. (pxt160401_equipment_manufacturer)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Repeatability of the assay (pxt160401_assay_repeatability)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Coefficient of variation for the assay (pxt160401_coefficient_of_variation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Hepatitis B assay results (hepatitis_b_assay_results)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Positive</meaningText>
+          <description>Positive</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Negative</meaningText>
+          <description>Negative</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX160401</protocolID>
+     <longName>Assay for Hepatitis B</longName>
+     <context>PhenX</context>
+     <shortName>PX160401</shortName>
+     <preferredDefinition>This protocol provides instructions for drawing, processing, and storing blood for hepatitis B (HBV) from the National Health and Nutrition Examination Survey (NHANES). As multiple tests must be performed to make the most accurate diagnosis of HBV, the protocol also provides basic guidelines to aid comparability among different studies. Toolkit users are referred to the U.S. Food and Drug Administration's (FDA's) approved laboratory assays.</preferredDefinition>
+    </protocol>
+   </form>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:29:09</dateCreated>
+    <longName>PhenX PX160601 - Assay For Human Leukocyte Antigen Hla Genotyping</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes instructions for drawing, processing and storing blood according to the Type 1 Diabetes Genetics Consortium (T1DGC) Manual of Operations. Human Leukocyte Antigen is measured by using the linear array genotyping system method.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>The protocol for blood collection and processing is found in the Type 1 Diabetes Genetics Consortium Blood Collection and Processing Manual of Operations (T1DGC Manual of Operations). The protocol for the extraction of DNA from whole blood is ..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:09</dateCreated>
+      <longName>Assay for Human Leukocyte Antigen (HLA) Genotyping</longName>
+      <preferredDefinition>Assay for Human Leukocyte Antigen (HLA) Genotyping</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Venipuncture / Blood Collection Procedures:  Editor's Note: Please review chapter VI of the Type 1 Diabetes Genetics Consortium Blood Collection and Processing Manual of Operations (T1DGC Manual of Operations  Chapter VI) for a full description of Phlebotomy procedures. General steps:  1. Blood is collected from the best available vein. 2. Blood for DNA analysis should be collected in a 4.9mL purple top tube (EDTA)  3. The tubes are handled in a way that prevents hemolysis  4. The tube contents are mixed by inverting eight times  5. Record date and time of blood collection  6. Record the reason why a blood sample was not collected. (venip_blood_collect)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+          </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Blood Processing:  Editor's Note: Please review chapter VI of the Type 1 Diabetes Genetics Consortium Blood Collection and Processing Manual of Operations (T1DGC Manual of Operations  Chapter VI) for a full description of Blood Processing procedures. The sample is placed in an ice and water bath. Incubate the sample between 30 and 60 minutes. Do not let any of the samples stand in direct sunlight or at extreme temperatures. The sample is centrifuged, to separate the plasma from the cells. The plasma is pipetted away from the sample without disturbing the cell pack. The cell pack is shipped at ambient temperature to the DNA repository for DNA extraction. (blood_processing)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Date of blood Collection  month (date_of_blood_collection_month)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Date of blood Collection  day (date_of_blood_collection_day)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Date of blood Collection  year (date_of_blood_collection_year)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Time of blood collection  hour (time_of_blood_collection_hour)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Time of blood collection  minutes (time_of_blood_collection_minutes)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Time of blood collection  am or pm (time_of_blood_collection_ampm)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>am</meaningText>
+          <description>am</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>pm</meaningText>
+          <description>pm</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Was blood drawn? (pxt160601_blood_draw_done)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Was full amount obtained? (pxt160601_blood_draw_sample)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Record any comments about the blood draw, including any reasons for the tube not being drawn according to the protocol. (pxt160601_blood_draw_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Record any comments about the sample during processing. (pxt160601_sample_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>DNA Extraction from Whole Blood: Please review Rosinger et al., 2010 for the full description of the DNA extraction protocol. DNA is isolated by a modified salting out procedure or by cholorform extraction  DNA concentration is determined by fluorescence using a doublestranded DNA quantification reagent. DNA quality is confirmed by comparison to an appropriate standard (ladder) on an agarose gel. (dna_extraction)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>DNA concentration (dna_concentration)</questionText>
+        <instruction>
+         <text>UOM=ug/uL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Enter comments to describe DNA quality (dna_quality)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Laboratory Assay for Human Leukocyte Antigen  Please review Mychaleckyj et al., 2010 for a full description of the HLA genotyping methods. Please note that the immobilized linear arrays used to genotype the samples were provided by Roche Molecular Systems and are not commercially available. DNA (5 ug total: 250 ul at 20ng/uL) is shipped to the HLA genotyping laboratory in screw top tubes. Each human leukocyte antigen region is amplified from 60 ng of genomic DNA by polymerase chain reaction (PCR) on a separate 96 well plate according to standardized protocol (see Mychaleckyj et al., 2010 for details of the polymerase chain reaction reaction) Polymerase chain reaction products are hybridized to oligonucleotide probes attached to nylonbacked membranes. The probes correspond to specific human leukocyte antigen DNA sequences. (Please note that the immobilized linear arrays used to genotype the samples were provided by Roche Molecular Systems and are not commercially available.) Hybridized probes are visualized and assigned a genotype by software. (laboratory_assay)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Record the type of assay used for HLA testing. (hla_assay_type)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Make of the equipment used to perform the HLA assay. (pxt160601_equipment_make)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Manufacturer of the equipment used to perform the HLA assay. (pxt160601_equipment_manufacturer)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Repeatability of the assay (pxt160601_assay_repeatability)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Coefficient of variation for the assay (pxt160601_coefficient_of_variation)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Results of the genotyping assay (genotyping_results)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX160601</protocolID>
+     <longName>Assay for Human Leukocyte Antigen (HLA) Genotyping</longName>
+     <context>PhenX</context>
+     <shortName>PX160601</shortName>
+     <preferredDefinition>This protocol includes instructions for drawing, processing and storing blood according to the Type 1 Diabetes Genetics Consortium (T1DGC) Manual of Operations. Human Leukocyte Antigen is measured by using the linear array genotyping system method.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:29:09</dateCreated>
+    <longName>PhenX PX160501 - Assay For Herpes Simplex Virus Types 1 And 2</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol provides information for drawing, processing, and storing blood for the herpes simplex virus type 1 (HSV-1) and type 2 (HSV-2) assay according to National Health and Nutrition Examination Survey (NHANES) methods. HSV-1 and HSV-2 are measured using the Solid-Phase Enzymatic Immunodot method.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:09</dateCreated>
+      <longName>Assay for Herpes Simplex Virus Types 1 and 2</longName>
+      <preferredDefinition>Assay for Herpes Simplex Virus Types 1 and 2</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Do you have hemophilia? (exclusion from Phlebotomy) (pxt160501_hemophilia)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Have you received cancer chemotherapy in the past four weeks or do you anticipate such therapy in the next four weeks? (exclusion from Phlebotomy) (pxt160501_chemotherapy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Exclusion Criteria (pxt160501_exclusion_criteria)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Hemophilia</meaningText>
+          <description>Hemophilia</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Received cancer chemotherapy in the last 4 weeks</meaningText>
+          <description>Received cancer chemotherapy in the last 4 weeks</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Venipuncture Procedures   Editor's Note: Please review chapter 4 of the Laboratory Procedures Manual from the NHANES for a full description of phlebotomy procedures: 20072008 NHANES Lab Manual. Venipuncture should generally be performed using the median cubital, cephalic, or basilica veins in the left arm unless this arm is unsuitable. If the veins in the left arm are unsuitable, look for suitable veins on the right arm. If the veins in the antecubital space on both arms are not suitable, then look for veins in the forearm or dorsal side of the hand on the left arm/hand and then right arm/hand. (venip_proc_herpes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Was blood drawn? (pxt160501_blood_draw_done)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Was full amount obtained? (pxt160501_blood_draw_sample)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Record any comments about the blood draw, including any reasons for the tube not being drawn according to the protocol. (pxt160501_blood_draw_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Record any comments about the sample during processing. (pxt160501_sample_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Record the type of assay used for HSV testing. (hsv_assay_type)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Make of the equipment used to perform the HSV assay. (pxt160501_equipment_make)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Manufacturer of the equipment used to perform the HSV assay. (pxt160501_equipment_manufacturer)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Repeatability of the assay (pxt160501_assay_repeatability)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Coefficient of variation for the assay (pxt160501_coefficient_of_variation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>HSV Type 1 assay results (hsv_type1_assay_results)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Positive</meaningText>
+          <description>Positive</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Negative</meaningText>
+          <description>Negative</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>HSV Type 2 assay results (hsv_type2_assay_results)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Positive</meaningText>
+          <description>Positive</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Negative</meaningText>
+          <description>Negative</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX160501</protocolID>
+     <longName>Assay for Herpes Simplex Virus Types 1 and 2</longName>
+     <context>PhenX</context>
+     <shortName>PX160501</shortName>
+     <preferredDefinition>This protocol provides information for drawing, processing, and storing blood for the herpes simplex virus type 1 (HSV-1) and type 2 (HSV-2) assay according to National Health and Nutrition Examination Survey (NHANES) methods. HSV-1 and HSV-2 are measured using the Solid-Phase Enzymatic Immunodot method.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:29:09</dateCreated>
+    <longName>PhenX PX160701 - Assay For Syphilis</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol provides instructions for drawing, processing, and storing blood according to the National Health and Nutrition Examination Survey (NHANES). As multiple tests must be performed to make the most accurate diagnosis of syphilis infection, the protocol also provides basic guidelines to aid comparability among different studies.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:09</dateCreated>
+      <longName>Assay for Syphilis</longName>
+      <preferredDefinition>Assay for Syphilis</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Do you have hemophilia? (exclusion from Phlebotomy) (pxt160701_hemophilia)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Have you received cancer chemotherapy in the past four weeks or do you anticipate such therapy in the next four weeks? (exclusion from Phlebotomy) (pxt160701_chemotherapy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Exclusion Criteria (pxt160701_exclusion_criteria)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Hemophilia</meaningText>
+          <description>Hemophilia</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Received cancer chemotherapy in the last 4 weeks</meaningText>
+          <description>Received cancer chemotherapy in the last 4 weeks</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Venipuncture Procedures:  Editor's Note: Please review chapter 4 of the Laboratory Procedures Manual from the NHANES for a full description of Phlebotomy procedures: 20072008 NHANES Lab Manual.  Venipuncture should generally be performed using the median cubital, cephalic, or basilica veins in the left arm unless this arm is unsuitable. If the veins in the left arm are unsuitable, look for suitable veins on the right arm. If the veins in the antecubital space on both arms are not suitable, then look for veins in the forearm or dorsal side of the hand on the left arm/hand and then right arm/hand. (venip_proc_syphilis)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Was blood drawn? (pxt160701_blood_draw_done)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Was full amount obtained? (pxt160701_blood_draw_sample)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Record any comments about the blood draw, including any reasons for the tube not being drawn according to the protocol. (pxt160701_blood_draw_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Record any comments about the sample during processing. (pxt160701_sample_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Record the type of assay used for syphilis testing. (syphilis_assay_type)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Make of the equipment used to perform the syphilis assay. (pxt160701_equipment_make)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Manufacturer of the equipment used to perform the syphilis assay. (pxt160701_equipment_manufacturer)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Repeatability of the assay (pxt160701_assay_repeatability)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Coefficient of variation for the assay (pxt160701_coefficient_of_variation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Syphilis assay results (syphilis_assay_results)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Reactive</meaningText>
+          <description>Reactive</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Nonreactive</meaningText>
+          <description>Nonreactive</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Inconclusive</meaningText>
+          <description>Inconclusive</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX160701</protocolID>
+     <longName>Assay for Syphilis</longName>
+     <context>PhenX</context>
+     <shortName>PX160701</shortName>
+     <preferredDefinition>This protocol provides instructions for drawing, processing, and storing blood according to the National Health and Nutrition Examination Survey (NHANES). As multiple tests must be performed to make the most accurate diagnosis of syphilis infection, the protocol also provides basic guidelines to aid comparability among different studies.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:29:09</dateCreated>
+    <longName>PhenX PX160801 - Conditions Relevant To Immune Response Screener Adult</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This screening protocol includes 10 self-administered questions from the Centers for Disease Control and Prevention (CDC) Screening Questionnaire for Adult Immunization. Respondents are asked to respond to yes-or-no questions.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:09</dateCreated>
+      <longName>Conditions Relevant to Immune Response - Screener, Adult</longName>
+      <preferredDefinition>Conditions Relevant to Immune Response - Screener, Adult</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Are you sick today? (sick_today)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Do you have allergies to medications, food, or any vaccine? (allergies)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Have you ever had a serious reaction after receiving a vaccination? (reaction_to_vaccine)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Do you have a longterm health problem with heart disease, lung disease, asthma, kidney disease, metabolic disease (e.g., diabetes), anemia, or other blood disorder? (long_term_health_problem)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Do you have cancer, leukemia, AIDS, or any other immune system problem? (immune_system_problem)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Do you take cortisone, prednisone, other steroids, or anticancer drugs, or have you had radiation treatments? (steroids_anticancerdrugs_radiation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Have you had a seizure, brain, or other nervous system problem? (nervous_system_problem)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>During the past year, have you received a transfusion of blood or blood products, or have you been given immune (gamma) globulin or an antiviral drug? (transfusion_immuneglobulin_antiviral)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>For women: Are you pregnant, or is there a chance you could become pregnant during the next month? (pregnant)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Have you received any vaccinations in the past 4 weeks? (vaccinations)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX160801</protocolID>
+     <longName>Conditions Relevant to Immune Response - Screener, Adult</longName>
+     <context>PhenX</context>
+     <shortName>PX160801</shortName>
+     <preferredDefinition>This screening protocol includes 10 self-administered questions from the Centers for Disease Control and Prevention (CDC) Screening Questionnaire for Adult Immunization. Respondents are asked to respond to yes-or-no questions.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:29:09</dateCreated>
+    <longName>PhenX PX160802 - Conditions Relevant To Immune Response Screener Child</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This screening protocol includes nine proxy-administered questions from the Centers for Disease Control and Prevention (CDC) Screening Questionnaire for Child and Teen Immunization. Parents or guardians are asked to respond to yes-or-no questions.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:09</dateCreated>
+      <longName>Conditions Relevant to Immune Response - Screener, Child</longName>
+      <preferredDefinition>Conditions Relevant to Immune Response - Screener, Child</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Is the child sick today? (pxt160802_sick_today)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Does the child have allergies to medications, food, or any vaccine? (pxt160802_allergies)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Has the child had a serious reaction to a vaccine in the past? (vaccine_reaction)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Has the child had a seizure or a brain problem? (seizure_brain_problem)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Does the child have cancer, leukemia, AIDS, or any other immune system problem? (pxt160802_immune_system_problem)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Has the child take cortisone, prednisone, other steroids, or anticancer drugs or had xray treatments in the past 3 months? (pxt160802_steroids_anticancerdrugs_radiation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Has the child received a transfusion of blood or blood products or been given a medicine called immune (gamma) globulin in the past year? (transfusion_immuneglobulin)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Is the child/teen pregnant, or is there a chance she could become pregnant during the next month? (pxt160802_pregnant)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:29:09</dateCreated>
+        <questionText>Has the child received vaccinations in the past 4 weeks? (vaccination)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX160802</protocolID>
+     <longName>Conditions Relevant to Immune Response - Screener, Child</longName>
+     <context>PhenX</context>
+     <shortName>PX160802</shortName>
+     <preferredDefinition>This screening protocol includes nine proxy-administered questions from the Centers for Disease Control and Prevention (CDC) Screening Questionnaire for Child and Teen Immunization. Parents or guardians are asked to respond to yes-or-no questions.</preferredDefinition>
+    </protocol>
+   </form>   
+   </forms>

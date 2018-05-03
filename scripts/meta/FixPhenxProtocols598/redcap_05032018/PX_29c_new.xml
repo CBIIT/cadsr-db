@@ -1,0 +1,2736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 29c</collectionName>
+  <collectionDescription>Load PhenX PX160101,PX151303,PX151401</collectionDescription>   
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:29:40</dateCreated>
+    <longName>PhenX PX151303 - Adolescent Protocol</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The individual is asked to complete a series of questions about his or her feelings about physical activities and how sure he or she is that he or she will perform physical activities under certain circumstances. The questionnaire includes other questions about how much support the individual receives from family members and friends to participate in physical activity or sports. Almost all the items have five response options in a Likert-type scale with values of 1-5 (e.g., never = 1, many times = 5).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>#NAME?</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:40</dateCreated>
+      <longName>Adolescent Protocol</longName>
+      <preferredDefinition>Adolescent Protocol</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Physical Activity Stages (stages_151303)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>In a typical week, how many days do you do physical activity for 60 minutes or more? Mark the answer that is true for you. (Go to question #2 if the response is 5 or 6+ and go to question #3 if the response is 0 to 4.) (physicalactivity_selfefficacy_physicalactivity_frequency)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0</meaningText>
+          <description>0</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>6+</meaningText>
+          <description>6+</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>2.  How many months have you been doing 60 minutes of physical activity on 5 or more days per week? (physicalactivity_selfefficacy_physicalactivity_highfrequency)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Less than 6 months</meaningText>
+          <description>Less than 6 months</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>6 months or more</meaningText>
+          <description>6 months or more</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>3.  Do you think you will start doing 60 minutes of physical activity 5 or more days a week in the next 6 months? (physicalactivity_selfefficacy_physicalactivity_future)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>No I do not intend to in the next six months</meaningText>
+          <description>No I do not intend to in the next six months</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Yes I intend to in the next six months</meaningText>
+          <description>Yes I intend to in the next six months</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Yes I intend to in the next 30 days</meaningText>
+          <description>Yes I intend to in the next 30 days</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Physical Activity Change Strategies  The following are activities, thoughts, and feelings people use to help them change their physical activity. Think of any similar experiences you may be having or have had in the past month. Then rate HOW OFTEN you do each of the following: (strategies_151303)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I look for information about physical activity or sports. (physicalactivity_selfefficacy_changestrategies_1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I keep track of how much physical activity I do. (physicalactivity_selfefficacy_changestrategies_2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I find ways to get around the things that get in the way of being physically active. (physicalactivity_selfefficacy_changestrategies_3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I think about how my surroundings affect the amount of physical activity I do. (Surroundings are things like having exercise equipment at home or a park nearby.) (physicalactivity_selfefficacy_changestrategies_4)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I put reminders around my home to be physically active. (physicalactivity_selfefficacy_changestrategies_5)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I reward myself for being physically active. (physicalactivity_selfefficacy_changestrategies_6)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I do things to make physical activity more enjoyable. (physicalactivity_selfefficacy_changestrategies_7)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I think about the benefits I will get from being physically active. (physicalactivity_selfefficacy_changestrategies_8)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I try to think more about the benefits of physical activity and less about the hassles of being active. (physicalactivity_selfefficacy_changestrategies_9)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I say positive things to myself about physical activity. (physicalactivity_selfefficacy_changestrategies_10)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>When I get off track with my physical activity plans, I tell myself I can start again and get right back on track. (physicalactivity_selfefficacy_changestrategies_11)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I have a friend or family member who encourages me to do physical activity. (physicalactivity_selfefficacy_changestrategies_12)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I try different kinds of physical activity so that I have more options to choose from. (physicalactivity_selfefficacy_changestrategies_13)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I set goals to do physical activity. (physicalactivity_selfefficacy_changestrategies_14)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I make backup plans to be sure I get my physical activity. (physicalactivity_selfefficacy_changestrategies_15)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Almost Never</meaningText>
+          <description>Almost Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Many times</meaningText>
+          <description>Many times</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Physical Activity Pros &amp; Cons  The following statements are different beliefs about physical activity. (prosandcons_151303)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>HOW IMPORTANT IS EACH STATEMENT TO YOU WHEN DECIDING WHETHER OR NOT TO DO PHYSICAL ACTIVITY? I would feel embarrassed if people saw me doing physical activity. (physicalactivity_selfefficacy_physicalactivity_proscons_1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not important</meaningText>
+          <description>Not important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly important</meaningText>
+          <description>Slightly important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderately important</meaningText>
+          <description>Moderately important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Very important</meaningText>
+          <description>Very important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Extremely important</meaningText>
+          <description>Extremely important</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>HOW IMPORTANT IS EACH STATEMENT TO YOU WHEN DECIDING WHETHER OR NOT TO DO PHYSICAL ACTIVITY? Physical activity would help me stay fit. (physicalactivity_selfefficacy_physicalactivity_proscons_2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not important</meaningText>
+          <description>Not important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly important</meaningText>
+          <description>Slightly important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderately important</meaningText>
+          <description>Moderately important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Very important</meaningText>
+          <description>Very important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Extremely important</meaningText>
+          <description>Extremely important</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>HOW IMPORTANT IS EACH STATEMENT TO YOU WHEN DECIDING WHETHER OR NOT TO DO PHYSICAL ACTIVITY? My parents would be happy if I did physical activity. (physicalactivity_selfefficacy_physicalactivity_proscons_3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not important</meaningText>
+          <description>Not important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly important</meaningText>
+          <description>Slightly important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderately important</meaningText>
+          <description>Moderately important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Very important</meaningText>
+          <description>Very important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Extremely important</meaningText>
+          <description>Extremely important</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>HOW IMPORTANT IS EACH STATEMENT TO YOU WHEN DECIDING WHETHER OR NOT TO DO PHYSICAL ACTIVITY? There is too much I would have to learn to do physical activity. (physicalactivity_selfefficacy_physicalactivity_proscons_4)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not important</meaningText>
+          <description>Not important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly important</meaningText>
+          <description>Slightly important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderately important</meaningText>
+          <description>Moderately important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Very important</meaningText>
+          <description>Very important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Extremely important</meaningText>
+          <description>Extremely important</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>HOW IMPORTANT IS EACH STATEMENT TO YOU WHEN DECIDING WHETHER OR NOT TO DO PHYSICAL ACTIVITY? I would feel better about myself if I did physical activity. (physicalactivity_selfefficacy_physicalactivity_proscons_5)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not important</meaningText>
+          <description>Not important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly important</meaningText>
+          <description>Slightly important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderately important</meaningText>
+          <description>Moderately important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Very important</meaningText>
+          <description>Very important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Extremely important</meaningText>
+          <description>Extremely important</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>HOW IMPORTANT IS EACH STATEMENT TO YOU WHEN DECIDING WHETHER OR NOT TO DO PHYSICAL ACTIVITY? I would need too much help from my parents to do physical activity. (physicalactivity_selfefficacy_physicalactivity_proscons_6)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not important</meaningText>
+          <description>Not important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly important</meaningText>
+          <description>Slightly important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderately important</meaningText>
+          <description>Moderately important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Very important</meaningText>
+          <description>Very important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Extremely important</meaningText>
+          <description>Extremely important</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>HOW IMPORTANT IS EACH STATEMENT TO YOU WHEN DECIDING WHETHER OR NOT TO DO PHYSICAL ACTIVITY? I do not like the way physical activity and exercise makes me feel. (physicalactivity_selfefficacy_physicalactivity_proscons_7)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not important</meaningText>
+          <description>Not important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly important</meaningText>
+          <description>Slightly important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderately important</meaningText>
+          <description>Moderately important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Very important</meaningText>
+          <description>Very important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Extremely important</meaningText>
+          <description>Extremely important</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>HOW IMPORTANT IS EACH STATEMENT TO YOU WHEN DECIDING WHETHER OR NOT TO DO PHYSICAL ACTIVITY? I would have fun doing physical activity or playing sports with my friends. (physicalactivity_selfefficacy_physicalactivity_proscons_8)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not important</meaningText>
+          <description>Not important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly important</meaningText>
+          <description>Slightly important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderately important</meaningText>
+          <description>Moderately important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Very important</meaningText>
+          <description>Very important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Extremely important</meaningText>
+          <description>Extremely important</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>HOW IMPORTANT IS EACH STATEMENT TO YOU WHEN DECIDING WHETHER OR NOT TO DO PHYSICAL ACTIVITY? I would have more energy if I did physical activity. (physicalactivity_selfefficacy_physicalactivity_proscons_9)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not important</meaningText>
+          <description>Not important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly important</meaningText>
+          <description>Slightly important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderately important</meaningText>
+          <description>Moderately important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Very important</meaningText>
+          <description>Very important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Extremely important</meaningText>
+          <description>Extremely important</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>HOW IMPORTANT IS EACH STATEMENT TO YOU WHEN DECIDING WHETHER OR NOT TO DO PHYSICAL ACTIVITY? Physical activity takes time away from being with my friends. (physicalactivity_selfefficacy_physicalactivity_proscons_10)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not important</meaningText>
+          <description>Not important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly important</meaningText>
+          <description>Slightly important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderately important</meaningText>
+          <description>Moderately important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Very important</meaningText>
+          <description>Very important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Extremely important</meaningText>
+          <description>Extremely important</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Physical Activity Confidence  There are many things that can get in the way of physical activity. Rate HOW SURE you are that you can do physical activity in each situation. Please answer ALL questions (confidence_151303)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>There are many things that can get in the way of physical activity. Rate HOW SURE you are that you can do physical activity in each situation. Do physical activity even when you feel sad or stressed? (physicalactivity_selfefficacy_confidence_1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>I'm sure I can't</meaningText>
+          <description>I'm sure I can't</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>I probably can't</meaningText>
+          <description>I probably can't</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Neutral</meaningText>
+          <description>Neutral</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I probably can</meaningText>
+          <description>I probably can</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>I'm sure I can</meaningText>
+          <description>I'm sure I can</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>There are many things that can get in the way of physical activity. Rate HOW SURE you are that you can do physical activity in each situation. Set aside time for physical activity on most days of the week? (physicalactivity_selfefficacy_confidence_2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>I'm sure I can't</meaningText>
+          <description>I'm sure I can't</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>I probably can't</meaningText>
+          <description>I probably can't</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Neutral</meaningText>
+          <description>Neutral</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I probably can</meaningText>
+          <description>I probably can</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>I'm sure I can</meaningText>
+          <description>I'm sure I can</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>There are many things that can get in the way of physical activity. Rate HOW SURE you are that you can do physical activity in each situation. Do physical activity even when your family or friends want you to do something else? (physicalactivity_selfefficacy_confidence_3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>I'm sure I can't</meaningText>
+          <description>I'm sure I can't</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>I probably can't</meaningText>
+          <description>I probably can't</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Neutral</meaningText>
+          <description>Neutral</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I probably can</meaningText>
+          <description>I probably can</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>I'm sure I can</meaningText>
+          <description>I'm sure I can</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>There are many things that can get in the way of physical activity. Rate HOW SURE you are that you can do physical activity in each situation. Get up early, even on weekends, to do physical activity? (physicalactivity_selfefficacy_confidence_4)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>I'm sure I can't</meaningText>
+          <description>I'm sure I can't</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>I probably can't</meaningText>
+          <description>I probably can't</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Neutral</meaningText>
+          <description>Neutral</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I probably can</meaningText>
+          <description>I probably can</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>I'm sure I can</meaningText>
+          <description>I'm sure I can</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>There are many things that can get in the way of physical activity. Rate HOW SURE you are that you can do physical activity in each situation. Do physical activity even when you have a lot of schoolwork? (physicalactivity_selfefficacy_confidence_5)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>I'm sure I can't</meaningText>
+          <description>I'm sure I can't</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>I probably can't</meaningText>
+          <description>I probably can't</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Neutral</meaningText>
+          <description>Neutral</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I probably can</meaningText>
+          <description>I probably can</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>I'm sure I can</meaningText>
+          <description>I'm sure I can</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>There are many things that can get in the way of physical activity. Rate HOW SURE you are that you can do physical activity in each situation. Do physical activity even when it is raining or really hot outside? (physicalactivity_selfefficacy_confidence_6)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>I'm sure I can't</meaningText>
+          <description>I'm sure I can't</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>I probably can't</meaningText>
+          <description>I probably can't</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Neutral</meaningText>
+          <description>Neutral</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I probably can</meaningText>
+          <description>I probably can</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>I'm sure I can</meaningText>
+          <description>I'm sure I can</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Physical Activity Family Support. (family_support_151303)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>During a typical week, how often has a member of your household: (For example, your father, mother, brother, sister, grandparent, or other relatives) Watched you participate in physical activity or play sports? (physicalactivity_selfefficacy_familysupport_1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1-2 days</meaningText>
+          <description>1-2 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3-4 days</meaningText>
+          <description>3-4 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>5-6 days</meaningText>
+          <description>5-6 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>During a typical week, how often has a member of your household: (For example, your father, mother, brother, sister, grandparent, or other relatives) Encouraged you to do sports or physical activity? (physicalactivity_selfefficacy_familysupport_2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1-2 days</meaningText>
+          <description>1-2 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3-4 days</meaningText>
+          <description>3-4 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>5-6 days</meaningText>
+          <description>5-6 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>During a typical week, how often has a member of your household: (For example, your father, mother, brother, sister, grandparent, or other relatives) Provided transportation to a place where you can do physical activity or play sports? (physicalactivity_selfefficacy_familysupport_3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1-2 days</meaningText>
+          <description>1-2 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3-4 days</meaningText>
+          <description>3-4 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>5-6 days</meaningText>
+          <description>5-6 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>During a typical week, how often has a member of your household: (For example, your father, mother, brother, sister, grandparent, or other relatives) Done a physical activity or played sports with you? (physicalactivity_selfefficacy_familysupport_4)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1-2 days</meaningText>
+          <description>1-2 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3-4 days</meaningText>
+          <description>3-4 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>5-6 days</meaningText>
+          <description>5-6 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Physical Activity Friend Support (friend_support_151303)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>During a typical week, how often: Do your friends encourage you to do sports or physical activities? (physicalactivity_selfefficacy_friendsupport_1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1-2 days</meaningText>
+          <description>1-2 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3-4 days</meaningText>
+          <description>3-4 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>5-6 days</meaningText>
+          <description>5-6 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>46</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>During a typical week, how often: Do your friends do physical activity or play sports with you? (physicalactivity_selfefficacy_friendsupport_2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1-2 days</meaningText>
+          <description>1-2 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3-4 days</meaningText>
+          <description>3-4 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>5-6 days</meaningText>
+          <description>5-6 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>47</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>During a typical week, how often: Do your friends or classmates tease you about not being good at physical activities or sports? (physicalactivity_selfefficacy_friendsupport_3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1-2 days</meaningText>
+          <description>1-2 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3-4 days</meaningText>
+          <description>3-4 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>5-6 days</meaningText>
+          <description>5-6 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>48</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>During a typical week, how often: Do your friends ask you to walk or bike to school or to a friend's house? (physicalactivity_selfefficacy_friendsupport_4)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1-2 days</meaningText>
+          <description>1-2 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3-4 days</meaningText>
+          <description>3-4 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>5-6 days</meaningText>
+          <description>5-6 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>49</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>During a typical week, how often: Do your friends tell you that you are doing well in physical activities or sports? (physicalactivity_selfefficacy_friendsupport_5)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>1-2 days</meaningText>
+          <description>1-2 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3-4 days</meaningText>
+          <description>3-4 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>5-6 days</meaningText>
+          <description>5-6 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>50</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Closest Friend Support (closest_friend_151303)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>51</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>How many of your five closest friends are physically active on a regular basis? (physicalactivity_selfefficacy_closestfriendsupport)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>0 friends</meaningText>
+          <description>0 friends</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1 friend</meaningText>
+          <description>1 friend</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2 friends</meaningText>
+          <description>2 friends</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3 friends</meaningText>
+          <description>3 friends</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4 friends</meaningText>
+          <description>4 friends</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>5 friends</meaningText>
+          <description>5 friends</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>52</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Physical Activity Enjoyment (enjoyment_151303)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>53</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>I enjoy doing physical activity. (physicalactivity_selfefficacy_physicalactivity_enjoyment)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Somewhat disagree</meaningText>
+          <description>Somewhat disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Neutral</meaningText>
+          <description>Neutral</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Somewhat agree</meaningText>
+          <description>Somewhat agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Strongly agree</meaningText>
+          <description>Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>54</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Physical Activity Recreation Choices (choices_151303)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>55</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>What do you usually do when you have a choice about how you spend recreational time? (physicalactivity_selfefficacy_recreationchoices)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Almost always choose activities like TV, reading, listening to music, or computers</meaningText>
+          <description>Almost always choose activities like TV, reading, listening to music, or computers</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Usually choose activities like TV, reading, listening to music or computers</meaningText>
+          <description>Usually choose activities like TV, reading, listening to music or computers</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Just as likely choose active or inactive recreation</meaningText>
+          <description>Just as likely choose active or inactive recreation</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Usually choose activities like bicycling, dancing, outdoor games or active sports</meaningText>
+          <description>Usually choose activities like bicycling, dancing, outdoor games or active sports</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Almost always choose activities like bicycling, dancing, outdoor games or active sports</meaningText>
+          <description>Almost always choose activities like bicycling, dancing, outdoor games or active sports</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>56</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Physical Activity Environmental Factors (factors_151303)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>57</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>How much do you agree with the following statements? At home there are enough supplies and pieces of sports equipment (like balls, bicycles, skates) to use for physical activity. (physicalactivity_selfefficacy_environmentalfactors_1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Somewhat disagree</meaningText>
+          <description>Somewhat disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Neutral</meaningText>
+          <description>Neutral</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Somewhat agree</meaningText>
+          <description>Somewhat agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Strongly agree</meaningText>
+          <description>Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>58</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>How much do you agree with the following statements? It is difficult to walk or jog in my neighborhood because of things like traffic, no sidewalks, dogs, gangs and so on. (physicalactivity_selfefficacy_environmentalfactors_2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Somewhat disagree</meaningText>
+          <description>Somewhat disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Neutral</meaningText>
+          <description>Neutral</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Somewhat agree</meaningText>
+          <description>Somewhat agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Strongly agree</meaningText>
+          <description>Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>59</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>How much do you agree with the following statements? There are playgrounds, parks, or gyms, close to my home or that I can get to easily. (physicalactivity_selfefficacy_environmentalfactors_3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Somewhat disagree</meaningText>
+          <description>Somewhat disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Neutral</meaningText>
+          <description>Neutral</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Somewhat agree</meaningText>
+          <description>Somewhat agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Strongly agree</meaningText>
+          <description>Strongly agree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>60</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>How much do you agree with the following statements? It is safe to walk or jog in my neighborhood during the day. (physicalactivity_selfefficacy_environmentalfactors_4)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Strongly disagree</meaningText>
+          <description>Strongly disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Somewhat disagree</meaningText>
+          <description>Somewhat disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Neutral</meaningText>
+          <description>Neutral</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Somewhat agree</meaningText>
+          <description>Somewhat agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Strongly agree</meaningText>
+          <description>Strongly agree</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX151303</protocolID>
+     <longName>Adolescent Protocol</longName>
+     <context>PhenX</context>
+     <shortName>PX151303</shortName>
+     <preferredDefinition>The individual is asked to complete a series of questions about his or her feelings about physical activities and how sure he or she is that he or she will perform physical activities under certain circumstances. The questionnaire includes other questions about how much support the individual receives from family members and friends to participate in physical activity or sports. Almost all the items have five response options in a Likert-type scale with values of 1-5 (e.g., never = 1, many times = 5).</preferredDefinition>
+    </protocol>
+   </form>    
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:29:40</dateCreated>
+    <longName>PhenX PX160101 - Assay For Chlamydia Gonorrhea</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol provides basic instructions for collecting and processing urine according to National Health and Nutrition Examination Survey (NHANES) methods for assessing the presence of Chlamydia trachomatis and/or Neisseria gonorrhoeae, sexually transmitted bacterial diseases. Strand Displacement Amplification Assay is the method used.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>The following is a summary version of the full National Health and Nutrition Examination Survey (NHANES) 20072008 protocol.</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>1</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:40</dateCreated>
+      <longName>Urine Collection</longName>
+      <preferredDefinition>Urine Collection</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Editor's Note: Please review chapter 5 of the Laboratory Procedures Manual from the NHANES 20072008 for a full description of urine collection and processing procedures: 20072008 NHANES Lab Manual. The coordinator explains the following instructions to the subject before urine collection:  Wash hands with soap and water. It is important that the cup and cap not touch or come into contact with any parts of the body, clothing, or external surfaces. Close container to minimize exposure to air. Refrigerate all insufficient urine samples. When additional urine is obtained, pool the urine, mix, and process. (px060101_instr2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>2</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:40</dateCreated>
+      <longName>Record the Results of Urine Specimen Collection</longName>
+      <preferredDefinition>Record the Results of Urine Specimen Collection</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Note whether or not urine was collected, whether the volume of urine was sufficient or required a second specimen. Note whether blood is present/visible in the specimen. (note_whether_or_not_urine)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>3</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:40</dateCreated>
+      <longName>Laboratory Procedure for Chlamydia/Gonorrhea</longName>
+      <preferredDefinition>Laboratory Procedure for Chlamydia/Gonorrhea</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>The Infectious Diseases and Immunity Working Group (WG) recommends that Chlamydia trachomatis and Neisseria gonorrhoeae be determined according to the Strand Displacement Amplification (SDA) Assay developed by the National Center for Infectious Diseases, the Center for Disease Control and Prevention, for use in the NHANES: Chlamydia trachomatis and Neisseria gonorrhoeae  To aid comparability, the Infectious Diseases and Immunity WG recommends that the investigator record the make and manufacturer of equipment used and the repeatability and coefficients of variation for the assay. (px160101_instr4)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>4</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:40</dateCreated>
+      <longName>Reference Ranges</longName>
+      <preferredDefinition>Reference Ranges</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>px160101 tbl1 (px160101_tbl1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>px160101 tbl2 (px160101_tbl2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Record any comments about the urine collection, including whether or not urine was collected, whether the volume of urine was sufficient or required a second specimen, and whether blood is present or visible in the specimen. (urine_collection_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Record any comments about the urine during processing. (sample_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Make of the equipment used to perform Strand Displacement Amplification (SDA) Assay. (equipment_make)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Manufacturer of the equipment used to to perform Strand Displacement Amplification (SDA) Assay. (equipment_manufacturer)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Repeatability of the assay (assay_repeatability)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Coefficient of variation for the assay (coefficient_of_variation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Chlamydia trachomatis MOTA (Method Other Than Acceleration) score (chlamydia_mota_score)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Did the Chlamydia trachomatis assay include a separate Amplification Control (AC)? (chlamydia_assay_include_ac)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>If AC included, Chlamydia trachomatis assay results (chlamydia_assay_results_withac)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>positive</meaningText>
+          <description>positive</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>low positive</meaningText>
+          <description>low positive</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>negative</meaningText>
+          <description>negative</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>indeterminate</meaningText>
+          <description>indeterminate</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>If AC not included, Chlamydia trachomatis assay results (chlamydia_assay_results_withoutac)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>positive</meaningText>
+          <description>positive</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>low positive</meaningText>
+          <description>low positive</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>negative</meaningText>
+          <description>negative</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Neisseria gonorrhoeae MOTA (Method Other Than Acceleration) score (gonorrhea_mota_score)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Did the Neisseria gonorrhoeae assay include a separate Amplification Control (AC)? (gonorrhea_assay_include_ac)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>If AC included, Neisseria gonorrhoeae assay results (gonorrhea_assay_results_withac)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>positive</meaningText>
+          <description>positive</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>low positive</meaningText>
+          <description>low positive</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>negative</meaningText>
+          <description>negative</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>indeterminate</meaningText>
+          <description>indeterminate</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>If AC not included, Neisseria gonorrhoeae assay results (gonorrhea_assay_results_withoutac)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>positive</meaningText>
+          <description>positive</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>low positive</meaningText>
+          <description>low positive</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>negative</meaningText>
+          <description>negative</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX160101</protocolID>
+     <longName>Assay for Chlamydia/Gonorrhea</longName>
+     <context>PhenX</context>
+     <shortName>PX160101</shortName>
+     <preferredDefinition>This protocol provides basic instructions for collecting and processing urine according to National Health and Nutrition Examination Survey (NHANES) methods for assessing the presence of Chlamydia trachomatis and/or Neisseria gonorrhoeae, sexually transmitted bacterial diseases. Strand Displacement Amplification Assay is the method used.</preferredDefinition>
+    </protocol>
+   </form>
+    <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:29:40</dateCreated>
+    <longName>PhenX PX151401 - Cardiorespiratory Fitness Nonexercise Test Estimate</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Cardiorespiratory fitness is estimated from a non-exercise test model that includes gender, age, body mass index, resting heart rate, and self-reported physical activity. Capture this information via standard methods, and add the values to Jurca and colleagues' (2005) worksheet. Follow the equation in the worksheet to determine the maximal metabolic equivalent level.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Measure and record the following information about the participant.</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:40</dateCreated>
+      <longName>Cardiorespiratory Fitness - Non-Exercise Test Estimate</longName>
+      <preferredDefinition>Cardiorespiratory Fitness - Non-Exercise Test Estimate</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Participant's age (years) (pxt151401_age)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=year</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Participant's height (centimeters) (height)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=centimeter</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Participant's weight (kilograms) (pxt151401_weight)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=kilogram</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Participant's body mass index (BMI)  in kilograms per meter2  BMI = (weight in lbs X 703)/(height in inches)2 or (weight in kilograms)/(height in meters)2 (bmi)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=(weight in kilogram)/(height in meter)2</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Resting heart rate (HR)  measured HR from person's wrist pulse after 5 minutes of rest in the supine position (resting_heart_rate)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=beats per minute</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Administer the questions from the fivecategory physical activity scale, found in Step 1 of the worksheet of Jurca et al. (2005). Add age, height, weight, and so forth to the equation in Step 2 of the worksheet to calculate the estimated MET value. Jurca, R., Jackson, A. S., LaMonte, M. J., Morrow, J. R., Blair, S. N., Wareham, N. J., Haskell, W. L., van Mechelen, W., Church, T. S., Jakicic, J. M., and Laukkanen, R. (2005). Assessing cardiorespiratory fitness without performing exercise testing. American Journal of Preventive Medicine, 29(3), 185193. (inst2151401)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX151401</protocolID>
+     <longName>Cardiorespiratory Fitness - Non-Exercise Test Estimate</longName>
+     <context>PhenX</context>
+     <shortName>PX151401</shortName>
+     <preferredDefinition>Cardiorespiratory fitness is estimated from a non-exercise test model that includes gender, age, body mass index, resting heart rate, and self-reported physical activity. Capture this information via standard methods, and add the values to Jurca and colleagues' (2005) worksheet. Follow the equation in the worksheet to determine the maximal metabolic equivalent level.</preferredDefinition>
+    </protocol>
+   </form> 
+   </forms>

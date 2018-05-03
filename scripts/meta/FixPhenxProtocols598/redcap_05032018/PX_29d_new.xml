@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 29</collectionName>
+  <collectionDescription>Load PhenX PX151201,PX151302</collectionDescription>   
+    <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:29:40</dateCreated>
+    <longName>PhenX PX160201 - Assay For Cytokine Panel 12</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol provides instructions for drawing, processing, and storing blood according to the National Health and Nutrition Examination Survey (NHANES) and uses the multi-analyte fluorescent detection (MAFD) method to measure 12¿different cytokines: Interferon gamma (IFN-gamma), Interleukin-1 beta (IL-1 beta), Interleukin-10 (IL-10), Interleukin-12 (IL-12), Interleukin-13 (IL-13), Interleukin-2 (IL-2), Interleukin-2 Receptor (IL-2R), Interleukin-4 (IL-4), Interleukin-5 (IL-5), Interleukin-6 (IL-6), Interleukin-8 (IL-8), Tumor Necrosis Factor alpha (TNF alpha).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:40</dateCreated>
+      <longName>Exclusion Criteria</longName>
+      <preferredDefinition>Exclusion Criteria</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Persons will be excluded from this component if they:  report that they have hemophilia, or  report that they have received cancer chemotherapy in the last 4 weeks.  SP = Sample Person    WG recommends that the investigator record whether the blood was drawn and whether the full amount was obtained. Process the Sample for the SerumEditor's Note: Please review chapter 8 of the Laboratory Procedures Manual from the NHANES 20072008 for a full description of Blood Processing procedures: 20072008 NHANES Lab Manual. Allow the blood to clot by setting aside for 3045 minutes at room temperature. Do not clot for more than 1 hour. Centrifuge the tube at room temperature to separate the serum and aliquot into an appropriate storage tube. Determine if the serum is hemolyzed, turbid, lipemic, or icteric. If so, enter a comment to describe the plasma. Laboratory Assay for Cytokine Panel 12 The Infectious Diseases and Immunity WG recommend the multianalyte fluorescent detection (MAFD) method of Cytokine Panel 12 offered through ARUP Laboratories. To aid comparability, the Infectious Diseases and Immunity WG recommends that the investigator record the make and manufacturer of equipment used and the repeatability and coefficients of variation for the assay. (desc1_160201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Do you have hemophilia? (exclusion from Phlebotomy) (hemophilia)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Have you received cancer chemotherapy in the past four weeks or do you anticipate such therapy in the next four weeks? (exclusion from Phlebotomy) (chemotherapy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Venipuncture Procedures Editor's Note: Please review chapter 4 of the Laboratory Procedures Manual from the NHANES for a full description of phlebotomy procedures: 2007-2008 NHANES Lab Manual. Venipuncture should generally be performed using the median cubital, cephalic, or basilica veins in the left arm unless this arm is unsuitable. If the veins in the left arm are unsuitable, look for suitable veins on the right arm. If the veins in the antecubital space on both arms are not suitable, then look for veins in the forearm or dorsal side of the hand on the left arm/hand and then right arm/hand. The Infectious Diseases and Immunity WG recommends that 3 mL serum be collected from each participant. Recording the Results of the Venipuncture Procedure Immediately after completing the venipuncture, record the results of the blood draw, the reasons for a tube not being drawn according to the protocol, and any comments about the venipuncture. Note from the Infectious Diseases and Immunity WG: The Infectious Diseases and Immunity WG recommends that the investigator record whether the blood was drawn and whether the full amount was obtained. Process the Sample for the Serum Editor's Note: Please review chapter 8 of the Laboratory Procedures Manual from the NHANES 2007-2008 for a full description of Blood Processing procedures: 2007-2008 NHANES Lab Manual. Allow the blood to clot by setting aside for 30-45 minutes at room temperature. Do not clot for more than 1 hour. Centrifuge the tube at room temperature to separate the serum and aliquot into an appropriate storage tube. Determine if the serum is hemolyzed, turbid, lipemic, or icteric. If so, enter a comment to describe the plasma. Laboratory Assay for Cytokine Panel 12 The Infectious Diseases and Immunity WG recommend the multi-analyte fluorescent detection (MAFD) method of Cytokine Panel 12 offered through ARUP Laboratories. To aid comparability, the Infectious Diseas..TRUNCATED(desc2_160201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>table1 160201 (table1_160201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Exclusion Criteria (exclusion_criteria)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Hemophilia</meaningText>
+          <description>Hemophilia</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Received cancer chemotherapy in the last 4 weeks</meaningText>
+          <description>Received cancer chemotherapy in the last 4 weeks</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Was blood drawn? (blood_draw_done)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Was full amount obtained? (blood_draw_sample)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Record any comments about the blood draw, including any reasons for the tube not being drawn according to the protocol. (blood_draw_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Record any comments about the sample during processing. (pxt160201_sample_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Record the type of assay used for cytokine testing. (cytokine_assay_type)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Make of the equipment used to perform the cytokine assay. (pxt160201_equipment_make)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Manufacturer of the equipment used to perform the cytokine assay. (pxt160201_equipment_manufacturer)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Repeatability of the assay (pxt160201_assay_repeatability)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Coefficient of variation for the assay (pxt160201_coefficient_of_variation)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Interleukin 2 Receptor (Soluble) (interleukin_2_receptor_concentration)</questionText>
+        <instruction>
+         <text>UOM=pg/mL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Interleukin 12 (interleukin_12_concentration)</questionText>
+        <instruction>
+         <text>UOM=pg/mL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Interferon gamma (interferon_gamma_concentration)</questionText>
+        <instruction>
+         <text>UOM=pg/mL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Interleukin 4 (interleukin_4_concentration)</questionText>
+        <instruction>
+         <text>UOM=pg/mL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Interleukin 5 (interleukin_5_concentration)</questionText>
+        <instruction>
+         <text>UOM=pg/mL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Interleukin 10 (interleukin_10_concentration)</questionText>
+        <instruction>
+         <text>UOM=pg/mL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Interleukin 13 (interleukin_13_concentration)</questionText>
+        <instruction>
+         <text>UOM=pg/mL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Interleukin 1 beta (interleukin_1_beta_concentration)</questionText>
+        <instruction>
+         <text>UOM=pg/mL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Interleukin 6 (interleukin_6_concentration)</questionText>
+        <instruction>
+         <text>UOM=pg/mL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Interleukin 8 (interleukin_8_concentration)</questionText>
+        <instruction>
+         <text>UOM=pg/mL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Tumor Necrosis Factor  alpha (tumor_necrosis_factor_alpha_concentration)</questionText>
+        <instruction>
+         <text>UOM=pg/mL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Interleukin 2 (interleukin_2_concentration)</questionText>
+        <instruction>
+         <text>UOM=pg/mL</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX160201</protocolID>
+     <longName>Assay for Cytokine Panel 12</longName>
+     <context>PhenX</context>
+     <shortName>PX160201</shortName>
+     <preferredDefinition>This protocol provides instructions for drawing, processing, and storing blood according to the National Health and Nutrition Examination Survey (NHANES) and uses the multi-analyte fluorescent detection (MAFD) method to measure 12¿different cytokines: Interferon gamma (IFN-gamma), Interleukin-1 beta (IL-1 beta), Interleukin-10 (IL-10), Interleukin-12 (IL-12), Interleukin-13 (IL-13), Interleukin-2 (IL-2), Interleukin-2 Receptor (IL-2R), Interleukin-4 (IL-4), Interleukin-5 (IL-5), Interleukin-6 (IL-6), Interleukin-8 (IL-8), Tumor Necrosis Factor alpha (TNF alpha).</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:29:40</dateCreated>
+    <longName>PhenX PX160301 - Assay For Hepatitis C</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol provides instructions for drawing, processing, and storing blood for hepatitis C (HCV) from the National Health and Nutrition Examination Survey (NHANES). As multiple tests must be performed to make the most accurate diagnosis of hepatitis C, the protocol also provides basic guidelines to aid comparability among different studies. Toolkit users are referred to the U.S. Food and Drug Administration's (FDA's) approved laboratory assays.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:29:40</dateCreated>
+      <longName>Assay for Hepatitis C</longName>
+      <preferredDefinition>Assay for Hepatitis C</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Do you have hemophilia? (exclusion from Phlebotomy) (pxt160301_hemophilia)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Have you received cancer chemotherapy in the past four weeks or do you anticipate such therapy in the next four weeks? (exclusion from Phlebotomy) (pxt160301_chemotherapy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Exclusion Criteria (pxt160301_exclusion_criteria)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Hemophilia</meaningText>
+          <description>Hemophilia</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Received cancer chemotherapy in the last 4 weeks</meaningText>
+          <description>Received cancer chemotherapy in the last 4 weeks</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Venipuncture Procedures:  Editor's Note: Please review chapter 4 of the Laboratory Procedures Manual from the NHANES for a full description of Phlebotomy procedures: 20072008 NHANES Lab Manual.  Venipuncture should generally be performed using the median cubital, cephalic, or basilica veins in the left arm unless this arm is unsuitable. If the veins in the left arm are unsuitable, look for suitable veins on the right arm. If the veins in the antecubital space on both arms are not suitable, then look for veins in the forearm or dorsal side of the hand on the left arm/hand and then right arm/hand. (venip_procedures)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Was blood drawn? (pxt160301_blood_draw_done)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Was full amount obtained? (pxt160301_blood_draw_sample)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Record any comments about the blood draw, including any reasons for the tube not being drawn according to the protocol. (pxt160301_blood_draw_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Record any comments about the sample during processing. (pxt160301_sample_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Record the type of assay used for hepatitis C testing. (hepatitis_c_assay_type)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Make of the equipment used to perform the hepatitis C assay. (pxt160301_equipment_make)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Manufacturer of the equipment used to perform the hepatitis C assay. (pxt160301_equipment_manufacturer)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Repeatability of the assay (pxt160301_assay_repeatability)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Coefficient of variation for the assay (pxt160301_coefficient_of_variation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:29:40</dateCreated>
+        <questionText>Hepatitis C assay results (hepatitis_c_assay_results)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Positive</meaningText>
+          <description>Positive</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Negative</meaningText>
+          <description>Negative</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX160301</protocolID>
+     <longName>Assay for Hepatitis C</longName>
+     <context>PhenX</context>
+     <shortName>PX160301</shortName>
+     <preferredDefinition>This protocol provides instructions for drawing, processing, and storing blood for hepatitis C (HCV) from the National Health and Nutrition Examination Survey (NHANES). As multiple tests must be performed to make the most accurate diagnosis of hepatitis C, the protocol also provides basic guidelines to aid comparability among different studies. Toolkit users are referred to the U.S. Food and Drug Administration's (FDA's) approved laboratory assays.</preferredDefinition>
+    </protocol>
+   </form>
+   </forms>

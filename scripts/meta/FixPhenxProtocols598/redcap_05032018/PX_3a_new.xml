@@ -1,0 +1,1956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+ <collectionName>PhenX Protocols - 3a</collectionName>
+ <collectionDescription>Load PhenX PX020401,PX020601,PX020602,PX020701,PX020704</collectionDescription>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>PhenX PX020401 - Body Image</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>This protocol encompasses the self-reported prior, current, or ideal body image of the respondents and their children. The majority of studies using pictograms have used the Stunkard Figure Rating Scale, which contains nine silhouettes on an ordinal scale. An alternative, the Collins scale, has also been provided. Specific pictograms for African Americans and children are also included.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>Body Image</longName>
+ <instruction/>
+ <preferredDefinition>Body Image</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Male or female pictures presented/chosen for the age of 5. (body_image_gender_5)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Male</meaningText>
+ <description>Male</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Female</meaningText>
+ <description>Female</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Collins Child Female image (collins_child_female_images_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Collins Child Male image (collins_child_male_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Choose the picture that most closely resembles your (or your child's) body shape at the age of 5. (body_image_5)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>1</meaningText>
+ <description>1</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>1.5</meaningText>
+ <description>1.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>2</meaningText>
+ <description>2</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>2.5</meaningText>
+ <description>2.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>3</meaningText>
+ <description>3</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>3.5</meaningText>
+ <description>3.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>4</meaningText>
+ <description>4</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>4.5</meaningText>
+ <description>4.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>5</meaningText>
+ <description>5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>5.5</meaningText>
+ <description>5.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>10</displayOrder>
+ <value>UNDEFINED_CODE_10</value>
+ <meaningText>6</meaningText>
+ <description>6</description>
+ </validValue>
+ <validValue>
+ <displayOrder>11</displayOrder>
+ <value>UNDEFINED_CODE_11</value>
+ <meaningText>6.5</meaningText>
+ <description>6.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>12</displayOrder>
+ <value>UNDEFINED_CODE_12</value>
+ <meaningText>7</meaningText>
+ <description>7</description>
+ </validValue>
+ <validValue>
+ <displayOrder>13</displayOrder>
+ <value>9.9</value>
+ <meaningText>N/A</meaningText>
+ <description>N/A</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Scale Used for Child Body Image. (body_image_5_scale)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Collins Child Scale</meaningText>
+ <description>Collins Child Scale</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Male or female pictures presented/chosen for the age of 10. (body_image_gender_10)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Male</meaningText>
+ <description>Male</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Female</meaningText>
+ <description>Female</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Choose the picture that most closely resembles your (or your child's) body shape at the age of 10. (body_image_10)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>1</meaningText>
+ <description>1</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>1.5</meaningText>
+ <description>1.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>2</meaningText>
+ <description>2</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>2.5</meaningText>
+ <description>2.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>3</meaningText>
+ <description>3</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>3.5</meaningText>
+ <description>3.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>4</meaningText>
+ <description>4</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>4.5</meaningText>
+ <description>4.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>5</meaningText>
+ <description>5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>5.5</meaningText>
+ <description>5.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>10</displayOrder>
+ <value>UNDEFINED_CODE_10</value>
+ <meaningText>6</meaningText>
+ <description>6</description>
+ </validValue>
+ <validValue>
+ <displayOrder>11</displayOrder>
+ <value>UNDEFINED_CODE_11</value>
+ <meaningText>6.5</meaningText>
+ <description>6.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>12</displayOrder>
+ <value>UNDEFINED_CODE_12</value>
+ <meaningText>7</meaningText>
+ <description>7</description>
+ </validValue>
+ <validValue>
+ <displayOrder>13</displayOrder>
+ <value>9.9</value>
+ <meaningText>N/A</meaningText>
+ <description>N/A</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Scale Used for Child Body Image. (body_image_10_scale)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Collins Child Scale</meaningText>
+ <description>Collins Child Scale</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Male or female pictures presented/chosen for the age of 20. (body_image_gender_20)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Male</meaningText>
+ <description>Male</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Female</meaningText>
+ <description>Female</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Stunkard Adult female image (stunkard_adult_female_images_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Stunkard Adult male image (stunkard_adult_male_images)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Collins Adult female image (collins_adult_female_images_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Collins Adult male image (collins_adult_male_images_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Pulvers African American female image (african_american_female_images)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Pulvers African American male image (african_american_male_images_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Choose the picture that most closely resembles your body shape at the age of 20. (body_image_20)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>1</meaningText>
+ <description>1</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>1.5</meaningText>
+ <description>1.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>2</meaningText>
+ <description>2</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>2.5</meaningText>
+ <description>2.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>3</meaningText>
+ <description>3</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>3.5</meaningText>
+ <description>3.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>4</meaningText>
+ <description>4</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>4.5</meaningText>
+ <description>4.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>5</meaningText>
+ <description>5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>5.5</meaningText>
+ <description>5.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>10</displayOrder>
+ <value>UNDEFINED_CODE_10</value>
+ <meaningText>6</meaningText>
+ <description>6</description>
+ </validValue>
+ <validValue>
+ <displayOrder>11</displayOrder>
+ <value>UNDEFINED_CODE_11</value>
+ <meaningText>6.5</meaningText>
+ <description>6.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>12</displayOrder>
+ <value>UNDEFINED_CODE_12</value>
+ <meaningText>7</meaningText>
+ <description>7</description>
+ </validValue>
+ <validValue>
+ <displayOrder>13</displayOrder>
+ <value>UNDEFINED_CODE_13</value>
+ <meaningText>7.5</meaningText>
+ <description>7.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>14</displayOrder>
+ <value>UNDEFINED_CODE_14</value>
+ <meaningText>8</meaningText>
+ <description>8</description>
+ </validValue>
+ <validValue>
+ <displayOrder>15</displayOrder>
+ <value>UNDEFINED_CODE_15</value>
+ <meaningText>8.5</meaningText>
+ <description>8.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>16</displayOrder>
+ <value>UNDEFINED_CODE_16</value>
+ <meaningText>9</meaningText>
+ <description>9</description>
+ </validValue>
+ <validValue>
+ <displayOrder>17</displayOrder>
+ <value>9.9</value>
+ <meaningText>N/A</meaningText>
+ <description>N/A</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Scale Used for Adult Body Image. (body_image_20_scale)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Collins Adult Scale</meaningText>
+ <description>Collins Adult Scale</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Stunkard Adult Scale</meaningText>
+ <description>Stunkard Adult Scale</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Pulvers African American Scale</meaningText>
+ <description>Pulvers African American Scale</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>17</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Male or female pictures presented/chosen for the age of 30. (body_image_gender_30)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Male</meaningText>
+ <description>Male</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Female</meaningText>
+ <description>Female</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>18</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Choose the picture that most closely resembles your body shape at the age of 30. (body_image_30)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>1</meaningText>
+ <description>1</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>1.5</meaningText>
+ <description>1.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>2</meaningText>
+ <description>2</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>2.5</meaningText>
+ <description>2.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>3</meaningText>
+ <description>3</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>3.5</meaningText>
+ <description>3.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>4</meaningText>
+ <description>4</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>4.5</meaningText>
+ <description>4.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>5</meaningText>
+ <description>5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>5.5</meaningText>
+ <description>5.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>10</displayOrder>
+ <value>UNDEFINED_CODE_10</value>
+ <meaningText>6</meaningText>
+ <description>6</description>
+ </validValue>
+ <validValue>
+ <displayOrder>11</displayOrder>
+ <value>UNDEFINED_CODE_11</value>
+ <meaningText>6.5</meaningText>
+ <description>6.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>12</displayOrder>
+ <value>UNDEFINED_CODE_12</value>
+ <meaningText>7</meaningText>
+ <description>7</description>
+ </validValue>
+ <validValue>
+ <displayOrder>13</displayOrder>
+ <value>UNDEFINED_CODE_13</value>
+ <meaningText>7.5</meaningText>
+ <description>7.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>14</displayOrder>
+ <value>UNDEFINED_CODE_14</value>
+ <meaningText>8</meaningText>
+ <description>8</description>
+ </validValue>
+ <validValue>
+ <displayOrder>15</displayOrder>
+ <value>UNDEFINED_CODE_15</value>
+ <meaningText>8.5</meaningText>
+ <description>8.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>16</displayOrder>
+ <value>UNDEFINED_CODE_16</value>
+ <meaningText>9</meaningText>
+ <description>9</description>
+ </validValue>
+ <validValue>
+ <displayOrder>17</displayOrder>
+ <value>9.9</value>
+ <meaningText>N/A</meaningText>
+ <description>N/A</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>19</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Scale Used for Adult Body Image. (body_image_30_scale)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Collins Adult Scale</meaningText>
+ <description>Collins Adult Scale</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Stunkard Adult Scale</meaningText>
+ <description>Stunkard Adult Scale</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Pulvers African American Scale</meaningText>
+ <description>Pulvers African American Scale</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>20</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Male or female pictures presented/chosen for the age of 40. (body_image_gender_40)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Male</meaningText>
+ <description>Male</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Female</meaningText>
+ <description>Female</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>21</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Choose the picture that most closely resembles your body shape at the age of 40. (body_image_40)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>1</meaningText>
+ <description>1</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>1.5</meaningText>
+ <description>1.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>2</meaningText>
+ <description>2</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>2.5</meaningText>
+ <description>2.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>3</meaningText>
+ <description>3</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>3.5</meaningText>
+ <description>3.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>4</meaningText>
+ <description>4</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>4.5</meaningText>
+ <description>4.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>5</meaningText>
+ <description>5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>5.5</meaningText>
+ <description>5.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>10</displayOrder>
+ <value>UNDEFINED_CODE_10</value>
+ <meaningText>6</meaningText>
+ <description>6</description>
+ </validValue>
+ <validValue>
+ <displayOrder>11</displayOrder>
+ <value>UNDEFINED_CODE_11</value>
+ <meaningText>6.5</meaningText>
+ <description>6.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>12</displayOrder>
+ <value>UNDEFINED_CODE_12</value>
+ <meaningText>7</meaningText>
+ <description>7</description>
+ </validValue>
+ <validValue>
+ <displayOrder>13</displayOrder>
+ <value>UNDEFINED_CODE_13</value>
+ <meaningText>7.5</meaningText>
+ <description>7.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>14</displayOrder>
+ <value>UNDEFINED_CODE_14</value>
+ <meaningText>8</meaningText>
+ <description>8</description>
+ </validValue>
+ <validValue>
+ <displayOrder>15</displayOrder>
+ <value>UNDEFINED_CODE_15</value>
+ <meaningText>8.5</meaningText>
+ <description>8.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>16</displayOrder>
+ <value>UNDEFINED_CODE_16</value>
+ <meaningText>9</meaningText>
+ <description>9</description>
+ </validValue>
+ <validValue>
+ <displayOrder>17</displayOrder>
+ <value>9.9</value>
+ <meaningText>N/A</meaningText>
+ <description>N/A</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>22</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Scale Used for Adult Body Image. (body_image_40_scale)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Collins Adult Scale</meaningText>
+ <description>Collins Adult Scale</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Stunkard Adult Scale</meaningText>
+ <description>Stunkard Adult Scale</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Pulvers African American Scale</meaningText>
+ <description>Pulvers African American Scale</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>23</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Male or female pictures presented/chosen currently. (body_image_gender_current_age)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Male</meaningText>
+ <description>Male</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Female</meaningText>
+ <description>Female</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>24</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Choose the picture that most closely resembles your body shape currently. (body_image_current_age)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>1</meaningText>
+ <description>1</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>1.5</meaningText>
+ <description>1.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>2</meaningText>
+ <description>2</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>2.5</meaningText>
+ <description>2.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>3</meaningText>
+ <description>3</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>3.5</meaningText>
+ <description>3.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>4</meaningText>
+ <description>4</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>4.5</meaningText>
+ <description>4.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>5</meaningText>
+ <description>5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>5.5</meaningText>
+ <description>5.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>10</displayOrder>
+ <value>UNDEFINED_CODE_10</value>
+ <meaningText>6</meaningText>
+ <description>6</description>
+ </validValue>
+ <validValue>
+ <displayOrder>11</displayOrder>
+ <value>UNDEFINED_CODE_11</value>
+ <meaningText>6.5</meaningText>
+ <description>6.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>12</displayOrder>
+ <value>UNDEFINED_CODE_12</value>
+ <meaningText>7</meaningText>
+ <description>7</description>
+ </validValue>
+ <validValue>
+ <displayOrder>13</displayOrder>
+ <value>UNDEFINED_CODE_13</value>
+ <meaningText>7.5</meaningText>
+ <description>7.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>14</displayOrder>
+ <value>UNDEFINED_CODE_14</value>
+ <meaningText>8</meaningText>
+ <description>8</description>
+ </validValue>
+ <validValue>
+ <displayOrder>15</displayOrder>
+ <value>UNDEFINED_CODE_15</value>
+ <meaningText>8.5</meaningText>
+ <description>8.5</description>
+ </validValue>
+ <validValue>
+ <displayOrder>16</displayOrder>
+ <value>UNDEFINED_CODE_16</value>
+ <meaningText>9</meaningText>
+ <description>9</description>
+ </validValue>
+ <validValue>
+ <displayOrder>17</displayOrder>
+ <value>9.9</value>
+ <meaningText>N/A</meaningText>
+ <description>N/A</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>25</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Scale Used for Adult Body Image. (body_image_current_age_scale)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Collins Adult Scale</meaningText>
+ <description>Collins Adult Scale</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Stunkard Adult Scale</meaningText>
+ <description>Stunkard Adult Scale</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Pulvers African American Scale</meaningText>
+ <description>Pulvers African American Scale</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>26</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Collins Scale image (body_image_collins_scale)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>27</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Stunkard Scale or Pulvers image (body_image_stunkard_scale)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>28</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Participant's Children CHILD 1 image (body_image_collins_child_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>29</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Participant's Children CHILD 2 image (body_image_collins_child_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX020401</protocolID>
+ <longName>Body Image</longName>
+ <context>PhenX</context>
+ <shortName>PX020401</shortName>
+ <preferredDefinition>This protocol encompasses the self-reported prior, current, or ideal body image of the respondents and their children. The majority of studies using pictograms have used the Stunkard Figure Rating Scale, which contains nine silhouettes on an ordinal scale. An alternative, the Collins scale, has also been provided. Specific pictograms for African Americans and children are also included.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>PhenX PX020601 - Hand Dominance 42 Months And Older</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>The protocol consists of questions to determine which hand the participant uses for a series of activities. Adults will assist children beginning at 42 months of age.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>Hand Dominance 42 Months And Older</longName>
+ <instruction/>
+ <preferredDefinition>Hand Dominance 42 Months And Older</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Child hand used in drawing (child_hand_drawing)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right</meaningText>
+ <description>Right</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left</meaningText>
+ <description>Left</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Either</meaningText>
+ <description>Either</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Child hand used in throwing a ball (child_hand_throwing)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right</meaningText>
+ <description>Right</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left</meaningText>
+ <description>Left</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Either</meaningText>
+ <description>Either</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Child hand used in coloring (child_hand_coloring)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right</meaningText>
+ <description>Right</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left</meaningText>
+ <description>Left</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Either</meaningText>
+ <description>Either</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Child hand used in holding a toothbrush (child_hand_holding_toothbrush)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right</meaningText>
+ <description>Right</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left</meaningText>
+ <description>Left</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Either</meaningText>
+ <description>Either</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX020601</protocolID>
+ <longName>Hand Dominance - 42 Months and Older</longName>
+ <context>PhenX</context>
+ <shortName>PX020601</shortName>
+ <preferredDefinition>The protocol consists of questions to determine which hand the participant uses for a series of activities. Adults will assist children beginning at 42 months of age.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>PhenX PX020602 - Hand Dominance 12 Years And Older</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>The protocol consists of questions to determine which hand the participant uses for a series of activities.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>Hand Dominance 12 Years And Older</longName>
+ <instruction/>
+ <preferredDefinition>Hand Dominance 12 Years And Older</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Please indicate your preferences in the use of hands in writing. (hand_write)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right hand</meaningText>
+ <description>Right hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left hand</meaningText>
+ <description>Left hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Both hands</meaningText>
+ <description>Both hands</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Please indicate your preferences in the use of hands in drawing. (hand_draw)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right hand</meaningText>
+ <description>Right hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left hand</meaningText>
+ <description>Left hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Both hands</meaningText>
+ <description>Both hands</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Please indicate your preferences in the use of hands in throwing. (hand_throw)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right hand</meaningText>
+ <description>Right hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left hand</meaningText>
+ <description>Left hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Both hands</meaningText>
+ <description>Both hands</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Please indicate your preferences in the use of hands in holding a racquet. (hand_hold_racquet)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right hand</meaningText>
+ <description>Right hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left hand</meaningText>
+ <description>Left hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Both hands</meaningText>
+ <description>Both hands</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Please indicate your preferences in the use of hands in cleaning teeth. (hand_clean_teeth)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right hand</meaningText>
+ <description>Right hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left hand</meaningText>
+ <description>Left hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Both hands</meaningText>
+ <description>Both hands</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Please indicate your preferences in the use of hands in hammering. (hand_hammer)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right hand</meaningText>
+ <description>Right hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left hand</meaningText>
+ <description>Left hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Both hands</meaningText>
+ <description>Both hands</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Please indicate your preferences in the use of hands in striking a match. (hand_strike_match)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right hand</meaningText>
+ <description>Right hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left hand</meaningText>
+ <description>Left hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Both hands</meaningText>
+ <description>Both hands</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Please indicate your preferences in the use of hands in using an eraser. (hand_use_eraser)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right hand</meaningText>
+ <description>Right hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left hand</meaningText>
+ <description>Left hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Both hands</meaningText>
+ <description>Both hands</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Please indicate your preferences in the use of hands in dealing cards. (hand_deal_card)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right hand</meaningText>
+ <description>Right hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left hand</meaningText>
+ <description>Left hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Both hands</meaningText>
+ <description>Both hands</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Please indicate your preferences in the use of hands in threading a needle. (hand_thread_needle)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right hand</meaningText>
+ <description>Right hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left hand</meaningText>
+ <description>Left hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Both hands</meaningText>
+ <description>Both hands</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Please indicate your preferences in the use of hands in cutting food with a knife. (hand_cut_food)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Right hand</meaningText>
+ <description>Right hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Left hand</meaningText>
+ <description>Left hand</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Both hands</meaningText>
+ <description>Both hands</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>How many "Right hand" in Questions 111? (hand_total_right)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;maxLength=11</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>How many "Left hand" in Questions 111? (hand_total_left)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;maxLength=11</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>How many "Both hands" in Questions 111? (hand_total_both)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;maxLength=11</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>SCORE = 100 x (TOTAL_RIGHT TOTAL_LEFT) / (TOTAL_RIGHT + TOTAL_LEFT + TOTAL_BOTH) (handedness_score)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Handedness is classified by the score. (handedness)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Left-handed</meaningText>
+ <description>Left-handed</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Mixed-handed</meaningText>
+ <description>Mixed-handed</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Right-handed</meaningText>
+ <description>Right-handed</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX020602</protocolID>
+ <longName>Hand Dominance - 12 Years and Older</longName>
+ <context>PhenX</context>
+ <shortName>PX020602</shortName>
+ <preferredDefinition>The protocol consists of questions to determine which hand the participant uses for a series of activities.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>PhenX PX020701 - Knee Height</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Knee height is measured as the distance from the surface over the femoral condyles to the heel, with the knee flexed to approximately 90 degrees. This measure is used for individuals who are 60 years of age or older, who are unable to stand, or who have spinal deformities. It may be necessary to take replicate measurements.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction>
+ <text>Knee height was measured on adults 60 years of age and older during National Health and Nutrition Examination Study III, 198894. Measurements are taken in the seated position with both legs dangling. The examiner places the fixed blade of the ..TRUNCATED</text>
+ </headerInstruction>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>Knee Height</longName>
+ <instruction/>
+ <preferredDefinition>Knee Height</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Exhibit 1. Proper Positioning of the Participant for the Knee Height Protocol (knee_height_desc_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Knee Height 1 (knee_height_1)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0; UOM=Record to the nearest 0.1 cm</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Knee Height 2 (knee_height_2)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0; UOM=Record to the nearest 0.1 cm</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Knee Height 3 (knee_height_3)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0; UOM=Record to the nearest 0.1 cm</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Knee Height Average (knee_height_average)</questionText>
+ <instruction>
+ <text>Calc: mean([knee_height_1],[knee_height_2],[knee_height_3])</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX020701</protocolID>
+ <longName>Height - Knee Height</longName>
+ <context>PhenX</context>
+ <shortName>PX020701</shortName>
+ <preferredDefinition>Knee height is measured as the distance from the surface over the femoral condyles to the heel, with the knee flexed to approximately 90 degrees. This measure is used for individuals who are 60 years of age or older, who are unable to stand, or who have spinal deformities. It may be necessary to take replicate measurements.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>PhenX PX020704 - Selfreported Height</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>The questions in the protocol ask the study subject his or her height.NOTE: Self-reported height values are considered to be less accurate. Self-reported height is subject to error and is used when measured height cannot be obtained.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <longName>Selfreported Height</longName>
+ <instruction/>
+ <preferredDefinition>Selfreported Height</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>How tall {are you/is [participant]} without shoes? ENTER HEIGHT IN FEET AND INCHES OR METERS AND CENTIMETERS (self_reported_height_coded)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>FEET AND INCHES</meaningText>
+ <description>FEET AND INCHES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>METERS AND CENTIMETERS</meaningText>
+ <description>METERS AND CENTIMETERS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>7777</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>9999</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Feet (self_reported_height_feet)</questionText>
+ <instruction>
+ <text>datatype=integer;minLength=0;[self_reported_height_coded] = '1'; UOM=feet</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Inches (self_reported_height_inches)</questionText>
+ <instruction>
+ <text>datatype=integer;minLength=0;[self_reported_height_coded] = '1'; UOM=inches</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Meters (self_reported_height_meters)</questionText>
+ <instruction>
+ <text>datatype=integer;minLength=0;[self_reported_height_coded] = '2'; UOM=meters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Centimeters (self_reported_height_centimeters)</questionText>
+ <instruction>
+ <text>datatype=integer;minLength=0;[self_reported_height_coded] = '2'; UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-23T17:59:11</dateCreated>
+ <questionText>Proxy Name (self_reported_height_proxy_name)</questionText>
+ <instruction>
+ <text>UOM=If applicable</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX020704</protocolID>
+ <longName>Height - Self-Reported Height</longName>
+ <context>PhenX</context>
+ <shortName>PX020704</shortName>
+ <preferredDefinition>The questions in the protocol ask the study subject his or her height.NOTE: Self-reported height values are considered to be less accurate. Self-reported height is subject to error and is used when measured height cannot be obtained.</preferredDefinition>
+ </protocol>
+ </form> 
+ </forms>

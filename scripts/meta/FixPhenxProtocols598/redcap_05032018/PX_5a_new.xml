@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+ <collectionName>PhenX Protocols - 5</collectionName>
+ <collectionDescription>Load PhenX PX020501,PX020703</collectionDescription>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <longName>PhenX PX020501 - Child Head Circumference</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Measurement for children from birth to 36 months (Centers for Disease Control and Prevention growth charts) or 60 months (World Health Organization growth charts) of age. The parent or a health professional may need to hold the child while the examiner uses a tape measure to measure the child's head.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction>
+ <text>Exhibit 1. Head circumference tape position</text>
+ </headerInstruction>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <longName>Child Head Circumference</longName>
+ <instruction/>
+ <preferredDefinition>Child Head Circumference</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>The circumference of the head is measured on children from birth through 36 months of age. Follow the steps below to obtain the head circumference measurement: 1. Position of the study participant: Instruct the parent (or guardian) to stand holding the child over the parents left shoulder or else sit with the child in the parents lap. Ask the parent to remove hair ornaments or braids that might interfere with the measurement. 2. Taking the measurement: Place the head circumference tape around the childs head so that the tape lies: across the frontal bones of the skull slightly above the eyebrows perpendicular to the long axis of the face above the ears and over the occipital prominence at the back of the head (Exhibit 1). Move the tape up and down over the back of the head to locate the maximal circumference. Tighten the insertion tape so that it fits snugly around the head and compresses the hair and underlying soft tissues. Measure the circumference to the nearest 0.1 cm. 3. Record the result. Remove the head circumference tape. (child_head_circumference_desc)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Child Head Circumference measured in centimeter, first measurement (child_head_circumference_1)</questionText>
+ <instruction>
+ <text>UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Child Head Circumference measured in centimeter, second measurement (child_head_circumference_2)</questionText>
+ <instruction>
+ <text>UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Child Head Circumference measured in centimeter, third measurement (child_head_circumference_3)</questionText>
+ <instruction>
+ <text>UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Child Head Circumference measured in centimeter, average (child_head_circumference_average)</questionText>
+ <instruction>
+ <text>UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX020501</protocolID>
+ <longName>Child Head Circumference</longName>
+ <context>PhenX</context>
+ <shortName>PX020501</shortName>
+ <preferredDefinition>Measurement for children from birth to 36 months (Centers for Disease Control and Prevention growth charts) or 60 months (World Health Organization growth charts) of age. The parent or a health professional may need to hold the child while the examiner uses a tape measure to measure the child's head.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <longName>PhenX PX020703 - Standing Height</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Standing height is measured from the top of the participant's head to his or her heels. This measure is taken among participants, usually older than 2 years of age, who are able to stand unassisted. The Anthropometrics Expert Review Panel suggests that the measurements be taken to the nearest 0.1 cm.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction>
+ <text>Ask the participant to remove hair ornaments, jewelry, buns, or braids from the top of the head that interfere with the measurement. Shoes should be removed.Ask the participant to stand erect against the backboard with the body weight evenly d..TRUNCATED</text>
+ </headerInstruction>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <longName>Standing Height</longName>
+ <instruction/>
+ <preferredDefinition>Standing Height</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Exhibit 1. Stadiometer with a fixed length backboard and an adjustable headpiece (standing_height_desc_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Exhibit 2. Body Orientation for Standing Height Measurement and Frankfort Horizontal Plane (standing_height_desc_3)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Standing Height Units (standing_height_units)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Feet</meaningText>
+ <description>Feet</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Inches</meaningText>
+ <description>Inches</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Meters</meaningText>
+ <description>Meters</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Standing Height 1 (standing_height_1_feets)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;[standing_height_units] = '1'; UOM=feet</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Standing Height 2 (standing_height_2_feets)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;[standing_height_units] = '1'; UOM=feet</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Standing Height 3 (standing_height_3_feets)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;[standing_height_units] = '1'; UOM=feet</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Standing Height Average (standing_height_average_feets)</questionText>
+ <instruction>
+ <text>Calc: [standing_height_units] = '1';mean([standing_height_1_feets],[standing_height_2_feets],[standing_height_3_feets]); UOM=feet</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Standing Height 1 (standing_height_1_inches)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;[standing_height_units] = '2'; UOM=inches</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Standing Height 2 (standing_height_2_inches)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;[standing_height_units] = '2'; UOM=inches</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Standing Height 3 (standing_height_3_inches)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;[standing_height_units] = '2'; UOM=inches</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Standing Height Average (standing_hei2_c12)</questionText>
+ <instruction>
+ <text>Calc: [standing_height_units] = '2';mean([standing_height_1_inches],[standing_height_2_inches],[standing_height_3_inches]); UOM=inches</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Standing Height 1 (standing_height_1_meters)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;[standing_height_units] = '3'; UOM=meters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Standing Height 2 (standing_height_2_meters)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;[standing_height_units] = '3'; UOM=meters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Standing Height 3 (standing_height_3_meters)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=0;[standing_height_units] = '3'; UOM=meters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-23T17:57:07</dateCreated>
+ <questionText>Standing Height Average (standing_height_average)</questionText>
+ <instruction>
+ <text>Calc: [standing_height_units] = '3';mean([standing_height_1_meters],[standing_height_2_meters],[standing_height_3_meters])</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX020703</protocolID>
+ <longName>Height - Standing Height</longName>
+ <context>PhenX</context>
+ <shortName>PX020703</shortName>
+ <preferredDefinition>Standing height is measured from the top of the participant's head to his or her heels. This measure is taken among participants, usually older than 2 years of age, who are able to stand unassisted. The Anthropometrics Expert Review Panel suggests that the measurements be taken to the nearest 0.1 cm.</preferredDefinition>
+ </protocol>
+ </form>
+ </forms>

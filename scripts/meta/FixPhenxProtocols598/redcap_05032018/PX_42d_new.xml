@@ -1,0 +1,4383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 42d</collectionName>
+  <collectionDescription>Load PhenX PX550801,PX540501</collectionDescription>    
+    <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:22</dateCreated>
+    <longName>PhenX PX550801 - Point Of Sale Environment For Alcohol And Tobacco</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The ImpacTeen Store Observation Form is an observational instrument used to gather information on whether stores (i.e., convenience, grocery, drug/pharmacy, liquor, etc.) sell alcohol and/or tobacco products and on point-of-sale advertising, promotions, placement, and pricing of these products. A trained observer uses the form to collect information during on-site visits of retail establishments. The protocol collects data about specific tobacco and alcohol products, along with information related to marketing ads/logos visible in the interior and exterior of the store. Aggregating the store-level data collected for all stores in a community will provide information on the availability and marketing of alcohol and tobacco products at the community level.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:22</dateCreated>
+      <longName>Point of Sale Environment for Alcohol and Tobacco</longName>
+      <preferredDefinition>Point of Sale Environment for Alcohol and Tobacco</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE NAME (store_name)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STREET (street)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CITY (city)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>ST (st)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>ZIP (zip)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>SIC (sic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PHONE (phone)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>SCREENING OUTCOME: (screening_outcome)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>LABEL CORRECTIONS: (label_corrections)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Final Status (final_status)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>01</value>
+          <meaningText>OBSERVATION COMPLETED</meaningText>
+          <description>OBSERVATION COMPLETED</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>02</value>
+          <meaningText>STORE NOT FOUND (EXPLAIN)</meaningText>
+          <description>STORE NOT FOUND (EXPLAIN)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>03</value>
+          <meaningText>STORE NOT OPEN TODAY</meaningText>
+          <description>STORE NOT OPEN TODAY</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>04</value>
+          <meaningText>OUT OF BUSINESS</meaningText>
+          <description>OUT OF BUSINESS</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>05</value>
+          <meaningText>NO TOBACCO OR ALCOHOL SOLD</meaningText>
+          <description>NO TOBACCO OR ALCOHOL SOLD</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>06</value>
+          <meaningText>NOT SAFE (EXPLAIN)</meaningText>
+          <description>NOT SAFE (EXPLAIN)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>07</value>
+          <meaningText>STAFF SUSPICIOUS/ASKED TO LEAVE (EXPLAIN)</meaningText>
+          <description>STAFF SUSPICIOUS/ASKED TO LEAVE (EXPLAIN)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>08</value>
+          <meaningText>OUT OF SAMPLE AREA (EXPLAIN)</meaningText>
+          <description>OUT OF SAMPLE AREA (EXPLAIN)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>09</value>
+          <meaningText>OVERSAMPLED (NOT NEEDED)</meaningText>
+          <description>OVERSAMPLED (NOT NEEDED)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>DUPLICATE W/ ID# __ __ - __ __ - __ __ __ __ - __ __ __ __</meaningText>
+          <description>DUPLICATE W/ ID# __ __ - __ __ - __ __ __ __ - __ __ __ __</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>12</value>
+          <meaningText>RAN OUT OF TIME (EXPLAIN)</meaningText>
+          <description>RAN OUT OF TIME (EXPLAIN)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>13</value>
+          <meaningText>OTHER</meaningText>
+          <description>OTHER</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Final Status  Duplicate ID # (final_status_duplicate_id_number)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Final Status  Other (final_status_other_specify)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Final Status  Explanations (final_status_explanations)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>DATE Month/Day/Year (date_month)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>TEAM LEAD ID (team_lead_id)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>ASSISTANT ID (assistant_id)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>TIME (hh:mm) (time)</questionText>
+        <instruction>
+         <text>datatype=time</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>am/pm (am_pm)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>am</meaningText>
+          <description>am</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>pm</meaningText>
+          <description>pm</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE SEQUENCE# (store_sequence_number)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>IS THE STORE DRIVETHRU/KIOSK ONLY? (store_drivethru_kiosk_only)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>SCHOOL PROXIMITY (CODE ALL THAT APPLY) (school_proximity)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>CLOSEST TO INDEX SCHOOL</meaningText>
+          <description>CLOSEST TO INDEX SCHOOL</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>INDEX SCHOOL VISIBLE FROM STORE</meaningText>
+          <description>INDEX SCHOOL VISIBLE FROM STORE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>OTHER SCHOOLS VISIBLE FROM STORE (K-12)</meaningText>
+          <description>OTHER SCHOOLS VISIBLE FROM STORE (K-12)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>NONE OF THE ABOVE</meaningText>
+          <description>NONE OF THE ABOVE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>TYPE OF STORE (type_of_store)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>01</value>
+          <meaningText>CONVENIENCE</meaningText>
+          <description>CONVENIENCE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>02</value>
+          <meaningText>CONVENIENCE &amp; GAS</meaningText>
+          <description>CONVENIENCE &amp; GAS</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>03</value>
+          <meaningText>GAS STATIONS</meaningText>
+          <description>GAS STATIONS</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>04</value>
+          <meaningText>MOM &amp; POP GROCERY</meaningText>
+          <description>MOM &amp; POP GROCERY</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>05</value>
+          <meaningText>LARGER GROCERY</meaningText>
+          <description>LARGER GROCERY</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>06</value>
+          <meaningText>SUPERMARKET</meaningText>
+          <description>SUPERMARKET</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>07</value>
+          <meaningText>DRUG STORE/PHARMACY</meaningText>
+          <description>DRUG STORE/PHARMACY</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>08</value>
+          <meaningText>LIQUOR STORE</meaningText>
+          <description>LIQUOR STORE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>09</value>
+          <meaningText>TOBACCO STORE</meaningText>
+          <description>TOBACCO STORE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>NEWSSTAND</meaningText>
+          <description>NEWSSTAND</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>DELICATESSEN</meaningText>
+          <description>DELICATESSEN</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>12</value>
+          <meaningText>BOWLING ALLEY</meaningText>
+          <description>BOWLING ALLEY</description>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>13</value>
+          <meaningText>GENERAL MERCHANDISE</meaningText>
+          <description>GENERAL MERCHANDISE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>13</displayOrder>
+          <value>14</value>
+          <meaningText>(K-MART, WAL-MART, SMALLER GENERAL STORES)</meaningText>
+          <description>(K-MART, WAL-MART, SMALLER GENERAL STORES)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>14</displayOrder>
+          <value>16</value>
+          <meaningText>BULK WAREHOUSE (SAM'S, BJ'S, BULK LARGE)</meaningText>
+          <description>BULK WAREHOUSE (SAM'S, BJ'S, BULK LARGE)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>15</displayOrder>
+          <value>17</value>
+          <meaningText>OTHER</meaningText>
+          <description>OTHER</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>TYPE OF STORE Other Specify (type_of_store_other_specify)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>COMMENTS ABOUT THE STORE (store_comments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Does the store sell tobacco? (store_sell_tobacco)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PLACEMENT OF CIGARETTES AND SMOKELESS TOBACCO: CIGARETTE PACKS (placement_of_cigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>01</value>
+          <meaningText>Self-Service</meaningText>
+          <description>Self-Service</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>02</value>
+          <meaningText>Off Counter, in view of clerk</meaningText>
+          <description>Off Counter, in view of clerk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>03</value>
+          <meaningText>Off Counter, not in view of clerk</meaningText>
+          <description>Off Counter, not in view of clerk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>04</value>
+          <meaningText>Next to candy displays</meaningText>
+          <description>Next to candy displays</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>05</value>
+          <meaningText>? 3 feet above</meaningText>
+          <description>? 3 feet above</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>06</value>
+          <meaningText>Clerk-Assisted: Over or behind counter of general check-out</meaningText>
+          <description>Clerk-Assisted: Over or behind counter of general check-out</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>07</value>
+          <meaningText>Behind special customer service desk</meaningText>
+          <description>Behind special customer service desk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>08</value>
+          <meaningText>Tobacco-only desk</meaningText>
+          <description>Tobacco-only desk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>09</value>
+          <meaningText>Locked or closed cabinet</meaningText>
+          <description>Locked or closed cabinet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>Plexiglass display on counter</meaningText>
+          <description>Plexiglass display on counter</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Other Placement (SPECIFY)</meaningText>
+          <description>Other Placement (SPECIFY)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>97</value>
+          <meaningText>COULD NOT DETERMINE/PRODUCT NOT SOLD</meaningText>
+          <description>COULD NOT DETERMINE/PRODUCT NOT SOLD</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PLACEMENT OF CIGARETTES AND SMOKELESS TOBACCO: CIGARETTE PACKS Other, Specify (placement_of_cigarettes_other_specify)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PLACEMENT OF CIGARETTES AND SMOKELESS TOBACCO: SMOKELESS TOBACCO (placement_of_smokeless_tobacco)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>01</value>
+          <meaningText>Self-Service</meaningText>
+          <description>Self-Service</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>02</value>
+          <meaningText>Off Counter, in view of clerk</meaningText>
+          <description>Off Counter, in view of clerk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>03</value>
+          <meaningText>Off Counter, not in view of clerk</meaningText>
+          <description>Off Counter, not in view of clerk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>04</value>
+          <meaningText>Next to candy displays</meaningText>
+          <description>Next to candy displays</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>05</value>
+          <meaningText>? 3 feet above</meaningText>
+          <description>? 3 feet above</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>06</value>
+          <meaningText>Clerk-Assisted: Over or behind counter of general check-out</meaningText>
+          <description>Clerk-Assisted: Over or behind counter of general check-out</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>07</value>
+          <meaningText>Behind special customer service desk</meaningText>
+          <description>Behind special customer service desk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>08</value>
+          <meaningText>Tobacco-only desk</meaningText>
+          <description>Tobacco-only desk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>09</value>
+          <meaningText>Locked or closed cabinet</meaningText>
+          <description>Locked or closed cabinet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>Plexiglass display on counter</meaningText>
+          <description>Plexiglass display on counter</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Other Placement (SPECIFY)</meaningText>
+          <description>Other Placement (SPECIFY)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>97</value>
+          <meaningText>COULD NOT DETERMINE/PRODUCT NOT SOLD</meaningText>
+          <description>COULD NOT DETERMINE/PRODUCT NOT SOLD</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PLACEMENT OF CIGARETTES AND SMOKELESS TOBACCO: SMOKELESS TOBACCO Other, Specify (placement_of_smokeless_tobacco_other_specify)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other tobacco products visible? Cigarette cartons (tobacco_products_visible_cigarette_cartons)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other tobacco products visible? Cigars (tobacco_products_visible_cigars)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other tobacco products visible? Bidis (tobacco_products_visible_bidis)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other tobacco products visible? Clove Cigarettes (Kreteks) (tobacco_products_visible_clove_cigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other tobacco products visible? Loose cigarettes (tobacco_products_visible_loose_cigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other tobacco products visible? PREPs (tobacco_products_visible_preps)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other tobacco products visible? Flavored tobacco cigarettes (tobacco_products_visible_flavored_cigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other tobacco products visible? Nicotine replacements (tobacco_products_visible_nicotine_replacements)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other tobacco products visible? Rolling Papers (tobacco_products_visible_rolling_papers)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: PREMIUM CIGARETTE: BRAND (tobacco_price_premium_cigarette_brand)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Marlboro</meaningText>
+          <description>Marlboro</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Newport</meaningText>
+          <description>Newport</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>997</value>
+          <meaningText>PRODUCT NOT SOLD</meaningText>
+          <description>PRODUCT NOT SOLD</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: PREMIUM CIGARETTE: PRICE W/O TAX (tobacco_price_premium_cigarette_pricewotax)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: PREMIUM CIGARETTE: PRICE W/O TAX (tobacco_price_premium2_d44)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>COULDN'T GET PRICE</meaningText>
+          <description>COULDN'T GET PRICE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: PREMIUM CIGARETTE: VISIBLE OR HAD TO ASK (tobacco_price_premium_cigarette_visible)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Visible</meaningText>
+          <description>Visible</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Asked</meaningText>
+          <description>Asked</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: LOWEST PRICE CIGARETTE: PRICE W/O TAX (tobacco_price_cheapest_pricewotax)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: LOWEST PRICE CIGARETTE: PRICE W/O TAX (tobacco_price_cheapes2_04d)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>COULDN'T GET PRICE</meaningText>
+          <description>COULDN'T GET PRICE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: LOWEST PRICE CIGARETTE: VISIBLE OR HAD TO ASK (tobacco_price_cheapest_visible)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Visible</meaningText>
+          <description>Visible</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Asked</meaningText>
+          <description>Asked</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: SMOKELESS: BRAND (tobacco_price_smokeless_brand)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>SKOAL</meaningText>
+          <description>SKOAL</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>997</value>
+          <meaningText>PRODUCT NOT SOLD</meaningText>
+          <description>PRODUCT NOT SOLD</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>46</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: SMOKELESS: BRAND  OTHER PLEASE SPECIFY (tobacco_price_smokeless_brand_specify)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>47</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: SMOKELESS: PRICE W/O TAX (tobacco_price_smokeless_pricewotax)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>48</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: SMOKELESS: PRICE W/O TAX (tobacco_price_smokele2_8d9)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>997</value>
+          <meaningText>COULDN'T GET PRICE</meaningText>
+          <description>COULDN'T GET PRICE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>49</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: SMOKELESS: VISIBLE OR HAD TO ASK (tobacco_price_smokeless_visible)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Visible</meaningText>
+          <description>Visible</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Asked</meaningText>
+          <description>Asked</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>50</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: PREPS: BRAND (tobacco_preps_brand)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Ariva</meaningText>
+          <description>Ariva</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Omni</meaningText>
+          <description>Omni</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>997</value>
+          <meaningText>PRODUCT NOT SOLD</meaningText>
+          <description>PRODUCT NOT SOLD</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>51</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: PREPS: PRICE W/O TAX (tobacco_preps_pricewotax)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>52</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: PREPS: PRICE W/O TAX (tobacco_preps_pricewo2_c77)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>997</value>
+          <meaningText>COULDN'T GET PRICE</meaningText>
+          <description>COULDN'T GET PRICE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>53</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF TOBACCO: PREPS: VISIBLE OR HAD TO ASK (tobacco_preps_visible)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Visible</meaningText>
+          <description>Visible</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Asked</meaningText>
+          <description>Asked</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>54</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: CIGARETTES: (cigarette_promotions_brand)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Marlboro</meaningText>
+          <description>Marlboro</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Newport</meaningText>
+          <description>Newport</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>55</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: Does the store have: multipack discounts? (cigarette_promotions_multipack_discounts)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Cannot Determine/Product not sold</meaningText>
+          <description>Cannot Determine/Product not sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>56</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: Does the store have: centsoff coupon offers? (cigarette_promotions_coupon_offers)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Cannot Determine/Product not sold</meaningText>
+          <description>Cannot Determine/Product not sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>57</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: Does the store have: advertised special price offer? (cigarette_promotions_special_price)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Cannot Determine/Product not sold</meaningText>
+          <description>Cannot Determine/Product not sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>58</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: Does the store have: freebies (lighters, etc.) w/ purchase? (cigarette_promotions_freebies)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Cannot Determine/Product not sold</meaningText>
+          <description>Cannot Determine/Product not sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>59</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: Does the store have: mailin coup/points for merchandise? (cigarette_promotions_mailing)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Cannot Determine/Product not sold</meaningText>
+          <description>Cannot Determine/Product not sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>60</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: Does the store have: Any other type of promotion? (cigarette_promotions_others)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes	</meaningText>
+          <description>Yes	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Cannot Determine/Product not sold</meaningText>
+          <description>Cannot Determine/Product not sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>61</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: Does the store have: Any other type of promotion? Specify (cigarette_promotions_others_specify)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>62</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: PREPs: (preps_promotions_brand)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Ariva</meaningText>
+          <description>Ariva</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Omni</meaningText>
+          <description>Omni</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>63</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: PREPS: Does the store have: multipack discounts? (preps_promotions_multipack_discounts)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Cannot Determine/Product not sold</meaningText>
+          <description>Cannot Determine/Product not sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>64</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: PREPS :Does the store have: centsoff coupon offers? (preps_promotions_coupon)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Cannot Determine/Product not sold</meaningText>
+          <description>Cannot Determine/Product not sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>65</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: PREPS: Does the store have: advertised special price offer? (preps_promotions_special_price)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Cannot Determine/Product not sold</meaningText>
+          <description>Cannot Determine/Product not sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>66</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: PREPS: Does the store have: freebies (lighters, etc.) w/ purchase? (preps_promotions_freebies)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Cannot Determine/Product not sold</meaningText>
+          <description>Cannot Determine/Product not sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>67</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: PREPS: Does the store have: mailin coup/points for merchandise? (preps_promotions_mailin)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Cannot Determine/Product not sold</meaningText>
+          <description>Cannot Determine/Product not sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>68</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: PREPS: Does the store have: Any other type of promotion? (preps_promotions_otherz)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes	</meaningText>
+          <description>Yes	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>Cannot Determine/Product not sold</meaningText>
+          <description>Cannot Determine/Product not sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>69</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>CIGARETTE PROMOTIONS: PREPS: Does the store have: Any other type of promotion? Specify (preps_promotions_other_specify)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>70</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Does the store sell alcohol? (store_sell_alcohol)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>71</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PLACEMENT OF BEER (CODE ALL THAT APPLY): SelfService: (beer_placement_self)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>01</value>
+          <meaningText>On the shelf</meaningText>
+          <description>On the shelf</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>02</value>
+          <meaningText>In refrigerator/cooler</meaningText>
+          <description>In refrigerator/cooler</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>03</value>
+          <meaningText>Singles in open ice bucket</meaningText>
+          <description>Singles in open ice bucket</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>04</value>
+          <meaningText>Floor display</meaningText>
+          <description>Floor display</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>97</value>
+          <meaningText>NO BEER/CAN'T DETERMINE</meaningText>
+          <description>NO BEER/CAN'T DETERMINE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>72</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PLACEMENT OF BEER (CODE ALL THAT APPLY): ClerkAssisted: (beer_placement_clerk)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>05</value>
+          <meaningText>Over or behind counter</meaningText>
+          <description>Over or behind counter</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>06</value>
+          <meaningText>Locked or closed cabinet</meaningText>
+          <description>Locked or closed cabinet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>97</value>
+          <meaningText>NO BEER/CAN'T DETERMINE</meaningText>
+          <description>NO BEER/CAN'T DETERMINE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>73</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PLACEMENT OF BEER (CODE ALL THAT APPLY): Other Placement (SPECIFY) (beer_placement_other_specify)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>74</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other alcohol products visible? Beerbased malt liquor? (alcohol_products_visible_malt_liquor)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>75</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other alcohol products visible? Any Beer or Malt in 32/40 oz (alcohol_products_visible_3240_oz)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>76</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other alcohol products visible? Wine  Regular (alcohol_products_visible_wine)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>77</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other alcohol products visible? Fortified Wine (&gt; 14% alcohol) (alcohol_products_visible_fortified_wine)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>78</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other alcohol products visible? Spirits  Flask sizes 375mil (alcohol_products_visible_spirits_flask)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>79</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other alcohol products visible? Spirits  Nips or minis (alcohol_products_visible_spirits_nips)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>80</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other alcohol products visible? Spirits  Any other sizes (alcohol_products_visible_spirits_other)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>81</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other alcohol products visible? Alcopops  Spiritbranded (alcohol_products_visible_alcopops_spirits)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>82</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other alcohol products visible? Alcopops  Wine coolers (alcohol_products_visible_alcopops_winecoolers)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>83</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other alcohol products visible? Alcopops  Fruit labeled (alcohol_products_visible_alcopops_fruit)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>84</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are the following other alcohol products visible? Alcopops  Dairybased (alcohol_products_visible_alcopops_dairy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>85</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: BRAND: Budweiser or Miller GD 6pack of cans (beer_price_6pack_brand)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Budweiser</meaningText>
+          <description>Budweiser</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Miller Genuine Draft 	</meaningText>
+          <description>Miller Genuine Draft 	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>997</value>
+          <meaningText>Product Not Sold</meaningText>
+          <description>Product Not Sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>86</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: PRICE: Budweiser or Miller GD 6pack of cans (beer_price_6pack)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>87</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: PRICE: Budweiser or Miller GD 6pack of cans (beer_price_6pack2_ecb)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>COULDN'T GET PRICE</meaningText>
+          <description>COULDN'T GET PRICE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>88</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: VISIBLE OR HAD TO ASK : Budweiser or Miller GD 6pack of cans (beer_price_visible_6pack)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Visible</meaningText>
+          <description>Visible</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Asked</meaningText>
+          <description>Asked</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>89</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: BRAND: Budweiser or Miller GD 12pack of cans (beer_price_brand_12pack)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Budweiser</meaningText>
+          <description>Budweiser</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Miller Genuine Draft 	</meaningText>
+          <description>Miller Genuine Draft 	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>997</value>
+          <meaningText>Product Not Sold</meaningText>
+          <description>Product Not Sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>90</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: PRICE: Budweiser or Miller GD 12pack of cans (beer_price_12pack)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>91</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: PRICE: Budweiser or Miller GD 12pack of cans (beer_price_12pack2_259)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>COULDN'T GET PRICE</meaningText>
+          <description>COULDN'T GET PRICE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>92</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: VISIBLE OR HAD TO ASK : Budweiser or Miller GD 12pack of cans (beer_price_visible_12pack)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Visible</meaningText>
+          <description>Visible</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Asked</meaningText>
+          <description>Asked</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>93</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: BRAND: Malt Liquor (40oz btls) (beer_price_brand_malt)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Olde English</meaningText>
+          <description>Olde English</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Colt 45 	</meaningText>
+          <description>Colt 45 	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>997</value>
+          <meaningText>Product Not Sold</meaningText>
+          <description>Product Not Sold</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>94</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: PRICE: Malt Liquor (40oz btls) (beer_price_malt)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>95</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: PRICE: Malt Liquor (40oz btls) (beer_price_malt2_b0a)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>COULDN'T GET PRICE</meaningText>
+          <description>COULDN'T GET PRICE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>96</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: VISIBLE OR HAD TO ASK : Malt Liquor (40oz btls) (beer_price_malt_visible)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Visible</meaningText>
+          <description>Visible</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Asked</meaningText>
+          <description>Asked</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>97</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: PRICE: Mike's Hard Lemonade (6pack of bottles) (beer_price_hard_lemonade_available)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>997</value>
+          <meaningText>PRODUCT NOT SOLD</meaningText>
+          <description>PRODUCT NOT SOLD</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>98</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: PRICE: Mike's Hard Lemonade (6pack of bottles) (beer_price_hard_lemonade)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>99</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: PRICE: Mike's Hard Lemonade (6pack of bottles) (beer_price_hard_lemon2_ab7)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>998</value>
+          <meaningText>COULDN'T GET PRICE</meaningText>
+          <description>COULDN'T GET PRICE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>100</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>PRICE OF BEER/MALT: VISIBLE OR HAD TO ASK : Malt Liquor (40oz btls) (beer_price_hard_lemonade_visible)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Visible</meaningText>
+          <description>Visible</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Asked</meaningText>
+          <description>Asked</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>101</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>BEER/MALT PROMOTIONS: Does the store have any promotions such as volume discounts, advertised special price offers, coupons, freebies, or points for:Budweiser (beer_promotions_budweiser)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES	</meaningText>
+          <description>YES	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO	</meaningText>
+          <description>NO	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>CANNOT DETERMINE/ PRODUCT NOT SOLD</meaningText>
+          <description>CANNOT DETERMINE/ PRODUCT NOT SOLD</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>102</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>BEER/MALT PROMOTIONS: Does the store have any promotions such as volume discounts, advertised special price offers, coupons, freebies, or points for:Miller Genuine Draft (beer_promotions_miller)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES	</meaningText>
+          <description>YES	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO	</meaningText>
+          <description>NO	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>CANNOT DETERMINE/ PRODUCT NOT SOLD</meaningText>
+          <description>CANNOT DETERMINE/ PRODUCT NOT SOLD</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>103</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>BEER/MALT PROMOTIONS: Does the store have any promotions such as volume discounts, advertised special price offers, coupons, freebies, or points for:Olde English (beer_promotions_oldenglish)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES	</meaningText>
+          <description>YES	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO	</meaningText>
+          <description>NO	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>CANNOT DETERMINE/ PRODUCT NOT SOLD</meaningText>
+          <description>CANNOT DETERMINE/ PRODUCT NOT SOLD</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>104</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>BEER/MALT PROMOTIONS: Does the store have any promotions such as volume discounts, advertised special price offers, coupons, freebies, or points for:Colt 45 (beer_promotions_colt45)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES	</meaningText>
+          <description>YES	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO	</meaningText>
+          <description>NO	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>CANNOT DETERMINE/ PRODUCT NOT SOLD</meaningText>
+          <description>CANNOT DETERMINE/ PRODUCT NOT SOLD</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>105</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>OVERALL STORE INTERIOR ADVERTISING/LOGOS: Select the best statement for Tobacco Ads (overall_store_interior_advertising_tobacco)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>The store interior is free from any ads/logos.	</meaningText>
+          <description>The store interior is free from any ads/logos.	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>The store interior has some logos, but only in areas where items are displayed.	</meaningText>
+          <description>The store interior has some logos, but only in areas where items are displayed.	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>The store interior has ads/logos in other areas as well.	</meaningText>
+          <description>The store interior has ads/logos in other areas as well.	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>The store interior has ads/logos covering almost all available space.	</meaningText>
+          <description>The store interior has ads/logos covering almost all available space.	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>6</value>
+          <meaningText>NO INTERIOR</meaningText>
+          <description>NO INTERIOR</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>106</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>OVERALL STORE INTERIOR ADVERTISING/LOGOS: Select the best statement for Alcohol Ads (overall_store_interior_advertising_alcohol)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>The store interior is free from any ads/logos.	</meaningText>
+          <description>The store interior is free from any ads/logos.	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>The store interior has some logos, but only in areas where items are displayed.	</meaningText>
+          <description>The store interior has some logos, but only in areas where items are displayed.	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>The store interior has ads/logos in other areas as well.	</meaningText>
+          <description>The store interior has ads/logos in other areas as well.	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>The store interior has ads/logos covering almost all available space.	</meaningText>
+          <description>The store interior has ads/logos covering almost all available space.	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>6</value>
+          <meaningText>NO INTERIOR</meaningText>
+          <description>NO INTERIOR</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>107</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>INTERIOR ADVERTISING DETAILS: Are any tobacco ads &lt; = 3.5 feet from ground? (interior_advertising_tobacco_35feet)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>6</value>
+          <meaningText>NA/NO ADS</meaningText>
+          <description>NA/NO ADS</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>108</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>INTERIOR ADVERTISING DETAILS: Are any alcohol ads &lt; = 3.5 feet from ground? (interior_advertising_alcohol_35feet)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>6</value>
+          <meaningText>NA/NO ADS</meaningText>
+          <description>NA/NO ADS</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>109</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>INTERIOR ADVERTISING DETAILS: Are there any ads for PREPs (Ariva, Omni, etc.)? (interior_advertising_preps)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES	</meaningText>
+          <description>YES	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO	</meaningText>
+          <description>NO	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>6</value>
+          <meaningText>NA/NO ADS</meaningText>
+          <description>NA/NO ADS</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>110</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>FUNCTIONAL OBJECTS WITH TOBACCO AND ALCOHOL BRAND ADS OR LOGOS:Count items with brand ads or logos: mirrors, ashtrays, trashcans, doormats, clocks, change mats, grocery carts and baskets, grocery dividers, etc. Count multiples of the same item only once (e.g., grocery carts).: # OF ITEMS WITH TOBACCO LOGOS (functional_objects_tobacco_number)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>111</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>FUNCTIONAL OBJECTS WITH TOBACCO AND ALCOHOL BRAND ADS OR LOGOS:Count items with brand ads or logos: mirrors, ashtrays, trashcans, doormats, clocks, change mats, grocery carts and baskets, grocery dividers, etc. Count multiples of the same item only once (e.g., grocery carts).: # OF ITEMS WITH ALCOHOL LOGOS (functional_objects_alcohol_number)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>112</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>OTHER STORE CHARACTERISTICS: How many cash registers (excluding lottery or gas only)? _ _ (other_store_characteristics_registers)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>113</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>OTHER STORE CHARACTERISTICS: Is there a glass or other barrier between customers and clerks? (other_store_characteristics_glass_barrier)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES	</meaningText>
+          <description>YES	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>114</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>OTHER STORE CHARACTERISTICS: Are there bars or a protective barrier in store window/door? (other_store_characteristics_bars)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES	</meaningText>
+          <description>YES	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>115</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>OTHER STORE CHARACTERISTICS: Did you see uniformed police officers or security guards inside the store? (other_store_characteristics_police_security)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES	</meaningText>
+          <description>YES	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>116</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>OTHER STORE CHARACTERISTICS: Does the store have a parking lot? (other_store_characteristics_parking_lot)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES	</meaningText>
+          <description>YES	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>117</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>OTHER STORE CHARACTERISTICS: Did you see uniformed police or security guards in the store parking lot? (other_store_characteristics_security_parking)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES	</meaningText>
+          <description>YES	</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>118</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>DRIVEUP WINDOW (driveup_window)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Has Drive-Up Window Tobacco and/or Alcohol sold</meaningText>
+          <description>Has Drive-Up Window Tobacco and/or Alcohol sold</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Has Drive-Up Window No Alcohol/Tobacco sold</meaningText>
+          <description>Has Drive-Up Window No Alcohol/Tobacco sold</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Has Drive-Up Window Could Not Determine If Alcohol/Tobacco sold</meaningText>
+          <description>Has Drive-Up Window Could Not Determine If Alcohol/Tobacco sold</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>No Drive-Up Window</meaningText>
+          <description>No Drive-Up Window</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>119</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: Tobacco ads, alcohol ads (on store exterior/property) (windows, doors, walls, roof): STORE PROPERTY: TOBACCO: Small &lt; 1 foot in all dimensions: Total (store_property_tobacco_ads_numbersmall)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>120</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: Tobacco ads, alcohol ads (on store exterior/property) (windows, doors, walls, roof): STORE PROPERTY: ALCOHOL: Small &lt; 1 foot in all dimensions: Total (store_property_alcohol_ads_numbersmall)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>121</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: Tobacco ads, alcohol ads (on store exterior/property) (windows, doors, walls, roof): STORE PROPERTY: TOBACCO: Medium 13 feet in any dimension: Total (store_property_tobacco_ads_numbermedium)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>122</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: Tobacco ads, alcohol ads (on store exterior/property) (windows, doors, walls, roof): STORE PROPERTY: ALCOHOL: Medium 13 feet in any dimension: Total (store_property_alcohol_ads_numbermedium)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>123</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: Tobacco ads, alcohol ads (on store exterior/property) (windows, doors, walls, roof): STORE PROPERTY: TOBACCO: Medium 13 feet in any dimension: Total (store_property_tobacco_ads_numberlarge)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>124</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: Tobacco ads, alcohol ads (on store exterior/property) (windows, doors, walls, roof): STORE PROPERTY: ALCOHOL: Medium 13 feet in any dimension: Total (store_property_alcohol_ads_numberlarge)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>125</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: Tobacco ads, alcohol ads (on store exterior/property) (windows, doors, walls, roof): STORE EXTERIOR: TOBACCO: Small &lt; 1 foot in all dimensions: Total (store_exterior_tobacco_ads_numbersmall)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>126</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: Tobacco ads, alcohol ads (on store exterior/property) (windows, doors, walls, roof): STORE EXTERIOR: ALCOHOL: Small &lt; 1 foot in all dimensions: Total (store_exterior_alcohol_ads_numbersmall)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>127</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: Tobacco ads, alcohol ads (on store exterior/property) (windows, doors, walls, roof): STORE EXTERIOR: TOBACCO: Medium 13 feet in any dimension: Total (store_exterior_tobacco_ads_numbermedium)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>128</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: Tobacco ads, alcohol ads (on store exterior/property) (windows, doors, walls, roof): STORE EXTERIOR: ALCOHOL: Medium 13 feet in any dimension: Total (store_exterior_alcohol_ads_numbermedium)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>129</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: Tobacco ads, alcohol ads (on store exterior/property) (windows, doors, walls, roof): STORE EXTERIOR: TOBACCO: Medium 13 feet in any dimension: Total (store_exterior_tobacco_ads_numberlarge)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>130</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: Tobacco ads, alcohol ads (on store exterior/property) (windows, doors, walls, roof): STORE EXTERIOR: ALCOHOL: Medium 13 feet in any dimension: Total (store_exterior_alcohol_ads_numberlarge)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>131</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: STORE EXTERIOR: The overall impression of (store exterior/store property) advertising for tobacco/alcohol is: SELECT BEST TOBACCO STATEMENT (overall_impression_tobacco_advertising_exterior)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No ads</meaningText>
+          <description>No ads</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Discreet</meaningText>
+          <description>Discreet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate</meaningText>
+          <description>Moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>'In Your Face'</meaningText>
+          <description>'In Your Face'</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>132</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: STORE EXTERIOR: The overall impression of (store exterior/store property) advertising for tobacco/alcohol is: SELECT BEST ALCOHOL STATEMENT (overall_impression_alcohol_advertising_exterior)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No ads</meaningText>
+          <description>No ads</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Discreet</meaningText>
+          <description>Discreet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate</meaningText>
+          <description>Moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>'In Your Face'</meaningText>
+          <description>'In Your Face'</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>133</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: STORE PROPERTY: The overall impression of (store exterior/store property) advertising for tobacco/alcohol is: SELECT BEST TOBACCO STATEMENT (overall_impression_tobacco_advertising_property)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No ads</meaningText>
+          <description>No ads</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Discreet</meaningText>
+          <description>Discreet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate</meaningText>
+          <description>Moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>'In Your Face'</meaningText>
+          <description>'In Your Face'</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>134</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: STORE PROPERTY: The overall impression of (store exterior/store property) advertising for tobacco/alcohol is: SELECT BEST ALCOHOL STATEMENT (overall_impression_alcohol_advertising_property)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No ads</meaningText>
+          <description>No ads</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Discreet</meaningText>
+          <description>Discreet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate</meaningText>
+          <description>Moderate</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>'In Your Face'</meaningText>
+          <description>'In Your Face'</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>135</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>STORE EXTERIOR AND STORE PROPERTY ADVERTISING: Are there any exterior ads for PREPs? (exterior_ads_for_preps)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX550801</protocolID>
+     <longName>Point of Sale Environment for Alcohol and Tobacco</longName>
+     <context>PhenX</context>
+     <shortName>PX550801</shortName>
+     <preferredDefinition>The ImpacTeen Store Observation Form is an observational instrument used to gather information on whether stores (i.e., convenience, grocery, drug/pharmacy, liquor, etc.) sell alcohol and/or tobacco products and on point-of-sale advertising, promotions, placement, and pricing of these products. A trained observer uses the form to collect information during on-site visits of retail establishments. The protocol collects data about specific tobacco and alcohol products, along with information related to marketing ads/logos visible in the interior and exterior of the store. Aggregating the store-level data collected for all stores in a community will provide information on the availability and marketing of alcohol and tobacco products at the community level.</preferredDefinition>
+    </protocol>
+   </form>
+    <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:22</dateCreated>
+    <longName>PhenX PX540501 - School Risk And Protective Factors</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The protocol includes nine self-administered questions from two School Protective Factors subscales/constructs (Opportunities for Prosocial Involvement and Rewards for Prosocial Involvement) from the Communities That Care (CTC) Youth Survey. The CTC Survey does not include a scale of School Drug Environment (a risk factor), which is supplemented here with a scale from the Seattle Social Development Project (SSDP) longitudinal study.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>This is not a test, so there are no right or wrong answers we would like you to work quickly, so that you can finish. Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement i..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:22</dateCreated>
+      <longName>School Risk and Protective Factors</longName>
+      <preferredDefinition>School Risk and Protective Factors</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Putting them all together, what were your grades like last year? (9) (grades_last_year)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Mostly F's</meaningText>
+          <description>Mostly F's</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1.75</value>
+          <meaningText>Mostly D's</meaningText>
+          <description>Mostly D's</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2.5</value>
+          <meaningText>Mostly C's</meaningText>
+          <description>Mostly C's</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3.25</value>
+          <meaningText>Mostly B's</meaningText>
+          <description>Mostly B's</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Mostly A's</meaningText>
+          <description>Mostly A's</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>During the LAST FOUR WEEKS, how many whole days of school have you missed because you skipped or "cut"? (10b) (days_of_school_skipped)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>5</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>4.33</value>
+          <meaningText>One</meaningText>
+          <description>One</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3.67</value>
+          <meaningText>Two</meaningText>
+          <description>Two</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Three</meaningText>
+          <description>Three</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>2.33</value>
+          <meaningText>Four or Five</meaningText>
+          <description>Four or Five</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>1.67</value>
+          <meaningText>Six to Ten</meaningText>
+          <description>Six to Ten</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>1</value>
+          <meaningText>Eleven or more</meaningText>
+          <description>Eleven or more</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>In my school, students have lots of chances to help decide things like class activities and rules. (12) (students_help_decide_activities_rules)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Teachers ask me to work on special classroom projects. (13) (special_classroom_projects)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>My teacher(s) notices when I am doing a good job and lets me know about it. (14) (teacher_notices_good_job)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>There are lots of chances for students in my school to get involved in sports, clubs, or other school activities outside of class. (15) (chances_for_activities_outside_class)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>There are lots of chances for students in my school to talk with a teacher onetoone. (16) (talk_with_a_teacher)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>I feel safe at my school. (17) (feel_safe_at_school)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>The school lets my parents know when I have done something well. (18) (school_lets_my_parents_know)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>My teachers praise me when I work hard in school. (19) (my_teachers_praise_me)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Are your school grades better than the grades of most students in your class? (20) (grades_better_than_most_students)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>There are lots of chances to be part of class discussions or activities. (21) (part_of_class_discussions_activities)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How often do you feel that the schoolwork you are assigned is meaningful and important? (22) (meaningful_and_important_schoolwork)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Seldom</meaningText>
+          <description>Seldom</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Almost Always</meaningText>
+          <description>Almost Always</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How interesting are most of your courses to you? (23) (how_interesting_courses)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>5</value>
+          <meaningText>Very interesting and stimulating</meaningText>
+          <description>Very interesting and stimulating</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>4</value>
+          <meaningText>Quite interesting</meaningText>
+          <description>Quite interesting</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Fairly interesting</meaningText>
+          <description>Fairly interesting</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly boring</meaningText>
+          <description>Slightly boring</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>1</value>
+          <meaningText>Very boring</meaningText>
+          <description>Very boring</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How important do you think the things you are learning in school are going to be for your later life? (24) (how_important_learning_later_life)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>5</value>
+          <meaningText>Very important</meaningText>
+          <description>Very important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>4</value>
+          <meaningText>Quite important</meaningText>
+          <description>Quite important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Fairly important</meaningText>
+          <description>Fairly important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly important</meaningText>
+          <description>Slightly important</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all important</meaningText>
+          <description>Not at all important</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Now, thinking back over the past year in school, how often did you... enjoy being in school? (25a) (how_often_enjoy_beingin_school)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Seldom</meaningText>
+          <description>Seldom</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Almost Always</meaningText>
+          <description>Almost Always</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Now, thinking back over the past year in school, how often did you... hate being in school? (25b) (how_often_hate_beingin_school)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>5</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>4</value>
+          <meaningText>Seldom</meaningText>
+          <description>Seldom</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>2</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>1</value>
+          <meaningText>Almost Always</meaningText>
+          <description>Almost Always</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Now, thinking back over the past year in school, how often did you....try to do your best work in school? (25c) (how_often_try_your_best)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Seldom</meaningText>
+          <description>Seldom</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Almost Always</meaningText>
+          <description>Almost Always</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>For these last questions, think about the school you (currently/last) (attend/attended). (info_540501)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>What grade (are/were) you in? (what_grade)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>4</value>
+          <meaningText>Fourth</meaningText>
+          <description>Fourth</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>Fifth</meaningText>
+          <description>Fifth</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>6</value>
+          <meaningText>Sixth</meaningText>
+          <description>Sixth</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>7</value>
+          <meaningText>Seventh</meaningText>
+          <description>Seventh</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>8</value>
+          <meaningText>Eighth</meaningText>
+          <description>Eighth</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>9</value>
+          <meaningText>Ninth</meaningText>
+          <description>Ninth</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>10</value>
+          <meaningText>Tenth</meaningText>
+          <description>Tenth</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>11</value>
+          <meaningText>Eleventh</meaningText>
+          <description>Eleventh</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>12</value>
+          <meaningText>Twelfth</meaningText>
+          <description>Twelfth</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Most people in my school think it's OK for people my age to drink alcohol. (ok_drink_alcohol)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>What percentage of the students in your grade at your school have drunk any alcohol this year? Would you say... (percentage_students_drunk_alcohol_yearly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>0% to 20% (none or almost none)</meaningText>
+          <description>0% to 20% (none or almost none)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>21% to 40% (less than half)</meaningText>
+          <description>21% to 40% (less than half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>41% to 60% (about half)</meaningText>
+          <description>41% to 60% (about half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>61% to 80% (more than half)</meaningText>
+          <description>61% to 80% (more than half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>81% to 100% (almost all or all)?</meaningText>
+          <description>81% to 100% (almost all or all)?</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>What percentage of the students in your grade at your school drank alcohol at least once or twice a month. Would you say... (percentage_students_drank_alcohol_monthly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>0% to 20% (none or almost none)</meaningText>
+          <description>0% to 20% (none or almost none)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>21% to 40% (less than half)</meaningText>
+          <description>21% to 40% (less than half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>41% to 60% (about half)</meaningText>
+          <description>41% to 60% (about half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>61% to 80% (more than half)</meaningText>
+          <description>61% to 80% (more than half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>81% to 100% (almost all or all)?</meaningText>
+          <description>81% to 100% (almost all or all)?</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Most people in my school think it's OK for people my age to smoke cigarettes. (ok_smoke_cigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>What percentage of the students in your grade at your school have smoked any cigarettes this year? Would you say... (percentage_students_smoked_cigarettes_yearly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>0% to 20% (none or almost none)</meaningText>
+          <description>0% to 20% (none or almost none)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>21% to 40% (less than half)</meaningText>
+          <description>21% to 40% (less than half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>41% to 60% (about half)</meaningText>
+          <description>41% to 60% (about half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>61% to 80% (more than half)</meaningText>
+          <description>61% to 80% (more than half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>81% to 100% (almost all or all)?</meaningText>
+          <description>81% to 100% (almost all or all)?</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>What percentage of the students in your grade at your school smoked cigarettes at least once or twice a month. Would you say.... (percentage_students_smoked_cigarettes_monthly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>0% to 20% (none or almost none)</meaningText>
+          <description>0% to 20% (none or almost none)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>21% to 40% (less than half)</meaningText>
+          <description>21% to 40% (less than half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>41% to 60% (about half)</meaningText>
+          <description>41% to 60% (about half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>61% to 80% (more than half)</meaningText>
+          <description>61% to 80% (more than half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>81% to 100% (almost all or all)?</meaningText>
+          <description>81% to 100% (almost all or all)?</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Most people in my school think it's OK to use marijuana (pot/grass). (ok_use_marijuana)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>What percentage of the students in your grade in your school have smoked any marijuana this year? Would you say.... (percentage_students_smoked_marijuana_yearly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>0% to 20% (none or almost none)</meaningText>
+          <description>0% to 20% (none or almost none)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>21% to 40% (less than half)</meaningText>
+          <description>21% to 40% (less than half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>41% to 60% (about half)</meaningText>
+          <description>41% to 60% (about half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>61% to 80% (more than half)</meaningText>
+          <description>61% to 80% (more than half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>81% to 100% (almost all or all)?</meaningText>
+          <description>81% to 100% (almost all or all)?</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>During the past year, what percentage of the students in your grade in your school have smoked marijuana at least once or twice a month? Would you say.... (percentage_students_smoked_marijuana_monthly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>0% to 20% (none or almost none)</meaningText>
+          <description>0% to 20% (none or almost none)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>21% to 40% (less than half)</meaningText>
+          <description>21% to 40% (less than half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>41% to 60% (about half)</meaningText>
+          <description>41% to 60% (about half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>61% to 80% (more than half)</meaningText>
+          <description>61% to 80% (more than half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>81% to 100% (almost all or all)?</meaningText>
+          <description>81% to 100% (almost all or all)?</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX540501</protocolID>
+     <longName>School Risk and Protective Factors</longName>
+     <context>PhenX</context>
+     <shortName>PX540501</shortName>
+     <preferredDefinition>The protocol includes nine self-administered questions from two School Protective Factors subscales/constructs (Opportunities for Prosocial Involvement and Rewards for Prosocial Involvement) from the Communities That Care (CTC) Youth Survey. The CTC Survey does not include a scale of School Drug Environment (a risk factor), which is supplemented here with a scale from the Seattle Social Development Project (SSDP) longitudinal study.</preferredDefinition>
+    </protocol>
+   </form> 
+   </forms>

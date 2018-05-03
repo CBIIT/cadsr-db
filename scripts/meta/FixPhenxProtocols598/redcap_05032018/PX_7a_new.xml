@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+ <collectionName>PhenX Protocols - 7a</collectionName>
+ <collectionDescription>Load PhenX PX021603,PX030101,PX030201,PX030401,PX030701,PX030902</collectionDescription>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <longName>PhenX PX021603 - Waist Circumference Framingham Heart Study</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Waist circumference is measured at several body sites in the scientific literature. This protocol is from the Framingham Heart Study in which measurement of the participant's waist circumference is performed at the level of the umbilicus (i.e., navel or "belly button"). Although this protocol is still used in surveys and studies, care should be taken in using it because it does not rely on reliable bony landmarks and is biased by degree of abdominal obesity. On the other hand, unlike the protocols that require palpation for bony landmarks (which may be problematic with some populations), an umbilicus is visualized or can be located through thin clothing. In both children and adults and compared with measurements taken using other protocols, measurements taken at the level of the umbilicus tend to be roughly comparable with those taken midway between the lowest rib and iliac crest (NCFS protocol) if the participants are at a normal weight, but measurements tend to be more comparable with or even larger than those taken over the iliac crest (NHANES protocol) when the participant is obese and the umbilicus has been displaced downward (i.e., pendulous abdomen). The relationship of this measure with cardiometabolic risk factors is, however, comparable with waist circumference measures taken at other sites. NOTE: Waist circumference can be measured on pregnant women. However, national reference data do not include pregnant women, and waist circumference has different associations with abdominal and total body fat among those who are not pregnant.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <longName>Waist Circumference Framingham Heart Study</longName>
+ <instruction/>
+ <preferredDefinition>Waist Circumference Framingham Heart Study</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>With the subject standing upright with feet together, arms hanging loosely at sides, and weight evenly distributed, did the examiner take the subject's hospital gown from the back, place it over the shoulder, place the anthropometric tape at the level of the umbilicus, applying the tape snugly but not tightly, making sure the tape was on a horizontal plane and ask the patient to fully relax their shoulders before taking measurement? (waistcircumference_framingham_procedural_method)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>px21603 waist circumference exhibit 3 (px21603_waist_circumference_exhibit_3)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>What was the waist measurement? (waistcircumference_framingham_measurement_1)</questionText>
+ <instruction>
+ <text>UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>What was the waist measurement? (waistcircumference_framingham_measurement_2)</questionText>
+ <instruction>
+ <text>UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>What was the waist measurement? (waistcircumference_framingham_measurement_3)</questionText>
+ <instruction>
+ <text>UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>What was the average waist measurement? (waistcircumference_framingham_average)</questionText>
+ <instruction>
+ <text>UOM=centimeters</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX021603</protocolID>
+ <longName>Waist Circumference - Framingham Heart Study</longName>
+ <context>PhenX</context>
+ <shortName>PX021603</shortName>
+ <preferredDefinition>Waist circumference is measured at several body sites in the scientific literature. This protocol is from the Framingham Heart Study in which measurement of the participant's waist circumference is performed at the level of the umbilicus (i.e., navel or "belly button"). Although this protocol is still used in surveys and studies, care should be taken in using it because it does not rely on reliable bony landmarks and is biased by degree of abdominal obesity. On the other hand, unlike the protocols that require palpation for bony landmarks (which may be problematic with some populations), an umbilicus is visualized or can be located through thin clothing. In both children and adults and compared with measurements taken using other protocols, measurements taken at the level of the umbilicus tend to be roughly comparable with those taken midway between the lowest rib and iliac crest (NCFS protocol) if the participants are at a normal weight, but measurements tend to be more comparable with or even larger than those taken over the iliac crest (NHANES protocol) when the participant is obese and the umbilicus has been displaced downward (i.e., pendulous abdomen). The relationship of this measure with cardiometabolic risk factors is, however, comparable with waist circumference measures taken at other sites. NOTE: Waist circumference can be measured on pregnant women. However, national reference data do not include pregnant women, and waist circumference has different associations with abdominal and total body fat among those who are not pregnant.</preferredDefinition>
+ </protocol>
+ </form> 
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <longName>PhenX PX030101 - Alcohol Lifetime Use</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Measurement of whether respondent has ever consumed alcohol.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction>
+ <text>The next question is about drinking alcohol. This includes coolers, beer, wine, champagne, liquor such as whiskey, rum, gin, vodka, scotch, or liqueurs, and also any other type of alcohol.</text>
+ </headerInstruction>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <longName>Alcohol Lifetime Use</longName>
+ <instruction/>
+ <preferredDefinition>Alcohol Lifetime Use</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>In your entire life, have you had at least 1 drink of any kind of alcohol, not counting small tastes or sips? (lifetime_use)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Definition of a standard drink: 1 12oz bottle of beer, 1 glass 4oz nonfortified wine, 1 mixed drink with 1oz liquor. (lifetime_use_desc_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>If respondent needs a visual reference for the size of a drink, the flashcards from the Wave 1 National Epidemiologic Survey on Alcohol and Related Conditions (NESARC) study are provided below: (lifetime_use_desc_3)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Card 1A. Cooler ounce size (lifetime_use_desc_4)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Card 1B. Cooler ounce size (lifetime_use_desc_5)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Card 1C. Cooler ounce size (lifetime_use_desc_6)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Card 2A. Wine ounce size (lifetime_use_desc_7)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Card 2B. Wine ounce size (lifetime_use_desc_8)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Card 2C. Wine ounce size (lifetime_use_desc_9)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Card 3A. Liquor ounce size (lifetime_use_desc_10)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Card 3B. Liquor ounce size (lifetime_use_desc_11)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Card 3C. Liquor ounce size (lifetime_use_desc_12)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX030101</protocolID>
+ <longName>Alcohol - Lifetime Use</longName>
+ <context>PhenX</context>
+ <shortName>PX030101</shortName>
+ <preferredDefinition>Measurement of whether respondent has ever consumed alcohol.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <longName>PhenX PX030201 - Alcohol Age Of First Use</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Measurement to ascertain the respondent's age of initiation of first use of alcohol and duration of use.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <longName>Alcohol Age Of First Use</longName>
+ <instruction/>
+ <preferredDefinition>Alcohol Age Of First Use</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>The next question is about drinking alcohol. This includes coolers, beer, wine, champagne, liquor such as whiskey, rum, gin, vodka, scotch, or liqueurs, and also any other type of alcohol. About how old were you when you first started drinking, not counting small tastes or sips of alcohol? (alcohol_first_use_age)</questionText>
+ <instruction>
+ <text>datatype=number</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>The next question is about drinking alcohol. This includes coolers, beer, wine, champagne, liquor such as whiskey, rum, gin, vodka, scotch, or liqueurs, and also any other type of alcohol. About how old were you when you first started drinking, not counting small tastes or sips of alcohol? (alcohol_first_use_age_coded)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>96</value>
+ <meaningText>Never drank</meaningText>
+ <description>Never drank</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>97</value>
+ <meaningText>Refused</meaningText>
+ <description>Refused</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>99</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce size image 1 (first_use_desc_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce size image 2 (first_use_desc_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce size image 3 (first_use_desc_3)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce size image 4 (first_use_desc_4)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce size image 5 (first_use_desc_5)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce size image 6 (first_use_desc_6)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce size image 7 (first_use_desc_7)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce size image 8 (first_use_desc_8)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce size image 9 (first_use_desc_9)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX030201</protocolID>
+ <longName>Alcohol - Age of First Use</longName>
+ <context>PhenX</context>
+ <shortName>PX030201</shortName>
+ <preferredDefinition>Measurement to ascertain the respondent's age of initiation of first use of alcohol and duration of use.</preferredDefinition>
+ </protocol>
+ </form> 
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <longName>PhenX PX030401 - Alcohol Maximum Drinks In 24 Hours</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Lifetime measurement of the largest number of drinks respondent has consumed. The PhenX Working Group modified this question from the source so that it is compatible with the Alcohol - Lifetime Use measure. The original question defined the time period for maximum consumption as the last year.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <longName>Alcohol Maximum Drinks In 24 Hours</longName>
+ <instruction/>
+ <preferredDefinition>Alcohol Maximum Drinks In 24 Hours</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>The next question is about drinking alcohol. This includes coolers, beer, wine, champagne, liquor such as whiskey, rum, gin, vodka, scotch, or liqueurs, and also any other type of alcohol. What was the LARGEST number of drinks that you ever drank in a single day? (alcohol_max_drinks_1day)</questionText>
+ <instruction>
+ <text>datatype=number</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce image 1 (max_desc_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce image 2 (max_desc_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce image 3 (max_desc_3)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce image 4 (max_desc_4)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce image 5 (max_desc_5)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce image 6 (max_desc_6)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce image 7 (max_desc_7)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce image 8 (max_desc_8)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>Cooler ounce image 9 (max_desc_9)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>The next question is about drinking alcohol. This includes coolers, beer, wine, champagne, liquor such as whiskey, rum, gin, vodka, scotch, or liqueurs, and also any other type of alcohol. What was the LARGEST number of drinks that you ever drank in a single day? (alcohol_max_drinks_1day_coded)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>96</value>
+ <meaningText>Never drank</meaningText>
+ <description>Never drank</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>97</value>
+ <meaningText>Refused</meaningText>
+ <description>Refused</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>99</value>
+ <meaningText>Don't know</meaningText>
+ <description>Don't know</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX030401</protocolID>
+ <longName>Alcohol - Maximum Drinks in 24 Hours</longName>
+ <context>PhenX</context>
+ <shortName>PX030401</shortName>
+ <preferredDefinition>Lifetime measurement of the largest number of drinks respondent has consumed. The PhenX Working Group modified this question from the source so that it is compatible with the Alcohol - Lifetime Use measure. The original question defined the time period for maximum consumption as the last year.</preferredDefinition>
+ </protocol>
+ </form> 
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <longName>PhenX PX030701 - Tobacco Age Of Initiation Of Use Adolescent</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Measurement to ascertain the respondent's age of initiation of first/regular use of cigarettes, which can be used to calculate duration of use and pack-years measures.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <longName>Tobacco Age Of Initiation Of Use Adolescent</longName>
+ <instruction/>
+ <preferredDefinition>Tobacco Age Of Initiation Of Use Adolescent</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>How old were you the first time you smoked part or all of a cigarette? (first_cigarette_smoking_age)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=110</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>How old were you the first time you smoked part or all of a cigarette? (first_cigarette_smoking_age_coded)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Don't Know / Refused</meaningText>
+ <description>Don't Know / Refused</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>How old were you when you first started smoking cigarettes every day? (adolescent_first_cigarette_smoking_everyday_age)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=110</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>How old were you when you first started smoking cigarettes every day? (adolescent_first_cigarette_smoking_everyday_age_coded)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Don't Know / Refused</meaningText>
+ <description>Don't Know / Refused</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX030701</protocolID>
+ <longName>Protocol 1: Tobacco - Age of Initiation of Use (Adolescent Protocol)</longName>
+ <context>PhenX</context>
+ <shortName>PX030701</shortName>
+ <preferredDefinition>Measurement to ascertain the respondent's age of initiation of first/regular use of cigarettes, which can be used to calculate duration of use and pack-years measures.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <longName>PhenX PX030902 - Tobacco Age Of Offset Of Use Adult Protocol</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Measurement to ascertain when the respondent quit smoking. Response is used to calculate duration of use and pack-years measures and allows one to distinguish recent quitters from long-time quitters.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <longName>Tobacco Age Of Offset Of Use Adult Protocol</longName>
+ <instruction/>
+ <preferredDefinition>Tobacco Age Of Offset Of Use Adult Protocol</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>About how long has it been since you COMPLETELY quit smoking cigarettes? (smoking_cessation_time_number)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=99</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>About how long has it been since you COMPLETELY quit smoking cigarettes? (smoking_cessation_time_number_coded)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Don't Know / Refused</meaningText>
+ <description>Don't Know / Refused</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-24T23:10:49</dateCreated>
+ <questionText>About how long has it been since you COMPLETELY quit smoking cigarettes? (smoking_cessation_time_unit)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Days</meaningText>
+ <description>Days</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Weeks</meaningText>
+ <description>Weeks</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Months</meaningText>
+ <description>Months</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>Years</meaningText>
+ <description>Years</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>Don't Know / Refused</meaningText>
+ <description>Don't Know / Refused</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX030902</protocolID>
+ <longName>Protocol 2: Tobacco - Age of Offset of Use (Adult Protocol)</longName>
+ <context>PhenX</context>
+ <shortName>PX030902</shortName>
+ <preferredDefinition>Measurement to ascertain when the respondent quit smoking. Response is used to calculate duration of use and pack-years measures and allows one to distinguish recent quitters from long-time quitters.</preferredDefinition>
+ </protocol>
+ </form>
+ </forms>

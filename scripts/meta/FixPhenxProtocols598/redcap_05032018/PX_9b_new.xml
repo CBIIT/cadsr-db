@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+ <collectionName>PhenX Protocols - 9b</collectionName>
+ <collectionDescription>Load PhenX PX040801,PX040901,PX041001,PX041101</collectionDescription>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>PhenX PX040901 - Peripheral Arterial Disease</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>This measure begins with a set of interviewer-administered questions about whether the person has been told by a physician that he or she has poor blood flow to the legs or blocked or narrowed arteries to the legs and whether they have had any procedures, such as angiography, angioplasty, or surgery, for the condition. A protocol is provided to assess the presence of peripheral arterial disease (PAD) using the ankle brachial index (ABI). The ABI involves the use of ultrasound to measure blood pressure.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>Peripheral Arterial Disease</longName>
+ <instruction/>
+ <preferredDefinition>Peripheral Arterial Disease</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Did a doctor ever say that you had claudication or peripheral arterial disease (poor blood flow to the legs or blocked or narrowed arteries to the legs)? Do not include varicose veins or phlebitis. (ever_have_peripheral_arterial_disease)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>For the above condition have you ever had... Angiography (dye in the arteries of the legs)? (pad_angiography)</questionText>
+ <instruction>
+ <text>[ever_have_peripheral_arterial_disease] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>For the above condition have you ever had... Angioplasty (balloon catheter to open blockage)? (pad_angioplasty)</questionText>
+ <instruction>
+ <text>[ever_have_peripheral_arterial_disease] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>For the above condition have you ever had... Surgery to improve blood flow in your legs (do not include surgery for varicose veins)? (pad_surgery)</questionText>
+ <instruction>
+ <text>[ever_have_peripheral_arterial_disease] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Blood pressure measurement, sphygmomanometer name and model. (sphygmomanometer_0)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Blood pressure measurement, cuff size for arm. (cuff_size_arm)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>S</meaningText>
+ <description>S</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>M</meaningText>
+ <description>M</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>L</meaningText>
+ <description>L</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>XL</meaningText>
+ <description>XL</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Blood pressure measurement, cuff size for ankle. (cuff_size_ankle)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>S</meaningText>
+ <description>S</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>M</meaningText>
+ <description>M</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>L</meaningText>
+ <description>L</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>XL</meaningText>
+ <description>XL</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Arterial Blood Pressure Measurement. Measure systolic blood pressure of: Right brachial artery (Q1a) (mm Hg). (sbp_q1a)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=mm Hg</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Arterial Blood Pressure Measurement. Measure systolic blood pressure of: Right dorsalis pedis artery (Q1b) (sbp_q1b)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=mm Hg</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Arterial Blood Pressure Measurement. Measure systolic blood pressure of: Right posterior tibial artery (Q1c) (mm Hg). (sbp_q1c)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=mm Hg</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Arterial Blood Pressure Measurement. Measure systolic blood pressure of: Left posterior tibial artery (Q1d) (mm Hg). (sbp_q1d)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=mm Hg</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Arterial Blood Pressure Measurement. Measure systolic blood pressure of: Left dorsalis pedis artery (Q1e) (mm Hg). (sbp_q1e)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=mm Hg</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Arterial Blood Pressure Measurement. Measure systolic blood pressure of: Left brachial artery (Q1f) (mm Hg). (sbp_q1f)</questionText>
+ <instruction>
+ <text>datatype=number; UOM=mm Hg</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Right ABI = (the higher of the right posterior tibial SBP or the right dorsalis pedis SBP) / (the higher arm SBP) (right_abi)</questionText>
+ <instruction>
+ <text>datatype=number</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>LEFT ABI = (the higher of the left posterior tibial SBP or the left dorsalis pedis SBP) / (the higher arm SBP) (left_abi)</questionText>
+ <instruction>
+ <text>datatype=number</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX040901</protocolID>
+ <longName>Peripheral Arterial Disease</longName>
+ <context>PhenX</context>
+ <shortName>PX040901</shortName>
+ <preferredDefinition>This measure begins with a set of interviewer-administered questions about whether the person has been told by a physician that he or she has poor blood flow to the legs or blocked or narrowed arteries to the legs and whether they have had any procedures, such as angiography, angioplasty, or surgery, for the condition. A protocol is provided to assess the presence of peripheral arterial disease (PAD) using the ankle brachial index (ABI). The ABI involves the use of ultrasound to measure blood pressure.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>PhenX PX041001 - Abdominal Aortic Aneurysm</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Measure to assess the presence of an abdominal aortic aneurysm through the use of ultrasound.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>Abdominal Aortic Aneurysm</longName>
+ <instruction/>
+ <preferredDefinition>Abdominal Aortic Aneurysm</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Have you ever been diagnosed by a doctor as having an abdominal aortic aneurysm? (ever_have_abdominal_aortic_aneurysm)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Have you had surgery or other repair for this aneurysm? (aaa_surgery)</questionText>
+ <instruction>
+ <text>[ever_have_abdominal_aortic_aneurysm] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Ultrasound machine name and model. (ultrasound_machine)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Maximum transverse diameter (cm) of the aorta. (max_transverse_diameter)</questionText>
+ <instruction>
+ <text>UOM=Centimeter</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Maximum anteriorposterior diameter (cm) in the longitudinal plane. (max_anterior_posterior_diameter)</questionText>
+ <instruction>
+ <text>UOM=Centimeter</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Maximum aortic diameter (cm). (max_aortic_diameter)</questionText>
+ <instruction>
+ <text>UOM=Centimeter</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Ultrasound scan image ID. (ultrasound_image_id)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX041001</protocolID>
+ <longName>Abdominal Aortic Aneurysm</longName>
+ <context>PhenX</context>
+ <shortName>PX041001</shortName>
+ <preferredDefinition>Measure to assess the presence of an abdominal aortic aneurysm through the use of ultrasound.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>PhenX PX041101 - Arrhythmia Atrial And Ventricular</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Measure to assess presence of arrhythmias through collection of personal history, treatments and procedures, medication usage, and administration of an electrocardiograph (ECG).</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>Arrhythmia Atrial And Ventricular</longName>
+ <instruction/>
+ <preferredDefinition>Arrhythmia Atrial And Ventricular</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Have you been told you have/had a heart rhythm problem called atrial fibrillation? (ever_have_atrial_fibrillation)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>2</value>
+ <meaningText>Maybe</meaningText>
+ <description>Maybe</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>9</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Date of first episode (mm/dd/yyyy) (first_episode_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;[ever_have_atrial_fibrillation] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Date of first episode (mm/dd/yyyy) (first_episode_date_coded)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>99,99,9999</value>
+ <meaningText>unknown</meaningText>
+ <description>unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>ER/hospitalized or saw M.D.? (atrial_fibrillation_er_hospitalized_md)</questionText>
+ <instruction>
+ <text>[ever_have_atrial_fibrillation] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Hosp/ER</meaningText>
+ <description>Hosp/ER</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>2</value>
+ <meaningText>Saw M.D.</meaningText>
+ <description>Saw M.D.</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>9</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Hospitalized at: (atrial_fibrillation_hospitalized_at)</questionText>
+ <instruction>
+ <text>[atrial_fibrillation_er_hospitalized_md] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>M.D. seen: (atrial_fibrillation_md_seen)</questionText>
+ <instruction>
+ <text>[atrial_fibrillation_er_hospitalized_md] = '2'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Permanent pacemaker insertion? (pacemaker)</questionText>
+ <instruction>
+ <text>[ever_have_atrial_fibrillation] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>2</value>
+ <meaningText>Maybe</meaningText>
+ <description>Maybe</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>9</value>
+ <meaningText>Don't Know</meaningText>
+ <description>Don't Know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Year inserted permanent pacemaker. (pacemaker_year)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1900;[ever_have_atrial_fibrillation] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Year inserted permanent pacemaker. (pacemaker_year_coded)</questionText>
+ <instruction>
+ <text>[ever_have_atrial_fibrillation] = '1' and [pacemaker] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>9999</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Are you taking any of the cardiovascular medications below? Anticoagulants (Coumadin, Warfarin, etc.) (cardiovascular_medication_anticoagulant)</questionText>
+ <instruction>
+ <text>[ever_have_atrial_fibrillation] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Yes, now</meaningText>
+ <description>Yes, now</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>2</value>
+ <meaningText>Yes, not now</meaningText>
+ <description>Yes, not now</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>3</value>
+ <meaningText>Maybe</meaningText>
+ <description>Maybe</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>9</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Are you taking any of the cardiovascular medications below? Antiarrhythmics (Quinidine, Procainamide, Norpace, Disopyramide, etc.) (cardiovascular_medication_antiarrhythmic)</questionText>
+ <instruction>
+ <text>[ever_have_atrial_fibrillation] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>1</value>
+ <meaningText>Yes, now</meaningText>
+ <description>Yes, now</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>2</value>
+ <meaningText>Yes, not now</meaningText>
+ <description>Yes, not now</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>3</value>
+ <meaningText>Maybe</meaningText>
+ <description>Maybe</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>9</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Electrocardiogram Trace/Image ID. (pxt41101_ecg_image_id)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Other, specify (ecg_other)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Limb leads image (cardio_011_image002)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>V6 Electrode placement image (cardio_011_image004)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>MAC PC and LCD display image (cardio_011_image006)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Typical Electrocardiogram using MAC PC (cardio_011_image008)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX041101</protocolID>
+ <longName>Arrhythmia (Atrial and Ventricular)</longName>
+ <context>PhenX</context>
+ <shortName>PX041101</shortName>
+ <preferredDefinition>Measure to assess presence of arrhythmias through collection of personal history, treatments and procedures, medication usage, and administration of an electrocardiograph (ECG).</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>PhenX PX040801 - Myocardial Infarction</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>This measure assesses if an individual has had a myocardial infarction (MI) through collection of personal history of disease, treatment and procedure histories, and medical record abstraction.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/>
+ 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <longName>Myocardial Infarction</longName>
+ <instruction/>
+ <preferredDefinition>Myocardial Infarction</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Has a doctor ever told you that you had a myocardial infarction or heart attack? (ever_have_myocardial_infarction)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>9</value>
+ <meaningText>Don't Know</meaningText>
+ <description>Don't Know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Have you had an outpatient or day surgery procedure to unblock blocked or narrowed blood vessels of the heart (called a PTCA, coronary angioplasty, stent, or atherectomy)? (ever_have_stent)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>0</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Was there an acute episode of pain, discomfort or tightness in the chest, left arm or jaw within 72 hours of the hospitalization or within 72 hours of the inhospital event? (chest_discomfort)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Was the discomfort or pain diagnosed as having a noncardiac origin? (chest_discomfort_non_cardiac)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Were electrocardiograms (ECGs or EKGs) recorded? (electrocardiogram)</questionText>
+ <instruction>
+ <text>[chest_discomfort_non_cardiac] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Dates of ECGs image (cardio_008_image002)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Were any cardiac enzyme measurements performed during this admission? (serum_enzyme)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Did the participant have any active liver disease (cirrhosis, hepatitis, liver cancer, etc.)? (liver_disease)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Did the participant have any active liver disease (cirrhosis, hepatitis, liver cancer, etc.)? If Yes specify. (liver_disease_specify)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Is there any mention of the participant having either trauma, a surgical procedure, or rhabdomyolysis within one week prior to the measurement of the cardiac enzymes? (trauma_before_enzyme_measurement)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Unknown</meaningText>
+ <description>Unknown</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Is there any mention of the participant having either trauma, a surgical procedure, or rhabdomyolysis within one week prior to the measurement of the cardiac enzymes? If Yes specify date of trauma or procedure. (trauma_before_enzyme_measurement_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Is there any mention of the participant having either trauma, a surgical procedure, or rhabdomyolysis within one week prior to the measurement of the cardiac enzymes? If Yes specify type of trauma or procedure. (trauma_before_enzyme_measurement_type)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Enzyme Chart image (cardio_008_image004)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Enzyme Chart image 2 (cardio_008_image006)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Record all serum enzyme values Serum enzyme (enzyme_chart_enzyme)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Total CK</meaningText>
+ <description>Total CK</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>CK-MB</meaningText>
+ <description>CK-MB</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>LDH</meaningText>
+ <description>LDH</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>LDH-1</meaningText>
+ <description>LDH-1</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>LDH-2</meaningText>
+ <description>LDH-2</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Troponin I</meaningText>
+ <description>Troponin I</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>Troponin T</meaningText>
+ <description>Troponin T</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Record all serum enzyme values Normal Range (enzyme_chart_range)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=3;[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Record all serum enzyme values Lowest enzyme value (enzyme_chart_value_low)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>17</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Record all serum enzyme values Highest enzyme value (enzyme_chart_value_high)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>18</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Record all serum enzyme values Date (mm/dd/yy) (enzyme_chart_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>19</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Record all serum enzyme values Time (hh:mm am/pm) (enzyme_chart_time)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>20</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Myocardial infarction (myocardial_infarction)</questionText>
+ <instruction>
+ <text>[serum_enzyme] = 'UNDEFINED_CODE'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Definite</meaningText>
+ <description>Definite</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Probable</meaningText>
+ <description>Probable</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>No MI</meaningText>
+ <description>No MI</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>21</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Myocardial infarction Date (myocardial_infarction_date)</questionText>
+ <instruction>
+ <text>datatype=date_mdy;[myocardial_infarction] = 'UNDEFINED_CODE' or [myocardial_infarction] = 'UNDEFINED_CODE_1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>22</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Chest Pain (chest_pain)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Present</meaningText>
+ <description>Present</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Absent</meaningText>
+ <description>Absent</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>23</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Cardiac Enzymes (cardiac_enzyme)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Abnormal</meaningText>
+ <description>Abnormal</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Equivocal</meaningText>
+ <description>Equivocal</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Incomplete</meaningText>
+ <description>Incomplete</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Normal</meaningText>
+ <description>Normal</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>24</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>ECG Serial Reading (pick one) (ecg_serial_reading)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Evolution of Major Q-Wave</meaningText>
+ <description>Evolution of Major Q-Wave</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Evolution of ST-T Elevation with or without Q-Wave</meaningText>
+ <description>Evolution of ST-T Elevation with or without Q-Wave</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>New LBBB</meaningText>
+ <description>New LBBB</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Evolution of ST-Depression/Inversion alone</meaningText>
+ <description>Evolution of ST-Depression/Inversion alone</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>Evolution of Minor Q-Wave alone</meaningText>
+ <description>Evolution of Minor Q-Wave alone</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Single ECG with Major Q-Wave</meaningText>
+ <description>Single ECG with Major Q-Wave</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>Single ECG with LBBB, described as new</meaningText>
+ <description>Single ECG with LBBB, described as new</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>Absent, Uncodable or Other ECG</meaningText>
+ <description>Absent, Uncodable or Other ECG</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>25</displayOrder>
+ <dateCreated>2017-04-26T11:41:51</dateCreated>
+ <questionText>Procedurerelated (procedure_related)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes, cardiovascular</meaningText>
+ <description>Yes, cardiovascular</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Yes, non-cardiovascular</meaningText>
+ <description>Yes, non-cardiovascular</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX040801</protocolID>
+ <longName>Myocardial Infarction</longName>
+ <context>PhenX</context>
+ <shortName>PX040801</shortName>
+ <preferredDefinition>This measure assesses if an individual has had a myocardial infarction (MI) through collection of personal history of disease, treatment and procedure histories, and medical record abstraction.</preferredDefinition>
+ </protocol>
+ </form> 
+ </forms>
+

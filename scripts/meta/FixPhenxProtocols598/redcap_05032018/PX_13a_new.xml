@@ -1,0 +1,1632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+ <collectionName>PhenX Protocols - 13a</collectionName>
+ <collectionDescription>Load PhenX PX060601,PX060901</collectionDescription>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <longName>PhenX PX060601 - Exposures From Hobbies</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>The respondent is asked several questions about specific hobbies which he/she participated in for 6 months or longer. If the respondent has participated in one or more of the hobbies, he/she is asked additional questions about when the hobby started, how long it lasted, the overall time period, and the number of hours per week or month.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <longName>Exposures From Hobbies</longName>
+ <instruction/>
+ <preferredDefinition>Exposures From Hobbies</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Have you ever participated for 6 months or longer in Hobbies using glues? (hobby_glue_participated)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you first involved in Hobbies using glues? (hobby_glue_first_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_glue_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Hobbies using glues? (hobby_glue_last_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_glue_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Hobbies using glues? (hobby_glue_last_year_coded)</questionText>
+ <instruction>
+ <text>[hobby_glue_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>STILL INVOLVED</meaningText>
+ <description>STILL INVOLVED</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Hobbies using glues? (hobby_glue_total_years)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_glue_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Hobbies using glues? (hobby_glue_total_years_coded)</questionText>
+ <instruction>
+ <text>[hobby_glue_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>LESS THAN 1 YR</meaningText>
+ <description>LESS THAN 1 YR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Hobbies using glues? (hobby_glue_hours_quantity)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_glue_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Hobbies using glues? (hobby_glue_hours_frequency)</questionText>
+ <instruction>
+ <text>[hobby_glue_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>WEEK</meaningText>
+ <description>WEEK</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>MONTH</meaningText>
+ <description>MONTH</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>YEAR</meaningText>
+ <description>YEAR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Have you ever participated for 6 months or longer in Hobbies involving soldering, such as jewelry making or stained glass? (hobby_soldering_participated)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you first involved in Hobbies involving soldering, such as jewelry making or stained glass? (hobby_soldering_first_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_soldering_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Hobbies involving soldering, such as jewelry making or stained glass? (hobby_soldering_last_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_soldering_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Hobbies involving soldering, such as jewelry making or stained glass? (hobby_soldering_last_year_coded)</questionText>
+ <instruction>
+ <text>[hobby_soldering_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>STILL INVOLVED</meaningText>
+ <description>STILL INVOLVED</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Hobbies involving soldering, such as jewelry making or stained glass? (hobby_soldering_total_years)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_soldering_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Hobbies involving soldering, such as jewelry making or stained glass? (hobby_soldering_total_years_coded)</questionText>
+ <instruction>
+ <text>[hobby_soldering_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>LESS THAN 1 YR</meaningText>
+ <description>LESS THAN 1 YR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Hobbies involving soldering, such as jewelry making or stained glass? (hobby_soldering_hours_quantity)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_soldering_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Hobbies involving soldering, such as jewelry making or stained glass? (hobby_soldering_hours_frequency)</questionText>
+ <instruction>
+ <text>[hobby_soldering_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>WEEK</meaningText>
+ <description>WEEK</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>MONTH</meaningText>
+ <description>MONTH</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>YEAR</meaningText>
+ <description>YEAR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Have you ever participated for 6 months or longer in Developing Photographs? (hobby_photograph_participated)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>17</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you first involved in Developing Photographs? (hobby_photograph_first_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_photograph_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>18</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Developing Photographs? (hobby_photograph_last_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_photograph_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>19</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Developing Photographs? (hobby_photograph_last_year_coded)</questionText>
+ <instruction>
+ <text>[hobby_photograph_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>STILL INVOLVED</meaningText>
+ <description>STILL INVOLVED</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>20</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Developing Photographs? (hobby_photograph_total_years)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_photograph_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>21</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Developing Photographs? (hobby_photograph_total_years_coded)</questionText>
+ <instruction>
+ <text>[hobby_photograph_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>LESS THAN 1 YR</meaningText>
+ <description>LESS THAN 1 YR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>22</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Developing Photographs? (hobby_photograph_hours_quantity)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_photograph_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>23</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Developing Photographs? (hobby_photograph_hours_frequency)</questionText>
+ <instruction>
+ <text>[hobby_photograph_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>WEEK</meaningText>
+ <description>WEEK</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>MONTH</meaningText>
+ <description>MONTH</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>YEAR</meaningText>
+ <description>YEAR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>24</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Have you ever participated for 6 months or longer in Oil painting? (hobby_painting_participated)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>25</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you first involved in Oil painting? (hobby_painting_first_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_painting_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>26</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Oil painting? (hobby_painting_last_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_painting_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>27</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Oil painting? (hobby_painting_last_year_coded)</questionText>
+ <instruction>
+ <text>[hobby_painting_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>STILL INVOLVED</meaningText>
+ <description>STILL INVOLVED</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>28</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Oil painting? (hobby_painting_total_years)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_painting_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>29</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Oil painting? (hobby_painting_total_years_coded)</questionText>
+ <instruction>
+ <text>[hobby_painting_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>LESS THAN 1 YR</meaningText>
+ <description>LESS THAN 1 YR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>30</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Oil painting? (hobby_painting_hours_quantity)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_painting_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>31</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Oil painting? (hobby_painting_hours_frequency)</questionText>
+ <instruction>
+ <text>[hobby_painting_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>WEEK</meaningText>
+ <description>WEEK</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>MONTH</meaningText>
+ <description>MONTH</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>YEAR</meaningText>
+ <description>YEAR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>32</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Have you ever participated for 6 months or longer in Woodworking or refinishing furniture? (hobby_woodworking_participated)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>33</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you first involved in Woodworking or refinishing furniture? (hobby_woodworking_first_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_woodworking_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>34</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Woodworking or refinishing furniture? (hobby_woodworking_last_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_woodworking_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>35</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Woodworking or refinishing furniture? (hobby_woodworking_last_year_coded)</questionText>
+ <instruction>
+ <text>[hobby_woodworking_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>STILL INVOLVED</meaningText>
+ <description>STILL INVOLVED</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>36</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Woodworking or refinishing furniture? (hobby_woodworking_total_years)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_woodworking_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>37</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Woodworking or refinishing furniture? (hobby_woodworking_total_years_coded)</questionText>
+ <instruction>
+ <text>[hobby_woodworking_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>LESS THAN 1 YR</meaningText>
+ <description>LESS THAN 1 YR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>38</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Woodworking or refinishing furniture? (hobby_woodworking_hours_quantity)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_woodworking_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>39</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Woodworking or refinishing furniture? (hobby_woodworking_hours_frequency)</questionText>
+ <instruction>
+ <text>[hobby_woodworking_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>WEEK</meaningText>
+ <description>WEEK</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>MONTH</meaningText>
+ <description>MONTH</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>YEAR</meaningText>
+ <description>YEAR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>40</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Have you ever participated for 6 months or longer in Ceramics or pottery making? (hobby_ceramics_participated)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>41</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you first involved in Ceramics or pottery making? (hobby_ceramics_first_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_ceramics_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>42</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Ceramics or pottery making? (hobby_ceramics_last_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_ceramics_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>43</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Ceramics or pottery making? (hobby_ceramics_last_year_coded)</questionText>
+ <instruction>
+ <text>[hobby_ceramics_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>STILL INVOLVED</meaningText>
+ <description>STILL INVOLVED</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>44</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Ceramics or pottery making? (hobby_ceramics_total_years)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_ceramics_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>45</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Ceramics or pottery making? (hobby_ceramics_total_years_coded)</questionText>
+ <instruction>
+ <text>[hobby_ceramics_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>LESS THAN 1 YR</meaningText>
+ <description>LESS THAN 1 YR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>46</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Ceramics or pottery making? (hobby_ceramics_hours_quantity)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_ceramics_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>47</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Ceramics or pottery making? (hobby_ceramics_hours_frequency)</questionText>
+ <instruction>
+ <text>[hobby_ceramics_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>WEEK</meaningText>
+ <description>WEEK</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>MONTH</meaningText>
+ <description>MONTH</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>YEAR</meaningText>
+ <description>YEAR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>48</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Have you ever participated for 6 months or longer in Leather crafting? (hobby_leather_participated)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>49</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you first involved in Leather crafting? (hobby_leather_first_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_leather_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>50</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Leather crafting? (hobby_leather_last_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_leather_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>51</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Leather crafting? (hobby_leather_last_year_coded)</questionText>
+ <instruction>
+ <text>[hobby_leather_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>STILL INVOLVED</meaningText>
+ <description>STILL INVOLVED</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>52</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Leather crafting? (hobby_leather_total_years)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_leather_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>53</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Leather crafting? (hobby_leather_total_years_coded)</questionText>
+ <instruction>
+ <text>[hobby_leather_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>LESS THAN 1 YR</meaningText>
+ <description>LESS THAN 1 YR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>54</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Leather crafting? (hobby_leather_hours_quantity)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_leather_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>55</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Leather crafting? (hobby_leather_hours_frequency)</questionText>
+ <instruction>
+ <text>[hobby_leather_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>WEEK</meaningText>
+ <description>WEEK</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>MONTH</meaningText>
+ <description>MONTH</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>YEAR</meaningText>
+ <description>YEAR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>56</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Have you ever participated for 6 months or longer in Other activities involving the use of chemicals? (hobby_chemicals_participated)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>57</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+<questionText>Have you ever participated for 6 months or longer in Other activities involving the use of chemicals? If "YES", SPECIFY the activity: (hobby_chemicals_participated_specify)</questionText>
+ <instruction>
+ <text>[hobby_chemicals_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>58</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you first involved in Other activities involving the use of chemicals? (hobby_chemicals_first_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_chemicals_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>59</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Other activities involving the use of chemicals? (hobby_chemicals_last_year)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_chemicals_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>60</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year were you last involved in Other activities involving the use of chemicals? (hobby_chemicals_last_year_coded)</questionText>
+ <instruction>
+ <text>[hobby_chemicals_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>STILL INVOLVED</meaningText>
+ <description>STILL INVOLVED</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>61</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Other activities involving the use of chemicals? (hobby_chemicals_total_years)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_chemicals_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>62</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Overall, for how many years were you involved in Other activities involving the use of chemicals? (hobby_chemicals_total_years_coded)</questionText>
+ <instruction>
+ <text>[hobby_chemicals_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>00</value>
+ <meaningText>LESS THAN 1 YR</meaningText>
+ <description>LESS THAN 1 YR</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>63</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Other activities involving the use of chemicals? (hobby_chemicals_hours_quantity)</questionText>
+ <instruction>
+ <text>datatype=number;[hobby_chemicals_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>64</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>On average, about how many hours per week, month, or year have you participated in Other activities involving the use of chemicals? (hobby_chemicals_hours_frequency)</questionText>
+ <instruction>
+ <text>[hobby_chemicals_participated] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>WEEK</meaningText>
+ <description>WEEK</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>MONTH</meaningText>
+ <description>MONTH</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>YEAR</meaningText>
+ <description>YEAR</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX060601</protocolID>
+ <longName>Exposures from Hobbies</longName>
+ <context>PhenX</context>
+ <shortName>PX060601</shortName>
+ <preferredDefinition>The respondent is asked several questions about specific hobbies which he/she participated in for 6 months or longer. If the respondent has participated in one or more of the hobbies, he/she is asked additional questions about when the hobby started, how long it lasted, the overall time period, and the number of hours per week or month.</preferredDefinition>
+ </protocol>
+ </form>  
+   <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <longName>PhenX PX060901 - Day Care Attendance</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>The respondent's mother is asked if the child attended day care and/or preschool. If the child attended either the parent is asked the dates attended and the number of hours per week.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <longName>Day care outside the home</longName>
+ <instruction/>
+ <preferredDefinition>Day care outside the home</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Has (CHILD) attended day care outside the home? (day_care)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>7</value>
+ <meaningText>RF</meaningText>
+ <description>RF</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>8</value>
+ <meaningText>DK</meaningText>
+ <description>DK</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what month did (CHILD) begin the first attendance? (day_care_begin_month_1)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=12;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year did (CHILD) begin the first attendance? (day_care_begin_year_1)</questionText>
+ <instruction>
+ <text>datatype=number;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what month did (CHILD) end the first attendance? (day_care_end_month_1)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=12;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year did (CHILD) end the first attendance? (day_care_end_year_1)</questionText>
+ <instruction>
+ <text>datatype=number;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what month did (CHILD) begin the second attendance? (day_care_begin_month_2)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=12;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year did (CHILD) begin the second attendance? (day_care_begin_year_2)</questionText>
+ <instruction>
+ <text>datatype=number;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what month did (CHILD) end the second attendance? (day_care_end_month_2)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=12;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year did (CHILD) end the second attendance? (day_care_end_year_2)</questionText>
+ <instruction>
+ <text>datatype=number;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what month did (CHILD) begin the third attendance? (day_care_begin_month_3)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=12;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year did (CHILD) begin the third attendance? (day_care_begin_year_3)</questionText>
+ <instruction>
+ <text>datatype=number;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what month did (CHILD) end the third attendance? (day_care_end_month_3)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=12;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year did (CHILD) end the third attendance? (day_care_end_year_3)</questionText>
+ <instruction>
+ <text>datatype=number;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>About how many hours per week (did/does) (CHILD) attend the first day care? (day_care_hours_1)</questionText>
+ <instruction>
+ <text>datatype=number;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>About how many hours per week (did/does) (CHILD) attend the second day care? (day_care_hours_2)</questionText>
+ <instruction>
+ <text>datatype=number;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>About how many hours per week (did/does) (CHILD) attend the third day care? (day_care_hours_3)</questionText>
+ <instruction>
+ <text>datatype=number;[day_care] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <module>
+ <displayOrder>1</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <longName>Preschool</longName>
+ <instruction/>
+ <preferredDefinition>Preschool</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>Has (CHILD) attended preschool? (preschool)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>7</value>
+ <meaningText>RF</meaningText>
+ <description>RF</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>8</value>
+ <meaningText>DK</meaningText>
+ <description>DK</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>CHILD'S AGE AT REFERENCE DATE (preschool_child_age)</questionText>
+ <instruction>
+ <text>datatype=number;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what month did (CHILD) begin the first attendance? (preschool_begin_month_1)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=12;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year did (CHILD) begin the first attendance? (preschool_begin_year_1)</questionText>
+ <instruction>
+ <text>datatype=number;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what month did (CHILD) end the first attendance? (preschool_end_month_1)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=12;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year did (CHILD) end the first attendance? (preschool_end_year_1)</questionText>
+ <instruction>
+ <text>datatype=number;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what month did (CHILD) begin the second attendance? (preschool_begin_month_2)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=12;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year did (CHILD) begin the second attendance? (preschool_begin_year_2)</questionText>
+ <instruction>
+ <text>datatype=number;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what month did (CHILD) end the second attendance? (preschool_end_month_2)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=12;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year did (CHILD) end the second attendance? (preschool_end_year_2)</questionText>
+ <instruction>
+ <text>datatype=number;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what month did (CHILD) begin the third attendance? (preschool_begin_month_3)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=12;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year did (CHILD) begin the third attendance? (preschool_begin_year_3)</questionText>
+ <instruction>
+ <text>datatype=number;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what month did (CHILD) end the third attendance? (preschool_end_month_3)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=12;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>In what year did (CHILD) end the third attendance? (preschool_end_year_3)</questionText>
+ <instruction>
+ <text>datatype=number;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>About how many hours per week (did/does) (CHILD) attend the first preschool? (preschool_hours_1)</questionText>
+ <instruction>
+ <text>datatype=number;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>About how many hours per week (did/does) (CHILD) attend the second preschool? (preschool_hours_2)</questionText>
+ <instruction>
+ <text>datatype=number;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T15:01:19</dateCreated>
+ <questionText>About how many hours per week (did/does) (CHILD) attend the third preschool? (preschool_hours_3)</questionText>
+ <instruction>
+ <text>datatype=number;[preschool] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX060901</protocolID>
+ <longName>Day Care Attendance</longName>
+ <context>PhenX</context>
+ <shortName>PX060901</shortName>
+ <preferredDefinition>The respondent's mother is asked if the child attended day care and/or preschool. If the child attended either the parent is asked the dates attended and the number of hours per week.</preferredDefinition>
+ </protocol>
+ </form>
+ </forms>

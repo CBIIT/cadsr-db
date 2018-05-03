@@ -1,0 +1,2760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 45a</collectionName>
+  <collectionDescription>Load PhenX PX630402,PX630501,PX630701,PX630901,PX631301</collectionDescription>
+        <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:05</dateCreated>
+    <longName>PhenX PX630402 - Ptsd Symptoms Severity And Diagnosis Dsm 5</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Clinician-Administered PTSD Scale (CAPS-5) for The Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5) (is a 30-item, semistructured interview that is used to make a current (past-month) or lifetime diagnosis of post-traumatic stress disorder (PTSD) and to provide a continuous index of PTSD severity. It also can be used to assess PTSD symptoms over the past week. In addition to assessing the 20 DSM-5 PTSD symptoms, questions target the onset and duration of symptoms, subjective distress, and impact of symptoms on social and occupational functioning, improvement in symptoms since a previous CAPS administration, overall response validity, and features for the dissociative subtype (depersonalization and derealization). Administration requires identification of an index traumatic event to serve as the basis for symptom inquiry. The "index.php?pageLink=browse.protocoldetails id=630101" Life Events Checklist for DSM-5 (LEC-5) is recommended prior to the Criterion A inquiry included in the CAPS-5. Standardized questions and probes are provided for each symptom.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Summary of the ClinicianAdministered PTSD Scale for DSM5 (CAPS5) The CAPS5 is a 30item semistructured interview that is used to: Make current (past month) or lifetime diagnosis of PTSD Provide a continuous index of PTSD severity. Assess PTSD s..TRUNCATED</text>
+    </headerInstruction>      
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:05</dateCreated>
+      <longName>PTSD Symptoms, Severity, and Diagnosis - DSM 5</longName>
+      <preferredDefinition>PTSD Symptoms, Severity, and Diagnosis - DSM 5</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Changes to CAPS for DSM5 (compared to CAPS for DSMIV) CAPS for DSMIV asked respondents to endorse up to three traumatic events to keep in mind during the interview. CAPS5 requires the identification of a single index trauma to serve as the basis of symptom inquiry. CAPS5 is a 30item interview, corresponding to the DSM5 diagnosis for PTSD. The language of the CAPS5 reflects changes to the definition of the traumatic event (Criterion A), changes to existing symptoms, and the addition of new symptoms in DSM5. CAPS5 asks questions relevant to assessing the dissociative subtype of PTSD (depersonalization and derealization), but no longer includes other associated symptoms (e.g., gaps in awareness). As with previous versions of the CAPS, CAPS5 symptom severity ratings are based on symptom frequency and intensity (except for amnesia and diminished interest which are based on amount and intensity). However, CAPS5 items are rated with a single severity score in contrast to previous versions of the CAPS, which required separate frequency and intensity scores. General instructions and scoring information are included with the CAPS5. (changes_630402)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Sample Item: In the past month, have you had any unwanted memories of (EVENT) while you were awake, so not counting dreams? How does it happen that you start remembering (EVENT)? [If not clear:] (Are these unwanted memories, or are you thinking about [EVENT] on purpose?) How much do these memories bother you? Are you able to put them out of your mind and thing about something else? How often have you had these memories in the past month? # of times ______. Severity Rating: 0. Absent: The respondent denied the problem of the respondent's report doesn't fit the DSM5 symptom criterion. 1. Mild/subthreshold: The respondent described a problem that is consistent with the symptom criterion but isn't severe enough to be considered clinically significant. The problem doesn't satisfy the DSM5 symptom criterion and thus doesn't count toward a PTSD diagnosis. 2. Moderate/threshold: The respondent described a clinically significant problem. The problem satisfies the DSM5 symptom criterion and thus counts toward a PTSD diagnosis. The problem would be a target for intervention. This rating requires a minimum frequency of 2 x month or some of the time (2030%) PLUS a minimum intensity of Clearly Present. 3. Severe/markedly elevated: The respondent described a problem that is above threshold. The problem is difficult to manage and at times overwhelming, and would be a prominent target for intervention. This rating requires a minimum frequency of 2 x week or much of the time (5060%) PLUS a minimum intensity of Pronounced. 4. Extreme/incapacitating: The respondent described a dramatic symptom, far above threshold. The problem is pervasive, unmanageable, and overwhelming, and would be a highpriority target for intervention. (sample_630402)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Scoring: Detailed scoring information is included with the CAPS5 and should be reviewed carefully before administering. Briefly, the assessor combines information about frequency and intensity of an item into a single severity rating. CAPS5 total symptom severity score is calculated by summing severity scores for the 20 DSM5 PTSD symptoms. Similarly, CAPS5 symptom cluster severity scores are calculated by summing the individual item severity scores for symptoms corresponding to a given DSM5 cluster: Criterion B (items 15) Criterion C (items 67) Criterion D (items 814) and, Criterion E (items 1520). A symptom cluster score may also be calculated for dissociation by summing items 19 and 20. PTSD diagnostic status is determent by first dichotomizing each symptom as "present" or "absent," then following the DSM5 diagnostic rule. A symptom is considered present only if the corresponding item severity score is rated 2 ("moderate/threshold") or higher. The DSM5 PTSD diagnostic rule requires: At least one Criterion B symptom  At least one Criterion C symptom At least two Criterion D symptoms At least two Criterion E symptoms Criterion F is met (disturbance has lasted one month)Criterion G is met (disturbance cause either clinically significant distress or functional impairment) (scoring_630402)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Availability: The ClinicianAdministered PTSD Scale for DSM5 (CAPS5) is available from the National Center for PTSD www.ptsd.va.gov. (availibility_630402)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX630402</protocolID>
+     <longName>PTSD Symptoms, Severity, and Diagnosis - DSM 5</longName>
+     <context>PhenX</context>
+     <shortName>PX630402</shortName>
+     <preferredDefinition>The Clinician-Administered PTSD Scale (CAPS-5) for  The Diagnostic and Statistical Manual of Mental Disorders,  Fifth Edition (DSM-5) (is a 30-item, semistructured interview that is used to make a current (past-month) or lifetime diagnosis of post-traumatic stress disorder (PTSD) and to provide a continuous index of PTSD severity. It also can be used to assess PTSD symptoms over the past week. In addition to assessing the 20 DSM-5 PTSD symptoms, questions target the onset and duration of symptoms, subjective distress, and impact of symptoms on social and occupational functioning, improvement in symptoms since a previous CAPS administration, overall response validity, and features for the dissociative subtype (depersonalization and derealization). Administration requires identification of an index traumatic event to serve as the basis for symptom inquiry. The index.php?pageLink=browse.protocoldetails id=630101 Life Events Checklist  for DSM-5 (LEC-5) is recommended prior to the Criterion A inquiry included in the CAPS-5. Standardized questions and probes are provided for each symptom.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:05</dateCreated>
+    <longName>PhenX PX630501 - Social Support</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Medical Outcomes Study (MOS) Social Support Survey is a self-administered questionnaire that that includes 19 items across four functional support subscales: emotional/informational support (8 items), tangible/instrumental support (4 items), affectionate support (3 items), and positive social interaction (3 items). Each item is scored on a 5-point Likert style scale (1 = None of the Time; 5 = All of the Time) to indicate how often that type of support is available to them. A score for each social support subscale can be computed by averaging across the individual items or by adding scores individual items together. Higher scores indicate more support.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Medical Outcomes Study (MOS) Social Support Survey. People sometimes look to others for companionship, assistance, or other types of support. How often is each of the following kinds of support available to you if you need it? Select one in each box.</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:05</dateCreated>
+      <longName>Social Support</longName>
+      <preferredDefinition>Social Support</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone to help you if you were confined to bed. (support_confined_bed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone you can count on to listen to you when you need to talk. (support_listen)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone to give you good advice about a crisis. (support_good_advice)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone to take you to the doctor if you needed it. (support_transport_doctor)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone who shows you love and affection. (support_love_affection)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone to have a good time with. (support_good_time)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone to give you information to help you understand a situation. (support_information_help)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone to confide in or talk to about yourself or your problems. (support_confide_problems)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone who hugs you. (support_hugs)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone to get together with for relaxation. (support_relax)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone to prepare your meals if you were unable to do it yourself. (support_prepare_meals)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone whose advice you really want. (support_advice_want)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone to do things with to help get your mind off things. (support_do_things_with)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone to help with daily chores if you were sick. (support_help_chores)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone to share your most private worries and fears with. (support_share_worries_fears)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone to turn to for suggestions about how to deal with a personal problem. (support_turn_to_problems)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone to do something enjoyable with. (support_do_enjoyable_things)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone who understands your problems. (support_understands_problems)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Someone to love and make you feel wanted. (support_love_feel_wanted)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>1- none of the time</meaningText>
+          <description>1- none of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>2- A little of the time</meaningText>
+          <description>2- A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>3- Some of the Time</meaningText>
+          <description>3- Some of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>4- Most of the Time</meaningText>
+          <description>4- Most of the Time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>5- All of the Time</meaningText>
+          <description>5- All of the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Scoring: A score for each social support subscale can be computed as either a total score or an average for the individual items. Higher scores indicate more support. Emotional/informational support: items 2, 3, 7, 8, 12, 15, 16, 18Tangible support: items 1, 4, 11, 14 Affectionate support: items 5, 9, 19 Positive social interaction: items 6, 10, 17 (scoring_630501)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX630501</protocolID>
+     <longName>Social Support</longName>
+     <context>PhenX</context>
+     <shortName>PX630501</shortName>
+     <preferredDefinition>The Medical Outcomes Study (MOS) Social Support Survey is a self-administered questionnaire that that includes 19 items across four functional support subscales: emotional/informational support (8 items), tangible/instrumental support (4 items), affectionate support (3 items), and positive social interaction (3 items). Each item is scored on a 5-point Likert style scale (1 = None of the Time; 5 = All of the Time) to indicate how often that type of support is available to them. A score for each social support subscale can be computed by averaging across the individual items or by adding scores individual items together. Higher scores indicate more support.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:05</dateCreated>
+    <longName>PhenX PX630701 - General Wellbeing</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The General Well Being Schedule (GWB) is an 18-item, self-administered questionnaire that was developed for the U.S. Health and Nutrition Examination Survey (HANES I). The GWB includes positive and negative questions across six dimensions: positive well-being, self-control, vitality, depression, anxiety, and general health. Each item has the time frame "during the last month," and the first 14 questions use 6-point response scales representing intensity or frequency. The remaining four questions use 0-10 rating scales defined by adjectives at each end. The polarity of items 1, 3, 6, 7, 9, 11, 15, and 16 is reversed for scoring, and items within each subscale are added together. Lower scores reflect distress and higher scores reflect positive well-being.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>The General WellBeing Schedule. Read: This section of the examination contains questions about how you feel and how things have been going with you. For each question, select the answer which best applies to you.</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:05</dateCreated>
+      <longName>General Well-being</longName>
+      <preferredDefinition>General Well-being</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>1. How have you been feeling in general?  (DURING THE PAST MONTH) (feeling_general)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In excellent spirits</meaningText>
+          <description>In excellent spirits</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>In very good spirits</meaningText>
+          <description>In very good spirits</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>In good spirits mostly</meaningText>
+          <description>In good spirits mostly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I have been up and down in spirits a lot</meaningText>
+          <description>I have been up and down in spirits a lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>In low spirits mostly</meaningText>
+          <description>In low spirits mostly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>In very low spirits</meaningText>
+          <description>In very low spirits</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>2. Have you been bothered by nervousness or your 'nerves'?  (DURING THE PAST MONTH) (bothered_nerves)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Extremely so - to the point where I could not work or take care of things</meaningText>
+          <description>Extremely so - to the point where I could not work or take care of things</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very much so</meaningText>
+          <description>Very much so</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Quite a bit</meaningText>
+          <description>Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Some enough to bother me</meaningText>
+          <description>Some enough to bother me</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>3. Have you been in firm control of your behavior, thoughts, emotions, or feelings?  (DURING THE PAST MONTH) (control_behavior_feelings)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes, definitely so</meaningText>
+          <description>Yes, definitely so</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Yes, for the most part</meaningText>
+          <description>Yes, for the most part</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Generally so</meaningText>
+          <description>Generally so</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Some - enough to bother me</meaningText>
+          <description>Some - enough to bother me</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>4. Have you felt so sad, discourages, hopeless, or had so many problems that you wondered if anything was worthwhile? (DURING THE PAST MONTH) (felt_sad_problems)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Extremely so - to the point that I have just about given up</meaningText>
+          <description>Extremely so - to the point that I have just about given up</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very much so</meaningText>
+          <description>Very much so</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Quite a bit</meaningText>
+          <description>Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Some - enough to bother me</meaningText>
+          <description>Some - enough to bother me</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A little bit</meaningText>
+          <description>A little bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>5. Have you been under or felt you were under any strain, stress, or pressure?  (DURING THE PAST MONTH) (stress_pressure)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes, - almost more than I could bear or stand</meaningText>
+          <description>Yes, - almost more than I could bear or stand</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Yes - quite a bit of pressure</meaningText>
+          <description>Yes - quite a bit of pressure</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Yes - some, more than usual</meaningText>
+          <description>Yes - some, more than usual</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Yes - some, but about usual</meaningText>
+          <description>Yes - some, but about usual</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Yes - a little</meaningText>
+          <description>Yes - a little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>6. How happy, satisfied, or pleased have you been with your personal life?  (DURING THE PAST MONTH) (happy_personal_life)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Extremely happy - could not have been more satisfied or pleased</meaningText>
+          <description>Extremely happy - could not have been more satisfied or pleased</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very happy</meaningText>
+          <description>Very happy</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Fairly happy</meaningText>
+          <description>Fairly happy</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Satisfied - pleased</meaningText>
+          <description>Satisfied - pleased</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Somewhat dissatisfied</meaningText>
+          <description>Somewhat dissatisfied</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Very dissatisfied</meaningText>
+          <description>Very dissatisfied</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>7. Have you had any reason to wonder if you were losing your mind, or losing control over the way you act, talk, think, feel, or of your memory? (DURING THE PAST MONTH) (losing_mind)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>only a little</meaningText>
+          <description>only a little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Some - but not enough to be concerned or worried about</meaningText>
+          <description>Some - but not enough to be concerned or worried about</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Some, and I have been a little concerned</meaningText>
+          <description>Some, and I have been a little concerned</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Some, and I am quite concerned</meaningText>
+          <description>Some, and I am quite concerned</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Yes, very much so, and I am very concerned</meaningText>
+          <description>Yes, very much so, and I am very concerned</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>8. Have you been anxious, worried, or upset?  (DURING THE PAST MONTH) (anxious_worried_upset)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Extremely so</meaningText>
+          <description>Extremely so</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Very much so</meaningText>
+          <description>Very much so</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Quite a bit</meaningText>
+          <description>Quite a bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Some - enough to bother me</meaningText>
+          <description>Some - enough to bother me</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A litle bit</meaningText>
+          <description>A litle bit</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>9. Have you been waking up fresh and rested?  (DURING THE PAST MONTH) (waking_up_fresh)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Every day</meaningText>
+          <description>Every day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Most every day</meaningText>
+          <description>Most every day</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Fairly often</meaningText>
+          <description>Fairly often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Less than half the time</meaningText>
+          <description>Less than half the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Rarely</meaningText>
+          <description>Rarely</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>None of the time</meaningText>
+          <description>None of the time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>10. Have you been bothered by any illness, bodily disorder, pains, or fears about your health?  (DURING THE PAST MONTH) (bothered_illness_healthfears)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>All the time</meaningText>
+          <description>All the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Most of the time</meaningText>
+          <description>Most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A good bit of the tiem</meaningText>
+          <description>A good bit of the tiem</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Some of the time</meaningText>
+          <description>Some of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A little of the time</meaningText>
+          <description>A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>None of the time</meaningText>
+          <description>None of the time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>11. Has your daily life been full of things that were interesting to you?  (DURING THE PAST MONTH) (daily_life_interesting)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>All the time</meaningText>
+          <description>All the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Most of the time</meaningText>
+          <description>Most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A good bit of the tiem</meaningText>
+          <description>A good bit of the tiem</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Some of the time</meaningText>
+          <description>Some of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A little of the time</meaningText>
+          <description>A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>None of the time</meaningText>
+          <description>None of the time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>12. Have you felt down hearted and blue?  (DURING THE PAST MONTH) (felt_downhearted_blue)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>All the time</meaningText>
+          <description>All the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Most of the time</meaningText>
+          <description>Most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A good bit of the tiem</meaningText>
+          <description>A good bit of the tiem</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Some of the time</meaningText>
+          <description>Some of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A little of the time</meaningText>
+          <description>A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>None of the time</meaningText>
+          <description>None of the time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>13. Have you been feeling emotionally stable and sure of yourself?  (DURING THE PAST MONTH) (feeling_emotionally_stable)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>All the time</meaningText>
+          <description>All the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Most of the time</meaningText>
+          <description>Most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A good bit of the tiem</meaningText>
+          <description>A good bit of the tiem</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Some of the time</meaningText>
+          <description>Some of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A little of the time</meaningText>
+          <description>A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>None of the time</meaningText>
+          <description>None of the time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>14. Have you felt tired, worn out, usedup, or exhausted?  (DURING THE PAST MONTH) (felt_tired_exhausted)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>All the time</meaningText>
+          <description>All the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Most of the time</meaningText>
+          <description>Most of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A good bit of the tiem</meaningText>
+          <description>A good bit of the tiem</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Some of the time</meaningText>
+          <description>Some of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A little of the time</meaningText>
+          <description>A little of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>None of the time</meaningText>
+          <description>None of the time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>For each of the four scales below, note that the words at each end of the 0 to 10 scale describe opposite feelings. Select any number which seems closest to how you have generally felt? (DURING THE PAST MONTH) (info_scale_630701)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>15. How concerned or worried about your HEALTH have you been?  (DURING THE PAST MONTH) (worried_health)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Not concerned at all</meaningText>
+          <description>Not concerned at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>7</meaningText>
+          <description>7</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>UNDEFINED_CODE_8</value>
+          <meaningText>8</meaningText>
+          <description>8</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>UNDEFINED_CODE_9</value>
+          <meaningText>9</meaningText>
+          <description>9</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>10</value>
+          <meaningText>Very concerned</meaningText>
+          <description>Very concerned</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>16. How RELAXED or TENSE have you been?  (DURING THE PAST MONTH) (relaxed_or_tense)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Very relaxed</meaningText>
+          <description>Very relaxed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>7</meaningText>
+          <description>7</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>UNDEFINED_CODE_8</value>
+          <meaningText>8</meaningText>
+          <description>8</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>UNDEFINED_CODE_9</value>
+          <meaningText>9</meaningText>
+          <description>9</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>10</value>
+          <meaningText>Very tense</meaningText>
+          <description>Very tense</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>17. How much ENERGY, PEP, and VITALITY have you felt?  (DURING THE PAST MONTH) (energy_vitality)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No energy AT ALL listless</meaningText>
+          <description>No energy AT ALL listless</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>7</meaningText>
+          <description>7</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>UNDEFINED_CODE_8</value>
+          <meaningText>8</meaningText>
+          <description>8</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>UNDEFINED_CODE_9</value>
+          <meaningText>9</meaningText>
+          <description>9</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>10</value>
+          <meaningText>Very ENERGETIC, dynamic</meaningText>
+          <description>Very ENERGETIC, dynamic</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>18. How DEPRESSED or CHEERFUL have you been?  (DURING THE PAST MONTH) (depressed_or_cheerful)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Very depressed</meaningText>
+          <description>Very depressed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>2</meaningText>
+          <description>2</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>4</meaningText>
+          <description>4</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>UNDEFINED_CODE_6</value>
+          <meaningText>6</meaningText>
+          <description>6</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>UNDEFINED_CODE_7</value>
+          <meaningText>7</meaningText>
+          <description>7</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>UNDEFINED_CODE_8</value>
+          <meaningText>8</meaningText>
+          <description>8</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>UNDEFINED_CODE_9</value>
+          <meaningText>9</meaningText>
+          <description>9</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>10</value>
+          <meaningText>Very cheerful</meaningText>
+          <description>Very cheerful</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Scoring: Items 1, 3, 6, 7, 9, 11, 15, and 16 are reverse scored. The scores from all items are added together and 14 are subtracted from the total to give a range of 0110. There are three proposed cutpoints: total scores of 060 reflect "severe distress," 6172 "moderate distress," and 73110 "positive wellbeing". Six subscores can be derived. Subscore Label  Question topics. Anxiety: 2. nervousness 5. strain, stress, or pressure 8. anxious, worried, upset16. relaxed, tense Depression: 4. sad, discouraged, hopeless 12. downhearted, blue 18. depressed Positive wellbeing: 1. feeling in general 6. happy, satisfied with life 11. interesting daily life Selfcontrol: 3. firm control of behavior, emotions 7. afraid losing mind, or losing control 13. emotionally stable, sure of self  Vitality: 9. waking fresh, rested 14. feeling tired, worn out 17. energy level General health: 10. bothered by illness 15. concerned, worried about health (scoring_630701)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX630701</protocolID>
+     <longName>General Well-being</longName>
+     <context>PhenX</context>
+     <shortName>PX630701</shortName>
+     <preferredDefinition>The General Well Being Schedule (GWB) is an 18-item, self-administered questionnaire that was developed for the U.S. Health and Nutrition Examination Survey (HANES I). The GWB includes positive and negative questions across six dimensions: positive well-being, self-control, vitality, depression, anxiety, and general health. Each item has the time frame "during the last month," and the first 14 questions use 6-point response scales representing intensity or frequency. The remaining four questions use 0-10 rating scales defined by adjectives at each end. The polarity of items 1, 3, 6, 7, 9, 11, 15, and 16 is reversed for scoring, and items within each subscale are added together. Lower scores reflect distress and higher scores reflect positive well-being.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:05</dateCreated>
+    <longName>PhenX PX630901 - Baseline And Trauma Challenge Physiology</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Baseline and Trauma Challenge Psychophysiological Recordings protocol consists of a Baseline phase and a Trauma Challenge (trauma interview and trauma imagery) phase. During the baseline phase, skin conductance and heart rate are monitored continuously for 5 minutes while the participant rests quietly without talking. During the first part of the Trauma Challenge, heart rate and skin conductance are continuously measured while the participant is administered a 21-question, open-ended trauma interview. After the interview, skin conductance and heart rate are monitored continuously for 60 seconds while the participant is asked to think about and imagine the traumatic event. Derived scores include average skin conductance and heart rate calculated for baseline, trauma interview, and trauma imagery as well as the difference in heart rate and skin conductance between (1) trauma interview and baseline, (2) trauma imagery and baseline, and (3-5) the first and last minutes within each measurement period (baseline, trauma interview, and trauma imagery).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>BASELINE AND TRAUMA CHALLENGE PSYCHOPHYSIOLOGICAL RECORDINGS PROTOCOL  Have the individual sit comfortably in a chair. Skin conductance (SC): Any device that records continuously at a rate of 5 samples per second or higher. Add isotonic paste ..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:05</dateCreated>
+      <longName>Baseline and Trauma Challenge Physiology</longName>
+      <preferredDefinition>Baseline and Trauma Challenge Physiology</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>BASELINE Ask individual to rest quietly without talking for 5 minutes. Record SC and HR continuously for 5 minutes. Mark the end of the 5minute period or stop and save the data as "Baseline." (baseline_630901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Average Skin Conductance for 5minute Baseline (average_skinconductance_baseline)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Average Heart Rate for 5minute Baseline (average_heartrate_baseline)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>TRAUMA INTERVIEW (Adapted from Standardized Trauma Interview, Foa and Rothbaum, 1998)  Start recording data and ask the following questions: 1. Please briefly describe the event that happened to you 2. What time of day did it happen? 3. Where did it happen? 4. How long did this event last? That is, how long was it from the moment you first felt like you were in danger until you felt safe again? 5. How long ago did it happen? 6. How much have you slept since it happened? 7. What is your relationship with the perpetrator (if applicable)? 8. Was anyone under the influence of drugs or alcohol when it happened? 9. Was anyone else with you? 10. Did you have any injuries? What were they? 11. Do you anticipate longterm physical problems as a result of this event? 12. Was anyone else injured? 13. Was anyone killed? 14. Did you see other people's injury or death? 15. At the time of the incident, did you think you would be seriously injured or killed? 16. During the event, how helpless did you feel? 17. During the event, how horrified or shocked did you feel? 18. During the event, how terrified or afraid did you feel? 19. During the event, how much control did you feel? 20. Have you ever experienced a similar event before? 21. How many times? Mark the end of the interview of stop and save the data as "Trauma interview" (trauma_630901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Average Skin Conductance for Trauma interview (average_skinconductance_traumainterview)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Average Heart Rate for Trauma interview (average_heartrate_traumainterview)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>TRAUMA IMAGERY Start recording data and ask the participant to think about and imagine the traumatic event. Record SC and HR continuously for 60 seconds. Mark the end of the 1minute period or stop and save the data as "Trauma imagery." (imagery_630901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>average Skin Conductance for Trauma imagery (average_skinconductance_traumaimagery)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>average Heart Rate for Trauma imagery (average_heartrate_traumaimagery)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>DATA SCORING: Calculate average SC for 5minute Baseline, Trauma interview, and Trauma imagery. Calculate the difference between Trauma interview and Baseline, and Trauma imagery and Baseline. Calculate average SC for first minute and last minute of each phase. Note duration of Trauma interview. Calculate change score from first to last minute within each phase (correct Trauma interview by duration). ** Repeat with HR data ** 1. Baseline average  2. Trauma interview average 3. Trauma imagery average 4. Difference between Baseline and Trauma interview averages 5. Difference between Baseline and Trauma imagery erage 6. Change from first to last minute of Baseline 7. Change from first to last minute of Trauma interview 8. Change from first to last minute of Trauma imagery 9. Change from first to last minute of Trauma interview divided by interview duration (data_scoring_630901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Skin Conductance baseline average (sc_bl_ave_630901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Skin conductance Trauma Interview average (t_interv_630901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Skin conductance Trauma imagery average (sc_t_imag_630901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Difference of  Skin Conductance between Baseline and Trauma interview averages (difference_skinconductance_baseline_traumainterview)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Difference of  Skin Conductance between Baseline and Trauma imagery averages (difference_skinconductance_baseline_traumaimagery)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Change of  Skin Conductance from first to last minute of Baseline (change_skinconductance_baseline_firsttolast_minute)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Change of  Skin Conductance from first to last minute of Trauma interview (change_skinconductance_traumainterview_firsttolast_minute)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Change of  Skin Conductance from first to last minute of Trauma imagery (change_skinconductance_traumaimagery_firsttolast_minute)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Change of  Skin Conductance from first to last minute of Trauma interview divided by interview duration (change_skinconductance_traumainterview_over_duration)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Heart Rate Baseline average (hr_bl_ave_630901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Heart Rate Trauma interview average (hr_t_interv_630901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Heart Rate Trauma imagery average (hr_t_imag_630901)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Difference of  Heart Rate between Baseline and Trauma interview averages (difference_heartrate_baseline_traumainterview)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Difference of  Heart Rate between Baseline and Trauma imagery averages (difference_heartrate_baseline_traumaimagery)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Change of  Heart Rate from first to last minute of Baseline (change_heartrate_baseline_firsttolast_minute)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Change of  Heart Rate from first to last minute of Trauma interview (change_heartrate_traumainterview_firsttolast_minute)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Change of  Heart Rate from first to last minute of Trauma imagery (change_heartrate_traumaimagery_firsttolast_minute)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Change of  Heart Rate from first to last minute of Trauma interview divided by interview duration (change_heartrate_traumainterview_over_duration)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX630901</protocolID>
+     <longName>Baseline and Trauma Challenge Physiology</longName>
+     <context>PhenX</context>
+     <shortName>PX630901</shortName>
+     <preferredDefinition>The Baseline and Trauma Challenge Psychophysiological Recordings protocol consists of a Baseline phase and a Trauma Challenge (trauma interview and trauma imagery) phase. During the baseline phase, skin conductance and heart rate are monitored continuously for 5 minutes while the participant rests quietly without talking. During the first part of the Trauma Challenge, heart rate and skin conductance are continuously measured while the participant is administered a 21-question, open-ended trauma interview. After the interview, skin conductance and heart rate are monitored continuously for 60 seconds while the participant is asked to think about and imagine the traumatic event. Derived scores include average skin conductance and heart rate calculated for baseline, trauma interview, and trauma imagery as well as the difference in heart rate and skin conductance between (1) trauma interview and baseline, (2) trauma imagery and baseline, and (3-5) the first and last minutes within each measurement period (baseline, trauma interview, and trauma imagery).</preferredDefinition>
+    </protocol>
+   </form>   
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:08:05</dateCreated>
+    <longName>PhenX PX631301 - Military Service Demographics</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes 11 self-administered questions adapted from the Million Veteran Program (MVP) Baseline Survey (5 questions), MVP Lifestyle Survey (1 question), and the Mental Illness Research, Education, and Clinical Center (MIRECC) Demographics Form (5 questions).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:08:05</dateCreated>
+      <longName>Military Service Demographics</longName>
+      <preferredDefinition>Military Service Demographics</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>1. Have you ever served in the U.S. Military? (military_service)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No - (If no, please skip items 2 through 11 and move to the next section/questionnaire)</meaningText>
+          <description>No - (If no, please skip items 2 through 11 and move to the next section/questionnaire)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>2. In which branch of the service did you serve? Mark all that apply (military_service_branch)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Army</meaningText>
+          <description>Army</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>National Guard</meaningText>
+          <description>National Guard</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Navy</meaningText>
+          <description>Navy</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Merchant Marines</meaningText>
+          <description>Merchant Marines</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Air Force</meaningText>
+          <description>Air Force</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>NOAA</meaningText>
+          <description>NOAA</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Marine Corps</meaningText>
+          <description>Marine Corps</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>Public Health Service</meaningText>
+          <description>Public Health Service</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>Coast Guard</meaningText>
+          <description>Coast Guard</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>Coast Guard Reserves</meaningText>
+          <description>Coast Guard Reserves</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>3a. Years of Active Duty Service (military_service_years_active_service)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=Years</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>3b. Months of Active Duty Service (military_service_months_active_service)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=Months</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>4a. Years of Reserve/Guard Service (military_service_years_reserve_service)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=Years</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>4b. Months of Reserve/Guard Service (military_service_months_reserve_service)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=Months</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>5. When did you serve? Mark all that apply (military_service_list)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>September 2001 or later</meaningText>
+          <description>September 2001 or later</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>August 1990 to August 2001 (includes Gulf War)</meaningText>
+          <description>August 1990 to August 2001 (includes Gulf War)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>May 1975 to July 1990</meaningText>
+          <description>May 1975 to July 1990</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>August 1964 to April 1975 (Vietnam era)</meaningText>
+          <description>August 1964 to April 1975 (Vietnam era)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>February 1955 to July 1964</meaningText>
+          <description>February 1955 to July 1964</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>July 1950 to January 1955 (Korean War)</meaningText>
+          <description>July 1950 to January 1955 (Korean War)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>January 1947 to June 1950</meaningText>
+          <description>January 1947 to June 1950</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>December 1941 to December 1946 (WWII)</meaningText>
+          <description>December 1941 to December 1946 (WWII)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>November 1941 or earlier</meaningText>
+          <description>November 1941 or earlier</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>6. Highest rank at separation or current rank (military_service_rank)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Enlisted</meaningText>
+          <description>Enlisted</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Non-Commissioned Officer</meaningText>
+          <description>Non-Commissioned Officer</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Officer</meaningText>
+          <description>Officer</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Where were you stationed? Mark all that apply (military_service_stationed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Africa</meaningText>
+          <description>Africa</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Asia/South Pacific (South East Asia)</meaningText>
+          <description>Asia/South Pacific (South East Asia)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Caribbean</meaningText>
+          <description>Caribbean</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Eastern Europe</meaningText>
+          <description>Eastern Europe</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Mexico</meaningText>
+          <description>Mexico</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Middle East</meaningText>
+          <description>Middle East</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Northern/Central Europe</meaningText>
+          <description>Northern/Central Europe</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>Southern Europe/Mediterranean Basin</meaningText>
+          <description>Southern Europe/Mediterranean Basin</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>South/Central America</meaningText>
+          <description>South/Central America</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>USA/Canada</meaningText>
+          <description>USA/Canada</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Other (specify below)</meaningText>
+          <description>Other (specify below)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>Where were you stationed? Other (specify) (military_service_stationed_otherspecify)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>8. How many times were you deployed? (military_service_times_deployed)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>9. How many combat or war zone tours have you served? (military_service_number_war_tours)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>10. Did you deploy in support of the 19901991 Gulf War? (military_service_gulf_war)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:08:05</dateCreated>
+        <questionText>11. Did you deploy in support of Operation Enduring Freedom (OEF) or Operation Iraqi Freedom (OIF) or Operation New Dawn (OND)? (military_service_oef_oif_ond)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX631301</protocolID>
+     <longName>Military Service Demographics</longName>
+     <context>PhenX</context>
+     <shortName>PX631301</shortName>
+     <preferredDefinition>This protocol includes 11 self-administered questions adapted from the Million Veteran Program (MVP) Baseline Survey (5 questions), MVP Lifestyle Survey (1 question), and the Mental Illness Research, Education, and Clinical Center (MIRECC) Demographics Form (5 questions).</preferredDefinition>
+    </protocol>
+   </form>      
+   </forms>

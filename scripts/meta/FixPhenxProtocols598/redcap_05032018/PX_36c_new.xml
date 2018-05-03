@@ -1,0 +1,2739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 36c</collectionName>
+  <collectionDescription>Load PhenX PX230104,PX230601,PX230701,PX230801,PX231101</collectionDescription>     
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:31:14</dateCreated>
+    <longName>PhenX PX230104 - Eating Disorders Examination Questionnaire</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Eating Disorders Examination Questionnaire © (EDE-Q) is a self-report questionnaire based on the Eating Disorders Examination Interview. The questionnaire based on the Eating Disorders Examination Interview. The questionnaire includes twenty-eight questions related to the respondent behaviors over the past 4 weeks (28 days) which may be indicative of an eating disorder and with height and weight.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Eating Disorder Examination Questionnaire © (EDEQ 6.0) Instructions: The following questions are concerned with the past four weeks (28 days) only. Please read each question carefully. Please answer all the questions. Thank you.Questions 1 ..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:31:14</dateCreated>
+      <longName>Eating Disorders Examination- Questionnaire</longName>
+      <preferredDefinition>Eating Disorders Examination- Questionnaire</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>1. On how many of the past 28 days, have you been deliberately trying to limit the amount of food you eat to influence your shape or weight (whether or not you have succeeded)? (psychopathologyquestionnaire_limit_foodinstake_influence_weightshape)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>2. On how many of the past 28 days, have you gone for long periods of time (8 waking hours or more) without eating anything at all in order to influence your shape or weight? (psychopathologyquestionnaire_longperiods_fasting_influence_weightshape)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>3. On how many of the past 28 days, have you tried to exclude from your diet any foods that you like in order to influence your shape or weight (whether or not you have succeeded)? (psychopathologyquestionnaire_dietaryrestrictions_influence_weightshape)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>4. On how many of the past 28 days, have you tried to follow definite rules regarding your eating (for example, a calorie limit) in order to influence your shape or weight (whether or not you have succeeded)? (psychopathologyquestionnaire_dietaryrules_influence_weightshape)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>5. On how many of the past 28 days, have you had a definite desire to have any empty stomach with the aim of influencing your shape or weight? (psychopathologyquestionnaire_emptystomach_influence_weightshape)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>6. On how many of the past 28 days, have you had a definite desire to have a totally flat stomach? (psychopathologyquestionnaire_desire_flat_stomach)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>7. On how many of the past 28 days, has thinking about food, eating, or calories made it very difficult to concentrate on things you are interested in (for example, working, following a conversation, or reading)? (psychopathologyquestionnaire_thinkingfoodeating_distraction)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>8. On how many of the past 28 days, has thinking about shape or weight made it very difficult to concentrate on things you are interested in (for example, working, following a conversation, or reading)? (psychopathologyquestionnaire_thinkingweightshape_distraction)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>9. On how many of the past 28 days, have you had a definite fear of losing control over eating? (psychopathologyquestionnaire_fear_losingcontrol_eating)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>10. On how many of the past 28 days, have you had a definite fear that you might gain weight? (psychopathologyquestionnaire_fear_gainweight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>11. On how many of the past 28 days, have you felt fat? (psychopathologyquestionnaire_felt_fat)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>12. On how many of the past 28 days, have you had a strong desire to lose weight? (psychopathologyquestionnaire_desire_lose_weight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Questions 1318: Please select the appropriate answer to the right. Remember that the questions only refer to the past four weeks (28 days). (q13_18_230104)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>13. Over the past four weeks (28 days), how many times have you eaten what other people would regard as an unusually large amount of food (given the circumstances)? (psychopathologyquestionnaire_unusualamount)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>14. Over the past four weeks (28 days), on how many of these times did you have a sense of having lost control over your eating (at the time that you were eating)? (psychopathologyquestionnaire_lossofcontrol_eating)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>15. Over the past four weeks (28 days), how many DAYS have such episodes of overeating occurred (i.e., you have eaten an unusually large amount of food and have had a sense of loss of control at the time)? (psychopathologyquestionnaire_lossofcontrol_episodes)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>16. Over the past four weeks (28 days), how many times have you made yourself sick (vomit) as a means of controlling your shape or weight? (psychopathologyquestionnaire_control_weightshape_vomit)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>17. Over the past four weeks (28 days), how many times have you taken laxatives as a means of controlling your shape or weight? (psychopathologyquestionnaire_control_weightshape_laxatives)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>18. Over the past four weeks (28 days), how many times have you exercised in a "driven" or "compulsive" way as a means of controlling your weight, shape, or amount of fat, or to burn off calories? (psychopathologyquestionnaire_control_weightshape_exercise)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Questions 19 to 21: please select the appropriate answer. Please note that the questions the term "binge eating" means eating what others would regard as an unusually large amount of food for the circumstances, accompanied by a sense of having lost control over eating. (q19_21_230104)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>19. Over the past 28 days, on how many days have you eaten in secret (i.e., furtively)? Do not count episodes of binge eating (psychopathologyquestionnaire_eat_secretly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>20. On what proportion of the times that you have eaten have you felt guilty (felt that you've done wrong) because of its effect on your shape or weight? ......Do not count episodes of binge eating (ppq_eat_affect_shape)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>21. Over the past 28 days, how concerned have you been about other people seeing you eat? Do not count episodes of binge eating (psychopathologyquestionnaire_others_seeing_you_eat)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>No days</meaningText>
+          <description>No days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1-5 days</meaningText>
+          <description>1-5 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>6-12 days</meaningText>
+          <description>6-12 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>13-15 days</meaningText>
+          <description>13-15 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>16-22 days</meaningText>
+          <description>16-22 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>5</value>
+          <meaningText>23-27 days</meaningText>
+          <description>23-27 days</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>every day</meaningText>
+          <description>every day</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Questions 22 to 28: Please select the appropriate answer on the right. Remember that the questions only refer to the past four weeks (28 days). (q22_28_230104)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>22. Over the past 28 days, has your weight influenced how you think about (judge) yourself as a person? (psychopathologyquestionnaire_judgeyourself_influence_weight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly</meaningText>
+          <description>Slightly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>Markedly</meaningText>
+          <description>Markedly</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>23. Over the past 28 days, has your shape influenced how you think about (judge) yourself as a person? (psychopathologyquestionnaire_judgeyourself_influence_shape)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly</meaningText>
+          <description>Slightly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>Markedly</meaningText>
+          <description>Markedly</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>24. Over the past 28 days, how much would it have upset you if you had been asked to weigh yourself once a week (no more, or less, often) for the next four weeks? (psychopathologyquestionnaire_upset_weigh_yourself)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly</meaningText>
+          <description>Slightly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>Markedly</meaningText>
+          <description>Markedly</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>25. Over the past 28 days, how dissatisfied have you been with your weight? (psychopathologyquestionnaire_dissatisfaction_weight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly</meaningText>
+          <description>Slightly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>Markedly</meaningText>
+          <description>Markedly</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>26. Over the past 28 days, how dissatisfied have you been with your shape? (psychopathologyquestionnaire_dissatisfaction_shape)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly</meaningText>
+          <description>Slightly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>Markedly</meaningText>
+          <description>Markedly</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>27. Over the past 28 days, how uncomfortable have you felt seeing your body (for example, seeing your shape in the mirror, in a shop window reflection, while undressing or taking a bath or shower)? (psychopathologyquestionnaire_uncomfortable_seeing_body)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly</meaningText>
+          <description>Slightly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>Markedly</meaningText>
+          <description>Markedly</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>28. Over the past 28 days, how uncomfortable have you felt about others seeing your shape or figure (for example, in communal changing rooms, when swimming, or wearing tight clothes? (psychopathologyquestionnaire_uncomfortable_others_seeing_body)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>1</meaningText>
+          <description>1</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Slightly</meaningText>
+          <description>Slightly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>3</meaningText>
+          <description>3</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>Moderately</meaningText>
+          <description>Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>5</meaningText>
+          <description>5</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>6</value>
+          <meaningText>Markedly</meaningText>
+          <description>Markedly</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>What is your weight at present? (please give your best estimate) (psychopathologyquestionnaire_present_weight)</questionText>
+        <instruction>
+         <text>UOM=kilograms</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>What is your height? (Please give your best estimate) (psychopathologyquestionnaire_present_height)</questionText>
+        <instruction>
+         <text>UOM=centimeters</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>What is your sex? (psychopathologyquestionnaire_gender)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Male</meaningText>
+          <description>Male</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Female</meaningText>
+          <description>Female</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>If female: Over the past threetofour months have you missed any menstrual periods? (psychopathologyquestionnaire_female)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>If so, how many? (psychopathologyquestionnaire_missed_menstrual_periods)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Have you been taking the pill"?" (psychopathologyquestionnaire_pill)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Scoring: The EDE, and its selfreported versions, EDEQ, generate two types of data. First they provide frequency data on key behavioral features of eating disorders in terms of number of episodes of the behavior and in some instances number of days on which the behavior has occurred. Second, they provide subscale scores reflecting the severity of aspects of the psychopathology of eating disorders. The subscales are Restraint, Eating Concern, Shape Concern and Weight Concern. To obtain a particular subscale score, the ratings for the relevant items (listed below) are added together and the sum divided by the total number of items forming the subscales. If ratings are only available on some items, a score may nevertheless be obtained by dividing the resulting total by the number of rated items so long as more than half the items have been rated. To obtain an overall or "global" score, the four subscales scores are summed and the resulting total divided by the number of subscales (i.e. four). Subscales score are reported as means and standard deviations. (scoring_230104)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Subscale Items   Restraint 1 Restraint over eating 2 Avoidance of eating 3 Food avoidance 4 Dietary Rules 5 Empty stomach (restraint_230104)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Eating Concern 7 Preoccupation with food, eating or calories 9 Fear of losing control over eating 19 Eating in secret 21 Social eating 20 Guilt about eating (eating_concern_230104)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Shape Concern 6 Flat stomach 8 Preoccupation with shape or weight 23 Importance of shape 10 Fear of weight gain 26 Dissatisfaction with shape 27 Discomfort seeing body 28 Avoidance of exposure 11 Feelings of fatness (shape_230104)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Weight Concern 22 Importance of weight 24 Reaction to prescribed weighing 8 Preoccupation with shape or weight 25 Dissatisfaction with weight 12 Desire to lose weight (weight_concern_230104)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX230104</protocolID>
+     <longName>Eating Disorders Examination- Questionnaire</longName>
+     <context>PhenX</context>
+     <shortName>PX230104</shortName>
+     <preferredDefinition>The Eating Disorders Examination Questionnaire © (EDE-Q) is a self-report questionnaire based on the Eating Disorders Examination Interview. The questionnaire based on the Eating Disorders Examination Interview. The questionnaire includes twenty-eight questions related to the respondent behaviors over the past 4 weeks (28 days) which may be indicative of an eating disorder and with height and weight.</preferredDefinition>
+    </protocol>
+   </form>
+    <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:31:14</dateCreated>
+    <longName>PhenX PX230701 - Weight Change Goals</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This is a two-item measure of an individual's weight change goals used in the 2015 Youth Risk Behavior Survey (YRBS).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:31:14</dateCreated>
+      <longName>Weight Change Goals</longName>
+      <preferredDefinition>Weight Change Goals</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Which of the following are you trying to do about your weight? (weightchange_goals_tryingtodo_yourweight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>A. Lose weight</meaningText>
+          <description>A. Lose weight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>B. Gain weight</meaningText>
+          <description>B. Gain weight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>C. Stay the same weight</meaningText>
+          <description>C. Stay the same weight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>D. I am not trying to do anything about my weight</meaningText>
+          <description>D. I am not trying to do anything about my weight</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>How do you describe your weight? (weightchange_goals_describe_your_weight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>A. Very underweight</meaningText>
+          <description>A. Very underweight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>B. Slightly underweight</meaningText>
+          <description>B. Slightly underweight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>C. About the right weight</meaningText>
+          <description>C. About the right weight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>D. Slightly overweight</meaningText>
+          <description>D. Slightly overweight</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>E. Very overweight</meaningText>
+          <description>E. Very overweight</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX230701</protocolID>
+     <longName>Weight Change Goals</longName>
+     <context>PhenX</context>
+     <shortName>PX230701</shortName>
+     <preferredDefinition>This is a two-item measure of an individual's weight change goals used in the 2015 Youth Risk Behavior Survey (YRBS).</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:31:14</dateCreated>
+    <longName>PhenX PX230601 - Night Eating</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes 14 questions with Likert-style responses. The Night Eating Questionnaire© (NEQ) is self-administered. Scoring methods are included.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:31:14</dateCreated>
+      <longName>Night Eating</longName>
+      <preferredDefinition>Night Eating</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>1. How hungry are you usually in the morning? (nighteating_howhungry_morning)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 Not at all</meaningText>
+          <description>0 Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 A little</meaningText>
+          <description>1 A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 Somewhat</meaningText>
+          <description>2 Somewhat</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 Moderately</meaningText>
+          <description>3 Moderately</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 Very</meaningText>
+          <description>4 Very</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>2. When do you usually eat for the first time? (nighteating_wheneat_firsttime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 - Before 9am</meaningText>
+          <description>0 - Before 9am</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 - 9:01 to 12pm</meaningText>
+          <description>1 - 9:01 to 12pm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 - 12:01 to 3pm</meaningText>
+          <description>2 - 12:01 to 3pm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 - 3:01 to 6pm</meaningText>
+          <description>3 - 3:01 to 6pm</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 - 6:01 or later</meaningText>
+          <description>4 - 6:01 or later</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>3. Do you have cravings or urges to eat snacks after supper, but before bedtime? (nighteating_cravings_after_supper)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 Not at all</meaningText>
+          <description>0 Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 A little</meaningText>
+          <description>1 A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 Somewhat</meaningText>
+          <description>2 Somewhat</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 Very much so</meaningText>
+          <description>3 Very much so</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 Extremely so</meaningText>
+          <description>4 Extremely so</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>4. How much control do you have over your eating between supper and bedtime? (nighteating_control_eating_betweensupperbedtime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 None at all</meaningText>
+          <description>0 None at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 A little</meaningText>
+          <description>1 A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 Some</meaningText>
+          <description>2 Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 Very Much</meaningText>
+          <description>3 Very Much</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 Complete</meaningText>
+          <description>4 Complete</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>5. How much of your daily food intake do you consume after suppertime? (nighteating_howmuch_dailyintake_aftersuppertime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>5</value>
+          <meaningText>0 - 0%</meaningText>
+          <description>0 - 0%</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>6</value>
+          <meaningText>1 - 1-25% (up to a quarter)</meaningText>
+          <description>1 - 1-25% (up to a quarter)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>7</value>
+          <meaningText>2 - 26-50% (about half)</meaningText>
+          <description>2 - 26-50% (about half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>8</value>
+          <meaningText>3 - 51-75% (more than half)</meaningText>
+          <description>3 - 51-75% (more than half)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>9</value>
+          <meaningText>4 - 76 - 100% (almost all)</meaningText>
+          <description>4 - 76 - 100% (almost all)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>6. Are you currently feeling blue or down in the dumps? (nighteating_currently_feeling_bluedownindumps)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 Not at all</meaningText>
+          <description>0 Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 A little</meaningText>
+          <description>1 A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 Somewhat</meaningText>
+          <description>2 Somewhat</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 Very much so</meaningText>
+          <description>3 Very much so</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 Exremely</meaningText>
+          <description>4 Exremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>7. When you are feeling blue, is your mood lower in the: (nighteating_whenfeelingblue_moodlower)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 Early Morning</meaningText>
+          <description>0 Early Morning</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 Late Morning</meaningText>
+          <description>1 Late Morning</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 Early Afternoon</meaningText>
+          <description>2 Early Afternoon</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 Late Afternoon</meaningText>
+          <description>3 Late Afternoon</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 Evening</meaningText>
+          <description>4 Evening</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Does your mood does not change during the day (nighteating_whenfeelingblue_moodlower_check)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>8. How often do you have trouble getting to sleep (nighteating_howoften_trouble_gettingtosleep)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 Never</meaningText>
+          <description>0 Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 Sometimes</meaningText>
+          <description>1 Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 About half of the time</meaningText>
+          <description>2 About half of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 Usually</meaningText>
+          <description>3 Usually</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 Always</meaningText>
+          <description>4 Always</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>9. Other than only to use the bathroom, how often do you get up at least once in the middle of the night? (nighteating_getupmiddleofnight_howoften)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 Never (Please stop at this question)</meaningText>
+          <description>0 Never (Please stop at this question)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 Less than once a week</meaningText>
+          <description>1 Less than once a week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 About once a week</meaningText>
+          <description>2 About once a week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 More than once a week</meaningText>
+          <description>3 More than once a week</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 Every Night</meaningText>
+          <description>4 Every Night</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>10. Do you have cravings or urges ot eat snacks when you wake up at night? (nighteating_cravingsurges_eat_whenup_atnight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 Not at all</meaningText>
+          <description>0 Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 A little</meaningText>
+          <description>1 A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 Somewhat</meaningText>
+          <description>2 Somewhat</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 Very much so</meaningText>
+          <description>3 Very much so</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 Extremely so</meaningText>
+          <description>4 Extremely so</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>11. Do you need to eat in order to get back to sleep when you awake at night? (nighteating_needtoeat_backtosleep)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 Not at all</meaningText>
+          <description>0 Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 A little</meaningText>
+          <description>1 A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 Somewhat</meaningText>
+          <description>2 Somewhat</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 Very much so</meaningText>
+          <description>3 Very much so</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 Extremely so</meaningText>
+          <description>4 Extremely so</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>12. When you get up in the middle of the night, how often do you snack? (nighteating_middleofnight_snack_howoften)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 Never (please skip to #15)</meaningText>
+          <description>0 Never (please skip to #15)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 Sometimes</meaningText>
+          <description>1 Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 About half of the time</meaningText>
+          <description>2 About half of the time</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 Usually</meaningText>
+          <description>3 Usually</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 Always</meaningText>
+          <description>4 Always</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>13. When you snack in the middle of the night, how aware are you of your eating? (nighteating_middleofnight_howaware_ofeating)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 Not at all</meaningText>
+          <description>0 Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 A little</meaningText>
+          <description>1 A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 Somewhat</meaningText>
+          <description>2 Somewhat</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 Very much so</meaningText>
+          <description>3 Very much so</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 Completely</meaningText>
+          <description>4 Completely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>14. How much control do you have over your eating while you are up at night? (nighteating_controlover_eating_upatnight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 None at all</meaningText>
+          <description>0 None at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 A little</meaningText>
+          <description>1 A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 Some</meaningText>
+          <description>2 Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 Very much</meaningText>
+          <description>3 Very much</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 Complete</meaningText>
+          <description>4 Complete</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>15. How long have your current difficulties with night eating been going on? YEARS (nighteating_howlong_difficulties_nighteating_years)</questionText>
+        <instruction>
+         <text>minLength=0; UOM=months</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>15a. How long have your current difficulties with night eating been going on?  MONTHS (nighteating_howlong_difficulties_nighteating_months)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=12; UOM=years</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>16. Is night eating upsetting you? (nighteating_isit_upsetting_toyou)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 Not at all</meaningText>
+          <description>0 Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 A lot</meaningText>
+          <description>1 A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 Somewhat</meaningText>
+          <description>2 Somewhat</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 Very much so</meaningText>
+          <description>3 Very much so</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 Extremely so</meaningText>
+          <description>4 Extremely so</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>17. How much has your night eating affected your life? (nighteating_howmuch_lifeaffected)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>0 Not at all</meaningText>
+          <description>0 Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>1 A little</meaningText>
+          <description>1 A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>2 Somewhat</meaningText>
+          <description>2 Somewhat</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>3 Very much so</meaningText>
+          <description>3 Very much so</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>4</value>
+          <meaningText>4 Extremely</meaningText>
+          <description>4 Extremely</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>SCORING KEY FOR THE NIGHT EATING QUESTIONNAIRE(NEQ) A. Items 1, 4 and 14 are reverse scored. Items 112 and 14 are summed. B. Item 13 is not included in the total score, but is used to rule out the parasomnia, Nocturnal Sleep Related Eating Disorder (NSRED). C. Item 15 is not added to the total score, but instead is used as a descriptor of the course of the symptoms. D. Items 16 and 17 are used to confirm the presence of distress or impairment if NES is present. A score of 25 or greater is suggestive of night eating syndrome, and a score of 30 and above is a strong indicator of NES, but we suggest that the answers are reviewed with the patient in an interview before a firm diagnosis is made. For example, many patients with night eating symptoms overestimate their intake at night. Also, if patients are depressed in the late evening and have trouble falling asleep, but only minimal night eating, this could inflate their scores. (scoring_230601)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX230601</protocolID>
+     <longName>Night Eating</longName>
+     <context>PhenX</context>
+     <shortName>PX230601</shortName>
+     <preferredDefinition>This protocol includes 14 questions with Likert-style responses. The Night Eating Questionnaire (NEQ) is self-administered. Scoring methods are included.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:31:14</dateCreated>
+    <longName>PhenX PX230801 - Use Of Creatine Growth Hormone And Steroids</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This is a single-item, three-part measure taken from the Growing Up Today Study (GUTS) that assesses use and frequency of various products (e.g., creatine, growth hormone, steroids) to improve muscle mass or strength in the past year.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>In the past year, how often did you use any of the following products to improve muscle mass or strength?</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:31:14</dateCreated>
+      <longName>Use of Creatine Growth Hormone and Steroids</longName>
+      <preferredDefinition>Use of Creatine Growth Hormone and Steroids</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Creatine? (creatinegrowthhormones_creatine_use)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Less than monthly</meaningText>
+          <description>Less than monthly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Monthly</meaningText>
+          <description>Monthly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Weekly</meaningText>
+          <description>Weekly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Daily</meaningText>
+          <description>Daily</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>DHEA, Androstenedione, or human growth hormone (creatinegrowthhormones_dhea_androstenedione_hgh_use)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Less than monthly</meaningText>
+          <description>Less than monthly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Monthly</meaningText>
+          <description>Monthly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Weekly</meaningText>
+          <description>Weekly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Daily</meaningText>
+          <description>Daily</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Anabolic steroids (do not include steroids used for treating medical conditions) (creatinegrowthhormones_anabolicsteroids_use)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Never</meaningText>
+          <description>Never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Less than monthly</meaningText>
+          <description>Less than monthly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Monthly</meaningText>
+          <description>Monthly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Weekly</meaningText>
+          <description>Weekly</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Daily</meaningText>
+          <description>Daily</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX230801</protocolID>
+     <longName>Use of Creatine Growth Hormone and Steroids</longName>
+     <context>PhenX</context>
+     <shortName>PX230801</shortName>
+     <preferredDefinition>This is a single-item, three-part measure taken from the Growing Up Today Study (GUTS) that assesses use and frequency of various products (e.g., creatine, growth hormone, steroids) to improve muscle mass or strength in the past year.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:31:14</dateCreated>
+    <longName>PhenX PX231101 - Metabolomics</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This Metabolomic Studies protocol provides general sample collection recommendations for metabolomic studies giving input on quantity, preparation and handling of a wide variety of specimens. The specimen selection will depend on the experimental design, study aims and tissue accessibility. The protocol also includes the general procedure for cell treatment for metabolomic analysis.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>General Sample Collection Recommendations for Metabolomic Studies: Quantity, Preparation and Handling</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:31:14</dateCreated>
+      <longName>Metabolomics</longName>
+      <preferredDefinition>Metabolomics</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Blood Plasma and Serum1. Plasma: Collect whole blood in tubes containing EDTA (K2, K3, or Na) as anticoagulant. Extract plasma, cool or freeze immediately, and transfer to appropriately labeled tubes. Freeze as soon as practical, and store frozen. Frozen samples being stored longer than 1 week should be stored at 80°C before shipment on dry ice.Serum: Collect whole blood in serum separator tubes and follow tube manufacturer's processing instructions. Extract serum, transfer to appropriately labeled tubes, and store at 80°C immediately. Avoid having samples exposed to room temperature for more than 15 minutes.2. Volume  500 ?L is preferable, if available, but we can process as little as 100 ?L. Limiting volume could possibly limit the amounts of requested analysis.3. Samples are to be shipped frozen and on dry ice. Tubes should be clearly labeled with sample identifiers and include a hard copy of the list of samples to accompany the shipment. Please include all available sample information when shipping samples, excluding any patient identifiers.4. Note: As a general sample collection guideline, 1.8 ml of whole blood will yield ~1 mL of plasma. When collecting, it is important to treat all of the samples the same to avoid variation. Materials collected for other experimental work and stored at 80°C can be used for metabolomic studies as long as all of the samples were treated the same way during the collection process. Consistency in sample handling is very important. (blood_plasma_231101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Urine:1. Collect a minimum of 5 mL whole urine (first catch preferred).2. Immediately after collection, place sample at 80°C.3. Samples are to be shipped frozen and on dry ice. Tubes should be clearly labeled with sample identifiers and include a hard copy of the list of samples to accompany the shipment. Please include all available sample information when shipping samples, excluding any patient identifiers. (urine_231101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Saliva: Collect saliva samples in a nonstimulated fashion. Dietary restrictions are not necessary, but food intake should be documented. Instruct research subjects to rinse their mouths vigorously three times with at least 30 mL of water before saliva collection, without brushing their teeth or using any mouthwashes. Five minutes after the water rinse, collect about 3 ml of saliva in a clean plastic container by spitting. Freeze samples as soon as possible and maintain at ?20°C for up to one week. Samples stored for more than one week before analysis should be stored at 70°C. (saliva_231101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Tissues:1. For collected solid tissues (e.g. biopsy material), the amount of tissue/sample can vary depending upon study objectives and tissue typetypically, a 100 mg sample will suffice.2. Flashfreeze sample immediately after sectioning and store at 80°C until shipped.3. Samples are to be shipped frozen and on dry ice. Tubes should be clearly labeled with sample identifiers and include a hard copy of the list of samples to accompany the shipment. Please include all available sample information when shipping samples, excluding any patient identifiers. (tissues_231101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Fecal/intestinal samples:1. Collect and weigh 50100mg of fecal, cecal, or chyme samples in a 1.5ml eppendorf tube with sample identification information.2. Immediately store samples frozen at 80°C3. Samples should be shipped frozen on dry ice. Please include a hard copy of sample list with all available information in the package. (fecal_231101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>Fecal/intestinal samples: 1. Collect and weigh 50-100mg of fecal, cecal, or chyme samples in a 1.5ml eppendorf tube with sample identification information. 2. Immediately store samples frozen at -80°C 3. Samples should be shipped frozen on dry ice. Please include a hard copy of sample list with all available information in the package.</value>
+          <meaningText>Fecal/intestinal samples: 1. Collect and weigh 50-100mg of fecal, cecal, or chyme samples in a 1.5ml eppendorf tube with sample identification information. 2. Immediately store samples frozen at -80°C 3. Samples should be shipped frozen on dry ice. Please include a hard copy of sample list with all available information in the package.</meaningText>
+          <description>Fecal/intestinal samples: 1. Collect and weigh 50-100mg of fecal, cecal, or chyme samples in a 1.5ml eppendorf tube with sample identification information. 2. Immediately store samples frozen at -80°C 3. Samples should be shipped frozen on dry ice. Please include a hard copy of sample list with all available information in the package.</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Cultured Cellssee the recommended general procedure below:1. Cultures should be prepared with cells grown as defined per your individual study design.2. Each sample should optimally contain 1 x 107 cells, preferably 35 x 106 cells, and at a minimum 1 x 106 cells. (Cell size will heavily impact this request, smaller the cell size the higher the cell count should be to optimize preparation and requested analysis.) No cell count will be performed on individual samples within our preparation method hence it is preferable that each plate sent to us contains the same amount of cells.3. Remove media as quickly as possible and freeze immediately if destined for metabolomics analyses. Most attached cells may be washed for less than 510 seconds in distilled water or isotonic buffer. See the recommended general procedure below for more details.4. Flashfreeze the plate using liquid nitrogen if possible and store at 80°C. Samples are to be shipped frozen on dry ice. Plates should be wrapped in aluminum foil before storage and shipment. Samples should be clearly labeled with sample identifiers and include a hard copy of the list of samples to accompany the shipment. Please include all available sample information when shipping samples, excluding any patient identifiers (cultured_cells_231101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Recommended general procedure for cell treatment for metabolomic analysis:1. Cell growth and experimental manipulation:a. Plate cells as needed for experiment. Can use individual 100 mm or 60 mm plates. Multi-well plates (e.g., 6-well, 12-well, or 24-well plates) are not recommended since they cannot be quenched (with liquid nitrogen) individually. For untargeted metabolomics analyses, a minimum of 3 replicate plates per group are required; 5 or more are recommended.b. When ready, perform any desired manipulations of experimental factors according to your preferred protocol. If duration of treatment is critical, then stagger the start time for different plates, to allow time to perform the rinse/quench procedure individually on each plate (see section 2)c. Once all experimental manipulations are complete and all needed media for extracellular metabolomics has been harvested, proceed to section 2 for intracellular metabolomics.2. Rinse and quench (preparation for intracellular metabolomics):a. The following steps are easiest carried out outside of a cell hood (the short duration of time ensures that contamination from the non-sterile environment will not significantly affect the cells' metabolome) and close to the incubator.b. Assemble all needed supplies: vacuum aspirator, preferably with tip held by a clamp to allow hands free use, liquid nitrogen in a small hand-held dewar, dry ice in a cooler (preferably with a box to contain sample plates), Deionized water (rinse buffer) in dispenser-top bottle. Generally, our experience is that reasonably robust adherent cells are not harmed by very brief exposure to deionized water. If 5-10 second exposure to deionized water is intolerable for your cells, as an alternative, 150 mM ammonium acetate in water can be used. This salt dissolves to give a solution with a near-neutral pH and is "gentler" on cells than pure water, but it is more mass spectrometer compatible than inorganic saline solu..TRUNCATED(gen_procedure_231101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Do the following 3 steps (eg) very rapidly, so that the cells are exposed to water or rinse buffer for no more than approx. 5 seconds:e. Add deionized water rinse buffer to plate (either dispense using dispenser top bottle or dump from tube with premeasured volume). Use a volume somewhat greater than the volume of media which was in the plate.f. Aspirate all rinse buffer from plate.g. Set plate on bench top and pour liquid nitrogen directly onto surface of open plate to rapidly freeze cells.h. Once most vigorous bubbling stops but while some liquid nitrogen remains at bottom of wells/plate, transfer plate to cooler with dry ice. Repeat the last 5 steps until all plates are quenched.i. Cover all plates and store at 80°C until ready for shipment. This is the preferred procedure to collect and ship samples (keep hard frozen, 80°C (steps_231101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Dietary restrictions are not necessary, but food intake should be documented. (metabalomics_salivatest_food_intake)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Laboratory Results from Plasma test:_______________ (metabalomics_plasma_labresults)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Laboratory Results from whole blood serum test:_______________ (metabalomics_serum_labresults)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Laboratory Results from cultured cells test:_______________ (metabalomics_urine_labresults)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Laboratory Results from Saliva test:_______________ (metabalomics_saliva_labresults)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Laboratory Results from tissue test:_______________ (metabalomics_tissue_labresults)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-03T22:31:14</dateCreated>
+        <questionText>Laboratory Results from fecal or Intestinal samples test:_______________ (metabalomics_fecalintestinal_labresults)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX231101</protocolID>
+     <longName>Metabolomics</longName>
+     <context>PhenX</context>
+     <shortName>PX231101</shortName>
+     <preferredDefinition>This Metabolomic Studies protocol provides general sample collection recommendations for metabolomic studies giving input on quantity, preparation and handling of a wide variety of specimens. The specimen selection will depend on the experimental design, study aims and tissue accessibility. The protocol also includes the general procedure for cell treatment for metabolomic analysis.</preferredDefinition>
+    </protocol>
+   </form>
+   </forms>

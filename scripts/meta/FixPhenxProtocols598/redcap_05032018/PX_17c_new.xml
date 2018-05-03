@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 17c</collectionName>
+  <collectionDescription>Load PhenX PX081301,PX081401,PX081501,PX090201,PX090301,PX090401
+  </collectionDescription>     
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:51</dateCreated>
+    <longName>PhenX PX081301 - Professional Dental Care</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Interviewer-administered questions for adults to determine when the participant last visited the dentist and the purpose of the visit. These questions may also be administered to an adult as a proxy for a child.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:51</dateCreated>
+      <longName>Professional Dental Care</longName>
+      <preferredDefinition>Professional Dental Care</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>About how long has it been since {you/Sample Person} last visited a dentist? Include all types of dentists, such as, orthodontists, oral surgeons, and all other dental specialists, as well as dental hygienists. (dentist_last_visit_duration)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>6 months or less</meaningText>
+          <description>6 months or less</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>More than 6 months, but not more than 1 year ago</meaningText>
+          <description>More than 6 months, but not more than 1 year ago</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>More than 1 year, but not more than 2 years ago</meaningText>
+          <description>More than 1 year, but not more than 2 years ago</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>More than 2 years, but not more than 3 years ago</meaningText>
+          <description>More than 2 years, but not more than 3 years ago</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>More than 3 years, but not more than 5 years ago</meaningText>
+          <description>More than 3 years, but not more than 5 years ago</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>More than 5 years ago</meaningText>
+          <description>More than 5 years ago</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Never have been</meaningText>
+          <description>Never have been</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>77</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>99</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>What was the main reason {you/Sample Person} last visited the dentist? (dentist_last_visit_reason)</questionText>
+        <instruction>
+         <text>[dentist_last_visit_duration] = '1' or [dentist_last_visit_duration] = '2' or [dentist_last_visit_duration] = '3' or [dentist_last_visit_duration] = '4' or [dentist_last_visit_duration] = '5' or [dentist_last_visit_duration] = '6'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Went in on own for check-up, examination, or cleaning</meaningText>
+          <description>Went in on own for check-up, examination, or cleaning</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Was called in by the dentist for check-up, examination, or cleaning</meaningText>
+          <description>Was called in by the dentist for check-up, examination, or cleaning</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Something was wrong, bothering, or hurting {Me/Sample Person}</meaningText>
+          <description>Something was wrong, bothering, or hurting {Me/Sample Person}</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Went for treatment of a condition that dentist discovered at earlier check-up or examination</meaningText>
+          <description>Went for treatment of a condition that dentist discovered at earlier check-up or examination</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Other</meaningText>
+          <description>Other</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>7</value>
+          <meaningText>Refused</meaningText>
+          <description>Refused</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>9</value>
+          <meaningText>Don't Know</meaningText>
+          <description>Don't Know</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX081301</protocolID>
+     <longName>Professional Dental Care</longName>
+     <context>PhenX</context>
+     <shortName>PX081301</shortName>
+     <preferredDefinition>Interviewer-administered questions for adults to determine when the participant last visited the dentist and the purpose of the visit. These questions may also be administered to an adult as a proxy for a child.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:51</dateCreated>
+    <longName>PhenX PX081401 - Tobacco Noncigarette Product Use</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>These questions provide information on a participant's cigar, pipe, snuff, and chewing tobacco use during an entire lifetime.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>The Working Group acknowledges that the following questions may gather sensitive information relating to the use of substances and/or illegal conduct. If the information is released it might be damaging to an individual's employability, lead t..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:51</dateCreated>
+      <longName>Tobacco (non-cigarette) - Product Use</longName>
+      <preferredDefinition>Tobacco (non-cigarette) - Product Use</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>In your ENTIRE LIFE, have you ever: Smoked at least 50 cigars? (ever_smoke_50_cigars)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>In your ENTIRE LIFE, have you ever: Smoked a pipe at least 50 times? (ever_smoke_pipe_50_times)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>In your ENTIRE LIFE, have you ever: Used snuff, such as Skoal®, Skoal Bandit®, or Copenhagen® at least 20 times? (ever_use_snuff_20_times)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>In your ENTIRE LIFE, have you ever: Used chewing tobacco, such as Redman®, Levi Garrett®, or Beechnut® at least 20 times? (ever_chewing_tobacco_20_times)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Don't Know/Refused</meaningText>
+          <description>Don't Know/Refused</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX081401</protocolID>
+     <longName>Tobacco (non-cigarette) - Product Use</longName>
+     <context>PhenX</context>
+     <shortName>PX081401</shortName>
+     <preferredDefinition>These questions provide information on a participant's cigar, pipe, snuff, and chewing tobacco use during an entire lifetime.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:51</dateCreated>
+    <longName>PhenX PX081501 - Toothache And Orofacial Pain</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>These interviewer-administered questions may be useful to assess toothaches and chronic orofacial pain during the past 6 months.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:51</dateCreated>
+      <longName>Toothache and Orofacial Pain</longName>
+      <preferredDefinition>Toothache and Orofacial Pain</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>During the past 6 months, did you have a toothache more than once, when biting or chewing? (multiple_tooth_pain_biting_chewing)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>On a scale of 110, where 1 is mild and 10 is severe, how would you rate this pain at its worst? (tooth_pain_rating)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=1;maxLength=10;[multiple_tooth_pain_biting_chewing] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>(During the past 6 months) Did you have pain in the jaw joint or in front of the ear more than once? (multiple_jaw_front_ear_pain)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>When you have this pain, does it come and go or is it continuous and uninterrupted? (jaw_front_ear_pain_continuous)</questionText>
+        <instruction>
+         <text>[multiple_jaw_front_ear_pain] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Come and go</meaningText>
+          <description>Come and go</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Continuous/uninterrupted</meaningText>
+          <description>Continuous/uninterrupted</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>Other</meaningText>
+          <description>Other</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>DK (Don't Know)</meaningText>
+          <description>DK (Don't Know)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>On a scale of 110, where 1 is mild and 10 is severe, how would you rate this pain at its worst? (jaw_front_ear_pain_rating)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=1;maxLength=10;[multiple_jaw_front_ear_pain] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>(During the past 6 months) Did you have a dull, aching pain across your face or cheek more than once? Do not count sinus pain. (multiple_face_cheek_pain)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>When you have this pain, does it come and go or is it continuous and uninterrupted? (face_cheek_pain_continuous)</questionText>
+        <instruction>
+         <text>[multiple_face_cheek_pain] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Come and go</meaningText>
+          <description>Come and go</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Continuous/uninterrupted</meaningText>
+          <description>Continuous/uninterrupted</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>8</value>
+          <meaningText>Other</meaningText>
+          <description>Other</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>9</value>
+          <meaningText>DK (Don't Know)</meaningText>
+          <description>DK (Don't Know)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>On a scale of 110, where 1 is mild and 10 is severe, how would you rate this pain at its worst? (face_cheek_pain_rating)</questionText>
+        <instruction>
+         <text>datatype=number;minLength=1;maxLength=10;[multiple_face_cheek_pain] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX081501</protocolID>
+     <longName>Toothache and Orofacial Pain</longName>
+     <context>PhenX</context>
+     <shortName>PX081501</shortName>
+     <preferredDefinition>These interviewer-administered questions may be useful to assess toothaches and chronic orofacial pain during the past 6 months.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:51</dateCreated>
+    <longName>PhenX PX090201 - Arterial Blood Gas Abg</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol describes the procedures for blood collection for arterial blood gas (ABG) analysis. It involves puncturing an artery with a thin needle and syringe and drawing a small volume of blood. The most common puncture site is the radial artery at the wrist, but sometimes the femoral artery in the groin or other sites are used.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Blood is drawn anaerobically from a peripheral artery (radial, brachial, femoral, or dorsalis pedis) via a single percutaneous needle puncture, or from an indwelling arterial cannula or catheter for multiple samples. Either method provides a b..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:51</dateCreated>
+      <longName>Arterial Blood Gas (ABG)</longName>
+      <preferredDefinition>Arterial Blood Gas (ABG)</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Time at Blood Draw (time_at_blood_draw)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Patient's Body Temperature (body_temperature)</questionText>
+        <instruction>
+         <text>UOM=degrees Celsius</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Patient's Position (position)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Patient's Activity Level (activity_level)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Patient's Respiratory Rate (respiratory_rate)</questionText>
+        <instruction>
+         <text>datatype=number</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Sample Site (sample_site)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Allen Test (allen_test)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Inspired Oxygen Concentration (inspired_oxygen_concentration)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Supplemental Oxygen Flow (supplemental_oxygen_flow)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Mode of Supported Ventilation (mode_of_supported_ventilation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Partial Pressure of Carbon Dioxide (PaCO2) (partial_pressure_co2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Partial Pressure of Oxygen (PaO2) (partial_pressure_of_oxygen)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Hydrogen Ion Activity (pH) (hydrogen_ion_concentration)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Total Hemoglobin (Hbtotal) (total_hemoglobin)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Oxyhemoglobin Saturation (HbO2) (oxyhemoglobin_saturation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Carboxyhemoglobin (COHb) (carboxyhemoglobin)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Methemoglobin (MetHb) (methemoglobin)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX090201</protocolID>
+     <longName>Arterial Blood Gas (ABG)</longName>
+     <context>PhenX</context>
+     <shortName>PX090201</shortName>
+     <preferredDefinition>This protocol describes the procedures for blood collection for arterial blood gas (ABG) analysis. It involves puncturing an artery with a thin needle and syringe and drawing a small volume of blood. The most common puncture site is the radial artery at the wrist, but sometimes the femoral artery in the groin or other sites are used.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:51</dateCreated>
+    <longName>PhenX PX090301 - Bronchodilator Responsiveness Bdr</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>A series of spirometry maneuvers is performed to obtain acceptable and reproducible results. An inhaled bronchodilator medication is administered, and a second series of spirometry maneuvers is performed.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:51</dateCreated>
+      <longName>Bronchodilator Responsiveness (BDR)</longName>
+      <preferredDefinition>Bronchodilator Responsiveness (BDR)</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Pulse Rate (pulse_rate)</questionText>
+        <instruction>
+         <text>datatype=number; UOM=beats per minute</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Spirometry Contraindicated (spirometry_contraindicated)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Reason for Contraindication (reason_for_contraindication)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>PreBronchodilator Forced Expiratory Volume (FEV1) in 1 second 1 (pre_bronchodilator_fev1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>PreBronchodilator Forced Expiratory Volume (FEV1) in 1 second 2 (pre_bronchodilator_fev2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>PreBronchodilator Forced Expiratory Volume (FEV1) in 1 second 3 (pre_bronchodilator_fev3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>PreBronchodilator Forced Vital Capacity (FVC) 1 (pre_bronchodilator_fvc1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>PreBronchodilator Forced Vital Capacity (FVC) 2 (pre_bronchodilator_fvc2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>PreBronchodilator Forced Vital Capacity (FVC) 3 (pre_bronchodilator_fvc3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>PostBronchodilator Forced Expiratory Volume (FEV1) in 1 second 1 (post_bronchodilator_fev1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>PostBronchodilator Forced Expiratory Volume (FEV1) in 1 second 2 (post_bronchodilator_fev2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>PostBronchodilator Forced Expiratory Volume (FEV1) in 1 second 3 (post_bronchodilator_fev3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>PostBronchodilator Forced Vital Capacity (FVC) 1 (post_bronchodilator_fvc1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>PostBronchodilator Forced Vital Capacity (FVC) 2 (post_bronchodilator_fvc2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>PostBronchodilator Forced Vital Capacity (FVC) 3 (post_bronchodilator_fvc3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Percent of Baseline Forced Expiratory Volume in 1 second (percent_baseline_fev)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Percent of Predicted Forced Expiratory Volume in 1 second (percent_predicted_fev)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Absolute Volume (absolute_volume)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX090301</protocolID>
+     <longName>Bronchodilator Responsiveness (BDR)</longName>
+     <context>PhenX</context>
+     <shortName>PX090301</shortName>
+     <preferredDefinition>A series of spirometry maneuvers is performed to obtain acceptable and reproducible results. An inhaled bronchodilator medication is administered, and a second series of spirometry maneuvers is performed.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:41:51</dateCreated>
+    <longName>PhenX PX090401 - Chest Computed Tomography Ct</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>A chest computed tomography (CT) is a non-invasive test that shows the size, shape, and structure of the lungs and other structures in the thorax. The chest CT scanning machine takes many pictures, called slices, of the lungs and the inside of the chest. A computer processes these pictures to be viewed on a monitor or printed on film. The computer can also stack the pictures to create a very detailed, three-dimensional (3D) model of the organs. This three-dimensional digital information can be used to measure the dimensions of the structure, such as the bronchial tree, or the density of the structure, such as the lung parenchyma. It is very important that the CT scanner used in any clinical research study be calibrated regularly against calibration standards that are provided by the manufacturer or in some instances by the study itself.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>See protocol details.</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:41:51</dateCreated>
+      <longName>Chest Computed Tomography (CT)</longName>
+      <preferredDefinition>Chest Computed Tomography (CT)</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Conditions that might affect ability to comply with breathing instructions (conditions_affecting_breathing)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Supine Inspiratory CT Image ID (inspiratory_ct_image_id)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Supine Expiratory CT Image ID (expiratory_ct_image_id)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Inspiratory CT table  image (inspir_table_png)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:41:51</dateCreated>
+        <questionText>Expiratory CT table  image (expir_table_png)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX090401</protocolID>
+     <longName>Chest Computed Tomography (CT)</longName>
+     <context>PhenX</context>
+     <shortName>PX090401</shortName>
+     <preferredDefinition>A chest computed tomography (CT) is a non-invasive test that shows the size, shape, and structure of the lungs and other structures in the thorax. The chest CT scanning machine takes many pictures, called slices, of the lungs and the inside of the chest. A computer processes these pictures to be viewed on a monitor or printed on film. The computer can also stack the pictures to create a very detailed, three-dimensional (3D) model of the organs. This three-dimensional digital information can be used to measure the dimensions of the structure, such as the bronchial tree, or the density of the structure, such as the lung parenchyma. It is very important that the CT scanner used in any clinical research study be calibrated regularly against calibration standards that are provided by the manufacturer or in some instances by the study itself.</preferredDefinition>
+    </protocol>
+   </form>   
+   </forms>

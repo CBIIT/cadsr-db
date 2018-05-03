@@ -1,0 +1,1257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 42c</collectionName>
+  <collectionDescription>Load PhenX PX540601,PX550401</collectionDescription>  
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:22</dateCreated>
+    <longName>PhenX PX550401 - Perceived Harm Of Substance Use</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The National Survey on Drug Use and Health (NSDUH) provides information on the prevalence, patterns, and consequences of drug and alcohol use and abuse in the United States civilian noninstitutionalized population, ages 12 and older. These select NSDUH questions (11-item scale) probe a respondent's perception about the harm of smoking, taking illegal drugs, and consuming alcohol on four or five occasions. The four response categories range from no risk to great risk.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:22</dateCreated>
+      <longName>Perceived Harm of Substance Use</longName>
+      <preferredDefinition>Perceived Harm of Substance Use</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How much do people risk harming themselves physically and in other ways when they smoke one or more packs of cigarettes per day? (harm_smoke_daily)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No Risk</meaningText>
+          <description>No Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slight Risk</meaningText>
+          <description>Slight Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate Risk</meaningText>
+          <description>Moderate Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Great Risk</meaningText>
+          <description>Great Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>DK/REF</meaningText>
+          <description>DK/REF</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How much do people risk harming themselves physically and in other ways when they smoke marijuana once a month? (harm_smoke_marijuana_monthly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No Risk</meaningText>
+          <description>No Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slight Risk</meaningText>
+          <description>Slight Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate Risk</meaningText>
+          <description>Moderate Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Great Risk</meaningText>
+          <description>Great Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>DK/REF</meaningText>
+          <description>DK/REF</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How much do people risk harming themselves physically and in other ways when they smoke marijuana once or twice a week? (harm_marijuana_weekly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No Risk</meaningText>
+          <description>No Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slight Risk</meaningText>
+          <description>Slight Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate Risk</meaningText>
+          <description>Moderate Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Great Risk</meaningText>
+          <description>Great Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>DK/REF</meaningText>
+          <description>DK/REF</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How much do people risk harming themselves physically and in other ways when they try LSD once or twice? (harm_lsd_once_or_twice)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No Risk</meaningText>
+          <description>No Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slight Risk</meaningText>
+          <description>Slight Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate Risk</meaningText>
+          <description>Moderate Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Great Risk</meaningText>
+          <description>Great Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>DK/REF</meaningText>
+          <description>DK/REF</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How much do people risk harming themselves physically and in other ways when they use LSD once or twice a week? (harm_lsd_weekly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No Risk</meaningText>
+          <description>No Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slight Risk</meaningText>
+          <description>Slight Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate Risk</meaningText>
+          <description>Moderate Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Great Risk</meaningText>
+          <description>Great Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>DK/REF</meaningText>
+          <description>DK/REF</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How much do people risk harming themselves physically and in other ways when they try heroin once or twice? (harm_heroin_once_or_twice)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No Risk</meaningText>
+          <description>No Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slight Risk</meaningText>
+          <description>Slight Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate Risk</meaningText>
+          <description>Moderate Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Great Risk</meaningText>
+          <description>Great Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>DK/REF</meaningText>
+          <description>DK/REF</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How much do people risk harming themselves physically and in other ways when they use heroin once or twice a week? (harm_heroin_weekly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No Risk</meaningText>
+          <description>No Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slight Risk</meaningText>
+          <description>Slight Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate Risk</meaningText>
+          <description>Moderate Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Great Risk</meaningText>
+          <description>Great Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>DK/REF</meaningText>
+          <description>DK/REF</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How much do people risk harming themselves physically and in other ways when they use cocaine once a month? (harm_cocaine_monthly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No Risk</meaningText>
+          <description>No Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slight Risk</meaningText>
+          <description>Slight Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate Risk</meaningText>
+          <description>Moderate Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Great Risk</meaningText>
+          <description>Great Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>DK/REF</meaningText>
+          <description>DK/REF</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How much do people risk harming themselves physically and in other ways when they use cocaine once or twice a week? (harm_cocaine_weekly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No Risk</meaningText>
+          <description>No Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slight Risk</meaningText>
+          <description>Slight Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate Risk</meaningText>
+          <description>Moderate Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Great Risk</meaningText>
+          <description>Great Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>DK/REF</meaningText>
+          <description>DK/REF</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How much do people risk harming themselves physically and in other ways when they have four or five drinks of an alcoholic beverage nearly every day? (harm_four_five_drinks_daily)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No Risk</meaningText>
+          <description>No Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slight Risk</meaningText>
+          <description>Slight Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate Risk</meaningText>
+          <description>Moderate Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Great Risk</meaningText>
+          <description>Great Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>DK/REF</meaningText>
+          <description>DK/REF</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How much do people risk harming themselves physically and in other ways when they have five or more drinks of an alcoholic beverage once or twice a week? (harm_fiveormore_drinks_weekly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No Risk</meaningText>
+          <description>No Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Slight Risk</meaningText>
+          <description>Slight Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Moderate Risk</meaningText>
+          <description>Moderate Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Great Risk</meaningText>
+          <description>Great Risk</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>DK/REF</meaningText>
+          <description>DK/REF</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX550401</protocolID>
+     <longName>Perceived Harm of Substance Use</longName>
+     <context>PhenX</context>
+     <shortName>PX550401</shortName>
+     <preferredDefinition>The National Survey on Drug Use and Health (NSDUH) provides information on the prevalence, patterns, and consequences of drug and alcohol use and abuse in the United States civilian noninstitutionalized population, ages 12 and older. These select NSDUH questions (11-item scale) probe a respondent's perception about the harm of smoking, taking illegal drugs, and consuming alcohol on four or five occasions. The four response categories range from no risk to great risk.</preferredDefinition>
+    </protocol>
+   </form>  
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:22</dateCreated>
+    <longName>PhenX PX540601 - Sensitivity To Reward And Punishment Adolescent And  Adult</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The behavioral inhibition system (BIS)/behavioral activation system (BAS) scale is a self-administered 20-item questionnaire that measures individual differences in motivation. Respondents indicate how much they agree or disagree with the statements on a four-point scale (strongly agree to strongly disagree). Scores can be derived for three behavioral activation system subscales (Drive, Fun Seeking, and Reward Responsiveness) and one behavioral inhibition system subscale. This scale is based on the original BIS/BAS system, which was later revised by Gray and McNaughton (2000).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Each item of this questionnaire is a statement with which a person may either agree or disagree. For each item, indicate how much you agree or disagree with what the item says. Please respond to all the items do not leave any blank. Choose onl..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:22</dateCreated>
+      <longName>Sensitivity to Reward and Punishment - Adolescent and Adult</longName>
+      <preferredDefinition>Sensitivity to Reward and Punishment - Adolescent and Adult</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>1. Even if something bad is about to happen to me, I rarely experience fear or nervousness. (rarely_experience_fear)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>2. I go out of my way to get things I want. (get_things_i_want)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>3. When I'm doing well at something, I love to keep at it. (doing_well_at_something)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>4. I'm always willing to try something new if I think it will be fun. (willing_to_try_something_new)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>5. When I get something I want, I feel excited and energized. (get_something_i_want_energized)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>6. Criticism or scolding hurts me quite a bit. (criticism_or_scolding_hurts_me)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>7. When I want something, I usually go allout to get it. (go_allout)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>8. I will often do things for no other reason than that they might be fun. (do_because_might_be_fun)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>9. If I see a chance to get something I want, I move on it right away. (move_on_it_right_away)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>10. I feel pretty worried or upset when I think or know somebody is angry at me. (worried_when_somebody_is_angry)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>11. When I see an opportunity for something I like, I get excited right away. (get_excited_right_away)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>12. I often act on the spur of the moment. (act_spur_of_moment)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>13. If I think something unpleasant is going to happen, I usually get pretty 'worked up'. (worked_up_over_unpleasant_things)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>14. When good things happen to me, it affects me strongly. (good_things_affect_me_strongly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>15. I feel worried when I think I have done poorly at something important. (worried_when_done_poorly)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>16. I crave excitement and new sensations. (crave_excitement)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>17. When I go after something, I use a 'no holds barred' approach. (no_holds_barred_approach)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>18. I have very few fears compared to my friends. (few_fears_compared_to_friends)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>19. It would excite me to win a contest. (excite_me_to_win_contest)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>20. I worry about making mistakes. (worry_about_making_mistakes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Strongly Agree</meaningText>
+          <description>Strongly Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Agree</meaningText>
+          <description>Agree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Disagree</meaningText>
+          <description>Disagree</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Strongly Disagree</meaningText>
+          <description>Strongly Disagree</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Scoring: Items 1 and 18 are reversescored. Add up the scores associated with each answer response to obtain scores for the individual subscales listed below. *1= strongly agree *2= agree *3= disagree *4= strongly disagree *BAS Drive: 2, 7, 9, 17 *BAS Fun Seeking: 4, 8, 12, 16 *BAS Reward Responsiveness: 3, 5, 11, 14, 19 *BIS: 1, 6, 10, 13, 15, 18, 20 (scoring_540601)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX540601</protocolID>
+     <longName>Sensitivity to Reward and Punishment - Adolescent and Adult</longName>
+     <context>PhenX</context>
+     <shortName>PX540601</shortName>
+     <preferredDefinition>The behavioral inhibition system (BIS)/behavioral activation system (BAS) scale is a self-administered 20-item questionnaire that measures individual differences in motivation. Respondents indicate how much they agree or disagree with the statements on a four-point scale (strongly agree to strongly disagree). Scores can be derived for three behavioral activation system subscales (Drive, Fun Seeking, and Reward Responsiveness) and one behavioral inhibition system subscale. This scale is based on the original BIS/BAS system, which was later revised by Gray and McNaughton (2000).</preferredDefinition>
+    </protocol>
+   </form>    
+   </forms>

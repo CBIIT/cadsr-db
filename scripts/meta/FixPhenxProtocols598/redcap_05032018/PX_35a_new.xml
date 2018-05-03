@@ -1,0 +1,3320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 35a</collectionName>
+  <collectionDescription>Load PhenX PX211501,PX220201,PX220901,PX221001,PX221601,PX221701</collectionDescription>   
+  <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:30:32</dateCreated>
+    <longName>PhenX PX220901 - Echocardiography Phenotypes</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The British Society of Echocardiography (BSE) Education Committee guidelines for a standard transthoracic echocardiogram (TTE) consist of a minimum dataset and a recommended sequence on how to perform a comprehensive assessment. The recommendations are based on the key expected components of a standard adult transthoracic study. Therefore, the minimum dataset may only be sufficient when the echocardiographic study is entirely normal. If abnormalities are detected, additional echocardiograms, which are outlined in supplemental datasets, may be required. The supplemental datasets include protocols for how to interpret an echocardiogram for one of the five cardiac abnormalities: hypertrophic cardiomyopathy, pulmonary hypertension, assessment for mitral valve repair, mitral stenosis and assessment for percutaneous mitral commissurotomy, and Marfan syndrome. Additional supplemental datasets are under development. All datasets are available from the BSE website:www.bsecho.org|www.bsecho.org. Both the minimum and supplemental datasets contain the following: a visual example of an ideal image that should be obtained in each acoustic window information for each image regarding the view, modality, measurements, and an explanatory note (if applicable).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>The British Society of Echocardiography (BSE) Education Committee guidelines for a standard transthoracic echocardiogram (TTE) contain detailed information for data collection to obtain a minimum dataset. This dataset may only be sufficient wh..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:30:32</dateCreated>
+      <longName>Echocardiography Phenotypes</longName>
+      <preferredDefinition>Echocardiography Phenotypes</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Echocardiography Phenotypes: Hypertrophic Cardiomyopathy (echocardiography_phenotypes_hypertrophic_cardiomyopathy)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Echocardiography Phenotypes: Pulmonary Hypertension (echocardiography_phenotypes_pulmonary_hypertension)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Echocardiography Phenotypes: Assessment for Mitral Valve Repair (echocardiography_phenotypes_assessment_mitralvalverepair)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Echocardiography Phenotypes: Mitral Stenosis and Assessment for Percutaneous Mitral Commissurotomy (echocardiography_phenotype_mitral_abnormity)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Echocardiography Phenotypes: Marfan Syndrome (echocardiography_phenotypes_marfan_syndrome)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX220901</protocolID>
+     <longName>Echocardiography Phenotypes</longName>
+     <context>PhenX</context>
+     <shortName>PX220901</shortName>
+     <preferredDefinition>The British Society of Echocardiography (BSE) Education Committee guidelines for a standard transthoracic echocardiogram (TTE) consist of a minimum dataset and a recommended sequence on how to perform a comprehensive assessment. The recommendations are based on the key expected components of a standard adult transthoracic study. Therefore, the minimum dataset may only be sufficient when the echocardiographic study is entirely normal. If abnormalities are detected, additional echocardiograms, which are outlined in supplemental datasets, may be required. The supplemental datasets include protocols for how to interpret an echocardiogram for one of the five cardiac abnormalities: hypertrophic cardiomyopathy, pulmonary hypertension, assessment for mitral valve repair, mitral stenosis and assessment for percutaneous mitral commissurotomy, and Marfan syndrome. Additional supplemental datasets are under development. All datasets are available from the BSE website: [link[www.bsecho.org|www.bsecho.org]]. Both the minimum and supplemental datasets contain the following: a visual example of an ideal image that should be obtained in each acoustic window information for each image regarding the view, modality, measurements, and an explanatory note (if applicable).</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:30:32</dateCreated>
+    <longName>PhenX PX221001 - Family Health History</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>My Family Health Portrait (MFHP) is a free Internet-based tool that allows individuals to record their family health history. It is used to collect information regarding the individual and their close biological relatives. The MFHP is an an Internet-based tool that is easy to access on the Web and simple to fill out. It assembles family health information and makes a "pedigree" or family tree that can be downloaded. It is private--it does not keep information. It provides a health history that can be shared among family members or sent to health care practitioners.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>The My Family Health Portrait (MFHP) is available at the following website: https://familyhistory.hhs.gov/FHH/html/index.html  The online tool includes questions about the individual followed by questions about each close family member. Once t..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:30:32</dateCreated>
+      <longName>Family Health History</longName>
+      <preferredDefinition>Family Health History</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>My Family Health Portrait (MFHP)   Name (mfhp_name)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>My Family Health Portrait (MFHP)   Gender (mfhp_gender)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>My Family Health Portrait (MFHP)   BirthDate (mfhp_birthdate)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>My Family Health Portrait (MFHP)   Were you born a twin? (mfhp_twin)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>YES</meaningText>
+          <description>YES</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>NO</meaningText>
+          <description>NO</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>My Family Health Portrait (MFHP)   Were you adopted? (mfhp_adopted)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>My Family Health Portrait (MFHP)   Height (mfhp_height)</questionText>
+        <instruction>
+         <text>UOM=feet</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>My Family Health Portrait (MFHP)   Weight (mfhp_weight)</questionText>
+        <instruction>
+         <text>UOM=lbs</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>My Family Health Portrait (MFHP)   Disease (mfhp_disease)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>My Family Health Portrait (MFHP)   Age at Diagnosis (mfhp_diagnosis_age)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>My Family Health Portrait (MFHP)   Race (mfhp_race)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>My Family Health Portrait (MFHP)   Ethnicity (mfhp_ethnicity)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX221001</protocolID>
+     <longName>Family Health History</longName>
+     <context>PhenX</context>
+     <shortName>PX221001</shortName>
+     <preferredDefinition>My Family Health Portrait (MFHP) is a free Internet-based tool that allows individuals to record their family health history. It is used to collect information regarding the individual and their close biological relatives. The MFHP is an an Internet-based tool that is easy to access on the Web and simple to fill out. It assembles family health information and makes a "pedigree" or family tree that can be downloaded. It is private--it does not keep information. It provides a health history that can be shared among family members or sent to health care practitioners.</preferredDefinition>
+    </protocol>
+   </form>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:30:32</dateCreated>
+    <longName>PhenX PX211501 - Life Events Child</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Adverse Life Events Scale is a self- or proxy-administered, 25-item questionnaire that reports events experienced during the previous year over which the child had little or no control. The respondent reviews the list of items and indicates which events have occurred.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:30:32</dateCreated>
+      <longName>Life Events - Child</longName>
+      <preferredDefinition>Life Events - Child</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Someone in family died (family_member_died)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes: Was this a good or bad experience? (family_member_died_experience)</questionText>
+        <instruction>
+         <text>[family_member_died] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes: How much did the event affect you? (family_member_died_affect)</questionText>
+        <instruction>
+         <text>[family_member_died] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Family member was seriously injured (family_member_injured)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (family_member_injured_experience)</questionText>
+        <instruction>
+         <text>[family_member_injured] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   How much did the event affect you? (family_member_injured_affect)</questionText>
+        <instruction>
+         <text>[family_member_injured] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Saw crime/accident (saw_crime_accident)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes: Was this a good or bad experience? (saw_crime_accident_experience)</questionText>
+        <instruction>
+         <text>[saw_crime_accident] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   How much did the event affect you? (saw_crime_accident_affect)</questionText>
+        <instruction>
+         <text>[saw_crime_accident] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Lost a close friend (lost_close_friend)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (lost_close_friend_experience)</questionText>
+        <instruction>
+         <text>[lost_close_friend] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (lost_close_friend_affect)</questionText>
+        <instruction>
+         <text>[lost_close_friend] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Close friend was seriously sick/injured (close_friend_sick_injured)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (close_friend_sick_injured_experience)</questionText>
+        <instruction>
+         <text>[close_friend_sick_injured] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (close_friend_sick_injured_affect)</questionText>
+        <instruction>
+         <text>[close_friend_sick_injured] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Negative change in parent's financial situation (parents_financial_situation)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (parents_financial_situation_experience)</questionText>
+        <instruction>
+         <text>[parents_financial_situation] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  How much did the event affect you? (parents_financial_situation_affect)</questionText>
+        <instruction>
+         <text>[parents_financial_situation] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Family member had drug/alcohol problem (family_member_drug_alcohol)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes: Was this a good or bad experience? (family_member_drug_alcohol_experience)</questionText>
+        <instruction>
+         <text>[family_member_drug_alcohol] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   How much did the event affect you? (family_member_drug_alcohol_affect)</questionText>
+        <instruction>
+         <text>[family_member_drug_alcohol] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Got seriously sick or injured (sick_injured)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (sick_injured_experience)</questionText>
+        <instruction>
+         <text>[sick_injured] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  How much did the event affect you? (sick_injured_affect)</questionText>
+        <instruction>
+         <text>[sick_injured] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Parents argued more than previously (parents_argued)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (parents_argued_experience)</questionText>
+        <instruction>
+         <text>[parents_argued] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (parents_argued_affect)</questionText>
+        <instruction>
+         <text>[parents_argued] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Mother/father figure lost job (mother_father_lost_job)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (mother_father_lost_job_experience)</questionText>
+        <instruction>
+         <text>[mother_father_lost_job] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (mother_father_lost_job_affect)</questionText>
+        <instruction>
+         <text>[mother_father_lost_job] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>One parent was away from home more often (parent_away_from_home)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (parent_away_from_home_experience)</questionText>
+        <instruction>
+         <text>[parent_away_from_home] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (parent_away_from_home_affect)</questionText>
+        <instruction>
+         <text>[parent_away_from_home] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Someone in the family was arrested (family_member_arrested)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (family_member_arrested_experience)</questionText>
+        <instruction>
+         <text>[family_member_arrested] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   How much did the event affect you? (family_member_arrested_affect)</questionText>
+        <instruction>
+         <text>[family_member_arrested] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Close friend died (close_friend_died)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (close_friend_died_experience)</questionText>
+        <instruction>
+         <text>[close_friend_died] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  How much did the event affect you? (close_friend_died_affect)</questionText>
+        <instruction>
+         <text>[close_friend_died] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Family member had mental/emotional problem (family_member_mentalemotional_problem)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  Was this a good or bad experience? (family_member_mentalemotional_problem_experience)</questionText>
+        <instruction>
+         <text>[family_member_mentalemotional_problem] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  Was this a good or bad experience? (family_member_mentalemotional_problem_affect)</questionText>
+        <instruction>
+         <text>[family_member_mentalemotional_problem] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Brother or sister left home (sibling_left_home)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (sibling_left_home_experience)</questionText>
+        <instruction>
+         <text>[sibling_left_home] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   Was this a good or bad experience? (sibling_left_home_affect)</questionText>
+        <instruction>
+         <text>[sibling_left_home] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Being a victim of crime/violence/assault: (victim_of_crimeviolenceassault)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>46</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes: Was this a good or bad experience? (victim_of_crimeviolenceassault_experience)</questionText>
+        <instruction>
+         <text>[victim_of_crimeviolenceassault] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>47</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  How much did the event affect you? (victim_of_crimeviolenceassault_affect)</questionText>
+        <instruction>
+         <text>[victim_of_crimeviolenceassault] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>48</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Parents separated in last 12 months (parents_separated_last_12months)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>49</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  Was this a good or bad experience? (parents_separated_last_12months_experience)</questionText>
+        <instruction>
+         <text>[parents_separated_last_12months] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>50</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  How much did the event affect you? (parents_separated_last_12months_affect)</questionText>
+        <instruction>
+         <text>[parents_separated_last_12months] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>51</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Parents got into trouble with the law (parents_trouble_with_law)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>52</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  Was this a good or bad experience? (parents_trouble_with_law_experience)</questionText>
+        <instruction>
+         <text>[parents_trouble_with_law] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>53</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes: How much did the event affect you? (parents_trouble_with_law_affect)</questionText>
+        <instruction>
+         <text>[parents_trouble_with_law] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>54</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Attended a new school (attended_new_school)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>55</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  Was this a good or bad experience? (attended_new_school_experience)</questionText>
+        <instruction>
+         <text>[attended_new_school] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>56</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   How much did the event affect you? (attended_new_school_affect)</questionText>
+        <instruction>
+         <text>[attended_new_school] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>57</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Family moved (family_moved)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>58</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  Was this a good or bad experience? (family_moved_experience)</questionText>
+        <instruction>
+         <text>[family_moved] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>59</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   How much did the event affect you? (family_moved_affect)</questionText>
+        <instruction>
+         <text>[family_moved] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>60</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Parents got divorced (parents_divorced)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>61</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  Was this a good or bad experience? (parents_divorced_experience)</questionText>
+        <instruction>
+         <text>[parents_divorced] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>62</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  How much did the event affect you? (parents_divorced_affect)</questionText>
+        <instruction>
+         <text>[parents_divorced] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>63</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>One of the parents went to jail (parent_went_to_jail)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>64</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  Was this a good or bad experience? (parent_went_to_jail_experience)</questionText>
+        <instruction>
+         <text>[parent_went_to_jail] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>65</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  How much did the event affect you? (parent_went_to_jail_affect)</questionText>
+        <instruction>
+         <text>[parent_went_to_jail] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>66</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Got new stepmother or stepfather (new_stepparent)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>67</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  Was this a good or bad experience? (new_stepparent_experience)</questionText>
+        <instruction>
+         <text>[new_stepparent] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>68</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  How much did the event affect you? (new_stepparent_affect)</questionText>
+        <instruction>
+         <text>[new_stepparent] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>69</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Parent got a new job (parent_got_new_job)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>70</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  Was this a good or bad experience? (parent_got_new_job_experience)</questionText>
+        <instruction>
+         <text>[parent_got_new_job] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>71</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   How much did the event affect you? (parent_got_new_job_affect)</questionText>
+        <instruction>
+         <text>[parent_got_new_job] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>72</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Got new brother or sister (new_sibling)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>73</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:  Was this a good or bad experience? (new_sibling_experience)</questionText>
+        <instruction>
+         <text>[new_sibling] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Mostly good</meaningText>
+          <description>Mostly good</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>Mostly bad</meaningText>
+          <description>Mostly bad</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>74</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>If Yes:   How much did the event affect you? (new_sibling_affect)</questionText>
+        <instruction>
+         <text>[new_sibling] = 'UNDEFINED_CODE'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>Not at all</meaningText>
+          <description>Not at all</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>A little</meaningText>
+          <description>A little</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>UNDEFINED_CODE_2</value>
+          <meaningText>Some</meaningText>
+          <description>Some</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>UNDEFINED_CODE_3</value>
+          <meaningText>A lot</meaningText>
+          <description>A lot</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>UNDEFINED_CODE_4</value>
+          <meaningText>Not applicable</meaningText>
+          <description>Not applicable</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>UNDEFINED_CODE_5</value>
+          <meaningText>Don't know</meaningText>
+          <description>Don't know</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>75</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Scoring  An event is considered "adverse" only when it is: 1. Mostly bad, and 2. One of the following: A little, Some, or A lot (scoring_211501)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX211501</protocolID>
+     <longName>Life Events - Child</longName>
+     <context>PhenX</context>
+     <shortName>PX211501</shortName>
+     <preferredDefinition>The Adverse Life Events Scale is a self- or proxy-administered, 25-item questionnaire that reports events experienced during the previous year over which the child had little or no control. The respondent reviews the list of items and indicates which events have occurred.</preferredDefinition>
+    </protocol>
+   </form>   
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:30:32</dateCreated>
+    <longName>PhenX PX221601 - Scoliosis Physical Assessment</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The aggregate protocol includes the Adam's forward bend test and an x-ray with Cobb technique to determine if an individual has scoliosis. Additionally, if scoliosis is present, the degree of curvature can be determined. Note: this protocol applies to the three major types of scoliosis; however, only congenital and syndromic scoliosis apply to rare genetic conditions.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:30:32</dateCreated>
+      <longName>Adam's forward bend test:</longName>
+      <preferredDefinition>Adam's forward bend test:</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>This is a screening test to determine if an individual has scoliosis or signs of scoliosis. While bending forward the individual has their feet together, knees straight, and their arms dangling by their sides. If signs of scoliosis are observed, an xray with Cobb technique is recommended. Signs of scoliosis include imbalances in the rib cage (i.e., one side is higher than the other), and other deformities along the back. (scoliosis_bendtest_adamstest_deformities)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>1</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:30:32</dateCreated>
+      <longName>X-ray:</longName>
+      <preferredDefinition>X-ray:</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>A straight spine has a curve of 0 degrees, any curve greater than 10 degrees is considered scoliosis. Between 0 and 10 degrees is considered a curvature which is not true scoliosis. (scoliosis_bendtest_xray)</questionText>
+        <instruction>
+         <text>UOM=deg</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+     <module>
+      <displayOrder>2</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:30:32</dateCreated>
+      <longName>Cobb technique:</longName>
+      <preferredDefinition>Cobb technique:</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Identify the superior and the inferior end vertebrae the vertebrae with the greatest tilt at the proximal and distal ends of the curve. The angle between them is measured by drawing a line from the top of the superior end vertebra parallel to the upper endplate, and another line from the bottom of the inferior end vertebra parallel to the lower endplate. Perpendicular lines are then constructed at right angles to the lines along the endplates. The angle formed by the intersection of the perpendicular lines defines the Cobb angle. This angle is then compared to a standard scale in order to determine whether or not the curvature is potentially harmful. Individuals with a straight spine have zero degree curve. (scoliosis_bendtest_cobbtechnique)</questionText>
+        <instruction>
+         <text>UOM=deg</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX221601</protocolID>
+     <longName>Scoliosis - Physical Assessment</longName>
+     <context>PhenX</context>
+     <shortName>PX221601</shortName>
+     <preferredDefinition>The aggregate protocol includes the Adam's forward bend test and an x-ray with Cobb technique to determine if an individual has scoliosis. Additionally, if scoliosis is present, the degree of curvature can be determined. Note: this protocol applies to the three major types of scoliosis; however, only congenital and syndromic scoliosis apply to rare genetic conditions.</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:30:32</dateCreated>
+    <longName>PhenX PX221701 - Sweat Chloride Test</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>Quantitative pilocarpine iontophoresis is the procedure also known as the sweat chloride test. It involves stimulation of sweat, collection of sweat onto gauze or filter paper, measurement of the weight or volume of sweat collected, and analyses to determine the sweat chloride concentration.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>The following description is a summary. See Clinical and Laboratory Standards Institute (CLSI) document C34A2 for the full protocol. The test should be performed at a CFF accredited laboratory. In addition, the CFF has also provided testing gu..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:30:32</dateCreated>
+      <longName>Sweat Chloride Test</longName>
+      <preferredDefinition>Sweat Chloride Test</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Negative Sweat test  Cystic Fibrosis (sweattest_borderlien)</questionText>
+        <instruction>
+         <text>maxLength=&lt; 40; UOM=mmlol/L</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Borderline Sweat test  Cystic Fibrosis (sweattest_negative)</questionText>
+        <instruction>
+         <text>minLength=40;maxLength=60; UOM=mmlol/L</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Positive Sweat test  Cystic Fibrosis (sweattest_positive)</questionText>
+        <instruction>
+         <text>minLength=&gt;60; UOM=mmlol/L</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Reference values  Sweat chloride concentrations &lt; 40 mmol/L are negative 40 to 60 mmol/L are borderline/intermediate &gt; 60 mmol/L are positive (values_221701)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX221701</protocolID>
+     <longName>Sweat Chloride Test</longName>
+     <context>PhenX</context>
+     <shortName>PX221701</shortName>
+     <preferredDefinition>Quantitative pilocarpine iontophoresis is the procedure also known as the sweat chloride test. It involves stimulation of sweat, collection of sweat onto gauze or filter paper, measurement of the weight or volume of sweat collected, and analyses to determine the sweat chloride concentration.</preferredDefinition>
+    </protocol>
+   </form>
+    <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-03T22:30:32</dateCreated>
+    <longName>PhenX PX220201 - Body Proportions</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The arm span to height comparison is determined by measuring the individual's arm span and standing height and then comparing the two measurements (e.g., arm span is 3 centimeters greater than height). The upper to lower body segment ratio is a physical measurement of an individual's upper segment versus lower body segment and expressed as a ratio (e.g., 1.2:1).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-03T22:30:32</dateCreated>
+      <longName>Body Proportions</longName>
+      <preferredDefinition>Body Proportions</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Measurement of the arm span (body_proportions_arm_span)</questionText>
+        <instruction>
+         <text>UOM=centimeter</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Measurement of the standing height (body_proportions_standing_height)</questionText>
+        <instruction>
+         <text>UOM=centimeter</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>IMAGE  body_proportions_exhibit_1 (body_proportions_exhibit_1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>IMAGE  body_proportions_exhibit_2 (body_proportions_exhibit_2)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Measurement of the sitting height (body_proportions_sitting_height)</questionText>
+        <instruction>
+         <text>UOM=centimeter</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>IMAGE  body_proportions_exhibit_3 (body_proportions_exhibit_3)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>IMAGE  body_proportions_exhibit_4 (body_proportions_exhibit_4)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>measurement from the upper border of the symphysis pubis to the floor*, to the nearest 0.1 centimeter (body_proportions_lower_segment)</questionText>
+        <instruction>
+         <text>UOM=centimeter</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>*If it is difficult to locate the symphysis pubis, the sitting height should be measured (see protocol for Sitting Height below). The sitting height measurement can be subtracted from the standing height measurement to determine the value for the lower segment. (body_proportions_upper_segment)</questionText>
+        <instruction>
+         <text>UOM=centimeter</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-03T22:30:32</dateCreated>
+        <questionText>Ratio of the upper segment measurement over the lower segment (body_proportions_upper_lower_ratio)</questionText>
+        <instruction>
+         <text>UOM=centimeter</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX220201</protocolID>
+     <longName>Body Proportions</longName>
+     <context>PhenX</context>
+     <shortName>PX220201</shortName>
+     <preferredDefinition>The arm span to height comparison is determined by measuring the individual's arm span and standing height and then comparing the two measurements (e.g., arm span is 3 centimeters greater than height). The upper to lower body segment ratio is a physical measurement of an individual's upper segment versus lower body segment and expressed as a ratio (e.g., 1.2:1).</preferredDefinition>
+    </protocol>
+   </form>
+    </forms>

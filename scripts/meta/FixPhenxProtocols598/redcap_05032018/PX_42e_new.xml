@@ -1,0 +1,1524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 42e</collectionName>
+  <collectionDescription>Load PhenX PX530101,PX540301</collectionDescription>   
+<form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:22</dateCreated>
+    <longName>PhenX PX530101 - Cognitive Flexibility Dimensional Change Card Sort Old</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The Dimensional Change Card Sort (DCCS) Border Version is an interviewer-administered task that measures the flexible use of rules to govern behavior as a means of providing an index of executive function development. In this task, the assessor asks the participant to sort bivalent test cards according to a randomly changing dimension (e.g., color or shape). The dimension by which to sort is indicated by the presence or absence of a border on the card. The Dimensional Change Card Sort task is a freely available, simplified version of the Wisconsin Card Sort test. For more information about the Wisconsin Card Sort test, please refer to www.cognitiveatlas.org/task/id/tsk_4a57abb949f21|Cognitive Atlas Interpretation.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>Summary of the Dimensional Change Card Sort (DCCS) Border Version .The Dimensional Change Card Sort (DCCS) Border Version makes use of two different styles of bivalent cards, displaying for example a red boat and blue rabbit. The test cards ad..TRUNCATED</text>
+    </headerInstruction>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:22</dateCreated>
+      <longName>Cognitive Flexibility (Dimensional Change Card Sort) - Older Children, Adolescents, and Adults</longName>
+      <preferredDefinition>Cognitive Flexibility (Dimensional Change Card Sort) - Older Children, Adolescents, and Adults</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Dimension used for sorting border cards. (dimension_sorting_border_cards)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>color</meaningText>
+          <description>color</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>shape</meaningText>
+          <description>shape</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Number of cards correctly sorted: __________ (number_cards_correctly_sorted)</questionText>
+        <instruction>
+         <text>datatype=integer</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Standard and Border version administered? (standard_border_version_administered)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>UNDEFINED_CODE</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>UNDEFINED_CODE_1</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Combined (Standard and Border version) score. (combined_score)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>0</value>
+          <meaningText>Participant failed the pre-switch phase of the standard version.</meaningText>
+          <description>Participant failed the pre-switch phase of the standard version.</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>1</value>
+          <meaningText>Participant passed the pre-switch phase of the standard version, but failed the post-switch phase.</meaningText>
+          <description>Participant passed the pre-switch phase of the standard version, but failed the post-switch phase.</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>Participant passed the pre-switch and post-switch phases of the standard version, but failed the border version.</meaningText>
+          <description>Participant passed the pre-switch and post-switch phases of the standard version, but failed the border version.</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>3</value>
+          <meaningText>Participant passed the pre-switch and post-switch phases of the standard version and passed the border version.</meaningText>
+          <description>Participant passed the pre-switch and post-switch phases of the standard version and passed the border version.</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Scoring: Participants who correctly sort nine or more of the twelve test cards are considered to have passed the task. If both the DCCS Standard Version and DCCS Border Version are administered, an alternative scoring scheme is as follows: Score of 0 Participant failed the preswitch phase of the standard version. Score of 1 Participant passed the preswitch phase of the standard version, but failed the postswitch phase. Score of 2 Participant passed the preswitch and postswitch phases of the standard version, but failed the border version. Score of 3 Participant passed the preswitch and postswitch phases of the standard version and passed the border version. (scoring_530101)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX530101</protocolID>
+     <longName>Cognitive Flexibility (Dimensional Change Card Sort) - Older Children, Adolescents, and Adults</longName>
+     <context>PhenX</context>
+     <shortName>PX530101</shortName>
+     <preferredDefinition>The Dimensional Change Card Sort (DCCS) Border Version is an interviewer-administered task that measures the flexible use of rules to govern behavior as a means of providing an index of executive function development. In this task, the assessor asks the participant to sort bivalent test cards according to a randomly changing dimension (e.g., color or shape). The dimension by which to sort is indicated by the presence or absence of a border on the card. The Dimensional Change Card Sort task is a freely available, simplified version of the Wisconsin Card Sort test. For more information about the Wisconsin Card Sort test, please refer to www.cognitiveatlas.org/task/id/tsk_4a57abb949f21|Cognitive Atlas Interpretation.</preferredDefinition>
+    </protocol>
+   </form>   
+        <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-09T15:06:22</dateCreated>
+    <longName>PhenX PX540301 - Family Risk And Protective Factors</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The protocol includes 38 self-administered questions from the Communities That Care Youth Survey. This protocol includes seven subscales: Poor Family Management (8 items on a 4-point scale), Family Conflict (3 items on a 4-point scale), Parental Attitudes Favorable to Antisocial Behavior (3 items on a 4-point scale), Attachment (4 items on a 4-point scale ), Opportunities for Prosocial Involvement (3 items on a 4-point scale), Rewards for Prosocial Involvement (4 items on a 4-point scale), Parental Attitudes Favorable toward Drug Use (3 items), and Family History of Antisocial Behavior (including Drug Use) (10 items on a 5-point scale). Attachment, Opportunities for Prosocial Involvement, and Rewards for Prosocial Involvement are protective (or promotive) factors; the remaining subscales are risk factors.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction>
+     <text>This is not a test, so there are no right or wrong answers we would like you to work quickly, so that you can finish.  Some of the questions have the following format: Please check the answer that best describes how you feel about that sentenc..TRUNCATED</text>
+    </headerInstruction>
+    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-09T15:06:22</dateCreated>
+      <longName>Family Risk and Protective Factors</longName>
+      <preferredDefinition>Family Risk and Protective Factors</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How wrong do your parents feel it would be for you to: drink beer, wine or hard liquor (for example, vodka, whiskey, or gin) regularly (at least once or twice a month)? (how_wrong_parents_feel_drink)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Very wrong</meaningText>
+          <description>Very wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Wrong</meaningText>
+          <description>Wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little bit wrong</meaningText>
+          <description>A little bit wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Not wrong at all</meaningText>
+          <description>Not wrong at all</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How wrong do your parents feel it would be for you to: smoke cigarettes? (how_wrong_parents_feel_cigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Very wrong</meaningText>
+          <description>Very wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Wrong</meaningText>
+          <description>Wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little bit wrong</meaningText>
+          <description>A little bit wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Not wrong at all</meaningText>
+          <description>Not wrong at all</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How wrong do your parents feel it would be for you to: smoke marijuana? (how_wrong_parents_feel_marijuana)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Very wrong</meaningText>
+          <description>Very wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Wrong</meaningText>
+          <description>Wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little bit wrong</meaningText>
+          <description>A little bit wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Not wrong at all</meaningText>
+          <description>Not wrong at all</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How wrong do your parents feel it would be for you to: steal something worth more than $5? (how_wrong_parents_feel_steal)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Very wrong</meaningText>
+          <description>Very wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Wrong</meaningText>
+          <description>Wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little bit wrong</meaningText>
+          <description>A little bit wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Not wrong at all</meaningText>
+          <description>Not wrong at all</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How wrong do your parents feel it would be for you to: draw graffiti, or write things or draw pictures on buildings or other property (without the owner's permission)? (how_wrong_parents_feel_graffit)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Very wrong</meaningText>
+          <description>Very wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Wrong</meaningText>
+          <description>Wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little bit wrong</meaningText>
+          <description>A little bit wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Not wrong at all</meaningText>
+          <description>Not wrong at all</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How wrong do your parents feel it would be for you to: pick a fight with someone? (how_wrong_parents_feel_fight)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Very wrong</meaningText>
+          <description>Very wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Wrong</meaningText>
+          <description>Wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A little bit wrong</meaningText>
+          <description>A little bit wrong</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Not wrong at all</meaningText>
+          <description>Not wrong at all</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Have any of your brothers or sisters ever: drunk beer, wine or hard liquor (for example, vodka, whiskey, or gin)? (brothers_sisters_ever_drunk)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>0</value>
+          <meaningText>I don't have any brothers or sisters</meaningText>
+          <description>I don't have any brothers or sisters</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Have any of your brothers or sisters ever: smoked marijuana? (brothers_sisters_ever_smoked_marijuana)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>0</value>
+          <meaningText>I don't have any brothers or sisters</meaningText>
+          <description>I don't have any brothers or sisters</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Have any of your brothers or sisters ever: smoked cigarettes? (brothers_sisters_ever_smoked_cigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>0</value>
+          <meaningText>I don't have any brothers or sisters</meaningText>
+          <description>I don't have any brothers or sisters</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Have any of your brothers or sisters ever: taken a handgun to school? (brothers_sisters_taken_handgun_school)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>0</value>
+          <meaningText>I don't have any brothers or sisters</meaningText>
+          <description>I don't have any brothers or sisters</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Have any of your brothers or sisters ever: been suspended or expelled from school? (brothers_sisters_been_suspended_expelled)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>0</value>
+          <meaningText>I don't have any brothers or sisters</meaningText>
+          <description>I don't have any brothers or sisters</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>The rules in my family are clear. (family_rules_are_clear)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>4</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>3</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>1</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Has anyone in your family ever had a severe alcohol or drug problem? (family_member_alcohol_drug_problem)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>5</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>People in my family often insult or yell at each other. (family_often_insult_yell)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>When I am not at home, one of my parents knows where I am and who I am with. (parents_know_where_i_am)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>4</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>3</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>1</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>We argue about the same things in my family over and over. (family_argue_same_things)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>If you drank some beer or wine or hard liquor (for example, vodka, whiskey, or gin) without your parents' permission, would you be caught by your parents? (beer_caught_by_parents)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>4</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>3</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>1</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>My family has clear rules about alcohol and drug use. (family_has_rules_alcohol_drug)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>4</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>3</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>1</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>If you carried a handgun without your parents' permission, would you be caught by your parents? (carried_handgun_caught_by_parents)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>4</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>3</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>1</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>If you skipped school, would you be caught by your parents? (skipped_school_caught_by_parents)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>4</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>3</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>1</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>My parents notice when I am doing a good job and let me know about it. (parents_notice_good_job)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never or almost never</meaningText>
+          <description>Never or almost never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>All the Time</meaningText>
+          <description>All the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Do you feel very close to your mother? (close_to_your_mother)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Do you share your thoughts and feelings with your mother? (share_thoughts_feelings_with_mother)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>My parents ask me what I think before most family decisions affecting me are made. (q15_540301)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>How often do your parents tell you they're proud of you for something you've done? (frequency_parents_proud)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Never or almost never</meaningText>
+          <description>Never or almost never</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Sometimes</meaningText>
+          <description>Sometimes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Often</meaningText>
+          <description>Often</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>All the Time</meaningText>
+          <description>All the Time</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Do you share your thoughts and feelings with your father? (share_thoughts_feelings_with_father)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Do you enjoy spending time with your mother? (enjoy_spending_time_with_mother)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Do you enjoy spending time with your father? (enjoy_spending_time_with_father)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>If I had a personal problem, I could ask my mom or dad for help. (ask_mom_dad_for_help)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Do you feel very close to your father? (feel_very_close_to_father)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>My parents give me lots of chances to do fun things with them. (chances_for_fun_with_parents)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>My parents ask if I've gotten my homework done. (parents_ask_homework_done)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>4</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>3</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>1</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>People in my family have serious arguments. (family_serious_arguments)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>Would your parents know if you did not come home on time? (parents_know_not_home_time)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>4</value>
+          <meaningText>NO!</meaningText>
+          <description>NO!</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>3</value>
+          <meaningText>no</meaningText>
+          <description>no</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>2</value>
+          <meaningText>yes</meaningText>
+          <description>yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>1</value>
+          <meaningText>YES!</meaningText>
+          <description>YES!</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>About how many adults (over 21) have you known personally who in the past year have used marijuana, crack, cocaine, or other drugs? (adults_who_used_drugs)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>One adult</meaningText>
+          <description>One adult</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Two adults</meaningText>
+          <description>Two adults</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Three or four adults</meaningText>
+          <description>Three or four adults</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Five or more adults</meaningText>
+          <description>Five or more adults</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>About how many adults (over 21) have you known personally who in the past year have sold or dealt drugs? (adults_who_sold_dealt_drugs)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>One adult</meaningText>
+          <description>One adult</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Two adults</meaningText>
+          <description>Two adults</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Three or four adults</meaningText>
+          <description>Three or four adults</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Five or more adults</meaningText>
+          <description>Five or more adults</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>About how many adults (over 21) have you known personally who in the past year have done other things that could get them in trouble with the police like stealing, selling stolen goods, mugging or assaulting others, etc. (adults_who_done_other_things)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>One adult</meaningText>
+          <description>One adult</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Two adults</meaningText>
+          <description>Two adults</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Three or four adults</meaningText>
+          <description>Three or four adults</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Five or more adults</meaningText>
+          <description>Five or more adults</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-05-09T15:06:22</dateCreated>
+        <questionText>About how many adults (over 21) have you known personally who in the past year have gotten drunk or high? (adults_gotten_drunk_or_high)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>None</meaningText>
+          <description>None</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>One adult</meaningText>
+          <description>One adult</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Two adults</meaningText>
+          <description>Two adults</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Three or four adults</meaningText>
+          <description>Three or four adults</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Five or more adults</meaningText>
+          <description>Five or more adults</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX540301</protocolID>
+     <longName>Family Risk and Protective Factors</longName>
+     <context>PhenX</context>
+     <shortName>PX540301</shortName>
+     <preferredDefinition>The protocol includes 38 self-administered questions from the Communities That Care Youth Survey. This protocol includes seven subscales: Poor Family Management (8 items on a 4-point scale), Family Conflict (3 items on a 4-point scale), Parental Attitudes Favorable to Antisocial Behavior (3 items on a 4-point scale), Attachment (4 items on a 4-point scale ), Opportunities for Prosocial Involvement (3 items on a 4-point scale), Rewards for Prosocial Involvement (4 items on a 4-point scale), Parental Attitudes Favorable toward Drug Use (3 items), and Family History of Antisocial Behavior (including Drug Use) (10 items on a 5-point scale). Attachment, Opportunities for Prosocial Involvement, and Rewards for Prosocial Involvement are protective (or promotive) factors; the remaining subscales are risk factors.</preferredDefinition>
+    </protocol>
+   </form>       
+   </forms>

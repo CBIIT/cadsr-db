@@ -1,0 +1,2582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+ <collectionName>PhenX Protocols - 12a</collectionName>
+ <collectionDescription>Load PhenX PX051401,PX060101,PX060201,PX060301,PX060401</collectionDescription>  
+   <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <longName>PhenX PX060301 - Residential History</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>This protocol captures information about every residence the respondent has lived in for 3 months or longer. It includes questions concerning topics such as the dates lived, exact address and/or landmarks near the residence, whether the residence was located on or near a farm, the type of water supply, whether the residence was near fields or orchards, and whether it was located in the center or margin of town. After the interview has been completed the interviewer should determine the geocoordinates of each residence. Some geocoordinates will not be accurate based on the data obtained from these questions and may be improved with additional quality control measures or by obtaining a GPS measurement at the residence.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction>
+ <text>Ask the respondent about current and previous residences in which he/she has lived for 3 months or longer. Begin with the current residence and complete one row for each residence. Geocoordinates are obtained after the interview is completed b..TRUNCATED</text>
+ </headerInstruction> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <longName>Residential History</longName>
+ <instruction/>
+ <preferredDefinition>Residential History</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Residence 1 (residence1_marker)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>From what date did you live in the residence? (residence_date_lived_from_1)</questionText>
+ <instruction>
+ <text>datatype=date_mdy</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>To what date did/do you live in the residence? (residence_date_lived_to_1)</questionText>
+ <instruction>
+ <text>datatype=date_mdy</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>What is the residence address? Street/Crossstreets, City, State, or Landmark. (residence_address_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Was this on a farm? (residence_on_farm_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>on farm</meaningText>
+ <description>on farm</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>no</meaningText>
+ <description>no</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>What was your water supply? (residence_water_supply_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>city</meaningText>
+ <description>city</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>private well</meaningText>
+ <description>private well</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>filtered water</meaningText>
+ <description>filtered water</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>bottled water</meaningText>
+ <description>bottled water</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>other</meaningText>
+ <description>other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>If "other," What was your water supply? (residence_water_supply_1_specify)</questionText>
+ <instruction>
+ <text>[residence_water_supply_1] = 'UNDEFINED_CODE_4'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Near fields or orchards? (residence_near_field_orchards_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>yes</meaningText>
+ <description>yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>no</meaningText>
+ <description>no</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Did you live close to the center or margin of town? (residence_near_town_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>center</meaningText>
+ <description>center</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>margin</meaningText>
+ <description>margin</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>After the interview has been completed, enter the geocoordinates for the residence. Latitude: (residence_geocoordinate_latitude_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>After the interview has been completed, enter the geocoordinates for the residence. Longitude: (residence_geocoordinate_longitude_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>After the interview has been completed, enter the geocoordinates for the residence. (residence_geocoordinate_coded_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>not available, incomplete address</meaningText>
+ <description>not available, incomplete address</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Were the geocoordinates verified? (residence_geocoordinate_verified_1)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>yes</meaningText>
+ <description>yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>no</meaningText>
+ <description>no</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>If "yes," describe how geocoordinates were verified: (residence_geocoordinate_verified_1_how)</questionText>
+ <instruction>
+ <text>[residence_geocoordinate_verified_1] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Residence 2 (residence2_marker)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>From what date did you live in the residence? (residence_date_lived_from_2)</questionText>
+ <instruction>
+ <text>datatype=date_mdy</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>17</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>To what date did/do you live in the residence? (residence_date_lived_to_2)</questionText>
+ <instruction>
+ <text>datatype=date_mdy</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>18</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>What is the residence address? Street/Crossstreets, City, State, or Landmark. (residence_address_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>19</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Was this on a farm? (residence_on_farm_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>on farm</meaningText>
+ <description>on farm</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>no</meaningText>
+ <description>no</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>20</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>What was your water supply? (residence_water_supply_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>city</meaningText>
+ <description>city</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>private well</meaningText>
+ <description>private well</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>filtered water</meaningText>
+ <description>filtered water</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>bottled water</meaningText>
+ <description>bottled water</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>other</meaningText>
+ <description>other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>21</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>If "other," What was your water supply? (residence_water_supply_2_specify)</questionText>
+ <instruction>
+ <text>[residence_water_supply_2] = 'UNDEFINED_CODE_4'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>22</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Near fields or orchards? (residence_near_field_orchards_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>yes</meaningText>
+ <description>yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>no</meaningText>
+ <description>no</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>23</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Did you live close to the center or margin of town? (residence_near_town_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>center</meaningText>
+ <description>center</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>margin</meaningText>
+ <description>margin</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>24</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>After the interview has been completed, enter the geocoordinates for the residence. Latitude: (residence_geocoordinate_latitude_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>25</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>After the interview has been completed, enter the geocoordinates for the residence. Longitude: (residence_geocoordinate_longitude_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>26</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>After the interview has been completed, enter the geocoordinates for the residence. (residence_geocoordinate_coded_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>not available, incomplete address</meaningText>
+ <description>not available, incomplete address</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>27</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Were the geocoordinates verified? (residence_geocoordinate_verified_2)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>yes</meaningText>
+ <description>yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>no</meaningText>
+ <description>no</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>28</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>If "yes," describe how geocoordinates were verifed: (residence_geocoordinate_verified_2_how)</questionText>
+ <instruction>
+ <text>[residence_geocoordinate_verified_2] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>29</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Residence 3 (residence3_marker)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>30</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>From what date did you live in the residence? (residence_date_lived_from_3)</questionText>
+ <instruction>
+ <text>datatype=date_mdy</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>31</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>To what date did/do you live in the residence? (residence_date_lived_to_3)</questionText>
+ <instruction>
+ <text>datatype=date_mdy</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>32</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>What is the residence address? Street/Crossstreets, City, State, or Landmark. (residence_address_3)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>33</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Was this on a farm? (residence_on_farm_3)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>on farm</meaningText>
+ <description>on farm</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>no</meaningText>
+ <description>no</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>34</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>What was your water supply? (residence_water_supply_3)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>city</meaningText>
+ <description>city</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>private well</meaningText>
+ <description>private well</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>filtered water</meaningText>
+ <description>filtered water</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>bottled water</meaningText>
+ <description>bottled water</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>other</meaningText>
+ <description>other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>35</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>If "other," What was your water supply? (residence_water_supply_3_specify)</questionText>
+ <instruction>
+ <text>[residence_water_supply_3] = 'UNDEFINED_CODE_4'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>36</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Near fields or orchards? (residence_near_field_orchards_3)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>yes</meaningText>
+ <description>yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>no</meaningText>
+ <description>no</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>37</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Did you live close to the center or margin of town? (residence_near_town_3)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>center</meaningText>
+ <description>center</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>margin</meaningText>
+ <description>margin</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>38</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>After the interview has been completed, enter the geocoordinates for the residence. Latitude: (residence_geocoordinate_latitude_3)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>39</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>After the interview has been completed, enter the geocoordinates for the residence. Longitude: (residence_geocoordinate_longitude_3)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>40</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>After the interview has been completed, enter the geocoordinates for the residence. (residence_geocoordinate_coded_3)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>not available, incomplete address</meaningText>
+ <description>not available, incomplete address</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>41</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Were the geocoordinates verified? (residence_geocoordinate_verified_3)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>yes</meaningText>
+ <description>yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>no</meaningText>
+ <description>no</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>42</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>If "yes," describe how the geocoordinates were verified: (residence_geocoordinate_verified_3_how)</questionText>
+ <instruction>
+ <text>[residence_geocoordinate_verified_3] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX060301</protocolID>
+ <longName>Residential History</longName>
+ <context>PhenX</context>
+ <shortName>PX060301</shortName>
+ <preferredDefinition>This protocol captures information about every residence the respondent has lived in for 3 months or longer. It includes questions concerning topics such as the dates lived, exact address and/or landmarks near the residence, whether the residence was located on or near a farm, the type of water supply, whether the residence was near fields or orchards, and whether it was located in the center or margin of town. After the interview has been completed the interviewer should determine the geocoordinates of each residence. Some geocoordinates will not be accurate based on the data obtained from these questions and may be improved with additional quality control measures or by obtaining a GPS measurement at the residence.</preferredDefinition>
+ </protocol>
+ </form>
+  <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <longName>PhenX PX060101 - Characteristics Of Current Residence</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Questions asked about the type of home, age, time lived in the residence, garage, pets in the home, and water damage. The respondent should be an adult who normally resides in the residence.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction>
+ <text>Note: Multiple source protocols are being recommended for measuring current residence characteristics.</text>
+ </headerInstruction> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <longName>Characteristics Of Current Residence</longName>
+ <instruction/>
+ <preferredDefinition>Characteristics Of Current Residence</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>What is the type of dwelling? [To distinguish between the types of buildings, you may ask: How many other families live in the building? and/or How many other families live on this floor?] (dwelling_type)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Detached house</meaningText>
+ <description>Detached house</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Duplex/Triplex</meaningText>
+ <description>Duplex/Triplex</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Row house</meaningText>
+ <description>Row house</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>Low rise apartment (1-3 floors)</meaningText>
+ <description>Low rise apartment (1-3 floors)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>High rise apartment (&gt;3 floors)</meaningText>
+ <description>High rise apartment (&gt;3 floors)</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>Mobile home / Trailer</meaningText>
+ <description>Mobile home / Trailer</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>If "Other," Specify the type of dwelling. [To distinguish between the types of buildings, you may ask: How many other families live in the building? and/or How many other families live on this floor?] (dwelling_type_specify_other)</questionText>
+ <instruction>
+ <text>[dwelling_type] = '7'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Is this property actively used as a farm or ranch? (house_farm_use)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>What is the approximate age of your building? Age of building (building_age)</questionText>
+ <instruction>
+ <text>datatype=number</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>What is the approximate age of your building? Year built (building_year_built)</questionText>
+ <instruction>
+ <text>datatype=number</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>When did you start living there? MONTH (building_residence_month)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=12</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>When did you start living there? YEAR (building_residence_year)</questionText>
+ <instruction>
+ <text>datatype=number</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>When did you start living there? AGE (building_residence_age)</questionText>
+ <instruction>
+ <text>datatype=number</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>When did you move from there? MONTH (residence_move_month)</questionText>
+ <instruction>
+ <text>datatype=number;minLength=1;maxLength=12</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>When did you move from there? YEAR (residence_move_year)</questionText>
+ <instruction>
+ <text>datatype=number</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>When did you move from there? AGE (residence_move_age)</questionText>
+ <instruction>
+ <text>datatype=number</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>How many years (have/did) you live(d) there? (years_at_address)</questionText>
+ <instruction>
+ <text>datatype=number</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Is there an enclosed garage attached to this (house/apartment)? (house_garage_attached)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Are automobiles, vans, trucks or other motor vehicles parked in this attached garage? (garage_vehicle_parked)</questionText>
+ <instruction>
+ <text>[house_garage_attached] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Are any gaspowered devices stored in any room, basement, or attached garage in this (house/apartment)? DO NOT INCLUDE CARS, VANS, OR TRUCKS. DO INCLUDE MOTORCYCLES, GASPOWERED LAWNMOWERS, TRIMMERS OR BLOWERS, BOAT ENGINES, ETC. (house_gas_powered_device_storage)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>9</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>During the past 12 months, has there been water or dampness in your home from broken pipes, leaks, heavy rain, or floods? (house_water_dampness)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>8</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>17</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Does your home frequently have a mildew odor or musty smell? (house_mildew_odor)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>8</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>18</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Is air conditioning (refrigeration) used to cool this (house/apartment)? (house_air_conditioning)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>19</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Which types of air conditioning units do you use? (house_air_conditioning_type)</questionText>
+ <instruction>
+ <text>[house_air_conditioning] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Central unit/units</meaningText>
+ <description>Central unit/units</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Window or wall unit/units</meaningText>
+ <description>Window or wall unit/units</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Portable unit/units</meaningText>
+ <description>Portable unit/units</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>20</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>During which month (do you usually/would you) start using air conditioning to cool this (house/apartment)? (air_conditioning_start_month)</questionText>
+ <instruction>
+ <text>[house_air_conditioning] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Jan</meaningText>
+ <description>Jan</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Feb</meaningText>
+ <description>Feb</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Mar</meaningText>
+ <description>Mar</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Apr</meaningText>
+ <description>Apr</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>May</meaningText>
+ <description>May</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Jun</meaningText>
+ <description>Jun</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>Jul</meaningText>
+ <description>Jul</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>Aug</meaningText>
+ <description>Aug</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>Sept</meaningText>
+ <description>Sept</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>Oct</meaningText>
+ <description>Oct</description>
+ </validValue>
+ <validValue>
+ <displayOrder>10</displayOrder>
+ <value>UNDEFINED_CODE_10</value>
+ <meaningText>Nov</meaningText>
+ <description>Nov</description>
+ </validValue>
+ <validValue>
+ <displayOrder>11</displayOrder>
+ <value>UNDEFINED_CODE_11</value>
+ <meaningText>Dec</meaningText>
+ <description>Dec</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>21</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>During which month (do you usually/would you) stop using air conditioning? (air_conditioning_stop_month)</questionText>
+ <instruction>
+ <text>[house_air_conditioning] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Jan</meaningText>
+ <description>Jan</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Feb</meaningText>
+ <description>Feb</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Mar</meaningText>
+ <description>Mar</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Apr</meaningText>
+ <description>Apr</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>May</meaningText>
+ <description>May</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Jun</meaningText>
+ <description>Jun</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>Jul</meaningText>
+ <description>Jul</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>Aug</meaningText>
+ <description>Aug</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>Sept</meaningText>
+ <description>Sept</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>Oct</meaningText>
+ <description>Oct</description>
+ </validValue>
+ <validValue>
+ <displayOrder>10</displayOrder>
+ <value>UNDEFINED_CODE_10</value>
+ <meaningText>Nov</meaningText>
+ <description>Nov</description>
+ </validValue>
+ <validValue>
+ <displayOrder>11</displayOrder>
+ <value>UNDEFINED_CODE_11</value>
+ <meaningText>Dec</meaningText>
+ <description>Dec</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>22</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Which fuels are used for heating this (house/apartment)? (house_heating_fuel)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Gas: from underground pipes serving the neighborhood</meaningText>
+ <description>Gas: from underground pipes serving the neighborhood</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Gas: bottled, tank, or LP</meaningText>
+ <description>Gas: bottled, tank, or LP</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Electricity</meaningText>
+ <description>Electricity</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>Fuel oil, kerosene, etc</meaningText>
+ <description>Fuel oil, kerosene, etc</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>Coal or coke</meaningText>
+ <description>Coal or coke</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>6</value>
+ <meaningText>Wood</meaningText>
+ <description>Wood</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>7</value>
+ <meaningText>Solar energy</meaningText>
+ <description>Solar energy</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>8</value>
+ <meaningText>Other fuel</meaningText>
+ <description>Other fuel</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>9</value>
+ <meaningText>No fuel used</meaningText>
+ <description>No fuel used</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>99</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>23</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>If "Other fuel," Specify which fuels are used for heating this (house/apartment). (house_heating_fuel_other_specify)</questionText>
+ <instruction>
+ <text>[house_heating_fuel] = '8'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>24</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Does this (house/apartment) have a central heating system with ducts that blow air into most rooms? (house_central_heating_system)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>25</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>During which month (do you usually/would you) start using heating devices? (house_heating_start_month)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Jan</meaningText>
+ <description>Jan</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Feb</meaningText>
+ <description>Feb</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Mar</meaningText>
+ <description>Mar</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Apr</meaningText>
+ <description>Apr</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>May</meaningText>
+ <description>May</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Jun</meaningText>
+ <description>Jun</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>Jul</meaningText>
+ <description>Jul</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>Aug</meaningText>
+ <description>Aug</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>Sept</meaningText>
+ <description>Sept</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>Oct</meaningText>
+ <description>Oct</description>
+ </validValue>
+ <validValue>
+ <displayOrder>10</displayOrder>
+ <value>UNDEFINED_CODE_10</value>
+ <meaningText>Nov</meaningText>
+ <description>Nov</description>
+ </validValue>
+ <validValue>
+ <displayOrder>11</displayOrder>
+ <value>UNDEFINED_CODE_11</value>
+ <meaningText>Dec</meaningText>
+ <description>Dec</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>26</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>During which month (do you usually/would you) stop using heating devices? (house_heating_stop_month)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Jan</meaningText>
+ <description>Jan</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>Feb</meaningText>
+ <description>Feb</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>UNDEFINED_CODE_2</value>
+ <meaningText>Mar</meaningText>
+ <description>Mar</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>UNDEFINED_CODE_3</value>
+ <meaningText>Apr</meaningText>
+ <description>Apr</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>UNDEFINED_CODE_4</value>
+ <meaningText>May</meaningText>
+ <description>May</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>UNDEFINED_CODE_5</value>
+ <meaningText>Jun</meaningText>
+ <description>Jun</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>UNDEFINED_CODE_6</value>
+ <meaningText>Jul</meaningText>
+ <description>Jul</description>
+ </validValue>
+ <validValue>
+ <displayOrder>7</displayOrder>
+ <value>UNDEFINED_CODE_7</value>
+ <meaningText>Aug</meaningText>
+ <description>Aug</description>
+ </validValue>
+ <validValue>
+ <displayOrder>8</displayOrder>
+ <value>UNDEFINED_CODE_8</value>
+ <meaningText>Sept</meaningText>
+ <description>Sept</description>
+ </validValue>
+ <validValue>
+ <displayOrder>9</displayOrder>
+ <value>UNDEFINED_CODE_9</value>
+ <meaningText>Oct</meaningText>
+ <description>Oct</description>
+ </validValue>
+ <validValue>
+ <displayOrder>10</displayOrder>
+ <value>UNDEFINED_CODE_10</value>
+ <meaningText>Nov</meaningText>
+ <description>Nov</description>
+ </validValue>
+ <validValue>
+ <displayOrder>11</displayOrder>
+ <value>UNDEFINED_CODE_11</value>
+ <meaningText>Dec</meaningText>
+ <description>Dec</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>27</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>In the last 12 months, did any dogs, cats or other small furry animals, such as a rabbit, guinea pig or hamster, live or spend time inside your home? (house_pet)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>7</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>9</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>28</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>What kind of pet was it? (house_pet_type)</questionText>
+ <instruction>
+ <text>[house_pet] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>DOG</meaningText>
+ <description>DOG</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>CAT</meaningText>
+ <description>CAT</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>SMALL FURRY ANIMAL</meaningText>
+ <description>SMALL FURRY ANIMAL</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>77</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>99</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX060101</protocolID>
+ <longName>Characteristics of Current Residence</longName>
+ <context>PhenX</context>
+ <shortName>PX060101</shortName>
+ <preferredDefinition>Questions asked about the type of home, age, time lived in the residence, garage, pets in the home, and water damage. The respondent should be an adult who normally resides in the residence.</preferredDefinition>
+ </protocol>
+ </form> 
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <longName>PhenX PX060401 - Exposure At Work And In Daily Life</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>The respondent is asked to complete a table of questions about exposures at work or during daily life. If the respondent answers "yes" to any of the exposures the number of years exposed to the substance is also requested.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction>
+ <text>In your work or daily life, are (were) you regularly exposed to any of the following? If "yes", indicate the number of years exposed.</text>
+ </headerInstruction> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <longName>Exposure At Work And In Daily Life</longName>
+ <instruction/>
+ <preferredDefinition>Exposure At Work And In Daily Life</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>In your work or daily life, are (were) you regularly exposed to Asbestos? (exposure_asbestos)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>How many years are (were) you regularly exposed to Asbestos? (exposure_asbestos_years)</questionText>
+ <instruction>
+ <text>datatype=number;[exposure_asbestos] = 'UNDEFINED_CODE'; UOM=year</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>In your work or daily life, are (were) you regularly exposed to Chemicals/Acids/Solvents? (exposure_solvent)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>How many years are (were) you regularly exposed to Chemicals/Acids/Solvents? (exposure_solvent_years)</questionText>
+ <instruction>
+ <text>datatype=number;[exposure_solvent] = 'UNDEFINED_CODE'; UOM=year</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>In your work or daily life, are (were) you regularly exposed to Coal or Stone Dusts? (exposure_coal_dust)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>6</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>How many years are (were) you regularly exposed to Coal or Stone Dusts? (exposure_coal_dust_years)</questionText>
+ <instruction>
+ <text>datatype=number;[exposure_coal_dust] = 'UNDEFINED_CODE'; UOM=year</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>7</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>In your work or daily life, are (were) you regularly exposed to Coal Tar/Pitch/Asphalt? (exposure_coal_tar)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>8</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>How many years are (were) you regularly exposed to Coal Tar/Pitch/Asphalt? (exposure_coal_tar_years)</questionText>
+ <instruction>
+ <text>datatype=number;[exposure_coal_tar] = 'UNDEFINED_CODE'; UOM=year</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>9</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>In your work or daily life, are (were) you regularly exposed to Diesel Engine Exhaust? (exposure_diesel_engine_exhaust)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>10</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>How many years are (were) you regularly exposed to Diesel Engine Exhaust? (exposure_diesel_engine_exhaust_years)</questionText>
+ <instruction>
+ <text>datatype=number;[exposure_diesel_engine_exhaust] = 'UNDEFINED_CODE'; UOM=year</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>11</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>In your work or daily life, are (were) you regularly exposed to Dyes? (exposure_dye)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>12</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>How many years are (were) you regularly exposed to Dyes? (exposure_dye_years)</questionText>
+ <instruction>
+ <text>datatype=number;[exposure_dye] = 'UNDEFINED_CODE'; UOM=year</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>13</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>In your work or daily life, are (were) you regularly exposed to Formaldehyde? (exposure_formaldehyde)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>14</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>How many years are (were) you regularly exposed to Formaldehyde? (exposure_formaldehyde_years)</questionText>
+ <instruction>
+ <text>datatype=number;[exposure_formaldehyde] = 'UNDEFINED_CODE'; UOM=year</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>15</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>In your work or daily life, are (were) you regularly exposed to Gasoline Exhaust? (exposure_gasoline_exhaust)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>16</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>How many years are (were) you regularly exposed to Gasoline Exhaust? (exposure_gasoline_exhaust_years)</questionText>
+ <instruction>
+ <text>datatype=number;[exposure_gasoline_exhaust] = 'UNDEFINED_CODE'; UOM=year</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>17</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>In your work or daily life, are (were) you regularly exposed to Pesticides/Herbicides? (exposure_pesticides_herbicides)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>18</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>How many years are (were) you regularly exposed to Pesticides/Herbicides? (exposure_pesticides_herbicides_years)</questionText>
+ <instruction>
+ <text>datatype=number;[exposure_pesticides_herbicides] = 'UNDEFINED_CODE'; UOM=year</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>19</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>In your work or daily life, are (were) you regularly exposed to Textile Fibers/Dusts? (exposure_textile_fiber_dust)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>20</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>How many years are (were) you regularly exposed to Textile Fibers/Dusts? (exposure_textile_fiber_dust_years)</questionText>
+ <instruction>
+ <text>datatype=number;[exposure_textile_fiber_dust] = 'UNDEFINED_CODE'; UOM=year</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>21</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>In your work or daily life, are (were) you regularly exposed to Wood Dust? (exposure_wood_dust)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>22</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>How many years are (were) you regularly exposed to Wood Dust? (exposure_wood_dust_years)</questionText>
+ <instruction>
+ <text>datatype=number;[exposure_wood_dust] = 'UNDEFINED_CODE'; UOM=year</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>23</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>In your work or daily life, are (were) you regularly exposed to Xrays/Radioactive Materials? (exposure_radioactive_materials)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>24</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>How many years are (were) you regularly exposed to Xrays/Radioactive Materials? (exposure_radioactive_materials_years)</questionText>
+ <instruction>
+ <text>datatype=number;[exposure_radioactive_materials] = 'UNDEFINED_CODE'; UOM=year</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX060401</protocolID>
+ <longName>Exposure at Work and in Daily Life</longName>
+ <context>PhenX</context>
+ <shortName>PX060401</shortName>
+ <preferredDefinition>The respondent is asked to complete a table of questions about exposures at work or during daily life. If the respondent answers "yes" to any of the exposures the number of years exposed to the substance is also requested.</preferredDefinition>
+ </protocol>
+ </form> 
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <longName>PhenX PX060201 - Water Source</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>The respondent is asked a series of questions about the home's source of drinking water such as, if the water comes from a community's supply or a private well, the depth of the well, if it is cased, and whether water filtration/treatment devices are used.</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction/> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <longName>Water Source</longName>
+ <instruction/>
+ <preferredDefinition>Water Source</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>0</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>What was the primary source of drinking water [at your home]? (drinking_water_source)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Private Well</meaningText>
+ <description>Private Well</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Community Supply</meaningText>
+ <description>Community Supply</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>Bottled Water</meaningText>
+ <description>Bottled Water</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>Other</meaningText>
+ <description>Other</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Other (Specify): What was the primary source of drinking water [at your home]? (drinking_water_source_other_specify)</questionText>
+ <instruction>
+ <text>[drinking_water_source] = '4'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>What was the depth of the private well? (well_depth)</questionText>
+ <instruction>
+ <text>[drinking_water_source] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Less than 50 Feet</meaningText>
+ <description>Less than 50 Feet</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>50-100 Feet</meaningText>
+ <description>50-100 Feet</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>151-250 Feet</meaningText>
+ <description>151-250 Feet</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>251-500 Feet</meaningText>
+ <description>251-500 Feet</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>501 Feet or More</meaningText>
+ <description>501 Feet or More</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>9</value>
+ <meaningText>Don't Know</meaningText>
+ <description>Don't Know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Was the private well cased? (well_cased)</questionText>
+ <instruction>
+ <text>[drinking_water_source] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>Cased</meaningText>
+ <description>Cased</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>Not Cased</meaningText>
+ <description>Not Cased</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>9</value>
+ <meaningText>Don't Know</meaningText>
+ <description>Don't Know</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Are any of the water treatment devices listed on this card used in your home? (Brita or other pitcher water filter, Ceramic or charcoal filter, Water softener, Aerator, Reverse osmosis) (water_treatment_usage)</questionText>
+ <instruction>
+ <text>[drinking_water_source] = '4'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>YES</meaningText>
+ <description>YES</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>NO</meaningText>
+ <description>NO</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>7</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>9</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Which of these water treatment devices are now used in your home? (Brita or other pitcher water filter, Ceramic or charcoal filter, Water softener, Aerator, Reverse osmosis) (water_treatment_current)</questionText>
+ <instruction>
+ <text>[water_treatment_usage] = '1'</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>1</value>
+ <meaningText>BRITA OR OTHER PITCHER WATER FILTER</meaningText>
+ <description>BRITA OR OTHER PITCHER WATER FILTER</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>2</value>
+ <meaningText>CERAMIC OR CHARCOAL FILTER</meaningText>
+ <description>CERAMIC OR CHARCOAL FILTER</description>
+ </validValue>
+ <validValue>
+ <displayOrder>2</displayOrder>
+ <value>3</value>
+ <meaningText>WATER SOFTENER</meaningText>
+ <description>WATER SOFTENER</description>
+ </validValue>
+ <validValue>
+ <displayOrder>3</displayOrder>
+ <value>4</value>
+ <meaningText>AERATOR</meaningText>
+ <description>AERATOR</description>
+ </validValue>
+ <validValue>
+ <displayOrder>4</displayOrder>
+ <value>5</value>
+ <meaningText>REVERSE OSMOSIS</meaningText>
+ <description>REVERSE OSMOSIS</description>
+ </validValue>
+ <validValue>
+ <displayOrder>5</displayOrder>
+ <value>7</value>
+ <meaningText>REFUSED</meaningText>
+ <description>REFUSED</description>
+ </validValue>
+ <validValue>
+ <displayOrder>6</displayOrder>
+ <value>9</value>
+ <meaningText>DON'T KNOW</meaningText>
+ <description>DON'T KNOW</description>
+ </validValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX060201</protocolID>
+ <longName>Water Source</longName>
+ <context>PhenX</context>
+ <shortName>PX060201</shortName>
+ <preferredDefinition>The respondent is asked a series of questions about the home's source of drinking water such as, if the water comes from a community's supply or a private well, the depth of the well, if it is cased, and whether water filtration/treatment devices are used.</preferredDefinition>
+ </protocol>
+ </form>
+ <form>
+ <context>PhenX</context>
+ <createdBy>dwarzel</createdBy>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <longName>PhenX PX051401 - Sodium</longName>
+ <changeNote>Uploaded via FormLoader</changeNote>
+ <preferredDefinition>Complete 24-hour urine sample is collected from the study participant in a sterile specimen container. Under- and over-collection can bias results. The specimen is transported to a laboratory on ice and frozen at -20°C or colder until analysis. Urinary sodium concentrations are determined by ion-selective electrode assays (ICEs), which have a between-assay coefficients of variation greater than 3%. Standard reference materials are available from the National Institute of Standards and Technology (NIST).</preferredDefinition>
+ <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+ <version>1</version>
+ <workflowStatusName>DRAFT NEW</workflowStatusName>
+ <type>CRF</type>
+ <headerInstruction>
+ <text>1. Specimen Collection, Storage, and Handling Procedures Criteria for Specimen Rejection A. Urine specimen should be collected in a urine specimen container that is sterile and prescreened for trace sodium contamination. Sodium is stable froze..TRUNCATED</text>
+ </headerInstruction> 
+ <module>
+ <displayOrder>0</displayOrder>
+ <maximumModuleRepeat>0</maximumModuleRepeat>
+ <createdBy>panh</createdBy>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <longName>Sodium</longName>
+ <instruction/>
+ <preferredDefinition>Sodium</preferredDefinition>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>1</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Was the specimen collection container prescreened for traces of sodium contamination? (sodium_container)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>2</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Did the patient take a PABA pill at least three days prior to urine collection? (sodium_urinespecimen_qualitycontrol)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>3</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>What is the sodium and potassium content in the urine as determined through Ion Selective Electrode? (sodium_urinespecimen_storage)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>4</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>What is the creatinine content as determined through the Creatinine (urinary) Jaffe kinetic method? (sodium_urinespecimen_age)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ <validValue>
+ <displayOrder>0</displayOrder>
+ <value>UNDEFINED_CODE</value>
+ <meaningText>Yes</meaningText>
+ <description>Yes</description>
+ </validValue>
+ <validValue>
+ <displayOrder>1</displayOrder>
+ <value>UNDEFINED_CODE_1</value>
+ <meaningText>No</meaningText>
+ <description>No</description>
+ </validValue>
+ </question>
+ <question>
+ <isDerived>false</isDerived>
+ <displayOrder>5</displayOrder>
+ <dateCreated>2017-04-26T15:01:58</dateCreated>
+ <questionText>Urinary sodium Concentration from bioassay (sodium_urinary_sodium_concentration)</questionText>
+ <instruction>
+ <text>N/A</text>
+ </instruction>
+ <isEditable>No</isEditable>
+ <isMandatory>No</isMandatory>
+ <multiValue>No</multiValue>
+ </question>
+ </module>
+ <protocol>
+ <protocolID>PX051401</protocolID>
+ <longName>Sodium</longName>
+ <context>PhenX</context>
+ <shortName>PX051401</shortName>
+ <preferredDefinition>Complete 24-hour urine sample is collected from the study participant in a sterile specimen container. Under- and over-collection can bias results. The specimen is transported to a laboratory on ice and frozen at -20°C or colder until analysis. Urinary sodium concentrations are determined by ion-selective electrode assays (ICEs), which have a between-assay coefficients of variation greater than 3%. Standard reference materials are available from the National Institute of Standards and Technology (NIST).</preferredDefinition>
+ </protocol>
+ </form> 
+ </forms>
