@@ -1,0 +1,2207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>PhenX Protocols - 52a</collectionName>
+  <collectionDescription>Load PhenX PX740201,PX740903,PX741001</collectionDescription>
+     <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:42:24</dateCreated>
+    <longName>PhenX PX740201 - Illicit Tobacco Products</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Pricing Policies and Control of Tobacco in Europe (PPACTE) survey instrument. These specific questions are used to identify illicit tobacco products and to measure the extent of illicit tobacco products in the market. A pack is identified as illicit if it had at least one of the following tax avoidance or evasion indicators: (1) it was bought from sources that do not include all applicable taxes in the user's location (e.g., a lower tax jurisdiction, such as a neighboring state or a Native American reservation), as reported by smokers; (2) it had an inappropriate tax stamp (e.g., one from a location other than the user's location); (3) it had an inappropriate (e.g., one different from the labels employed in the user's location) health warning; or (4) its price was substantially below the known price in their market (e.g., 20% or more below the average local price).</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Illicit Tobacco Products</longName>
+      <preferredDefinition>Illicit Tobacco Products</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>1.  Do you currently smoke cigarettes (including handrolled cigarettes)? (illicit_tobacco_currently_smokecigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>2a. Think about the total number of cigarettes you used/had during the last 30 days. As a percentage, how many of them did you buy from legitimate retailers/tobacco shops? (bought_legit_retail)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>2b. Think about the total number of cigarettes you used/had during the last 30 days. As a percentage, how many of them did you buy from vending machines? (illicit_tobacco_percentagebought_vendingmachines)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=100; UOM=percent</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>2c. Think about the total number of cigarettes you used/had during the last 30 days. As a percentage, how many of them did you buy over the internet? (illicit_tobacco_percentagebought_internet)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=100; UOM=percent</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>2d. Think about the total number of cigarettes you used/had during the last 30 days. As a percentage, how many of them did you buy from shops in other countries? (illicit_tobacco_percentagebought_othercountriesshops)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=100; UOM=percent</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>2e. Think about the total number of cigarettes you used/had during the last 30 days. As a percentage, how many of them did you buy from duty free shops? (illicit_tobacco_percentagebought_dutyfreeshops)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=100; UOM=percent</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>2f. Think about the total number of cigarettes you used/had during the last 30 days. As a percentage, how many of them did you buy from an individual selling cigarettes independently at local markets, delivery service, doortodoor, or just in the street, or cheap cigarettes from legitimate retailers [UK, Spain] ? (illicit_tobacco_percentagebought_fromindividualperson)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=100; UOM=percent</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>2g. Think about the total number of cigarettes you used/had during the last 30 days. As a percentage, how many of them did you buy from peers ? (illicit_tobacco_percentage_offeredbypeers)</questionText>
+        <instruction>
+         <text>minLength=0;maxLength=100; UOM=percent</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>3. Please, could you show me the latest pack of cigarettes or handrolling tobacco that you bought? (illicit_tobacco_showlast_pack_bought)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>INTERVIEWER: COLLECT ALL THE FOLLOWING INFORMATION FROM THE PACK. IF IT IS NOT POSSIBLE TO SEE THE LATEST PACK BOUGHT, THEN ASK THE INTERVIEWEE TO PROVIDE THE INFORMATION REQUIRED (interviewer_740201)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>3a. If you do not have it with you, could you remember the following information on your last pack of  cigarettes or handrolling tobacco? Type of pack: (illicit_tobacco_lastpack_type)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>20 cigarette pack</meaningText>
+          <description>20 cigarette pack</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>10 cigarette pack</meaningText>
+          <description>10 cigarette pack</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Hand-rolling tobacco (See below question)</meaningText>
+          <description>Hand-rolling tobacco (See below question)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Other, (See below question)</meaningText>
+          <description>Other, (See below question)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>3a continued: Type of pack:  Hand rolling tobacco, please enter Grams: Other type, please enter: (illicit_tobacco_lastpack_typegrams)</questionText>
+        <instruction>
+         <text>minLength=0</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>3b. Health warnings (illicit_tobacco_lastpack_healthwarnings)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Health warnings in (country specific) language</meaningText>
+          <description>Health warnings in (country specific) language</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Health warning in foreign language</meaningText>
+          <description>Health warning in foreign language</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Lack of health warnings</meaningText>
+          <description>Lack of health warnings</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>3c.  Tax stamp (banderole) (illicit_tobacco_lastpack_taxstamp)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>stamp (Country specific)</meaningText>
+          <description>stamp (Country specific)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Foreign stamp: (Enter country below)</meaningText>
+          <description>Foreign stamp: (Enter country below)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Stamp removed or destroyed</meaningText>
+          <description>Stamp removed or destroyed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Lack of stamp/Duty-free pack</meaningText>
+          <description>Lack of stamp/Duty-free pack</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>3c Continued: Tax stamp (banderole)  Country (illicit_tobacco_lastpack_taxstamp_country)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>3d.  How much did you pay for it? (illicit_tobacco_lastpack_price)</questionText>
+        <instruction>
+         <text>UOM=Euros</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>3e.  Where did you buy it? (illicit_tobacco_lastpack_boughtwhere)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>National legal tobacco shopts/legitimate retialers (full price) (UK, Spain)</meaningText>
+          <description>National legal tobacco shopts/legitimate retialers (full price) (UK, Spain)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Vending machines</meaningText>
+          <description>Vending machines</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Internet</meaningText>
+          <description>Internet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Shops in other countries</meaningText>
+          <description>Shops in other countries</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Duty-free shops</meaningText>
+          <description>Duty-free shops</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Individual selling cigarettes independently at local markets, delivery service, door-to-door, or just in the street, or cheap cigarettes from legitimate retailers (UK, Spain)</meaningText>
+          <description>Individual selling cigarettes independently at local markets, delivery service, door-to-door, or just in the street, or cheap cigarettes from legitimate retailers (UK, Spain)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Offered</meaningText>
+          <description>Offered</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740201</protocolID>
+     <longName>Illicit Tobacco Products</longName>
+     <context>PhenX</context>
+     <shortName>PX740201</shortName>
+     <preferredDefinition>This protocol includes questions from the Pricing Policies and Control of Tobacco in Europe (PPACTE) survey instrument. These specific questions are used to identify illicit tobacco products and to measure the extent of illicit tobacco products in the market. A pack is identified as illicit if it had at least one of the following tax avoidance or evasion indicators: (1) it was bought from sources that do not include all applicable taxes in the user's location (e.g., a lower tax jurisdiction, such as a neighboring state or a Native American reservation), as reported by smokers; (2) it had an inappropriate tax stamp (e.g., one from a location other than the user's location); (3) it had an inappropriate (e.g., one different from the labels employed in the user's location) health warning; or (4) its price was substantially below the known price in their market (e.g., 20% or more below the average local price).</preferredDefinition>
+    </protocol>
+   </form>
+   <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:42:24</dateCreated>
+    <longName>PhenX PX740903 - Selfreported Tobacco Product Purchase Location Dissolvable Tobacco</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the purchase location of dissolvable tobacco.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Self-reported Tobacco Product Purchase Location - Dissolvable Tobacco</longName>
+      <preferredDefinition>Self-reported Tobacco Product Purchase Location - Dissolvable Tobacco</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>ASK: Current users and former users 12 month. How [do/did] you usually buy dissolvable tobacco for yourself? Is it (selfreported_methodof_purchase_dissolvable)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In person</meaningText>
+          <description>In person</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>From the internet</meaningText>
+          <description>From the internet</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>By telephone</meaningText>
+          <description>By telephone</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>I [do/did] not buy my own dis-solvable tobacco</meaningText>
+          <description>I [do/did] not buy my own dis-solvable tobacco</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>[Do/Did] you usually buy dissolvable tobacco...? (selfreported_locationof_purchase_dissolvable)</questionText>
+        <instruction>
+         <text>[selfreported_methodof_purchase_dissolvable] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>In your own state</meaningText>
+          <description>In your own state</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>In another state</meaningText>
+          <description>In another state</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Outside the US</meaningText>
+          <description>Outside the US</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>_8</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>_7</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Where [do/did] you buy your dissolvable tobacco most of the time? (selfreported_locationof_vendor_dissolvable)</questionText>
+        <instruction>
+         <text>[selfreported_methodof_purchase_dissolvable] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>A convenience store or gas station</meaningText>
+          <description>A convenience store or gas station</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>A supermarket, grocery store, or drug store</meaningText>
+          <description>A supermarket, grocery store, or drug store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>A warehouse club, such as Sam's or Costco</meaningText>
+          <description>A warehouse club, such as Sam's or Costco</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>A smoke shop, tobacco specialty store, or tobacco outlet store</meaningText>
+          <description>A smoke shop, tobacco specialty store, or tobacco outlet store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>A duty-free shop or military commisionary</meaningText>
+          <description>A duty-free shop or military commisionary</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>A bar, pub, restaurant, or casino</meaningText>
+          <description>A bar, pub, restaurant, or casino</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>A friend or relative</meaningText>
+          <description>A friend or relative</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>A swap meet or flea market</meaningText>
+          <description>A swap meet or flea market</description>
+         </validValue>
+         <validValue>
+          <displayOrder>8</displayOrder>
+          <value>9</value>
+          <meaningText>A store on an Indian reservation</meaningText>
+          <description>A store on an Indian reservation</description>
+         </validValue>
+         <validValue>
+          <displayOrder>9</displayOrder>
+          <value>10</value>
+          <meaningText>A liquor store</meaningText>
+          <description>A liquor store</description>
+         </validValue>
+         <validValue>
+          <displayOrder>10</displayOrder>
+          <value>11</value>
+          <meaningText>Or somewhere else; SPECIFY below</meaningText>
+          <description>Or somewhere else; SPECIFY below</description>
+         </validValue>
+         <validValue>
+          <displayOrder>11</displayOrder>
+          <value>12</value>
+          <meaningText>DON'T KNOW</meaningText>
+          <description>DON'T KNOW</description>
+         </validValue>
+         <validValue>
+          <displayOrder>12</displayOrder>
+          <value>13</value>
+          <meaningText>REFUSED</meaningText>
+          <description>REFUSED</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Where [do/did] you buy your dissolvable tobacco most of the time? (selfreported_locationof_vendor_dissolvable_othervendor)</questionText>
+        <instruction>
+         <text>[selfreported_methodof_purchase_dissolvable] = '1'</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX740903</protocolID>
+     <longName>Self-reported Tobacco Product Purchase Location - Dissolvable Tobacco</longName>
+     <context>PhenX</context>
+     <shortName>PX740903</shortName>
+     <preferredDefinition>This protocol includes questions from the Wave 1 Adult Population Assessment of Tobacco and Health (PATH) Survey instrument. These specific questions are used to measure the purchase location of dissolvable tobacco.</preferredDefinition>
+    </protocol>
+   </form>
+    <form>
+    <context>PhenX</context>
+    <createdBy>dwarzel</createdBy>
+    <dateCreated>2017-05-10T17:42:24</dateCreated>
+    <longName>PhenX PX741001 - Standardized Tobacco Assessment For Retail Settings</longName>
+    <changeNote>Uploaded via FormLoader</changeNote>
+    <preferredDefinition>The observational assessment from the Standardized Tobacco Assessment for Retail Settings (STARS) 1.0 survey includes 17 items for an observer to complete in stores that sell tobacco products, such as convenience stores, gas stations, supermarkets, and pharmacies.</preferredDefinition>
+    <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+    <version>1</version>
+    <workflowStatusName>DRAFT NEW</workflowStatusName>
+    <type>CRF</type>
+    <headerInstruction/>    
+     <module>
+      <displayOrder>0</displayOrder>
+      <maximumModuleRepeat>0</maximumModuleRepeat>
+      <createdBy>panh</createdBy>
+      <dateCreated>2017-05-10T17:42:24</dateCreated>
+      <longName>Standardized Tobacco Assessment for Retail Settings</longName>
+      <preferredDefinition>Standardized Tobacco Assessment for Retail Settings</preferredDefinition>
+             <question>
+        <isDerived>false</isDerived>
+        <displayOrder>0</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>1. What is the date of the visit? (standardized_tobaccoassessment_retailsettings_visit_date)</questionText>
+        <instruction>
+         <text>datatype=date_mdy</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>1</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>What is the start time of the visit? (standardized_tobaccoassessment_retailsettings_visit_starttime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>2</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>What is the end time of the visit? (standardized_tobaccoassessment_retailsettings_visit_endtime)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>3</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>2. What is the name/ID of the coder? (standardized_tobaccoassessment_retailsettings_coder_name)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>4</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>3. What is the name/ID of the store? (standardized_tobaccoassessment_retailsettings_store_name)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>5</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Does the store name match the assigned name? (standardized_tobaccoassessment_retailsettings_store_namematch)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>TRUE</meaningText>
+          <description>TRUE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>FALSE</meaningText>
+          <description>FALSE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>6</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>4. What is the store address? (standardized_tobaccoassessment_retailsettings_store_address)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>7</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Does the actual address match the assigned address (standardized_tobaccoassessment_retailsettings_store_addressmatch)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>TRUE</meaningText>
+          <description>TRUE</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>FALSE</meaningText>
+          <description>FALSE</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>8</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>5. Can you survey the store? If not, then select an option below and STOP. (standardized_tobaccoassessment_retailsettings_store_survey)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes, I can</meaningText>
+          <description>Yes, I can</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>No, store does not exist</meaningText>
+          <description>No, store does not exist</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>No, store is closed</meaningText>
+          <description>No, store is closed</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>No, under 18 not allowed to enter</meaningText>
+          <description>No, under 18 not allowed to enter</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>No, membership or fee required to enter</meaningText>
+          <description>No, membership or fee required to enter</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>No, environment unsafe for me</meaningText>
+          <description>No, environment unsafe for me</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>No, asked to leave before completing the survey</meaningText>
+          <description>No, asked to leave before completing the survey</description>
+         </validValue>
+         <validValue>
+          <displayOrder>7</displayOrder>
+          <value>8</value>
+          <meaningText>Other; specify below</meaningText>
+          <description>Other; specify below</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>9</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Specify reason. (specify_741001)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>10</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>6. Which products are advertised outside the store (on windows/doors, building, sidewalk, or elsewhere)? Cigarettes  nonmenthol (standardized_tobaccoassessment_retailsettings_advertising_cigarettesnonmenthol)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>11</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Which products are advertised outside the store (on windows/doors, building, sidewalk, or elsewhere)? Cigarettes  menthol (standardized_tobaccoassessment_retailsettings_advertising_cigarettesmenthol)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>12</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Which products are advertised outside the store (on windows/doors, building, sidewalk, or elsewhere)? Cigarillos/little cigars (standardized_tobaccoassessment_retailsettings_advertising_cigarillos)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>13</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Which products are advertised outside the store (on windows/doors, building, sidewalk, or elsewhere)? Large cigars (standardized_tobaccoassessment_retailsettings_advertising_cigars)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>14</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Which products are advertised outside the store (on windows/doors, building, sidewalk, or elsewhere)? Chew, moist or dry snuff, dip, or snus (standardized_tobaccoassessment_retailsettings_advertising_smokeless)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>15</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Which products are advertised outside the store (on windows/doors, building, sidewalk, or elsewhere)? Ecigarettes (standardized_tobaccoassessment_retailsettings_advertising_ecigarette)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>16</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>7. What type of store is this? (standardized_tobaccoassessment_retailsettings_store_type)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Convenience store with or without gas (e.g., 7-eleven, Exxon, Wawa)</meaningText>
+          <description>Convenience store with or without gas (e.g., 7-eleven, Exxon, Wawa)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Drug store/pharmacy (e.g., Walgreens, Rite Aid, Duane Reade)</meaningText>
+          <description>Drug store/pharmacy (e.g., Walgreens, Rite Aid, Duane Reade)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>3</value>
+          <meaningText>Beer, wine, or liquor store (e.g., ABC)</meaningText>
+          <description>Beer, wine, or liquor store (e.g., ABC)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>3</displayOrder>
+          <value>4</value>
+          <meaningText>Grocery store (e.g., small market/deli/produce market) or supermarket (e.g., Stop &amp; Shop, Harris Teeter, Albertson's)</meaningText>
+          <description>Grocery store (e.g., small market/deli/produce market) or supermarket (e.g., Stop &amp; Shop, Harris Teeter, Albertson's)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>4</displayOrder>
+          <value>5</value>
+          <meaningText>Mass merchandiser (e.g., WalMart, Costco, BJ's, Sam's Club) or discount store (e.g., Dollar General, Family Dollar)</meaningText>
+          <description>Mass merchandiser (e.g., WalMart, Costco, BJ's, Sam's Club) or discount store (e.g., Dollar General, Family Dollar)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>5</displayOrder>
+          <value>6</value>
+          <meaningText>Tobacco shop (e.g., Cigarettes Cheaper, cigar shops, hookah bars, e-cigarette shops, or other tobacco shops)</meaningText>
+          <description>Tobacco shop (e.g., Cigarettes Cheaper, cigar shops, hookah bars, e-cigarette shops, or other tobacco shops)</description>
+         </validValue>
+         <validValue>
+          <displayOrder>6</displayOrder>
+          <value>7</value>
+          <meaningText>Other; specify below</meaningText>
+          <description>Other; specify below</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>17</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>What type of store is this? (standardized_tobaccoassessment_retailsettings_store_typeother)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>18</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>8.  Are any tobacco products sold here (i.e., cigarettes, cigars, cigarillos/little cigars, chew, moist or dry snuff, dip, snus, or ecigarettes)? (standardized_tobaccoassessment_retailsettings_product_visibility)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes and visible to customers</meaningText>
+          <description>Yes and visible to customers</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Yes, but not visible to customers</meaningText>
+          <description>Yes, but not visible to customers</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>0</value>
+          <meaningText>No [STOP if focusing on tobacco retailers]</meaningText>
+          <description>No [STOP if focusing on tobacco retailers]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>19</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>9.  Does the store have a pharmacy counter? (standardized_tobaccoassessment_retailsettings_pharmacy_presence)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>20</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>10.  Are alcoholic beverages sold here? (standardized_tobaccoassessment_retailsettings_alcohol_sales)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>21</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>11. Does the store display a graphic health warning sign? (standardized_tobaccoassessment_retailsettings_health_warning)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>22</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>12.  Are any cigarettes sold here? (standardized_tobaccoassessment_retailsettings_sales_anycigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>23</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are menthol cigarettes sold here? (standardized_tobaccoassessment_retailsettings_sales_mentholcigarettes)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>24</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are any cigarettes (menthol or nonmenthol) within 12 inches of toys, candy, gum, slushy/soda machines, or ice cream? (standardized_tobaccoassessment_retailsettings_sales_cigaretteswithin)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>25</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Is there a cigarette ad (menthol or nonmenthol) within 3 feet of the floor? (standardized_tobaccoassessment_retailsettings_advertisement_placement)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>26</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there any cigarette price promotions? (standardized_tobaccoassessment_retailsettings_price_promotions)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>27</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there any menthol cigarette price promotions (standardized_tobaccoassessment_retailsettings_menthol_promotions)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>28</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>13. Are cigarillos/little cigars sold here? (standardized_tobaccoassessment_retailsettings_cigarillos)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>29</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are flavored cigarillos/little cigars sold here? (standardized_tobaccoassessment_retailsettings_cigarillos_flavored)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>30</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are single cigarillos/little cigars sold here? (standardized_tobaccoassessment_retailsettings_cigarillos_singles)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>31</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there cigarillos/little cigars advertised for less than $1? (standardized_tobaccoassessment_retailsettings_cigarillos_onedollar)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>32</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there cigarillos/little cigars products within 12 inches of toys, candy, gum, slushy/soda machines, or ice cream? (standardized_tobaccoassessment_retailsettings_cigarillos_placement)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>33</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there cigarillos/little cigars product ads within 3 feet of the floor? (standardized_tobaccoassessment_retailsettings_cigarillos_ad)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>34</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there cigarillos/little cigars selfservice displays? (standardized_tobaccoassessment_retailsettings_cigarillos_selfservice)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>35</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there cigarillos/little cigars price promotions? (standardized_tobaccoassessment_retailsettings_cigarillos_promotions)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>36</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>14. Are large cigars sold here? (standardized_tobaccoassessment_retailsettings_largecigars)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>37</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are flavored large cigars sold here? (standardized_tobaccoassessment_retailsettings_largecigars_flavored)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>38</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there large cigars products within 12 inches of toys, candy, gum, slushy/soda machines, or ice cream? (standardized_tobaccoassessment_retailsettings_largecigars_placement)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>39</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there large cigars product ads within 3 feet of the floor? (standardized_tobaccoassessment_retailsettings_largecigars_ad)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>40</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there large cigars selfservice displays? (standardized_tobaccoassessment_retailsettings_largecigars_selfservice)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>41</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>15.  Are chew, moist/dry snuff, dip, or snus sold here? (standardized_tobaccoassessment_retailsettings_smokeless)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>42</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are flavored chew, moist/dry snuff, dip, or snus sold here? (standardized_tobaccoassessment_retailsettings_smokeless_flavored)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>43</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there chew, moist/dry snuff, dip, or snus products within 12 inches of toys, candy, gum, slushy/soda machines, or ice cream? (standardized_tobaccoassessment_retailsettings_smokeless_placement)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>44</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there chew, moist/dry snuff, dip, or snus product ads within 3 feet of the floor? (standardized_tobaccoassessment_retailsettings_smokeless_ad)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>45</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there chew, moist/dry snuff, dip, or snus price promotions? (standardized_tobaccoassessment_retailsettings_smokeless_promotions)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>46</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there chew, moist/dry snuff, dip, or snus crossproduct promotions with cigarettes? (standardized_tobaccoassessment_retailsettings_smokeless_crossproduct)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>47</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>16.  Are ecigarettes sold here? (standardized_tobaccoassessment_retailsettings_ecigarette)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>48</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are flavored ecigarettes sold here? (standardized_tobaccoassessment_retailsettings_ecigarette_flavored)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>49</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there ecigarettes products within 12 inches of toys, candy, gum, slushy/soda machines, or ice cream? (standardized_tobaccoassessment_retailsettings_ecigarette_placement)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>50</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there ecigarettes product ads within 3 feet of the floor? (standardized_tobaccoassessment_retailsettings_ecigarette_ad)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>51</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there ecigarettes selfservice displays? (standardized_tobaccoassessment_retailsettings_ecigarette_selfservice)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>52</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there ecigarettes price promotions? (standardized_tobaccoassessment_retailsettings_ecigarette_promotions)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>53</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Are there ecigarettes crossproduct promotions with cigarettes? (standardized_tobaccoassessment_retailsettings_ecigarette_crossproduct)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>54</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>17a. Is WIC (i.e., food stamps, EBT) accepted here? (standardized_tobaccoassessment_retailsettings_foodstamps_wic)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>55</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>17b. Is SNAP (i.e., food stamps, EBT) accepted here? (standardized_tobaccoassessment_retailsettings_foodstamps_snap)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>56</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>18. Is the cheapest cigarette pack sold here? (standardized_tobaccoa2_acd)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No [If cigarettes not sold here, skip to Q20]</meaningText>
+          <description>No [If cigarettes not sold here, skip to Q20]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>57</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>What is the price of the cheapest cigarette pack? (standardized_tobaccoassessment_retailsettings_cheapest_price)</questionText>
+        <instruction>
+         <text>UOM=dollars</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>58</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Is sales tax included in the price? (standardized_tobaccoassessment_retailsettings_cheapest_salestax)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>59</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>How was the price obtained? (standardized_tobaccoassessment_retailsettings_cheapest_pricing)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Cashier provided price</meaningText>
+          <description>Cashier provided price</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Advertised price</meaningText>
+          <description>Advertised price</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>0</value>
+          <meaningText>Unable to determine (e.g., only cartons sold)</meaningText>
+          <description>Unable to determine (e.g., only cartons sold)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>60</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>19. Is a Newport menthol cigarette pack sold here? (standardized_tobaccoassessment_retailsettings_cheapest_sales)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No [If cigarettes not sold here, skip to Q20]</meaningText>
+          <description>No [If cigarettes not sold here, skip to Q20]</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>61</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>What is the price of the Newport Menthol cigarette pack? (standardized_tobaccoa2_9ec)</questionText>
+        <instruction>
+         <text>UOM=dollars</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>62</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Is sales tax included in the price? (standardized_tobaccoa2_e2e)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>63</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>How was the price obtained? (standardized_tobaccoa2_de1)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Cashier provided price</meaningText>
+          <description>Cashier provided price</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Advertised price</meaningText>
+          <description>Advertised price</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>0</value>
+          <meaningText>Unable to determine (e.g., only cartons sold)</meaningText>
+          <description>Unable to determine (e.g., only cartons sold)</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>64</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>20. Are Blu disposable ecigarettes sold here? (standardized_tobaccoassessment_retailsettings_newport_sales)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>65</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>What is the price of a Blu disposable ecigarette? (standardized_tobaccoassessment_retailsettings_newport_price)</questionText>
+        <instruction>
+         <text>UOM=dollars</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>66</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>Is sales tax included in the price? (standardized_tobaccoassessment_retailsettings_newport_salestax)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Yes</meaningText>
+          <description>Yes</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>0</value>
+          <meaningText>No</meaningText>
+          <description>No</description>
+         </validValue>
+               </question>
+       <question>
+        <isDerived>false</isDerived>
+        <displayOrder>67</displayOrder>
+        <dateCreated>2017-05-10T17:42:24</dateCreated>
+        <questionText>How was the price obtained? (standardized_tobaccoassessment_retailsettings_newport_pricing)</questionText>
+        <instruction>
+         <text>N/A</text>
+        </instruction>
+        <isEditable>No</isEditable>
+        <isMandatory>No</isMandatory>
+        <multiValue>No</multiValue>
+                 <validValue>
+          <displayOrder>0</displayOrder>
+          <value>1</value>
+          <meaningText>Cashier provided price</meaningText>
+          <description>Cashier provided price</description>
+         </validValue>
+         <validValue>
+          <displayOrder>1</displayOrder>
+          <value>2</value>
+          <meaningText>Advertised price</meaningText>
+          <description>Advertised price</description>
+         </validValue>
+         <validValue>
+          <displayOrder>2</displayOrder>
+          <value>0</value>
+          <meaningText>Sold here but price unavailable</meaningText>
+          <description>Sold here but price unavailable</description>
+         </validValue>
+               </question>
+           </module>
+        <protocol>
+     <protocolID>PX741001</protocolID>
+     <longName>Standardized Tobacco Assessment for Retail Settings</longName>
+     <context>PhenX</context>
+     <shortName>PX741001</shortName>
+     <preferredDefinition>The observational assessment from the Standardized Tobacco Assessment for Retail Settings (STARS) 1.0 survey includes 17 items for an observer to complete in stores that sell tobacco products, such as convenience stores, gas stations, supermarkets, and pharmacies.</preferredDefinition>
+    </protocol>
+   </form>         
+   </forms>
