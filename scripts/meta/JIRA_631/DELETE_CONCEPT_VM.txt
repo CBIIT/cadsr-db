@@ -1,0 +1,26 @@
+1.Check if VM exists for given CONCEPTS
+
+select * 
+from VALUE_MEANINGS where 
+CONDR_IDSEQ  in (select CONDR_IDSEQ from CON_DERIVATION_RULES_EXT where name like '%CONCEPT_PREFERRED_NAME%');
+
+if VM exists, first delete all records from other tables related to this VM:
+
+1.Delete from VD_PVS where PV_IDSEQ in (select PV_IDSEQ PERMISSIBLE_VALUES where VM_IDSEQ=’’);
+2.Delete from PERMISSIBLE_VALUES where VM_IDSEQ=;
+3.Delete from CD_VMS where VM_IDSEQ=;
+4.DeleteVALUE_DOMAINS 
+5.Delete from ADMINISTERED_COMPONENTS where public_id='VM_ID';
+6.Delete from VALUE_MEANINGS where 
+CONDR_IDSEQ  in (select CONDR_IDSEQ from CON_DERIVATION_RULES_EXT where name like '%CONCEPT_PREFERRED_NAME%');
+
+7.Delete from COMPONENT_CONCEPTS_EXT where 
+CONDR_IDSEQ  in (select CONDR_IDSEQ from CON_DERIVATION_RULES_EXT where name like '%CONCEPT_PREFERRED_NAME%');
+
+8.Delete from CON_DERIVATION_RULES_EXT where name like '%CONCEPT_PREFERRED_NAME%';
+
+8.Delete from ADMINISTERED_COMPONENTS where ACTL_NAME= ‘CONCEPT’ and PREFERRED_NAME= ‘CONCEPT_PREFERRED_NAME’;
+
+10.Delete from concepts_ext where preferred_name like '%XXXXX%';
+
+
