@@ -1,0 +1,204 @@
+SBR.action_maint$action
+738 l_ntom_butstr varchar2(2000) := VF_NTOM_BUT_CAPTION;
+1528 I_WHERE             varchar2(2000) := '';
+
+---------
+SBR.AC_ADM_NOTE_BRWS$AC
+362 l_ntom_butstr varchar2(2000) := VF_NTOM_BUT_CAPTION;
+702 I_WHERE             varchar2(2000) := '';
+
+---------------
+SBR.ac_adm_note_brws$doc
+504 l_ntom_butstr varchar2(2000) := VF_NTOM_BUT_CAPTION;
+
+----
+SBR.AC_ADM_NOTE_IRUD$AC
+362  l_ntom_butstr varchar2(2000) := VF_NTOM_BUT_CAPTION;
+702  I_WHERE             varchar2(2000) := '';
+------------------------
+
+SBR.ac_cont_brws$ac
+362  l_ntom_butstr varchar2(2000) := VF_NTOM_BUT_CAPTION;
+702  I_WHERE             varchar2(2000) := '';
+--------------------
+SBR.ac_cont_brws$cont
+SBR.ac_cont_irud$ac
+SBR.ac_cont_irud$cont
+SBR.ac_doc_brws$doc
+SBR.AC_DOC_DESC_BRWS$AC
+SBR.ac_doc_desc_brws$doc
+SBR.AC_DOC_DESC_IRUD$AC
+SBR.ac_doc_desc_irud$doc
+SBR.AC_DOC_DETL_BRWS$AC
+SBR.ac_doc_detl_brws$doc
+SBR.AC_DOC_DETL_IRUD$AC 
+SBR.ac_doc_detl_irud$doc
+SBR.AC_DOC_IRUD$AC
+SBR.ac_doc_irud$doc
+
+SBR.ac_doc_limit_brws$ac
+SBR.ac_doc_limit_brws$doc
+SBR.ac_doc_limit_irud$ac
+SBR.ac_doc_limit_irud$doc
+
+SBR.ac_doc_note_brws$ac
+SBR.ac_doc_note_brws$doc
+SBR.ac_doc_note_irud$ac
+ SBR.ac_doc_note_irud$doc
+ ----
+ AC_DOC_PUR_BRWS$AC
+ AC_DOC_PUR_BRWS$DOC
+ SBR.ac_doc_pur_irud$ac
+ SBR.ac_doc_pur_irud$doc
+ 
+ SBR.ac_history_rd$ach
+ SBR.AC_NOTE_BRWS$AC
+ SBR.ac_note_brws$doc
+ SBR.ac_note_irud$ac
+ SBR.ac_note_irud$doc
+
+SBR.ac_status_maint$ac_status
+SBR.ac_subj_brws$ac
+SBR.ac_subj_brws$subj
+SBR.ac_subj_irud$ac
+SBR.ac_subj_irud$subj
+SBR.ac_types_maint$actl
+SBR.character_set_maint$csl
+SBR.cm_states_maint$cm 
+SBR.comm_type_maint$comt
+SBR.CONTEXT_MAINT$CONTE
+SBR.cr_type_maint$crt
+SBR.Cscsi_Ac_Irud$ac_Csi
+SBR.cscsi_ac_irud$cscsi
+SBR."CSCSI_DETAIL_IRUD$CHILD"
+SBR.cscsi_detail_irud$cscsi
+SBR."CSCSI_DETAIL_IRUD$DETAIL"
+SBR.cscsi_detail_l1$cscsi
+SBR.cscsi_detail_l1$detail
+SBR.cscsi_de_brws$ac_csi 
+SBR.cscsi_de_brws$cscsi
+SBR.cscsi_de_irud$ac_csi
+SBR.cscsi_de_irud$cscsi
+--------
+
+L_ASL_DESCRIPTION   varchar2(2000)
+F_L_ASL_DESCRIPTION   varchar2(2000)
+l_ntom_butstr varchar2(2000) := VF_NTOM_BUT_CAPTION;
+I_WHERE             varchar2(2000) := '';
+
+SBR.admin_info_brws$adm_info
+SBR.admin_info_irud$adm_inf
+---------
+
+I_WHERE             varchar2(2000) := '';
+SBR.admin_info_irud$regis 
+--------------
+ l_ntom_butstr varchar2(2000) := VF_NTOM_BUT_CAPTION;
+ SBR.admin_info_irud$submit
+ SBR.admin_info_irud$usr
+ SBR.adm_info_r$adm_info
+ ----------------------------
+ I_PARAM_LIST varchar2(2000) := '?';
+ l_ntom_butstr varchar2(2000) := VF_NTOM_BUT_CAPTION;
+ I_WHERE             varchar2(2000) := '';
+ SBR.altdesc_brws$ac 
+  SBR.altdesc_brws$def
+  SBR.altname_brws$altname
+  -----------------------
+  type FORM_REC is record
+        (DESIG_IDSEQ         varchar2(216)
+        ,AC_IDSEQ            varchar2(216)
+        ,NAME                varchar2(2000)
+        ,DETL_NAME           varchar2(120)
+        ,CONTE_IDSEQ         varchar2(216)
+        ,L_CONTE_NAME        varchar2(180)
+        ,LAE_NAME            varchar2(180)
+        );
+  SBR.altname_brws$aname_detail
+  ----------------
+  VARCHAR2(2000
+  l_ntom_butstr varchar2(2000) := VF_NTOM_BUT_CAPTION; not in use
+  SBR.app_comp_type_maint$comp
+  SBR.app_grants_irud$grant 
+  SBR.app_objects_irud$grant
+  SBR.app_objects_irud$obj
+  SBR.app_obj_lov_maint$aol
+  SBR.app_priv_lov_maint$priv
+  SBR.app_role_lov_maint$roles
+  SBR.app_version_maint$version
+  SBR.cde_brws$cde
+  SBR.cde_brws$de
+  SBR.cde_irud$cde
+  SBR.cde_irud$de
+  SBR.cd_brws$cd
+  SBR.cd_dec_brws$cd
+  SBR.cd_dec_brws$cd_dec
+  SBR.cd_dec_ru$cd
+  SBR.cd_dec_ru$cd_dec
+  SBR.cd_fulltext_srch$cd
+  SBR.Cd_Irud$cd
+  SBR.cd_vd_brws$cd 
+  SBR.cd_vd_brws$cd_vd
+  SBR.cd_vd_ru$cd_vd
+  SBR.cd_vm_brws$cd
+  SBR.cd_vm_brws$cd_vms
+  SBR.cd_vm_irud$cd
+  SBR.cscsi_hier_irud$cs_csi
+  SBR.cscsi_insert$cscsi
+  SBR."CSCSI_INSERT$DETAIL"
+  ----------------------
+   l_ntom_butstr varchar2(2000) := VF_NTOM_BUT_CAPTION;  in use
+  SBR.cd_vm_irud$cd_vms
+  SBR.cscsi_hier_irud$cs_csi
+  SBR.cscsi_irud$cscsi_hier
+  SBR.cscsi_irud$cs_csi_view
+  ------------------------
+  L_RET_VALUE varchar2(20000) := null;
+   l_ntom_butstr varchar2(2000) := VF_NTOM_BUT_CAPTION;
+   
+   SBR.cd_basic_search$cdv
+   ----------------------
+   I_PARAM_LIST varchar2(2000) := '?';
+   l_ntom_butstr varchar2(2000) := VF_NTOM_BUT_CAPTION;
+   
+   SBR.cscsi_hier_irud$cs
+   SBR.cscsi_irud$cs
+   SBR.cscsi_level1$cs
+   
+   ------------------------------
+   L_RET_VALUE varchar2(20000) := null; in use
+   SBR.cs_basic_search$cs_basic
+   SBR.DEC_BASIC_SEARCH$DECV
+   SBR.De_Basic_Search$de
+   ------------
+   CREATE OR REPLACE package SBR.dec_adv_rpt$de is
+
+   type NBT_REC is record
+      ( L_CONTE_NAME        CONTEXTS_VIEW.NAME%type
+      , CD                  varchar2(32760)
+      , MB_COLUMN1          varchar2(32760)
+      , MB_COLUMN2          varchar2(32760)
+      , MB_COLUMN3          varchar2(32760)
+      , DO_COLUMN1          varchar2(32760)
+      , DO_COLUMN2          varchar2(32760)
+      , DO_COLUMN3          varchar2(32760)
+      , OUTPUT_FORMAT       varchar2(32760)
+      , RPT_COMMENTS        varchar2(32760)
+      );
+	  CREATE OR REPLACE package SBR.de_adv_rpt$de is
+
+   type NBT_REC is record
+      ( L_CONTE_NAME        CONTEXTS_VIEW.NAME%type
+      , L_DEC_PREFERRED_NAME DATA_ELEMENT_CONCEPTS_VIEW.PREFERRED_NAME%type
+      , L_VD_PREFERRED_NAME VALUE_DOMAINS_VIEW.PREFERRED_NAME%type
+      , REG_STATUS          varchar2(32760)
+      , REG_AUTHORITY       varchar2(32760)
+      , MB_COLUMN1          varchar2(32760)
+      , MB_COLUMN2          varchar2(32760)
+      , MB_COLUMN3          varchar2(32760)
+      , DO_COLUMN1          varchar2(32760)
+      , DO_COLUMN2          varchar2(32760)
+      , DO_COLUMN3          varchar2(32760)
+      , OUTPUT_FORMAT       varchar2(32760)
+      , RPT_COMMENTS        varchar2(32760)
+      );
