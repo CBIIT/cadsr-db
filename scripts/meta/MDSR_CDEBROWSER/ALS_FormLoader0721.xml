@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <forms>
+  <collectionName>ALS</collectionName>
+  <collectionDescription>ALS</collectionDescription>
+  <form>
+   <context>?</context>
+   <createdBy>dwarzel</createdBy>
+   <dateCreated>2018-07-21T12:39:35</dateCreated>
+   <longName>BSL_SYMP</longName>
+   <changeNote>Uploaded via FormLoader</changeNote>
+   <preferredDefinition>Adverse Baseline Symptoms</preferredDefinition>
+   <cadsrRAI>2.16.840.1.113883.3.26.2</cadsrRAI>
+   <version>1</version>
+   <workflowStatusName>DRAFT NEW</workflowStatusName>
+   <type>CRF</type>   
+    <module>
+     <displayOrder>0</displayOrder>
+     <maximumModuleRepeat>0</maximumModuleRepeat>
+     <createdBy>panh</createdBy>
+     <dateCreated>2018-07-21T12:39:35</dateCreated>
+     <longName>N/A</longName>
+     <preferredDefinition>No definition</preferredDefinition>
+    <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2.16.840.1.113883.3.26.2</dateCreated>
+       <questionText>PT_ELIG_CD_IND_24 ELIGIBILITY_CHECKLIST_24 - Criterion Response PID3298542_V1_0</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+	   <dataElement>
+            <longName>Patient Eligibility Confirmation Code Indicator</longName>
+            <shortName>PT_ELIG_CD_IND</shortName>
+            <publicID>3298542</publicID>
+            <version>1.0</version>
+            <context>CCR</context>
+            <workflowStatusName>RELEASED</workflowStatusName>
+            <preferredDefinition>Code that signifies whether an individual has met eligibility requirements for protocol enrollment.</preferredDefinition>
+            <valueDomain>
+             <longName>Yes No Not Applicable Code Indicator</longName>
+               <publicID>3298541</publicID>
+               <version>1.0</version>
+               <type>Enumerated</type>
+               <workflowStatusName>RELEASED</workflowStatusName>
+            ?   <datatypeName>CHARACTER</datatypeName>
+               <maximumLengthNumber>1</maximumLengthNumber>
+               <minimumLengthNumber>1</minimumLengthNumber>
+               <permissibleValue>			   
+                  <value>N</value>
+                  <valueMeaning>
+                     <publicID>3197154</publicID>
+                     <version>1.0</version>
+                     <longName>No</longName>
+					 <preferredDefinition>The non-affirmative response to a question.</preferredDefinition>
+                  </valueMeaning>
+               </permissibleValue>
+			    <permissibleValue>			   
+                  <value>Y</value>
+                  <valueMeaning>
+                     <publicID>2560453</publicID>
+                     <version>1.0</version>
+                     <longName>Yes</longName>
+					 <preferredDefinition>The affirmative response to a question or activity.</preferredDefinition>
+                  </valueMeaning>
+               </permissibleValue>
+			    <permissibleValue>			   
+                  <value>X</value>
+                  <valueMeaning>
+                     <publicID>2581003</publicID>
+                     <version>1.0</version>
+                     <longName>Not applicable</longName>
+					 <preferredDefinition>Determination of a value is not relevant in the current context.</preferredDefinition>
+                  </valueMeaning>
+               </permissibleValue>
+			</valueDomain>
+			<validValue>
+         <displayOrder>1</displayOrder>
+         <value>N</value>
+         <meaningText>No</meaningText>
+        </validValue>
+		<validValue>
+         <displayOrder>2</displayOrder>
+         <value>Y</value>
+         <meaningText>Yes</meaningText>
+        </validValue>
+		<validValue>
+         <displayOrder>3</displayOrder>
+         <value>X</value>
+         <meaningText>Not Applicable</meaningText>
+        </validValue>
+      </question>
+      <question>
+       <isDerived>false</isDerived>
+       <displayOrder>0</displayOrder>
+       <dateCreated>2.16.840.1.113883.3.26.2</dateCreated>
+       <questionText>ELIG_CRIT_TXT_25 ELIGIBILITY_CHECKLIST_25 - Eligibility Criteria PID2003989_V4_0</questionText>
+       <instruction/>
+       <isEditable>No</isEditable>
+       <isMandatory>No</isMandatory>
+       <multiValue>No</multiValue>
+	   <dataElement>
+            <longName>Eligibility Criteria Text</longName>
+            <shortName>ELIG_CRIT_TXT</shortName>
+            <publicID>2003989</publicID>
+            <version>4.0</version>
+            <context>CCR</context>
+            <workflowStatusName>RELEASED</workflowStatusName>
+            <preferredDefinition>The complete text of an individual question/criterion on the eligibility checklist of a protocol.</preferredDefinition>
+            <valueDomain>
+             <longName>Yes No Not Applicable Code Indicator</longName>
+               <publicID>3298541</publicID>
+               <version>1.0</version>
+               <type>Enumerated</type>
+               <workflowStatusName>RELEASED</workflowStatusName>
+            ?   <datatypeName>CHARACTER</datatypeName>
+               <maximumLengthNumber>1</maximumLengthNumber>
+               <minimumLengthNumber>1</minimumLengthNumber>
+               <permissibleValue>			   
+                  <value>N</value>
+                  <valueMeaning>
+                     <publicID>3197154</publicID>
+                     <version>1.0</version>
+                     <longName>No</longName>
+					 <preferredDefinition>The non-affirmative response to a question.</preferredDefinition>
+                  </valueMeaning>
+               </permissibleValue>
+			    <permissibleValue>			   
+                  <value>Y</value>
+                  <valueMeaning>
+                     <publicID>2560453</publicID>
+                     <version>1.0</version>
+                     <longName>Yes</longName>
+					 <preferredDefinition>The affirmative response to a question or activity.</preferredDefinition>
+                  </valueMeaning>
+               </permissibleValue>
+			    <permissibleValue>			   
+                  <value>X</value>
+                  <valueMeaning>
+                     <publicID>2581003</publicID>
+                     <version>1.0</version>
+                     <longName>Not applicable</longName>
+					 <preferredDefinition>Determination of a value is not relevant in the current context.</preferredDefinition>
+                  </valueMeaning>
+               </permissibleValue>
+			</valueDomain>
+			<validValue>
+         <displayOrder>1</displayOrder>
+         <value>N</value>
+         <meaningText>No</meaningText>
+        </validValue>
+		<validValue>
+         <displayOrder>2</displayOrder>
+         <value>Y</value>
+         <meaningText>Yes</meaningText>
+        </validValue>
+		<validValue>
+         <displayOrder>3</displayOrder>
+         <value>X</value>
+         <meaningText>Not Applicable</meaningText>
+        </validValue>
+      </question>  
+	  
+	  
+	  
+         </module>
+   </form>
+ </forms>
