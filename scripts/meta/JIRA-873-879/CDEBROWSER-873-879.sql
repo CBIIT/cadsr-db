@@ -92,6 +92,8 @@ GRANT EXECUTE, DEBUG ON DE_VALID_VALUE_T_MDSR TO CDEBROWSER
 /
 GRANT EXECUTE, DEBUG ON DE_VALID_VALUE_T_MDSR TO DER_USER
 /
+GRANT EXECUTE, DEBUG ON DE_VALID_VALUE_T_MDSR TO READONLY
+/
 GRANT EXECUTE, DEBUG ON DE_VALID_VALUE_T_MDSR TO SBR WITH GRANT OPTION
 /
 CREATE OR REPLACE PUBLIC SYNONYM DE_VALID_VALUE_LIST_T_MDSR FOR DE_VALID_VALUE_LIST_T_MDSR
@@ -100,6 +102,8 @@ GRANT EXECUTE, DEBUG ON DE_VALID_VALUE_LIST_T_MDSR TO CDEBROWSER
 /
 GRANT EXECUTE, DEBUG ON DE_VALID_VALUE_LIST_T_MDSR TO DER_USER
 /
+GRANT EXECUTE, DEBUG ON DE_VALID_VALUE_LIST_T_MDSR TO READONLY
+/
 GRANT EXECUTE, DEBUG ON DE_VALID_VALUE_LIST_T_MDSR TO SBR WITH GRANT OPTION
 /
 CREATE OR REPLACE PUBLIC SYNONYM CDEBROWSER_VD_T_MDSR FOR CDEBROWSER_VD_T_MDSR
@@ -107,6 +111,8 @@ CREATE OR REPLACE PUBLIC SYNONYM CDEBROWSER_VD_T_MDSR FOR CDEBROWSER_VD_T_MDSR
 GRANT EXECUTE, DEBUG ON CDEBROWSER_VD_T_MDSR TO CDEBROWSER
 /
 GRANT EXECUTE, DEBUG ON CDEBROWSER_VD_T_MDSR TO DER_USER
+/
+GRANT EXECUTE, DEBUG ON CDEBROWSER_VD_T_MDSR TO READONLY
 /
 GRANT EXECUTE, DEBUG ON CDEBROWSER_VD_T_MDSR TO SBR WITH GRANT OPTION
 /
@@ -250,15 +256,15 @@ CREATE OR REPLACE FORCE VIEW SBREXT.DE_CDE1_XML_GENERATOR_VIEW (DE_IDSEQ, PUBLIC
                                     SBREXT.sbrext_common_routines.get_concepts (
                                        vm.condr_idseq
                                     )
-                                       MeaningConcepts,                                   
+                                       MeaningConcepts,
                                     replace(SBREXT.sbrext_common_routines.get_condr_origin (
                                        vm.condr_idseq
                                     ),':',',')
-                                       MeaningConceptOrigin, 
+                                       MeaningConceptOrigin,
                                     SBREXT.MDSR_CDEBROWSER.get_concept_order(
                                        vm.condr_idseq
                                     )
-                                       MeaningConceptDisplayOrder, 									   
+                                       MeaningConceptDisplayOrder,
                                     vp.begin_date,
                                     vp.end_date,
                                     vm.vm_id,
@@ -373,5 +379,3 @@ GRANT SELECT ON DE_CDE1_XML_GENERATOR_VIEW TO UMLLOADER_COOPERM
 GRANT DELETE, INSERT, REFERENCES, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK ON DE_CDE1_XML_GENERATOR_VIEW TO SBR WITH GRANT OPTION
 /
 SPOOL OFF
-
-
