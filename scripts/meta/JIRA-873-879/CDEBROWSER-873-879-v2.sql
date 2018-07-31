@@ -3,6 +3,7 @@ SPOOL CDEBROWSER-879.log
 CREATE OR REPLACE package SBREXT.MDSR_CDEBROWSER is
 
 FUNCTION get_concept_order(p_condr_idseq in varchar2) return varchar2;
+FUNCTION get_condr_origin(p_condr_idseq in varchar2) return varchar2;
 end MDSR_CDEBROWSER;
 /
 CREATE OR REPLACE package body SBREXT.MDSR_CDEBROWSER is
@@ -23,7 +24,7 @@ for c_rec in con loop
 
 if v_order_sq is null then
   v_order_sq := c_rec.display_order;
- 
+
 else
    v_order_sq := v_order_sq||','||c_rec.display_order;
 
@@ -34,6 +35,40 @@ end loop;
 return v_order_sq;
 
 end get_concept_order;
+
+FUNCTION get_condr_origin(p_condr_idseq in varchar2) return varchar2 is
+cursor con is
+select origin,display_order
+from sbrext.component_Concepts_ext m, sbrext.concepts_ext c
+where condr_idseq = p_condr_idseq
+and m.con_idseq = c.con_idseq
+order by display_order desc;
+
+v_origin varchar2(2000):=null;
+V_cnt number:=0;
+i number:=0;
+
+begin
+
+select max(display_order) into V_cnt
+from sbrext.component_Concepts_ext m, sbrext.concepts_ext c
+where condr_idseq = p_condr_idseq
+and m.con_idseq = c.con_idseq
+order by display_order desc;
+
+for c_rec in con loop
+
+if c_rec.display_order>0 then
+  v_origin := v_origin||c_rec.origin||',';
+else
+  v_origin := v_origin||c_rec.origin;
+end if;
+
+end loop;
+
+return v_origin;
+end;
+
 end MDSR_CDEBROWSER;
 /
 CREATE OR REPLACE PUBLIC SYNONYM MDSR_CDEBROWSER FOR SBREXT.MDSR_CDEBROWSER
@@ -299,10 +334,9 @@ CREATE OR REPLACE FORCE VIEW SBREXT.DE_CDE1_XML_GENERATOR_VIEW (DE_IDSEQ, PUBLIC
                                        vm.condr_idseq
                                     )
                                        MeaningConcepts,
-                                    replace(SBREXT.sbrext_common_routines.get_condr_origin (
-                                       vm.condr_idseq
-                                    ),':',',')
-                                       MeaningConceptOrigin,
+                                     SBREXT.MDSR_CDEBROWSER.get_concept_order (
+                                     vm.condr_idseq)
+                                     MeaningConceptDisplayOrder,
                                     SBREXT.MDSR_CDEBROWSER.get_concept_order(
                                        vm.condr_idseq
                                     )
