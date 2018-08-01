@@ -327,9 +327,9 @@ CREATE OR REPLACE FORCE VIEW SBREXT.DE_CDE1_XML_GENERATOR_VIEW (DE_IDSEQ, PUBLIC
                                        vm.condr_idseq
                                     )
                                        MeaningConcepts,
-                                     SBREXT.MDSR_CDEBROWSER.get_concept_order (
+                                     SBREXT.MDSR_CDEBROWSER.get_condr_origin(
                                      vm.condr_idseq)
-                                     MeaningConceptDisplayOrder,
+                                     MeaningConceptOrigin,
                                     SBREXT.MDSR_CDEBROWSER.get_concept_order(
                                        vm.condr_idseq
                                     )
