@@ -45,16 +45,9 @@ and m.con_idseq = c.con_idseq
 order by display_order desc;
 
 v_origin varchar2(2000):=null;
-V_cnt number:=0;
-i number:=0;
 
 begin
 
-select max(display_order) into V_cnt
-from sbrext.component_Concepts_ext m, sbrext.concepts_ext c
-where condr_idseq = p_condr_idseq
-and m.con_idseq = c.con_idseq
-order by display_order desc;
 
 for c_rec in con loop
 
