@@ -22,7 +22,7 @@ where DE_IDSEQ=i.DE_IDSEQ;
   EXCEPTION
     WHEN OTHERS THEN
         errmsg := SQLERRM;
-        dbms_output.put_line('errmsg2 - '||errmsg);    
+        dbms_output.put_line('errmsg2 - '||errmsg||', '||' cde_id, version:'||i.cde_id||'v'||i.version);    
         raise_application_error(-20000, SQLCODE);          
  end;
   end loop;
