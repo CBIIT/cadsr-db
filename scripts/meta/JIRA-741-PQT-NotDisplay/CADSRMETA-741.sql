@@ -17,6 +17,8 @@ begin
 UPDATE SBR.DATA_ELEMENTS set QUESTION=NULL
 where DE_IDSEQ=i.DE_IDSEQ;
 
+commit;
+dbms_output.put_line('cde_id, version:'||i.cde_id||'v'||i.version); 
   EXCEPTION
     WHEN OTHERS THEN
         errmsg := SQLERRM;
@@ -24,8 +26,6 @@ where DE_IDSEQ=i.DE_IDSEQ;
         raise_application_error(-20000, SQLCODE||', '||' cde_id, version:'||i.cde_id||'v'||i.version);          
  end;
   end loop;
-
-commit;
 
 END MDSR_CLEAN_DE_QUEST;
 /
