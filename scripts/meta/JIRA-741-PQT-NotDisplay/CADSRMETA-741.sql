@@ -1,6 +1,6 @@
 set serveroutput on size 1000000
 SPOOL cadsrmeta-741.log
-CREATE OR REPLACE PROCEDURE SBREXT.MDSR_CLEAN_DE_QUEST AS
+CREATE OR REPLACE PROCEDURE SBR.MDSR_CLEAN_DE_QUEST AS
 cursor C_DE is
  select  cde_id, version, ASL_NAME, latest_version_ind, DE_IDSEQ, Question 
 from sbr.data_elements ,
@@ -31,16 +31,18 @@ commit;
 
 END MDSR_CLEAN_DE_QUEST;
 /
-CREATE OR REPLACE TRIGGER MDSR_RD_AFTER_DELETE
+execute sbr.MDSR_CLEAN_DE_QUEST
+/
+CREATE OR REPLACE TRIGGER sbr.MDSR_RD_AFTER_DELETE
 AFTER DELETE
-   ON REFERENCE_DOCUMENTS
+   ON sbr.REFERENCE_DOCUMENTS
    FOR EACH ROW
 
 DECLARE
 errmsg VARCHAR2(2000):='';
 BEGIN
 
-   update data_elements
+   update sbr.data_elements
    set question = null
    where de_idseq = :old.ac_idseq
    and :old.DCTL_NAME='Preferred Question Text'
