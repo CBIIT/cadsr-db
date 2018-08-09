@@ -11,9 +11,7 @@ and AC_IDSEQ is null;
 
 errmsg VARCHAR2(2000):='';
 BEGIN
-
 for i in C_DE loop
-
 begin
 
 UPDATE SBR.DATA_ELEMENTS set QUESTION=NULL
