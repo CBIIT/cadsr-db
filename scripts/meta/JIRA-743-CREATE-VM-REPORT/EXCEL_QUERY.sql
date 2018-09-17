@@ -1,4 +1,4 @@
-SELECT distinct  csv.preferred_name CLASSIFICATION,CDE_id||'v'||de.version DE_ID ,DE.LONG_NAME DE_LONG_NAME,VD_ID||'v'||VD.VERSION VD_ID,PV.VALUE PV,VM_ID||'v'||VM.VERSION VM_ID,VM.LONG_NAME VM_LONG_NAME,ALT_NAME, LAE_NAME,DETL_NAME,ALT_CONTEXT
+SELECT distinct  csv.preferred_name CLASSIFICATION,CDE_id||'v'||de.version DE_ID ,DE.LONG_NAME DE_LONG_NAME,VD_ID||'v'||VD.VERSION VD_ID,PV.VALUE PV,VM_ID||'v'||VM.VERSION VM_ID,VM.LONG_NAME VM_LONG_NAME,AlternateName, LAE_Language,AlternateName_type,AlternateName_CONTEXT
                                                  
                   FROM sbrext.cdebrowser_cs_view csv,
                   sbr.VALUE_DOMAINS vd,
