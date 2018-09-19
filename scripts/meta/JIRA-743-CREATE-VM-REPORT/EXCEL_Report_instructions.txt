@@ -1,0 +1,128 @@
+
+Requested Report will display data for CDEs with matching conditions:
+1.Owned by PCORI CDM context
+2. VD is enumerated
+3.classified by any of the following CS:
+ACT Network CDM 1.4
+PCORnet CDM 4.0
+OMOP
+Sentinel CDM 6.02
+
+The EXCEL report consists of 3 data worksheets
+1.DE and VM used in 4 models
+2.List of CDEs used in 4 models
+3.List of VMs used in 4 models
+
+Process To create EXCEL file with one worksheets.
+Queries placed bellow all instructions.
+Let’s do it for the worksheet “DE and VM used in 4 models”
+
+1.Execute SQL Query#1 in ORACLE SQL DEVELOPER to display CEI/VD/PV/VM/ALT data of the requested report.
+2.In the results Query result pane , highlight all columns the records, 
+and then right-click the top-left cell and click "Export". 
+3.In the Export Data section, select the Format Excel 2003+ (xlsx) from the drop-down menu.
+4.In the Data Worksheet Name, give the name for the worksheet (this is optional).
+5.In the File section, specify the file location and name(DE_VD_VM_ALT_NAME_mmDDYYY), you can use the Browse button.
+6.Click on Next button.
+7.Click on the Finish button and your data will be exported to the specified location.
+
+8.Open DE_VD_VM_ALT_NAME_mmDDYYY.xlsx
+9. Remove duplicate values but keep first instance in columns:
+    A: CLASSIFICATION, 
+    B: DE_ID 
+    C: DE_LONG_NAME
+    D: VD_ID
+    E:PV
+    F: VM_ID
+    G: VM_LONG_NAME
+
+Process to remove duplicate values but keep first instance in column:
+
+ 1.add 2 blank columns next to column A  (column B and column C)
+ 2. place function =IF(A2="","",IF(COUNTIF($A1:A2,A2)=1,A2,""))   in cell B2
+ 3. Afterwards, apply the formula to the entire column by dragging it down
+ 4.copy data from column  B to C 
+ 5.delete column A and B
+
+Query#1
+SQL Query to display CEI/VD/PV/VM/ALT data of the requested report(“DE and VM used in 4 models”)
+SELECT distinct  csv.preferred_name CLASSIFICATION,CDE_id||'v'||de.version DE_ID ,
+DE.LONG_NAME DE_LONG_NAME,VD_ID||'v'||VD.VERSION VD_ID,PV.VALUE PV,VM_ID||'v'||VM.VERSION VM_ID,
+VM.LONG_NAME VM_LONG_NAME,
+AlternateName, LAE_NAME AlternateName_Language,DETL_NAME AlternateName_type, AlternateName_CONTEXT                                                 
+FROM sbrext.cdebrowser_cs_view csv,
+sbr.VALUE_DOMAINS vd,
+sbr.VALUE_MEANINGS vm,
+SBR.data_elements de ,
+sbr.permissible_values pv,
+sbr.vd_pvs vp,
+(  select ds.ac_IDSEQ,ds.name   AlternateName, ds.LAE_NAME,DETL_NAME,c.NAME AlternateName_CONTEXT                                                 
+from  sbr.designations ds,
+sbrext.contexts c
+where c.CONTE_IDSEQ=ds.CONTE_IDSEQ)des
+WHERE     vp.vd_idseq = vd.vd_idseq
+AND vp.pv_idseq = pv.pv_idseq
+AND pv.vm_idseq = vm.vm_idseq
+and  de.CONTE_IDSEQ='6CB969CC-DD4B-1016-E053-F662850A40C7'
+and de.de_idseq = csv.ac_idseq
+and vd.VD_IDSEQ=DE.VD_IDSEQ
+and vm.VM_IDSEQ=des.ac_IDSEQ(+)
+and VD_TYPE_FLAG='E'
+and csv.preferred_name<>'CDMH 1.0'
+order by 1,DE_id,VD_ID
+
+Query#2
+SQL Query to display CDE data for tab “List of CDEs used in 4 models”
+SELECT distinct  csv.preferred_name CLASSIFICATION,CDE_id||'v'||de.version DE_ID ,
+DE.LONG_NAME DE_LONG_NAME 
+FROM sbrext.cdebrowser_cs_view csv,
+sbr.VALUE_DOMAINS vd,
+sbr.VALUE_MEANINGS vm,
+SBR.data_elements de ,
+sbr.permissible_values pv,
+sbr.vd_pvs vp,
+(  select ds.ac_IDSEQ,ds.name   AlternateName, ds.LAE_NAME,DETL_NAME,c.NAME AlternateName_CONTEXT
+                                                 
+from  sbr.designations ds,
+sbrext.contexts c
+where c.CONTE_IDSEQ=ds.CONTE_IDSEQ)des
+WHERE     vp.vd_idseq = vd.vd_idseq
+AND vp.pv_idseq = pv.pv_idseq
+AND pv.vm_idseq = vm.vm_idseq
+and  de.CONTE_IDSEQ='6CB969CC-DD4B-1016-E053-F662850A40C7'
+and de.de_idseq = csv.ac_idseq
+and vd.VD_IDSEQ=DE.VD_IDSEQ
+and vm.VM_IDSEQ=des.ac_IDSEQ(+)
+and VD_TYPE_FLAG='E'
+and csv.preferred_name<>'CDMH 1.0'
+order by 1,DE_id
+
+Query#3
+SQL Query to display VM/ALT data for tab “List of VMs used in 4 models”
+
+SELECT distinct  
+VM_ID||'v'||VM.VERSION VM_ID,VM.LONG_NAME VM_LONG_NAME,AlternateName,
+LAE_NAME AlternateName_Language,DETL_NAME AlternateName_type, AlternateName_CONTEXT                                                 
+FROM sbrext.cdebrowser_cs_view csv,
+sbr.VALUE_DOMAINS vd,
+sbr.VALUE_MEANINGS vm,
+SBR.data_elements de ,
+sbr.permissible_values pv,
+sbr.vd_pvs vp,
+(  select ds.ac_IDSEQ,ds.name   AlternateName, ds.LAE_NAME,DETL_NAME,c.NAME AlternateName_CONTEXT                                                 
+from  sbr.designations ds,
+sbrext.contexts c
+where c.CONTE_IDSEQ=ds.CONTE_IDSEQ)des
+WHERE     vp.vd_idseq = vd.vd_idseq
+AND vp.pv_idseq = pv.pv_idseq
+AND pv.vm_idseq = vm.vm_idseq
+and  de.CONTE_IDSEQ='6CB969CC-DD4B-1016-E053-F662850A40C7'
+and de.de_idseq = csv.ac_idseq
+and vd.VD_IDSEQ=DE.VD_IDSEQ
+and vm.VM_IDSEQ=des.ac_IDSEQ(+)
+and VD_TYPE_FLAG='E'
+and csv.preferred_name<>'CDMH 1.0'
+order by VM_id
+
+
+
