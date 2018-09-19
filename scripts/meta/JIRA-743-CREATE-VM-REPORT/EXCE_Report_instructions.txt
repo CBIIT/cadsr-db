@@ -15,16 +15,19 @@ The EXCEL report consists of 3 data worksheets
 
 Process To create EXCEL file with one worksheets.
 Queries placed bellow all instructions.
-Let’s do it for worksheet “DE and VM used in 4 models”
+Let’s do it for the worksheet “DE and VM used in 4 models”
 
 1.Execute SQL Query#1 in ORACLE SQL DEVELOPER to display CEI/VD/PV/VM/ALT data of the requested report.
-2.In the results Query result, highlight all columns the records, 
+2.In the results Query result pane , highlight all columns the records, 
 and then right-click the top-left cell and click "Export". 
-One of the export Format options is “excel 2003+(xlsx)”.
-3.Enter data worksheet name “DE and VM used in 4 models”
-Find directory where you want to place file and save it with name DE_VD_VM_ALT_NAME_mmDDYYY
-4.Open DE_VD_VM_ALT_NAME_mmDDYYY.xlsx
-5. Remove duplicate values but keep first instance in columns:
+3.In the Export Data section, select the Format Excel 2003+ (xlsx) from the drop-down menu.
+4.In the Data Worksheet Name, give the name for the worksheet (this is optional).
+5.In the File section, specify the file location and name(DE_VD_VM_ALT_NAME_mmDDYYY), you can use the Browse button.
+6.Click on Next button.
+7.Click on the Finish button and your data will be exported to the specified location.
+
+8.Open DE_VD_VM_ALT_NAME_mmDDYYY.xlsx
+9. Remove duplicate values but keep first instance in columns:
     A: CLASSIFICATION, 
     B: DE_ID 
     C: DE_LONG_NAME
