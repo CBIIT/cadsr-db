@@ -32,9 +32,9 @@ AS
             AND P.LONG_NAME = 'NCI Standard Template Forms'
    ORDER BY MODULE_ORDER,            
             CDE_ID,
-            DE.VERSION  ;
-			/
-
+            DE.VERSION  
+	    
+/
 
 CREATE OR REPLACE TYPE CDE_MODE_RECORD_TYPE AS OBJECT
 ( 
@@ -45,8 +45,7 @@ CREATE OR REPLACE TYPE CDE_MODE_RECORD_TYPE AS OBJECT
       MODE_ORDER number(1)
 );
 
-create or replace type CDE_MODE_TABLE_TYPE as table of CDE_MODE_RECORD_TYPE; 
-////
+create or replace type CDE_MODE_TABLE_TYPE as table of CDE_MODE_RECORD_TYPE/
 create or replace package MDSR_CDE_595_PKG 
  as 
     TYPE CDE_REC IS RECORD
@@ -66,7 +65,8 @@ IS
       LONG_NAME       SBR.DATA_ELEMENTS.LONG_NAME%TYPE,
       MODE_TYPE      varchar2(50),
       MODE_ORDER number(1)
-       );
+       )
+/
 
 TYPE CDE_SET_OUT  IS
       REF  CURSOR   RETURN CDE_REC_OUT;
@@ -76,9 +76,8 @@ TYPE CDE_SET_OUT  IS
                       p_recordset OUT CDE_SET_OUT );  
 
   
-  end; 
-///
-
+  end
+  /
 create or replace package body MDSR_CDE_595_PKG 
  as 
  procedure CDE_report( p_inputs IN OUT  CDEArray ) 
