@@ -45,7 +45,7 @@ BEGIN
    where de_idseq = :old.ac_idseq
    and :old.DCTL_NAME='Preferred Question Text'
    and QUESTION=:old.DOC_TEXT;
-   
+   commit;
    EXCEPTION
     WHEN OTHERS THEN 
      DBMS_OUTPUT.PUT_LINE('ErrorCode: '||SQLCODE||', de_idseq:'||:old.ac_idseq);
