@@ -35,8 +35,8 @@ CREATE OR REPLACE TRIGGER sbr.MDSR_RD_AFTER_DELETE
 AFTER DELETE
    ON sbr.REFERENCE_DOCUMENTS
    FOR EACH ROW
-
-
+declare
+errmsg VARCHAR2(2000):='';
 BEGIN
 
    update sbr.data_elements
@@ -46,8 +46,9 @@ BEGIN
    and QUESTION=:old.DOC_TEXT;
    
    EXCEPTION
-    WHEN OTHERS THEN    
-   raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
+    WHEN OTHERS THEN  
+    errmsg := 'An error was encountered when attempting to delete reference docoment for rd_idseq - '||:old.rd_idseq||'. ORA-'||SQLCODE||'-'||substr(SQLERRM,1,500) ;	
+   raise_application_error(-20001,errmsg);
 
 END;
 /
