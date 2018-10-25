@@ -47,7 +47,7 @@ BEGIN
    
    EXCEPTION
     WHEN OTHERS THEN  
-    errmsg := 'An error was encountered when attempting to delete reference docoment for rd_idseq - '||:old.rd_idseq||'. ORA-'||SQLCODE||'-'||substr(SQLERRM,1,500) ;	
+    errmsg := 'An error was encountered when attempting to delete reference document for rd_idseq - '||:old.rd_idseq||'. ORA-'||SQLCODE||'-'||substr(SQLERRM,1,500) ;	
    raise_application_error(-20001,errmsg);
 
 END;
