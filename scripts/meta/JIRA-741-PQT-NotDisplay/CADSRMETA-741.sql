@@ -23,7 +23,7 @@ dbms_output.put_line('cde_id, version:'||i.cde_id||'v'||i.version);
     WHEN OTHERS THEN
         errmsg := SQLERRM;
         dbms_output.put_line('errmsg - '||errmsg||', '||' cde_id, version:'||i.cde_id||'v'||i.version);    
-        raise_application_error(-20000, SQLCODE||', '||' cde_id, version:'||i.cde_id||'v'||i.version);          
+        raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);          
  end;
   end loop;
 
@@ -36,8 +36,7 @@ AFTER DELETE
    ON sbr.REFERENCE_DOCUMENTS
    FOR EACH ROW
 
-DECLARE
-errmsg VARCHAR2(2000):='';
+
 BEGIN
 
    update sbr.data_elements
@@ -45,11 +44,10 @@ BEGIN
    where de_idseq = :old.ac_idseq
    and :old.DCTL_NAME='Preferred Question Text'
    and QUESTION=:old.DOC_TEXT;
-   commit;
+   
    EXCEPTION
-    WHEN OTHERS THEN 
-     DBMS_OUTPUT.PUT_LINE('ErrorCode: '||SQLCODE||', de_idseq:'||:old.ac_idseq);
-    raise_application_error(-20000, SQLCODE||', de_idseq:'||:old.ac_idseq);
+    WHEN OTHERS THEN    
+   raise_application_error(-20001,'An error was encountered - '||SQLCODE||' -ERROR- '||SQLERRM);
 
 END;
 /
