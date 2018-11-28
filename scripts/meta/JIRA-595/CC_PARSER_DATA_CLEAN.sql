@@ -1,5 +1,5 @@
 set serveroutput on size 1000000
-SPOOL CCHECKER-595cl.log
+SPOOL CC-FORMBUILD-595-Clean.log
 
 CREATE TABLE SBREXT.MDSR_PROC_ERR_LOG
 (
@@ -29,20 +29,19 @@ BEGIN
 
 for i in C_PD loop
 
-begin
+  begin
 
-delete from SBREXT.CC_PARSER_DATA  where CCHECKER_IDSEQ=i.CCHECKER_IDSEQ;
-commit;
+  delete from SBREXT.CC_PARSER_DATA  where CCHECKER_IDSEQ=i.CCHECKER_IDSEQ;
+  commit;
 
   EXCEPTION
     WHEN OTHERS THEN
         errmsg := SQLCODE||'-'||substr(SQLERRM,1,200);
          insert into SBREXT.MDSR_PROC_ERR_LOG VALUES('SBREXT.CC_PARSER_DATA_CLEAN','SBREXT.CC_PARSER_DATA',i.CCHECKER_IDSEQ, sysdate ,errmsg);
      commit;
-        dbms_output.put_line('errmsg - CCHECKER_IDSEQ:'||i.CCHECKER_IDSEQ||':'||errmsg);
-        raise_application_error(-20000, 'errmsg - CCHECKER_IDSEQ:'||i.CCHECKER_IDSEQ||':'||errmsg);
+  
  end;
-  end loop;
+end loop;
 
 commit;
 
