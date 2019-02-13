@@ -1,0 +1,87 @@
+SELECT de.cde_id,de.version,de.preferred_name,de.long_name,
+             vd.vd_id,
+             vd.preferred_name,
+             vd.preferred_definition,
+             vd.long_name,
+             vd.version,
+             vd.asl_name,
+             CAST (
+                             MULTISET (
+                                SELECT des_conte.name,
+                                       des_conte.version,
+                                     des.name,
+                                       des.detl_name,
+                                       des.lae_name
+                                  FROM sbr.designations des,
+                                       sbr.contexts des_conte
+                                 WHERE de.de_idseq = des.AC_IDSEQ(+)
+                                       AND des.conte_idseq =  des_conte.conte_idseq(+)
+                                 ) AS cdebrowser_altname_list_t)      "AlternateNameList",
+             CAST (
+                                              MULTISET (
+                                                 SELECT rd.name,
+                                                        rd.DCTL_NAME,
+                                                        c2.name,
+                                                        rd.doc_text,
+                                                        rd.LAE_NAME,
+                                                        rd.url,
+                                                        MDSR_FB_RD_ATTACH_XML_T1 (
+                                                           rb.name,
+                                                           rb.MIME_TYPE,
+                                                           rb.doc_size)
+                                                   FROM SBR.REFERENCE_DOCUMENTS rd,
+                                                        SBR.contexts c2,
+                                                        SBR.REFERENCE_BLOBS RB
+                                                  WHERE     RD.RD_IDSEQ =
+                                                               RB.RD_IDSEQ(+)
+                                                        AND c2.CONTE_IDSEQ =
+                                                               rd.CONTE_IDSEQ
+                                                        AND rd.ac_idseq =
+                                                               vd.vd_idseq) AS MDSR_FB_RD_XML_LIST_T1)"REF_DOC",
+             CAST (
+                MULTISET (
+                   SELECT pv.VALUE,
+                          pv.short_meaning,
+                          vm.VM_ID  ,
+                         Vm.Version,
+                          CAST (
+                             MULTISET (
+                                SELECT des_conte.name,
+                                       des_conte.version,
+                                     des.name,
+                                       des.detl_name,
+                                       des.lae_name
+                                  FROM sbr.designations des,
+                                       sbr.contexts des_conte
+                                 WHERE vm.vm_idseq = des.AC_IDSEQ(+)
+                                       AND des.conte_idseq =  des_conte.conte_idseq(+)
+                                 ) AS cdebrowser_altname_list_t)      "AlternateNameList"
+                     FROM sbr.permissible_values pv,
+                          sbr.vd_pvs vp,
+                          value_meanings vm
+                    WHERE     vp.vd_idseq = vd.vd_idseq
+                          AND vp.pv_idseq = pv.pv_idseq
+                          AND pv.vm_idseq = vm.vm_idseq) AS DE_VALID_VALUE_DESIG_TP_LIST) "PERM_VAL"
+             
+     FROM sbr.data_elements de,
+          sbrext.cdebrowser_de_dec_view dec,
+          sbr.contexts de_conte,
+          sbr.value_domains vd,
+          sbr.contexts vd_conte,
+          sbr.contexts cd_conte,
+          sbr.conceptual_domains cd,
+          sbr.ac_registrations ar,
+          cdebrowser_complex_de_view ccd,
+          sbrext.representations_ext rep,
+          sbr.contexts rep_conte
+    WHERE     de.de_idseq = dec.de_idseq
+          AND de.conte_idseq = de_conte.conte_idseq
+          AND de.vd_idseq = vd.vd_idseq
+          AND vd.conte_idseq = vd_conte.conte_idseq
+          AND vd.cd_idseq = cd.cd_idseq
+          AND cd.conte_idseq = cd_conte.conte_idseq
+          AND de.de_idseq = ar.ac_idseq(+)
+          AND de.de_idseq = ccd.p_de_idseq(+)
+          AND vd.rep_idseq = rep.rep_idseq(+)
+          AND rep.conte_idseq = rep_conte.conte_idseq(+)
+         ;
