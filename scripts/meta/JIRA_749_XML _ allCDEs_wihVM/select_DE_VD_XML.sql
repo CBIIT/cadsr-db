@@ -5,7 +5,7 @@ select
                                        dec.version 
                                        from
                                 SBR.DATA_ELEMENT_CONCEPTS DEC           
-                            WHERE   de.dec_idseq = dec.dec_idseq   
+                            WHERE   de.dec_idseq = dec.dec_idseq   (+)
                                       
                                  ) AS MDSR_DEC_XML_LIST_T) ,
         CAST (
@@ -73,3 +73,28 @@ select
           
           
           select*from sbr.value_domains where vd_id= 2016566;
+          
+          select*from MDSR_CDE_XML_VIEW
+          
+          select*from  sbr.contexts
+          
+          
+          select count(*)from sbr.data_elements d, sbr.contexts de_conte
+          where d.ASL_NAME not in( '%RETIRED WITHDRAWN%','RETIRED DELETED' )
+         and d.conte_idseq = de_conte.conte_idseq AND  
+          name='NCIP'
+          
+          SELECT dbms_xmlgen.getxml( 'select*from  MDSR_CDE_XML_VIEW')
+        
+        FROM DUAL ;
+        
+         --select*from sbr.data_elements  where cde_id =62;
+          
+         -- select* from sbr.contexts where conte_idseq='99BA9DC8-2095-4E69-E034-080020C9C0E0';
+         
+         --select count(*)from sbr.data_elements where conte_idseq='99BA9DC8-2095-4E69-E034-080020C9C0E0'         and ASL_NAME not in( '%RETIRED WITHDRAWN%','RETIRED DELETED' );
+         --delete from MDSR_FB_XML_TEMP
+        exec MDSR_xml_CDE_insert
+        exec MDSR_CDE_XML_TRANSFORM
+        
+        select* from MDSR_FB_XML_TEMP
