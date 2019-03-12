@@ -12,16 +12,16 @@ CREATE OR REPLACE TYPE SBREXT.MDSR_749_ALTERNATENAME_ITEM_T          as object(
 CREATE OR REPLACE TYPE SBREXT.MDSR_749_ALTERNATENAM_LIST_T    as table of MDSR_749_ALTERNATENAME_ITEM_T
 /
 CREATE OR REPLACE TYPE SBREXT.MDSR_749_PV_VD_ITEM_T          as object(ValidValue varchar2(255),
-    "ValueMeaning" varchar2(255),
-    "MeaningDescription" varchar2(2000),
-    "MeaningConcepts" varchar2(2000),
-    "MeaningConceptOrigin"               varchar2(2000),
-    "MeaningConceptDisplayOrder" varchar2(2000),
-    "PvBeginDate" Date,
-    "PvEndDate" Date,
-    "VmPublicId" Number,
-    "VmVersion" Number(4,2),
-    "AlternateNameList"    MDSR_749_ALTERNATENAM_LIST_T)
+    ValueMeaning varchar2(255),
+    MeaningDescription varchar2(2000),
+    MeaningConcepts varchar2(2000),
+    MeaningConceptOrigin               varchar2(2000),
+	MeaningConceptDisplayOrder varchar2(2000),
+    PvBeginDate Date,
+    PvEndDate Date,
+    VmPublicId Number,
+    VmVersion Number(4,2),
+    "ALTERNATENAMELIST"    MDSR_749_ALTERNATENAM_LIST_T)
  /   
 CREATE OR REPLACE TYPE SBREXT.MDSR_749_PV_VD_LIST_T    as table of SBREXT.MDSR_749_PV_VD_ITEM_T
 /
