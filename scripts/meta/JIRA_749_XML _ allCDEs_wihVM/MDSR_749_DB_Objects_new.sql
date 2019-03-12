@@ -7,12 +7,10 @@ CREATE OR REPLACE TYPE SBREXT.MDSR_749_ALTERNATENAME_ITEM_T          as object(
 "AlternateName"                                VARCHAR2(2000)
 ,"AlternateNameType"                                VARCHAR2(20)
 ,"Language"                        VARCHAR2(30)
-
 )
 /
 CREATE OR REPLACE TYPE SBREXT.MDSR_749_ALTERNATENAM_LIST_T    as table of MDSR_749_ALTERNATENAME_ITEM_T
 /
-
 CREATE OR REPLACE TYPE SBREXT.MDSR_749_PV_VD_ITEM_T          as object(ValidValue varchar2(255),
     ValueMeaning varchar2(255),
     MeaningDescription varchar2(2000),
@@ -53,9 +51,8 @@ CREATE OR REPLACE TYPE SBREXT."CDEBROWSER_VD_T749"                              
   "Representation"    admin_component_with_con_t,
   "PermissibleValues"     sbrext.MDSR_749_PV_VD_LIST_T,
   "ValueDomainConcepts"    Concepts_list_t
-);
+)
 /
-
 CREATE OR REPLACE FORCE VIEW SBREXT.DE_CDE1_XML_GENERATOR_749VW
 (
     RAI,
@@ -108,13 +105,13 @@ AS
                dec.ASL_NAME,
                dec.dec_context_name,
                dec.dec_context_version,
-               admin_component_with_id_ln_t (dec.cd_id,
+               sbrext.admin_component_with_id_ln_t (dec.cd_id,
                                              dec.cd_context_name,
                                              dec.cd_context_version,
                                              dec.cd_preferred_name,
                                              dec.cd_version,
                                              dec.cd_long_name),
-               admin_component_with_con_t (
+               sbrext.admin_component_with_con_t (
                    dec.oc_id,
                    dec.oc_context_name,
                    dec.oc_context_version,
@@ -136,7 +133,7 @@ AS
                               WHERE     dec.oc_condr_idseq = com.condr_IDSEQ(+)
                                     AND com.con_idseq = con.con_idseq(+)
                            ORDER BY display_order DESC) AS Concepts_list_t)),
-               admin_component_with_con_t (
+               sbrext.admin_component_with_con_t (
                    dec.prop_id,
                    dec.pt_context_name,
                    dec.pt_context_version,
@@ -163,7 +160,7 @@ AS
                dec.property_qualifier,
                dec.dec_origin)
                "DataElementConcept",
-   CDEBROWSER_VD_T749 (
+   sbrext.CDEBROWSER_VD_T749 (
                vd.vd_id,
                vd.preferred_name,
                vd.preferred_definition,
@@ -191,7 +188,7 @@ AS
                vd.high_value_num,
                vd.low_value_num,
                vd.origin,
-               admin_component_with_con_t (
+               sbrext.admin_component_with_con_t (
                    rep.rep_id,
                    rep_conte.name,
                    rep_conte.version,
@@ -245,7 +242,7 @@ AS
                                                  des.AC_IDSEQ(+)
                                              AND des.conte_idseq =
                                                  des_conte.conte_idseq(+))
-                                      AS MDSR_749_ALTERNATENAM_LIST_T)
+                                      AS sbrext.MDSR_749_ALTERNATENAM_LIST_T)
                                   "AlternateNameList"
                          FROM sbr.permissible_values  pv,
                               sbr.vd_pvs              vp,
@@ -285,7 +282,7 @@ AS
                "ReferenceDocumentsList",
            CAST (
                MULTISET (
-                   SELECT admin_component_with_id_t (csv.cs_id,
+                   SELECT sbrext.admin_component_with_id_t (csv.cs_id,
                                                      csv.cs_context_name,
                                                      csv.cs_context_version,
                                                      csv.preferred_name,
@@ -310,7 +307,7 @@ AS
                           AND des.conte_idseq = des_conte.conte_idseq(+))
                    AS cdebrowser_altname_list_t)
                "AlternateNameList",
-           derived_data_element_t (ccd.crtl_name,
+           sbrext.derived_data_element_t (ccd.crtl_name,
                                    ccd.description,
                                    ccd.methods,
                                    ccd.rule,
@@ -339,21 +336,14 @@ AS
            AND vd.rep_idseq = rep.rep_idseq(+)
            AND rep.conte_idseq = rep_conte.conte_idseq(+)
            AND de.ASL_NAME NOT IN ('RETIRED WITHDRAWN', 'RETIRED DELETED')
-           AND upper(de_conte.name) NOT IN ('TEST','TRAINING');
+           ;
   /       
-CREATE OR REPLACE SYNONYM CDEBROWSER.DE_CDE1_XML_GENERATOR_749VW FOR SBREXT.DE_CDE1_XML_GENERATOR_749VW;
-CREATE OR REPLACE SYNONYM CDEVALIDATE.DE_CDE1_XML_GENERATOR_749VW FOR SBREXT.DE_CDE1_XML_GENERATOR_749VW;
 CREATE OR REPLACE SYNONYM SBR.DE_CDE1_XML_GENERATOR_749VW FOR SBREXT.DE_CDE1_XML_GENERATOR_749VW;
-CREATE OR REPLACE SYNONYM UMLLOADER_COOPERM.DE_CDE1_XML_GENERATOR_749VW FOR SBREXT.DE_CDE1_XML_GENERATOR_749VW;
 CREATE OR REPLACE SYNONYM READONLY.DE_CDE1_XML_GENERATOR_749VW FOR SBREXT.DE_CDE1_XML_GENERATOR_749VW;
 CREATE OR REPLACE SYNONYM GUEST.DE_CDE1_XML_GENERATOR_749VW FOR SBREXT.DE_CDE1_XML_GENERATOR_749VW;
-GRANT DELETE, INSERT, REFERENCES, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK ON SBREXT.DE_CDE1_XML_GENERATOR_749VW TO CDEBROWSER;
-GRANT SELECT ON SBREXT.DE_CDE1_XML_GENERATOR_749VW TO CDEVALIDATE;
 GRANT DELETE, INSERT, SELECT, UPDATE ON SBREXT.DE_CDE1_XML_GENERATOR_749VW TO DER_USER;
-GRANT SELECT ON SBREXT.DE_CDE1_XML_GENERATOR_749VW TO DEV_READ_ONLY;
 GRANT SELECT ON SBREXT.DE_CDE1_XML_GENERATOR_749VW TO READONLY;
 GRANT DELETE, INSERT, REFERENCES, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK ON SBREXT.DE_CDE1_XML_GENERATOR_749VW TO SBR WITH GRANT OPTION;
-CREATE OR REPLACE PUBLIC SYNONYM CDEBROWSER_VD_T749  FOR SBREXT.CDEBROWSER_VD_T749 ;
 CREATE OR REPLACE PUBLIC SYNONYM MDSR_749_PV_VD_ITEM_T FOR SBREXT.MDSR_749_PV_VD_ITEM_T;
 CREATE OR REPLACE PUBLIC SYNONYM MDSR_749_PV_VD_LIST_T FOR SBREXT.MDSR_749_PV_VD_LIST_T;
 GRANT EXECUTE, DEBUG ON SBREXT.CDEBROWSER_VD_T749 TO  PUBLIC;
