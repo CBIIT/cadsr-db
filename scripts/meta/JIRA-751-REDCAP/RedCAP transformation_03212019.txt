@@ -1,0 +1,2214 @@
+RedCAP transformation steps:
+
+1.place all instrumentPhenix#.csv files in directory 'C:\meta\REDCAP\'
+2.create table CREATE TABLE SBREXT.REDCAPPROTOCOL_TEMP
+(
+ VARIABLE_FIELD_NAME VARCHAR2(400 BYTE),
+ FORM_NAME VARCHAR2(400 BYTE),
+ SECTION VARCHAR2(3000 BYTE),
+ FIELD_TYPE VARCHAR2(100 BYTE),
+ FIELD_LABEL CLOB,
+ CHOICES VARCHAR2(2500 BYTE),
+ FIELD_NOTE VARCHAR2(100 BYTE),
+ TEXT_VALID_TYPE VARCHAR2(100 BYTE),
+ TEXT_VALID_MIN VARCHAR2(100 BYTE),
+ TEXT_VALID_MAX VARCHAR2(100 BYTE),
+ IDENTIFIER VARCHAR2(100 BYTE),
+ LOGIC VARCHAR2(2000 BYTE),
+ REQUIRED VARCHAR2(50 BYTE),
+ CUSTOM_ALIGNMENT VARCHAR2(100 BYTE),
+ Q_NMB_SERV VARCHAR2(100 BYTE),
+ MATRIX_GROUP_NAME VARCHAR2(100 BYTE),
+ MATRIX_RANK VARCHAR2(100 BYTE),
+ QUESTION NUMBER
+)
+3.create table "SBREXT"."REDCAP_PROTOCOL"
+CREATE TABLE SBREXT.REDCAP_PROTOCOL_new
+(
+VARIABLE_FIELD_NAME VARCHAR2(400 BYTE),
+ FORM_NAME VARCHAR2(400 BYTE),
+ SECTION VARCHAR2(3000 BYTE),
+ SECTION_SEQ NUMBER,
+ SECTION_Q_SEQ NUMBER,
+ FIELD_TYPE VARCHAR2(100 BYTE),
+ CHOICES VARCHAR2(2500 BYTE),
+ FIELD_NOTE VARCHAR2(100 BYTE),
+ QUESTION NUMBER,
+ TEXT_VALID_TYPE VARCHAR2(30 BYTE),
+ TEXT_VALID_MIN VARCHAR2(12 BYTE),
+ TEXT_VALID_MAX VARCHAR2(12 BYTE),
+ IDENTIFIER VARCHAR2(100 BYTE),
+ LOGIC VARCHAR2(2000 BYTE),
+ REQUIRED VARCHAR2(5 BYTE),
+ CUSTOM_ALIGNMENT VARCHAR2(100 BYTE),
+ MATRIX_GROUP_NAME VARCHAR2(100 BYTE),
+ MATRIX_RANK NUMBER(6,2),
+ Q_NMB_SERV NUMBER,
+ PROTOCOL VARCHAR2(40 BYTE),
+ FIELD_LABEL VARCHAR2(4000 BYTE)
+)
+
+MODIFIED to:
+
+CREATE TABLE SBREXT.REDCAP_PROTOCOL_NEW
+(
+ VARIABLE_FIELD_NAME VARCHAR2(400 BYTE),
+ FORM_NAME VARCHAR2(400 BYTE),
+ SECTION VARCHAR2(3000 BYTE),
+ SECTION_SEQ NUMBER,
+ SECTION_Q_SEQ NUMBER,
+ FIELD_TYPE VARCHAR2(100 BYTE),
+ CHOICES VARCHAR2(2500 BYTE),
+ FIELD_NOTE VARCHAR2(100 BYTE),
+ QUESTION NUMBER,
+ TEXT_VALID_TYPE VARCHAR2(30 BYTE),
+ TEXT_VALID_MIN VARCHAR2(60 BYTE),
+ TEXT_VALID_MAX VARCHAR2(60 BYTE),
+ IDENTIFIER VARCHAR2(100 BYTE),
+ LOGIC VARCHAR2(2000 BYTE),
+ REQUIRED VARCHAR2(5 BYTE),
+ CUSTOM_ALIGNMENT VARCHAR2(100 BYTE),
+ MATRIX_GROUP_NAME VARCHAR2(100 BYTE),
+ MATRIX_RANK NUMBER(6,2),
+ Q_NMB_SERV NUMBER,
+ PROTOCOL VARCHAR2(40 BYTE),
+ FIELD_LABEL VARCHAR2(4000 BYTE),
+ INSTRUCTIONS VARCHAR2(2000 BYTE),
+ VAL_MIN VARCHAR2(100 BYTE),
+ VAL_MAX VARCHAR2(100 BYTE),
+ VAL_TYPE VARCHAR2(100 BYTE)
+);
+4.create contrl file LOAD_REDCAP.ctl to load data from all instrumentPhenix#.csv to "SBREXT"."REDCAP_PROTOCOL"
+
+OPTIONS (rows = 10000, readsize = 20489599, ERRORS= 10000, SKIP=1, parallel = true) 
+LOAD DATA
+INFILE 'C:\META\REDCAP\Phenx\PX0171001.csv' "str '\r'" 
+INFILE 'C:\META\REDCAP\Phenx\PX020302.csv' "str '\r'" 
+INTO TABLE "SBREXT"."REDCAPPROTOCOL_TEMP"
+append
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+TRAILING NULLCOLS 
+( 
+ VARIABLE_FIELD_NAME CHAR(400) ,
+ FORM_NAME CHAR(400), 
+ SECTION CHAR(1500) , 
+ FIELD_TYPE CHAR(100), 
+ FIELD_LABEL CHAR(8500) ,
+ CHOICES CHAR(1500), 
+ FIELD_NOTE CHAR(100),
+TEXT_VALID_TYPE ,
+ TEXT_VALID_MIN ,
+ TEXT_VALID_MAX ,
+ IDENTIFIER ,
+ LOGIC CHAR(500) ,
+ REQUIRED ,
+ CUSTOM_ALIGNMENT ,
+ Q_NMB_SERV,
+ MATRIX_GROUP_NAME ,
+ MATRIX_RANK,
+QUESTION SEQUENCE(0,1) )
+
+
+5. load data to "SBREXT"."REDCAPPROTOCOL_TEMP" via SQL LOADER using the contrl file LOAD_REDCAP.ctl
+
+6.delete from REDCAPPROTOCOL_TEMP where Form_Name='Form Name' or Form_Name is null;
+ delete from REDCAPPROTOCOL_TEMP where field_note is null or field_note not like '%PX%';
+ 
+ UPDATE SBREXT.REDCAPPROTOCOL_TEMP set FIELD_LABEL=substr(FIELD_LABEL, 1, 3900 );
+ insert into SBREXT.REDCAP_PROTOCOL_NEW
+(
+ VARIABLE_FIELD_NAME ,
+ FORM_NAME ,
+ SECTION , 
+ FIELD_TYPE ,
+ FIELD_LABEL ,
+ CHOICES ,
+ FIELD_NOTE ,
+ QUESTION ,
+ TEXT_VALID_TYPE ,
+ TEXT_VALID_MIN ,
+ TEXT_VALID_MAX ,
+ IDENTIFIER ,
+ LOGIC ,
+ REQUIRED ,
+ CUSTOM_ALIGNMENT ,
+ MATRIX_GROUP_NAME , 
+ MATRIX_RANK ,
+ PROTOCOL ,
+ Q_NMB_SERV ,
+ QUESTION_CSV 
+)
+select 
+VARIABLE_FIELD_NAME ,
+ FORM_NAME ,
+ SECTION ,
+ FIELD_TYPE ,
+ substr(FIELD_LABEL, 1, 1999 ) ,
+ CHOICES ,
+ FIELD_NOTE ,
+ TRIM(QUESTION) ,
+ TEXT_VALID_TYPE ,
+ TEXT_VALID_MIN ,
+ TEXT_VALID_MAX ,
+ IDENTIFIER ,
+ TRIM(LOGIC) ,
+ REQUIRED ,
+ CUSTOM_ALIGNMENT ,
+ MATRIX_GROUP_NAME ,
+ MATRIX_RANK ,
+ SUBSTR(TRIM(FIELD_NOTE),-8) , 
+ Q_NMB_SERV ,
+ substr(FIELD_LABEL, 1, 3999 ) 
+from REDCAPPROTOCOL_TEMP;
+
+UPDATE  PROTOCOL in UPDATE REDCAP_PROTOCOL_NEW
+select distinct 'PX'||substr(protocol,3,6), protocol from "SBREXT"."REDCAP_PROTOCOL_NEW" where substr(protocol,1,2)='X0'
+
+UPDATE REDCAP_PROTOCOL_NEW set protocol='PX'||substr(protocol,3,6)
+where substr(protocol,1,2)='X0' ;
+
+  UPDATE REDCAP_PROTOCOL_test set FORM_Q_num=QUESTION-1  where protocol||form_name in
+ --select distinct protocol||form_name from REDCAP_PROTOCOL_test  where protocol||form_name in
+ (
+ select protocol||form_name from(
+ 
+ select MIN_QUEST, protocol, form_name,SECTION_SEQ,SECTION_Q_SEQ,QUESTION,SECTION
+ from(
+ select  min(Question) over  (partition by protocol, form_name order by protocol, form_name ) as MIN_QUEST,
+ protocol, form_name,SECTION_SEQ,SECTION_Q_SEQ,QUESTION,SECTION
+from REDCAP_PROTOCOL_test)--where form_name='phenx_cancer_personal_and_family_history')
+where MIN_QUEST>0 and MIN_QUEST=QUESTION
+)
+);
+
+
+UPDATE REDCAP_PROTOCOL_test set FORM_Q_num=QUESTION where protocol||form_name in
+ --select distinct protocol||form_name from REDCAP_PROTOCOL_test  where protocol||form_name in
+ (
+ select protocol||form_name from(
+ 
+ select MIN_QUEST, protocol, form_name,SECTION_SEQ,SECTION_Q_SEQ,QUESTION,SECTION
+ from(
+ select  min(Question) over  (partition by protocol, form_name order by protocol, form_name ) as MIN_QUEST,
+ protocol, form_name,SECTION_SEQ,SECTION_Q_SEQ,QUESTION,SECTION
+from REDCAP_PROTOCOL_test where protocol not like 'Instructions%')--where form_name='phenx_cancer_personal_and_family_history')
+where MIN_QUEST=0 and MIN_QUEST=QUESTION
+)
+);
+
+SET SECTION NUMBER and QUEStion in a SECTION
+  select protocol, form_name,SECTION_SEQ,SECTION_Q_SEQ,QUESTION,SECTION
+   from  REDCAP_PROTOCOL_test where protocol not like 'Instructions%' and FORM_Q_num is null;
+   
+     select protocol, form_name,SECTION_SEQ,SECTION_Q_SEQ,QUESTION,SECTION
+   from  REDCAP_PROTOCOL_test where protocol like 'Instructions%' and QUESTION >0;
+   
+   
+    UPDATE REDCAP_PROTOCOL_test SET SECTION_SEQ=0 , SECTION_Q_SEQ=FORM_Q_NUM
+ WHERE SECTION_SEQ is null and SECTION_Q_SEQ is null  and SECTION is null and protocol not like 'Instructions%';
+   
+CREATE OR REPLACE PROCEDURE redCapSaction_populate2 
+AS
+
+/*CURSOR CUR_RC IS select r.protocol,FORM_NAME,r.QUESTION,SECTION, SECTION_SEQ 
+FROM REDCAP_PROTOCOL_test r
+where NVL(SECTION,'A')<>'A'
+and SECTION_SEQ is null
+order by r.protocol,FORM_NAME,QUESTION;*/
+    CURSOR CUR_RC IS select protocol,FORM_NAME,FORM_Q_num,SECTION, SECTION_SEQ ,SECTION_Q_SEQ
+    FROM MSDRDEV.REDCAP_PROTOCOL_test 
+    where SECTION is not NULL
+    and SECTION_SEQ is  null
+    and FORM_Q_num is not null
+     order by protocol,FORM_NAME,FORM_Q_num; 
+     
+ errmsg VARCHAR2(2000):='';
+ V_sec_N number;
+ V_sec_QN number;
+ V_pr_SEC_N number;
+ V_MIN_SEC_Q number;
+ 
+BEGIN
+for i in CUR_RC loop
+BEGIN
+ IF i.FORM_Q_num=0 then 
+ V_sec_N :=0; 
+ V_sec_QN:=0;
+ ELSE
+ SELECT min(FORM_Q_num) into V_MIN_SEC_Q 
+ from REDCAP_PROTOCOL_test
+ where SECTION is not NULL
+ and protocol=i.protocol
+ and FORM_NAME=i.FORM_NAME;
+ 
+ IF V_MIN_SEC_Q=i.FORM_Q_num THEN
+ 
+ V_sec_N :=1;
+ ELSE
+ 
+ V_sec_N :=V_sec_N+1;
+ END IF;
+ END IF;
+ 
+ UPDATE REDCAP_PROTOCOL_test SET SECTION_SEQ=V_sec_N , SECTION_Q_SEQ=0
+ WHERE protocol=i.protocol
+ and FORM_NAME=i.FORM_NAME
+ and QUESTION =i.FORM_Q_num
+ and SECTION=i.SECTION
+ and SECTION_SEQ is null;
+ 
+ 
+ EXCEPTION
+ WHEN OTHERS THEN
+ errmsg := SQLERRM;
+ dbms_output.put_line('errmsg3 - '||errmsg);
+ -- insert into META_CONCEPTS_EXT_ERROR_LOG VALUES (errmsg,sysdate,i.PREFERRED_NAME,i.LONG_NAME ,i.PREFERRED_DEFINITION);
+ end; 
+ end loop;
+
+commit;
+
+END ;
+/
+
+
+
+CREATE OR REPLACE PROCEDURE MSDRDEV.redCapSact_Quest_populate2
+AS
+
+    CURSOR CUR_RC IS select protocol,FORM_NAME,FORM_Q_NUM,SECTION, SECTION_SEQ ,SECTION_Q_SEQ
+    FROM MSDRDEV.REDCAP_PROTOCOL_test 
+    where SECTION is not NULL
+    and SECTION_SEQ is not null
+    and FORM_Q_NUM is not null    
+    order by protocol,FORM_NAME,FORM_Q_NUM;
+    errmsg VARCHAR2(2000):='';
+    V_sec_NC number;
+    V_sec_QN number;
+    V_sec_NEXT number;
+    V_sec_MAX number;
+    V_sec_QN number;
+    V_QC_NC number;
+    V_QC_NCEXT number;
+    
+
+  BEGIN
+   for i in CUR_RC loop
+   
+     BEGIN
+            V_sec_NC:=i.SECTION_SEQ;
+            V_QC_NC:=i.FORM_Q_NUM;
+            
+            select MAX(SECTION_SEQ) into V_sec_MAX
+            FROM MSDRDEV.REDCAP_PROTOCOL_TEST
+            where  protocol=i.protocol
+            and FORM_NAME=i.FORM_NAME
+            ; 
+            dbms_output.put_line('V_sec_MAX - '||V_sec_MAX||' V_sec_NC -'||i.SECTION_SEQ);
+            
+            IF V_sec_MAX> i.SECTION_SEQ THEN
+            select SECTION_SEQ,FORM_Q_NUM into V_sec_NEXT,V_QC_NCEXT
+            FROM MSDRDEV.REDCAP_PROTOCOL_TEST
+            where  protocol=i.protocol
+            and FORM_NAME=i.FORM_NAME
+            and SECTION is not NULL
+            and SECTION_SEQ =i.SECTION_SEQ+1;
+            END IF;
+          
+
+
+ 
+            DECLARE
+            CURSOR C_nosec IS select protocol,FORM_NAME,FORM_Q_NUM,SECTION, SECTION_SEQ ,SECTION_Q_SEQ
+            FROM MSDRDEV.REDCAP_PROTOCOL_test 
+            where  protocol=i.protocol
+            and FORM_NAME=i.FORM_NAME
+            and SECTION is NULL
+            and ((FORM_Q_NUM >V_QC_NC and FORM_Q_NUM <V_QC_NCEXT and V_sec_MAX>V_sec_NC) 
+            or  (FORM_Q_NUM >V_QC_NC and V_sec_MAX=V_sec_NC))
+            order by FORM_Q_NUM;
+
+
+            BEGIN 
+                for r in C_nosec loop
+                    BEGIN 
+                    UPDATE REDCAP_PROTOCOL_TEST SET SECTION_SEQ=V_sec_NC, SECTION_Q_SEQ=r.FORM_Q_NUM-V_QC_NC
+                    WHERE protocol=r.protocol
+                    and FORM_NAME=r.FORM_NAME
+                    and QUESTION =r.FORM_Q_NUM ;
+
+                    --dbms_output.put_line('output2 - V_sec_N='||V_sec_N||' V_sec_QN='||V_sec_QN);
+                    commit;
+
+                    EXCEPTION
+                    WHEN OTHERS THEN
+                    errmsg := SQLERRM;
+                    dbms_output.put_line('errmsg3 - '||errmsg);
+                    rollback;
+                     insert into REPORTS_ERROR_LOG VALUES (r.FORM_Q_NUM||','||r.protocol,  errmsg, sysdate);
+                     commit;
+                    end;
+                end loop;
+            END;
+            
+            EXCEPTION
+                    WHEN OTHERS THEN
+                    errmsg := SQLERRM;
+                    dbms_output.put_line('errmsg3 - '||errmsg);
+                    rollback;
+                     insert into REPORTS_ERROR_LOG VALUES (i.FORM_Q_NUM||','||i.protocol,  errmsg, sysdate);
+                     commit;
+            END ;
+     end loop;
+
+    
+ END ;--end of proc
+/
+ UPDATE REDCAP_PROTOCOL_test SET SECTION_SEQ=0 , SECTION_Q_SEQ=FORM_Q_NUM
+ WHERE SECTION_SEQ is null and SECTION_Q_SEQ is null  and SECTION is null and protocol not like 'Instructions%';
+
+ INSERT INTO REDCAP_SECTION_NEW
+( PROTOCOL ,
+ FORM_NAME ,
+ SECTION_SEQ,
+ SECTION_Q_SEQ,
+ QUESTION ,
+SECTION )
+ SELECT distinct q.protocol, q.form_name,SECTION_SEQ,SECTION_Q_SEQ,FORM_Q_NUM,q.SECTION
+ --select*
+ from REDCAP_PROTOCOL_test q
+ where SECTION_Q_SEQ=0 
+ --and  protocol like '%PX741401%'
+ and protocol not like'Instructions%'
+ order by  --q.protocol, q.form_name
+ 1,3,5;
+ 
+
+7.UPDATE Question text as
+a.update SBREXT.REDCAP_PROTOCOL_NEW set FIELD_LABEL=FIELD_LABEL||'; variable='||VARIABLE_FIELD_NAME where length(FIELD_LABEL||VARIABLE_FIELD_NAME)<1988;
+
+7.b uupdate SBREXT.REDCAP_PROTOCOL_NEW set FIELD_LABEL=substr(FIELD_LABEL,1,(1977-length(VARIABLE_FIELD_NAME)))||'..TRUNCATED'||'; variable='||VARIABLE_FIELD_NAME
+ where length(FIELD_LABEL||VARIABLE_FIELD_NAME)>1988;
+ update SBREXT.REDCAP_PROTOCOL_NEW set FIELD_LABEL=substr(FIELD_LABEL,1,1987)||'..TRUNCATED'
+ where length(FIELD_LABEL)>1999;
+ 
+7.c update REDCAP_PROTOCOL_NEW set LOGIC=substr(LOGIC,1,243)||'TRUNCATED' where length(LOGIC)>255;
+7.d update REDCAP_PROTOCOL_NEW set field_label=replace (VARIABLE_FIELD_NAME,'_',' ') where field_label is null or field_label like '%???%'
+--Denise Request
+delete from SBREXT.REDCAP_PROTOCOL_NEW where 
+protocol in ('PX010501','PX010601','PX010901','PX011401','PX011501','PX020301','PX020801','PX021201','
+ PX030201','PX030601','PX030602','PX030702','PX030801','PX030802','PX030901','PX031201','
+ PX031301','PX060801','PX150301','PX150401','PX151301','PX210301','PX211301','PX510103','
+ PX510301','PX520401','PX520403','PX520503','PX540401','PX550101','PX550201','PX550301','
+ PX550801','PX560101','PX560501','PX560601','PX560701','PX560801','PX710301','PX720201','PX751301')
+ 
+ --Denise Request
+ 
+ update SBREXT.REDCAP_PROTOCOL_NEW set choices='1 , YES|0 , NO'
+where FIELD_TYPE like'%yes%'
+ 
+UPDATE REDCAP_PROTOCOL_NEW set 
+VAL_MIN=DECODE(TEXT_VALID_MIN,NULL,NULL,'minLength='||TEXT_VALID_MIN||';'),
+VAL_MAX=DECODE(TEXT_VALID_MAX,NULL,NULL,'maxLength='||TEXT_VALID_MAX||';'),
+VAL_TYPE=DECODE(TEXT_VALID_TYPE,NULL,NULL,'datatype='||TEXT_VALID_TYPE||';')
+--,LOGIC=DECODE(LOGIC,NULL,NULL,LOGIC||';')
+where (TEXT_VALID_MIN is not null or TEXT_VALID_MAX is not null or TEXT_VALID_TYPE is not null
+) and choices is null;
+
+UPDATE REDCAP_PROTOCOL_NEW set 
+INSTRUCTIONS=VAL_TYPE||VAL_MIN||VAL_MAX||LOGIC
+where (TEXT_VALID_MIN is not null or TEXT_VALID_MAX is not null or TEXT_VALID_TYPE is not null
+or logic is not null) and FIELD_TYPE<>'calc';
+
+UPDATE REDCAP_PROTOCOL_NEW set 
+INSTRUCTIONS='Calculation ;'||VAL_TYPE||VAL_MIN||VAL_MAX||LOGIC
+where FIELD_TYPE='calc';
+
+
+8. Update column QUESTION in table REDCAP_PROTOCOL_NEW for each protocol starting from 0
+
+merge into REDCAP_PROTOCOL_NEW t1
+using (select min(question)question,PROTOCOL
+from REDCAP_PROTOCOL_NEW group by PROTOCOL ) t2
+on (t1.PROTOCOL = t2.PROTOCOL)
+when matched then 
+update set t1.question = t1.question-t2.question
+
+9.create table SBREXT.REDCAP_VALUE_CODE to move string value column CHOICES to 
+multiple records for each '||' .
+CREATE TABLE SBREXT.REDCAP_VALUE_CODE
+( PROTOCOL VARCHAR2(50) ,
+FORM_NAME VARCHAR2(100) ,
+ QUESTION NUMBER,
+ VAL_NAME VARCHAR2(2000) ,
+ VAL_VALUE VARCHAR2(2000),
+ VAL_ORDER NUMBER , 
+ ELM_ORDER VARCHAR2(2000) ,
+ PIPE_NUM NUMBER)
+
+
+10.populate table with SQL statment for new records
+
+
+delete pipe from 1st position
+ a.UPDATE SBREXT.REDCAP_PROTOCOL_NEW set choices=substr(choices,2)
+ where choices is not null and substr(choices,1,1)='|'
+ 
+ --insert in REDCAP_VALUE_CODE with no pipes and FIELD_TYPE like'%calc%'
+ INSERT INTO SBREXT.REDCAP_VALUE_CODE
+ ( PROTOCOL ,
+ FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER)
+ select 
+ PROTOCOL,
+ FORM_NAME ,
+ question,
+ CASE WHEN length(choices)> 254
+ THEN substr(replace(choices,' '),1,243)||'..TRUNCATED'
+ ELSE choices 
+ END,
+ choices,
+ 0,
+ 0,
+ choices 
+ from SBREXT.REDCAP_PROTOCOL_NEW 
+ where choices is not null 
+ and instr(choices,'|')=0
+ and FIELD_TYPE like'%calc%';
+	
+	
+ 
+	
+ b. insert in REDCAP_VALUE_CODE with no pipes
+ 1.when many','
+	INSERT INTO SBREXT.REDCAP_VALUE_CODE
+ ( PROTOCOL ,
+ FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER)
+ select 
+ PROTOCOL,
+ FORM_NAME ,
+ question,
+ choices ,
+ choices,
+ 0,
+ 0,
+ choices 
+ from SBREXT.REDCAP_PROTOCOL_NEW 
+ where choices is not null and instr(choices,'|')=0
+ and REGEXP_COUNT(choices,',')>1
+	and trim(FIELD_TYPE) <>'calc';
+	
+	2.when many',' FIELD_TYPE)='descriptive' and no '|'
+ INSERT INTO SBREXT.REDCAP_VALUE_CODE
+ ( PROTOCOL ,
+ FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER)
+ select 
+ PROTOCOL,
+ FORM_NAME ,
+ question, 
+ CASE WHEN length(choices)> 254
+ THEN substr(choices,1,243)||'..TRUNCATED'
+ ELSE choices 
+ END,
+ choices,
+ 0,
+ 0,
+ choices 
+ from SBREXT.REDCAP_PROTOCOL_NEW 
+ where choices is not null and instr(choices,'|')=0
+ and REGEXP_COUNT(choices,',')>1
+ and trim(FIELD_TYPE)='descriptive';
+ 
+ 3. insert in REDCAP_VALUE_CODE with no pipes, many',' (FIELD_TYPE) not in ('calc','descriptive'); 
+ INSERT INTO SBREXT.REDCAP_VALUE_CODE
+ ( PROTOCOL ,
+ FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER)
+ select 
+ PROTOCOL,
+ FORM_NAME , 
+ question, 
+ CASE WHEN trim(choices)='99,99,9999 , unknown'
+ THEN '99,99,9999'
+ ELSE substr(choices,1,(instr(choices,',')-1))
+ END,
+ CASE WHEN trim(choices)='99,99,9999 , unknown'
+ THEN 'unknown'
+ ELSE substr(choices,(instr(choices,',')+1))
+ END,
+ 0,
+ 0,
+ choices 
+ from SBREXT.REDCAP_PROTOCOL_NEW 
+ where choices is not null and instr(choices,'|')=0
+ and REGEXP_COUNT(choices,',')>1
+ and trim(FIELD_TYPE) not in ('calc','descriptive');
+	2. when only 1 separated coma.
+	
+	 
+ INSERT INTO SBREXT.REDCAP_VALUE_CODE
+ ( PROTOCOL ,
+ FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER)
+ select 
+ PROTOCOL,
+ FORM_NAME ,
+ question,
+ substr(choices,1,(instr(choices,',')-1)) ,
+ substr(choices,(instr(choices,',')+1)),
+ 0,
+ 0,
+ choices 
+ from SBREXT.REDCAP_PROTOCOL_NEW 
+ where choices is not null and instr(choices,'|')=0
+ and REGEXP_COUNT(choices,',')=1;
+	
+	
+ 
+ 
+create or replace view REDCAP_VALUE_VW as
+select distinct p.protocol PROTOCOL , p.question FROM SBREXT.REDCAP_PROTOCOL_NEW p
+left outer join REDCAP_VALUE_CODE s
+on p.protocol=s.protocol
+and p.question=s.question
+where s.protocol||s.question is null
+and choices is not null;
+
+Insert all others
+INSERT INTO SBREXT.REDCAP_VALUE_CODE
+( PROTOCOL ,
+FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER)
+ select 
+ PROTOCOL,
+ FORM_NAME ,
+ question,
+ substr(CHOICES,1,instr(CHOICES,',')-1) ,--VAL_NAME substring CHOICES before first ',' and ||
+ substr(CHOICES,instr(CHOICES,',')+1),--VAL_NAME substring CHOICES after first ',' and before||
+ ELM_ORDER-1,
+ PIPE_NUM, --Pipe position in string CHOICES
+ CHOICES ---substring CHOICES before || 
+ from 
+(select distinct
+ PROTOCOL,FORM_NAME,question ,
+ trim(regexp_substr(CHOICES, '[^|]+', 1, levels.column_value)) as CHOICES,REGEXP_INSTR(CHOICES,'[^|]+', 1, levels.column_value) AS PIPE_NUM,levels.column_value ELM_ORDER
+from 
+ (select p.*from SBREXT.REDCAP_PROTOCOL_NEW p,
+ REDCAP_VALUE_VW s
+ where p.protocol=s.protocol 
+ and p.question=s.question
+ and choices is not null
+ and instr(choices,'|')>0) t,
+ table(cast(multiset(select level from dual connect by level <= length (regexp_replace(t.CHOICES, '[^|]+')) + 1) as sys.OdciNumberList)) levels
+)
+order by 1,2,3,ELM_ORDER ;
+
+delete from SBREXT.REDCAP_VALUE_CODE where val_name is null and val_value is null
+
+10.! check 
+select count(*),protocol,question,val_name , val_value from SBREXT.REDCAP_VALUE_CODE 
+group by protocol,question,val_name , val_value 
+having count(*)>1
+
+11.populate section number and order in SBREXT.REDCAP_PROTOCOL_NEW and TABLE SBREXT.REDCAP_SECTION if section is not null
+a.create TABLE SBREXT.REDCAP_SECTION
+CREATE TABLE SBREXT.REDCAP_SECTION
+(
+ PROTOCOL VARCHAR2(40 BYTE),
+ FORM_NAME VARCHAR2(400 BYTE),
+ SECTION VARCHAR2(2000 BYTE),
+ SECTION_SEQ NUMBER,
+ QUESTION NUMBER,
+ QUESTION_TEXT VARCHAR2(2000 BYTE),
+ INSTUCTION VARCHAR2(2000 BYTE)
+)
+ 
+ b.
+select distinct protocol FROM SBREXT.REDCAP_PROTOCOL_NEW where NVL(SECTION,'A')<>'A'
+create or replace view REDCAP_SECTION_VW as
+select distinct p.protocol PROTOCOL,p.QUESTION FROM SBREXT.REDCAP_PROTOCOL_NEW p is not null
+left outer join REDCAP_SECTION s
+on p.protocol=s.protocol
+and p.QUESTION=s.QUESTION
+and SECTION is not null
+where s.protocol||s.QUESTION is null
+ 
+ c. populate sections column in REDCAP_PROTOCOL_NEW
+ 
+ exec redCapSaction_populate;
+
+CREATE OR REPLACE PROCEDURE SBREXT.redCapSaction_populate 
+AS
+
+CURSOR CUR_RC IS select r.protocol,FORM_NAME,r.QUESTION,SECTION, SECTION_SEQ 
+FROM SBREXT.REDCAP_PROTOCOL_NEW r,
+REDCAP_SECTION_VW v
+where r.protocol=v.PROTOCOL
+and NVL(SECTION,'A')<>'A'
+and r.QUESTION=v.QUESTION
+order by r.protocol,FORM_NAME,QUESTION;
+ errmsg VARCHAR2(2000):='';
+ V_sec_N number;
+ V_sec_QN number;
+ V_pr_SEC_N number;
+ V_MIN_SEC_Q number;
+ 
+BEGIN
+for i in CUR_RC loop
+BEGIN
+ IF i.QUESTION=0 then 
+ V_sec_N :=0; 
+ ELSE
+ SELECT min(question) into V_MIN_SEC_Q 
+ from SBREXT.REDCAP_PROTOCOL_NEW
+ where SECTION is not NULL
+ and protocol=i.protocol
+ and FORM_NAME=i.FORM_NAME;
+ IF V_MIN_SEC_Q=i.QUESTION THEN
+ 
+ V_sec_N :=1;
+ ELSE
+ 
+ V_sec_N :=V_sec_N+1;
+ END IF;
+ END IF;
+ 
+ UPDATE REDCAP_PROTOCOL_NEW SET SECTION_SEQ=V_sec_N , SECTION_Q_SEQ=0
+ WHERE protocol=i.protocol
+ and FORM_NAME=i.FORM_NAME
+ and QUESTION =i.QUESTION
+ and SECTION=i.SECTION;
+ 
+ 
+ EXCEPTION
+ WHEN OTHERS THEN
+ errmsg := SQLERRM;
+ dbms_output.put_line('errmsg3 - '||errmsg);
+ -- insert into META_CONCEPTS_EXT_ERROR_LOG VALUES (errmsg,sysdate,i.PREFERRED_NAME,i.LONG_NAME ,i.PREFERRED_DEFINITION);
+ end; 
+ end loop;
+
+commit;
+
+END ;
+/
+
+10.populate section number and section question order in SBREXT.REDCAP_PROTOCOL_NEW if section is null
+
+ exec redCapSaction_populate;
+ 
+ 
+CREATE OR REPLACE PROCEDURE redCapSact_Quest_populate 
+AS
+
+CURSOR CUR_RC IS select r.protocol,FORM_NAME,QUESTION,SECTION, SECTION_SEQ ,SECTION_Q_SEQ
+FROM SBREXT.REDCAP_PROTOCOL_NEW r,
+REDCAP_SECTION_VW v
+where r.protocol=v.PROTOCOL
+order by r.protocol,FORM_NAME,QUESTION;
+ errmsg VARCHAR2(2000):='';
+ V_sec_N number;
+ V_sec_QN number;
+ 
+BEGIN
+for i in CUR_RC loop
+BEGIN
+ IF i.SECTION_SEQ is not null then 
+ V_sec_N :=i.SECTION_SEQ;
+ V_sec_QN :=i.SECTION_Q_SEQ; 
+ 
+ dbms_output.put_line('output1 - V_sec_N='||V_sec_N||' V_sec_QN='||V_sec_QN);
+ ELSE
+ select SECTION_SEQ,SECTION_Q_SEQ+1 into V_sec_N,V_sec_QN 
+ FROM SBREXT.REDCAP_PROTOCOL_NEW 
+ where QUESTION =i.QUESTION-1
+ and protocol=i.protocol
+ and FORM_NAME=i.FORM_NAME;
+ 
+ dbms_output.put_line('output2 - V_sec_N='||V_sec_N||' V_sec_QN='||V_sec_QN);
+ END IF;
+ 
+ /**/ 
+ UPDATE REDCAP_PROTOCOL_NEW SET SECTION_SEQ=V_sec_N , SECTION_Q_SEQ= V_sec_QN
+ WHERE protocol=i.protocol
+ and FORM_NAME=i.FORM_NAME
+ and QUESTION =i.QUESTION;
+ 
+ 
+ EXCEPTION
+ WHEN OTHERS THEN
+ errmsg := SQLERRM;
+ dbms_output.put_line('errmsg3 - '||errmsg);
+ -- insert into META_CONCEPTS_EXT_ERROR_LOG VALUES (errmsg,sysdate,i.PREFERRED_NAME,i.LONG_NAME ,i.PREFERRED_DEFINITION);
+ end; 
+ end loop;
+
+commit;
+
+END ;
+exec redCapSact_Quest_populate ;
+11.populate SBREXT.REDCAP_SECTION
+
+INSERT INTO SBREXT.REDCAP_SECTION
+(
+ PROTOCOL ,
+ FORM_NAME ,
+ SECTION ,
+ SECTION_SEQ ,
+ QUESTION )
+ select
+ r.PROTOCOL ,
+ FORM_NAME ,
+ SECTION ,
+ SECTION_SEQ ,
+ r.QUESTION
+
+FROM SBREXT.REDCAP_PROTOCOL_NEW r,
+REDCAP_SECTION_VW v
+where r.protocol=v.PROTOCOL
+and r.QUESTION=v.QUESTION
+and NVL(SECTION,'A')<>'A'
+order by r.protocol,FORM_NAME,QUESTION;
+
+
+11 UPDATE REDCAP_PROTOCOL_NEW records of FORMS which have no sections
+
+ UPDATE REDCAP_PROTOCOL_NEW SET SECTION_SEQ=0 , SECTION_Q_SEQ=question
+ WHERE SECTION_SEQ is null and SECTION_Q_SEQ is null;
+
+12.INSERT corresponding records into REDCAP_SECTION
+
+ INSERT INTO SBREXT.REDCAP_SECTION
+( PROTOCOL ,
+ FORM_NAME ,
+ SECTION_SEQ,
+SECTION )
+ SELECT distinct q.protocol, q.form_name,SECTION_SEQ,q.SECTION
+ from REDCAP_PROTOCOL_NEW q 
+ left outer join REDCAP_SECTION s 
+ on q.protocol||q.section_seq||q.form_name=S.PROTOCOL||s.section_seq||s.form_name
+ --and q.section_seq=s.section_seq
+ where (S.PROTOCOL||s.section_seq||s.form_name is null)
+
+13.
+CREATE TABLE SBREXT.REDCAP_XML_GROUP
+(
+ PROTOCOL VARCHAR2(30 BYTE),
+ pr_seq NUMBER,
+ group_num NUMBER
+);
+CREATE TABLE SBREXT.REPORTS_ERROR_LOG
+(
+ FILE_NAME VARCHAR2(50 BYTE),
+ REPORT_ERROR_TXT VARCHAR2(1100 BYTE),
+ DATE_PROCESSED DATE
+);
+
+CREATE OR REPLACE PROCEDURE SBREXT.REDCAP_XML_GROUP_insert as
+ 
+
+CURSOR c_protocol IS
+SELECT distinct r.protocol
+FROM REDCAP_PROTOCOL_NEW r
+order by 1;
+
+ l_form_seq number:='0'; 
+ errmsg VARCHAR2(500):='Non';
+ v_protocol VARCHAR2(50):='';
+BEGIN 
+ FOR rec IN c_protocol LOOP 
+ BEGIN 
+ l_form_seq:=l_form_seq+1; 
+ insert into SBREXT.REDCAP_XML_GROUP VALUES (rec.protocol,l_form_seq, null); 
+ 
+ EXCEPTION
+ WHEN OTHERS THEN
+ errmsg := SQLERRM;
+ dbms_output.put_line('errmsg - '||errmsg);
+ insert into REPORTS_ERROR_LOG VALUES (rec.protocol, errmsg, sysdate);
+ 
+ commit; 
+ END;
+END LOOP;
+ 
+
+END;
+/
+
+select*from SBREXT.REDCAP_XML_GROUP order by 2;
+ 
+UPDATE SBREXT.REDCAP_XML_GROUP set group_num=1 where protocol in 
+('PX010101','PX010201','PX010301','PX010401','PX010701','PX010801','PX011001','PX011101','PX011201','PX011301'); 
+UPDATE SBREXT.REDCAP_XML_GROUP set group_num=2 where protocol in 
+('PX020101','PX020201','PX020202','PX020203','PX020702','PX020302');
+UPDATE SBREXT.REDCAP_XML_GROUP set group_num=3 where protocol in 
+('PX020303','PX020304','PX020305','PX020401','PX020501','PX020601','PX020602','PX020701','PX020703','PX020704','PX020802','PX020901','PX021001','PX021101','PX021301'); 
+UPDATE SBREXT.REDCAP_XML_GROUP set group_num=4 where protocol in 
+('PX021302','PX021303','PX021401','PX021501','PX021502','PX021602','PX021603','PX021701','PX021702','PX030101','PX030301','PX030401','PX030501','PX030701','PX030902','PX030201');
+ 
+ 
+update SBREXT.REDCAP_XML_GROUP set group_num= 8 where pr_seq between 85 and 100;
+update SBREXT.REDCAP_XML_GROUP set group_num= 9 where pr_seq between 101 and 115;
+update SBREXT.REDCAP_XML_GROUP set group_num= 11 where pr_seq between 116 and 130;
+update SBREXT.REDCAP_XML_GROUP set group_num= 12 where pr_seq between 131 and 145;
+
+update SBREXT.REDCAP_XML_GROUP set group_num=10
+where PROTOCOL='PX081101';
+
+update SBREXT.REDCAP_XML_GROUP set group_num =case
+when length(to_char(pr_seq))=1 then 0
+when length(to_char(pr_seq))=2 then to_NUMBER(substr(to_char(pr_seq),1,1)) 
+when length(to_char(pr_seq))=3 and pr_seq>529 then 53
+else to_NUMBER(substr(to_char(pr_seq),1,2))
+end;
+
+
+update SBREXT.REDCAP_XML_GROUP set group_num =case
+when pr_seq between 1 and 19 then 1
+when pr_seq between 20 and 39 then 2
+when pr_seq between 40 and 59 then 3 
+when pr_seq between 60 and 79 then 4 
+when pr_seq between 80 and 99 then 5
+when pr_seq between 100 and 119 then 6 
+when pr_seq between 120 and 139 then 7 
+when pr_seq between 140 and 159 then 8 
+when pr_seq between 160 and 179 then 9 
+when pr_seq between 180 and 199 then 10 
+when pr_seq between 200 and 219 then 11 
+when pr_seq between 220 and 239 then 12
+when pr_seq between 240 and 259 then 13 
+when pr_seq between 260 and 279 then 14 
+when pr_seq between 280 and 299 then 15
+when pr_seq between 300 and 319 then 16 
+when pr_seq between 320 and 339 then 17 
+when pr_seq between 340 and 359 then 18 
+when pr_seq between 360 and 379 then 19 
+when pr_seq between 380 and 399 then 20 
+
+
+when pr_seq between 400 and 419 then 21 
+when pr_seq between 420 and 439 then 22 
+when pr_seq between 440 and 459 then 23 
+when pr_seq between 460 and 479 then 24 
+when pr_seq between 480 and 499 then 25 
+when pr_seq between 500 and 519 then 26 
+when pr_seq between 520 and 549 then 27 
+end;
+
+
+update SBREXT.REDCAP_XML_GROUP set group_num=8
+where PROTOCOL='PX081101';
+update SBREXT.REDCAP_XML_GROUP set group_num=group_num+1
+where group_num>7;
+UPDATE REDCAP_PROTOCOL_NEW set REQUIRED ='Y'where trim(REQUIRED)='y'
+
+
+create or replace view REDCOP_PR_GROUP_VW as 
+
+SELECT group_num,
+ LISTAGG(protocol, ',') WITHIN GROUP (ORDER BY protocol) protocols
+FROM SBREXT.REDCAP_XML_GROUP
+GROUP BY group_num
+;
+							 
+							 
+							 
+12.create data types for XML query
+drop view REDCAP_VW;
+drop type REDCAP_FORM_S;
+drop type REDCAP_SECTION_LIST_T;
+drop type REDCAP_SECTION_T;
+drop type REDCAP_INSTRUCTIONS_T;
+drop type REDCAP_QUESTION_T;
+drop type REDCAP_QUESTION_LIST_T;
+drop type REDCAP_validValue_LIST_T;
+drop type REDCAP_validValue_T;
+
+CREATE OR REPLACE TYPE REDCAP_validValue_T as object(
+"displayOrder" NUMBER
+,"value" VARCHAR2(200)
+,"meaningText" VARCHAR2(255) 
+,"description" VARCHAR2(2000));
+CREATE OR REPLACE TYPE REDCAP_validValue_LIST_T AS TABLE OF REDCAP_validValue_T ; 
+ 
+CREATE OR REPLACE TYPE REDCAP_INSTRUCTIONS_T as object(
+"text" VARCHAR2(1000)); 
+ 
+CREATE OR REPLACE TYPE REDCAP_PROTOCOL_T as object(
+"protocolID" VARCHAR2(50),
+"longName" VARCHAR2(200),
+"context" VARCHAR2(10),
+"shortName" VARCHAR2(50),
+"preferredDefinition" VARCHAR2(2000)); 
+
+CREATE OR REPLACE TYPE REDCAP_QUESTION_T as object(
+"isDerived" VARCHAR2(8),
+"displayOrder" NUMBER,
+"dateCreated" VARCHAR2(30),
+"questionText" VARCHAR2(4000),
+"instruction" REDCAP_INSTRUCTIONS_T,
+"isEditable" VARCHAR2(8),
+"isMandatory" VARCHAR2(8),
+"multiValue" VARCHAR2(8),
+"validValues_xx" REDCAP_validValue_LIST_T 
+);
+
+CREATE OR REPLACE TYPE REDCAP_QUESTION_LIST_T AS TABLE OF REDCAP_QUESTION_T ;
+
+ 
+CREATE OR REPLACE TYPE REDCAP_SECTION_T as object(
+"displayOrder" NUMBER
+,"maximumModuleRepeat" NUMBER
+,"createdBy" VARCHAR2(40)
+, "dateCreated" VARCHAR2(30)
+, "longName" VARCHAR2(1500) 
+, "preferredDefinition" VARCHAR2(1500)
+,"questions_xx" REDCAP_QUESTION_LIST_T 
+)
+;
+CREATE OR REPLACE TYPE REDCAP_SECTION_LIST_T AS TABLE OF REDCAP_SECTION_T ; 
+ 
+CREATE OR REPLACE TYPE REDCAP_FORM_S as object(
+ 
+"context" VARCHAR2(40)
+,"createdBy" VARCHAR2(100)
+,"dateCreated" VARCHAR2(30)
+,"longName" VARCHAR2(150) 
+,"changeNote" VARCHAR2(40)
+,"preferredDefinition" VARCHAR2(2000)
+,"cadsrRAI" VARCHAR2(40)
+,"publicid" NUMBER
+,"version" NUMBER
+,"workflowStatusName" VARCHAR2(40)
+,"type" VARCHAR2(5) 
+,"headerInstruction" VARCHAR2(100) 
+,"footerInstruction" VARCHAR2(100)
+,"modules_xx" REDCAP_SECTION_LIST_T
+,"protocol" REDCAP_PROTOCOL_T);
+ 
+ CREATE OR REPLACE TYPE REDCAP_FORM_LIST_T AS TABLE OF REDCAP_FORM_S ; 
+13.create view REDCAP_VW 
+ 
+CREATE OR REPLACE TYPE REDCAP_FORM_S as object(
+ 
+"context" VARCHAR2(40)
+,"createdBy" VARCHAR2(100)
+,"dateCreated" VARCHAR2(30)
+,"longName" VARCHAR2(150) 
+,"changeNote" VARCHAR2(40)
+,"preferredDefinition" VARCHAR2(2000)
+,"cadsrRAI" VARCHAR2(40)
+,"publicid" NUMBER
+,"version" NUMBER
+,"workflowStatusName" VARCHAR2(40)
+,"type" VARCHAR2(5) 
+,"headerInstruction" VARCHAR2(100) 
+,"footerInstruction" VARCHAR2(100)
+,"modules_xx" REDCAP_SECTION_LIST_T
+,"protocol" REDCAP_PROTOCOL_T)
+;
+create or replace view REDCAP_VW as 
+SELECT 
+'PhenX Protocols - '||p.protocol "collectionName",
+'Load PhenX '||p.protocol "collectionDescription",
+REDCAP_FORM_S (
+'PhenX' ,
+'dwarzel',
+TO_CHAR(SYSDATE,'YYYY-MM-DD')||'T'||TO_CHAR(SYSDATE,'HH24:MI:SS'),
+INITCAP(replace(replace(lower(form_name) ,'_',' '),'phenx','')),
+'Uploaded via FormLoader' ,
+NVL(pe.preferred_definition,'The Protocol is Not Found'),
+'2.16.840.1.113883.3.26.2',
+'',
+'1.0',
+'DRAFT NEW',
+'CRF', 
+'',
+'' ,
+CAST(MULTISET(SELECT NVL(s.SECTION_SEQ,'0') ,
+ '0',
+ 'panh',
+ TO_CHAR(SYSDATE,'YYYY-MM-DD')||'T'||TO_CHAR(SYSDATE,'HH24:MI:SS'),
+ nvl(s.SECTION,'N/A'),
+ nvl(s.SECTION,'No definition'),
+ CAST(MULTISET(SELECT'false',
+ q.section_Q_seq,
+ TO_CHAR(SYSDATE,'YYYY-MM-DD')||'T'||TO_CHAR(SYSDATE,'HH24:MI:SS'),
+ q.field_label,
+ REDCAP_INSTRUCTIONS_T( q.LOGIC ) ,
+ 'No',
+ NVL(q.REQUIRED,'No'),
+ 'No',
+ CAST ( MULTISET ( SELECT VAL_ORDER, 
+ VAL_name , 
+ VAL_VALUE 
+ from REDCAP_VALUE_CODE u
+ where u.question=q.question
+ and u.protocol=q.protocol
+ order by VAL_ORDER ) AS REDCAP_validValue_LIST_T) "ValidValue"
+ from REDCAP_PROTOCOL_NEW q
+ where 1=1
+ and q.protocol =s.protocol
+ and s.SECTION_SEQ=q.SECTION_SEQ
+ order by q.section_Q_seq) as REDCAP_QUESTION_LIST_T) "Question"
+FROM REDCAP_SECTION s 
+WHERE p.protocol = s.protocol(+)
+ORDER BY s.SECTION_SEQ)AS REDCAP_SECTION_LIST_T
+),
+REDCAP_PROTOCOL_T(pe.protocol_id, 
+ long_name,
+ 'PhenX',
+ pe.preferred_name, 
+ NVL(pe.preferred_definition,'The Protocol is Not Found') )
+ )as "form"
+FROM 
+(select distinct protocol ,form_name from REDCAP_PROTOCOL_NEW) p
+,
+protocols_ext pe
+where pe.preferred_name(+)=p.protocol order by protocol,form_name; 
+
+17.CREATE TABLE REDCAP_XML:
+
+CREATE TABLE SBREXT.REDCAP_XML
+(
+ PROTOCOL VARCHAR2(30 BYTE),
+ TEXT CLOB,
+ file_name VARCHAR2(200 BYTE),
+ CREATED_DATE DATE
+);
+
+18.INSERT XML body and collection in the table via SP
+
+exec SBREXT.xml_RedCop_insert;
+
+CREATE OR REPLACE PROCEDURE SBREXT.xml_RedCop_insert as
+ 
+
+CURSOR c_protocol IS
+SELECT distinct r.protocol,form_name
+FROM REDCAP_PROTOCOL_NEW r
+left outer join REDCAP_XML x
+on r.protocol=x.protocol
+where x.protocol is null;
+
+
+ l_file_name VARCHAR2 (100):='NA';
+ l_file_path VARCHAR2 (200);
+ l_result CLOB:=null;
+ l_xmldoc CLOB:=null;
+ l_protocol VARCHAR2 (30);
+ errmsg VARCHAR2(500):='Non';
+ v_protocol VARCHAR2(50):='';
+BEGIN 
+ FOR rec IN c_protocol LOOP 
+ BEGIN 
+ l_file_path := 'SBREXT_DIR'; 
+ v_protocol:=rec.protocol ;
+ l_file_name := v_protocol||'_'||rec.form_name||' _GeneratedFormFinalFormCartV2.xml';
+ 
+ SELECT dbms_xmlgen.getxml( 'select*from REDCAP_VW where "collectionName" like'||''''||'%'||v_protocol||'%'||'''')
+ INTO l_result
+ FROM DUAL ;
+ insert into REDCAP_XML VALUES (v_protocol,l_result, l_file_name ,SYSDATE);
+ 
+ --dbms_xslprocessor.clob2file(l_xmldoc, l_file_path, l_file_name, nls_charset_id('UTF8'));
+
+ 
+ EXCEPTION
+ WHEN OTHERS THEN
+ errmsg := SQLERRM;
+ dbms_output.put_line('errmsg - '||errmsg);
+ insert into REPORTS_ERROR_LOG VALUES (substr(l_file_name,1,49), errmsg, sysdate);
+ 
+ commit; 
+ END;
+END LOOP;
+ 
+
+END;
+/
+CREATE TABLE SBREXT.REDCAP_ERROR_LOG
+(
+ FILE_NAME VARCHAR2(50 BYTE),
+ REPORT_ERROR_TXT VARCHAR2(1100 BYTE),
+ DATE_PROCESSED DATE
+);
+19.exec REDCAP_XML_TRANSFORM;
+
+ REDCAP_XML_TRANSFORMATION (rename tags):
+
+CREATE OR REPLACE PROCEDURE SBREXT.REDCAP_XML_TRANSFORM IS
+
+l_file_name VARCHAR2(500):='Phenx FORMS';
+ errmsg VARCHAR2(500):='Non';
+BEGIN 
+ 
+update redcap_xml set text=replace(text,'REDCAP_SECTION_T','module');
+update redcap_xml set text=replace(text,'REDCAP_QUESTION_T','question');
+update redcap_xml set text=replace(text,'</ROW>','</forms>');
+update redcap_xml set text=replace(text,'<ROW>','<forms>');
+UPDATE redcap_xml set text=replace(text,'REDCAP_VALIDVALUE_T','validValue');
+UPDATE redcap_xml set text=replace(text,'<modules__x0040_>'||chr(10) );
+UPDATE redcap_xml set text=replace(text,'</modules__x0040_>'||chr(10) );
+UPDATE redcap_xml set text=replace(text,'<questions__x0040_>'||chr(10) );--
+UPDATE redcap_xml set text=replace(text,'</questions__x0040_>'||chr(10) );
+UPDATE redcap_xml set text=replace(text,'<ROWSET>'||chr(10) ) ;
+UPDATE redcap_xml set text=replace(text,'</ROWSET>'||chr(10) );--where protocol like'%PX0171001%';
+UPDATE redcap_xml set text=replace(text,'</validValues__x0040_>'||chr(10) );
+UPDATE redcap_xml set text=replace(text,'<validValues__x0040_>'||chr(10) );
+
+UPDATE redcap_xml set text=replace(text,'<ROWSET>'||chr(10) ) ;
+UPDATE redcap_xml set text=replace(text,'</ROWSET>'||chr(10) );
+update redcap_xml set text=replace(text,'</ROW>','</forms>');
+update redcap_xml set text=replace(text,'<ROW>','<forms>');
+
+update redcap_xml set text=replace(text,'REDCAP_SECTION_T','module');
+update redcap_xml set text=replace(text,'REDCAP_QUESTION_T','question');
+UPDATE redcap_xml set text=replace(text,'REDCAP_VALIDVALUE_T','validValue');
+UPDATE redcap_xml set text=replace(text,'<validValues__x0040_>'||chr(10) );
+UPDATE redcap_xml set text=replace(text,'</validValues__x0040_>'||chr(10) );
+UPDATE redcap_xml set text=replace(text,'<validValues__x0040_/>'||chr(10) );
+UPDATE redcap_xml set text=replace(text,'CFR','CRF' );
+--UPDATE redcap_xml set text=replace(text,'2016-08-01 16:20:20',TO_CHAR(SYSDATE,'YYYY-MM-DD')||'T00:00:00.0');
+ 
+ EXCEPTION
+ WHEN OTHERS THEN
+ errmsg := SQLERRM;
+ dbms_output.put_line('errmsg - '||errmsg);
+ insert into REPORTS_ERROR_LOG VALUES (l_file_name, errmsg, sysdate);
+ 
+
+END ;
+/
+21.exec REDCAP_XML_TRANSFORM;
+8.compare the result with latest ....GeneratedFormFinalFormCartV2.xml
+
+9.create SP to wright the xml files to directory 'SBREXT_DIR'
+
+
+
+ 
+ SELECT dbms_xmlgen.getxml( 'select*from REDCAP_VW ')
+--INTO result
+FROM DUAL ;
+select*
+--delete 
+from PROTOCOL_QC_EXT where QC_IDSEQ in(select QC_IDSEQ
+--delete 
+from QUEST_CONTENTS_EXT 
+where date_created>sysdate-2
+and QC_IDSEQ in (SELECT QC_IDSEQ
+ -- delete
+ FROM quest_contents_ext
+ WHERE qtl_name = 'CRF' 
+ and date_created>sysdate-3
+ and change_note='Uploaded via FormLoader'));
+		 
+		 
+		 select x.protocol,long_name from redcap_xml x,
+protocols_ext p
+where p.preferred_name(+)=x.protocol
+and x.sent is not null 
+order by 2
+
+
+
+
+
+
+CREATE OR REPLACE FORCE VIEW SBREXT.REDCAP_COLLECT_VW
+SELECT 'PhenX Protocols - ' || v.GROUP_NUM "collectionName",
+ 'Load PhenX ' || v.protocols "collectionDescription",
+ CAST (
+ MULTISET (
+ SELECT 'PhenX',
+ 'dwarzel',
+ TO_CHAR (SYSDATE, 'YYYY-MM-DD')
+ || 'T'
+ || TO_CHAR (SYSDATE, 'HH24:MI:SS'),
+ --replace(p.protocol,'')||INITCAP(replace(replace(lower(form_name) ,'_',' '),'phenx','')),
+ TRIM('PhenX '||INITCAP(REPLACE(REPLACE(LOWER(TRIM(form_name)),'_',' '),'phenx',''))||' - '|| p.protocol),
+ 'Uploaded via FormLoader',
+ UTL_I18N.UNESCAPE_REFERENCE (
+ NVL (TRIM (pe.preferred_definition),
+ 'The Protocol is Not Found')),
+ '2.16.840.1.113883.3.26.2',
+ '',
+ '1.0',
+ 'DRAFT NEW',
+ 'CRF',
+ '',
+ '',
+ CAST (
+ MULTISET (
+ SELECT NVL (TRIM (s.SECTION_SEQ), '0'),
+ '0',
+ 'panh',
+ TO_CHAR (SYSDATE, 'YYYY-MM-DD')
+ || 'T'
+ || TO_CHAR (SYSDATE, 'HH24:MI:SS'),
+ NVL (TRIM (s.SECTION), 'N/A'),
+ NVL (TRIM (s.SECTION), 'No definition'),
+ CAST (
+ MULTISET (
+ SELECT 'false',
+ TRIM (q.section_Q_seq),
+ TO_CHAR (SYSDATE,
+ 'YYYY-MM-DD')
+ || 'T'
+ || TO_CHAR (SYSDATE,
+ 'HH24:MI:SS'),
+ UTL_I18N.UNESCAPE_REFERENCE (
+ TRIM (q.field_label)),
+ REDCAP_INSTRUCTIONS_T (
+ SUBSTR (
+ TRIM (
+ UTL_I18N.UNESCAPE_REFERENCE (
+ q.LOGIC)),
+ 1,
+ 550)),
+ 'No',
+ NVL (TRIM (q.REQUIRED),
+ 'No'),
+ 'No',
+ CAST (
+ MULTISET (
+ SELECT TRIM (
+ VAL_ORDER),
+ TRIM (VAL_name),
+ TRIM (
+ VAL_VALUE)
+ FROM REDCAP_VALUE_CODE u
+ WHERE u.question(+) =
+ q.question
+ AND u.protocol(+) =
+ q.protocol
+ ORDER BY VAL_ORDER) AS REDCAP_validValue_LIST_T)
+ "ValidValue"
+ FROM REDCAP_PROTOCOL_NEW q
+ WHERE 1 = 1
+ AND q.protocol = s.protocol
+ AND s.SECTION_SEQ =
+ q.SECTION_SEQ
+ ORDER BY q.section_Q_seq) AS REDCAP_QUESTION_LIST_T)
+ "Question"
+ FROM REDCAP_SECTION s
+ WHERE p.protocol = s.protocol(+)
+ ORDER BY s.SECTION_SEQ) AS REDCAP_SECTION_LIST_T),
+ REDCAP_PROTOCOL_T (
+ TRIM (pe.protocol_id),
+ TRIM (long_name),
+ 'PhenX',
+ TRIM (pe.preferred_name),
+ UTL_I18N.UNESCAPE_REFERENCE (
+ NVL (TRIM (pe.preferred_definition),
+ 'The Protocol is Not Found')))
+ AS "form"
+ FROM (SELECT DISTINCT protocol, form_name
+ FROM REDCAP_PROTOCOL_NEW) p,
+ SBREXT.REDCAP_XML_GROUP g,
+ protocols_ext pe
+ WHERE p.protocol = g.protocol
+ AND pe.preferred_name = p.protocol
+ AND g.GROUP_NUM = v.GROUP_NUM
+ ORDER BY p.protocol, form_name) AS REDCAP_FORM_LIST_T)
+ AS "group"
+ FROM REDCOP_PR_GROUP_VW v;
+
+			
+---from DB on 03/06
+DROP VIEW SBREXT.REDCAP_FORM_COLLECT_VW;
+
+/* Formatted on 3/6/2017 4:52:02 PM (QP5 v5.269.14213.34769) */
+CREATE OR REPLACE FORCE VIEW SBREXT.REDCAP_FORM_COLLECT_VW
+(
+ "collectionName",
+ "collectionDescription",
+ "group"
+)
+AS
+ SELECT 'PhenX Protocols - ' || v.GROUP_NUM "collectionName",
+ 'Load PhenX ' || v.protocols "collectionDescription",
+ CAST (
+ MULTISET (
+ SELECT 'PhenX',
+ 'dwarzel',
+ TO_CHAR (SYSDATE, 'YYYY-MM-DD') ||'T'|| TO_CHAR (SYSDATE, 'HH24:MI:SS'), 
+ SUBSTR (p.protocol || p.form_name, 9),
+ 'Uploaded via FormLoader',
+ UTL_I18N.UNESCAPE_REFERENCE( TRIM (p.preferred_definition)),
+ '2.16.840.1.113883.3.26.2',
+ '',
+ '1.0',
+ 'DRAFT NEW',
+ 'CRF',
+ '',
+ '',
+ CAST (
+ MULTISET (
+ SELECT NVL (TRIM (s.SECTION_SEQ), '0'),
+ '0',
+ 'panh',
+ TO_CHAR (SYSDATE, 'YYYY-MM-DD')
+ || 'T'
+ || TO_CHAR (SYSDATE, 'HH24:MI:SS'),
+ NVL (TRIM (s.SECTION), 'N/A'),
+ NVL (TRIM (s.SECTION), 'No definition'),
+ CAST (
+ MULTISET (
+ SELECT MATRIX_GROUP_NAME,
+ MATRIX_RANK,
+ 'false',
+ TRIM (q.section_Q_seq),
+ TO_CHAR (SYSDATE,
+ 'YYYY-MM-DD')
+ || 'T'
+ || TO_CHAR (SYSDATE,
+ 'HH24:MI:SS'),
+ UTL_I18N.UNESCAPE_REFERENCE (
+ TRIM (q.field_label)),
+ REDCAP_INSTRUCTIONS_T (
+ SUBSTR (
+ TRIM (
+ UTL_I18N.UNESCAPE_REFERENCE (
+ q.INSTRUCTIONS)),
+ 1,
+ 550)),
+ 'No',
+ NVL (TRIM (q.REQUIRED),
+ 'No'),
+ 'No',
+ CAST (
+ MULTISET (
+ SELECT TRIM (
+ VAL_ORDER),
+ TRIM (VAL_name),
+ TRIM (VAL_VALUE),
+ TRIM (VAL_VALUE)
+ FROM REDCAP_VALUE_CODE u
+ WHERE u.question(+) =
+ q.question
+ AND u.protocol(+) =
+ q.protocol
+ ORDER BY VAL_ORDER) AS REDCAP_validValue_LIST_T)
+ "ValidValue"
+ FROM REDCAP_PROTOCOL_NEW q
+ WHERE 1 = 1
+ AND q.protocol = s.protocol
+ AND s.SECTION_SEQ =
+ q.SECTION_SEQ
+ ORDER BY q.section_Q_seq) AS REDCAP_QUESTION_LIST_T)
+ "Question"
+ FROM REDCAP_SECTION s
+ WHERE p.protocol = s.protocol(+)
+ ORDER BY s.SECTION_SEQ) AS REDCAP_SECTION_LIST_T),
+ REDCAP_PROTOCOL_T (
+ TRIM (pe.protocol_id),
+ TRIM (long_name),
+ 'PhenX',
+ TRIM (pe.preferred_name),
+ UTL_I18N.UNESCAPE_REFERENCE (
+ NVL (TRIM (pe.preferred_definition),
+ 'The Protocol is Not Found')))
+ AS "form"
+ FROM (SELECT DISTINCT
+ protocol, form_name, preferred_definition
+ FROM REDCAP_PROTOCOL_FORM) p,
+ SBREXT.REDCAP_XML_GROUP g,
+ protocols_ext pe
+ WHERE p.protocol = g.protocol
+ AND pe.preferred_name = p.protocol
+ AND g.GROUP_NUM = v.GROUP_NUM
+ --AND g.GROUP_NUM in (1,2)
+ ORDER BY p.protocol, form_name) AS SBREXT.REDCAP_FORM_LIST_T)--.REDCAP_FORM_S 
+ AS "group"
+ FROM REDCOP_PR_GROUP_VW v
+	 
+Create tables are used in 3SPs
+CREATE TABLE SBREXT.REDCAP_ERROR_LOG
+(
+ FILE_NAME VARCHAR2(50 BYTE),
+ REPORT_ERROR_TXT VARCHAR2(1100 BYTE),
+ DATE_PROCESSED DATE
+)
+CREATE TABLE SBREXT.REDCAP_XML
+(
+ PROTOCOL VARCHAR2(30 BYTE),
+ TEXT CLOB,
+ FILE_NAME VARCHAR2(200 BYTE),
+ CREATED_DATE DATE
+);	
+
+CREATE OR REPLACE PROCEDURE SBREXT.REDCAP_PREVIW_TRANSFORM IS
+
+l_file_name VARCHAR2(500):='Phenx FORMS';
+ errmsg VARCHAR2(500):='Non';
+BEGIN 
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'÷','/')where instr( FIELD_LABEL,'÷')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'&'||'#149;','') where instr( FIELD_LABEL,'&'||'#149;')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'°','DDDD') where instr(field_label,'°')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'©','CCCC') where instr(field_label,'©')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'®','RRRR') where instr(field_label,'®')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'™','TTTT') where instr(field_label,'™')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'µ','MUMUMU') where instr(field_label,'µ')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'×','XxXxXx') where instr(field_label,'×')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'±','PMPMPM') where instr(field_label,'±')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'¢','ctctct') where instr(field_label,'¢')>0;
+ commit; 
+UPDATE REDCAP_PROTOCOL_NEW set field_label=REGEXP_REPLACE(ASCIISTR(field_label), '\\[[:xdigit:]]{4}', '');
+ commit;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=regexp_replace(trim(FIELD_LABEL),'['||chr(128)||'-'||chr(255)||';]','',1,0,'in');
+ commit;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=regexp_replace(trim(FIELD_LABEL),'['||chr(1)||'-'||chr(31)||']','',1,0,'in');
+
+ commit; 
+ EXCEPTION
+ WHEN OTHERS THEN
+ errmsg := SQLERRM;
+ dbms_output.put_line('errmsg - '||errmsg);
+ insert into REDCAP_ERROR_LOG VALUES (l_file_name, errmsg, sysdate);
+ 
+
+END ;
+/ 
+			
+CREATE OR REPLACE PROCEDURE SBREXT.xml_GROUP_RedCap_insert as
+ 
+
+CURSOR c_protocol IS
+SELECT distinct group_num
+FROM SBREXT.REDCAP_XML_GROUP ;
+
+
+ l_file_name VARCHAR2 (100):='NA';
+ l_file_path VARCHAR2 (200);
+ l_result CLOB:=null;
+ l_xmldoc CLOB:=null;
+ l_protocol VARCHAR2 (30);
+ errmsg VARCHAR2(500):='Non';
+ v_protocol VARCHAR2(50):='';
+BEGIN 
+ FOR rec IN c_protocol LOOP 
+ BEGIN 
+ l_file_path := 'SBREXT_DIR'; 
+ v_protocol:=rec.group_num ;
+ l_file_name := rec.group_num||' _GeneratedFormFinalFormCartV2.xml';
+ 
+ --SELECT dbms_xmlgen.getxml( 'select*from REDCAP_COLLECT_VW where "collectionName" like'||''''||'%'||rec.group_num ||'%'||'''')
+ 
+ SELECT dbms_xmlgen.getxml( 'select*from REDCAP_FORM_COLLECT_VW where substr("collectionName",19)='||rec.group_num)
+ INTO l_result
+ FROM DUAL ;
+ insert into SBREXT.REDCAP_XML VALUES (rec.group_num ,l_result, l_file_name ,SYSDATE);
+ 
+ dbms_output.put_line('select*from REDCAP_COLLECT_VW where subst("collectionName",19)='||rec.group_num);
+ 
+ --dbms_xslprocessor.clob2file(l_xmldoc, l_file_path, l_file_name, nls_charset_id('UTF8'));
+commit; 
+ 
+ EXCEPTION
+ WHEN OTHERS THEN
+ errmsg := SQLERRM;
+ dbms_output.put_line('errmsg - '||errmsg);
+ insert into REPORTS_ERROR_LOG VALUES (substr(l_file_name,1,49), errmsg, sysdate);
+ 
+ commit; 
+ END;
+END LOOP;
+ 
+
+END;
+/
+
+
+CREATE OR REPLACE PROCEDURE SBREXT.REDCAP_XML_TRANSFORM IS
+
+l_file_name VARCHAR2(500):='Phenx FORMS';
+ errmsg VARCHAR2(500):='Non';
+BEGIN 
+
+UPDATE redcap_xml set text=replace(text,'DDDD',UTL_I18N.UNESCAPE_REFERENCE('&'||'deg;'));
+UPDATE redcap_xml set text=replace(text,'CCCC',UTL_I18N.UNESCAPE_REFERENCE('&'||'copy;') );
+UPDATE redcap_xml set text=replace(text,'RRRR',UTL_I18N.UNESCAPE_REFERENCE('&'||'reg;'));
+UPDATE redcap_xml set text=replace(text,'TTTT',UTL_I18N.UNESCAPE_REFERENCE('&'||'#8482;'));
+UPDATE redcap_xml set text=replace(text,'MUMUMU',UTL_I18N.UNESCAPE_REFERENCE('&'||'micro;'));
+UPDATE redcap_xml set text=replace(text,'XxXxXx',UTL_I18N.UNESCAPE_REFERENCE('&'||'#215;'));
+UPDATE redcap_xml set text=replace(text,'PMPMPM',UTL_I18N.UNESCAPE_REFERENCE('&'||'plusmn;'));
+UPDATE redcap_xml set text=replace(text,'ctctct',UTL_I18N.UNESCAPE_REFERENCE('&'||'cent;'));
+
+
+UPDATE redcap_xml set text=replace(text,'÷','/');
+UPDATE redcap_xml set text=replace(text,'REDCAP_FORM_S','form' ) ;
+UPDATE redcap_xml set text=replace(text,'&'||'#149;','' ) where instr( text,'&'||'#149;')>0;
+UPDATE redcap_xml set text=replace(text,'&'||'quot;','"' ) ;
+UPDATE redcap_xml set text=replace(text,'&'||'amp;quot;','"' ) ;
+UPDATE redcap_xml set text=replace(text,'&'||'apos;','''' ) ;
+UPDATE redcap_xml set text=replace(text,'&'||'amp;#8217;','''' ) ;
+UPDATE redcap_xml set text=replace(text,'<group>'||chr(10) ) ;
+UPDATE redcap_xml set text=replace(text,'</group>'||chr(10) ) ;
+UPDATE redcap_xml set text=replace(text,'@@','') ;
+UPDATE redcap_xml set text=replace(text,'<ROWSET>'||chr(10) ) ;
+UPDATE redcap_xml set text=replace(text,'</ROWSET>'||chr(10) );
+update redcap_xml set text=replace(text,'</ROW>','</forms>');
+update redcap_xml set text=replace(text,'<ROW>','<forms>');
+update redcap_xml set text=replace(text,'REDCAP_SECTION_T','module');
+update redcap_xml set text=replace(text,'REDCAP_QUESTION_T','question');
+UPDATE redcap_xml set text=replace(text,'REDCAP_VALIDVALUE_T','validValue');
+UPDATE redcap_xml set text=replace(text,'<validValues_x005F_xx>'||chr(10));
+UPDATE redcap_xml set text=replace(text,'</validValues_x005F_xx>'||chr(10));
+UPDATE redcap_xml set text=replace(text,'<validValues_x005F_xx/>'||chr(10));
+UPDATE redcap_xml set text=replace(text,'CFR','CRF' ); 
+UPDATE redcap_xml set text=replace(text,'<modules_x005F_xx>','' );
+UPDATE redcap_xml set text=replace(text,'<modules_x005F_xx>'||chr(10));
+UPDATE redcap_xml set text=replace(text,'</modules_x005F_xx>'||chr(10));
+UPDATE redcap_xml set text=replace(text,'<questions_x005F_xx>'||chr(10));--
+UPDATE redcap_xml set text=replace(text,'</questions_x005F_xx>'||chr(10));
+UPDATE redcap_xml set text=replace(text,'<questions_x005F_xx/>'||chr(10));
+UPDATE redcap_xml set text=replace(text,'<?xml version="1.0"?>','<?xml version="1.0" encoding="UTF-8"?>');
+ commit; 
+ EXCEPTION
+ WHEN OTHERS THEN
+ errmsg := SQLERRM;
+ dbms_output.put_line('errmsg - '||errmsg);
+ insert into REDCAP_ERROR_LOG VALUES (l_file_name, errmsg, sysdate);
+ 
+
+END ;
+/
+
+update REDCAP_PROTOCOL_NEW set section_Q_SEQ=52,question=52 -- set protocol='PX510102'
+ where protocol='PX510102' and question=53
+ 
+create table REDCAP_PROTOCOL_FORM_OLD as SELECT DISTINCT r.protocol, TRIM ('PhenX '||INITCAP(REPLACE 
+ ( REPLACE(LOWER(TRIM(form_name)), '_', ' '),
+ 'phenx',''))||' - '||r.protocol) form_name,preferred_Definition
+ FROM REDCAP_PROTOCOL_NEW r,
+ protocols_ext p
+ where p.preferred_name=r.protocol;
+ 
+ select count(*),protocol from REDCAP_PROTOCOL_FORM
+ group by protocol having count(*)>1;
+/
+CREATE OR REPLACE FORCE VIEW SBREXT.REDCAP_FORM_COLLECT_VW
+(
+ "collectionName",
+ "collectionDescription",
+ "group"
+)
+AS
+ SELECT 'PhenX Protocols - ' || v.GROUP_NUM "collectionName",
+ 'Load PhenX ' || v.protocols "collectionDescription",
+ CAST (
+ MULTISET (
+ SELECT 'PhenX',
+ 'dwarzel',
+ TO_CHAR (SYSDATE, 'YYYY-MM-DD') ||'T'|| TO_CHAR (SYSDATE, 'HH24:MI:SS'), 
+ SUBSTR (p.protocol || p.form_name, 9),
+ 'Uploaded via FormLoader',
+ UTL_I18N.UNESCAPE_REFERENCE( TRIM (p.preferred_definition)),
+ '2.16.840.1.113883.3.26.2',
+ '',
+ '1.0',
+ 'DRAFT NEW',
+ 'CRF',
+ '',
+ '',
+ CAST (
+ MULTISET (
+ SELECT NVL (TRIM (s.SECTION_SEQ), '0'),
+ '0',
+ 'panh',
+ TO_CHAR (SYSDATE, 'YYYY-MM-DD')
+ || 'T'
+ || TO_CHAR (SYSDATE, 'HH24:MI:SS'),
+ NVL (TRIM (s.SECTION), 'N/A'),
+ NVL (TRIM (s.SECTION), 'No definition'),
+ CAST (
+ MULTISET (
+ SELECT MATRIX_GROUP_NAME,
+ MATRIX_RANK,
+ 'false',
+ TRIM (q.section_Q_seq),
+ TO_CHAR (SYSDATE,
+ 'YYYY-MM-DD')
+ || 'T'
+ || TO_CHAR (SYSDATE,
+ 'HH24:MI:SS'),
+ UTL_I18N.UNESCAPE_REFERENCE (
+ TRIM (q.field_label)),
+ REDCAP_INSTRUCTIONS_T (
+ SUBSTR (
+ TRIM (
+ UTL_I18N.UNESCAPE_REFERENCE (
+ q.INSTRUCTIONS)),
+ 1,
+ 550)),
+ 'No',
+ NVL (TRIM (q.REQUIRED),
+ 'No'),
+ 'No',
+ CAST (
+ MULTISET (
+ SELECT TRIM (
+ VAL_ORDER),
+ TRIM (VAL_name),
+ TRIM (VAL_VALUE),
+ case q.FIELD_TYPE when'calc' then 'Calculation: '|| TRIM (VAL_VALUE)
+ else TRIM (VAL_VALUE)end
+ FROM REDCAP_VALUE_CODE u
+ WHERE u.question(+) =
+ q.question
+ AND u.protocol(+) =
+ q.protocol
+ ORDER BY VAL_ORDER) AS REDCAP_validValue_LIST_T)
+ "ValidValue"
+ FROM REDCAP_PROTOCOL_NEW q
+ WHERE 1 = 1
+ AND q.protocol = s.protocol
+ AND s.SECTION_SEQ =
+ q.SECTION_SEQ
+ ORDER BY q.section_Q_seq) AS REDCAP_QUESTION_LIST_T)
+ "Question"
+ FROM REDCAP_SECTION s
+ WHERE p.protocol = s.protocol(+)
+ ORDER BY s.SECTION_SEQ) AS REDCAP_SECTION_LIST_T),
+ REDCAP_PROTOCOL_T (
+ TRIM (pe.protocol_id),
+ TRIM (long_name),
+ 'PhenX',
+ TRIM (pe.preferred_name),
+ UTL_I18N.UNESCAPE_REFERENCE (
+ NVL (TRIM (pe.preferred_definition),
+ 'The Protocol is Not Found')))
+ AS "form"
+ FROM (SELECT DISTINCT
+ protocol, form_name, preferred_definition
+ FROM REDCAP_PROTOCOL_FORM) p,
+ SBREXT.REDCAP_XML_GROUP g,
+ protocols_ext pe
+ WHERE p.protocol = g.protocol
+ AND pe.preferred_name = p.protocol
+ AND g.GROUP_NUM = v.GROUP_NUM
+ --AND g.GROUP_NUM in (1,2)
+ ORDER BY p.protocol, form_name) AS SBREXT.REDCAP_FORM_LIST_T)--.REDCAP_FORM_S 
+ AS "group"
+ FROM REDCOP_PR_GROUP_VW v
+ 
+ -- select*FROM REDCOP_PR_GROUP_VW
+ 
+ ----added on 04092017
+ 
+ CREATE TABLE SBREXT.REDCAP_VALUE_CODE
+(
+ PROTOCOL VARCHAR2(50 BYTE),
+ FORM_NAME VARCHAR2(100 BYTE),
+ QUESTION NUMBER,
+ VAL_NAME VARCHAR2(2000 BYTE),
+ VAL_VALUE VARCHAR2(2000 BYTE),
+ VAL_ORDER NUMBER,
+ ELM_ORDER VARCHAR2(2000 BYTE),
+ PIPE_NUM NUMBER,
+ VAL_NAME_NEW VARCHAR2(2000 BYTE)
+)
+
+ select DISTINCT VAL_NAME ,UPPER(val_value) from SBREXT.REDCAP_VALUE_CODE where val_name like '%UNDEFINED%'
+ and upper(trim(VAL_VALUE)) in ('YES','NO');
+ 
+ update SBREXT.REDCAP_VALUE_CODE set val_name_NEW=UPPER(val_value)
+ where val_name like '%UNDEFINED%'
+ and upper(trim(VAL_VALUE)) in ('YES','NO');
+ 
+ select DISTINCT VAL_NAME ,UPPER(val_value) from SBREXT.REDCAP_VALUE_CODE where val_name_NEW IS NULL
+ and val_name like '%UNDEFINED%'
+ ORDER BY 1;
+ 
+ 
+ update SBREXT.REDCAP_VALUE_CODE set val_name_NEW=UPPER(val_value)
+ where val_name_NEW IS NULL;
+			 
+			 
+			 
+			 SELECT LENGTH(FIELD_LABEL||' ('||VARIABLE_FIELD_NAME||')'),FIELD_LABEL,VARIABLE_FIELD_NAME FROM REDCAP_PROTOCOL_NEW
+ 
+WHERE LENGTH(FIELD_LABEL||' ('||VARIABLE_FIELD_NAME||')')>1999
+ 
+ 
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=trim(FIELD_LABEL||' ('||VARIABLE_FIELD_NAME||')')
+WHERE LENGTH(FIELD_LABEL||' ('||VARIABLE_FIELD_NAME||')')<1999
+ 
+ 
+SELECT LENGTH('..TRUNCATED('||VARIABLE_FIELD_NAME||')'), substr(FIELD_LABEL,1,2000-LENGTH('..TRUNCATED('||VARIABLE_FIELD_NAME||')'))||'..TRUNCATED('||VARIABLE_FIELD_NAME||')'
+ 
+FROM REDCAP_PROTOCOL_NEW
+ 
+WHERE LENGTH(FIELD_LABEL||' ('||VARIABLE_FIELD_NAME||')')>1999
+ 
+ 
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=
+substr(FIELD_LABEL,1,1999-LENGTH('..TRUNCATED..('||VARIABLE_FIELD_NAME||')'))||'..TRUNCATED('||VARIABLE_FIELD_NAME||')'
+WHERE LENGTH(FIELD_LABEL||' ('||VARIABLE_FIELD_NAME||')')>1999
+
+
+
+UPDATE REDCAP_PROTOCOL_NEW set INSTRUCTIONS = 
+CASE WHEN INSTRUctions is not null then INSTRUctions||'; UOM='||substr(FIELD_NOTE,1,(REGEXP_INSTR(FIELD_NOTE,'\|', 1, 1))-1) 
+else 'UOM='||substr(FIELD_NOTE,1,(REGEXP_INSTR(FIELD_NOTE,'\|', 1, 1))-1) 
+end
+where instr(FIELD_NOTE,'|')> 0
+
+
+UPDATE SBREXT.REDCAP_XML_GROUP set GROUP_NUM= CASE 
+WHEN protocol in ('PX010101','PX010201','PX010301','PX010401','PX010701','PX010801','PX011001','PX011101','PX011201','PX011301')
+then 1
+WHEN protocol in ('PX020101','PX020201','PX020202','PX020203','PX020302','PX020702','PX220101')
+then 2 
+WHEN protocol in ('PX020401','PX020601','PX020602','PX020701','PX020704','PX020802','PX020901','PX021001','PX021101','PX021301')
+then 3 
+WHEN protocol in ('PX020304','PX020305','PX020501')
+then 4
+WHEN protocol in ('PX020303','PX020703')
+then 5
+WHEN protocol in ('PX021302,PX021303,PX021401,PX021501,PX021502,PX021602')
+then 6 
+WHEN protocol in ('PX021603','PX021701','PX021702','PX030101','PX030201','PX030301','PX030401','PX030501','PX030701','PX030902')
+THEN 7
+WHEN protocol in ('PX031001','PX031101','PX031301','PX040101','PX040201','PX040301','PX040401','PX040501','PX040601','PX040701')
+then 8 
+WHEN protocol in ('PX031401','PX040801','PX040901','PX041001','PX041101')
+THEN 9 
+WHEN protocol in ('PX041201','PX041301','PX041401','PX050101','PX050201')
+then 10 
+WHEN protocol in ('PX050202','PX050301','PX050401','PX050501','PX050601','PX050701','PX050801','PX050901','PX051001','PX051101','PX051301')
+THEN 11
+WHEN protocol in ('PX050801','PX050901','PX051001','PX051101','PX051301')
+THEN 12
+WHEN group_num =20 THEN 15
+WHEN group_num =7 THEN 13
+WHEN group_num =8 THEN 14
+WHEN group_num =0 THEN 35
+else GROUP_NUM+8
+end ;
+
+
+CREATE TABLE SBREXT.REDCAP_SECTION
+(
+ PROTOCOL VARCHAR2(40 BYTE),
+ FORM_NAME VARCHAR2(400 BYTE),
+ SECTION VARCHAR2(2000 BYTE),
+ SECTION_SEQ NUMBER,
+ QUESTION NUMBER,
+ QUESTION_TEXT VARCHAR2(2000 BYTE),
+ INSTUCTION VARCHAR2(2000 BYTE),
+ SECTION_NEW VARCHAR2(2000 BYTE)
+)
+
+CREATE TABLE SBREXT.REDCAP_PROTOCOL_FORM
+(
+ PROTOCOL VARCHAR2(40 BYTE),
+ FORM_NAME VARCHAR2(449 BYTE),
+ PREFERRED_DEFINITION VARCHAR2(2000 BYTE) ,
+ PROTOCOL_NAME VARCHAR2(500 BYTE),
+ INSTRUCTION VARCHAR2(2000 BYTE)
+)
+
+
+update REDCAP_PROTOCOL_FORM set protocol_name=substr(form_name,19);
+
+merge into REDCAP_PROTOCOL_FORM t1
+using (select protocol, field_label from (
+SELECT min( question) OVER (PARTITION BY
+protocol ORDER BY protocol) form_inst_q,question,
+protocol, field_label,section
+from REDCAP_PROTOCOL_NEW
+where field_Type='descriptive')
+where form_inst_q=question) t2
+on (t1.PROTOCOL = t2.PROTOCOL)
+when matched then 
+update set t1.instruction = t2.field_label;
+
+
+UPDATE REDCAP_SECTION set SECTION_new = SECTION where section is not null;
+
+merge into REDCAP_SECTION t1
+using(select* from REDCAP_PROTOCOL_FORM)t2
+on (t1.PROTOCOL = t2.PROTOCOL
+and t1.protocol=t2.protocol
+and section is null and SECTION_SEQ=0)
+when matched then 
+update set t1.SECTION_new = t2.protocol_name
+
+UPDATE REDCAP_PROTOCOL_FORM set INSTRUCTION=replace(replace(INSTRUCTION,'<sup>',''),'</sup>','') where instr(INSTRUCTION,'<sup>')>0;
+UPDATE REDCAP_PROTOCOL_FORM set INSTRUCTION=replace(replace(INSTRUCTION,'<a href=',''),'</a>','') where instr(INSTRUCTION,'<a href=')>0
+UPDATE REDCAP_PROTOCOL_FORM set INSTRUCTION=replace(replace(INSTRUCTION,'<a target="_blank" href=',''),'</a>','') where instr(INSTRUCTION,'<a target="_blank" href=')>0
+UPDATE REDCAP_PROTOCOL_FORM set INSTRUCTION=replace(INSTRUCTION,'target="_blank">','') where instr(INSTRUCTION,'target="_blank">')>0
+UPDATE REDCAP_PROTOCOL_FORM set INSTRUCTION=replace(replace(INSTRUCTION,'<i>',''),'</i>','') where instr(INSTRUCTION,'<i>')>0
+UPDATE REDCAP_PROTOCOL_FORM set INSTRUCTION=replace(replace(INSTRUCTION,'<b>',''),'</b>','') where instr(INSTRUCTION,'<b>')>0
+UPDATE REDCAP_PROTOCOL_FORM set INSTRUCTION=replace(replace(INSTRUCTION,'<p>',''),'</p>','') where instr(INSTRUCTION,'<p>')>0
+
+CREATE OR REPLACE PROCEDURE SBREXT.REDCAP_PREVIW_TRANSFORM IS
+
+l_file_name VARCHAR2(500):='Phenx FORMS';
+ errmsg VARCHAR2(500):='Non';
+BEGIN 
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(replace(field_label,'<a href=',''),'</a>','') where instr(field_label,'<a href=')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(replace(field_label,'<a target="_blank" href=',''),'</a>','') where instr(field_label,'<a target="_blank" href=')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'target="_blank">','') where instr(field_label,'target="_blank">')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(replace(field_label,'<i>',''),'</i>','') where instr(field_label,'<i>')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(replace(field_label,'<b>',''),'</b>','') where instr(field_label,'<b>')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(replace(field_label,'<p>',''),'</p>','') where instr(field_label,'<p>')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'@@','') where instr( FIELD_LABEL,'@@')>0; 
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'÷','/')where instr( FIELD_LABEL,'÷')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'&'||'#149;','') where instr( FIELD_LABEL,'&'||'#149;')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'°','DDDD') where instr(field_label,'°')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'©','CCCC') where instr(field_label,'©')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'®','RRRR') where instr(field_label,'®')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'™','TTTT') where instr(field_label,'™')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'™','TTTT') where instr(field_label,'™')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'µ','MUMUMU') where instr(field_label,'µ')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'×','XxXxXx') where instr(field_label,'×')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'±','PMPMPM') where instr(field_label,'±')>0;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=replace(field_label,'¢','ctctct') where instr(field_label,'¢')>0;
+ commit; 
+UPDATE REDCAP_PROTOCOL_NEW set field_label=REGEXP_REPLACE(ASCIISTR(field_label), '\\[[:xdigit:]]{4}', '');
+ commit;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=regexp_replace(trim(FIELD_LABEL),'['||chr(128)||'-'||chr(255)||';]','',1,0,'in');
+ commit;
+UPDATE REDCAP_PROTOCOL_NEW set field_label=regexp_replace(trim(FIELD_LABEL),'['||chr(1)||'-'||chr(31)||']','',1,0,'in');
+
+ commit; 
+ EXCEPTION
+ WHEN OTHERS THEN
+ errmsg := SQLERRM;
+ dbms_output.put_line('errmsg - '||errmsg);
+ insert into REDCAP_ERROR_LOG VALUES (l_file_name, errmsg, sysdate);
+ 
+
+END ;
+/
+
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(replace(PREFERRED_DEFINITION,'<sup>',''),'</sup>','') where instr(PREFERRED_DEFINITION,'<sup>')>0;
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(replace(PREFERRED_DEFINITION,'<a href=',''),'</a>','') where instr(PREFERRED_DEFINITION,'<a href=')>0
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(replace(PREFERRED_DEFINITION,'<a target="_blank" href=',''),'</a>','') where instr(PREFERRED_DEFINITION,'<a target="_blank" href=')>0
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(PREFERRED_DEFINITION,'target="_blank">','') where instr(PREFERRED_DEFINITION,'target="_blank">')>0
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(replace(PREFERRED_DEFINITION,'<i>',''),'</i>','') where instr(PREFERRED_DEFINITION,'<i>')>0
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(replace(PREFERRED_DEFINITION,'<b>',''),'</b>','') where instr(PREFERRED_DEFINITION,'<b>')>0
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(replace(PREFERRED_DEFINITION,'<p>',''),'</p>','') where instr(PREFERRED_DEFINITION,'<p>')>0
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(replace(PREFERRED_DEFINITION,'<li>',''),'</li>','') where instr(PREFERRED_DEFINITION,'<li>')>0
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(replace(PREFERRED_DEFINITION,'<strong>',''),'</strong>','') where instr(PREFERRED_DEFINITION,'<strong>')>0
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(replace(PREFERRED_DEFINITION,'<ul>',''),'</ul>','') where instr(PREFERRED_DEFINITION,'<ul>')>0
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(replace(PREFERRED_DEFINITION,'<I>',''),'</I>','') where instr(PREFERRED_DEFINITION,'<I>')>0;
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(replace(PREFERRED_DEFINITION,'<sub>',''),'</sub>','') where instr(PREFERRED_DEFINITION,'<sub>')>0;
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(replace(PREFERRED_DEFINITION,'<ul type=disc>',''),'</ul>','') where instr(PREFERRED_DEFINITION,'<ul type=disc>')>0;
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(replace(PREFERRED_DEFINITION,'<a name="section_SPECIFIC_INSTRUCTIONS">',''),'</a>','') where instr(PREFERRED_DEFINITION,'<a name="section_SPECIFIC_INSTRUCTIONS">')>0;
+
+UPDATE REDCAP_PROTOCOL_FORM set PREFERRED_DEFINITION=replace(PREFERRED_DEFINITION,'&'||'amp;',' ')
+where instr(PREFERRED_DEFINITION,'&'||'amp;')>0;
+
+select distinct GROUP_NUM,protocol, to_number(substr(protocol,3,8)) from SBREXT.REDCAP_XML_GROUP 
+where protocol in ('PX120402','PX120701')--GROUP_NUM between 5 and 33
+order by 1,2
+
+select distinct GROUP_NUM,protocol from SBREXT.REDCAP_XML_GROUP 
+where to_number(substr(protocol,3,8)) >120401 and GROUP_NUM >33
+order by 1,2
+
+UPDATE SBREXT.REDCAP_XML_GROUP set GROUP_NUM=25
+where protocol in ('PX120101','PX120201','PX120202','PX120301',
+'PX120401','PX120402','PX120501','PX120502','PX120601','PX120701',
+'PX120901','PX120902','PX120903')
+
+select distinct GROUP_NUM,protocol from SBREXT.REDCAP_XML_GROUP 
+where GROUP_NUM =35
+order by 2
+
+select distinct GROUP_NUM from SBREXT.REDCAP_XML_GROUP 
+where GROUP_NUM >15
+order by 1
+order by 1,2
+
+UPDATE SBREXT.REDCAP_XML_GROUP set GROUP_NUM=21
+where protocol in ('PX100601','PX100602','PX100701','PX100801','PX100901',
+'PX101001','PX101101','PX101201','PX101301','PX101302','PX101401','PX101501');
+UPDATE SBREXT.REDCAP_XML_GROUP set GROUP_NUM=23
+where protocol in ('PX110101','PX110301','PX110401','PX110501','PX110601',
+'PX110701','PX110801','PX110901');
+
+UPDATE SBREXT.REDCAP_XML_GROUP set GROUP_NUM=24
+where protocol in ('PX111001','PX111101','PX111201','PX111301','PX111302','PX111303'',PX111401','PX111402','PX111501');
+
+UPDATE SBREXT.REDCAP_XML_GROUP set GROUP_NUM=27
+where protocol in ('PX120101','PX120201','PX120202','PX120301',
+'PX120401','PX120402','PX120501','PX120502','PX120601','PX120701',
+'PX120901','PX120902','PX120903');
+
+
+SELECT min( question) OVER (PARTITION BY
+protocol ORDER BY protocol) form_inst_q,question,
+protocol, field_label,section,SECTION_SEQ,SECTION_Q_SEQ question_number_inSEQ,FIELD_TYPE
+from REDCAP_PROTOCOL_NEW
+where field_Type='descriptive'
+
+
+select*from REDCAP_PROTOCOL_NEW
+where field_Type='descriptive'
+
+select VARIABLE_FIELD_NAME,question,section,
+protocol, field_label,section,SECTION_SEQ,SECTION_Q_SEQ ,FIELD_TYPE
+from REDCAP_PROTOCOL_NEW
+where field_Type='descriptive'
+and INSTR(VARIABLE_FIELD_NAME,substr(protocol,3))>0 
+and INSTR(VARIABLE_FIELD_NAME,'instructions_')>0
+order by protocol,question
+
+
+select VARIABLE_FIELD_NAME,question,section,
+protocol, field_label,section,SECTION_SEQ,SECTION_Q_SEQ ,FIELD_TYPE
+
+--select count(*)
+from REDCAP_PROTOCOL_NEW
+where field_Type='descriptive'
+and question=0
+and section is null
+
+order by protocol
+
+
+create table REDCAP_PROTOCOL_NEW_BK04222017 as select*from REDCAP_PROTOCOL_NEW;
+
+UPDATE REDCAP_PROTOCOL_NEW set protocol=replace(protocol,'Instructions_to','')
+where field_Type='descriptive'
+and question=0
+and protocol like 'Instructions_to%'
+and section is null
+
+UPDATE REDCAP_PROTOCOL_NEW set protocol='Instructions_to'||protocol
+where field_Type='descriptive'
+and question=0
+
+and section is null
+
+
+select* from SBREXT.REDCAP_XML_GROUP where protocol in ('PX021101','PX120701' ,'PX120402','PX020601')
+
+
+
+
+update REDCAP_PROTOCOL_FORM set instruction=NULL;
+
+merge into REDCAP_PROTOCOL_FORM t1
+using (
+SELECT question,
+protocol, field_label,section
+from REDCAP_PROTOCOL_NEW
+where field_Type='descriptive'
+and question=0
+and section is null) t2
+on (t1.PROTOCOL = t2.PROTOCOL)
+when matched then 
+update set t1.instruction = t2.field_label
+
+select* from REDCAP_PROTOCOL_FORM where instruction is not NULL;
+
+
+UPDATE SBREXT.REDCAP_XML_GROUP set GROUP_NUM=21
+where protocol in ('PX100601','PX100602','PX100701','PX100801','PX100901',
+'PX101001','PX101101','PX101201','PX101301','PX101302','PX101401','PX101501');
+UPDATE SBREXT.REDCAP_XML_GROUP set GROUP_NUM=23
+where protocol in ('PX110101','PX110301','PX110401','PX110501','PX110601',
+'PX110701','PX110801','PX110901');
+
+UPDATE SBREXT.REDCAP_XML_GROUP set GROUP_NUM=24
+where protocol in ('PX111001','PX111101','PX111201','PX111301','PX111302','PX111303'',PX111401','PX111402','PX111501');
+
+UPDATE SBREXT.REDCAP_XML_GROUP set GROUP_NUM=27
+where protocol in ('PX120101','PX120201','PX120202','PX120301',
+'PX120401','PX120402','PX120501','PX120502','PX120601','PX120701',
+'PX120901','PX120902','PX120903');
+
+
+SELECT min( question) OVER (PARTITION BY
+protocol ORDER BY protocol) form_inst_q,question,
+protocol, field_label,section,SECTION_SEQ,SECTION_Q_SEQ question_number_inSEQ,FIELD_TYPE
+from REDCAP_PROTOCOL_NEW
+where field_Type='descriptive'
+
+
+select*from REDCAP_PROTOCOL_NEW
+where field_Type='descriptive'
+
+select VARIABLE_FIELD_NAME,question,section,
+protocol, field_label,section,SECTION_SEQ,SECTION_Q_SEQ ,FIELD_TYPE
+from REDCAP_PROTOCOL_NEW
+where field_Type='descriptive'
+and INSTR(VARIABLE_FIELD_NAME,substr(protocol,3))>0 
+and INSTR(VARIABLE_FIELD_NAME,'instructions_')>0
+order by protocol,question
+
+
+select VARIABLE_FIELD_NAME,question,section,
+protocol, field_label,section,SECTION_SEQ,SECTION_Q_SEQ ,FIELD_TYPE
+
+--select count(*)
+from REDCAP_PROTOCOL_NEW
+where field_Type='descriptive'
+and question=0
+and section is null
+
+order by protocol
+
+
+create table REDCAP_PROTOCOL_NEW_BK04222017 as select*from REDCAP_PROTOCOL_NEW;
+
+UPDATE REDCAP_PROTOCOL_NEW set protocol=replace(protocol,'Instructions_to','')
+where field_Type='descriptive'
+and question=0
+and protocol like 'Instructions_to%'
+and section is null
+
+UPDATE REDCAP_PROTOCOL_NEW set protocol='Instructions_to'||protocol
+where field_Type='descriptive'
+and question=0
+
+and section is null
+
+
+select* from SBREXT.REDCAP_XML_GROUP where protocol in ('PX021101','PX120701' ,'PX120402','PX020601')
+
+select instruction from REDCAP_PROTOCOL_FORM where protocol in ('PX021101','PX120701' ,'PX120402','PX020601')
+
+
+
+update REDCAP_PROTOCOL_FORM set instruction=NULL;
+
+merge into REDCAP_PROTOCOL_FORM t1
+using (
+SELECT question,
+protocol, field_label,section
+from REDCAP_PROTOCOL_NEW
+where field_Type='descriptive'
+and question=0
+and section is null) t2
+on (t1.PROTOCOL = t2.PROTOCOL)
+when matched then 
+update set t1.instruction = t2.field_label
+
+select* from REDCAP_PROTOCOL_FORM where instruction is not NULL;
+
+
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=trim(FIELD_LABEL||' ('||VARIABLE_FIELD_NAME||')')
+WHERE LENGTH(FIELD_LABEL||' ('||VARIABLE_FIELD_NAME||')')<1999
+ 
+ 
+SELECT LENGTH('..TRUNCATED('||VARIABLE_FIELD_NAME||')'), substr(FIELD_LABEL,1,2000-LENGTH('..TRUNCATED('||VARIABLE_FIELD_NAME||')'))||'..TRUNCATED('||VARIABLE_FIELD_NAME||')'
+ 
+FROM REDCAP_PROTOCOL_NEW
+ 
+WHERE LENGTH(FIELD_LABEL||' ('||VARIABLE_FIELD_NAME||')')>1999
+ 
+ 
+UPDATE REDCAP_PROTOCOL_FORM set instruction=
+substr(instruction,1,243)||'..TRUNCATED'
+where LENGTH(instruction)
+>254
+
+
+select count(*) from REDCAP_PROTOCOL_FORM 
+where LENGTH(instruction)>1
+
+
+select*from REDCAP_PROTOCOL_FORM
+where LENGTH(instruction)>1
+order by protocol
+>254
+
+
+select*from REDCAP_PROTOCOL_FORM
+where instr(instruction,'..TRUNCATED')>0
+
+
+ select*from SBREXT.REDCAP_XML WHERE PROTOCOL in (3,27)order by PROTOCOL;
+ 
+ 
+select*from SBREXT.REDCAP_XML_GROUP 
+where protocol in ( 'PX020302',
+'PX020303','PX020304')
+
+UPDATE SBREXT.REDCAP_XML_GROUP set GROUP_NUM=22
+where protocol in ( 'PX020302',
+'PX020303','PX020304');
+
+SELECT a.field_Type,a.protocol,A. question, a.section,B.long_name,a.VARIABLE_FIELD_NAME ,field_label
+from REDCAP_PROTOCOL_NEW a,
+PROTOCOLS_ext b
+where substr(a.protocol,-8)=b.preferred_name and question <5
+and a.protocol in ('PX021101','PX120701' ,'PX120402','PX020601', 'PX020302','PX020304')
+order by a.protocol,a.question;
+
+SELECT a.field_Type,B.long_name,b.preferred_name,A. question, a.section,a.VARIABLE_FIELD_NAME ,field_label
+from REDCAP_PROTOCOL_NEW a,
+PROTOCOLS_ext b
+where substr(a.protocol,-8)=b.preferred_name and question <5
+and b.preferred_name in ('PX021101','PX120701' ,'PX120402','PX020601', 'PX020302','PX020304')
+order by b.preferred_name,a.question;
+
+
+
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=replace(replace(FORM_QUESTION,'<sup>',''),'</sup>','') where instr(FORM_QUESTION,'<sup>')>0;
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=replace(replace(FORM_QUESTION,'<a href=',''),'</a>','') where instr(FORM_QUESTION,'<a href=')>0
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=replace(replace(FORM_QUESTION,'<a target="_blank" href=',''),'</a>','') where instr(FORM_QUESTION,'<a target="_blank" href=')>0
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=replace(FORM_QUESTION,'target="_blank">','') where instr(FORM_QUESTION,'target="_blank">')>0
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=replace(replace(FORM_QUESTION,'<i>',''),'</i>','') where instr(FORM_QUESTION,'<i>')>0
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=replace(replace(FORM_QUESTION,'<b>',''),'</b>','') where instr(FORM_QUESTION,'<b>')>0
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=replace(replace(FORM_QUESTION,'<p>',''),'</p>','') where instr(FORM_QUESTION,'<p>')>0
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=replace(replace(FORM_QUESTION,'<li>',''),'</li>','') where instr(FORM_QUESTION,'<li>')>0
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=replace(replace(FORM_QUESTION,'<strong>',''),'</strong>','') where instr(FORM_QUESTION,'<strong>')>0
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=replace(replace(FORM_QUESTION,'<ul>',''),'</ul>','') where instr(FORM_QUESTION,'<ul>')>0
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=replace(replace(FORM_QUESTION,'<I>',''),'</I>','') where instr(FORM_QUESTION,'<I>')>0;
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=replace(replace(FORM_QUESTION,'<sub>',''),'</sub>','') where instr(FORM_QUESTION,'<sub>')>0;
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=replace(replace(FORM_QUESTION,'<ul type=disc>',''),'</ul>','') where instr(FORM_QUESTION,'<ul type=disc>')>0;
+UPDATE REDCAP_PROTOCOL_NEW set FORM_QUESTION=replace(replace(FORM_QUESTION,'<a name="section_SPECIFIC_INSTRUCTIONS">',''),'</a>','') where instr(FORM_QUESTION,'<a name="section_SPECIFIC_INSTRUCTIONS">')>0;
+
+
+delete from sections where protocol in('PX070601','PX090601','PX120501
+','PX121101','PX121501','PX140201','PX151302','PX160101','PX170701','PX181501') 
+
+UPDATE REDCAP_SECTION set protocol='XX'||protocol where protocol in('PX070601','PX090601','PX120501
+','PX121101','PX121501','PX140201','PX151302','PX160101','PX170701','PX181501') and section_seq=0
+
+
+ Collec 12	PhenX ','PX060501 - Occupation Occupational History 	What kind of business or industry is this? (For example: a TV or radio station, retail shoe store, state labor department, far 
+ 
+ Coll 31 	PhenX ','PX220801 - Disorders Of Respiratory Control With Inherent Autonomic 	Reproductive System Questions Did you seek medical attention for these events? (cchs_ 

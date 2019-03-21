@@ -20,17 +20,23 @@ delete from REDCAP_SECTION_NEW;
  SECTION_Q_SEQ,
  QUESTION ,
 SECTION )
- SELECT distinct q.protocol, q.form_name,SECTION_SEQ,SECTION_Q_SEQ,QUESTION,q.SECTION,FORM_QUESTION
+ SELECT distinct q.protocol, q.form_name,SECTION_SEQ,SECTION_Q_SEQ,FORM_Q_NUM,q.SECTION
  --select*
  from REDCAP_PROTOCOL_test q
- where SECTION_Q_SEQ is  null 
--- protocol like '%PX741401'--;
+ where SECTION_Q_SEQ=0 
+ --and  protocol like '%PX741401%'
  and protocol not like'Instructions%'
  order by  --q.protocol, q.form_name
- 1,5,3
+ 1,3,5;
  
-  UPDATE REDCAP_PROTOCOL_test SET SECTION_SEQ=0 , SECTION_Q_SEQ=question
- WHERE SECTION_SEQ is null and SECTION_Q_SEQ is null and protocol not like 'Instructions%';
+  UPDATE REDCAP_PROTOCOL_test SET SECTION_SEQ=NUll , 
+  SECTION_Q_SEQ=null
+ WHERE protocol not like 'Instructions%';
+ 
+ 
+ UPDATE REDCAP_PROTOCOL_test SET SECTION_SEQ=0 , SECTION_Q_SEQ=FORM_Q_NUM
+ WHERE SECTION_SEQ is null and SECTION_Q_SEQ is null  and SECTION is null and protocol not like 'Instructions%';
+ 
  
  select sec.SECTION ,section_SEQ from REDCAP_SECTION  sec
 where  NVL (TRIM (sec.SECTION), 'N/A')<>'N/A'
@@ -45,11 +51,14 @@ and mod.qtl_name='MODULE'
 and NVL(mod.modified_by ,'FORMLOADER') ='FORMLOADER'
 order by 1,2
 
-select* from REPORTS_ERROR_LOG;
-
-exec MSDRDEV.MDSR_RECAP_MODE_FIX_SQL ;
-exec MSDRDEV.redCapSact_Quest_populate2;
 exec redCapSaction_populate2 ;
+exec MSDRDEV.redCapSact_Quest_populate2;
+
+
+select* from REPORTS_ERROR_LOG;
+--delete from REPORTS_ERROR_LOG;
+exec MSDRDEV.MDSR_RECAP_MODE_FIX_SQL ;
+
 select* from SBREXT.MDSR_CDE_XML_REPORT_ERR
 
 select* from MSDRDEV.REDCAP_FIX_SQL where form_name like '%PX741401%'order by form_name;
