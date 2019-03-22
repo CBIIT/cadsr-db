@@ -56,4 +56,5 @@ DBMS_SCHEDULER.CREATE_JOB (
    repeat_interval    =>  'FREQ=DAILY;INTERVAL=7');   
 END;
 /
+exec dbms_scheduler.enable('clean_CC_PARSER_DATA');
 SPOOL OFF;
