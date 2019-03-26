@@ -57,11 +57,11 @@ exec MSDRDEV.redCapSact_Quest_populate2;
 
 select* from REPORTS_ERROR_LOG;
 --delete from REPORTS_ERROR_LOG;
-exec MSDRDEV.MDSR_RECAP_MODE_FIX_SQL ;
+exec MSDRDEV.MDSR_RECAP_QUEST_FIX_SQL ;
 
 select* from SBREXT.MDSR_CDE_XML_REPORT_ERR
 
-select* from MSDRDEV.REDCAP_FIX_SQL where form_name like '%PX741401%'order by form_name;
+select* from MSDRDEV.REDCAP_FIX_SQL order by form_name;where form_name not like '%PX741401%'
 
 delete from SBREXT.MDSR_CDE_XML_REPORT_ERR;
 

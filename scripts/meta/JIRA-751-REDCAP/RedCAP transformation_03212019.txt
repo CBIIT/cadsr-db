@@ -393,6 +393,31 @@ a.update SBREXT.REDCAP_PROTOCOL_NEW set FIELD_LABEL=FIELD_LABEL||'; variable='||
  update SBREXT.REDCAP_PROTOCOL_NEW set FIELD_LABEL=substr(FIELD_LABEL,1,1987)||'..TRUNCATED'
  where length(FIELD_LABEL)>1999;
  
+ !!!!!! new  update REDCAP_PROTOCOL_NEW set QUEST_TB_QUESTION=substr(QUESTION_CSV,1,(1977-length(VARIABLE_FIELD_NAME)))||'..TRUNCATED'||'('||VARIABLE_FIELD_NAME||')'
+ where length(QUESTION_CSV)+length(VARIABLE_FIELD_NAME)>1986; 
+ 
+update REDCAP_PROTOCOL_NEW set QUEST_TB_QUESTION=QUESTION_CSV||'('||VARIABLE_FIELD_NAME||')'
+  --select QUESTION_CSV||'('||VARIABLE_FIELD_NAME||')'
+  from REDCAP_PROTOCOL_NEW
+  where length(QUESTION_CSV)+length(VARIABLE_FIELD_NAME)<1998 --and length(QUESTION_CSV||VARIABLE_FIELD_NAME)>1900
+ and protocol not like '%nstruction%';
+ 
+ update REDCAP_PROTOCOL_NEW set QUEST_TB_QUESTION=replace (VARIABLE_FIELD_NAME,'_',' ') where 
+ (QUEST_TB_QUESTION is null or QUEST_TB_QUESTION like '%???%') and protocol not like '%nstruction%'
+ 
+  where length(QUESTION_CSV)+length(VARIABLE_FIELD_NAME)>1986;
+ 
+ 
+update REDCAP_PROTOCOL_test set QUEST_TB_QUESTION=QUESTION_CSV||'('||VARIABLE_FIELD_NAME||')'
+  --select QUESTION_CSV||'('||VARIABLE_FIELD_NAME||')' from REDCAP_PROTOCOL_NEW
+ 
+  where length(QUESTION_CSV)+length(VARIABLE_FIELD_NAME)<1996 --and length(QUESTION_CSV||VARIABLE_FIELD_NAME)>1900
+ and protocol not like '%nstruction%';
+ 
+  update REDCAP_PROTOCOL_test set QUEST_TB_QUESTION=replace (VARIABLE_FIELD_NAME,'_',' ') where 
+ (QUEST_TB_QUESTION is null or QUEST_TB_QUESTION like '%???%') and protocol not like '%nstruction%'
+ 
+ !!!
 7.c update REDCAP_PROTOCOL_NEW set LOGIC=substr(LOGIC,1,243)||'TRUNCATED' where length(LOGIC)>255;
 7.d update REDCAP_PROTOCOL_NEW set field_label=replace (VARIABLE_FIELD_NAME,'_',' ') where field_label is null or field_label like '%???%'
 --Denise Request
