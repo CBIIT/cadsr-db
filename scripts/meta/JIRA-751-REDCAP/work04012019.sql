@@ -184,9 +184,276 @@ INSERT INTO REDCAP_PROTOCOL_FORM_751
 ( PROTOCOL ,
  FORM_NAME  )
  SELECT 
- distinct  f.protocol, form_name_new,PREFERRED_DEFINITION,p.long_name
+ distinct  f.protocol--, form_name_new--,PREFERRED_DEFINITION,p.long_name
  from REDCAP_PROTOCOL_751 f,
  --select*from 
  SBREXT.PROTOCOLS_EXT p
- where preferred_name like'PX%'
- and f.protocol=preferred_name
+ where --preferred_name like'PX%' and
+ f.protocol=preferred_name(+)
+ and preferred_name is null
+ order by 1
+ 
+ CREATE TABLE REDCAP_VALUE_CODE_751
+( PROTOCOL             VARCHAR2(50)  ,
+  FORM_NAME   VARCHAR2(255)  ,
+  QUESTION            NUMBER,
+  VAL_NAME        VARCHAR2(500 )     ,
+  VAL_VALUE            VARCHAR2(500),
+  VAL_ORDER NUMBER   , 
+  ELM_ORDER  VARCHAR2(50)  ,
+  PIPE_NUM NUMBER);
+  
+  create view REDCAP_VALUE_VW751 as
+select distinct p.protocol PROTOCOL FROM REDCAP_PROTOCOL_751 p
+left outer join REDCAP_VALUE_CODE_751 s
+on p.protocol=s.protocol
+where  s.protocol is null;
+
+select* from REDCAP_VALUE_VW751;
+INSERT INTO  SBREXT.REDCAP_VALUE_CODE_751
+( PROTOCOL             ,
+FORM_NAME ,
+  QUESTION           ,
+  VAL_name           ,
+  VAL_VALUE            ,
+  VAL_ORDER,
+  PIPE_NUM,
+  ELM_ORDER)
+  select 
+  PROTOCOL,
+  FORM_NAME ,
+  question,
+  substr(CHOICES,1,instr(CHOICES,',')-1) ,--VAL_NAME substring CHOICES before first ',' and ||
+  substr(CHOICES,instr(CHOICES,',')+1),--VAL_NAME substring CHOICES after first ',' and  before||
+  ELM_ORDER-1,
+  PIPE_NUM, --Pipe position in string CHOICES
+  CHOICES ---substring CHOICES before || 
+--  select*
+ from 
+(select distinct
+  PROTOCOL,FORM_NAME,question  ,
+  trim(dbms_lob.substr(CHOICES, '[^|]+', 1, levels.column_value))  as CHOICES, dbms_lob.instr(CHOICES,'[^|]+', 1, levels.column_value) AS PIPE_NUM,levels.column_value ELM_ORDER
+from 
+  (select p.*from REDCAP_PROTOCOL_751 p,
+ REDCAP_VALUE_VW751 s
+  where p.protocol=s.protocol
+   and choices is not null) t,
+  table(cast(multiset(select level from dual connect by  level <= length (regexp_replace(t.CHOICES, '[^|]+'))  + 1) as sys.OdciNumberList)) levels
+)
+order by 1,2,3,ELM_ORDER ;
+
+select distinct
+  PROTOCOL,FORM_NAME,question  ,
+  trim(dbms_lob.substr(CHOICES, '[^|]+', 1, levels.column_value))  as CHOICES--, dbms_lob.instr(CHOICES,'[^|]+', 1, levels.column_value) AS PIPE_NUM,levels.column_value ELM_ORDER
+from 
+  REDCAP_PROTOCOL_751
+ where  choices is not null;
+ select CHOICES,
+ substr(CHOICES,1,instr(CHOICES,',')-1) ,--VAL_NAME substring CHOICES before first ',' and ||
+  substr(CHOICES,instr(CHOICES,',')+1)
+ ,val_level,question,
+  protocol
+ from(
+ select 
+    cast(trim(
+    regexp_substr(t.CHOICES, '[^|]+', 1, levels.column_value)
+  )  as varchar2(500)) as  CHOICES,levels.column_value  val_level,question,
+  protocol,dbms_lob.instr(CHOICES,'[^|]+', 1, levels.column_value) AS PIPE_NUM
+from  (select choices,protocol,question from REDCAP_PROTOCOL_751 where dbms_lob.getlength(choices) >0)t,
+      table(cast(multiset(
+        select level from dual 
+        connect by level <= length (regexp_replace(t.CHOICES, '[^|]+')) + 1
+      ) as sys.OdciNumberList)) levels)
+      order by 6,5,4;
+      
+      select*
+      from REDCAP_PROTOCOL_751 
+ where dbms_lob.getlength(choices) >0
+ --and dbms_lob.instr(CHOICES,'[^|]+')=0
+ and FIELD_TYPE like'%calc%';
+ 
+ 
+ UPDATE SBREXT.REDCAP_PROTOCOL_NEW set choices=substr(choices,2)
+ where choices is not null and substr(choices,1,1)='|'
+ 
+ 
+  select protocol,CHOICES
+  from REDCAP_PROTOCOL_751 
+ where dbms_lob.getlength(choices) >0
+and dbms_lob.instr(CHOICES,'|')=0
+ and REGEXP_COUNT(choices,',')=1
+ and FIELD_TYPE like'%calc%';
+ 
+ 
+ 
+  INSERT INTO SBREXT.REDCAP_VALUE_CODE
+ ( PROTOCOL ,
+ FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER,
+ VAL_VAL_NAME)
+ )
+ INSERT INTO REDCAP_VALUE_CODE_751
+ ( PROTOCOL ,
+ FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER,
+ VAL_VAL_NAME)
+ select 
+ PROTOCOL,
+ FORM_NAME , 
+ question, 
+ CASE WHEN trim(choices)='99,99,9999 , unknown'
+ THEN '99,99,9999'
+ ELSE substr(choices,1,(instr(choices,',')-1))
+ END,
+ CASE WHEN trim(choices)='99,99,9999 , unknown'
+ THEN 'unknown'
+ ELSE substr(choices,(instr(choices,',')+1))
+ END,
+ 0,
+ 0,
+ 0,
+ choices
+ from
+ (select 
+ PROTOCOL,
+ FORM_NAME ,
+ question, 
+ cast(trim(CHOICES )  as varchar2(320)) as CHOICES
+ from  REDCAP_PROTOCOL_751
+  where dbms_lob.getlength(choices) >0
+and dbms_lob.instr(CHOICES,'|')=0 
+)
+order by 1,3
+;
+
+ INSERT INTO SBREXT.REDCAP_VALUE_CODE
+ ( PROTOCOL ,
+ FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER,
+ VAL_VAL_NAME)
+
+ select 
+ PROTOCOL,
+ FORM_NAME ,
+ question,
+ substr(choices,1,(instr(choices,',')-1)) ,
+ substr(choices,(instr(choices,',')+1)),
+ 0,
+ 0,
+ 0,
+ choices 
+ select*
+ from REDCAP_PROTOCOL_751 
+ where dbms_lob.getlength(choices) >0
+and dbms_lob.instr(CHOICES,'|')=0 
+ and REGEXP_COUNT(choices,',')=1;
+ 
+ 
+ select* from REDCAP_VALUE_CODE_751 order by 1,3;
+ 
+ 
+ INSERT INTO  REDCAP_VALUE_CODE_751
+( PROTOCOL             ,
+FORM_NAME ,
+  QUESTION           ,
+  VAL_name           ,
+  VAL_VALUE            ,
+  VAL_ORDER,
+  PIPE_NUM,
+  ELM_ORDER,
+  VAL_VAL_NAME)
+  select 
+  PROTOCOL,
+  FORM_NAME ,
+  question,
+  substr(CHOICES,1,instr(CHOICES,',')-1) ,--VAL_NAME substring CHOICES before first ',' and ||
+  substr(CHOICES,instr(CHOICES,',')+1),--VAL_NAME substring CHOICES after first ',' and  before||
+  ELM_ORDER-1,
+  PIPE_NUM, --Pipe position in string CHOICES
+  ELM_ORDER,
+  CHOICES ---substring CHOICES before || 
+ from(
+ select 
+    cast(trim(regexp_substr(t.CHOICES, '[^|]+', 1, levels.column_value)  )  as varchar2(500)) as  CHOICES,levels.column_value  ELM_ORDER, FORM_NAME ,question,
+  protocol,dbms_lob.instr(CHOICES,'[^|]+', 1, levels.column_value) AS PIPE_NUM
+           from  (select  FORM_NAME_NEW FORM_NAME ,choices,protocol,question from REDCAP_PROTOCOL_751 
+           where dbms_lob.getlength(choices) >0)t,
+      table(cast(multiset(
+        select level from dual 
+        connect by level <= length (regexp_replace(t.CHOICES, '[^|]+')) + 1
+      ) as sys.OdciNumberList)) levels)
+      order by 1,3,6;
+      
+      
+      
+      
+select count(*) cnt,PROTOCOL  ,FORM_NAME ,QUESTION ,VAL_name ,VAL_VALUE ,  VAL_ORDER
+from
+REDCAP_VALUE_CODE_751
+GROUP by PROTOCOL  ,FORM_NAME ,QUESTION ,VAL_name ,VAL_VALUE ,  VAL_ORDER
+having count(*)>1
+order by 2,4,7;
+
+select* from REDCAP_VALUE_CODE_751 where val_name is null and val_value is null
+delete from SBREXT.REDCAP_VALUE_CODE where val_name is null and val_value is null
+
+
+select p.protocol,p.question,p.val_val_name ,p.val_order , v.val_order,v.val_val_name
+from
+(
+select p.protocol,p.question,p.choices,val_val_name,val_order from 
+REDCAP_PROTOCOL_751 p,
+REDCAP_VALUE_CODE_751 v 
+where p.protocol=v.protocol
+and p.question=v.question and 
+val_name is null and val_value is null) v,
+REDCAP_VALUE_CODE_751 p
+where 
+p.protocol=v.protocol
+and p.question=v.question
+and p.val_val_name is not null
+--and p.val_order=v.val_order
+order by 1,2,4,5
+
+
+delete from REDCAP_VALUE_CODE_751 where val_name is null and val_value is null
+
+
+select p.protocol,p.question,p.choices,val_val_name,val_order from 
+REDCAP_PROTOCOL_751 p,
+REDCAP_VALUE_CODE_751 v 
+where p.protocol=v.protocol(+)
+and p.question=v.question(+)
+and V.protocol is null
+and v.question is null
+and   dbms_lob.getlength(choices) >0
+
+
+
+select distinct question,protocol from  REDCAP_PROTOCOL_751 where dbms_lob.getlength(choices) >0
+minus
+select distinct question,protocol from  REDCAP_VALUE_CODE_751 
+
+
+select distinct protocol--,question--,length(val_val_name),val_val_name
+from 
+
+REDCAP_VALUE_CODE_751 v 
+--group_by protocol,question
+where length(val_val_name)>250
+order by 1,2

@@ -487,37 +487,192 @@ INSERT INTO REDCAP_PROTOCOL_FORM_751
  SBREXT.PROTOCOLS_EXT p
  where preferred_name like'PX%'
  and f.protocol=preferred_name
+ 
+ 
 
-
-
-
-
-
-
-
-
-9.create table SBREXT.REDCAP_VALUE_CODE to move string value column CHOICES to 
+13.create table SBREXT.REDCAP_VALUE_CODE to move string value column CHOICES to 
 multiple records for each '||' .
-CREATE TABLE SBREXT.REDCAP_VALUE_CODE
+CREATE TABLE SBREXT.REDCAP_VALUE_CODE_751
 ( PROTOCOL             VARCHAR2(50)  ,
-FORM_NAME   VARCHAR2(100)  ,
+FORM_NAME   VARCHAR2(255)  ,
   QUESTION            NUMBER,
-  VAL_NAME        VARCHAR2(30 )     ,
-  VAL_VALUE            VARCHAR2(100 BYTE),
+  VAL_NAME        VARCHAR2(500 )     ,
+  VAL_VALUE            VARCHAR2(500 BYTE),
   VAL_ORDER NUMBER   , 
   ELM_ORDER  VARCHAR2(50)  ,
   PIPE_NUM NUMBER)
 
 
-10.populate table with SQL statment for new records
+14.populate table with SQL statment for new records
 
-create view REDCAP_VALUE_VW as
-select distinct p.protocol PROTOCOL FROM SBREXT.REDCAP_PROTOCOL_NEW p
-left outer join REDCAP_VALUE_CODE s
-on p.protocol=s.protocol
-where  s.protocol is null
-
-INSERT INTO  SBREXT.REDCAP_VALUE_CODE
+delete pipe from 1st position
+ a.UPDATE SBREXT.REDCAP_PROTOCOL_NEW set choices=substr(choices,2)
+ where choices is not null and substr(choices,1,1)='|'
+ 
+ 14.b insert in REDCAP_VALUE_CODE with no pipes and FIELD_TYPE like'%calc%'
+ INSERT INTO SBREXT.REDCAP_VALUE_CODE
+ ( PROTOCOL ,
+ FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER)
+ select 
+ PROTOCOL,
+ FORM_NAME ,
+ question,
+ CASE WHEN length(choices)> 254
+ THEN substr(replace(choices,' '),1,243)||'..TRUNCATED'
+ ELSE choices 
+ END,
+ choices,
+ 0,
+ 0,
+ choices 
+ from SBREXT.REDCAP_PROTOCOL_NEW 
+ where choices is not null 
+ and instr(choices,'|')=0
+ and FIELD_TYPE like'%calc%';
+	
+	
+ 
+	
+14.c insert in REDCAP_VALUE_CODE with no pipes
+ 1.when many','
+	INSERT INTO SBREXT.REDCAP_VALUE_CODE
+ ( PROTOCOL ,
+ FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER)
+ select 
+ PROTOCOL,
+ FORM_NAME ,
+ question,
+ choices ,
+ choices,
+ 0,
+ 0,
+ choices 
+ from SBREXT.REDCAP_PROTOCOL_NEW 
+ where choices is not null and instr(choices,'|')=0
+ and REGEXP_COUNT(choices,',')>1
+	and trim(FIELD_TYPE) <>'calc';
+	
+14.d.when many',' FIELD_TYPE)='descriptive' and no '|'
+ INSERT INTO SBREXT.REDCAP_VALUE_CODE
+ ( PROTOCOL ,
+ FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER)
+ select 
+ PROTOCOL,
+ FORM_NAME ,
+ question, 
+ CASE WHEN length(choices)> 254
+ THEN substr(choices,1,243)||'..TRUNCATED'
+ ELSE choices 
+ END,
+ choices,
+ 0,
+ 0,
+ choices 
+ from SBREXT.REDCAP_PROTOCOL_NEW 
+ where choices is not null and instr(choices,'|')=0
+ and REGEXP_COUNT(choices,',')>1
+ and trim(FIELD_TYPE)='descriptive';
+ 
+14.e insert in REDCAP_VALUE_CODE with no pipes, many',' (FIELD_TYPE) not in ('calc','descriptive'); 
+  INSERT INTO REDCAP_VALUE_CODE_751
+ ( PROTOCOL ,
+ FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER,
+ VAL_VAL_NAME)
+ select 
+ PROTOCOL,
+ FORM_NAME , 
+ question, 
+ CASE WHEN trim(choices)='99,99,9999 , unknown'
+ THEN '99,99,9999'
+ ELSE substr(choices,1,(instr(choices,',')-1))
+ END,
+ CASE WHEN trim(choices)='99,99,9999 , unknown'
+ THEN 'unknown'
+ ELSE substr(choices,(instr(choices,',')+1))
+ END,
+ 0,
+ 0,
+ 0,
+ choices
+ from
+ (select 
+ PROTOCOL,
+ FORM_NAME ,
+ question, 
+ cast(trim(CHOICES )  as varchar2(320)) as CHOICES
+ from  REDCAP_PROTOCOL_751
+  where dbms_lob.getlength(choices) >0
+and dbms_lob.instr(CHOICES,'|')=0 
+);
+ and trim(FIELD_TYPE) not in ('calc','descriptive');
+ 
+ 
+14.f when only 1 separated coma.
+ 
+ INSERT INTO SBREXT.REDCAP_VALUE_CODE
+ ( PROTOCOL ,
+ FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER,
+ VAL_VAL_NAME)
+ )
+ select 
+ PROTOCOL,
+ FORM_NAME ,
+ question,
+ substr(choices,1,(instr(choices,',')-1)) ,
+ substr(choices,(instr(choices,',')+1)),
+ 0,
+ 0,
+ 0,
+ choices 
+ from SBREXT.REDCAP_PROTOCOL_751 
+ where choices is not null and instr(choices,'|')=0
+ and REGEXP_COUNT(choices,',')=1;
+	
+15.
+CREATE OR REPLACE FORCE VIEW MSDRDEV.REDCAP_VALUE_VW751
+(
+    PROTOCOL,
+    QUESTION
+)
+AS
+    SELECT DISTINCT p.protocol PROTOCOL, p.question
+      FROM MSDRDEV.REDCAP_PROTOCOL_751  p
+           LEFT OUTER JOIN REDCAP_VALUE_CODE_751 s
+               ON p.protocol = s.protocol AND p.question = s.question
+     WHERE s.protocol || s.question IS NULL AND choices IS NOT NULL;
+	 
+15a.
+I INSERT INTO  REDCAP_VALUE_CODE_751
 ( PROTOCOL             ,
 FORM_NAME ,
   QUESTION           ,
@@ -525,7 +680,8 @@ FORM_NAME ,
   VAL_VALUE            ,
   VAL_ORDER,
   PIPE_NUM,
-  ELM_ORDER)
+  ELM_ORDER,
+  VAL_VAL_NAME)
   select 
   PROTOCOL,
   FORM_NAME ,
@@ -534,182 +690,46 @@ FORM_NAME ,
   substr(CHOICES,instr(CHOICES,',')+1),--VAL_NAME substring CHOICES after first ',' and  before||
   ELM_ORDER-1,
   PIPE_NUM, --Pipe position in string CHOICES
+  ELM_ORDER,
   CHOICES ---substring CHOICES before || 
- from 
-(select distinct
-  PROTOCOL,FORM_NAME,question  ,
-  trim(regexp_substr(CHOICES, '[^|]+', 1, levels.column_value))  as CHOICES,REGEXP_INSTR(CHOICES,'[^|]+', 1, levels.column_value) AS PIPE_NUM,levels.column_value ELM_ORDER
-from 
-  (select p.*from SBREXT.REDCAP_PROTOCOL_NEW p,
- REDCAP_VALUE_VW s
-  where p.protocol=s.protocol
-   and choices is not null) t,
-  table(cast(multiset(select level from dual connect by  level <= length (regexp_replace(t.CHOICES, '[^|]+'))  + 1) as sys.OdciNumberList)) levels
-)
-order by 1,2,3,ELM_ORDER ;
-
-delete from SBREXT.REDCAP_VALUE_CODE where val_name is null and val_value is null
-
-10.populate section number and order in SBREXT.REDCAP_PROTOCOL_NEW and TABLE SBREXT.REDCAP_SECTION if section is not null
-
-
-
-
-
-
-a.create TABLE SBREXT.REDCAP_SECTION
-CREATE TABLE SBREXT.REDCAP_SECTION(
-  PROTOCOL  VARCHAR2(40 BYTE),
-  FORM_NAME            VARCHAR2(400 BYTE),
-  SECTION              VARCHAR2(1500 BYTE),
-  SECTION_SEQ  NUMBER,
-  QUESTION NUMBER)
-  
- b.select distinct protocol  FROM SBREXT.REDCAP_PROTOCOL_NEW where NVL(SECTION,'A')<>'A'
-create view REDCAP_SECTION_VW as
-select distinct p.protocol PROTOCOL FROM SBREXT.REDCAP_PROTOCOL_NEW p
-left outer join REDCAP_SECTION s
-on p.protocol=s.protocol
-where  s.protocol is null
-  
- c. populate sections column in REDCAP_PROTOCOL_NEW
- 
- exec redCapSaction_populate;
-
- CREATE OR REPLACE PROCEDURE redCapSaction_populate 
-AS
-
-CURSOR CUR_RC IS select r.protocol,FORM_NAME,QUESTION,SECTION, SECTION_SEQ 
-FROM SBREXT.REDCAP_PROTOCOL_NEW r,
-REDCAP_SECTION_VW v
-where r.protocol=v.PROTOCOL
-and NVL(SECTION,'A')<>'A'
-order by r.protocol,FORM_NAME,QUESTION;
- errmsg VARCHAR2(2000):='';
- V_sec_N number;
- V_sec_QN number;
- 
-BEGIN
-for i in CUR_RC loop
-BEGIN
-  IF i.QUESTION=0 then 
-      V_sec_N :=0;  
-  ELSE
-  V_sec_N :=V_sec_N+1;
-  END IF;
- 
-  UPDATE REDCAP_PROTOCOL_NEW SET SECTION_SEQ=V_sec_N , SECTION_Q_SEQ=0
-   WHERE protocol=i.protocol
-   and FORM_NAME=i.FORM_NAME
-   and QUESTION =i.QUESTION
-   and SECTION=i.SECTION;
-  
- 
-  EXCEPTION
-    WHEN OTHERS THEN
-        errmsg := SQLERRM;
-        dbms_output.put_line('errmsg3 - '||errmsg);
-                 -- insert into META_CONCEPTS_EXT_ERROR_LOG VALUES (errmsg,sysdate,i.PREFERRED_NAME,i.LONG_NAME ,i.PREFERRED_DEFINITION);
- end;   
-  end loop;
-
-commit;
-
-END ;
-
-10.populate section number and section question order in SBREXT.REDCAP_PROTOCOL_NEW  if section is null
-
- exec redCapSaction_populate;
- 
- 
-CREATE OR REPLACE PROCEDURE redCapSact_Quest_populate 
-AS
-
-CURSOR CUR_RC IS select r.protocol,FORM_NAME,QUESTION,SECTION, SECTION_SEQ ,SECTION_Q_SEQ
-FROM SBREXT.REDCAP_PROTOCOL_NEW r,
-REDCAP_SECTION_VW v
-where r.protocol=v.PROTOCOL
-order by r.protocol,FORM_NAME,QUESTION;
- errmsg VARCHAR2(2000):='';
- V_sec_N number;
- V_sec_QN number;
- 
-BEGIN
-for i in CUR_RC loop
-BEGIN
-  IF i.SECTION_SEQ is not null then 
-      V_sec_N :=i.SECTION_SEQ;
-      V_sec_QN :=i.SECTION_Q_SEQ; 
+ from(
+ select 
+    cast(trim(regexp_substr(t.CHOICES, '[^|]+', 1, levels.column_value)  )  as varchar2(500)) as  CHOICES,levels.column_value  ELM_ORDER, FORM_NAME ,question,
+  protocol,dbms_lob.instr(CHOICES,'[^|]+', 1, levels.column_value) AS PIPE_NUM
+           from  (select  FORM_NAME_NEW FORM_NAME ,choices,protocol,question from REDCAP_PROTOCOL_751 where dbms_lob.getlength(choices) >0)t,
+      table(cast(multiset(
+        select level from dual 
+        connect by level <= length (regexp_replace(t.CHOICES, '[^|]+')) + 1
+      ) as sys.OdciNumberList)) levels)
+      order by 1,3,6;
       
-        dbms_output.put_line('output1 - V_sec_N='||V_sec_N||'  V_sec_QN='||V_sec_QN);
-  ELSE
-   select SECTION_SEQ,SECTION_Q_SEQ+1 into V_sec_N,V_sec_QN 
-    FROM SBREXT.REDCAP_PROTOCOL_NEW 
-    where   QUESTION =i.QUESTION-1
-    and protocol=i.protocol
-   and FORM_NAME=i.FORM_NAME;
-   
-     dbms_output.put_line('output2 - V_sec_N='||V_sec_N||'  V_sec_QN='||V_sec_QN);
-  END IF;
-  
-  /**/  
-  UPDATE REDCAP_PROTOCOL_NEW SET SECTION_SEQ=V_sec_N , SECTION_Q_SEQ= V_sec_QN
-   WHERE protocol=i.protocol
-   and FORM_NAME=i.FORM_NAME
-   and QUESTION =i.QUESTION;
-  
- 
-  EXCEPTION
-    WHEN OTHERS THEN
-        errmsg := SQLERRM;
-        dbms_output.put_line('errmsg3 - '||errmsg);
-                 -- insert into META_CONCEPTS_EXT_ERROR_LOG VALUES (errmsg,sysdate,i.PREFERRED_NAME,i.LONG_NAME ,i.PREFERRED_DEFINITION);
- end;   
-  end loop;
-
-commit;
-
-END ;
-11.populate SBREXT.REDCAP_SECTION
-
-INSERT INTO SBREXT.REDCAP_SECTION
-(
-  PROTOCOL ,
-  FORM_NAME           ,
-  SECTION           ,
-  SECTION_SEQ  ,
-  QUESTION )
-  select
-  r.PROTOCOL ,
-  FORM_NAME           ,
-  SECTION           ,
-  SECTION_SEQ  ,
-  QUESTION
-
-FROM SBREXT.REDCAP_PROTOCOL_NEW r,
-REDCAP_SECTION_VW v
-where r.protocol=v.PROTOCOL
-and NVL(SECTION,'A')<>'A'
-order by r.protocol,FORM_NAME,QUESTION;
+      ------------------check--------------------------------
+select count(*) cnt,PROTOCOL  ,FORM_NAME ,QUESTION ,VAL_name ,VAL_VALUE ,  VAL_ORDER
+from
+REDCAP_VALUE_CODE_751
+GROUP by PROTOCOL  ,FORM_NAME ,QUESTION ,VAL_name ,VAL_VALUE ,  VAL_ORDER
+having count(*)>1
+order by 2,4,7;
 
 
-11 UPDATE REDCAP_PROTOCOL_NEW records of FORMS which have no sections
+delete from REDCAP_VALUE_CODE_751 where val_name is null and val_value is null
 
-   UPDATE REDCAP_PROTOCOL_NEW SET SECTION_SEQ=0 , SECTION_Q_SEQ=question
-   WHERE SECTION_SEQ is null and SECTION_Q_SEQ is null;
 
-12.INSERT corresponding records into REDCAP_SECTION
+select p.protocol,p.question,p.choices,val_val_name,val_order from 
+REDCAP_PROTOCOL_751 p,
+REDCAP_VALUE_CODE_751 v 
+where p.protocol=v.protocol(+)
+and p.question=v.question(+)
+and V.protocol is null
+and v.question is null
+and   dbms_lob.getlength(choices) >0
 
-   INSERT INTO SBREXT.REDCAP_SECTION
-(  PROTOCOL ,
-  FORM_NAME ,
-  SECTION_SEQ )
-  SELECT distinct q.protocol, q.form_name,0
-                               from  REDCAP_PROTOCOL_NEW  q 
-                               left outer join REDCAP_SECTION s 
-                               on q.protocol||q.section_seq||q.form_name=S.PROTOCOL||s.section_seq||s.form_name
-                               --and q.section_seq=s.section_seq
-                               where (S.PROTOCOL||s.section_seq||s.form_name is null)
+
+
+select distinct question,protocol from  REDCAP_PROTOCOL_751 where dbms_lob.getlength(choices) >0
+minus
+select distinct question,protocol from  REDCAP_VALUE_CODE_751 
+
 
 12.create data types for XML query
 drop view REDCAP_VW;
