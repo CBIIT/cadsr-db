@@ -1,0 +1,67 @@
+Very sorry. You are correct. The "descriptive" text should get loaded as FORM Instruction.
+
+Reply
+Permalink Edit
+trushi2
+Trush, Irina (NIH/NCI) [C] added a comment - Friday, 14 Apr 2017 12:25 PM
+What should I should get loaded as FORM Instruction if form has many sections?
+for instance PX120101 phenx_general_psychiatric_assessment_adult
+FORMS_section_instructions.xls
+
+warzeld
+Warzel, Denise (NIH/NCI) [E] added a comment - Friday, 14 Apr 2017 12:58 PM - edited
+There appear to be lots of "descriptive" rows not associated with a single Section (one Section may have more than one "descriptive" row.
+
+Treat all but the first "descriptive" rows as questions. When the first row is "descriptive" add as Form header instruction.
+
+The rest should just be questions in the module they are contained in.
+
+If you can, please produce a list of the files when you find this condition (multiple fields type "descriptive" rows, then we can use the list to edit the forms after loading and move the text to the instruction field.
+
+Warzel, Denise (NIH/NCI) [E] added a comment - Monday, 17 Apr 2017 09:57 AM
+OK,
+
+Rules: 
+1) if first row has no Section Head, and a "descriptive" field type, add the descriptive text as Form Header Instruction
+2) if first row has no section header, and second row has no Section Header, add Protocol name is the the module name.
+3) if first row has no section header, and second row has Section Header, use Section Header as Module Nam
+4) if descriptive fields later in form with no Section head, add as Question to the current module. 
+5) if Section Head, create new module, add descriptive text as a question in the new module. 
+6) if additional descriptive text after Section Head, add as question in current module.
+
+Reply
+Permalink Edit
+trushi2
+Trush, Irina (NIH/NCI) [C] added a comment - Monday, 17 Apr 2017 10:24 AM - edited
+Denise,
+please answer on following questions:
+1.What is the descriptive text in CSV files?
+2. Do you want me to change names of Section Header if it 's non in CSV file for a "descriptive" field type?
+
+Currently CSV field_label is used as a question text 
+and Section Header as a module name..
+
+Thanks,
+Irina
+
+Warzel, Denise (NIH/NCI) [E] added a comment - Monday, 17 Apr 2017 10:53 AM
+1. "descriptive" is the value in FieldType, column D, and the text is the value in Column F FieldLabel
+
+2. If first row and descriptive FiledType, and SectionHeader is filled in, then its a Module, the name of the module should be the value in the SectionHeader column instead of protocol name, and the text in FieldLabel should be a question in the Module.
+
+If first row and descriptive field type, no Section header, the text in FieldLabel should be the FormHeaderInstruction, and Module name should be the Protocol Name.
+
+
+Warzel, Denise (NIH/NCI) [E] added a comment - Monday, 17 Apr 2017 11:24 AM
+Correct, the filed_Label is the Question Text, when field_type is "descriptive", UNLESS it is the first row in the CSV, with no SectionHeader value. then the field_label is inserted as FormHeaderInstruction.
+
+hope that clears it up.
+
+Reply
+Permalink Edit
+trushi2
+Trush, Irina (NIH/NCI) [C] added a comment - Monday, 17 Apr 2017 12:53 PM - edited
+If first row is not descriptive field type and no Section header, should Module name be the Protocol Name anyway or I have to leave Module name empty?
+
+Warzel, Denise (NIH/NCI) [E] added a comment - Monday, 17 Apr 2017 01:06 PM
+If first row is not descriptive, and no section header, module name should be the protocol name.
