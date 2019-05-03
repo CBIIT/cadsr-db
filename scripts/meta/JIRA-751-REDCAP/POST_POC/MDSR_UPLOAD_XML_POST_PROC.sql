@@ -40,6 +40,7 @@ create index SBREXT.MDSR_VVFN_Q_INDX on SBREXT.MSDREDCAP_VALUE_CODE_CSV (form_na
 create index SBREXT.MDSR_VVQ_INDX on SBREXT.MSDREDCAP_VALUE_CODE_CSV (question);
 create index SBREXT.MDSR_VVQLOAD_Q_INDX on SBREXT.MSDREDCAP_VALUE_CODE_CSV (LOAD_SEQ);
 
+
 CREATE OR REPLACE FORCE VIEW SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW
 (
     QC_ID,
@@ -80,7 +81,11 @@ AS
                        p.preferred_name,
                        f.version) b
        WHERE protocol = preferred_name AND quest_sum > quest_sum_csv
-    ORDER BY qc_id, version
+    ORDER BY qc_id, version;
+
+
+GRANT SELECT ON SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW TO PUBLIC;
+
 /
 GRANT SELECT ON SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW TO PUBLIC
 /
@@ -364,7 +369,7 @@ BEGIN
      END LOOP;
      END;
 /
-CREATE OR REPLACE PROCEDURE MSDRDEV.MDSRECAP_QUEST_TRUNC_POSTPROC(p_run IN NUMBER) as
+CREATE OR REPLACE PROCEDURE SBREXT.MDSRECAP_QUEST_TRUNC_POSTPROC(p_run IN NUMBER) as
 
 --Find Question Instructions with truncated long name
 CURSOR c_quest IS
@@ -441,7 +446,7 @@ from sbrext.quest_contents_ext f,
 SBREXT.MDSR_REDCAP_PROTOCOL_CSV r,
 sbrext.quest_contents_ext  q,
 sbrext.quest_contents_ext  m,
-MDSR_DUP_QUESTION_FROM_XML_VW vw
+SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW vw
 
 where m.dn_crf_idseq =f.qc_idseq 
 and f.qc_id=vw.qc_id(+)
