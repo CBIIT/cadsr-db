@@ -199,6 +199,60 @@ BEGIN
      END;
 /
 
+CREATE OR REPLACE PROCEDURE SBREXT.MDSRECAP_FRINST_POSTPROC(p_run IN NUMBER) as
+
+
+CURSOR c_mod IS
+select i.long_name,rf.FORM_NAME_NEW,rf.instructions,i.preferred_definition,i.modified_by,i.DATE_MODIFIED,i.qc_id,i.qc_idseq,i.created_by,i.date_created,i.QTL_NAME,i.version
+
+from sbrext.quest_contents_ext f,
+sbrext.quest_contents_ext i,
+SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW vw,
+SBREXT.MSDREDCAP_FORM_CSV rf
+where i.dn_crf_idseq =f.qc_idseq 
+and f.long_name =rf.FORM_NAME_NEW
+and f.qc_id=vw.qc_id(+)
+and VW.qc_id is null
+and rf.load_seq=p_run
+and f.QTL_NAME='CRF'
+and  i.QTL_NAME ='FORM_INSTR'
+and trim(rf.instructions)<>trim(i.preferred_definition)
+and NVL(i.modified_by,'FORMLOADER') ='FORMLOADER';
+
+
+ l_FORM_name      VARCHAR2 (100):='NA';
+     errmsg VARCHAR2(800):='Non';
+
+BEGIN
+FOR rec IN c_mod LOOP
+BEGIN
+
+
+       
+     UPDATE sbrext.quest_contents_ext  
+     set preferred_definition= rec.instructions,long_name=rec.FORM_NAME_NEW
+     where   qc_idseq =rec.qc_idseq;
+     commit;
+      insert into SBREXT.MDSR_QUEST_CONTENTS_REDCAP_BK
+          ( QC_IDSEQ,  QC_ID ,  VERSION ,  QTL_NAME, PREFERRED_DEFINITION   ,  LONG_NAME ,  DATE_CREATED,
+  CREATED_BY , DATE_MODIFIED,MODIFIED_BY,  DATE_INSERTED,UPDATED_FIELD)     VALUES
+       ( rec.QC_IDSEQ,  rec.QC_ID ,  rec.VERSION ,  rec.QTL_NAME, rec.PREFERRED_DEFINITION   ,  rec.LONG_NAME ,  rec.DATE_CREATED,
+  rec.CREATED_BY , rec.DATE_MODIFIED,rec.MODIFIED_BY, SYSDATE,'FORM_INSTR');
+
+     
+  commit;
+
+    EXCEPTION
+    WHEN OTHERS THEN
+    errmsg := substr(SQLERRM,1,500);
+         dbms_output.put_line('errmsg insert - '||errmsg);
+         rollback;
+       insert into SBREXT.MDSR_QUEST_CONTENTS_UPDATE_ERR values(rec.QC_ID,rec.QTL_NAME||' FNAME', errmsg ,SYSDATE);
+     commit;
+     END;
+     END LOOP;
+     END;
+/
 
 CREATE OR REPLACE PROCEDURE SBREXT.MDSRECAP_MODE_POSTPROC(p_run IN NUMBER) as
 --If SECTION Long Name Truncated
