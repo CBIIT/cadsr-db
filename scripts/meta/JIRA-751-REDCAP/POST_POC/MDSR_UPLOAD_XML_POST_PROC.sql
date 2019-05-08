@@ -27,6 +27,16 @@ CREATE TABLE SBREXT.MDSR_QUEST_CONTENTS_REDCAP_BK
   DATE_INSERTED         DATE,
   UPDATED_FIELD         VARCHAR2(50 BYTE)
 );
+CREATE TABLE SBREXT.MDSR_AFTERUPLOD_MODIFIED_REC
+(
+  QC_ID         NUMBER,
+  VERSION               NUMBER(4,2),
+  PROTOCOL VARCHAR2(100 BYTE),
+  comment_note      VARCHAR2(200 BYTE),
+  DATE_CREATED  DATE,
+  LOAD_SEQ  NUMBER
+);  
+GRANT SELECT ON SBREXT.MDSR_AFTERXMLUPLOD_MODIFIED_REC TO PUBLIC;
 GRANT SELECT ON SBREXT.MDSR_REDCAP_PROTOCOL_CSV TO PUBLIC;
 GRANT SELECT ON SBREXT.MDSR_QUEST_CONTENTS_REDCAP_BK TO PUBLIC;
 GRANT SELECT ON SBREXT.MDSR_QUEST_CONTENTS_UPDATE_ERR TO PUBLIC;
@@ -40,7 +50,6 @@ create index SBREXT.MDSR_VVFN_Q_INDX on SBREXT.MSDREDCAP_VALUE_CODE_CSV (form_na
 create index SBREXT.MDSR_VVQ_INDX on SBREXT.MSDREDCAP_VALUE_CODE_CSV (question);
 create index SBREXT.MDSR_VVQLOAD_Q_INDX on SBREXT.MSDREDCAP_VALUE_CODE_CSV (LOAD_SEQ);
 
-
 CREATE OR REPLACE FORCE VIEW SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW
 (
     QC_ID,
@@ -52,13 +61,21 @@ CREATE OR REPLACE FORCE VIEW SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW
     ,comments
 )
 AS
-      SELECT qc_id,
+select qc_id,
              version,
              preferred_name,
              protocol,
              quest_sum,
              quest_sum_csv,
-             'DUPL' comments
+             comment_note 
+             from
+     ( (SELECT qc_id,
+             version,
+             preferred_name,
+             protocol,
+             quest_sum,
+             quest_sum_csv,
+             'DUPL' comment_note
         FROM (  SELECT COUNT (*) quest_sum_csv, PROTOCOL, form_name_new
                   FROM sbrext.MDSR_REDCAP_PROTOCOL_CSV
                  WHERE protocol NOT LIKE 'Instr%' AND load_seq = 1
@@ -82,41 +99,72 @@ AS
                        f.qc_id,
                        p.preferred_name,
                        f.version) b
-       WHERE protocol = preferred_name AND quest_sum > quest_sum_csv
-       
-       union
-       
-        SELECT distinct 
-                       f.qc_id,
-             f.version,
-             --q.QC_ID,
-             p.preferred_name,
-             rf.protocol,
+       WHERE protocol = preferred_name AND quest_sum > quest_sum_csv )      
+       UNION       
+       (SELECT distinct 
+             qc_id,
+             version,            
+             protocol,
+             protocol,
              0,
-             0,
-             --q.QTL_NAME,
+             0,           
              'MODIFIED' comment_note
-                  FROM sbrext.quest_contents_ext f,
-                       sbrext.quest_contents_ext q,
-                       sbrext.PROTOCOL_QC_EXT pp,
-                       sbrext.PROTOCOLS_EXT   p,
-                       SBREXT.MSDREDCAP_FORM_CSV rf
-                 WHERE     f.QTL_NAME = 'CRF'
-                       AND (q.dn_crf_idseq = f.qc_idseq or q.QC_IDSEQ = f.qc_idseq)                       
-                       AND trim(p.preferred_name)=trim(rf.PROTOCOL) 
-                       AND f.QC_IDSEQ = pp.QC_IDSEQ
-                       AND p.PROTO_IDSEQ = pp.PROTO_IDSEQ
-                       and  NVL(q.modified_by,'FORMLOADER') <>'FORMLOADER'
-                       
-                       
+                  FROM SBREXT.MDSR_AFTERUPLOD_MODIFIED_REC
+                  )   )
     ORDER BY 1,2,3;
-
-
+/
 GRANT SELECT ON SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW TO PUBLIC;
-
 /
 GRANT SELECT ON SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW TO PUBLIC
 /
+CREATE OR REPLACE PROCEDURE SBREXT.MDSR_INSERT_MODFR_POSTPROC(p_run IN NUMBER) as
+--insert postupload modified from ID
+CURSOR c_form IS
+SELECT DISTINCT f.qc_id,
+                               f.version,                            
+                               rf.protocol,                               
+                               'MODIFIED'     comment_note
+                 FROM sbrext.quest_contents_ext f,
+                      sbrext.quest_contents_ext q,
+                      sbrext.PROTOCOL_QC_EXT   pp,
+                      sbrext.PROTOCOLS_EXT     p,
+                      SBREXT.MSDREDCAP_FORM_CSV rf
+                WHERE     f.QTL_NAME = 'CRF'
+                      AND (   q.dn_crf_idseq = f.qc_idseq
+                           OR q.QC_IDSEQ = f.qc_idseq)
+                      AND TRIM (p.preferred_name) = TRIM (rf.PROTOCOL)
+                      AND f.QC_IDSEQ = pp.QC_IDSEQ
+                      AND p.PROTO_IDSEQ = pp.PROTO_IDSEQ
+                      and rf.load_seq=p_run
+                      AND NVL (q.modified_by, 'FORMLOADER') <> 'FORMLOADER';
+
+
+
+ l_FORM_name      VARCHAR2 (300):='NA';
+     errmsg VARCHAR2(800):='Non';
+   v_protocol VARCHAR2(50):='';
+BEGIN
+FOR rec IN c_form LOOP
+BEGIN
+      
+      insert into SBREXT.MDSR_AFTERUPLOD_MODIFIED_REC
+          ( QC_ID ,  VERSION ,  PROTOCOL,   DATE_CREATED)      VALUES
+       (   rec.QC_ID ,  rec.VERSION ,  rec.PROTOCOL   , SYSDATE);
+
+
+  commit;
+
+    EXCEPTION
+    WHEN OTHERS THEN
+    errmsg := substr(SQLERRM,1,500);
+         dbms_output.put_line('errmsg insert - '||errmsg);
+         rollback;
+       insert into SBREXT.MDSR_QUEST_CONTENTS_UPDATE_ERR values(rec.QC_ID,' FNAME', errmsg ,SYSDATE);
+     commit;
+     END;
+     END LOOP;
+     END;
+	 /
 CREATE OR REPLACE PROCEDURE SBREXT.MDSRECAP_FNAME_NOPR_POSTPROC(p_run IN NUMBER) as
 --1. if protocol preferred name not in from long name 
 CURSOR c_form IS
@@ -150,7 +198,7 @@ BEGIN
 FOR rec IN c_form LOOP
 BEGIN
       l_FORM_name:=rec.long_name;
-      UPDATE sbrext.quest_contents_ext set date_modified sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', long_name=rec.FORM_NAME_NEW
+      UPDATE sbrext.quest_contents_ext set date_modified= sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', long_name=rec.FORM_NAME_NEW
       where qc_idseq=rec.qc_idseq;
       commit;
       insert into SBREXT.MDSR_QUEST_CONTENTS_REDCAP_BK
@@ -203,7 +251,7 @@ BEGIN
 FOR rec IN c_form LOOP
 BEGIN
       l_FORM_name:=rec.long_name;
-      UPDATE sbrext.quest_contents_ext set date_modified sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', long_name=rec.FORM_NAME_NEW
+      UPDATE sbrext.quest_contents_ext set date_modified= sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', long_name=rec.FORM_NAME_NEW
       where qc_idseq=rec.qc_idseq;
       commit;
       insert into SBREXT.MDSR_QUEST_CONTENTS_REDCAP_BK
@@ -257,7 +305,7 @@ BEGIN
 
 
        
-     UPDATE sbrext.quest_contents_ext set date_modified sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.instructions,long_name=rec.FORM_NAME_NEW
+     UPDATE sbrext.quest_contents_ext set date_modified= sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.instructions,long_name=rec.FORM_NAME_NEW
      where   qc_idseq =rec.qc_idseq;
      commit;
       insert into SBREXT.MDSR_QUEST_CONTENTS_REDCAP_BK
@@ -313,7 +361,7 @@ BEGIN
 
 
        
-     UPDATE sbrext.quest_contents_ext set date_modified sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.correct_mod_name,long_name=rec.correct_mod_name
+     UPDATE sbrext.quest_contents_ext set date_modified= sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.correct_mod_name,long_name=rec.correct_mod_name
      where   qc_idseq =rec.qc_idseq;
      commit;
       insert into sbrext.MDSR_QUEST_CONTENTS_REDCAP_BK
@@ -361,7 +409,7 @@ BEGIN
 FOR rec IN c_form LOOP
 BEGIN
      
-      UPDATE sbrext.quest_contents_ext set date_modified sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition=rec.correct_def
+      UPDATE sbrext.quest_contents_ext set date_modified= sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition=rec.correct_def
       where qc_idseq=rec.qc_idseq;
         commit;
       insert into SBREXT.MDSR_QUEST_CONTENTS_REDCAP_BK
@@ -426,7 +474,7 @@ BEGIN
 
 
        
-     UPDATE sbrext.quest_contents_ext set date_modified sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.instructions||'; Question in xml doesn''t contain valid CDE public id and version. Unable to validate question in xml.',long_name=rec.instructions||'; Question in xml doesn''t contain valid CDE public id and version. Unable to validate question in xml.'
+     UPDATE sbrext.quest_contents_ext set date_modified= sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.instructions||'; Question in xml doesn''t contain valid CDE public id and version. Unable to validate question in xml.',long_name=rec.instructions||'; Question in xml doesn''t contain valid CDE public id and version. Unable to validate question in xml.'
      where   qc_idseq =rec.qc_idseq;
       insert into  SBREXT.MDSR_QUEST_CONTENTS_REDCAP_BK
           ( QC_IDSEQ,  QC_ID ,  VERSION ,  QTL_NAME, PREFERRED_DEFINITION   ,  LONG_NAME ,  DATE_CREATED,
@@ -487,7 +535,7 @@ BEGIN
 
 
        
-     UPDATE sbrext.quest_contents_ext set date_modified sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.correct_question,long_name=rec.correct_question
+     UPDATE sbrext.quest_contents_ext set date_modified= sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.correct_question,long_name=rec.correct_question
      where   qc_idseq =rec.qc_idseq;
      commit;
       insert into SBREXT.MDSR_QUEST_CONTENTS_REDCAP_BK
@@ -549,7 +597,7 @@ BEGIN
 FOR rec IN c_quest LOOP
 BEGIN
        
-     UPDATE sbrext.quest_contents_ext set date_modified sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.correct_question,long_name=rec.correct_question
+     UPDATE sbrext.quest_contents_ext set date_modified= sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.correct_question,long_name=rec.correct_question
      where   qc_idseq =rec.qc_idseq;
      commit;
       insert into SBREXT.MDSR_QUEST_CONTENTS_REDCAP_BK
