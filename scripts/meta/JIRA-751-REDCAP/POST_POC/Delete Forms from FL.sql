@@ -11,7 +11,8 @@ where rf.protocol=trim(p.preferred_name)
 and q.QC_IDSEQ=pp.QC_IDSEQ
 and p.PROTO_IDSEQ=pp.PROTO_IDSEQ
 and load_seq=1
-and q.date_created>sysdate-40 and q.date_created<sysdate-1 and q.CREATED_BY='FORMLOADER' 
+and q.date_created>sysdate-40 --and q.date_created<sysdate-1 
+and q.CREATED_BY='FORMLOADER' 
 and q.QTL_NAME='CRF'));
 
 
@@ -27,7 +28,9 @@ where rf.protocol=trim(p.preferred_name)
 and q.QC_IDSEQ=pp.QC_IDSEQ
 and p.PROTO_IDSEQ=pp.PROTO_IDSEQ
 and load_seq=1
-and q.date_created>sysdate-40 and q.date_created<sysdate-1 and q.CREATED_BY='FORMLOADER' 
+and q.date_created>sysdate-40 
+--and q.date_created<sysdate-1 
+and q.CREATED_BY='FORMLOADER' 
 and q.QTL_NAME='CRF')
 and QTL_NAME='VALID_VALUE';
 
@@ -53,7 +56,9 @@ and load_seq=1
 and q.date_created>sysdate-40 --and q.date_created<sysdate-1 
 and q.CREATED_BY='FORMLOADER' 
 and q.QTL_NAME='CRF'
-and q.qc_id=6729645));
+--and q.qc_id=6729645
+
+));
 
 
 
