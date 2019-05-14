@@ -4,8 +4,8 @@ Create all DB objects and privileges on a desired tier by making a request to DB
 https://github.com/CBIIT/cadsr-db/blob/master/scripts/meta/JIRA-751-REDCAP/POST_POC/MDSREDCAP_XML_POSTPROC_OBJ_with_PKG.sql
 
 2.After uploading XMLs run MDSR_POST_LOAD_REPORT.sql and create xlsx file containing all Form discrepancies are created by FL.
-2.1 .Find Forms with dup questions              
-2.2 .Find Forms which were modified after creation.        
+2.1. Find Forms with dup questions              
+2.2. Find Forms which were modified after creation.        
 2.3. Find Forms with no protocol preferred name in from long name 
 2.4. Find Forms loaded with truncated long name, but from long name includes protocol preferred name
 2.5. Find Forms with truncated preferred _definitions
