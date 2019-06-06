@@ -121,12 +121,10 @@ GRANT SELECT ON SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW TO PUBLIC;
 GRANT SELECT ON SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW TO PUBLIC
 /
 
-
 CREATE OR REPLACE PACKAGE SBREXT.MDSREDCAP_XML_POSTPOC IS
 call_procs BOOLEAN := TRUE;
 --  Repository User-Defined Error Messages
 NO_ERR VARCHAR2(2) := 'B';
-PROCEDURE MDSRedCapForm_Insert (p_run IN NUMBER);
 PROCEDURE INSERT_UPDATED_FORMS(p_run in NUMBER);
 PROCEDURE FNAME_NO_PRPROTOCOL(p_run in NUMBER);
 PROCEDURE FORMNAME_PROTO(p_run in NUMBER);
@@ -140,61 +138,7 @@ PROCEDURE RUN_POSTPROC(p_run in NUMBER);
 
 END MDSREDCAP_XML_POSTPOC;
 /
-
-
 CREATE OR REPLACE PACKAGE BODY SBREXT.MDSREDCAP_XML_POSTPOC IS
-
-PROCEDURE MDSRedCapForm_Insert (p_run IN NUMBER)
-AS
-
- errmsg VARCHAR2(2000):='';
- V_Form_N number;
- V_sec_QN number;
- V_pr_SEC_N number;
- V_MIN_SEC_Q number;
- 
-BEGIN
-delete from SBREXT.MSDREDCAP_FORM_CSV where load_seq=p_run;
-commit;
-select count(*) into V_Form_N from SBREXT.MSDREDCAP_FORM_CSV where load_seq=p_run;
-IF V_Form_N=0 then
- INSERT INTO  SBREXT.MSDREDCAP_FORM_CSV
-( PROTOCOL ,
- FORM_NAME_NEW ,
-  PREFERRED_DEFINITION  ,
-  PROTOCOL_NAME ,
-  INSTRUCTIONS,
-  load_seq)
- SELECT 
- distinct  f.protocol, form_name_new,PREFERRED_DEFINITION,p.long_name,i.FIELD_LABEL,load_seq
- --select *
- from
- (select distinct replace(protocol,'Instructions to') protocol, form_name_new ,section_seq,section_q_seq, form_name ,load_seq
- from   SBREXT.MDSR_REDCAP_PROTOCOL_CSV where FORM_Q_NUM=0 and load_seq=p_run)f,
- (select replace(protocol,'Instructions to') protocol, form_name ,FIELD_LABEL 
- from  SBREXT.MDSR_REDCAP_PROTOCOL_CSV where protocol like 'Instructions%' and section is null and load_seq=p_run )i,
- --select*from 
- SBREXT.PROTOCOLS_EXT p
- where  f.protocol=preferred_name
- and f.protocol=i.protocol(+)
- and f.form_name=i.form_name(+)  ;
- commit;
- NO_ERR := 'A';
- else
- NO_ERR := 'B';
-  insert into  SBREXT.REPORTS_ERROR_LOG VALUES ('FORM_Insert',  'SBREXT.MSDREDCAP_FORM_CSV is not clead up', sysdate);
- end if;
-
- EXCEPTION
- WHEN OTHERS THEN
- errmsg := SQLERRM;
-  NO_ERR := 'B';
- dbms_output.put_line('errmsg3 - '||errmsg);
-  insert into  SBREXT.REPORTS_ERROR_LOG VALUES ('FORM_Insert',  errmsg, sysdate);
-  commit;
-
-END ;
-
 PROCEDURE INSERT_UPDATED_FORMS(p_run IN NUMBER) as
 --insert postupload modified from ID
 
@@ -203,15 +147,15 @@ PROCEDURE INSERT_UPDATED_FORMS(p_run IN NUMBER) as
    v_protocol VARCHAR2(50):='';
 BEGIN
 
-
+      
       insert into SBREXT.MDSR_AFTERUPLOD_MODIFIED_REC
-          ( QC_ID ,  VERSION ,  PROTOCOL, comment_note,  DATE_CREATED,LOAD_SEQ)
+          ( QC_ID ,  VERSION ,  PROTOCOL, comment_note,  DATE_CREATED,LOAD_SEQ)      
           SELECT DISTINCT f.qc_id,
-                               f.version,
-                               rf.protocol,
+                               f.version,                            
+                               rf.protocol,                               
                                'MODIFIED' ,
                                SYSDATE,
-                               p_run
+                               p_run  
                  FROM sbrext.quest_contents_ext f,
                       sbrext.quest_contents_ext q,
                       sbrext.PROTOCOL_QC_EXT   pp,
@@ -239,12 +183,12 @@ call_procs := TRUE;
          rollback;
        insert into SBREXT.MDSR_QUEST_CONTENTS_UPDATE_ERR values('NA',' FNAME', errmsg ,SYSDATE);
      commit;
-
-
+     
+  
      END INSERT_UPDATED_FORMS;
 
 PROCEDURE FNAME_NO_PRPROTOCOL(p_run IN NUMBER) as
---1. if protocol preferred name not in from long name
+--1. if protocol preferred name not in from long name 
 CURSOR c_form IS
 
 select q.long_name,rf.FORM_NAME_NEW,rf.preferred_definition correct_def,q.preferred_definition,
@@ -283,14 +227,14 @@ BEGIN
        ( rec.QC_IDSEQ,  rec.QC_ID ,  rec.VERSION ,  rec.QTL_NAME, rec.PREFERRED_DEFINITION   ,  rec.LONG_NAME ,  rec.DATE_CREATED,
   rec.CREATED_BY , rec.DATE_MODIFIED,rec.MODIFIED_BY, SYSDATE,'LONG_NAME');
 
-
+     
   commit;
-
+      
     EXCEPTION
     WHEN OTHERS THEN
     errmsg := substr(SQLERRM,1,500);
          dbms_output.put_line('errmsg insert - '||errmsg);
-         rollback;
+         rollback;     
        insert into SBREXT.MDSR_QUEST_CONTENTS_UPDATE_ERR values(rec.QC_ID,rec.QTL_NAME||' FNAME', errmsg ,SYSDATE);
      commit;
      END;
@@ -319,7 +263,7 @@ order by 1;
  l_FORM_name      VARCHAR2 (300):='NA';
    errmsg VARCHAR2(800):='Non';
    v_protocol VARCHAR2(50):='';
-
+ 
 BEGIN
 FOR rec IN c_form LOOP
 BEGIN
@@ -333,14 +277,14 @@ BEGIN
        ( rec.QC_IDSEQ,  rec.QC_ID ,  rec.VERSION ,  rec.QTL_NAME, rec.PREFERRED_DEFINITION   ,  rec.LONG_NAME ,  rec.DATE_CREATED,
   rec.CREATED_BY , rec.DATE_MODIFIED,rec.MODIFIED_BY, SYSDATE,'LONG_NAME');
 
-
+     
   commit;
-
+      
     EXCEPTION
     WHEN OTHERS THEN
     errmsg := substr(SQLERRM,1,500);
          dbms_output.put_line('errmsg insert - '||errmsg);
-         rollback;
+         rollback;     
        insert into SBREXT.MDSR_QUEST_CONTENTS_UPDATE_ERR values(rec.QC_ID,rec.QTL_NAME||' FNAME', errmsg ,SYSDATE);
      commit;
      END;
@@ -357,7 +301,7 @@ from sbrext.quest_contents_ext f,
 sbrext.quest_contents_ext i,
 SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW vw,
 SBREXT.MSDREDCAP_FORM_CSV rf
-where i.dn_crf_idseq =f.qc_idseq
+where i.dn_crf_idseq =f.qc_idseq 
 and f.long_name =rf.FORM_NAME_NEW
 and f.qc_id=vw.qc_id(+)
 and VW.qc_id is null
@@ -376,7 +320,7 @@ FOR rec IN c_mod LOOP
 BEGIN
 
 
-
+       
      UPDATE sbrext.quest_contents_ext set date_modified= sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.instructions,long_name=rec.FORM_NAME_NEW
      where   qc_idseq =rec.qc_idseq;
      commit;
@@ -386,7 +330,7 @@ BEGIN
        ( rec.QC_IDSEQ,  rec.QC_ID ,  rec.VERSION ,  rec.QTL_NAME, rec.PREFERRED_DEFINITION   ,  rec.LONG_NAME ,  rec.DATE_CREATED,
   rec.CREATED_BY , rec.DATE_MODIFIED,rec.MODIFIED_BY, SYSDATE,'FORM_INSTR');
 
-
+     
   commit;
 
     EXCEPTION
@@ -410,7 +354,7 @@ from sbrext.quest_contents_ext f,
 sbrext.quest_contents_ext m,
 SBREXT.MSDREDCAP_SECTION_CSV r,
 SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW vw
-where m.dn_crf_idseq =f.qc_idseq
+where m.dn_crf_idseq =f.qc_idseq 
 and f.qc_id=vw.qc_id(+)
 and VW.qc_id is null
 and r.LOAD_SEQ=p_run
@@ -431,7 +375,7 @@ FOR rec IN c_mod LOOP
 BEGIN
 
 
-
+       
      UPDATE sbrext.quest_contents_ext set date_modified= sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.correct_mod_name,long_name=rec.correct_mod_name
      where   qc_idseq =rec.qc_idseq;
      commit;
@@ -441,21 +385,21 @@ BEGIN
        ( rec.QC_IDSEQ,  rec.QC_ID ,  rec.VERSION ,  rec.QTL_NAME, rec.PREFERRED_DEFINITION   ,  rec.LONG_NAME ,  rec.DATE_CREATED,
   rec.CREATED_BY , rec.DATE_MODIFIED,rec.MODIFIED_BY, SYSDATE,'MODE_NAME');
 
-
+     
   commit;
-
+      
     EXCEPTION
     WHEN OTHERS THEN
     errmsg := substr(SQLERRM,1,500);
          dbms_output.put_line('errmsg insert - '||errmsg);
-         rollback;
+         rollback;     
        insert into sbrext.MDSR_QUEST_CONTENTS_UPDATE_ERR values(rec.QC_ID,rec.QTL_NAME, errmsg ,SYSDATE);
      commit;
      END;
      END LOOP;
      END MODE_SECTION;
 
-PROCEDURE FORM_PREFDEF(p_run IN NUMBER)
+PROCEDURE FORM_PREFDEF(p_run IN NUMBER) 
 as
 --find from with truncated preferred _definitions
 CURSOR c_form IS
@@ -479,7 +423,7 @@ and NVL(modified_by,'FORMLOADER') ='FORMLOADER';
 BEGIN
 FOR rec IN c_form LOOP
 BEGIN
-
+     
       UPDATE sbrext.quest_contents_ext set date_modified= sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition=rec.correct_def
       where qc_idseq=rec.qc_idseq;
         commit;
@@ -490,12 +434,12 @@ BEGIN
   rec.CREATED_BY , rec.DATE_MODIFIED,rec.MODIFIED_BY, SYSDATE,'PREF_DEF');
 
   commit;
-
+      
     EXCEPTION
     WHEN OTHERS THEN
     errmsg := substr(SQLERRM,1,500);
          dbms_output.put_line('errmsg insert - '||errmsg);
-         rollback;
+         rollback;     
        insert into SBREXT.MDSR_QUEST_CONTENTS_UPDATE_ERR values(rec.QC_ID,rec.QTL_NAME||' DEF', errmsg ,SYSDATE);
      commit;
      END;
@@ -516,7 +460,7 @@ sbrext.quest_contents_ext  q,
 sbrext.quest_contents_ext  i,
 sbrext.quest_contents_ext  m,
 SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW vw
-where m.dn_crf_idseq =f.qc_idseq
+where m.dn_crf_idseq =f.qc_idseq 
 and f.qc_id=vw.qc_id(+)
 and VW.qc_id is null
 and r.LOAD_SEQ=p_run
@@ -544,7 +488,7 @@ FOR rec IN c_quest LOOP
 BEGIN
 
 
-
+       
      UPDATE sbrext.quest_contents_ext set date_modified= sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.instructions||'; Question in xml doesn''t contain valid CDE public id and version. Unable to validate question in xml.',long_name=rec.instructions||'; Question in xml doesn''t contain valid CDE public id and version. Unable to validate question in xml.'
      where   qc_idseq =rec.qc_idseq;
       insert into  SBREXT.MDSR_QUEST_CONTENTS_REDCAP_BK
@@ -553,14 +497,14 @@ BEGIN
        ( rec.QC_IDSEQ,  rec.QC_ID ,  rec.VERSION ,  rec.QTL_NAME, rec.PREFERRED_DEFINITION   ,  rec.incorrect_instr ,  rec.DATE_CREATED,
   rec.CREATED_BY , rec.DATE_MODIFIED,rec.MODIFIED_BY, SYSDATE,'QUESTION INSTRUCTION');
 
-
+     
   commit;
-
+      
     EXCEPTION
     WHEN OTHERS THEN
     errmsg := substr(SQLERRM,1,500);
          dbms_output.put_line('errmsg insert - '||errmsg);
-         rollback;
+         rollback;     
        insert into SBREXT.MDSR_QUEST_CONTENTS_UPDATE_ERR values(rec.QC_ID,rec.QTL_NAME, errmsg ,SYSDATE);
      commit;
      END;
@@ -581,7 +525,7 @@ sbrext.quest_contents_ext  q,
 sbrext.quest_contents_ext  m,
 SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW vw
 
-where m.dn_crf_idseq =f.qc_idseq
+where m.dn_crf_idseq =f.qc_idseq 
 and f.qc_id=vw.qc_id(+)
 and VW.qc_id is null
 and r.load_seq=p_run
@@ -599,13 +543,13 @@ order by 1,5,6;
 
    errmsg VARCHAR2(800):='Non';
    v_protocol VARCHAR2(50):='';
-
+  
 BEGIN
 FOR rec IN c_quest LOOP
 BEGIN
 
 
-
+       
      UPDATE sbrext.quest_contents_ext set date_modified= sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.correct_question,long_name=rec.correct_question
      where   qc_idseq =rec.qc_idseq;
      commit;
@@ -615,14 +559,14 @@ BEGIN
        ( rec.QC_IDSEQ,  rec.QC_ID ,  rec.VERSION ,  rec.QTL_NAME, rec.PREFERRED_DEFINITION   ,  rec.long_name ,  rec.DATE_CREATED,
   rec.CREATED_BY , rec.DATE_MODIFIED,rec.MODIFIED_BY, SYSDATE,'QUEST DEF AND NAME');
 
-
+     
   commit;
-
+      
     EXCEPTION
     WHEN OTHERS THEN
     errmsg := substr(SQLERRM,1,500);
          dbms_output.put_line('errmsg insert - '||errmsg);
-         rollback;
+         rollback;     
        insert into SBREXT.MDSR_QUEST_CONTENTS_UPDATE_ERR values(rec.QC_ID,rec.QTL_NAME, errmsg ,SYSDATE);
      commit;
      END;
@@ -631,7 +575,7 @@ BEGIN
 
 PROCEDURE QUESTION_NOMATCH(p_run IN NUMBER) as
 
---Find from Questions with not matching long name
+--Find from Questions with not matching long name 
 CURSOR c_quest IS
 
 select form_name_new,q.long_name long_name,form_question correct_question,instructions,
@@ -644,7 +588,7 @@ sbrext.quest_contents_ext  q,
 sbrext.quest_contents_ext  m,
 SBREXT.MDSR_DUP_QUESTION_FROM_XML_VW vw
 
-where m.dn_crf_idseq =f.qc_idseq
+where m.dn_crf_idseq =f.qc_idseq 
 and f.qc_id=vw.qc_id(+)
 and VW.qc_id is null
 and f.long_name=r.form_name_new
@@ -662,11 +606,11 @@ order by 1,5,6;
 
    errmsg VARCHAR2(800):='Non';
    v_protocol VARCHAR2(50):='';
-
+  
 BEGIN
 FOR rec IN c_quest LOOP
 BEGIN
-
+       
      UPDATE sbrext.quest_contents_ext set date_modified= sysdate,modified_by='SBREXT',CHANGE_NOTE='Modified by The FL Post Process Fix', preferred_definition= rec.correct_question,long_name=rec.correct_question
      where   qc_idseq =rec.qc_idseq;
      commit;
@@ -676,55 +620,42 @@ BEGIN
        ( rec.QC_IDSEQ,  rec.QC_ID ,  rec.VERSION ,  rec.QTL_NAME, rec.PREFERRED_DEFINITION   ,  rec.long_name ,  rec.DATE_CREATED,
   rec.CREATED_BY , rec.DATE_MODIFIED,rec.MODIFIED_BY, SYSDATE,'QUEST DEF AND NAME');
 
-
+     
   commit;
-
+      
     EXCEPTION
     WHEN OTHERS THEN
     errmsg := substr(SQLERRM,1,500);
          dbms_output.put_line('errmsg insert - '||errmsg);
-         rollback;
+         rollback;     
        insert into SBREXT.MDSR_QUEST_CONTENTS_UPDATE_ERR values(rec.QC_ID,rec.QTL_NAME, errmsg ,SYSDATE);
      commit;
      END;
      END LOOP;
      END QUESTION_NOMATCH;
-
+     
      PROCEDURE RUN_POSTPROC(p_run IN NUMBER) as
 --insert postupload modified from ID
 
      errmsg VARCHAR2(800):='Non';
-   v_protocol VARCHAR2(50):='';    
-   V_Form_N number;
-   V_Form_N1 number;
+   v_protocol VARCHAR2(50):='';
 BEGIN
-      MDSRedCapForm_Insert (p_run);
-      
-   
 
-    select count(*) into V_Form_N 
-    from SBREXT.MSDREDCAP_FORM_CSV where load_seq=p_run;
-    select count(*) into V_Form_N1
-    from   SBREXT.MDSR_REDCAP_PROTOCOL_CSV where FORM_Q_NUM=0 and load_seq=p_run;
- IF V_Form_N=V_Form_N1  and NO_ERR = 'A' then
       INSERT_UPDATED_FORMS(p_run);
       IF NO_ERR = 'A' and call_procs = TRUE
       THEN
         FORMNAME_PROTO(p_run );
-        FNAME_NO_PRPROTOCOL(p_run);
+        FNAME_NO_PRPROTOCOL(p_run); 
         FORM_INSTR(p_run);
         MODE_SECTION(p_run);
         FORM_PREFDEF(p_run);
         QUESTION_INSTR(p_run);
         QUESTION_TRUNC(p_run);
         QUESTION_NOMATCH(p_run);
-      END IF;
+      END IF; 
  --dbms_output.put_line('insert - '||call_procs||NO_ERR);
-
- ELSE
- insert into SBREXT.MDSR_QUEST_CONTENTS_UPDATE_ERR values('NA','POSTPROC_RUN','ERROR when executed POSTPROC 1 or 2' ,SYSDATE);
-  END IF;
  dbms_output.put_line('errmsg insert - '||NO_ERR);
+ 
     EXCEPTION
     WHEN OTHERS THEN
     errmsg := substr(SQLERRM,1,500);
@@ -733,105 +664,10 @@ BEGIN
          rollback;
        insert into SBREXT.MDSR_QUEST_CONTENTS_UPDATE_ERR values('NA','POSTPROC_RUN', errmsg ,SYSDATE);
      commit;
-
-
+     
+  
      END RUN_POSTPROC;
-	 
+
 END MDSREDCAP_XML_POSTPOC;
-/	 
-CREATE OR REPLACE FUNCTION SBREXT.MDSR_NON_ASCII_CHAR(INPUT_STR IN VARCHAR2)
-RETURN VARCHAR2
-IS
-str VARCHAR2(4000);
-act number :=0;
-cnt number :=0;
-askey number :=0;
-v_char  VARCHAR2(4000):=NULL;
-OUTPUT_STR VARCHAR2(4000);
-begin
-str:=TO_CHAR(INPUT_STR);
-cnt:=length(str);
-for i in 1 .. cnt loop
-askey :=0;
-select ascii(substr(str,i,1)) into askey
-from dual;
-if askey >=127 and askey<>49821 and askey<>49824 then
-IF v_char =CHR(askey) then
-v_char:=v_char;
-else
-v_char :=v_char||CHR(askey);
-end if;
-else
-v_char :=v_char;
-end if;
-end loop;
-OUTPUT_STR := v_char;
-RETURN (OUTPUT_STR);
-END MDSR_NON_ASCII_CHAR;
 /
-CREATE OR REPLACE FUNCTION SBREXT.MDSR_NON_ASCII_CHAR2(INPUT_STR IN VARCHAR2)
-RETURN VARCHAR2
-IS
-str VARCHAR2(4000);
-act number :=0;
-cnt number :=0;
-askey number :=0;
-v_char  VARCHAR2(4000):=NULL;
-OUTPUT_STR VARCHAR2(4000);
-begin
-str:=TO_CHAR(INPUT_STR);
-cnt:=length(str);
-for i in 1 .. cnt loop
-askey :=0;
-select ascii(substr(str,i,1)) into askey
-from dual;
-if askey>9900 then
-IF v_char =CHR(askey) then
-v_char:=v_char;
-else
-v_char :=v_char||CHR(askey);
-end if;
-else
-v_char :=v_char;
-end if;
-end loop;
-OUTPUT_STR := v_char;
-RETURN (OUTPUT_STR);
-END MDSR_NON_ASCII_CHAR2;
-/
-CREATE OR REPLACE FUNCTION SBREXT.MDSR_NON_ASCII_NUM(INPUT_STR IN VARCHAR2)
-RETURN VARCHAR2
-IS
-str VARCHAR2(4000);
-act number :=0;
-cnt number :=0;
-askey number :=0;
-v_char  VARCHAR2(4000):=NULL;
-OUTPUT_STR VARCHAR2(4000);
-begin
-str:=TO_CHAR(INPUT_STR);
-cnt:=length(str);
-for i in 1 .. cnt loop
-askey :=0;
-select ascii(substr(str,i,1)) into askey
-from dual;
-if askey >=127 --and askey<>49821 and askey<>49824 
-then
-IF v_char is  null then
-v_char :=askey;
-else
-v_char :=v_char||'^'||askey;
-end if;
-end if;
-end loop;
-OUTPUT_STR := v_char;
-RETURN (OUTPUT_STR);
-end MDSR_NON_ASCII_NUM;
-/
-GRANT EXECUTE ON SBREXT.MDSR_NON_ASCII_CHAR TO READONLY; 
-GRANT EXECUTE ON SBREXT.MDSR_NON_ASCII_CHAR2 TO READONLY; 
-GRANT EXECUTE ON SBREXT.MDSR_NON_ASCII_NUM TO READONLY; 
-GRANT EXECUTE ON SBREXT.MDSR_NON_ASCII_CHAR TO PUBLIC; 
-GRANT EXECUTE ON SBREXT.MDSR_NON_ASCII_CHAR2 TO PUBLIC; 
-GRANT EXECUTE ON SBREXT.MDSR_NON_ASCII_NUM TO PUBLIC; 
 SPOOL OFF
