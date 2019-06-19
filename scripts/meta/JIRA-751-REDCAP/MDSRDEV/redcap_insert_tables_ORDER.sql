@@ -12,7 +12,7 @@ MDSRedCap_VALVAL_Insert */
 
 /*******************************SP**********************************/
 /*<TOAD_FILE_CHUNK>*/
-CREATE OR REPLACE PROCEDURE MDSR_RECAP_INSERT_CSV as
+CREATE OR REPLACE PROCEDURE MDSR_RECAP_INSERT_CSV(P_run_N number) as
 
  l_FORM_name      VARCHAR2 (100):='NA';
    l_where       VARCHAR2 (1000);
@@ -50,7 +50,8 @@ insert into MDSR_REDCAP_PROTOCOL_CSV
  MATRIX_RANK ,
  PROTOCOL ,
  Q_NMB_SERV ,
- QUESTION_CSV 
+ QUESTION_CSV ,
+ LOAD_SEQ 
 )
 select 
 VARIABLE_FIELD_NAME ,
@@ -72,7 +73,8 @@ VARIABLE_FIELD_NAME ,
  MATRIX_RANK ,
  'PX'||SUBSTR(TRIM(FIELD_NOTE),-6) , 
  Q_NMB_SERV ,
- substr(FIELD_LABEL, 1, 4000 ) 
+ substr(FIELD_LABEL, 1, 4000 ) ,
+ P_run_N
 from REDCAPPROTOCOL_TEMP;
 
      
@@ -83,14 +85,14 @@ from REDCAPPROTOCOL_TEMP;
     errmsg := SQLERRM;
          dbms_output.put_line('errmsg insert - '||errmsg);
          rollback;     
-       insert into SBREXT.MDSR_QUEST_CONTENTS_UPDATE_ERR values('MDSR_RECAP_INSERT_CSV','', errmsg ,SYSDATE);
+       insert into MDSR_QUEST_CONTENTS_UPDATE_ERR values('MDSR_RECAP_INSERT_CSV','', errmsg ,SYSDATE);
      commit;
      END;
   
 
 /
 
-CREATE OR REPLACE PROCEDURE MDSR_RECAP_UPDATE_CSV as
+CREATE OR REPLACE PROCEDURE MDSR_RECAP_UPDATE_CSV(P_run_N number) as
 
  l_FORM_name      VARCHAR2 (100):='NA';
    l_where       VARCHAR2 (1000);
@@ -105,7 +107,7 @@ CREATE OR REPLACE PROCEDURE MDSR_RECAP_UPDATE_CSV as
    formatstr CLOB ;
 BEGIN
 update MDSR_REDCAP_PROTOCOL_CSV set field_label=replace (VARIABLE_FIELD_NAME,'_',' '), QUESTION_CSV =replace (VARIABLE_FIELD_NAME,'_',' ') 
-  where field_label is null or field_label like '%???%';
+  where field_label is null or field_label like '%???%' and LOAD_SEQ=P_run_N  ;
 
      
   commit;
@@ -127,7 +129,7 @@ update MDSR_REDCAP_PROTOCOL_CSV set field_label=replace (VARIABLE_FIELD_NAME,'_'
  CASE WHEN INSTR(substr(FORM_NAME,7),'-')=0 then 'PhenX '||protocol||' - '||INITCAP(replace(substr(trim(FORM_NAME),7),'_',' '))
  WHEN INSTR(substr(FORM_NAME,7),'-')=1 then 'PhenX '||protocol||' - '||INITCAP(trim(replace(substr(FORM_NAME,8),'_',' ')))
  end  
- where lower(FORM_NAME) like '%phenx_%';
+ where lower(FORM_NAME) like '%phenx_%'  and LOAD_SEQ=P_run_N ;
   commit;
  --8.b 
  update MDSR_REDCAP_PROTOCOL_CSV set choices='1 , YES|0 , NO'
@@ -140,22 +142,22 @@ VAL_MAX=DECODE(TEXT_VALID_MAX,NULL,NULL,'maxLength='||TEXT_VALID_MAX||';'),
 VAL_TYPE=DECODE(TEXT_VALID_TYPE,NULL,NULL,'datatype='||TEXT_VALID_TYPE||';')
 where (TEXT_VALID_MIN is not null or TEXT_VALID_MAX is not null or TEXT_VALID_TYPE is not null
 ) and 
-dbms_lob.getlength(choices) = 0;
+dbms_lob.getlength(choices) = 0 and LOAD_SEQ=P_run_N ;
  commit;
 --8.d
 UPDATE MDSR_REDCAP_PROTOCOL_CSV set 
 INSTRUCTIONS=VAL_TYPE||VAL_MIN||VAL_MAX||LOGIC
 where (TEXT_VALID_MIN is not null or TEXT_VALID_MAX is not null or TEXT_VALID_TYPE is not null
-or logic is not null) and FIELD_TYPE<>'calc';
+or logic is not null) and FIELD_TYPE<>'calc' and LOAD_SEQ=P_run_N ;
  commit;
 
 UPDATE MDSR_REDCAP_PROTOCOL_CSV set 
 INSTRUCTIONS='Calculation ;'||VAL_TYPE||VAL_MIN||VAL_MAX||LOGIC
-where FIELD_TYPE='calc';
+where FIELD_TYPE='calc' and LOAD_SEQ=P_run_N ;
 commit;
 
   UPDATE MDSR_REDCAP_PROTOCOL_CSV set instructions=substr(instructions,1,length(instructions)-1) 
- where SUBSTR(instructions, -1, 1)=';' ;
+ where SUBSTR(instructions, -1, 1)=';' and LOAD_SEQ=P_run_N ;
  
  commit;
       
@@ -169,7 +171,7 @@ commit;
      END;
 /
 /*<TOAD_FILE_CHUNK>*/
-CREATE OR REPLACE PROCEDURE MDSR_RECAP_UPDATE_CSV2 as
+CREATE OR REPLACE PROCEDURE SBR.MDSR_RECAP_UPDATE_CSV2(P_run_N number) as
 
  l_FORM_name      VARCHAR2 (100):='NA';
    l_where       VARCHAR2 (1000);
@@ -187,12 +189,12 @@ BEGIN
 
 merge into MDSR_REDCAP_PROTOCOL_CSV t1
 using (select min(question)question,PROTOCOL
-from MDSR_REDCAP_PROTOCOL_CSV group by PROTOCOL ) t2
+from MDSR_REDCAP_PROTOCOL_CSV where LOAD_SEQ=P_run_N group by PROTOCOL  ) t2
 on (t1.PROTOCOL = t2.PROTOCOL)
-when matched then 
+when matched then
 update set t1.question = t1.question-t2.question;
 
-     
+
   commit;
 --10.Populate sections in REDCAP_PROTOCOL_CSV:
 --10.1. Find min Question Number for protocol which is >0 and set it to 0.
@@ -201,12 +203,12 @@ update set t1.question = t1.question-t2.question;
  --select distinct protocol||form_name from REDCAP_PROTOCOL_751  where protocol||form_name in
  (
  select protocol||form_name from(
- 
+
  select MIN_QUEST, protocol, form_name,SECTION_SEQ,SECTION_Q_SEQ,QUESTION,SECTION
  from(
  select  min(Question) over  (partition by protocol, form_name order by protocol, form_name ) as MIN_QUEST,
  protocol, form_name,SECTION_SEQ,SECTION_Q_SEQ,QUESTION,SECTION
-from MDSR_REDCAP_PROTOCOL_CSV)--where form_name='phenx_cancer_personal_and_family_history')
+from MDSR_REDCAP_PROTOCOL_CSV where LOAD_SEQ=P_run_N)--where form_name='phenx_cancer_personal_and_family_history')
 where MIN_QUEST>0 and MIN_QUEST=QUESTION
 )
 );
@@ -215,13 +217,13 @@ UPDATE MDSR_REDCAP_PROTOCOL_CSV set FORM_Q_num=QUESTION where protocol||form_nam
  --select distinct protocol||form_name,form_NAME_NEW from REDCAP_PROTOCOL_CSV where protocol||form_name in
  (
  select protocol||form_name from(
- 
+
  select MIN_QUEST, protocol, form_name,SECTION_SEQ,SECTION_Q_SEQ,QUESTION,SECTION
  from(
  select  min(Question) over  (partition by protocol, form_name order by protocol, form_name ) as MIN_QUEST,
  protocol, form_name,SECTION_SEQ,SECTION_Q_SEQ,QUESTION,SECTION
-from MDSR_REDCAP_PROTOCOL_CSV where protocol not like 'Instructions%')
-where MIN_QUEST=0 and MIN_QUEST=QUESTION
+from MDSR_REDCAP_PROTOCOL_CSV where protocol not like 'Instructions%' and LOAD_SEQ=P_run_N)
+where MIN_QUEST=0 and MIN_QUEST=QUESTION 
 )
 );
 commit;
@@ -230,15 +232,12 @@ commit;
     WHEN OTHERS THEN
     errmsg := SQLERRM;
          dbms_output.put_line('errmsg insert - '||errmsg);
-         rollback;     
+         rollback;
        insert into MDSR_QUEST_CONTENTS_UPDATE_ERR values('MDSR_RECAP_UPDATE_CSV','', errmsg ,SYSDATE);
      commit;
      END;
-  
-
 /
-
-CREATE OR REPLACE PROCEDURE  MDSRedCapForm_Insert 
+CREATE OR REPLACE PROCEDURE  MDSRedCapForm_Insert(P_run_N number) 
 AS
 
  errmsg VARCHAR2(2000):='';
@@ -253,15 +252,16 @@ BEGIN
  FORM_NAME_NEW ,
   PREFERRED_DEFINITION  ,
   PROTOCOL_NAME ,
-  INSTRUCTIONS)
+  INSTRUCTIONS,
+   LOAD_SEQ)
  SELECT 
- distinct  f.protocol, form_name_new,PREFERRED_DEFINITION,p.long_name,i.FIELD_LABEL
+ distinct  f.protocol, form_name_new,PREFERRED_DEFINITION,p.long_name,i.FIELD_LABEL,P_run_N
  --select *
  from
  (select distinct replace(protocol,'Instructions to') protocol, form_name_new ,section_seq,section_q_seq, form_name 
- from   MDSR_REDCAP_PROTOCOL_CSV where FORM_Q_NUM=0 )f,
+ from   MDSR_REDCAP_PROTOCOL_CSV where FORM_Q_NUM=0 and LOAD_SEQ=P_run_N)f,
  (select replace(protocol,'Instructions to') protocol, form_name ,FIELD_LABEL 
- from  MDSR_REDCAP_PROTOCOL_CSV where protocol like 'Instructions%' and section is null )i,
+ from  MDSR_REDCAP_PROTOCOL_CSV where protocol like 'Instructions%' and section is null and LOAD_SEQ=P_run_N)i,
  --select*from 
  SBREXT.PROTOCOLS_EXT p
  where  f.protocol=preferred_name
@@ -278,7 +278,7 @@ BEGIN
 
 END ;
 /
-CREATE OR REPLACE PROCEDURE MSDRedCapSact_Quest_populate
+CREATE OR REPLACE PROCEDURE MSDRedCapSact_Quest_populate(P_run_N number)
 AS
 
     CURSOR CUR_RC IS select protocol,FORM_NAME,FORM_Q_NUM,SECTION, SECTION_SEQ ,SECTION_Q_SEQ
@@ -287,6 +287,7 @@ AS
     and SECTION_Q_SEQ=0
     and SECTION is not NULL
     and FORM_Q_NUM is not null   
+	and LOAD_SEQ=P_run_N 
     order by protocol,FORM_NAME,FORM_Q_NUM;
     
     errmsg VARCHAR2(2000):='';
@@ -310,6 +311,7 @@ AS
             FROM MDSR_REDCAP_PROTOCOL_CSV
             where  protocol=i.protocol
             and FORM_NAME=i.FORM_NAME
+			and LOAD_SEQ=P_run_N 
             ; 
             dbms_output.put_line('V_sec_MAX - '||V_sec_MAX||' V_sec_NC -'||i.SECTION_SEQ);
             
@@ -321,7 +323,8 @@ AS
             where  protocol=i.protocol
             and FORM_NAME=i.FORM_NAME
             and SECTION is not NULL
-            and SECTION_SEQ =i.SECTION_SEQ+1;
+            and SECTION_SEQ =i.SECTION_SEQ+1
+			and LOAD_SEQ=P_run_N ;
             END IF;
           
 
@@ -332,7 +335,7 @@ AS
             FROM MDSR_REDCAP_PROTOCOL_CSV
             where  protocol=i.protocol
             and FORM_NAME=i.FORM_NAME
-            and SECTION is NULL
+            and SECTION is NULL and LOAD_SEQ=P_run_N 
             and ((FORM_Q_NUM >V_QC_NC and FORM_Q_NUM <V_QC_NCEXT and V_sec_MAX>V_sec_NC) 
             or  (FORM_Q_NUM >V_QC_NC and V_sec_MAX=V_sec_NC))
             order by FORM_Q_NUM;
@@ -346,7 +349,8 @@ AS
                     and FORM_NAME=r.FORM_NAME
                     and FORM_Q_NUM =r.FORM_Q_NUM 
                     and SECTION_SEQ is null
-                    and SECTION_Q_SEQ is null;
+                    and SECTION_Q_SEQ is null
+					and LOAD_SEQ=P_run_N ;
 
                     --dbms_output.put_line('output2 - V_sec_N='||V_sec_N||' V_sec_QN='||V_sec_QN);
                     commit;
@@ -374,7 +378,7 @@ AS
      
  UPDATE MDSR_REDCAP_PROTOCOL_CSV  SET SECTION_SEQ=0 , SECTION_Q_SEQ=FORM_Q_NUM
  WHERE SECTION_SEQ is null and SECTION_Q_SEQ is null  and SECTION is null and 
- lower(FIELD_NOTE) not like 'Instructions%';
+ lower(FIELD_NOTE) not like 'Instructions%'and LOAD_SEQ=P_run_N ;
  commit;
   EXCEPTION
                     WHEN OTHERS THEN
@@ -390,7 +394,7 @@ AS
 
 
 
-CREATE OR REPLACE PROCEDURE  MDSRedCapSaction_Insert 
+CREATE OR REPLACE PROCEDURE  MDSRedCapSaction_Insert(P_run_N number) 
 AS
 
  errmsg VARCHAR2(2000):='';
@@ -407,16 +411,18 @@ BEGIN
  SECTION_Q_SEQ,
  QUESTION ,
  SECTION,
- SECTION_NEW )
+ SECTION_NEW ,
+ LOAD_SEQ)
  SELECT 
  distinct q.protocol, q.form_name_new,SECTION_SEQ,SECTION_Q_SEQ,FORM_Q_NUM,q.SECTION,
  case
  when q.SECTION is NULL or q.SECTION like '%phenx_%' then substr(q.form_name_new,18) 
    when q.SECTION is not NULL and q.SECTION not like '%phenx_%' then q.SECTION
-   end
+   end,
+   P_run_N
  --select*
  from  MDSR_REDCAP_PROTOCOL_CSV  q
- where SECTION_Q_SEQ=0 ;
+ where SECTION_Q_SEQ=0 and LOAD_SEQ=P_run_N;
  
  EXCEPTION
  WHEN OTHERS THEN
@@ -429,14 +435,14 @@ END ;
 /
 
 
-CREATE OR REPLACE PROCEDURE  MDSRedCapSaction_populate 
+CREATE OR REPLACE PROCEDURE  MDSRedCapSaction_populate(P_run_N number) 
 AS
 
     CURSOR CUR_RC IS select protocol,FORM_NAME,FORM_Q_NUM,SECTION, SECTION_SEQ ,SECTION_Q_SEQ
     FROM  MDSR_REDCAP_PROTOCOL_CSV 
     where SECTION is not NULL
     and SECTION_SEQ is  null
-    and FORM_Q_num is not null
+    and FORM_Q_num is not null and LOAD_SEQ=P_run_N 
     order by protocol,FORM_NAME,FORM_Q_num; 
      
  errmsg VARCHAR2(2000):='';
@@ -455,6 +461,7 @@ BEGIN
  SELECT min(FORM_Q_num) into V_MIN_SEC_Q 
  from MDSR_REDCAP_PROTOCOL_CSV
  where SECTION is not NULL
+ and LOAD_SEQ=P_run_N
  and protocol=i.protocol
  and FORM_NAME=i.FORM_NAME;
  
@@ -472,6 +479,7 @@ BEGIN
  and FORM_NAME=i.FORM_NAME
  and FORM_Q_num =i.FORM_Q_num
  and SECTION=i.SECTION
+ and LOAD_SEQ=P_run_N
  and SECTION_SEQ is null;
  
  
@@ -489,7 +497,7 @@ commit;
 END ;
 /
 
-CREATE OR REPLACE PROCEDURE MDSRedCap_VALVAL_Insert 
+CREATE OR REPLACE PROCEDURE MDSRedCap_VALVAL_Insert(P_run_N number) 
 AS
 
  errmsg VARCHAR2(2000):='';
@@ -511,7 +519,8 @@ BEGIN
  VAL_ORDER,
  PIPE_NUM,
  ELM_ORDER,
- VAL_VAL_NAME)
+ VAL_VAL_NAME,
+ and LOAD_SEQ)
  select 
  PROTOCOL,
  FORM_NAME , 
@@ -533,17 +542,78 @@ BEGIN
  PROTOCOL,
  FORM_NAME ,
  question, 
- cast(trim(CHOICES )  as varchar2(320)) as CHOICES
+ cast(trim(CHOICES )  as varchar2(320)) as CHOICES,
+ P_run_N
  from   MDSR_REDCAP_PROTOCOL_CSV
  where dbms_lob.getlength(choices) >0
  and dbms_lob.instr(CHOICES,'|')=0 
- and REGEXP_COUNT(choices,',')>1);
+ and REGEXP_COUNT(choices,',')>1)
+ and LOAD_SEQ=P_run_N;;
 
  commit;
 
 
 --when only 1 separated coma.
  
+ CREATE OR REPLACE PROCEDURE SBR.MDSRedCap_VALVAL_Insert(P_run_N number)
+AS
+
+ errmsg VARCHAR2(2000):='';
+ V_sec_N number;
+ V_sec_QN number;
+ V_pr_SEC_N number;
+ V_MIN_SEC_Q number;
+
+BEGIN
+
+
+-- insert in REDCAP_VALUE_CODE with no pipes, many',' (FIELD_TYPE) not in ('calc','descriptive');
+  INSERT INTO  MSDREDCAP_VALUE_CODE_CSV
+ ( PROTOCOL ,
+ FORM_NAME ,
+ QUESTION ,
+ VAL_name ,
+ VAL_VALUE ,
+ VAL_ORDER,
+ PIPE_NUM,
+ ELM_ORDER,
+ VAL_VAL_NAME,
+ LOAD_SEQ)
+ select
+ PROTOCOL,
+ FORM_NAME ,
+ question,
+ CASE WHEN trim(choices)='99,99,9999 , unknown'
+ THEN '99,99,9999'
+ ELSE substr(choices,1,(instr(choices,',')-1))
+ END,
+ CASE WHEN trim(choices)='99,99,9999 , unknown'
+ THEN 'unknown'
+ ELSE substr(choices,(instr(choices,',')+1))
+ END,
+ 0,
+ 0,
+ 0,
+ choices,
+ P_run_N
+ from
+ (select
+ PROTOCOL,
+ FORM_NAME ,
+ question,
+ cast(trim(CHOICES )  as varchar2(320)) as CHOICES
+ 
+ from   MDSR_REDCAP_PROTOCOL_CSV
+ where dbms_lob.getlength(choices) >0
+ and dbms_lob.instr(CHOICES,'|')=0
+ and REGEXP_COUNT(choices,',')>1
+ and LOAD_SEQ=P_run_N);
+
+ commit;
+
+
+--when only 1 separated coma.
+
  INSERT INTO  MSDREDCAP_VALUE_CODE_CSV
  ( PROTOCOL ,
  FORM_NAME ,
@@ -553,9 +623,10 @@ BEGIN
  VAL_ORDER,
  PIPE_NUM,
  ELM_ORDER,
- VAL_VAL_NAME)
+ VAL_VAL_NAME,
+ LOAD_SEQ)
 
- select 
+ select
  PROTOCOL,
  FORM_NAME ,
  question,
@@ -563,11 +634,12 @@ BEGIN
  cast(trim(substr(choices,1,(instr(choices,',')-1)) )  as varchar2(320)) as CHOICES1 ,
  cast(trim(substr(choices,(instr(choices,',')+1)) )  as varchar2(320)) as CHOICES2,
  0,
+ 0, 
  0,
- 0,
- choices 
+ choices,
+ P_run_N
  from  MDSR_REDCAP_PROTOCOL_CSV
- where dbms_lob.getlength(choices) >0 and instr(choices,'|')=0
+ where dbms_lob.getlength(choices) >0 and instr(choices,'|')=0 and LOAD_SEQ=P_run_N 
  and REGEXP_COUNT(choices,',')=1 ;--and protocol='PX770301';
  commit;
 INSERT INTO  MSDREDCAP_VALUE_CODE_CSV
@@ -579,8 +651,9 @@ FORM_NAME ,
   VAL_ORDER,
   PIPE_NUM,
   ELM_ORDER,
-  VAL_VAL_NAME)
-  select 
+  VAL_VAL_NAME,
+  LOAD_SEQ)
+  select
   PROTOCOL,
   FORM_NAME ,
   question,
@@ -589,19 +662,21 @@ FORM_NAME ,
   ELM_ORDER-1,
   PIPE_NUM, --Pipe position in string CHOICES
   ELM_ORDER,
-  CHOICES ---substring CHOICES before || 
+  CHOICES,
+  P_run_N
+  ---substring CHOICES before ||
  from(
- select 
+ select
     cast(trim(regexp_substr(t.CHOICES, '[^|]+', 1, levels.column_value)  )  as varchar2(500)) as  CHOICES,levels.column_value  ELM_ORDER, FORM_NAME ,question,
   protocol,dbms_lob.instr(CHOICES,'[^|]+', 1, levels.column_value) AS PIPE_NUM
-           from  (select  FORM_NAME_NEW FORM_NAME ,choices,protocol,question from  SBREXT.MDSR_REDCAP_PROTOCOL_CSV 
-		   where dbms_lob.getlength(choices) >0 )t,
+           from  (select  FORM_NAME_NEW FORM_NAME ,choices,protocol,question from  MDSR_REDCAP_PROTOCOL_CSV
+		   where dbms_lob.getlength(choices) >0 and LOAD_SEQ=P_run_N)t,
       table(cast(multiset(
-        select level from dual 
+        select level from dual
         connect by level <= length (regexp_replace(t.CHOICES, '[^|]+')) + 1
       ) as sys.OdciNumberList)) levels)
       order by 1,3,6;
- commit;     
+ commit;
       ------------------check--------------------------------
       /*
 select count(*) cnt,PROTOCOL  ,FORM_NAME ,QUESTION ,VAL_name ,VAL_VALUE ,  VAL_ORDER
@@ -615,9 +690,9 @@ order by 2,4,7;
 delete from REDCAP_VALUE_CODE_751 where val_name is null and val_value is null
 
 
-select p.protocol,p.question,p.choices,val_val_name,val_order from 
+select p.protocol,p.question,p.choices,val_val_name,val_order from
 REDCAP_PROTOCOL_751 p,
-REDCAP_VALUE_CODE_751 v 
+REDCAP_VALUE_CODE_751 v
 where p.protocol=v.protocol(+)
 and p.question=v.question(+)
 and V.protocol is null
@@ -629,7 +704,7 @@ and   dbms_lob.getlength(choices) >0
 select distinct question,protocol from  REDCAP_PROTOCOL_751 where dbms_lob.getlength(choices) >0
 minus
 select distinct question,protocol from  REDCAP_VALUE_CODE_751 */
- 
+
  EXCEPTION
  WHEN OTHERS THEN
  errmsg := SQLERRM;
@@ -639,3 +714,13 @@ select distinct question,protocol from  REDCAP_VALUE_CODE_751 */
 
 END ;
 /
+exec MDSR_RECAP_INSERT_CSV;
+exec MDSR_RECAP_UPDATE_CSV;
+exec MDSR_RECAP_UPDATE_CSV2;
+exec MDSRedCapSaction_populate ;
+exec MSDRedCapSact_Quest_populate;
+exec MDSRedCapSaction_Insert;
+exec MDSRedCapForm_Insert ;
+exec MDSRedCap_VALVAL_Insert;
+
+
