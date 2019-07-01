@@ -1,0 +1,70 @@
+RedCAP transformation steps:
+1.rename all instrument.csv into Phenix#.csv and iplace them in  directory 'C:\meta\JIRA_#\CSV_FILES
+2. create control file LOAD_REDCAP_all.ctl for all Phenix#.csv like:
+OPTIONS ( ERRORS= 10000, SKIP=1)
+LOAD DATA
+
+INFILE 'C:\META\JIRA-751\CSV_FILES\PX010502.csv' "str '\r'"
+I......................
+..........................
+INFILE 'C:\META\JIRA-751\CSV_FILES\PX770301.csv' "str '\r'"
+
+INTO TABLE "MSDRDEV"."REDCAPPROTOCOL_TEMP"
+append
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+TRAILING NULLCOLS   
+(              
+  VARIABLE_FIELD_NAME   CHAR(400) ,
+    FORM_NAME CHAR(400), 
+    SECTION CHAR(1500) , 
+    FIELD_TYPE CHAR(100), 
+    FIELD_LABEL CHAR(4000) ,
+    CHOICES CHAR(4000), 
+    FIELD_NOTE CHAR(100),
+TEXT_VALID_TYPE     ,
+  TEXT_VALID_MIN       ,
+  TEXT_VALID_MAX       ,
+  IDENTIFIER           ,
+  LOGIC           CHAR(1000)    ,
+  REQUIRED             ,
+  CUSTOM_ALIGNMENT     ,
+  Q_NMB_SERV,
+  MATRIX_GROUP_NAME    ,
+  MATRIX_RANK,
+QUESTION SEQUENCE(0,1) )
+
+3.delete from MSDRDEV.REDCAPPROTOCOL_TEMP;
+4.load data to "SBREXT"."REDCAPPROTOCOL_TEMP" via SQL LOADER using  the contrl file LOAD_REDCAP_all.ctl
+in table  TABLE MSDRDEV.REDCAPPROTOCOL_TEMP
+(
+  VARIABLE_FIELD_NAME  VARCHAR2(400 BYTE),
+  FORM_NAME            VARCHAR2(400 BYTE),
+  SECTION              VARCHAR2(3000 BYTE),
+  FIELD_TYPE           VARCHAR2(100 BYTE),
+  FIELD_LABEL          CLOB,
+  FIELD_NOTE           VARCHAR2(100 BYTE),
+  TEXT_VALID_TYPE      VARCHAR2(100 BYTE),
+  TEXT_VALID_MIN       VARCHAR2(100 BYTE),
+  TEXT_VALID_MAX       VARCHAR2(100 BYTE),
+  IDENTIFIER           VARCHAR2(100 BYTE),
+  LOGIC                VARCHAR2(3000 BYTE),
+  REQUIRED             VARCHAR2(50 BYTE),
+  CUSTOM_ALIGNMENT     VARCHAR2(100 BYTE),
+  Q_NMB_SERV           VARCHAR2(100 BYTE),
+  MATRIX_GROUP_NAME    VARCHAR2(100 BYTE),
+  MATRIX_RANK          VARCHAR2(100 BYTE),
+  QUESTION             NUMBER,
+  CHOICES              CLOB
+);
+5.all DB objects placed in script MDSREDCAP_XML_GENERATION_DB_SBREXT_OBJECTS.sql
+6.poulate tables following tables by exequting SP in script redcap_populate_CSV_tables.sql
+MDSR_REDCAP_PROTOCOL_CSV;
+MSDREDCAP_FORM_CSV;
+MSDREDCAP_SECTION_CSV;
+MSDREDCAP_VALUE_CODE_CSV;
+7.generate XML files with folowing SPs
+MSDRDEV.xml_RedCap_insertCSV(p_run number);
+REDCAP_XML_TRANSFORM(p_run number);
+
+
