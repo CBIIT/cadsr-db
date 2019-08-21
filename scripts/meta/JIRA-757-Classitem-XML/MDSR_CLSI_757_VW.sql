@@ -1,9 +1,9 @@
 set serveroutput on size 1000000
 SPOOL cadsrmeta-757.log  
 
-CREATE OR REPLACE   VIEW SBREXT.MDSR_class_scheme_ITEM_VW
+CREATE OR REPLACE VIEW SBREXT.MDSR_class_scheme_ITEM_VW
 (
-       CS_IDSEQ,
+    CS_IDSEQ,
     PREFERRED_NAME,
     LONG_NAME,
     PREFERRED_DEFINITION,
@@ -20,8 +20,7 @@ CREATE OR REPLACE   VIEW SBREXT.MDSR_class_scheme_ITEM_VW
     CS_ID
 )
 as 
-(SELECT 
-            cs.cs_idseq,
+(SELECT     cs.cs_idseq,
             cs.preferred_name,
             cs.long_name,
             cs.preferred_definition,
@@ -40,16 +39,14 @@ as
             sbr.cs_items                csi,
             sbr.cs_csi                  csc,           
             sbr.contexts                cs_conte,
-            sbr.contexts                csi_conte
-            
+            sbr.contexts                csi_conte            
       WHERE csc.cs_idseq = cs.cs_idseq
             AND csc.csi_idseq = csi.csi_idseq
             AND cs.conte_idseq = cs_conte.conte_idseq
             AND csi.conte_idseq = csi_conte.conte_idseq
             AND csi_conte.name not in ('TEST','Training')
-             AND cs_conte.name not in ('TEST','Training')
-           --  AND csi.ASL_NAME='RELEASED'
-             AND cs.ASL_NAME='RELEASED'
+            AND cs_conte.name not in ('TEST','Training')          
+            AND cs.ASL_NAME='RELEASED'
             )
 /
  CREATE OR REPLACE   VIEW SBREXT.MDSR_class_scheme_LIST_VW
