@@ -44,7 +44,7 @@ AS
             AND csc.csi_idseq = csi.csi_idseq
             AND cs.conte_idseq = cs_conte.conte_idseq
             AND csi.conte_idseq = csi_conte.conte_idseq
-            AND csi.CSITL_NAME='testCaseMix'
+            AND csi.CSITL_NAME<>'testCaseMix'
             AND csi_conte.name NOT IN ('TEST', 'Training')
             AND cs_conte.name NOT IN ('TEST', 'Training')
             AND cs.ASL_NAME = 'RELEASED');
