@@ -289,7 +289,8 @@ CREATE OR REPLACE TYPE MDSR759_XML_CSI_L1_T as object(
  "Item id" VARCHAR2(60),
   "Parent id" VARCHAR2(60), 
   sc_csi_id VARCHAR2(60),
- "AnyChildren" VARCHAR2(10))
+ "AnyChildren" VARCHAR2(10),
+ "Children" MDSR759_XML_CSI_LIST2_T)
  
 /
 CREATE OR REPLACE TYPE MDSR759_XML_CSI_LIST1_T as table of MDSR759_XML_CSI_L1_T;
@@ -307,9 +308,10 @@ drop TYPE MDSR759_XML_CSI_LIST5_T ;
 drop TYPE MDSR759_XML_CSI_L5_T;
 
 drop TYPE MDSR759_XML_CSI_LIST1_T ;
-drop TYPE MDSR759_XML_CSI_L5_T;
+
 drop TYPE MDSR759_XML_CS_L5_LIST_T;
  drop TYPE MDSR759_XML_CS_L5_T;
+ 
 CREATE OR REPLACE TYPE MDSR759_XML_CS_L5_T as object(
 "name" VARCHAR2(255),
 "publicID"        NUMBER,
@@ -326,13 +328,25 @@ CREATE OR REPLACE TYPE MDSR759_XML_Context_T1 as object(
 "ClassificationScheme" MDSR759_XML_CS_L5_LIST_T)
 /
 
-v1.CSI_LEVEL,
-                                       v1.CSI_NAME,
-                                       v1.CSI_ID,    
-                                       v1.CSI_VERSION,    
-                                       v1.CSITL_NAME,    
+v1.CSI_LEVEL,                                       v1.CSI_NAME,
+v1.CSI_ID,   
+v1.CSI_VERSION, v1.CSITL_NAME,    
                                        v1.DESCRIPTION,   
                                        v1.CSI_IDSEQ,
                                        v1.PARENT_CSI_IDSEQ,
                                        v1.CS_CSI_IDSEQ,                                      
-                                       v1.LEAF,
+                                       v1.LEAF
+                                       
+                                       
+                                       CREATE OR REPLACE TYPE MDSR759_XML_CSI_L1_T as object(
+"item Level" number,
+ "name" VARCHAR2(255),
+ "publicID"        NUMBER,
+ "version"          VARCHAR2(7),
+ "type"   VARCHAR2(20),
+"preferredDefinition"  VARCHAR2(2000),
+ "Item id" VARCHAR2(60),
+  "Parent id" VARCHAR2(60), 
+  sc_csi_id VARCHAR2(60),
+ "AnyChildren" VARCHAR2(10))
+ 

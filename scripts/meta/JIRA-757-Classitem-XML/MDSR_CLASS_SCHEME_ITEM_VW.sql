@@ -1,6 +1,6 @@
 DROP VIEW SBREXT.MDSR_CLASS_SCHEME_ITEM_VW;
 
-/* Formatted on 9/10/2019 4:46:06 PM (QP5 v5.336) */
+/* Formatted on 9/11/2019 10:09:30 AM (QP5 v5.336) */
 CREATE OR REPLACE FORCE VIEW SBREXT.MDSR_CLASS_SCHEME_ITEM_VW
 (
     CS_IDSEQ,
@@ -11,13 +11,16 @@ CREATE OR REPLACE FORCE VIEW SBREXT.MDSR_CLASS_SCHEME_ITEM_VW
     ASL_NAME,
     CS_CONTEXT_NAME,
     CS_CONTEXT_VERSION,
-    CSI_NAME,
+    conte_idseq,
+    CSI_NAME, 
+    
     CSITL_NAME,
     DESCRIPTION,
     CSI_ID,
     CSI_VERSION,
     CSI_IDSEQ,
     CSI_CONTEXT_NAME,
+   
     CS_ID,
     CS_CSI_IDSEQ,
     CSI_LEVEL,
@@ -33,6 +36,7 @@ AS
                 cs.asl_name,
                 cs_conte.name                cs_context_name,
                 cs_conte.version             cs_context_version,
+                cs.conte_idseq             conte_idseq,
                 csi.long_name                csi_name,
                 csi.csitl_name,
                 csi.preferred_definition     description,
@@ -43,7 +47,7 @@ AS
                 cs.cs_id,
                 CS_CSI_IDSEQ,
                 LEVEL,
-                CONNECT_BY_ISLEAF            "IsLeaf",
+                decode(CONNECT_BY_ISLEAF ,'1','NON','0','Yes')          "IsLeaf",
                 p_cs_csi_idseq
            FROM sbr.classification_schemes cs,
                 sbr.cs_items            csi,
