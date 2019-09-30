@@ -9,7 +9,8 @@ CREATE OR REPLACE FORCE VIEW SBREXT.MDSR_STANDARD_FORM_CDE_TYPE
     FORM_NAME,
     CDE_ID,
     DE_VERSION,
-    DE_NAME
+    DE_NAME,
+    QUESTION
 )
 AS
       SELECT DISTINCT
@@ -27,7 +28,8 @@ AS
              FR.LONG_NAME,
              CDE_ID,
              DE.VERSION                       DE_VERSION,
-             DE.LONG_NAME                     DE_NAME
+             DE.LONG_NAME                     DE_NAME,
+             DE.QUESTION
         FROM SBREXT.QUEST_CONTENTS_EXT FR,
              SBREXT.QUEST_CONTENTS_EXT MD,
              SBREXT.QUEST_CONTENTS_EXT Q,
@@ -38,8 +40,7 @@ AS
              AND PQ.QC_IDSEQ = FR.QC_IDSEQ
              AND PQ.PROTO_IDSEQ = P.PROTO_IDSEQ
              AND TRIM (FR.QTL_NAME) = 'CRF'
-             AND FR.ASL_NAME = 'RELEASED'
-             AND FR.conte_idseq = '6BDC8E1A-E021-BC44-E040-BB89AD4365F6'
+             AND FR.ASL_NAME = 'RELEASED'         
              AND Q.P_MOD_IDSEQ = MD.QC_IDSEQ
              AND TRIM (MD.QTL_NAME) = 'MODULE'
              AND TRIM (Q.QTL_NAME) = 'QUESTION'
@@ -63,6 +64,7 @@ CREATE OR REPLACE FORCE VIEW SBREXT.MDSR_STANDARD_FORM_CDE_AGR
     CDE_ID,
     DE_VERSION,
     DE_NAME,
+    DE_QUESTION,
     FORM_ID,
     FORM_NAME
 )
@@ -72,6 +74,7 @@ AS
              CDE_ID,
              DE_VERSION,
              DE_NAME,
+             QUESTION                                                             DE_QUESTION,
              LISTAGG (FORM_ID_VERSION, '::')
                  WITHIN GROUP (ORDER BY FORM_ID_VERSION)                          AS FORM_ID,
              LISTAGG (FORM_NAME, '::') WITHIN GROUP (ORDER BY FORM_ID_VERSION)    AS FORM_NAME
@@ -80,12 +83,11 @@ AS
              MODULE_ORDER,
              CDE_ID,
              DE_VERSION,
-             DE_NAME
+             DE_NAME,
+             QUESTION
     ORDER BY MODULE_ORDER, CDE_ID;
-
-
+	/
 CREATE OR REPLACE PUBLIC SYNONYM MDSR_STANDARD_FORM_CDE_AGR FOR SBREXT.MDSR_STANDARD_FORM_CDE_AGR;
-/
 GRANT SELECT ON SBREXT.MDSR_STANDARD_FORM_CDE_AGR TO DER_USER;
 GRANT SELECT ON SBREXT.MDSR_STANDARD_FORM_CDE_AGR TO PUBLIC;
 GRANT SELECT ON SBREXT.MDSR_STANDARD_FORM_CDE_AGR TO READONLY;
