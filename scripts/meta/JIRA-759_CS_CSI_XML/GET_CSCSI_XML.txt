@@ -1,0 +1,7 @@
+Steps to create and read new Classification XML :
+1.exec SBREXT.MSDR_XML759_Insert;
+2.exec MDSR_XML_TRANSFORM;
+3.find latest XML:
+select test from SBREXT.MDSR_GENERATED_XML where SEQ_ID = (select max(SEQ_ID)from SBREXT.MDSR_GENERATED_XML);
+4.Find error during inset:
+select* from MDSR_REPORTS_ERR_LOG
