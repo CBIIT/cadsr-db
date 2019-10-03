@@ -22,7 +22,7 @@
         <xs:element ref="PreferredName" maxOccurs="1"/>
         <xs:element ref="LongName" maxOccurs="1"/>
         <xs:element ref="Version" maxOccurs="1"/>
-		<xs:element ref="dateCreated" minOccurs="0" maxOccurs="1"/>
+		<xs:element ref="DateCreated" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="CSI" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
@@ -40,7 +40,7 @@
         <xs:element ref="ClassificationSchemeItemType"/>
         <xs:element ref="PublicId"/>
         <xs:element ref="Version"/>
-		<xs:element ref="dateCreated" minOccurs="0" maxOccurs="1"/>
+		<xs:element ref="DateCreated" minOccurs="0" maxOccurs="1"/>
 		<xs:element ref="CSI_IDSEQ"/>
 		<xs:element ref="ParentChildIdseq" minOccurs="0" maxOccurs="1"/>
         <xs:element ref="ParentPublicID" minOccurs="0" maxOccurs="1"/>
