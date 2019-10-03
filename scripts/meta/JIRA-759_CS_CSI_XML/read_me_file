@@ -1,0 +1,9 @@
+Steps to create  and read new Classification XML :
+1.To create all DB objects we need to execute DB script on appropriate tier.
+     The script is located at https://github.com/CBIIT/cadsr-db/blob/master/scripts/meta/JIRA-759_CS_CSI_XML/CREATE_MDSR759_OBJECTS.sql
+2.To create new XML run following statement in SQL Developer 
+      exec SBREXT.MSDR_GEN_XML_CLCSI;
+3.Find latest XML:
+       select test from SBREXT.MDSR_GENERATED_XML where SEQ_ID = (select max(SEQ_ID)from SBREXT.MDSR_GENERATED_XML);
+4.Find an error during insert:
+      select* from SBREXT.MDSR_REPORTS_ERR_LOG
