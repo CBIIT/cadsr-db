@@ -24,3 +24,8 @@ CREATE TABLE SBREXT.DEV12C_PRIVS
   GRANTEE     VARCHAR2(30 BYTE)  ,
   TABLE_NAME  VARCHAR2(30 BYTE)  ,
   PRIVILEGE   VARCHAR2(40 BYTE)  );
+  /
+  select owner ,grantee,table_name,PRIVILEGE from DBA_TAB_PRIVS where owner in ('SBR','SBREXT','MSDRDEV')
+minus
+select* from  SBREXT.DEV12C_PRIVS
+order by 1,3,4,3;

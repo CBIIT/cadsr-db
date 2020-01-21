@@ -1,0 +1,53 @@
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Mon Jan 20 20:58:39 2020
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   C:\meta\ORACLE12c\DBA_PRIVS_dev12C.ctl
+Data File:      C:\meta\ORACLE12c\DEV12C_DBA_PRIVS.csv
+  File processing option string: "str '\r'"
+  Bad File:     C:\meta\ORACLE12c\DEV12C_DBA_PRIVS.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 1
+Errors allowed: 10000
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table SBREXT.DEV12C_PRIVS, loaded from every logical record.
+Insert option in effect for this table: INSERT
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+OWNER                               FIRST     *   ,  O(") CHARACTER            
+GRANTEE                              NEXT     *   ,  O(") CHARACTER            
+TABLE_NAME                           NEXT     *   ,  O(") CHARACTER            
+PRIVILEGE                            NEXT     *   ,  O(") CHARACTER            
+
+Record 60532: Discarded - all columns null.
+
+Table SBREXT.DEV12C_PRIVS:
+  60531 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  1 Row not loaded because all fields were null.
+
+
+Space allocated for bind array:                  66048 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          1
+Total logical records read:         60532
+Total logical records rejected:         0
+Total logical records discarded:        1
+
+Run began on Mon Jan 20 20:58:39 2020
+Run ended on Mon Jan 20 20:59:34 2020
+
+Elapsed time was:     00:00:54.52
+CPU time was:         00:00:01.06
