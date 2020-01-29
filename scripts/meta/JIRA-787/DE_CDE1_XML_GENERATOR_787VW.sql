@@ -103,7 +103,7 @@ AS
                              dec.obj_class_qualifier,
                              dec.property_qualifier,
                              dec.dec_origin)                     "DataElementConcept",
-           sbrext.CDEBROWSER_VD_T787 (
+           sbrext.CDEBROWSER_VD_T749 (
                vd.vd_id,
                vd.preferred_name,
                vd.preferred_definition,
