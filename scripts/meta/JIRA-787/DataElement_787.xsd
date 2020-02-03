@@ -1,0 +1,440 @@
+XML Schema Generator
+Generated Schema (.xsd):
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="DataElementsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="DataElement"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DataElement">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PUBLICID"/>
+        <xs:element ref="LONGNAME"/>
+        <xs:element ref="PREFERREDNAME"/>
+        <xs:element ref="PREFERREDDEFINITION"/>
+        <xs:element ref="VERSION"/>
+        <xs:element ref="WORKFLOWSTATUS"/>
+        <xs:element ref="CONTEXTNAME"/>
+        <xs:element ref="CONTEXTVERSION"/>
+        <xs:element ref="ORIGIN"/>
+        <xs:element ref="REGISTRATIONSTATUS"/>
+        <xs:element ref="dateModified"/>
+        <xs:element ref="DATAELEMENTCONCEPT"/>
+        <xs:element ref="VALUEDOMAIN"/>
+        <xs:element ref="REFERENCEDOCUMENTSLIST"/>
+        <xs:element ref="CLASSIFICATIONSLIST"/>
+        <xs:element ref="ALTERNATENAMELIST"/>
+        <xs:element ref="DATAELEMENTDERIVATION"/>
+      </xs:sequence>
+      <xs:attribute name="num" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PUBLICID" type="xs:integer"/>
+  <xs:element name="LONGNAME" type="xs:string"/>
+  <xs:element name="PREFERREDNAME" type="xs:NMTOKEN"/>
+  <xs:element name="PREFERREDDEFINITION" type="xs:string"/>
+  <xs:element name="VERSION" type="xs:integer"/>
+  <xs:element name="WORKFLOWSTATUS" type="xs:NCName"/>
+  <xs:element name="CONTEXTNAME" type="xs:string"/>
+  <xs:element name="CONTEXTVERSION" type="xs:integer"/>
+  <xs:element name="REGISTRATIONSTATUS" type="xs:string"/>
+  <xs:element name="DATAELEMENTCONCEPT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PublicId"/>
+        <xs:element ref="PreferredName"/>
+        <xs:element ref="PreferredDefinition"/>
+        <xs:element ref="LongName"/>
+        <xs:element ref="Version"/>
+        <xs:element ref="WorkflowStatus"/>
+        <xs:element ref="ContextName"/>
+        <xs:element ref="ContextVersion"/>
+        <xs:element ref="ConceptualDomain"/>
+        <xs:element ref="ObjectClass"/>
+        <xs:element ref="Property"/>
+        <xs:element ref="ObjectClassQualifier"/>
+        <xs:element ref="PropertyQualifier"/>
+        <xs:element ref="Origin"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObjectClass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PublicId"/>
+        <xs:element ref="ContextName"/>
+        <xs:element ref="ContextVersion"/>
+        <xs:element ref="PreferredName"/>
+        <xs:element ref="Version"/>
+        <xs:element ref="LongName"/>
+        <xs:element ref="ConceptDetails"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Property">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PublicId"/>
+        <xs:element ref="ContextName"/>
+        <xs:element ref="ContextVersion"/>
+        <xs:element ref="PreferredName"/>
+        <xs:element ref="Version"/>
+        <xs:element ref="LongName"/>
+        <xs:element ref="ConceptDetails"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObjectClassQualifier">
+    <xs:complexType mixed="true">
+      <xs:attribute name="NULL" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PropertyQualifier">
+    <xs:complexType mixed="true">
+      <xs:attribute name="NULL" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VALUEDOMAIN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PublicId"/>
+        <xs:element ref="PreferredName"/>
+        <xs:element ref="PreferredDefinition"/>
+        <xs:element ref="LongName"/>
+        <xs:element ref="Version"/>
+        <xs:element ref="WorkflowStatus"/>
+        <xs:element ref="dateModified"/>
+        <xs:element ref="ContextName"/>
+        <xs:element ref="ContextVersion"/>
+        <xs:element ref="ConceptualDomain"/>
+        <xs:element ref="Datatype"/>
+        <xs:element ref="ValueDomainType"/>
+        <xs:element ref="UnitOfMeasure"/>
+        <xs:element ref="DisplayFormat"/>
+        <xs:element ref="MaximumLength"/>
+        <xs:element ref="MinimumLength"/>
+        <xs:element ref="DecimalPlace"/>
+        <xs:element ref="CharacterSetName"/>
+        <xs:element ref="MaximumValue"/>
+        <xs:element ref="MinimumValue"/>
+        <xs:element ref="Origin"/>
+        <xs:element ref="Representation"/>
+        <xs:element ref="PermissibleValues"/>
+        <xs:element ref="ValueDomainConcepts"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Datatype" type="xs:NCName"/>
+  <xs:element name="ValueDomainType" type="xs:NCName"/>
+  <xs:element name="UnitOfMeasure">
+    <xs:complexType>
+      <xs:attribute name="NULL" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DisplayFormat">
+    <xs:complexType mixed="true">
+      <xs:attribute name="NULL" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MaximumLength">
+    <xs:complexType mixed="true">
+      <xs:attribute name="NULL" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MinimumLength">
+    <xs:complexType mixed="true">
+      <xs:attribute name="NULL" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DecimalPlace">
+    <xs:complexType mixed="true">
+      <xs:attribute name="NULL" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CharacterSetName">
+    <xs:complexType>
+      <xs:attribute name="NULL" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MaximumValue">
+    <xs:complexType>
+      <xs:attribute name="NULL" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MinimumValue">
+    <xs:complexType>
+      <xs:attribute name="NULL" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Representation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PublicId"/>
+        <xs:element ref="ContextName"/>
+        <xs:element ref="ContextVersion"/>
+        <xs:element ref="PreferredName"/>
+        <xs:element ref="Version"/>
+        <xs:element ref="LongName"/>
+        <xs:element ref="ConceptDetails"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PermissibleValues">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="PermissibleValues_ITEM"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PermissibleValues_ITEM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="VALIDVALUE"/>
+        <xs:element ref="VALUEMEANING"/>
+        <xs:element ref="MEANINGDESCRIPTION"/>
+        <xs:element ref="MEANINGCONCEPTS"/>
+        <xs:element ref="MEANINGCONCEPTORIGIN"/>
+        <xs:element ref="MEANINGCONCEPTDISPLAYORDER"/>
+        <xs:element ref="PVBEGINDATE"/>
+        <xs:element ref="PVENDDATE"/>
+        <xs:element ref="VMPUBLICID"/>
+        <xs:element ref="VMVERSION"/>
+        <xs:element ref="ALTERNATENAMELIST"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VALIDVALUE" type="xs:string"/>
+  <xs:element name="VALUEMEANING" type="xs:string"/>
+  <xs:element name="MEANINGDESCRIPTION" type="xs:string"/>
+  <xs:element name="MEANINGCONCEPTS">
+    <xs:complexType mixed="true">
+      <xs:attribute name="NULL" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MEANINGCONCEPTORIGIN">
+    <xs:complexType mixed="true">
+      <xs:attribute name="NULL" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MEANINGCONCEPTDISPLAYORDER">
+    <xs:complexType mixed="true">
+      <xs:attribute name="NULL" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PVBEGINDATE" type="xs:NMTOKEN"/>
+  <xs:element name="PVENDDATE">
+    <xs:complexType>
+      <xs:attribute name="NULL" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMPUBLICID" type="xs:integer"/>
+  <xs:element name="VMVERSION" type="xs:integer"/>
+  <xs:element name="ValueDomainConcepts">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="REFERENCEDOCUMENTSLIST">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="REFERENCEDOCUMENTSLIST_ITEM"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="REFERENCEDOCUMENTSLIST_ITEM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Name"/>
+        <xs:element ref="OrganizationName"/>
+        <xs:element ref="DocumentType"/>
+        <xs:element ref="DocumentText"/>
+        <xs:element ref="URL"/>
+        <xs:element ref="Language"/>
+        <xs:element ref="DisplayOrder"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Name" type="xs:string"/>
+  <xs:element name="OrganizationName">
+    <xs:complexType>
+      <xs:attribute name="NULL" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocumentType" type="xs:string"/>
+  <xs:element name="DocumentText" type="xs:string"/>
+  <xs:element name="URL">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:anyURI">
+          <xs:attribute name="NULL" type="xs:NCName"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DisplayOrder">
+    <xs:complexType>
+      <xs:attribute name="NULL" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CLASSIFICATIONSLIST">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="CLASSIFICATIONSLIST_ITEM"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CLASSIFICATIONSLIST_ITEM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ClassificationScheme"/>
+        <xs:element ref="ClassificationSchemeItemName"/>
+        <xs:element ref="ClassificationSchemeItemType"/>
+        <xs:element ref="CsiPublicId"/>
+        <xs:element ref="CsiVersion"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClassificationScheme">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PublicId"/>
+        <xs:element ref="ContextName"/>
+        <xs:element ref="ContextVersion"/>
+        <xs:element ref="PreferredName"/>
+        <xs:element ref="Version"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClassificationSchemeItemName" type="xs:string"/>
+  <xs:element name="ClassificationSchemeItemType" type="xs:string"/>
+  <xs:element name="CsiPublicId" type="xs:integer"/>
+  <xs:element name="CsiVersion" type="xs:integer"/>
+  <xs:element name="DATAELEMENTDERIVATION">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DerivationType"/>
+        <xs:element ref="DerivationTypeDescription"/>
+        <xs:element ref="Methods"/>
+        <xs:element ref="Rule"/>
+        <xs:element ref="ConcatenationCharacter"/>
+        <xs:element ref="ComponentDataElementsList"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DerivationType">
+    <xs:complexType>
+      <xs:attribute name="NULL" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DerivationTypeDescription">
+    <xs:complexType>
+      <xs:attribute name="NULL" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Methods">
+    <xs:complexType>
+      <xs:attribute name="NULL" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Rule">
+    <xs:complexType>
+      <xs:attribute name="NULL" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConcatenationCharacter">
+    <xs:complexType>
+      <xs:attribute name="NULL" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ComponentDataElementsList">
+    <xs:complexType>
+      <xs:attribute name="NULL" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ORIGIN">
+    <xs:complexType mixed="true">
+      <xs:attribute name="NULL" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dateModified" type="xs:NMTOKEN"/>
+  <xs:element name="PublicId" type="xs:integer"/>
+  <xs:element name="PreferredName" type="xs:string"/>
+  <xs:element name="PreferredDefinition" type="xs:string"/>
+  <xs:element name="LongName" type="xs:string"/>
+  <xs:element name="Version" type="xs:decimal"/>
+  <xs:element name="WorkflowStatus" type="xs:NCName"/>
+  <xs:element name="ContextName" type="xs:string"/>
+  <xs:element name="ContextVersion" type="xs:decimal"/>
+  <xs:element name="ConceptualDomain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PublicId"/>
+        <xs:element ref="ContextName"/>
+        <xs:element ref="ContextVersion"/>
+        <xs:element ref="PreferredName"/>
+        <xs:element ref="Version"/>
+        <xs:element ref="LongName"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConceptDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="ConceptDetails_ITEM"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConceptDetails_ITEM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PREFERRED_NAME"/>
+        <xs:element ref="LONG_NAME"/>
+        <xs:element ref="CON_ID"/>
+        <xs:element ref="DEFINITION_SOURCE"/>
+        <xs:element ref="ORIGIN"/>
+        <xs:element ref="EVS_SOURCE"/>
+        <xs:element ref="PRIMARY_FLAG_IND"/>
+        <xs:element ref="DISPLAY_ORDER"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PREFERRED_NAME" type="xs:NCName"/>
+  <xs:element name="LONG_NAME" type="xs:string"/>
+  <xs:element name="CON_ID" type="xs:integer"/>
+  <xs:element name="DEFINITION_SOURCE">
+    <xs:complexType mixed="true">
+      <xs:attribute name="NULL" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EVS_SOURCE" type="xs:NCName"/>
+  <xs:element name="PRIMARY_FLAG_IND" type="xs:NCName"/>
+  <xs:element name="DISPLAY_ORDER" type="xs:integer"/>
+  <xs:element name="Origin">
+    <xs:complexType mixed="true">
+      <xs:attribute name="NULL" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ALTERNATENAMELIST">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ALTERNATENAMELIST_ITEM"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ALTERNATENAMELIST_ITEM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ContextName"/>
+        <xs:element ref="ContextVersion"/>
+        <xs:element ref="AlternateName"/>
+        <xs:element ref="AlternateNameType"/>
+        <xs:element ref="Language"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlternateName" type="xs:string"/>
+  <xs:element name="AlternateNameType" type="xs:string"/>
+  <xs:element name="Language" type="xs:NCName"/>
+</xs:schema>
