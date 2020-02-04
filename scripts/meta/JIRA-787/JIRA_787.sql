@@ -6,7 +6,7 @@ DROP TYPE SBREXT.MDSR_749_PV_VD_LIST_T
 /
 DROP TYPE SBREXT.MDSR_749_PV_VD_ITEM_T
 /
-CREATE OR REPLACE TYPE SBREXT."MDSR_749_PV_VD_ITEM_T"                                          as object(ValidValue varchar2(255),
+CREATE OR REPLACE TYPE SBREXT."MDSR_749_PV_VD_ITEM_T"   as object(ValidValue varchar2(255),
     ValueMeaning varchar2(255),
     MeaningDescription varchar2(2000),
     MeaningConcepts varchar2(2000),
@@ -19,7 +19,6 @@ CREATE OR REPLACE TYPE SBREXT."MDSR_749_PV_VD_ITEM_T"                           
 	"dateModified"           DATE,
     "ALTERNATENAMELIST"    MDSR_749_ALTERNATENAM_LIST_T)
 /
-
 CREATE OR REPLACE PUBLIC SYNONYM MDSR_749_PV_VD_ITEM_T FOR SBREXT.MDSR_749_PV_VD_ITEM_T;
 /
 GRANT EXECUTE, DEBUG ON SBREXT.MDSR_749_PV_VD_ITEM_T TO PUBLIC
