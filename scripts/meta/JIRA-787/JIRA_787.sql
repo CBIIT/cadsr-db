@@ -2,6 +2,38 @@ set serveroutput on size 1000000
 SPOOL CADSRMETA-787.log  
 DROP TYPE SBREXT.CDEBROWSER_VD_T749
 /
+DROP TYPE SBREXT.MDSR_749_PV_VD_LIST_T
+/
+DROP TYPE SBREXT.MDSR_749_PV_VD_ITEM_T
+/
+CREATE OR REPLACE TYPE SBREXT."MDSR_749_PV_VD_ITEM_T"                                          as object(ValidValue varchar2(255),
+    ValueMeaning varchar2(255),
+    MeaningDescription varchar2(2000),
+    MeaningConcepts varchar2(2000),
+    MeaningConceptOrigin               varchar2(2000),
+	MeaningConceptDisplayOrder varchar2(2000),
+    PvBeginDate Date,
+    PvEndDate Date,
+    VmPublicId Number,
+    VmVersion Number(4,2),
+	"dateModified"           DATE,
+    "ALTERNATENAMELIST"    MDSR_749_ALTERNATENAM_LIST_T)
+/
+
+CREATE OR REPLACE PUBLIC SYNONYM MDSR_749_PV_VD_ITEM_T FOR SBREXT.MDSR_749_PV_VD_ITEM_T;
+/
+GRANT EXECUTE, DEBUG ON SBREXT.MDSR_749_PV_VD_ITEM_T TO PUBLIC
+/
+GRANT EXECUTE, DEBUG ON SBREXT.MDSR_749_PV_VD_ITEM_T TO SBR WITH GRANT OPTION
+/
+CREATE OR REPLACE TYPE SBREXT."MDSR_749_PV_VD_LIST_T"  as table of SBREXT.MDSR_749_PV_VD_ITEM_T
+/
+CREATE OR REPLACE PUBLIC SYNONYM MDSR_749_PV_VD_LIST_T FOR SBREXT.MDSR_749_PV_VD_LIST_T
+/
+GRANT EXECUTE, DEBUG ON SBREXT.MDSR_749_PV_VD_LIST_T TO PUBLIC
+/
+GRANT EXECUTE, DEBUG ON SBREXT.MDSR_749_PV_VD_LIST_T TO SBR WITH GRANT OPTION
+/
 CREATE OR REPLACE TYPE SBREXT.CDEBROWSER_VD_T749  AS OBJECT
 ( "PublicId"         NUMBER,
   "PreferredName"          VARCHAR2 (30),
@@ -210,6 +242,7 @@ AS
                               vp.end_date,
                               vm.vm_id,
                               vm.version,
+							  vm.DATE_MODIFIED,
                               CAST (
                                   MULTISET (
                                       SELECT des_conte.name,
