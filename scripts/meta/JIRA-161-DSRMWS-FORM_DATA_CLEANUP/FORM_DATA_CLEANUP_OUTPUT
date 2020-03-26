@@ -1,0 +1,65 @@
+
+QUEST_CONTENTS_EXT          FORMS    MODULES  QUESTIONS VALID VALUES FORM_INSTR INSTRUCTIONS     FOOTER MODULE_INSTR QUESTION_INSTR VALUE_INSTR
+---------------------- ---------- ---------- ---------- ------------ ---------- ------------ ---------- ------------ -------------- -----------
+Records before cleanup      18892      62691     330925      2095290       7142          186       1430        20508         102249       47204
+1 row selected.
+
+QUEST_CONTENTS_EXT        MODULES  QUESTIONS VALID VALUES
+---------------------- ---------- ---------- ------------
+Records To be Migrated      62673     330448      2089798
+1 row selected.
+
+TABLE_NAME           Records in caDSR      Records to be Migrated
+-------------------- ---------------------- ----------------------
+QUEST_ATTRIBUTES_EXT                 330894                 330418
+VALID_VALUES_ATT_EXT                2091526                2089305
+
+2 rows selected.
+Cleanup begins
+ PL/SQL procedure successfully completed.
+Cleanup VALID_VALUES_ATT_EXT
+ PL/SQL procedure successfully completed.
+2221 rows deleted.
+Cleanup VALID_VALUES of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+5492 rows deleted.
+Cleanup QUEST_ATTRIBUTES_EXT
+ PL/SQL procedure successfully completed.
+476 rows deleted.
+Cleanup QUESTIONS of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+477 rows deleted.
+Cleanup MODULES of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+18 rows deleted.
+Cleanup FORM_INSTR of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+2 rows deleted.
+Cleanup INSTRUCTIONS of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+0 rows deleted.
+Cleanup FOOTERS of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+0 rows deleted.
+Cleanup MODULE_INSTR of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+230 rows deleted.
+Cleanup QUESTION_INSTR of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+1335 rows deleted.
+Cleanup VALUE_INSTR of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+483 rows deleted.
+
+QUEST_CONTENTS             FORMS    MODULES  QUESTIONS VALID VALUES FORM_INSTR INSTRUCTIONS     FOOTER MODULE_INSTR QUESTION_INSTR VALUE_INSTR
+--------------------- ---------- ---------- ---------- ------------ ---------- ------------ ---------- ------------ -------------- -----------
+Records after cleanup      18892      62673     330448      2089798       7140          186       1430        20278         100914       46721
+1 row selected.
+
+TABLE_NAME           Records in caDSR        Records to be Migrated
+-------------------- ---------------------- ----------------------
+QUEST_ATTRIBUTES_EXT                 330418                 330418
+VALID_VALUES_ATT_EXT                2089305                2089305
+
+2 rows selected.
+Rollback complete.
