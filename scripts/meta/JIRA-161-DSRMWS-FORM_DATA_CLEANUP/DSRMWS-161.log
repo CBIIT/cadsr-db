@@ -54,7 +54,6 @@ Cleanup VALUE_INSTR of QUEST_CONTENTS_EXT
  PL/SQL procedure successfully completed.
 483 rows deleted.
 
-
 QUEST_CONTENTS             FORMS    MODULES  QUESTIONS VALID VALUES FORM_INSTR INSTRUCTIONS     FOOTER MODULE_INSTR QUESTION_INSTR VALUE_INSTR
 --------------------- ---------- ---------- ---------- ------------ ---------- ------------ ---------- ------------ -------------- -----------
 Records after cleanup      18892      62673     330448      2089798       7140          186       1430        20278         100914       46721
@@ -74,7 +73,7 @@ QUEST_ATTRIBUTES_EXT           330418                 330418                    
 VALID_VALUES_ATT_EXT          2089305                2089305                          0
 
 2 rows selected.
-Tables to be cleanup 
+Tables to be cleanup
  PL/SQL procedure successfully completed.
 
 TABLE_NAME              Records in caDSR Records to be Migrated Records need to be deleted
@@ -101,12 +100,12 @@ Cleanup sbrext.QC_RECS_EXT
 Cleanup sbrext.QUEST_VV_EXT
  PL/SQL procedure successfully completed.
 0 rows deleted.
-Did not clean sbrext.ADMINISTERED_COMPONENTS
+Cleanup sbrext.ADMINISTERED_COMPONENTS
  PL/SQL procedure successfully completed.
 Cleanup sbrext.TRIGGERED_ACTIONS_EXT
  PL/SQL procedure successfully completed.
 0 rows deleted.
-Tables after cleanup 
+Tables after cleanup
  PL/SQL procedure successfully completed.
 
 TABLE_NAME              Records in caDSR Records to be Migrated Records need to be deleted
