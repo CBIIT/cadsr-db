@@ -1,4 +1,5 @@
-
+set serveroutput on size 1000000
+SPOOL DSRMWS-161.log  
 --select distinct QTL_NAME from sbrext.quest_contents_ext;
 SET AUTOCOMMIT OFF
 SET SERVEROUTPUT ON
