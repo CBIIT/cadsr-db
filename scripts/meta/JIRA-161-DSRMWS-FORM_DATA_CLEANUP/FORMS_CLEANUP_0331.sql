@@ -103,7 +103,7 @@ where del.qtl_name = 'VALID_VALUE'
 and good.qc_idseq(+)=del.QC_IDSEQ 
 and good.qc_idseq is null )v;
 /
-select 'VALID_VALUES_ATT_EXT' TABLE_NAME ,a.*,b.*,(a."Records in caDSR"-b."Records to be Migrated") "Records need to be deleted"
+select 'VALID_VALUES_ATT_EXT' TABLE_NAME ,a.*,b.*,(a."Records in caDSR"-b."Records to be Migrated") "Records to be deleted"
 from
 (select  count(*) "Records in caDSR" from sbrext.VALID_VALUES_ATT_EXT)a,
 (select  count(*) "Records to be Migrated" from sbrext.VALID_VALUES_ATT_EXT 
@@ -122,7 +122,7 @@ and m.qtl_name = 'MODULE'
 and q.qtl_name = 'QUESTION'
 and vv.qtl_name = 'VALID_VALUE')) b
 UNION
-select 'QUEST_ATTRIBUTES_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records need to be deleted"
+select 'QUEST_ATTRIBUTES_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records to be deleted"
 from
 (select  count(*) a from QUEST_ATTRIBUTES_EXT)a,
 (select  count(*) b from QUEST_ATTRIBUTES_EXT 
@@ -414,7 +414,7 @@ where del.qtl_name = 'VALID_VALUE'
 and good.qc_idseq(+)=del.QC_IDSEQ 
 and good.qc_idseq is null )v;
 /
-select 'VALID_VALUES_ATT_EXT' TABLE_NAME ,a.*,b.*,(a."Records in caDSR"-b."Records to be Migrated") "Records need to be deleted"
+select 'VALID_VALUES_ATT_EXT' TABLE_NAME ,a.*,b.*,(a."Records in caDSR"-b."Records to be Migrated") "Records to be deleted"
 from
 (select  count(*) "Records in caDSR" from sbrext.VALID_VALUES_ATT_EXT)a,
 (select  count(*) "Records to be Migrated" from sbrext.VALID_VALUES_ATT_EXT 
@@ -433,7 +433,7 @@ and m.qtl_name = 'MODULE'
 and q.qtl_name = 'QUESTION'
 and vv.qtl_name = 'VALID_VALUE')) b
 UNION
-select 'QUEST_ATTRIBUTES_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records need to be deleted"
+select 'QUEST_ATTRIBUTES_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records to be deleted"
 from
 (select  count(*) a from QUEST_ATTRIBUTES_EXT)a,
 (select  count(*) b from QUEST_ATTRIBUTES_EXT 
@@ -452,7 +452,7 @@ and q.qtl_name = 'QUESTION')) b;
 begin
 dbms_output.put_line('Tables to be cleanup ');
 end;
-select 'ADMINISTERED_COMPONENTS' TABLE_NAME ,a.*,b.*,(a."Records in caDSR"-b."Records to be Migrated") "Records need to be deleted"
+select 'ADMINISTERED_COMPONENTS' TABLE_NAME ,a.*,b.*,(a."Records in caDSR"-b."Records to be Migrated") "Records to be deleted"
 from
 (select  count(*) "Records in caDSR" from sbrext.ADMINISTERED_COMPONENTS where  ACTL_NAME = 'QUEST_CONTENT')a,
 (select  count(*) "Records to be Migrated" from sbrext.ADMINISTERED_COMPONENTS 
@@ -465,7 +465,7 @@ sbrext.ADMINISTERED_COMPONENTS A
 where AC_idseq=q.QC_IDSEQ
 and ACTL_NAME = 'QUEST_CONTENT')) b
 UNION
-select 'QC_RECS_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records need to be deleted"
+select 'QC_RECS_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records to be deleted"
 from
 (select  count(*) a from sbrext.QC_RECS_EXT)a,
 (select  count(*) b from sbrext.QC_RECS_EXT 
@@ -479,7 +479,7 @@ and C_QC_IDSEQ =c.qc_idseq)) b
 --QC_RECS_EXT	2662969	2661725
 
 UNION
-select 'QUEST_VV_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records need to be deleted"
+select 'QUEST_VV_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records to be deleted"
 from
 (select  count(*) a from QUEST_VV_EXT)a,
 (select  count(*) b from QUEST_VV_EXT 
@@ -499,7 +499,7 @@ where  QUEST_IDSEQ =q.qc_idseq
 and VV_IDSEQ is NULL 
 )) b
 UNION
-select 'PROTOCOL_QC_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records need to be deleted"
+select 'PROTOCOL_QC_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records to be deleted"
 from
 (select  count(*) a from PROTOCOL_QC_EXT)a,
 (select  count(*) b from PROTOCOL_QC_EXT 
@@ -510,7 +510,7 @@ sbrext.quest_contents_ext f
 where  qtl_name in('CRF','TEMPLATE')
 and  f.qc_idseq=p.qc_idseq)) b
 UNION
-select 'TRIGGERED_ACTIONS_EXT' TABLE_NAME ,a.*,b.*,d.d "Records need to be deleted"
+select 'TRIGGERED_ACTIONS_EXT' TABLE_NAME ,a.*,b.*,d.d "Records to be deleted"
 from
 (select  count(*) a from sbrext.TRIGGERED_ACTIONS_EXT)a,
 (select  count(*) b from sbrext.TRIGGERED_ACTIONS_EXT
@@ -537,7 +537,7 @@ where T_QC_IDSEQ=qc_idseq) good
 where  del.TA_IDSEQ=good.TA_IDSEQ(+)
 and good.TA_IDSEQ is null) )) d
 UNION
-select 'TA_PROTO_CSI_EXT' TABLE_NAME ,a.*,b.*,d.d "Records need to be deleted"
+select 'TA_PROTO_CSI_EXT' TABLE_NAME ,a.*,b.*,d.d "Records to be deleted"
 from
 (select count(TP_IDSEQ) a from sbrext.TA_PROTO_CSI_EXT )a,
 (select count(TP_IDSEQ) b from 
@@ -658,7 +658,7 @@ and good.TA_IDSEQ is null) ;
 begin
 dbms_output.put_line('Tables after cleanup ');
 end;
-select 'ADMINISTERED_COMPONENTS' TABLE_NAME ,a.*,b.*,(a."Records in caDSR"-b."Records to be Migrated") "Records need to be deleted"
+select 'ADMINISTERED_COMPONENTS' TABLE_NAME ,a.*,b.*,(a."Records in caDSR"-b."Records to be Migrated") "Records to be deleted"
 from
 (select  count(*) "Records in caDSR" from sbrext.ADMINISTERED_COMPONENTS where  ACTL_NAME = 'QUEST_CONTENT')a,
 (select  count(*) "Records to be Migrated" from sbrext.ADMINISTERED_COMPONENTS 
@@ -671,7 +671,7 @@ sbrext.ADMINISTERED_COMPONENTS A
 where AC_idseq=q.QC_IDSEQ
 and ACTL_NAME = 'QUEST_CONTENT')) b
 UNION
-select 'QC_RECS_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records need to be deleted"
+select 'QC_RECS_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records to be deleted"
 from
 (select  count(*) a from sbrext.QC_RECS_EXT)a,
 (select  count(*) b from sbrext.QC_RECS_EXT 
@@ -685,7 +685,7 @@ and C_QC_IDSEQ =c.qc_idseq)) b
 --QC_RECS_EXT	2662969	2661725
 
 UNION
-select 'QUEST_VV_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records need to be deleted"
+select 'QUEST_VV_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records to be deleted"
 from
 (select  count(*) a from QUEST_VV_EXT)a,
 (select  count(*) b from QUEST_VV_EXT 
@@ -705,7 +705,7 @@ where  QUEST_IDSEQ =q.qc_idseq
 and VV_IDSEQ is NULL 
 )) b
 UNION
-select 'PROTOCOL_QC_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records need to be deleted"
+select 'PROTOCOL_QC_EXT' TABLE_NAME ,a.*,b.*,(a.a-b.b) "Records to be deleted"
 from
 (select  count(*) a from PROTOCOL_QC_EXT)a,
 (select  count(*) b from PROTOCOL_QC_EXT 
@@ -716,7 +716,7 @@ sbrext.quest_contents_ext f
 where  qtl_name in('CRF','TEMPLATE')
 and  f.qc_idseq=p.qc_idseq)) b
 UNION
-select 'TRIGGERED_ACTIONS_EXT' TABLE_NAME ,a.*,b.*,d.d "Records need to be deleted"
+select 'TRIGGERED_ACTIONS_EXT' TABLE_NAME ,a.*,b.*,d.d "Records to be deleted"
 from
 (select  count(*) a from sbrext.TRIGGERED_ACTIONS_EXT)a,
 (select  count(*) b from sbrext.TRIGGERED_ACTIONS_EXT
@@ -743,7 +743,7 @@ where T_QC_IDSEQ=qc_idseq) good
 where  del.TA_IDSEQ=good.TA_IDSEQ(+)
 and good.TA_IDSEQ is null) )) d
 UNION
-select 'TA_PROTO_CSI_EXT' TABLE_NAME ,a.*,b.*,d.d "Records need to be deleted"
+select 'TA_PROTO_CSI_EXT' TABLE_NAME ,a.*,b.*,d.d "Records to be deleted"
 from
 (select count(TP_IDSEQ) a from sbrext.TA_PROTO_CSI_EXT )a,
 (select count(TP_IDSEQ) b from 
