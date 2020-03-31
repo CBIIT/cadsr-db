@@ -1,8 +1,6 @@
-set serveroutput on size 1000000
+SET SERVEROUTPUT ON on size 1000000
 SPOOL DSRMWS-161.log  
---select distinct QTL_NAME from sbrext.quest_contents_ext;
 SET AUTOCOMMIT OFF
-SET SERVEROUTPUT ON
 set linesize 200
 select 'Records before cleanup' QUEST_CONTENTS_EXT ,f.*,m.*,q.*,v.*,fi.*,i.*,ff.*,mi.*,qi.*,vi.* 
 from
