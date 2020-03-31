@@ -507,38 +507,53 @@ where  PQ_IDSEQ in
 select PQ_IDSEQ from PROTOCOL_QC_EXT p,
 sbrext.quest_contents_ext f
 where  qtl_name in('CRF','TEMPLATE')
-and  f.qc_idseq=p.qc_idseq)) b;
+and  f.qc_idseq=p.qc_idseq)) b
+UNION
+select 'TRIGGERED_ACTIONS_EXT' TABLE_NAME ,a.*,b.*,d.d "Records need to be deleted"
+from
+(select  count(*) a from sbrext.TRIGGERED_ACTIONS_EXT)a,
+(select  count(*) b from sbrext.TRIGGERED_ACTIONS_EXT
+where  TA_IDSEQ in
+(
+select TA_IDSEQ  from 
+(select TA_IDSEQ from sbrext.TRIGGERED_ACTIONS_EXT t,
+sbrext.quest_contents_ext q
+where S_QC_IDSEQ =qc_idseq 
+union 
+select TA_IDSEQ from sbrext.TRIGGERED_ACTIONS_EXT t,
+sbrext.quest_contents_ext q
+where T_QC_IDSEQ=qc_idseq) ))b,
+(select  count(*) d from 
+(select TA_IDSEQ d from(
+select del.TA_IDSEQ from sbrext.TRIGGERED_ACTIONS_EXT del,
+(select TA_IDSEQ from sbrext.TRIGGERED_ACTIONS_EXT t,
+sbrext.quest_contents_ext q
+where S_QC_IDSEQ =qc_idseq 
+union 
+select TA_IDSEQ from sbrext.TRIGGERED_ACTIONS_EXT t,
+sbrext.quest_contents_ext q
+where T_QC_IDSEQ=qc_idseq) good
+where  del.TA_IDSEQ=good.TA_IDSEQ(+)
+and good.TA_IDSEQ is null) )) d;
 --select *from sbrext.QC_RECS_EXT;
 /
-ROllback;
-SPOOL OFF;
-
-select*from sbrext.QUEST_VV_EXT where QV_IDSEQ in(
-select  del.QV_IDSEQ 
-from sbrext.QUEST_VV_EXT del,
-(
-select  QV_IDSEQ
-from sbrext.QUEST_VV_EXT,
-(select qc_idseq from sbrext.quest_contents_ext where qtl_name = 'QUESTION')q,
-(select*from sbrext.quest_contents_ext   where  qtl_name = 'VALID_VALUE') v
-where  QUEST_IDSEQ =q.qc_idseq
-and (VV_IDSEQ=v.qc_idseq )
-UNION
-select QV_IDSEQ
-from sbrext.QUEST_VV_EXT,
-(select qc_idseq from sbrext.quest_contents_ext where qtl_name = 'QUESTION')q
-where  QUEST_IDSEQ =q.qc_idseq
-and VV_IDSEQ is NULL 
-)good
-where del.QV_IDSEQ =good.QV_IDSEQ(+)
-and good.QV_IDSEQ is null);
 begin
 dbms_output.put_line('Cleanup begins');
 end;
-
 begin
 dbms_output.put_line('Tables after cleanup ');
 end;
 /
 ROllback;
 SPOOL OFF;
+
+/*
+
+select count(*) from sbrext.TA_PROTO_CSI_EXT;
+select * from sbrext.TA_PROTO_CSI_EXT where AC_CSI_IDSEQ is not null;
+
+select * from sbrext.TA_PROTO_CSI_EXT where AC_CSI_IDSEQ;
+
+select count(*) from sbrext.TA_PROTO_CSI_EXT where AC_CSI_IDSEQ not in (
+select AC_CSI.AC_CSI_IDSEQ  from SBR.AC_CSI );*/ 
+
