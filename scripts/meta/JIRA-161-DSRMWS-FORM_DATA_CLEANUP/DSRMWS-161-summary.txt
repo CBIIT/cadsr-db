@@ -1,24 +1,44 @@
 
-QUEST_CONTENTS_EXT          FORMS    MODULES  QUESTIONS VALID VALUES FORM_INSTR INSTRUCTIONS     FOOTER MODULE_INSTR QUESTION_INSTR VALUE_INSTR
----------------------- ---------- ---------- ---------- ------------ ---------- ------------ ---------- ------------ -------------- -----------
-Records before cleanup      18892      62691     330925      2095290       7142          186       1430        20508         102249       47204
-Records after cleanup       18892      62673     330448      2089798       7140          186       1430        20278         100914       46721
-Records to be Deleted                     18        477         5492          2            0          0          230           1335         483
+Tables before cleanup
+
+TABLE_NAME           Records in caDSR Records to be Migrated Records to be deleted
+-------------------- ---------------- ---------------------- ---------------------
+QUEST_ATTRIBUTES_EXT           330894                 330418                   476
+VALID_VALUES_ATT_EXT          2091526                2089305                  2221
+
+Tables after cleanup 
+
+TABLE_NAME           Records in caDSR Records to be Migrated Records to be deleted
+-------------------- ---------------- ---------------------- ---------------------
+QUEST_ATTRIBUTES_EXT           330418                 330418                     0
+VALID_VALUES_ATT_EXT          2089305                2089305                     0
 
 
-Records before cleanup
+
+QUEST_CONTENTS_EXT Records before cleanup 
 QUEST_CONTENTS_EXT        MODULES  QUESTIONS VALID VALUES
 ---------------------- ---------- ---------- ------------
 Records in caDSR            62691     330925      2095290
 Records to be Deleted          18        477         5492
 Records to be Migrated      62673     330448      2089798
 
-Records after cleanup 
+QUEST_CONTENTS_EXT Records after cleanup 
 QUEST_CONTENTS_EXT        MODULES  QUESTIONS VALID VALUES
 ---------------------- ---------- ---------- ------------
 Records in caDSR            62673     330448      2089798
 Records to be Deleted           0          0            0
 Records to be Migrated      62673     330448      2089798
+
+
+
+QUEST_CONTENTS_EXT     All form Elements      FORMS    MODULES  QUESTIONS VALID VALUES FORM_INSTR INSTRUCTIONS     FOOTER MODULE_INSTR QUESTION_INSTR VALUE_INSTR
+---------------------- ----------------- ---------- ---------- ---------- ------------ ---------- ------------ ---------- ------------ -------------- -----------
+Records before cleanup           2686517      18892      62691     330925      2095290       7142          186       1430        20508         102249       47204
+Records after cleanup            2678480      18892      62673     330448      2089798       7140          186       1430        20278         100914       46721
+Records to be Deleted               8037                    18        477         5492          2            0          0          230           1335         483
+
+
+
 
 
 Tables before cleanup
