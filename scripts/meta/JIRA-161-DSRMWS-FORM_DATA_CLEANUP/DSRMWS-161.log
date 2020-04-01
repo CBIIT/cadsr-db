@@ -12,10 +12,10 @@ Records to be Migrated      62673     330448      2089798
 
 3 rows selected.
 
-TABLE_NAME           Records in caDSR Records to be Migrated Records need to be deleted
--------------------- ---------------- ---------------------- --------------------------
-QUEST_ATTRIBUTES_EXT           330894                 330418                        476
-VALID_VALUES_ATT_EXT          2091526                2089305                       2221
+TABLE_NAME           Records in caDSR Records to be Migrated Records to be deleted
+-------------------- ---------------- ---------------------- ---------------------
+QUEST_ATTRIBUTES_EXT           330894                 330418                   476
+VALID_VALUES_ATT_EXT          2091526                2089305                  2221
 
 2 rows selected.
 Cleanup begins
@@ -67,23 +67,23 @@ Records to be Migrated      62673     330448      2089798
 
 3 rows selected.
 
-TABLE_NAME           Records in caDSR Records to be Migrated Records need to be deleted
--------------------- ---------------- ---------------------- --------------------------
-QUEST_ATTRIBUTES_EXT           330418                 330418                          0
-VALID_VALUES_ATT_EXT          2089305                2089305                          0
+TABLE_NAME           Records in caDSR Records to be Migrated Records to be deleted
+-------------------- ---------------- ---------------------- ---------------------
+QUEST_ATTRIBUTES_EXT           330418                 330418                     0
+VALID_VALUES_ATT_EXT          2089305                2089305                     0
 
 2 rows selected.
 Tables to be cleanup
  PL/SQL procedure successfully completed.
 
-TABLE_NAME              Records in caDSR Records to be Migrated Records need to be deleted
------------------------ ---------------- ---------------------- --------------------------
-ADMINISTERED_COMPONENTS          2688135                2678480                       9655
-PROTOCOL_QC_EXT                    16811                  16811                          0
-QC_RECS_EXT                      2662969                2659587                       3382
-QUEST_VV_EXT                      218296                 218296                          0
-TA_PROTO_CSI_EXT                      24                     24                          0
-TRIGGERED_ACTIONS_EXT                328                    328                          0
+TABLE_NAME              Records in caDSR Records to be Migrated Records to be deleted
+----------------------- ---------------- ---------------------- ---------------------
+ADMINISTERED_COMPONENTS          2688135                2678480                  9655
+PROTOCOL_QC_EXT                    16811                  16811                     0
+QC_RECS_EXT                      2662969                2659587                  3382
+QUEST_VV_EXT                      218296                 218296                     0
+TA_PROTO_CSI_EXT                      24                     24                     0
+TRIGGERED_ACTIONS_EXT                328                    328                     0
 
 6 rows selected.
 Cleanup begins
@@ -100,7 +100,7 @@ Cleanup sbrext.QC_RECS_EXT
 Cleanup sbrext.QUEST_VV_EXT
  PL/SQL procedure successfully completed.
 0 rows deleted.
-Cleanup sbrext.ADMINISTERED_COMPONENTS
+Temporary not cleaning sbrext.ADMINISTERED_COMPONENTS
  PL/SQL procedure successfully completed.
 Cleanup sbrext.TRIGGERED_ACTIONS_EXT
  PL/SQL procedure successfully completed.
@@ -108,14 +108,14 @@ Cleanup sbrext.TRIGGERED_ACTIONS_EXT
 Tables after cleanup
  PL/SQL procedure successfully completed.
 
-TABLE_NAME              Records in caDSR Records to be Migrated Records need to be deleted
------------------------ ---------------- ---------------------- --------------------------
-ADMINISTERED_COMPONENTS          2688135                2678480                       9655
-PROTOCOL_QC_EXT                    16811                  16811                          0
-QC_RECS_EXT                      2659587                2659587                          0
-QUEST_VV_EXT                      218296                 218296                          0
-TA_PROTO_CSI_EXT                      24                     24                          0
-TRIGGERED_ACTIONS_EXT                328                    328                          0
+TABLE_NAME              Records in caDSR Records to be Migrated Records to be deleted
+----------------------- ---------------- ---------------------- ---------------------
+ADMINISTERED_COMPONENTS          2688135                2678480                  9655
+PROTOCOL_QC_EXT                    16811                  16811                     0
+QC_RECS_EXT                      2659587                2659587                     0
+QUEST_VV_EXT                      218296                 218296                     0
+TA_PROTO_CSI_EXT                      24                     24                     0
+TRIGGERED_ACTIONS_EXT                328                    328                     0
 
 6 rows selected.
 Rollback complete.
