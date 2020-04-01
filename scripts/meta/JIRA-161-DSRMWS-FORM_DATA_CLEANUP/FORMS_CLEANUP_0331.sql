@@ -623,7 +623,7 @@ and VV_IDSEQ is NULL
 where a.QV_IDSEQ=good.QV_IDSEQ(+)
 and good.QV_IDSEQ is null);
 begin
-dbms_output.put_line('Cleanup sbrext.ADMINISTERED_COMPONENTS');
+dbms_output.put_line('Temporary not cleaning sbrext.ADMINISTERED_COMPONENTS');
 end;
 /*delete
 --select count(*)

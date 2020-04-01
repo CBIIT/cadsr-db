@@ -1,0 +1,346 @@
+
+QUEST_CONTENTS_EXT          FORMS    MODULES  QUESTIONS VALID VALUES FORM_INSTR INSTRUCTIONS     FOOTER MODULE_INSTR QUESTION_INSTR VALUE_INSTR
+---------------------- ---------- ---------- ---------- ------------ ---------- ------------ ---------- ------------ -------------- -----------
+Records before cleanup      18892      62691     330925      2095290       7142          186       1430        20508         102249       47204
+Records after cleanup       18892      62673     330448      2089798       7140          186       1430        20278         100914       46721
+Records to be Deleted                     18        477         5492          2            0          0          230           1335         483
+
+
+Records before cleanup
+QUEST_CONTENTS_EXT        MODULES  QUESTIONS VALID VALUES
+---------------------- ---------- ---------- ------------
+Records in caDSR            62691     330925      2095290
+Records to be Deleted          18        477         5492
+Records to be Migrated      62673     330448      2089798
+
+Records after cleanup 
+QUEST_CONTENTS_EXT        MODULES  QUESTIONS VALID VALUES
+---------------------- ---------- ---------- ------------
+Records in caDSR            62673     330448      2089798
+Records to be Deleted           0          0            0
+Records to be Migrated      62673     330448      2089798
+
+
+Tables before cleanup
+
+TABLE_NAME           Records in caDSR Records to be Migrated Records to be deleted
+-------------------- ---------------- ---------------------- ---------------------
+QUEST_ATTRIBUTES_EXT           330894                 330418                   476
+VALID_VALUES_ATT_EXT          2091526                2089305                  2221
+
+Tables after cleanup 
+
+TABLE_NAME           Records in caDSR Records to be Migrated Records to be deleted
+-------------------- ---------------- ---------------------- ---------------------
+QUEST_ATTRIBUTES_EXT           330418                 330418                     0
+VALID_VALUES_ATT_EXT          2089305                2089305                     0
+
+
+
+
+Tables before cleanup
+
+TABLE_NAME              Records in caDSR Records to be Migrated Records to be deleted
+----------------------- ---------------- ---------------------- ---------------------
+ADMINISTERED_COMPONENTS          2688135                2678480                  9655
+PROTOCOL_QC_EXT                    16811                  16811                     0
+QC_RECS_EXT                      2662969                2659587                  3382
+QUEST_VV_EXT                      218296                 218296                     0
+TA_PROTO_CSI_EXT                      24                     24                     0
+TRIGGERED_ACTIONS_EXT                328                    328                     0
+
+Tables after cleanup
+
+TABLE_NAME              Records in caDSR Records to be Migrated Records to be deleted
+----------------------- ---------------- ---------------------- ---------------------
+ADMINISTERED_COMPONENTS          2688135                2678480                  9655 Temporary not cleaning sbrext.ADMINISTERED_COMPONENTS
+PROTOCOL_QC_EXT                    16811                  16811                     0
+QC_RECS_EXT                      2659587                2659587                     0
+QUEST_VV_EXT                      218296                 218296                     0
+TA_PROTO_CSI_EXT                      24                     24                     0
+TRIGGERED_ACTIONS_EXT                328                    328                     0
+
+
+Delete SQLs
+
+ 
+begin
+dbms_output.put_line('1. Cleanup VALID_VALUES_ATT_EXT');
+end;
+/
+delete from  sbrext.VALID_VALUES_ATT_EXT 
+where  qc_idseq in
+(select qc_idseq from sbrext.quest_contents_ext where qtl_name = 'VALID_VALUE'
+ MINUS
+select vv.qc_idseq from 
+sbrext.quest_contents_ext vv,
+sbrext.quest_contents_ext q,
+sbrext.quest_contents_ext m,
+sbrext.quest_contents_ext f
+where f.qc_idseq=m.dn_crf_idseq
+and q.P_MOD_IDSEQ=m.QC_IDSEQ
+and vv.P_QST_IDSEQ=q.QC_IDSEQ
+and f.qtl_name in('CRF','TEMPLATE')
+and m.qtl_name = 'MODULE'
+and q.qtl_name = 'QUESTION'
+and vv.qtl_name = 'VALID_VALUE');
+
+/
+begin
+dbms_output.put_line('2.Cleanup VALID_VALUES of QUEST_CONTENTS_EXT');
+end;
+/
+delete from sbrext.quest_contents_ext
+where  qc_idseq in
+(select del.qc_idseq
+from sbrext.quest_contents_ext del , 
+(select vv.qc_idseq from 
+sbrext.quest_contents_ext vv,
+sbrext.quest_contents_ext q,
+sbrext.quest_contents_ext m,
+sbrext.quest_contents_ext f
+where f.qc_idseq=m.dn_crf_idseq
+and q.P_MOD_IDSEQ=m.QC_IDSEQ
+and vv.P_QST_IDSEQ=q.QC_IDSEQ
+and f.qtl_name in('CRF','TEMPLATE')
+and m.qtl_name = 'MODULE'
+and q.qtl_name = 'QUESTION'
+and vv.qtl_name = 'VALID_VALUE')good
+where del.qtl_name = 'VALID_VALUE'
+and good.qc_idseq(+)=del.QC_IDSEQ 
+and good.qc_idseq is null);
+
+/
+begin
+dbms_output.put_line('3. Cleanup QUEST_ATTRIBUTES_EXT');
+end;
+/
+delete   from sbrext.QUEST_ATTRIBUTES_EXT
+where QC_IDSEQ   in
+(
+select del.qc_idseq 
+from sbrext.quest_contents_ext del ,
+(select q.qc_idseq from 
+sbrext.quest_contents_ext q,
+sbrext.quest_contents_ext m,
+sbrext.quest_contents_ext f
+where f.qc_idseq=m.dn_crf_idseq
+and q.P_MOD_IDSEQ=m.QC_IDSEQ
+and f.qtl_name in('CRF','TEMPLATE')
+and m.qtl_name = 'MODULE'
+and q.qtl_name = 'QUESTION'
+) good
+where del.qtl_name = 'QUESTION'
+and good.qc_idseq(+)=del.QC_IDSEQ 
+ and good.qc_idseq is null);
+ 
+ /
+begin
+dbms_output.put_line('4.Cleanup QUESTIONS of QUEST_CONTENTS_EXT');
+end;
+/ 
+delete from sbrext.quest_contents_ext where qc_idseq in
+(
+select del.qc_idseq 
+from sbrext.quest_contents_ext del ,
+(select q.qc_idseq from 
+sbrext.quest_contents_ext q,
+sbrext.quest_contents_ext m,
+sbrext.quest_contents_ext f
+where f.qc_idseq=m.dn_crf_idseq
+and q.P_MOD_IDSEQ=m.QC_IDSEQ
+and f.qtl_name in('CRF','TEMPLATE')
+and m.qtl_name = 'MODULE'
+and q.qtl_name = 'QUESTION'
+) good
+where del.qtl_name = 'QUESTION'
+and good.qc_idseq(+)=del.QC_IDSEQ 
+ and good.qc_idseq is null);
+ 
+ /
+begin
+dbms_output.put_line('5. Cleanup MODULES of QUEST_CONTENTS_EXT');
+end; 
+ /
+ delete  from sbrext.quest_contents_ext where qc_idseq in(
+select del.qc_idseq 
+from sbrext.quest_contents_ext del ,
+(select m.qc_idseq from 
+sbrext.quest_contents_ext m,
+sbrext.quest_contents_ext f
+where f.qc_idseq=m.dn_crf_idseq
+and f.qtl_name in('CRF','TEMPLATE')
+and m.qtl_name = 'MODULE'
+) good
+where del.qtl_name = 'MODULE'
+and good.qc_idseq(+)=del.QC_IDSEQ 
+ and good.qc_idseq is null) ;
+ 
+/ 
+ begin
+dbms_output.put_line('6.Cleanup FORM_INSTR of QUEST_CONTENTS_EXT');
+end;
+delete from
+sbrext.quest_contents_ext foot  
+where foot.qtl_name= 'FORM_INSTR' 
+and dn_crf_idseq not in 
+(select qc_idseq from sbrext.quest_contents_ext 
+where qtl_name in('CRF','TEMPLATE') ) ;
+
+/
+begin
+dbms_output.put_line('7. Cleanup INSTRUCTIONS of QUEST_CONTENTS_EXT');
+end;
+/
+delete from
+sbrext.quest_contents_ext foot  
+where foot.qtl_name= 'INSTRUCTIONS' 
+and dn_crf_idseq not in 
+(select qc_idseq from sbrext.quest_contents_ext 
+where qtl_name in('CRF','TEMPLATE') ) ;
+
+/
+begin
+dbms_output.put_line('8. Cleanup FOOTERS of QUEST_CONTENTS_EXT');
+end;
+/
+delete from
+sbrext.quest_contents_ext foot  
+where foot.qtl_name= 'FOOTER' 
+and dn_crf_idseq not in 
+(select qc_idseq from sbrext.quest_contents_ext 
+where qtl_name in('CRF','TEMPLATE') ) ;
+
+/
+begin
+dbms_output.put_line('9. Cleanup MODULE_INSTR of QUEST_CONTENTS_EXT');
+end;
+/
+delete from
+sbrext.quest_contents_ext foot  
+where foot.qtl_name= 'MODULE_INSTR' 
+and p_mod_idseq not in 
+(select qc_idseq from sbrext.quest_contents_ext 
+where qtl_name ='MODULE' ) ;
+
+/
+begin
+dbms_output.put_line('10. Cleanup QUESTION_INSTR of QUEST_CONTENTS_EXT');
+end;
+/
+delete from
+sbrext.quest_contents_ext foot  
+where foot.qtl_name= 'QUESTION_INSTR' 
+and p_qst_idseq not in 
+(select qc_idseq from sbrext.quest_contents_ext 
+where qtl_name ='QUESTION' ) ;
+
+/
+begin
+dbms_output.put_line('11. Cleanup VALUE_INSTR of QUEST_CONTENTS_EXT');
+end;
+/
+delete   from
+sbrext.quest_contents_ext foot  
+where foot.qtl_name= 'VALUE_INSTR' 
+and P_VAL_IDSEQ not in 
+(select qc_idseq from sbrext.quest_contents_ext 
+where qtl_name ='VALID_VALUE' ) ;
+
+dbms_output.put_line('12. Cleanup sbrext.PROTOCOL_QC_EXT');
+end;
+delete from sbrext.PROTOCOL_QC_EXT where QC_IDSEQ not in (
+select qc_idseq from sbrext.quest_contents_ext where  qtl_name in('CRF','TEMPLATE'));
+begin
+dbms_output.put_line('13. Cleanup sbrext.TA_PROTO_CSI_EXT');
+end;
+delete from sbrext.TA_PROTO_CSI_EXT where TP_IDSEQ  in (
+select del.TP_IDSEQ from sbrext.TA_PROTO_CSI_EXT del,
+(select  TP_IDSEQ from sbrext.TA_PROTO_CSI_EXT   t,
+AC_CSI a
+where t.AC_CSI_IDSEQ=a.AC_CSI_IDSEQ and t.AC_CSI_IDSEQ is not null
+union
+select  TP_IDSEQ from sbrext.TA_PROTO_CSI_EXT  t,
+sbrext.PROTOCOL_QC_EXT p where t.PROTO_IDSEQ is not null
+and t.PROTO_IDSEQ=p.PROTO_IDSEQ
+) good
+where  del.TP_IDSEQ=good.TP_IDSEQ(+)
+and good.TP_IDSEQ is null  );
+
+begin
+dbms_output.put_line('14. Cleanup sbrext.QC_RECS_EXT');
+end;
+delete from sbrext.QC_RECS_EXT where QR_IDSEQ in
+(select a.QR_IDSEQ  from sbrext.QC_RECS_EXT a,
+(select  QR_IDSEQ  from sbrext.QC_RECS_EXT 
+where QR_IDSEQ in (
+select  QR_IDSEQ  
+from sbrext.QC_RECS_EXT,
+sbrext.quest_contents_ext c,
+sbrext.quest_contents_ext p
+where P_QC_IDSEQ=p.qc_idseq
+and C_QC_IDSEQ =c.qc_idseq)
+)good
+where a.QR_IDSEQ =good.QR_IDSEQ(+)
+and good.QR_IDSEQ is null);
+
+begin
+dbms_output.put_line('15. Cleanup sbrext.QUEST_VV_EXT');
+end;
+
+delete 
+from QUEST_VV_EXT where QV_IDSEQ in
+(select   a.QV_IDSEQ  from QUEST_VV_EXT a,
+(select  QV_IDSEQ
+from sbrext.QUEST_VV_EXT,
+(select qc_idseq from sbrext.quest_contents_ext where qtl_name = 'QUESTION')q,
+(select*from sbrext.quest_contents_ext   where  qtl_name = 'VALID_VALUE') v
+where  QUEST_IDSEQ =q.qc_idseq
+and (VV_IDSEQ=v.qc_idseq )
+UNION
+select QV_IDSEQ
+from sbrext.QUEST_VV_EXT,
+(select qc_idseq from sbrext.quest_contents_ext where qtl_name = 'QUESTION')q
+where  QUEST_IDSEQ =q.qc_idseq
+and VV_IDSEQ is NULL 
+) good 
+where a.QV_IDSEQ=good.QV_IDSEQ(+)
+and good.QV_IDSEQ is null);
+
+
+begin
+dbms_output.put_line('16. Cleanup sbrext.TRIGGERED_ACTIONS_EXT');
+end;
+delete 
+from sbrext.TRIGGERED_ACTIONS_EXT where TA_IDSEQ in
+(
+select del.TA_IDSEQ from sbrext.TRIGGERED_ACTIONS_EXT del,
+(select TA_IDSEQ from sbrext.TRIGGERED_ACTIONS_EXT t,
+sbrext.quest_contents_ext q
+where S_QC_IDSEQ =qc_idseq 
+union 
+select TA_IDSEQ from sbrext.TRIGGERED_ACTIONS_EXT t,
+sbrext.quest_contents_ext q
+where T_QC_IDSEQ=qc_idseq) good
+where  del.TA_IDSEQ=good.TA_IDSEQ(+)
+and good.TA_IDSEQ is null) ;
+
+
+
+begin
+dbms_output.put_line('17. Temporary not cleaning sbrext.ADMINISTERED_COMPONENTS');
+end;
+delete
+--select count(*)
+from sbrext.ADMINISTERED_COMPONENTS where ac_idseq in
+(select a.ac_idseq from 
+sbrext.ADMINISTERED_COMPONENTS a,
+(select a.ac_idseq from 
+sbrext.quest_contents_ext q,
+sbrext.ADMINISTERED_COMPONENTS A
+where AC_idseq=q.QC_IDSEQ
+and ACTL_NAME = 'QUEST_CONTENT')good
+where a.ACTL_NAME = 'QUEST_CONTENT'
+and a.ac_idseq=good.ac_idseq(+)
+and good.ac_idseq is null)
+; 
