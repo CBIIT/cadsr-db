@@ -1,6 +1,5 @@
 set serveroutput on size 1000000
 SPOOL DSRMWS-161-119VW.log  
---select distinct QTL_NAME from sbrext.quest_contents_ext;
 SET AUTOCOMMIT OFF
 SET SERVEROUTPUT ON
 set linesize 200
@@ -32,8 +31,7 @@ UNION
        SBREXT.QUEST_CONTENTS_EXT M
   WHERE  F.qtl_name in('CRF','TEMPLATE')
      AND M.QTL_NAME='FORM_INSTR'
-     AND M.DN_CRF_IDSEQ=F.QC_IDSEQ     
-
+     AND M.DN_CRF_IDSEQ=F.QC_IDSEQ    
   UNION
   SELECT M.QTL_NAME,M.QC_IDSEQ
   from SBREXT.QUEST_CONTENTS_EXT F,
@@ -103,8 +101,8 @@ UNION
      AND Q.P_MOD_IDSEQ=M.QC_IDSEQ
      AND V.P_QST_IDSEQ = Q.QC_IDSEQ
      AND i.P_VAL_IDSEQ = V.QC_IDSEQ
-   order by 1;
- /
+   order by 1
+/
 select '1. VALID_VALUES_ATT_EXT' TABLE_NAME ,a.*,b.*,(a."Records in caDSR"-b."Records to be Migrated") "Records to be deleted"
 from
 (select  count(*) "Records in caDSR" from sbrext.VALID_VALUES_ATT_EXT)a,
@@ -128,7 +126,6 @@ SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW VW
 where  QA.qc_idseq=VW.QC_IDSEQ
 AND VW.qtl_name in('CRF','TEMPLATE')) b
 UNION
---records have to be deleted before cleaning sbrext.TRIGGERED_ACTIONS_EXT  and QUEST_CONTENTS_EXT
 select '3. TA_PROTO_CSI_EXT' TABLE_NAME ,a.*,b.*,(a."Records in caDSR"-b."Records to be Migrated") "Records to be deleted"
 from
 (select  count(*) "Records in caDSR" from sbrext.TA_PROTO_CSI_EXT)a,
@@ -140,27 +137,21 @@ select  TP_IDSEQ from sbrext.TA_PROTO_CSI_EXT  t,
 sbrext.PROTOCOL_QC_EXT p ,SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW f
 where f.qtl_name in('CRF','TEMPLATE')
 and f.qc_idseq=p.QC_IDSEQ and t.PROTO_IDSEQ=p.PROTO_IDSEQ)PP,
---VALID TA records 
 (select TA_IDSEQ FROM sbrext.TRIGGERED_ACTIONS_EXT TA,
---VALID_SR
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW
 where qtl_name IN('MODULE','QUESTION','VALID_VALUE')) SR,
---VALID TR
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW
 where qtl_name IN('MODULE','QUESTION','VALID_VALUE')) TR
 where TA.S_QC_IDSEQ =SR.qc_idseq and  TA.T_QC_IDSEQ=TR.qc_idseq)TA
 where TP.TA_IDSEQ =TA.TA_IDSEQ
 and PP.TP_IDSEQ = tp.TP_IDSEQ) b 
---records have to be deleted before cleaning sbrext.QUEST_VV_EXT  and QUEST_CONTENTS_EXT
 UNION
 select '5. TRIGGERED_ACTIONS_EXT' TABLE_NAME ,a.*,b.*,(a."Records in caDSR"-b."Records to be Migrated") "Records to be deleted"
 from
 (select  count(*) "Records in caDSR" from sbrext.TRIGGERED_ACTIONS_EXT)a,
 (select  count(*) "Records to be Migrated" from sbrext.TRIGGERED_ACTIONS_EXT TA,
---VALID_SR
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW
 where qtl_name IN('MODULE','QUESTION','VALID_VALUE')) SR,
---VALID TR
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW
 where qtl_name IN('MODULE','QUESTION','VALID_VALUE')) TR
 where TA.S_QC_IDSEQ =SR.qc_idseq and  TA.T_QC_IDSEQ=TR.qc_idseq
@@ -190,11 +181,10 @@ from
 (select*from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name in('CRF','TEMPLATE','MODULE','VALID_VALUE','QUESTION'))p
 where rc.P_QC_IDSEQ=p.qc_idseq
 and rc.C_QC_IDSEQ =c.qc_idseq
-)b;
+)b
 /
 select 'Records before cleanup' QUEST_CONTENTS_EXT ,f.*,m.*,q.*,v.*,fi.*,i.*,ff.*,mi.*,qi.*,vi.* 
 from
-
 (select count(qc_idseq) "FORMS" from sbrext.quest_contents_ext 
 where  qtl_name in('CRF','TEMPLATE'))f,
 (select counT(*) "MODULES" from sbrext.quest_contents_ext where qtl_name = 'MODULE')m,
@@ -221,62 +211,52 @@ where  qtl_name in('CRF','TEMPLATE'))f,
 (select count(*) "QUESTION_INSTR" from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name='QUESTION_INSTR')qi,
 (select count(*) "VALUE_INSTR" from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name='VALUE_INSTR' )vi
 UNION
-/**RECORDS TO BE DELETED**/
 select 'Records to cleanup' QUEST_CONTENTS_EXT ,f.*,m.*,q.*,v.*,fi.*,i.*,ff.*,mi.*,qi.*,vi.* 
 from
 (select 0 "FORMS" from dual)f,
---MODULE
  (select count(del.qc_idseq) "MODULE"
 from sbrext.quest_contents_ext del ,
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name= 'MODULE'
 ) good
 where del.qtl_name = 'MODULE' and good.qc_idseq(+)=del.QC_IDSEQ  and good.qc_idseq is null)m,
---QUESTION
 (select count(del.qc_idseq) "QUESTION"
 from sbrext.quest_contents_ext del ,
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name= 'QUESTION') good
 where del.qtl_name = 'QUESTION' and good.qc_idseq(+)=del.QC_IDSEQ 
  and good.qc_idseq is null)q,
---VALID VALUES
 (select count(del.qc_idseq) "VALID VALUES" 
 from sbrext.quest_contents_ext del , 
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name= 'VALID_VALUE')good
 where del.qtl_name = 'VALID_VALUE'
 and good.qc_idseq(+)=del.QC_IDSEQ 
 and good.qc_idseq is null )v,
---FORM_INSTR
 (select count(*) "FORM_INSTR" from sbrext.quest_contents_ext foot,
 (select * from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name='FORM_INSTR')f  
 where  foot.qc_idseq=f.qc_idseq(+) and f.qc_idseq is null
 and foot.qtl_name ='FORM_INSTR')fi,
---INSTRUCTIONS
 (select count(*) "INSTRUCTIONS" from sbrext.quest_contents_ext foot,
 (select * from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name='INSTRUCTIONS')f  
 where  foot.qc_idseq=f.qc_idseq(+) and f.qc_idseq is null 
 and foot.qtl_name ='INSTRUCTIONS')i,
---FOOTER
 (select count(*) "FOOTER" from sbrext.quest_contents_ext foot,
 (select * from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name='FOOTER')f  
 where  foot.qc_idseq=f.qc_idseq(+) and f.qc_idseq is null
 and foot.qtl_name in 'FOOTER' )ff,
---MODULE INSTR
 (select counT(*) "MODULE_INSTR" from sbrext.quest_contents_ext  inst  ,
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name='MODULE_INSTR') good
 where  good.QC_IDSEQ(+)=inst.QC_IDSEQ 
 and good.QC_IDSEQ is null
 and inst.qtl_name= 'MODULE_INSTR')mi,
---QUESTION_INSTR
 (select count(*) "QUESTION_INSTR" from sbrext.quest_contents_ext i,
  (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name= 'QUESTION_INSTR') qood
 where i.qtl_name = 'QUESTION_INSTR' and i.QC_IDSEQ =qood.QC_IDSEQ(+) and qood.QC_IDSEQ is NULL )qi,
---VALUE_INSTR
 (select count(*) "VALUE_INSTR" from sbrext.quest_contents_ext i , 
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name= 'VALUE_INSTR')good
 where i.qtl_name = 'VALUE_INSTR' and good.qc_idseq(+)=i.QC_IDSEQ 
 and  good.qc_idseq is null)vi
 /
 begin
-dbms_output.put_line('Cleanup commit;begins');
+dbms_output.put_line('Cleanup begins');
 end;
 /
 begin
@@ -284,7 +264,6 @@ dbms_output.put_line('Cleanup VALID_VALUES_ATT_EXT');
 end;
 /
 delete 
---select count(*)
 from  sbrext.VALID_VALUES_ATT_EXT 
 where  qc_idseq in
 (select vv.qc_idseq from sbrext.quest_contents_ext vv,
@@ -292,29 +271,26 @@ where  qc_idseq in
 where  vv.QC_IDSEQ=good.QC_IDSEQ(+)
 and good.QC_IDSEQ is null
 and vv.qtl_name = 'VALID_VALUE');
-/
 commit;
 begin
 dbms_output.put_line('Cleanup QUEST_ATTRIBUTES_EXT');
 end;
 /
 delete  
---select count(*)
- from sbrext.QUEST_ATTRIBUTES_EXT
+from sbrext.QUEST_ATTRIBUTES_EXT
 where QC_IDSEQ   in
 (select vv.qc_idseq from sbrext.quest_contents_ext vv,
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name = 'QUESTION') good
 where  vv.QC_IDSEQ=good.QC_IDSEQ(+)
 and good.QC_IDSEQ is null
 and vv.qtl_name = 'QUESTION');
-/
 commit;
+/
 begin
 dbms_output.put_line('Cleanup sbrext.TA_PROTO_CSI_EXT');
 end;
 /
 delete 
---select count(*)
 from sbrext.TA_PROTO_CSI_EXT where TP_IDSEQ in(
 select  DEL.TP_IDSEQ  from sbrext.TA_PROTO_CSI_EXT  DEL,
 (select  TP.TP_IDSEQ  from sbrext.TA_PROTO_CSI_EXT  TP,
@@ -338,21 +314,21 @@ where TP.TA_IDSEQ =TA.TA_IDSEQ
 and PP.TP_IDSEQ = tp.TP_IDSEQ)GOOD
 where DEL.TP_IDSEQ=GOOD.TP_IDSEQ(+)
 AND GOOD.TP_IDSEQ is NULL);
-/
 commit;
+/
 begin
 dbms_output.put_line('Cleanup sbrext.PROTOCOL_QC_EXT');
 end;
+/
 delete from sbrext.PROTOCOL_QC_EXT where QC_IDSEQ not in (
 select qc_idseq from sbrext.quest_contents_ext where  qtl_name in('CRF','TEMPLATE'));
-/
 commit;
+/
 begin
 dbms_output.put_line('Cleanup sbrext.TRIGGERED_ACTIONS_EXT');
 end;
 /
 delete 
---select count(*)
 from sbrext.TA_PROTO_CSI_EXT where TA_IDSEQ in(
 select  DEL.TA_IDSEQ  from sbrext.TRIGGERED_ACTIONS_EXT  DEL,
 (select  TRA.TA_IDSEQ from sbrext.TRIGGERED_ACTIONS_EXT TRA,
@@ -363,13 +339,13 @@ where qtl_name IN('MODULE','QUESTION','VALID_VALUE')) TR--VALID TR
 where TRA.S_QC_IDSEQ =SR.qc_idseq and  TRA.T_QC_IDSEQ=TR.qc_idseq) GOOD --VALID TA
 where DEL.TA_IDSEQ=GOOD.TA_IDSEQ(+)
 AND GOOD.TA_IDSEQ is  NULL);
-/
 commit;
+/
 begin
 dbms_output.put_line('Cleanup sbrext.QUEST_VV_EXT');
 end;
+/
 delete 
---select count(*)
 from QUEST_VV_EXT where QV_IDSEQ in
 (select   a.QV_IDSEQ  from QUEST_VV_EXT a,
 (select  QV_IDSEQ from sbrext.QUEST_VV_EXT qv,
@@ -383,13 +359,13 @@ and VV_IDSEQ is NULL
 ) good 
 where a.QV_IDSEQ=good.QV_IDSEQ(+)
 and good.QV_IDSEQ is null);
-/
 commit;
+/
 begin
 dbms_output.put_line('Cleanup sbrext.QC_RECS_EXT');
 end;
+/
 delete 
---select count(*)
 from sbrext.QC_RECS_EXT where QR_IDSEQ in
 (select DEL.QR_IDSEQ  from sbrext.QC_RECS_EXT DEL,
 (select  QR_IDSEQ from sbrext.QC_RECS_EXT rc,
@@ -400,14 +376,13 @@ where rc.P_QC_IDSEQ=p.qc_idseq
 and rc.C_QC_IDSEQ =c.qc_idseq  )good
 where DEL.QR_IDSEQ =good.QR_IDSEQ(+)
 and good.QR_IDSEQ is null);
-/
 commit;
+/
 begin
 dbms_output.put_line('Cleanup VALID_VALUES of QUEST_CONTENTS_EXT');
 end;
 /
 delete 
---select count(*)
 from sbrext.quest_contents_ext
 where  qc_idseq in
 (select vv.qc_idseq from sbrext.quest_contents_ext vv,
@@ -415,47 +390,46 @@ where  qc_idseq in
 where  vv.QC_IDSEQ=good.QC_IDSEQ(+)
 and good.QC_IDSEQ is null
 and vv.qtl_name = 'VALID_VALUE');
-/
 commit;
+/
 begin
 dbms_output.put_line('Cleanup QUESTIONS of QUEST_CONTENTS_EXT');
 end;
-/ 
+/
 delete 
---select count(*)
 from sbrext.quest_contents_ext where qtl_name = 'QUESTION' and qc_idseq in
 (select vv.qc_idseq from sbrext.quest_contents_ext vv,
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name = 'QUESTION') good
 where  vv.QC_IDSEQ=good.QC_IDSEQ(+)
 and good.QC_IDSEQ is null
 and vv.qtl_name = 'QUESTION');
- /
- commit;
+commit;
+/
 begin
 dbms_output.put_line('Cleanup MODULES of QUEST_CONTENTS_EXT');
 end; 
- /
- delete  
- --select count(*)
+/
+delete  
 from sbrext.quest_contents_ext where qtl_name = 'MODULE' and qc_idseq in
 (select vv.qc_idseq from sbrext.quest_contents_ext vv,
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name = 'MODULE') good
 where  vv.QC_IDSEQ=good.QC_IDSEQ(+)
 and good.QC_IDSEQ is null
 and vv.qtl_name = 'MODULE');
-/ 
 commit;
+/
 begin
 dbms_output.put_line('Cleanup FORM_INSTR of QUEST_CONTENTS_EXT');
 end;
+/
 delete from
 sbrext.quest_contents_ext foot  
 where foot.qtl_name= 'FORM_INSTR' 
 and dn_crf_idseq not in 
 (select qc_idseq from sbrext.quest_contents_ext 
-where qtl_name in('CRF','TEMPLATE') ) ;
+where qtl_name in('CRF','TEMPLATE'));
+commit; 
 /
-commit;
 begin
 dbms_output.put_line('Cleanup INSTRUCTIONS of QUEST_CONTENTS_EXT');
 end;
@@ -465,9 +439,9 @@ sbrext.quest_contents_ext foot
 where foot.qtl_name= 'INSTRUCTIONS' 
 and dn_crf_idseq not in 
 (select qc_idseq from sbrext.quest_contents_ext 
-where qtl_name in('CRF','TEMPLATE') ) ;
+where qtl_name in('CRF','TEMPLATE'))
+commit; 
 /
-commit;
 begin
 dbms_output.put_line('Cleanup FOOTERS of QUEST_CONTENTS_EXT');
 end;
@@ -477,51 +451,48 @@ sbrext.quest_contents_ext foot
 where foot.qtl_name= 'FOOTER' 
 and dn_crf_idseq not in 
 (select qc_idseq from sbrext.quest_contents_ext 
-where qtl_name in('CRF','TEMPLATE') ) ;
+where qtl_name in('CRF','TEMPLATE'))
+commit; 
 /
-commit;
 begin
 dbms_output.put_line('Cleanup MODULE_INSTR of QUEST_CONTENTS_EXT');
 end;
 /
 delete  
- --select count(*)
 from sbrext.quest_contents_ext where qtl_name = 'MODULE_INSTR' and qc_idseq in
 (select vv.qc_idseq from sbrext.quest_contents_ext vv,
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name = 'MODULE_INSTR') good
 where  vv.QC_IDSEQ=good.QC_IDSEQ(+)
 and good.QC_IDSEQ is null
 and vv.qtl_name = 'MODULE_INSTR');
-/
 commit;
+/
 begin
 dbms_output.put_line('Cleanup QUESTION_INSTR of QUEST_CONTENTS_EXT');
 end;
 /
 delete  
- --select count(*)
 from sbrext.quest_contents_ext where qtl_name = 'QUESTION_INSTR' and qc_idseq in
 (select vv.qc_idseq from sbrext.quest_contents_ext vv,
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name = 'QUESTION_INSTR') good
 where  vv.QC_IDSEQ=good.QC_IDSEQ(+)
 and good.QC_IDSEQ is null
 and vv.qtl_name = 'QUESTION_INSTR');
-/
 commit;
+/
 begin
 dbms_output.put_line('Cleanup VALUE_INSTR of QUEST_CONTENTS_EXT');
 end;
 /
 delete  
- --select count(*)
 from sbrext.quest_contents_ext where qtl_name = 'VALUE_INSTR' and qc_idseq in
 (select vv.qc_idseq from sbrext.quest_contents_ext vv,
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name = 'VALUE_INSTR') good
 where  vv.QC_IDSEQ=good.QC_IDSEQ(+)
 and good.QC_IDSEQ is null
 and vv.qtl_name = 'VALUE_INSTR');
-/
 commit;
+/
 begin
 dbms_output.put_line('END OF CLEANUP');
 end;
@@ -549,7 +520,6 @@ SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW VW
 where  QA.qc_idseq=VW.QC_IDSEQ
 AND VW.qtl_name in('CRF','TEMPLATE')) b
 UNION
---records have to be deleted before cleaning sbrext.TRIGGERED_ACTIONS_EXT  and QUEST_CONTENTS_EXT
 select '3. TA_PROTO_CSI_EXT' TABLE_NAME ,a.*,b.*,(a."Records in caDSR"-b."Records to be Migrated") "Records to be deleted"
 from
 (select  count(*) "Records in caDSR" from sbrext.TA_PROTO_CSI_EXT)a,
@@ -561,27 +531,21 @@ select  TP_IDSEQ from sbrext.TA_PROTO_CSI_EXT  t,
 sbrext.PROTOCOL_QC_EXT p ,SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW f
 where f.qtl_name in('CRF','TEMPLATE')
 and f.qc_idseq=p.QC_IDSEQ and t.PROTO_IDSEQ=p.PROTO_IDSEQ)PP,
---VALID TA records 
 (select TA_IDSEQ FROM sbrext.TRIGGERED_ACTIONS_EXT TA,
---VALID_SR
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW
 where qtl_name IN('MODULE','QUESTION','VALID_VALUE')) SR,
---VALID TR
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW
 where qtl_name IN('MODULE','QUESTION','VALID_VALUE')) TR
 where TA.S_QC_IDSEQ =SR.qc_idseq and  TA.T_QC_IDSEQ=TR.qc_idseq)TA
 where TP.TA_IDSEQ =TA.TA_IDSEQ
 and PP.TP_IDSEQ = tp.TP_IDSEQ) b 
---records have to be deleted before cleaning sbrext.QUEST_VV_EXT  and QUEST_CONTENTS_EXT
 UNION
 select '5. TRIGGERED_ACTIONS_EXT' TABLE_NAME ,a.*,b.*,(a."Records in caDSR"-b."Records to be Migrated") "Records to be deleted"
 from
 (select  count(*) "Records in caDSR" from sbrext.TRIGGERED_ACTIONS_EXT)a,
 (select  count(*) "Records to be Migrated" from sbrext.TRIGGERED_ACTIONS_EXT TA,
---VALID_SR
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW
 where qtl_name IN('MODULE','QUESTION','VALID_VALUE')) SR,
---VALID TR
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW
 where qtl_name IN('MODULE','QUESTION','VALID_VALUE')) TR
 where TA.S_QC_IDSEQ =SR.qc_idseq and  TA.T_QC_IDSEQ=TR.qc_idseq
@@ -611,7 +575,7 @@ from
 (select*from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name in('CRF','TEMPLATE','MODULE','VALID_VALUE','QUESTION'))p
 where rc.P_QC_IDSEQ=p.qc_idseq
 and rc.C_QC_IDSEQ =c.qc_idseq
-)b;
+)b
 /
 select 'Records before cleanup' QUEST_CONTENTS_EXT ,f.*,m.*,q.*,v.*,fi.*,i.*,ff.*,mi.*,qi.*,vi.* 
 from
@@ -641,61 +605,51 @@ where  qtl_name in('CRF','TEMPLATE'))f,
 (select count(*) "QUESTION_INSTR" from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name='QUESTION_INSTR')qi,
 (select count(*) "VALUE_INSTR" from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name='VALUE_INSTR' )vi
 UNION
-/**RECORDS TO BE DELETED**/
 select 'Records to cleanup' QUEST_CONTENTS_EXT ,f.*,m.*,q.*,v.*,fi.*,i.*,ff.*,mi.*,qi.*,vi.* 
 from
 (select 0 "FORMS" from dual)f,
---MODULE
  (select count(del.qc_idseq) "MODULE"
 from sbrext.quest_contents_ext del ,
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name= 'MODULE'
 ) good
 where del.qtl_name = 'MODULE' and good.qc_idseq(+)=del.QC_IDSEQ  and good.qc_idseq is null)m,
---QUESTION
 (select count(del.qc_idseq) "QUESTION"
 from sbrext.quest_contents_ext del ,
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name= 'QUESTION') good
 where del.qtl_name = 'QUESTION' and good.qc_idseq(+)=del.QC_IDSEQ 
  and good.qc_idseq is null)q,
---VALID VALUES
 (select count(del.qc_idseq) "VALID VALUES" 
 from sbrext.quest_contents_ext del , 
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name= 'VALID_VALUE')good
 where del.qtl_name = 'VALID_VALUE'
 and good.qc_idseq(+)=del.QC_IDSEQ 
 and good.qc_idseq is null )v,
---FORM_INSTR
 (select count(*) "FORM_INSTR" from sbrext.quest_contents_ext foot,
 (select * from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name='FORM_INSTR')f  
 where  foot.qc_idseq=f.qc_idseq(+) and f.qc_idseq is null
 and foot.qtl_name ='FORM_INSTR')fi,
---INSTRUCTIONS
 (select count(*) "INSTRUCTIONS" from sbrext.quest_contents_ext foot,
 (select * from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name='INSTRUCTIONS')f  
 where  foot.qc_idseq=f.qc_idseq(+) and f.qc_idseq is null 
 and foot.qtl_name ='INSTRUCTIONS')i,
---FOOTER
 (select count(*) "FOOTER" from sbrext.quest_contents_ext foot,
 (select * from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name='FOOTER')f  
 where  foot.qc_idseq=f.qc_idseq(+) and f.qc_idseq is null
 and foot.qtl_name in 'FOOTER' )ff,
---MODULE INSTR
 (select counT(*) "MODULE_INSTR" from sbrext.quest_contents_ext  inst  ,
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name='MODULE_INSTR') good
 where  good.QC_IDSEQ(+)=inst.QC_IDSEQ 
 and good.QC_IDSEQ is null
 and inst.qtl_name= 'MODULE_INSTR')mi,
---QUESTION_INSTR
 (select count(*) "QUESTION_INSTR" from sbrext.quest_contents_ext i,
  (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name= 'QUESTION_INSTR') qood
 where i.qtl_name = 'QUESTION_INSTR' and i.QC_IDSEQ =qood.QC_IDSEQ(+) and qood.QC_IDSEQ is NULL )qi,
---VALUE_INSTR
 (select count(*) "VALUE_INSTR" from sbrext.quest_contents_ext i , 
 (select qc_idseq from SBREXT.MDSR_VALID_FORM_ELEMETS_VIEW where qtl_name= 'VALUE_INSTR')good
 where i.qtl_name = 'VALUE_INSTR' and good.qc_idseq(+)=i.QC_IDSEQ 
 and  good.qc_idseq is null)vi
 /
-commit;
-SPOOL OFF;
+
+SPOOL OFF
 
 

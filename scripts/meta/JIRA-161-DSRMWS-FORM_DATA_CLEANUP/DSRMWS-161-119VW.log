@@ -1,0 +1,110 @@
+View created.
+
+TABLE_NAME               Records in caDSR Records to be Migrated Records to be deleted
+------------------------ ---------------- ---------------------- ---------------------
+1. VALID_VALUES_ATT_EXT           2091873                2089652                  2221
+2. QUEST_ATTRIBUTES_EXT            330921                 330445                   476
+3. TA_PROTO_CSI_EXT                    24                     24                     0
+4. PROTOCOL_QC_EXT                  16814                  16814                     0
+5. TRIGGERED_ACTIONS_EXT              328                    328                     0
+6. QUEST_VV_EXT                    218314                 218314                     0
+7. sbrext.QC_RECS_EXT             2663353                2659971                  3382
+
+7 rows selected.
+
+QUEST_CONTENTS_EXT          FORMS    MODULES  QUESTIONS VALID VALUES FORM_INSTR INSTRUCTIONS     FOOTER MODULE_INSTR QUESTION_INSTR VALUE_INSTR
+---------------------- ---------- ---------- ---------- ------------ ---------- ------------ ---------- ------------ -------------- -----------
+Records before cleanup      18895      62695     330952      2095637       7144          186       1431        20508         102252       47204
+Records to be migrated      18895      62677     330475      2090145       7142          186       1431        20278         100917       46721
+Records to cleanup              0         18        477         5492          2            0          0          230           1335         483
+
+3 rows selected.
+Cleanup begins
+ PL/SQL procedure successfully completed.
+Cleanup VALID_VALUES_ATT_EXT
+ PL/SQL procedure successfully completed.
+2221 rows deleted. 
+Commit complete.
+Cleanup QUEST_ATTRIBUTES_EXT
+ PL/SQL procedure successfully completed.
+476 rows deleted. 
+Commit complete.
+Cleanup sbrext.TA_PROTO_CSI_EXT
+ PL/SQL procedure successfully completed.
+0 rows deleted. 
+Commit complete.
+Cleanup sbrext.PROTOCOL_QC_EXT
+ PL/SQL procedure successfully completed.
+0 rows deleted. 
+Commit complete.
+Cleanup sbrext.TRIGGERED_ACTIONS_EXT
+ PL/SQL procedure successfully completed.
+0 rows deleted. 
+Commit complete.
+Cleanup sbrext.QUEST_VV_EXT
+ PL/SQL procedure successfully completed.
+0 rows deleted. 
+Commit complete.
+Cleanup sbrext.QC_RECS_EXT
+ PL/SQL procedure successfully completed.
+3382 rows deleted. 
+Commit complete.
+Cleanup VALID_VALUES of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+5492 rows deleted. 
+Commit complete.
+Cleanup QUESTIONS of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+477 rows deleted. 
+Commit complete.
+Cleanup MODULES of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+18 rows deleted. 
+Commit complete.
+Cleanup FORM_INSTR of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+2 rows deleted. 
+Commit complete.
+Cleanup INSTRUCTIONS of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+0 rows deleted. 
+Commit complete.
+Cleanup FOOTERS of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+0 rows deleted. 
+Commit complete.
+Cleanup MODULE_INSTR of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+230 rows deleted. 
+Commit complete.
+Cleanup QUESTION_INSTR of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+1335 rows deleted. 
+Commit complete.
+Cleanup VALUE_INSTR of QUEST_CONTENTS_EXT
+ PL/SQL procedure successfully completed.
+483 rows deleted. 
+Commit complete.
+END OF CLEANUP
+ PL/SQL procedure successfully completed.
+
+TABLE_NAME               Records in caDSR Records to be Migrated Records to be deleted
+------------------------ ---------------- ---------------------- ---------------------
+1. VALID_VALUES_ATT_EXT           2089652                2089652                     0
+2. QUEST_ATTRIBUTES_EXT            330445                 330445                     0
+3. TA_PROTO_CSI_EXT                    24                     24                     0
+4. PROTOCOL_QC_EXT                  16814                  16814                     0
+5. TRIGGERED_ACTIONS_EXT              328                    328                     0
+6. QUEST_VV_EXT                    218314                 218314                     0
+7. sbrext.QC_RECS_EXT             2659971                2659971                     0
+
+7 rows selected.
+
+QUEST_CONTENTS_EXT          FORMS    MODULES  QUESTIONS VALID VALUES FORM_INSTR INSTRUCTIONS     FOOTER MODULE_INSTR QUESTION_INSTR VALUE_INSTR
+---------------------- ---------- ---------- ---------- ------------ ---------- ------------ ---------- ------------ -------------- -----------
+Records before cleanup      18895      62677     330475      2090145       7142          186       1431        20278         100917       46721
+Records to be migrated      18895      62677     330475      2090145       7142          186       1431        20278         100917       46721
+Records to cleanup              0          0          0            0          0            0          0            0              0           0
+
+3 rows selected.
+Rollback complete.
