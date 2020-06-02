@@ -1,0 +1,9 @@
+DBA steps should be performed in SBREXT schema :
+1.Run the script in attached file DELETE_TEMP_DESIGNATIONS.sql 
+2.Open the attached control file DBA_DESIGNATIONS.CTL.
+3.Replace  DBA_PATH to the location path where you will place the attached Designations.csv file.
+4.Load data via SQL LOADER using control file DBA_DESIGNATIONS.CTL.
+5.Run the script UPLOAD_DESIGNATIONS.sql(the file is attached)
+6. Send us 2 files:     
+  cadsrmeta-637d.log    
+  adsrmeta-637i.log
