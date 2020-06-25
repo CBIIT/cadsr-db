@@ -12,9 +12,7 @@ where AC_IDSEQ in
 
 
 delete from MDSR_AC_PIV
-drop table data_elements
 
-update data_elements set cde_id=
 
 MDSR_AC_PIV
 
