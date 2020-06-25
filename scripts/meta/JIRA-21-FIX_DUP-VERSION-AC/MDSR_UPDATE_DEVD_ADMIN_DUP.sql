@@ -1,3 +1,5 @@
+set serveroutput on size 1000000
+SPOOL DSRMWS-21.log  
 CREATE OR REPLACE PROCEDURE SBREXT.MDSR_UPDATE_DEVD_ADMIN_DUP AS
 cursor C_AC is
 select  public_id, version, --instr(version,'.')  mver,--length(to_char(version))vLen, 
@@ -20,9 +22,6 @@ where AC_IDSEQ in
 order by actl_name,public_id;
 errmsg VARCHAR2(2000):='';
 V_ver VARCHAR2(20):='';
-
-
-
 BEGIN
 
 for i in C_AC loop
@@ -31,16 +30,15 @@ begin
 
 IF i.actl_name='DATAELEMENT' then 
 
-UPDATE SBR.DATA_ELEMENTS set VERSION=i.new_ver,CHANGE_NOTE=CHANGE_NOTE||' The version was duplicate of '||version||', changed to '||i.new_ver||' with script for migration on '||sysdate||'.'
+UPDATE SBR.DATA_ELEMENTS set VERSION=i.new_ver,CHANGE_NOTE=CHANGE_NOTE||' There was a duplicate of Version '||i.version||', changed to '||i.new_ver||' with script for migration on '||sysdate||'.'
 where DE_IDSEQ=i.AC_IDSEQ;
 
 ELSIF i.actl_name='VALUEDOMAIN' then 
-UPDATE SBR.VALUE_DOMAINS set VERSION=i.new_ver,CHANGE_NOTE=CHANGE_NOTE||' The version was duplicate of '||version||', changed to '||i.new_ver||' with script for migration on '||sysdate||'.'
+UPDATE SBR.VALUE_DOMAINS set VERSION=i.new_ver,CHANGE_NOTE=CHANGE_NOTE||' There was a duplicate of Version '||i.version||', changed to '||i.new_ver||' with script for migration on '||sysdate||'.'
 where VD_IDSEQ=i.AC_IDSEQ;
 END IF;
---UPDATE SBR.ADMINISTERED_COMPONENTS set VERSION=i.new_ver,CHANGE_NOTE=CHANGE_NOTE||' The version was duplicate of '||version||', changed to '||i.new_ver||' with script for migration on'||sysdate
---where AC_IDSEQ=i.AC_IDSEQ;
    commit;
+   dbms_output.put_line(i.actl_name||' PubliciD - '||i.public_id|| ', old version - '||i.version||', new version - '||i.new_ver|| ', AC_IDSEQ - '||i.AC_IDSEQ||',Append to CHANGE_NOTE= There was a duplicate of Version '||i.version||', changed to '||i.new_ver||' with script for migration on '||sysdate||'.' );
  EXCEPTION 
     WHEN OTHERS THEN
     errmsg := i.public_id||'v'||i.version||':'||substr(SQLERRM,1,100);
@@ -51,8 +49,6 @@ END IF;
      commit;
   END;
 END LOOP;
-
-commit;
-
 END MDSR_UPDATE_DEVD_ADMIN_DUP;
-/
+exec SBREXT.MDSR_UPDATE_DEVD_ADMIN_DUP;
+SPOOL OFF;
