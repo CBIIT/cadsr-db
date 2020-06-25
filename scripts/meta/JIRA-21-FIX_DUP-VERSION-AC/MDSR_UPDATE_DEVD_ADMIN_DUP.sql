@@ -23,6 +23,12 @@ order by actl_name,public_id;
 errmsg VARCHAR2(2000):='';
 V_ver VARCHAR2(20):='';
 BEGIN
+DBMS_OUTPUT.ENABLE(1000000);
+for n in C_AC loop
+
+   dbms_output.put_line(n.actl_name||' PubliciD - '||n.public_id|| ', old version - '||n.version||', new version - '||n.new_ver|| ', AC_IDSEQ - '||n.AC_IDSEQ||', Append to CHANGE_NOTE = There was a duplicate of Version '||n.version||', changed to '||n.new_ver||' with script for migration on '||sysdate||'.' );
+
+END LOOP;
 
 for i in C_AC loop
 
@@ -38,7 +44,7 @@ UPDATE SBR.VALUE_DOMAINS set VERSION=i.new_ver,CHANGE_NOTE=CHANGE_NOTE||' There 
 where VD_IDSEQ=i.AC_IDSEQ;
 END IF;
    commit;
-   dbms_output.put_line(i.actl_name||' PubliciD - '||i.public_id|| ', old version - '||i.version||', new version - '||i.new_ver|| ', AC_IDSEQ - '||i.AC_IDSEQ||',Append to CHANGE_NOTE= There was a duplicate of Version '||i.version||', changed to '||i.new_ver||' with script for migration on '||sysdate||'.' );
+   --dbms_output.put_line(i.actl_name||' PubliciD - '||i.public_id|| ', old version - '||i.version||', new version - '||i.new_ver|| ', AC_IDSEQ - '||i.AC_IDSEQ||', Append to CHANGE_NOTE = There was a duplicate of Version '||i.version||', changed to '||i.new_ver||' with script for migration on '||sysdate||'.' );
  EXCEPTION 
     WHEN OTHERS THEN
     errmsg := i.public_id||'v'||i.version||':'||substr(SQLERRM,1,100);
@@ -50,5 +56,6 @@ END IF;
   END;
 END LOOP;
 END MDSR_UPDATE_DEVD_ADMIN_DUP;
+/
 exec SBREXT.MDSR_UPDATE_DEVD_ADMIN_DUP;
 SPOOL OFF;
