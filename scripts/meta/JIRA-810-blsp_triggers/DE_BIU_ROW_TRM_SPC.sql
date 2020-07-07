@@ -10,7 +10,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := substr(SQLERRM,1,50);     
-       insert into SBREXT.META_SPCHAR_ERROR_LOG VALUES('META_FIX_DATA_ELEMENTS',   sysdate ,errmsg);
+       nsert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('META_FIX_DATA_ELEMENTS',sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 ENd;
