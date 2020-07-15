@@ -23,7 +23,8 @@ order by 3,4;
 
  l_table_name      VARCHAR2 (100):='NA';  
    l_result         number;
-   l_xmldoc          CLOB:=null;
+   stmt_str VARCHAR2(300);
+   Print_stmt_str VARCHAR2(300);
    l_table        VARCHAR2 (30);
    errmsg VARCHAR2(500):='Non';
    v_protocol VARCHAR2(50):='';
@@ -46,8 +47,18 @@ BEGIN
    BULK COLLECT INTO t;
 /**/
  FOR i IN 1 .. t.COUNT LOOP
+ 
+  --stmt_str := 'UPDATE '||rec.table_name||' set '||rec.column_name||' =REGEXP_REPLACE('||rec.column_name|| ','||'''(^[[:space:]]|[[:space:]]$)'''||') WHERE '||v_pcol_name||' = '''||t(i).c_pk||''';';
+    stmt_str := 'UPDATE '||rec.table_name||' set date_modified=SYSDATE WHERE '||v_pcol_name||' = '''||t(i).c_pk||'''';
+     dml_str := 'UPDATE '|| P_Table_name ||' set date_modified=SYSDATE WHERE '||P_col_name||'='''|| P_col_val||'''';
+    
+    --execute immediate 'UPDATE '||rec.table_name||' set date_modified=SYSDATE WHERE '||v_pcol_name||' = '''||t(i).c_pk||''';';
+ select stmt_str into Print_stmt_str from dual;
+--execute immediate 'UPDATE PERMISSIBLE_VALUES set date_modified=SYSDATE WHERE PV_IDSEQ = '||'''98C196A4-FE3D-7FBA-E053-F662850AAFB1'''||';';
+DBMS_OUTPUT.PUT_LINE(Print_stmt_str);
+--MDSR_COLOMN(stmt_str);
  --UPDATE rec.table_name set rec.column_name=regexp_replace(t(i).C_NAME,'(^[[:space:]]|[[:space:]]$)')) where 
-    DBMS_OUTPUT.PUT_LINE( 'Col len :'||t(i).c_len ||', Table PK :'||t(i).c_pk ||' ,column_value :' || t(i).C_NAME );
+--    DBMS_OUTPUT.PUT_LINE( stmt_str||'Col len :'||t(i).c_len ||', Table PK :'||t(i).c_pk ||' ,column_value :' || t(i).C_NAME );
   END LOOP;
 END;
         
