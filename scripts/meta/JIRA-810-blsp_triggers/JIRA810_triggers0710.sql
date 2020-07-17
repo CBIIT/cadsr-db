@@ -10,7 +10,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'DEFIN_IDSEQ:'||:new.DEFIN_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('DEF_BIU_ROW_TRM_SPC','SBR.DEFINITIONS', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('DEF_BIU_ROW_TRM_SPC','SBR.DEFINITIONS', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -25,7 +25,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'DESIG_IDSEQ:'||:new.DESIG_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('DESIG_BIU_ROW_TRM_SPC','SBR.DESIGNATIONS', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('DESIG_BIU_ROW_TRM_SPC','SBR.DESIGNATIONS', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -41,7 +41,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'CS_IDSEQ:'||:new.cs_idseq||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('CS_BIU_ROW_TRM_SPC','SBR.CLASSIFICATION_SCHEMES', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('CS_BIU_ROW_TRM_SPC','SBR.CLASSIFICATION_SCHEMES', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -60,7 +60,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'CSI_IDSEQ:'||:new.csi_idseq||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('CSI_VMS_BIU_ROW_TRM_SPC','SBR.CS_ITEMS', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('CSI_VMS_BIU_ROW_TRM_SPC','SBR.CS_ITEMS', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -77,7 +77,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'CONTE_IDSEQ:'||:new.CONTE_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('CTX_BIU_ROW_TRM_SPC','SBR.CONTEXTS', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('CTX_BIU_ROW_TRM_SPC','SBR.CONTEXTS', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -98,7 +98,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'DEC_IDSEQ:'||:new.DEC_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('DEC_BIU_ROW_TRM_SPC','SBR.DATA_ELEMENT_CONCEPTS', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('DEC_BIU_ROW_TRM_SPC','SBR.DATA_ELEMENT_CONCEPTS', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -114,7 +114,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'DE_IDSEQ:'||:new.DE_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('DE_BIU_ROW_TRM_SPC','SBR.DATA_ELEMENTS', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('DE_BIU_ROW_TRM_SPC','SBR.DATA_ELEMENTS', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 ENd;
@@ -131,7 +131,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'RD_IDSEQ:'||:new.RD_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('REFDOC_BIU_ROW_TRM_SPC','SBR.REFERENCE_DOCUMENTS', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('REFDOC_BIU_ROW_TRM_SPC','SBR.REFERENCE_DOCUMENTS', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -148,7 +148,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'CD_IDSEQ:'||:new.cd_idseq||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('CD_BIU_ROW_TRM_SPC','SBR.CONCEPTUAL_DOMAINS', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('CD_BIU_ROW_TRM_SPC','SBR.CONCEPTUAL_DOMAINS', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 END;
 CREATE OR REPLACE TRIGGER SBR.CD_VMS_BIU_ROW_TRM_SPC
@@ -163,7 +163,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'CV_IDSEQ:'||:new.cv_idseq||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('CV_VMS_BIU_ROW_TRM_SPC','SBR.CD_VMS', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('CV_VMS_BIU_ROW_TRM_SPC','SBR.CD_VMS', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -179,7 +179,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'VD_IDSEQ:'||:new.VD_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('VD_BIU_ROW_TRM_SPC','SBR.VALUE_DOMAINS', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('VD_BIU_ROW_TRM_SPC','SBR.VALUE_DOMAINS', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -198,7 +198,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'VM_IDSEQ:'||:new.VM_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('VM_BIU_ROW_TRM_SPC','SBR.VALUE_MEANINGS', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('VM_BIU_ROW_TRM_SPC','SBR.VALUE_MEANINGS', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -216,7 +216,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'PV_IDSEQ:'||:new.PV_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('SBR.PV_BIU_ROW_TRM_SPC','SBR.PERMISSIBLE_VALUES', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('SBR.PV_BIU_ROW_TRM_SPC','SBR.PERMISSIBLE_VALUES', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -235,7 +235,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'CONTE_IDSEQ:'||:new.CONTE_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('CONC_BIU_ROW_TRM_SPC','SBREXT.CONCEPTS_EX', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('CONC_BIU_ROW_TRM_SPC','SBREXT.CONCEPTS_EX', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -254,7 +254,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'OCR_IDSEQ:'||:new.OCR_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('OCR_BIU_ROW_TRM_SPC','SBREXT.OC_RECS_EXT', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('OCR_BIU_ROW_TRM_SPC','SBREXT.OC_RECS_EXT', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -273,7 +273,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'OC_IDSEQ:'||:new.OC_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('OC_BIU_ROW_TRM_SPC','SBREXT.OBJECT_CLASSES_EXT', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('OC_BIU_ROW_TRM_SPC','SBREXT.OBJECT_CLASSES_EXT', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -293,7 +293,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'PROP_IDSEQ:'||:new.PROP_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('PROP_BIU_ROW_TRM_SPC','SBREXT.PROPERTIES_EXT', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('PROP_BIU_ROW_TRM_SPC','SBREXT.PROPERTIES_EXT', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -312,7 +312,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'PROTO_IDSEQ:'||:new.PROTO_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('PROTO_BIU_ROW_TRM_SPC','SBREXT.PROTOCOLS_EXT', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('PROTO_BIU_ROW_TRM_SPC','SBREXT.PROTOCOLS_EXT', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -331,7 +331,7 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'QC_IDSEQ:'||:new.QC_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('QC_BIU_ROW_TRM_SPC','SBREXT.QUEST_CONTENTS_EX', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('QC_BIU_ROW_TRM_SPC','SBREXT.QUEST_CONTENTS_EX', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
@@ -351,7 +351,38 @@ BEGIN
 EXCEPTION
      WHEN OTHERS THEN
       errmsg := 'REP_IDSEQ:'||:new.REP_IDSEQ||';'||substr(SQLERRM,1,100);     
-       insert into SBREXT.TRRG_TRM_SPC_ERROR_LOG VALUES('SBREXT.REP_BIU_ROW_TRM_SPC','SBREXT.REPRESENTATIONS_EXT', sysdate ,errmsg);
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('SBREXT.REP_BIU_ROW_TRM_SPC','SBREXT.REPRESENTATIONS_EXT', sysdate ,errmsg);
+      RAISE_APPLICATION_ERROR(-20001,errmsg );
+
+END;
+CREATE OR REPLACE TRIGGER SBR.ACT_BIU_ROW_TRM_SPC
+BEFORE INSERT OR UPDATE ON SBR.AC_TYPES_LOV
+FOR EACH ROW
+DECLARE
+errmsg VARCHAR2(200);
+BEGIN 
+         :new.DESCRIPTION:= regexp_replace(:new.DESCRIPTION, '(^([[:space:]]|[[:cntrl:]])+)|(([[:space:]]|[[:cntrl:]])+$)',null);
+        
+EXCEPTION
+     WHEN OTHERS THEN
+      errmsg := 'ACTL_NAME:'||:new.ACTL_NAME||';'||substr(SQLERRM,1,100);     
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('SBR.ACT_BIU_ROW_TRM_SPC','SBR.AC_TYPES_LOV', sysdate ,errmsg);
+      RAISE_APPLICATION_ERROR(-20001,errmsg );
+
+END;
+CREATE OR REPLACE TRIGGER SBR.ASL_BIU_ROW_TRM_SPC
+BEFORE INSERT OR UPDATE ON SBR.AC_STATUS_LOV
+FOR EACH ROW
+DECLARE
+
+errmsg VARCHAR2(200);
+BEGIN 
+         :new.DESCRIPTION:= regexp_replace(:new.DESCRIPTION, '(^([[:space:]]|[[:cntrl:]])+)|(([[:space:]]|[[:cntrl:]])+$)',null);
+        
+EXCEPTION
+     WHEN OTHERS THEN
+      errmsg := 'ASL_NAME:'||:new.ASL_NAME||';'||substr(SQLERRM,1,100);     
+       insert into SBR.TRRG_TRM_SPC_ERROR_LOG VALUES('ASL_BIU_ROW_TRM_SPC','SBR.AC_STATUS_LOV', sysdate ,errmsg);
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
