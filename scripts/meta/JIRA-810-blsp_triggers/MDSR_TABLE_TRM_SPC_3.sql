@@ -1,16 +1,16 @@
-CREATE OR REPLACE PROCEDURE SBR.MDSR_TABLE_TRM_SPC_3t as
+CREATE OR REPLACE PROCEDURE SBR.MDSR_TABLE_TRM_SPC_3 as
 
 CURSOR c_table IS
 select 'select rowid,'||column_name|| ' FROM '||'table_name where '||column_name||' is null' select_st,owner||'.'||table_name table_name,column_name from ------SBR.CD_VMS c	,
 all_tab_columns c
-where owner||'.'||table_name in (--'SBR.CD_VMS',
---'SBREXT.QC_TYPE_LOV_EXT'	,
+where owner||'.'||table_name in ('SBR.CD_VMS',
+'SBREXT.QC_TYPE_LOV_EXT'	,
 'SBREXT.SOURCES_EXT'	
---,'SBREXT.TOOL_PROPERTIES_EXT'--,'SBR.ADMINISTERED_COMPONENTS'
+,'SBREXT.TOOL_PROPERTIES_EXT','SBR.ADMINISTERED_COMPONENTS'
 )
 and c.column_name in ('FORML_NAME', 'LONG_NAME', 'PREFERRED_DEFINITION','PREFERRED_NAME', 'SHORT_MEANING',
 'DEFINITION_SOURCE', 'VALUE', 'MEANING_DESCRIPTION','DEFINITION','NAME','DESCRIPTION','PROPL_NAME',
-'DOC_TEXT', 'UOML_NAME','DEFAULT_VALUE','CRTL_NAME','SRC_NAME')	;
+'DOC_TEXT', 'UOML_NAME','DEFAULT_VALUE','CRTL_NAME','SRC_NAME')	order by 2,3;
 
   TYPE t_rec IS RECORD( c_pk VARCHAR2(40),c_len number, c_name VARCHAR2(4000) );
   TYPE t_tab IS TABLE OF t_rec;
@@ -32,13 +32,16 @@ else
 Pk_id:='ROWID';
 end if;
 
-IF rec.table_name='TOOL_PROPERTIES_EXT' THEN
+IF rec.table_name='SBREXT.TOOL_PROPERTIES_EXT' THEN
 
-EXECUTE IMMEDIATE 'SELECT  rowid,length('||rec.column_name||') ,'||rec.column_name  ||'  FROM ' || rec.table_name|| ' WHERE  date_created >sysdate-240 and REGEXP_like('||rec.column_name|| ','||'''(^([[:space:]]|[[:cntrl:]])+)|(([[:space:]]|[[:cntrl:]])+$)'''||')'
+EXECUTE IMMEDIATE 'SELECT  rowid,length('||rec.column_name||') ,'||rec.column_name  ||'  FROM ' || rec.table_name|| ' WHERE  REGEXP_like('||rec.column_name|| ','||'''(^([[:space:]]|[[:cntrl:]])+)|(([[:space:]]|[[:cntrl:]])+$)'''||')'
 BULK COLLECT INTO t;
 ELSE
-DBMS_OUTPUT.PUT_LINE(dml_str);
- EXECUTE IMMEDIATE 'SELECT  rowid,length('||rec.column_name||') ,'||rec.column_name  ||'  FROM ' || rec.table_name|| ' WHERE  date_created >sysdate-740 
+
+dml_str:='SELECT  rowid,length('||rec.column_name||') ,'||rec.column_name  ||'  FROM ' || rec.table_name|| ' WHERE  date_created >sysdate-280 
+ and REGEXP_like('||rec.column_name|| ','||'''(^([[:space:]]|[[:cntrl:]])+)|(([[:space:]]|[[:cntrl:]])+$)'''||')';
+ DBMS_OUTPUT.PUT_LINE(dml_str);
+ EXECUTE IMMEDIATE 'SELECT  rowid,length('||rec.column_name||') ,'||rec.column_name  ||'  FROM ' || rec.table_name|| ' WHERE  date_created >sysdate-280 
  and REGEXP_like('||rec.column_name|| ','||'''(^([[:space:]]|[[:cntrl:]])+)|(([[:space:]]|[[:cntrl:]])+$)'''||')'
  BULK COLLECT INTO t;
  END IF;
