@@ -1,3 +1,5 @@
+set serveroutput on size 1000000
+SPOOL cadsrmeta-810_t.log
 CREATE TABLE SBR.TRRG_TRM_SPC_ERROR_LOG
 (
   TRIGGER_NAME        CHAR(36 BYTE)                  NOT NULL,
@@ -707,3 +709,4 @@ EXCEPTION
       RAISE_APPLICATION_ERROR(-20001,errmsg );
 
 END;
+SPOOL OFF

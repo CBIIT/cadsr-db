@@ -330,9 +330,6 @@ Send request to DBA team to do following actions on STAGE and PROD.
 8.swnt us log files:
  Jira810-t.log
 Jira810-p.log
-Jira810-f.log
-Jira810-2.log
-Jira810-3.log
 Jira810-u.log
 
 Step3

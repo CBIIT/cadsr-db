@@ -1,3 +1,5 @@
+set serveroutput on size 1000000
+SPOOL cadsrmeta-810_p.log
 CREATE TABLE SBR.MDSR_TABLE_COLUMN_SPCHAR_LOG
 (
   TABLE_NAME    CHAR(50 BYTE),
@@ -234,3 +236,4 @@ END LOOP;
 
 END;
 /
+SPOOL OFF;
