@@ -319,6 +319,20 @@ END;
 /
 exec SBREXT.META_FIX_REPRESENTATIONS_EXT;
 /
+CREATE TABLE SBR.MDSR_ADMIN_COMPONENTS_BKUP
+(
+  AC_IDSEQ              CHAR(36 BYTE)        ,
+  ACTL_NAME             VARCHAR2(20 BYTE)    ,  
+  LONG_NAME        VARCHAR2(255 BYTE)    , 
+  PREFERRED_DEFINITION  VARCHAR2(2000 BYTE)  ,   
+  CHANGE_NOTE           VARCHAR2(2000 BYTE),
+  DATE_CREATED          DATE                    
+);
+/
+GRANT ALTER, DELETE, INDEX, INSERT, REFERENCES, SELECT, UPDATE, ON COMMIT REFRESH, QUERY REWRITE, DEBUG, FLASHBACK ON SBR.MDSR_ADMIN_COMPONENTS_BKUP TO SBREXT;
+/
+GRANT  SELECT ON SBR.MDSR_ADMIN_COMPONENTS_BKUP TO PUBLIC;
+/
 DECLARE
 V_CNT NUMBER;
  errmsg VARCHAR2(200):=null;
@@ -333,13 +347,22 @@ ELSE
 dbms_output.put_line(v_CNT||' records are found in SBR.ADMINISTERED_COMPONENTS which not matching to SBREXT.REPRESENTATIONS_EXT');
 declare
 cursor C is select rep_idseq,rep_id,r.version,r.PREFERRED_DEFINITION PREFERRED_DEFINITION
-,r.long_name long_name from SBR.ADMINISTERED_COMPONENTS a,sbrext.representations_ext r 
+,r.long_name long_name ,a.PREFERRED_DEFINITION OLD_PREFERRED_DEFINITION
+,a.long_name old_long_name from SBR.ADMINISTERED_COMPONENTS a,sbrext.representations_ext r 
 where  a.ac_idseq=r.rep_idseq
 and (a.PREFERRED_DEFINITION<>r.PREFERRED_DEFINITION
 or a.long_name<>r.long_name);
 begin
 for i in C  loop
 begin
+INSERT INTO SBR.MDSR_ADMIN_COMPONENTS_BKUP(AC_IDSEQ   ,
+  ACTL_NAME              ,  
+  LONG_NAME           , 
+  PREFERRED_DEFINITION    ,   
+  CHANGE_NOTE           ,
+  DATE_CREATED )
+       values(i.rep_idseq,'REPRESENTATION',i.old_long_name,i.OLD_PREFERRED_DEFINITION,'Insert by SYNCRONISE_REP_AC_NO_HTML.sql',SYSDATE);
+  commit;     
 UPDATE SBR.ADMINISTERED_COMPONENTS set  PREFERRED_DEFINITION=i.PREFERRED_DEFINITION,
 long_name=i.long_name where ac_idseq=i.rep_idseq;
 commit;/**/ 
