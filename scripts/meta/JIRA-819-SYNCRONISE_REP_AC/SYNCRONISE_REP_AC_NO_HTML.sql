@@ -323,7 +323,6 @@ DECLARE
 V_CNT NUMBER;
  errmsg VARCHAR2(200):=null;
 BEGIN
-
 select count(*) into V_CNT 
 from SBR.ADMINISTERED_COMPONENTS a,representations_ext r where a.ac_idseq=rep_idseq
 and (a.PREFERRED_DEFINITION<>r.PREFERRED_DEFINITION
@@ -332,7 +331,6 @@ IF V_CNT=0 then
 dbms_output.put_line('No records are found in SBR.ADMINISTERED_COMPONENTS which not matching to SBREXT.REPRESENTATIONS_EXT');
 ELSE
 dbms_output.put_line(v_CNT||' records are found in SBR.ADMINISTERED_COMPONENTS which not matching to SBREXT.REPRESENTATIONS_EXT');
-
 declare
 cursor C is select rep_idseq,rep_id,r.version,r.PREFERRED_DEFINITION PREFERRED_DEFINITION
 ,r.long_name long_name from SBR.ADMINISTERED_COMPONENTS a,sbrext.representations_ext r 
@@ -358,6 +356,7 @@ commit;/**/
 END;
  END IF; 
 end; 
+/
 SPOOL OFF
 
   
